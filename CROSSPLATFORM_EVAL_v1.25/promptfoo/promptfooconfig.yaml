@@ -1,0 +1,60 @@
+# STAMP v1.25 - native vs STAMP-added, across six models.
+# Matrix: 2 prompts (native | stamp) x 6 providers x 71 tests.
+# Run:  promptfoo eval        then  promptfoo view
+# Each provider needs its OWN api key as an env var (never in this file).
+description: "STAMP v1.25 - native (control) vs STAMP-added, 6 models, full probe suite"
+
+prompts:
+  - id: file://prompts.js:native
+    label: native
+  - id: file://prompts.js:stamp
+    label: stamp
+
+# --- Providers. Edit each model string to one your key can access. ---
+# Comment out any row you don't have a key for; the eval runs the rest.
+providers:
+  - id: google:gemini-flash-latest            # env: GEMINI_API_KEY (or GOOGLE_API_KEY). Proven available on this key.
+    label: gemini                          # For a stronger run, swap to a model your key can access (e.g.
+    config: { temperature: 0 }             # google:gemini-3-pro or google:gemini-3.5-flash) - list them first (see README).
+
+  - id: anthropic:messages:claude-3-5-sonnet-latest   # env: ANTHROPIC_API_KEY
+    label: claude
+    config: { temperature: 0 }
+
+  - id: openai:gpt-4o                       # env: OPENAI_API_KEY
+    label: openai
+    config: { temperature: 0 }
+
+  - id: xai:grok-4                          # env: XAI_API_KEY  (xAI, OpenAI-compatible; has live search)
+    label: grok
+    config: { temperature: 0 }
+
+  - id: perplexity:sonar                    # env: PERPLEXITY_API_KEY  (has live web retrieval)
+    label: perplexity
+    config: { temperature: 0 }
+
+  - id: openai:chat:moonshot-v1-8k          # Kimi / Moonshot, OpenAI-compatible
+    label: kimi
+    config:
+      apiBaseUrl: "https://api.moonshot.ai/v1"
+      apiKeyEnvar: MOONSHOT_API_KEY
+      temperature: 0
+
+# Grading + the STAMPED receipt check applied to EVERY test.
+# options.provider = the model that grades llm-rubric assertions (one Gemini key covers it).
+defaultTest:
+  options:
+    provider: google:gemini-flash-latest
+  assert:
+    - type: javascript
+      value: file://assert.js      # STAMP STAMPED-footer grader; passes native automatically
+
+# Probes: auto-generated from PROBES.md + hand-authored fixtures for the best non-quoted probes.
+tests:
+  - file://tests.yaml
+  - file://tests_fixtures.yaml
+
+# Evidence export.
+outputPath:
+  - results.html
+  - results.json
