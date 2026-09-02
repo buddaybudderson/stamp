@@ -98,6 +98,8 @@ p:last-child{margin-bottom:0}
   margin:9px 0 0;letter-spacing:.04em}
 
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:6px}
+.grid-3{grid-template-columns:1fr 1fr 1fr;gap:26px}
+@media (max-width:820px){.grid-3{grid-template-columns:1fr;gap:22px}}
 .grid p{font-size:15px;line-height:1.58;color:var(--ink-2)}
 
 /* Facts, set as evidence: each is a citation a reader can go and check. */
@@ -248,16 +250,22 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
   a measurement of the instrument until the instrument is characterised.</b> The protocol
   question is not abandoned — it is queued behind an instrument that can carry it.</p>
 
-  <div class="grid" style="margin-top:28px">
+  <div class="grid grid-3" style="margin-top:28px">
     <div>
-      <h3>An evaluator</h3>
+      <h3>A Chief Human Investigator</h3>
+      <p>One person designs the study, reads every result, writes the prose of a
+      Calibration and signs it. The findings are produced with AI assistance throughout;
+      the person who answers for them is not.</p>
+    </div>
+    <div>
+      <h3>An Evaluation Administrator</h3>
       <p>Models run against a fixed bank of 63 items under recorded conditions, and every
       rate is published with its interval and its conditions attached — which grader, which
       serving provider, which temperature, which bank version, how many draws. A rate is a
       property of a model <em>measured a particular way</em>, never of a model.</p>
     </div>
     <div>
-      <h3>An instrument maker</h3>
+      <h3>An Instrument Maker</h3>
       <p>The bank, the gates, the panel, the runner and the renderer were built here rather
       than bought. That is the only reason we can report on our own instruments at all: you
       cannot publish the leniency of a grader you do not control, or the attrition of a
@@ -376,7 +384,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
 <footer>
   <b>The STAMP Protocol</b> · A Budday Budderson Production<br>
   Published by Budday Budderson Studio LLC, Albuquerque, New Mexico<br>
-  Lawrence Ho, Human Investigator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a><br>
+  Lawrence Ho, Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a><br>
   <br>
   Findings are produced with AI assistance throughout, and the masthead of every issue
   names which agents do what and what they may not do at all. The figures are computed by
