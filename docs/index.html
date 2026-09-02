@@ -18,33 +18,14 @@
 </head>
 <body>
 <title>The STAMP Protocol</title>
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap">
 <style>
 /* The site is set in the publication's own tokens and its own three faces. A home
    page in a different palette would say the site and the issue are different things. */
-:root{
-  --paper:#F1F4F6; --surface:#FFFFFF; --sunk:#E8EDF0;
-  --ink:#131E29; --ink-2:#4C5D6B; --ink-3:#7A8B98;
-  --rule:#C9D4DC; --rule-soft:#DEE6EB;
-  --stamp:#A8432A; --stamp-soft:#F2E2DC;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#0E161D; --surface:#151F28; --sunk:#1B262F;
-    --ink:#DDE6EC; --ink-2:#9BAEBC; --ink-3:#6E828F;
-    --rule:#2A3945; --rule-soft:#212E39;
-    --stamp:#E0785A; --stamp-soft:#33201A;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0E161D; --surface:#151F28; --sunk:#1B262F;
-  --ink:#DDE6EC; --ink-2:#9BAEBC; --ink-3:#6E828F;
-  --rule:#2A3945; --rule-soft:#212E39;
-  --stamp:#E0785A; --stamp-soft:#33201A;
-}
-
 *{box-sizing:border-box}
 body{
   background:var(--paper);color:var(--ink);margin:0;padding:0 22px 110px;
@@ -394,7 +375,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
   Corrections are findings, and are published like findings.<br>
   <br>
   Follow the studio: <a href="https://bud.day">bud.day</a> — every account is Budday Budderson, and the publication is what it posts.<br>
-  <a href="/archive/">Archive of issues</a> · <a href="/figures.json">figures.json</a>, the figure registry · <a href="/protocol/v1.25/">STAMP v1.25</a>, the protocol as published before this programme
+  <a href="/about/">About</a> · <a href="/archive/">Archive of issues</a> · <a href="/figures.json">figures.json</a>, the figure registry · <a href="/protocol/v1.25/">STAMP v1.25</a>, the protocol as published before this programme
 </footer>
 
 </div>

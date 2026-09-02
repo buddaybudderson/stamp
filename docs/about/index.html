@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About · The STAMP Protocol</title>
+<meta name="description" content="Who makes The STAMP Protocol, what each of the four names on the masthead may do, and why the site changes colour with the day.">
+<link rel="canonical" href="https://thestampprotocol.com/about/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="The STAMP Protocol"><meta property="og:title" content="About · The STAMP Protocol"><meta property="og:description" content="Who makes The STAMP Protocol, what each name on the masthead may do, and why the site changes colour with the day."><meta property="og:url" content="https://thestampprotocol.com/about/"><meta property="og:image" content="https://thestampprotocol.com/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);margin:0;padding:0 22px 110px;font:400 16px/1.62 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:800px;margin:0 auto}a{color:var(--stamp)}:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
+nav.top{padding:18px 0 0;font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}nav.top a{text-decoration:none}
+h1{font:600 42px/1.05 "IBM Plex Serif",Georgia,serif;letter-spacing:-.025em;margin:44px 0 0}
+.rule{height:3px;background:var(--stamp);margin:22px 0 11px}
+.strap{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.strap .now{color:var(--stamp)}
+section{border-top:1px solid var(--rule);margin-top:48px;padding-top:24px}
+.eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin:0 0 14px}
+h2{font:600 27px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}p b{color:var(--ink);font-weight:500}p:last-child{margin-bottom:0}
+/* the crew */
+.crew{border-top:1px solid var(--rule);margin-top:6px}
+.crew-row{display:grid;grid-template-columns:160px 1fr;gap:22px;padding:18px 0;border-bottom:1px solid var(--rule-soft)}
+.crew-name{font:600 17px/1.2 "IBM Plex Serif",Georgia,serif;color:var(--ink)}
+.crew-kind{display:inline-block;margin-top:6px;border-radius:3px;padding:3px 6px;font:500 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--stamp);background:var(--stamp-soft)}
+.crew-kind.human{color:var(--ok);background:var(--ok-bg)}.crew-kind.org,.crew-kind.code{color:var(--ink-2);background:var(--sunk)}
+.crew-role{display:block;margin-top:6px;font:400 11px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.crew-what p{font-size:14.5px;margin-bottom:8px}
+/* the seven finishes */
+.week{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:20px}
+.swatch{border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:var(--paper);color:var(--ink);display:flex;flex-direction:column}
+.swatch .half{padding:14px 14px 12px;background:var(--paper);color:var(--ink);border-bottom:1px solid var(--rule-soft);display:flex;flex-direction:column;gap:8px}
+.swatch .half.night{border-bottom:0}
+.swatch .day-name{font:600 15px/1.2 "IBM Plex Serif",Georgia,serif}
+.swatch .planet{font:500 10px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.swatch .mark{width:34px;height:34px;color:var(--ink)}
+.swatch .chips{display:flex;gap:5px}.swatch .chip{width:18px;height:18px;border-radius:3px;border:1px solid var(--rule)}
+.swatch.today{outline:2px solid var(--stamp);outline-offset:2px}
+.swatch .today-tag{font:500 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--stamp)}
+footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);max-width:74ch}footer b{color:var(--ink-2);font-weight:500}
+@media (max-width:640px){h1{font-size:32px}.crew-row{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="/">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/archive/">Archive</a> &nbsp;·&nbsp; <a href="/writing/">The Bench</a></nav>
+<h1>About</h1>
+<div class="rule"></div>
+<div class="strap"><span>Independent · Albuquerque, New Mexico</span><span class="now">A Budday Budderson Production</span></div>
+
+<section>
+  <p class="eyebrow">What this is</p>
+  <h2>A measurement programme, not a leaderboard</h2>
+  <p><b>The STAMP Protocol</b> measures whether a score given to an AI model survives being taken twice. Every rate it publishes carries its interval and its conditions — which grader, which serving provider, which temperature, which bank version, how many draws — and every figure is registered with the SHA-256 of the files it was computed from. It publishes its own errors as findings. It is published by <b>Budday Budderson Studio LLC</b>, Albuquerque, New Mexico, on alternate Saturdays at 15:37 America/Chicago, with working notes on The Bench on Sundays and Wednesdays.</p>
+  <p>It is not an audit, a certification or a regulatory judgment, and it does not measure helpfulness, harmlessness or honesty. The current issue is <a href="/calibration/001-issued-sun20260830/">The Calibration 001</a>.</p>
+</section>
+
+<section>
+  <p class="eyebrow">Who makes this</p>
+  <h2>Four names, and what each may do</h2>
+  <p>Findings are produced with AI assistance throughout. Of the four names on the masthead one is a person, one is a company, one is an AI agent and one is deterministic code. What each may do unattended is stated here rather than inferred.</p>
+  <div class="crew">
+    <div class="crew-row"><div><div class="crew-name">Lawrence Ho</div><span class="crew-kind human">human</span><span class="crew-role">Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker</span></div>
+      <div class="crew-what"><p>Designs the study, runs the bank under recorded conditions, builds the gates, reads every result, writes the prose of a Calibration and signs it. The person who answers for every number here. Only he issues a Calibration; no agent may.</p></div></div>
+    <div class="crew-row"><div><div class="crew-name">Budday Budderson Studio LLC</div><span class="crew-kind org">company</span><span class="crew-role">Publisher</span></div>
+      <div class="crew-what"><p>Publishes the programme and every Budday Budderson Production. The studio's accounts distribute what the publication issues; they never speak for it. Contact: <a href="mailto:s@bud.day">s@bud.day</a>.</p></div></div>
+    <div class="crew-row"><div><div class="crew-name">Jayden Lee</div><span class="crew-kind">AI agent</span><span class="crew-role">AI Reporter</span></div>
+      <div class="crew-what"><p>Writes The Log — the derived record of what ran, what it cost and what moved — from the registry, and nothing else. Reports nothing that is typed rather than computed, does not editorialise about what a number means, does not write The Bench, and posts nowhere.</p></div></div>
+    <div class="crew-row"><div><div class="crew-name">Juancho Lee</div><span class="crew-kind code">not a model</span><span class="crew-role">Panel Registrar</span></div>
+      <div class="crew-what"><p>Deterministic Python with no weights. Seats and rotates the judging panel, refuses a judge that would grade its own family, and records every seating. Grades nothing.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">The finishes</p>
+  <h2>The site changes colour with the day</h2>
+  <p>The seven finishes are the classical planetary week — Moon, Mars, Mercury, Jupiter, Venus, Saturn, Sun for Monday to Sunday — and the day is Chicago's, set before the page paints, so two readers on two continents see the same colour. Saturday is publishing day, so <b>Saturn is the house finish</b>. An issue wears the finish of the day it was issued: Calibration 001 wears Sun, because its release stamp was taken twenty minutes before Saturday midnight in the wrong timezone, and the off-cycle date is meant to stay visible.</p>
+  <p>The finish tints the ground only. The accent — the bar in the mark, every measured figure — never changes. Each swatch below is drawn in its own palette, day above and night below; the outlined one is today's. The switch in the top right corner changes day and night on every page, and remembers your choice.</p>
+  <div class="week" id="week"></div>
+</section>
+
+<section>
+  <p class="eyebrow">Our own receipts</p>
+  <h2>How to check any of this</h2>
+  <p>Every issue's HTML is byte-frozen and the first twelve characters of its SHA-256 are printed in the foot of every page of its PDF; the archive links the source file so you can hash it yourself. <a href="/figures.json">figures.json</a> holds every citable figure with the fingerprints of its sources. An issued Calibration is never edited; corrections are findings and are published like findings.</p>
+</section>
+
+<footer><b>The STAMP Protocol</b> · A Budday Budderson Production<br>Published by Budday Budderson Studio LLC, Albuquerque, New Mexico<br>Lawrence Ho, Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a></footer>
+</div>
+<script>
+(function(){
+  var W=[["Monday","moon","Moon"],["Tuesday","mars","Mars"],["Wednesday","mercury","Mercury"],["Thursday","jupiter","Jupiter"],["Friday","venus","Venus"],["Saturday","saturn","Saturn · house finish"],["Sunday","sun","Sun · Calibration 001"]];
+  var today=document.documentElement.getAttribute("data-finish"), out="";
+  var mark='<svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><g stroke="currentColor" stroke-width="7"><line x1="15" y1="50" x2="85" y2="50"/><line x1="15" y1="31" x2="15" y2="69"/><line x1="85" y1="31" x2="85" y2="69"/></g><line x1="38.11" y1="17" x2="38.11" y2="83" stroke="var(--stamp)" stroke-width="13"/></svg>';
+  function half(f,night){ return '<div class="half swatch'+(night?' night':'')+'" data-finish="'+f+'">'+mark+
+    '<div class="chips"><span class="chip" style="background:var(--paper)"></span><span class="chip" style="background:var(--surface)"></span><span class="chip" style="background:var(--sunk)"></span><span class="chip" style="background:var(--ink-2)"></span><span class="chip" style="background:var(--stamp)"></span></div></div>'; }
+  W.forEach(function(w){
+    var f=w[1], is=(f===today);
+    out+='<div class="swatch'+(is?' today':'')+'" data-finish="'+f+'">'+
+      '<div class="half" style="gap:4px"><div class="day-name">'+w[0]+'</div><div class="planet">'+w[2]+'</div>'+(is?'<div class="today-tag">today</div>':'')+'</div>'+
+      half(f,false)+half(f,true)+'</div>';
+  });
+  document.getElementById("week").innerHTML=out;
+})();
+</script>
+</body>
+</html>

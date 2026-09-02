@@ -8,12 +8,11 @@
 <link rel="canonical" href="https://thestampprotocol.com/writing/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="The STAMP Protocol"><meta property="og:title" content="The Bench · The STAMP Protocol"><meta property="og:description" content="Working notes of The STAMP Protocol: method, arguments and design decisions, posted Sundays and Wednesdays."><meta property="og:url" content="https://thestampprotocol.com/writing/"><meta property="og:image" content="https://thestampprotocol.com/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap">
 <style>
-:root{--paper:#F1F4F6;--surface:#FFFFFF;--sunk:#E8EDF0;--ink:#131E29;--ink-2:#4C5D6B;--ink-3:#7A8B98;--rule:#C9D4DC;--rule-soft:#DEE6EB;--stamp:#A8432A;--stamp-soft:#F2E2DC}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0E161D;--surface:#151F28;--sunk:#1B262F;--ink:#DDE6EC;--ink-2:#9BAEBC;--ink-3:#6E828F;--rule:#2A3945;--rule-soft:#212E39;--stamp:#E0785A;--stamp-soft:#33201A}}
-:root[data-theme="dark"]{--paper:#0E161D;--surface:#151F28;--sunk:#1B262F;--ink:#DDE6EC;--ink-2:#9BAEBC;--ink-3:#6E828F;--rule:#2A3945;--rule-soft:#212E39;--stamp:#E0785A;--stamp-soft:#33201A}
 *{box-sizing:border-box}body{background:var(--paper);color:var(--ink);margin:0;padding:0 22px 110px;font:400 17px/1.66 "IBM Plex Sans",system-ui,sans-serif}
 .wrap{max-width:800px;margin:0 auto}a{color:var(--stamp)}:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
 nav.top{padding:18px 0 0;font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}nav.top a{text-decoration:none}
@@ -39,7 +38,7 @@ footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="/">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/writing/">The Bench</a></nav>
+<nav class="top"><a href="/">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/writing/">The Bench</a> &nbsp;·&nbsp; <a href="/about/">About</a></nav>
 <h1 style="margin-top:44px">The Bench</h1>
 <div class="rule"></div>
 <div class="strap"><span>Working notes · method · the arguments</span><span class="now">Sundays and Wednesdays · 07:37 CT</span></div>
