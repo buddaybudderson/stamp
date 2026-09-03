@@ -1,0 +1,56 @@
+name: Release at 15:37 Chicago
+
+# Everything ships on Saturdays at 15:37 America/Chicago. Cron is UTC and Central Time
+# moves, so two crons fire and the job decides which one is really 15:37 local -
+# the same trick scripts/publish_gate.py uses. Only one of the two can pass the check.
+on:
+  schedule:
+    - cron: "37 20 * * 6"   # 15:37 CDT
+    - cron: "37 21 * * 6"   # 15:37 CST
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Release now regardless of the clock (type YES)"
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Is it Saturday 15:37 in Chicago?
+        id: clock
+        run: |
+          now=$(TZ=America/Chicago date +"%u %H:%M")
+          echo "chicago=$now"
+          dow=${now%% *}; hm=${now##* }
+          if [ "${{ github.event.inputs.force }}" = "YES" ]; then echo "go=1" >> $GITHUB_OUTPUT; exit 0; fi
+          # Saturday, and between 15:37 and 16:26 local (the late firing is the other cron)
+          if [ "$dow" = "6" ] && [ "$hm" \> "15:36" ] && [ "$hm" \< "16:27" ]; then
+            echo "go=1" >> $GITHUB_OUTPUT
+          else
+            echo "not the release window ($now) - nothing to do"; echo "go=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Anything staged?
+        if: steps.clock.outputs.go == '1'
+        id: staged
+        run: |
+          if ls stage/*/*.html >/dev/null 2>&1; then echo "any=1" >> $GITHUB_OUTPUT; else echo "stage/ is empty"; echo "any=0" >> $GITHUB_OUTPUT; fi
+
+      - name: Release staged issues into docs/
+        if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
+        run: python3 tools/wrap_issue.py
+
+      - name: Commit and push
+        if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
+        run: |
+          git config user.name "STAMP release"
+          git config user.email "s@bud.day"
+          git add -A
+          git commit -m "Release: $(TZ=America/Chicago date +'%a %Y-%m-%d %H:%M %Z')" || exit 0
+          git push
