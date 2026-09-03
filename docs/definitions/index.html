@@ -20,7 +20,7 @@ body{background:var(--paper);color:var(--ink);margin:0;padding:0 22px 110px;font
 nav.top{padding:18px 0 0;font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}nav.top a{text-decoration:none}
 h1{font:600 42px/1.05 "IBM Plex Serif",Georgia,serif;letter-spacing:-.025em;margin:44px 0 0}
 .rule{height:3px;background:var(--stamp);margin:22px 0 11px}
-.strap{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.strap .now{color:var(--stamp)}
+.strap{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.strap .now{color:var(--stamp)}
 section{border-top:1px solid var(--rule);margin-top:48px;padding-top:24px}
 .eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin:0 0 14px}
 h2{font:600 27px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
@@ -64,7 +64,7 @@ p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}p b{color:var(--ink);font-we
 @media (max-width:820px){.week{grid-template-columns:repeat(4,1fr)}}
 @media (max-width:520px){.week{grid-template-columns:repeat(2,1fr)}}
 .swatch{background:var(--paper);color:var(--ink)}
-footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);max-width:74ch}footer b{color:var(--ink-2);font-weight:500}
+footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-2);max-width:74ch}footer b{color:var(--ink-2);font-weight:500}
 @media (max-width:640px){h1{font-size:32px}}
 
 .pg p{max-width:66ch}.pg h3{font:600 18px/1.3 "IBM Plex Serif",Georgia,serif;margin:22px 0 6px;color:var(--ink)}
@@ -84,7 +84,7 @@ footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400
 </head>
 <body>
 <div class="wrap pg">
-<nav class="top"><a href="/">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/about/">About</a> &nbsp;·&nbsp; <a href="/archive/">Archive</a> &nbsp;·&nbsp; <a href="/writing/">The Bench</a> &nbsp;·&nbsp; <a href="/colophon/">Colophon</a></nav>
+<nav class="top"><a href="/">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/about/">About</a> &nbsp;·&nbsp; <a href="/archive/">Archive</a> &nbsp;·&nbsp; <a href="/writing/">The&nbsp;Bench</a> &nbsp;·&nbsp; <a href="/colophon/">Colophon</a></nav>
 <h1>Definitions</h1>
 <div class="rule"></div>
 <div class="strap"><span>What the numbers mean</span><span class="now">A Budday Budderson Production</span></div>
@@ -92,14 +92,14 @@ footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400
 <p class="lede">A reader should never have to guess what a word on these pages means. These are the terms as the program uses them; where a term has a wider meaning elsewhere, the narrower one here governs.</p>
 <section><p class="eyebrow">Measures</p><h2>Rates and their conditions</h2>
 <table><tr><th>Term</th><th>Meaning here</th></tr>
-<tr><td>Failure rate</td><td>The share of draws that failed their item's written pass criterion. On this bank, which is adversarial by construction, it is not a general error rate and cannot be converted into one.</td></tr>
+<tr><td>Failure rate</td><td>The share of draws that failed their item’s written pass criterion. On this bank, which is adversarial by construction, it is not a general error rate and cannot be converted into one.</td></tr>
 <tr><td>Draw</td><td>One response from one model to one probe under recorded conditions. Each candidate gets two halves of five draws per item.</td></tr>
 <tr><td>On-bank interval</td><td>The narrow 95% interval: this model, on these 63 items, draws random. Use it for week-on-week comparison.</td></tr>
 <tr><td>Beyond-bank interval</td><td>The wide 95% interval: this model, on probes like these, item choice itself uncertain. Use it for any claim about the model.</td></tr>
-<tr><td>Noise floor</td><td>The gap between a candidate's two halves — what the instrument produces when nothing changed. No movement smaller than it is reported.</td></tr>
+<tr><td>Noise floor</td><td>The gap between a candidate’s two halves — what the instrument produces when nothing changed. No movement smaller than it is reported.</td></tr>
 <tr><td>Reliability</td><td>Spearman-Brown full-test reliability from the two halves. Vol 001: 0.945.</td></tr>
 <tr><td>Design effect</td><td>How many draws it takes to carry the information of one independent one, because most items sit at 0% or 100%. Vol 001: 616 draws ≈ 87 independent.</td></tr>
-<tr><td>Agreement (AC1)</td><td>Gwet's AC1 across the three judges on the panel sample. Pre-registered floor 0.50; below it, nothing is published. Agreement is not correctness.</td></tr>
+<tr><td>Agreement (AC1)</td><td>Gwet’s AC1 across the three judges on the panel sample. Pre-registered floor 0.50; below it, nothing is published. Agreement is not correctness.</td></tr>
 <tr><td>Leniency</td><td>How far a grader sits from the panel mean on identical draws. Reported, and corrected for, never assumed.</td></tr>
 <tr><td>Attrition</td><td>Draws lost to truncation, refusal or unparseable output. Above 5%, a run is disqualified, because what vanishes is never random.</td></tr>
 </table></section>
@@ -110,12 +110,12 @@ footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400
 <li><b>Not measurable</b> — the instrument cannot carry the question, and that is the result.</li>
 </ul></section>
 <section><p class="eyebrow">Publications</p><h2>The Calibration, The Log, The Bench</h2>
-<p><b>The Calibration</b> is the dated record of what was measured, written and signed by a person. <b>The Log</b> is what ran, what it cost and what moved, computed by the harness; nobody wrote it. <b>The Bench</b> is working notes and argument, written by a person, posted Sundays and Wednesdays. Issues ship on alternate Saturdays at 15:37 America/Chicago; an issued number is never edited.</p>
+<p><b>The Calibration</b> is the dated record of what was measured, written and signed by a person. <b>The Log</b> is what ran, what it cost and what moved, computed by the harness and assembled by the AI reporter; no person wrote it. <b>The Bench</b> is working notes and argument, written by a person, posted Sundays and Wednesdays. Issues ship on alternate Saturdays at 15:37 America/Chicago; an issued number is never edited.</p>
 <h3 id="cite">How to cite</h3>
 <p>By volume and date, which every issue carries in its name, with the URL, which is permanent:</p>
 <pre>The STAMP Protocol. <i>The Calibration Vol 001 · Sun20260830</i>. Budday Budderson Studio LLC, 2026.
 https://thestampprotocol.com/calibration/001-issued-sun20260830/   build be2bc9d7ca35</pre>
-<p>Cite a finding by its number inside the issue ("Vol 001, Finding 02"). Quote a rate with its interval and its conditions; a rate quoted bare is misquoted.</p>
+<p>Cite a finding by its number inside the issue (“Vol 001, Finding 02”). Quote a rate with its interval and its conditions; a rate quoted bare is misquoted.</p>
 </section>
 <footer><b>The STAMP Protocol</b> · A Budday Budderson Production<br>Published by Budday Budderson Studio LLC, Albuquerque, New Mexico<br>Lawrence Ho, Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a><br><br><a href="/methodology/">Methodology</a> · <a href="/definitions/">Definitions</a> · <a href="/independence/">Independence</a> · <a href="/corrections/">Corrections</a> · <a href="/subscribe/">Subscribe</a> · <a href="/feed.xml">RSS</a> · <a href="/data/bank_v1_public.jsonl">Public bank</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></footer>
 </div>

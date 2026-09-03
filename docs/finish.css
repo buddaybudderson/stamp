@@ -45,4 +45,5 @@
 .playlink .seven{display:inline-flex;gap:2px}.playlink .seven i{width:6px;height:10px;border-radius:1px;display:inline-block;opacity:.9}
 .modeswitch.shifted{right:auto}
 @media (max-width:640px){.playlink .txt{display:none}.playlink{padding:7px 9px}}
-@media (max-width:640px){.modeswitch{top:10px;right:10px;padding:6px 10px}.modeswitch .fin{display:none}}
+@media (max-width:640px){.modeswitch{top:10px;right:10px;padding:6px 10px}.modeswitch .fin{display:none}
+  nav.top,nav.sitenav{padding-top:56px!important;padding-right:0!important}}

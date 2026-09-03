@@ -15,9 +15,9 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>The STAMP Protocol</title>
 </head>
 <body>
-<title>The STAMP Protocol</title>
 <link rel="alternate" type="application/rss+xml" title="The STAMP Protocol" href="/feed.xml">
 <link rel="stylesheet" href="/finish.css">
 <script src="/finish.js"></script>
@@ -45,7 +45,7 @@ a{color:var(--stamp)}
 .rule{height:3px;background:var(--stamp);margin:22px 0 11px}
 .strap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+  letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2)}
 .strap .now{color:var(--stamp)}
 
 /* The strapline is the page's thesis and it is literal, not figurative: a receipt is
@@ -57,10 +57,10 @@ a{color:var(--stamp)}
 .sub b{color:var(--ink);font-weight:500}
 
 /* ---------- sections ---------- */
-section{border-top:1px solid var(--rule);margin-top:54px;padding-top:26px}
+section{border-top:1px solid var(--rule);margin-top:48px;padding-top:24px}
 .eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin:0 0 16px}
-h2{font:600 28px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin:0 0 14px}
+h2{font:600 27px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;
   margin:0 0 14px;text-wrap:balance}
 h3{font:600 17px/1.3 "IBM Plex Serif",Georgia,serif;margin:0 0 8px;color:var(--ink)}
 p{margin:0 0 14px;max-width:66ch}
@@ -117,7 +117,7 @@ p:last-child{margin-bottom:0}
 .due{color:var(--stamp)}
 
 footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;
-  font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);
+  font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-2);
   max-width:74ch}
 footer b{color:var(--ink-2);font-weight:500}
 
@@ -127,10 +127,11 @@ footer b{color:var(--ink-2);font-weight:500}
   .spec pre{font-size:11.5px}
 }
 .adslot{max-width:800px;margin:44px auto 0;padding-top:12px;border-top:1px solid var(--rule-soft);display:none}.adslot .lab{font:400 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}html[data-ads="on"] .adslot{display:block}
+nav.sitenav{display:block;padding:18px 300px 0 0;font:500 11.5px/1.9 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}nav.sitenav a{text-decoration:none;color:var(--ink)}
 </style>
 
 <div class="wrap">
-
+<nav class="sitenav"><a href="/about/">About</a> &nbsp;·&nbsp; <a href="/methodology/">Methodology</a> &nbsp;·&nbsp; <a href="/definitions/">Definitions</a> &nbsp;·&nbsp; <a href="/archive/">Archive</a> &nbsp;·&nbsp; <a href="/writing/">The&nbsp;Bench</a> &nbsp;·&nbsp; <a href="/independence/">Independence</a> &nbsp;·&nbsp; <a href="/corrections/">Corrections</a></nav>
 <header class="top">
   <h1 class="mast">The&nbsp;STAMP<br>Protocol</h1>
   <!-- The mark, exact. Two bounds and a measured position standing between them;
@@ -147,11 +148,12 @@ footer b{color:var(--ink-2);font-weight:500}
 </header>
 <div class="rule"></div>
 <div class="strap">
-  <span>Independent · Albuquerque, New Mexico</span>
+  <span><a href="/independence/" style="color:inherit;text-decoration:none">Independent · No vendor funding, no sponsors</a> · Albuquerque</span>
   <span class="now">Issues on alternate Saturdays · The Bench on Sundays and Wednesdays</span>
 </div>
+<p class="note" style="margin:14px 0 0">New here: <a href="/definitions/">what a rate is</a>, then <a href="/methodology/">how one is produced</a>, then <a href="/calibration/001-issued-sun20260830/">the issue of record</a>.</p>
 
-<p class="tag">An AI that shows its <b>receipts</b>.</p>
+<p class="tag">A protocol that shows its <b>receipts</b>, and a program that checks it.</p>
 <p class="sub"><b>STAMP is an instruction layer.</b> It makes a model emit one short line
 when it has stated something it cannot stand behind — naming the weak claim, where the
 claim came from, and one step you can take to check it. Most turns end without a line,
@@ -174,8 +176,8 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
 
   <div class="spec"><pre><span class="q">Q:</span> What's the rate limit on the Contoso Ledger API v4?
 <span class="a">A:</span> I don't have a documented figure for Contoso Ledger v4. Their API docs
-   list per-key limits under &ldquo;Quotas&rdquo; — paste that page and I'll read the exact number.
-<span class="r">[weak: no rate-limit figure for Contoso Ledger v4 | basis: recalled | check: vendor docs &ldquo;Quotas&rdquo;]</span></pre></div>
+   list per-key limits under “Quotas” — paste that page and I'll read the exact number.
+<span class="r">[weak: no rate-limit figure for Contoso Ledger v4 | basis: recalled | check: vendor docs “Quotas”]</span></pre></div>
   <p class="cap">The gate fires on an unverifiable specific. <code>basis</code> is exactly
   one of four words: given, computed, recalled, inferred.</p>
 
@@ -191,7 +193,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
 <section>
   <p class="eyebrow">Coming</p>
   <h2>The protocol itself is being published</h2>
-  <p><b>STAMP v1.70</b> is about 620 tokens — a 90% cut from v1.69's 6,121 — and it is a
+  <p><b>STAMP v1.70</b> is about 620 tokens — a 90% cut from v1.69’s 6,121 — and it is a
   document you will be able to read in full, paste into a system prompt, and argue with.
   Not a description of a method: the method. It ships here shortly, with the changelog
   that says what was deleted and why each cut field was a liability rather than a loss.</p>
@@ -203,15 +205,15 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
 <section>
   <p class="eyebrow">The program</p>
   <h2>We set out to measure the protocol, and the instruments would not carry it</h2>
-  <p>The plan was two arms of the same run — one with STAMP's prompt, one without — and a
+  <p>The plan was two arms of the same run — one with STAMP’s prompt, one without — and a
   clean read on the difference. The first complete measurement round could not deliver that,
-  and the reason became the program's second subject.</p>
+  and the reason became the program’s second subject.</p>
 
   <div class="facts">
     <div class="fact">
-      <span class="n">89%</span>
-      <span class="t">of responses <b>differed between two identical runs</b> at
-      temperature 0 — same model, same prompts, same pinned provider.
+      <span class="n">56<span style="font-size:.62em"> of 63</span></span>
+      <span class="t">responses — 89% — <b>differed between two identical runs</b> at
+      temperature 0: same model, same prompts, same pinned provider.
       <span class="src">Calibration Vol 001 · Finding 01</span></span>
     </div>
     <div class="fact">
@@ -224,10 +226,11 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
       <span class="n">5 of 6</span>
       <span class="t">findings in the first issue turned out to be <b>about instruments
       rather than models</b>. Finding 02 says the arm comparison
-      &ldquo;cannot be published as it stands.&rdquo;
+      “cannot be published as it stands.”
       <span class="src">Calibration Vol 001</span></span>
     </div>
   </div>
+  <p class="note" style="margin-top:16px">The three numbers above are read out of Vol 001’s prose rather than cited from <a href="/figures.json">figures.json</a>: the divergence count, the 4.1-point leniency and the six-finding tally are not yet registered figures. They can be checked against the issue, which is byte-frozen; they cannot yet be checked against a file. Registering them is queued, and this note comes down when they are.</p>
 
   <p style="margin-top:22px">So the instruments come first. <b>A measurement of a model is
   a measurement of the instrument until the instrument is characterized.</b> The protocol
@@ -245,7 +248,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
       <p>Models run against a fixed bank of 63 items under recorded conditions, and every
       rate is published with its interval and its conditions attached — which grader, which
       serving provider, which temperature, which bank version, how many draws. A rate is a
-      property of a model <em>measured a particular way</em>, never of a model.</p>
+      property of a model <em>measured a particular way</em>, never of a model alone.</p>
     </div>
     <div>
       <h3>An Instrument Maker</h3>
@@ -266,15 +269,19 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
     <div class="fact">
       <span class="n">105</span>
       <span class="t"><b>source fingerprints.</b> Every citable figure is registered with
-      the SHA-256 of the files it was computed from — 45 figures, 105 sources, all
-      verified. The registry is downloadable, so you can check any number yourself.
+      the SHA-256 of the files it was computed from — 45 figures, 105 references
+      across 13 run files. The registry is downloadable and internally checkable. The run
+      files themselves are not published yet, so their digests cannot be recomputed off
+      this site; that is a real gap, and it is stated here rather than implied away.
       <span class="src">figures.json</span></span>
     </div>
     <div class="fact">
       <span class="n">32</span>
       <span class="t"><b>pages, each carrying its build fingerprint.</b> The foot of every
-      numbered page prints the first twelve hex characters of the SHA-256 of the issue's
-      own source. Hash the published file and compare.
+      numbered page prints the first twelve hex characters of the SHA-256 of the issue’s
+      frozen source file — not of the reading page, which is a wrapper around it. Run
+      <code>curl -s https://thestampprotocol.com/calibration/001-issued-sun20260830/source | sha256sum</code>
+      and compare the first twelve characters.
       <span class="src">Calibration Vol 001 · build be2bc9d7ca35</span></span>
     </div>
     <div class="fact">
@@ -326,7 +333,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
     <span class="meta">Wed 2 Sep 2026 · A model guesses when your question looks like it wants help, and hedges when it looks like it might cause harm. Both are about how it is marked.</span>
   </div>
   <div class="issue">
-    <span class="name"><a href="/writing/abstention/" style="text-decoration:none;color:inherit">Why &ldquo;I don&rsquo;t know&rdquo; can be a lie</a></span>
+    <span class="name"><a href="/writing/abstention/" style="text-decoration:none;color:inherit">Why “I don’t know” can be a lie</a></span>
     <span class="links"><a href="/writing/abstention/">Read</a></span>
     <span class="meta">Wed 2 Sep 2026 · The case for treating abstention as a symmetric failure, and what it costs to guard only one side.</span>
   </div>
@@ -349,12 +356,12 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
   </div>
   <div class="issue pending">
     <span class="name">The Log Vol 001</span>
-    <span class="links due">Due Sat 5 Sep</span>
+    <span class="links due">Due Sat 5 September 2026</span>
     <span class="meta">What ran, what it cost, what moved since the last issue</span>
   </div>
   <div class="issue pending">
     <span class="name">The Calibration Vol 002</span>
-    <span class="links due">Due Sat 12 Sep</span>
+    <span class="links due">Due Sat 12 September 2026</span>
     <span class="meta">The Gemini re-grade of both arms, and the judging panel on Luna</span>
   </div>
   <div class="issue pending">
@@ -378,7 +385,7 @@ works, on a fixed calendar, publishing its own errors as findings.</p>
   <br>
   Corrections are findings, and are published like findings.<br>
   <br>
-  Follow the studio: <a href="https://bud.day">bud.day</a> — every account is Budday Budderson, and the publication is what it posts.<br>
+  Follow the studio: <a href="https://bud.day">bud.day</a> — every account is Budday Budderson; the accounts distribute what the publication issues and never speak for it.<br>
   <a href="/about/">About</a> · <a href="/colophon/">Colophon</a> · <a href="/archive/">Archive of issues</a> · <a href="/figures.json">figures.json</a>, the figure registry · <a href="/protocol/v1.25/">STAMP v1.25</a>, the protocol as published before this program
 <br><br><a href="/methodology/">Methodology</a> · <a href="/definitions/">Definitions</a> · <a href="/independence/">Independence</a> · <a href="/corrections/">Corrections</a> · <a href="/subscribe/">Subscribe</a> · <a href="/feed.xml">RSS</a> · <a href="/data/bank_v1_public.jsonl">Public bank</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></footer>
 
