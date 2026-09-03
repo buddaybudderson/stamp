@@ -39,3 +39,22 @@
     }
   });
 })();
+
+/* ADVERTISING. One slot, home page and The Bench essays only, never on an issue.
+   Empty string = nothing loads, the slot stays hidden, no Google code on the page.
+   Fill in after AdSense approval: ADS_CLIENT="ca-pub-XXXXXXXXXXXXXXXX". The loader
+   runs only on pages that contain a slot, so issue pages cannot pick it up by accident. */
+var ADS_CLIENT = "";
+(function(){
+  if(!ADS_CLIENT) return;
+  window.addEventListener("DOMContentLoaded",function(){
+    var ins=document.querySelector("ins.adsbygoogle"); if(!ins) return;
+    if(location.pathname.indexOf("/calibration/")===0||location.pathname.indexOf("/log/")===0) return;
+    ins.setAttribute("data-ad-client",ADS_CLIENT);
+    document.documentElement.setAttribute("data-ads","on");
+    var s=document.createElement("script"); s.async=true; s.crossOrigin="anonymous";
+    s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+ADS_CLIENT;
+    document.head.appendChild(s);
+    s.onload=function(){ (window.adsbygoogle=window.adsbygoogle||[]).push({}); };
+  });
+})();

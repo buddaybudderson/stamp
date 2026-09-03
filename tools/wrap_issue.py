@@ -45,7 +45,7 @@ def display(kind, no, date):
     return f"{KINDS[kind]} Vol {no:03d} · {DAYS[date.weekday()].title()}{date:%Y%m%d}"
 
 
-def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note):
+def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year):
     head = f'''<!doctype html>
 <html lang="en" data-pin="{pin}">
 <head>
@@ -70,6 +70,7 @@ def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note):
 <nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/archive/" style="color:var(--stamp);text-decoration:none">Archive</a></nav>
 '''.encode()
     foot = f'''<p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Source of this page, byte-exact: <a href="{src_href}" style="color:var(--stamp)">{src_href.rsplit('/',2)[-2]}/source</a> &middot; sha256 {sha(frag)[:12]}&hellip; &middot; {len(frag):,} bytes &middot; <a href="{pdf_href}" style="color:var(--stamp)">PDF{pages_note}</a></p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: The STAMP Protocol. <i>{title}</i>. Budday Budderson Studio LLC, {year}. {canon} &middot; build {sha(frag)[:12]}. See <a href="/definitions/#cite" style="color:var(--stamp)">Definitions</a> for the form.</p>
 </body>
 </html>
 '''.encode()
@@ -123,7 +124,7 @@ def main():
                 "calibration": "The dated record of what was measured, written and signed by a person."}[kind]
         title = name
         pin = FINISH[day]
-        wrapped = shell(title, desc, canon, pin, frag, f"/{kind}/{short}.pdf", f"/{kind}/{short}/source", "")
+        wrapped = shell(title, desc, canon, pin, frag, f"/{kind}/{short}.pdf", f"/{kind}/{short}/source", "", date.year)
         (out / "index.html").write_bytes(wrapped)
         assert frag in (out / "index.html").read_bytes() and sha((out / "source.html").read_bytes()) == sha(frag)
         # flip the pending rows
@@ -140,6 +141,18 @@ def main():
         if canon not in t:
             t = t.replace("</urlset>", f"<url><loc>{canon}</loc><lastmod>{date.isoformat()}</lastmod></url>\n</urlset>")
             sm.write_text(t, encoding="utf-8")
+        # RSS: one item at the top of the channel
+        fx = DOCS / "feed.xml"
+        if fx.exists():
+            f = fx.read_text(encoding="utf-8")
+            if canon not in f:
+                pub = dt.datetime.combine(date, dt.time(15, 37)).strftime("%a, %d %b %Y %H:%M:%S -0500")
+                esc = lambda x: x.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                item = (f"<item>\n<title>{esc(name)}</title>\n<link>{canon}</link>\n<guid isPermaLink=\"true\">{canon}</guid>\n"
+                        f"<pubDate>{pub}</pubDate>\n<description>{esc(desc)} Build {sha(frag)[:12]}.</description>\n</item>\n")
+                f = re.sub(r"<lastBuildDate>[^<]*</lastBuildDate>", f"<lastBuildDate>{pub}</lastBuildDate>", f, count=1)
+                f = f.replace("<item>", item + "<item>", 1) if "<item>" in f else f.replace("</channel>", item + "</channel>", 1)
+                fx.write_text(f, encoding="utf-8")
         html.unlink(); pdf.unlink()
         released += 1
     print(f"{released} issue(s) released" if not a.check else "check only, nothing written")

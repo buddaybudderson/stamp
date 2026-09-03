@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The STAMP Protocol</title>
+<link>https://thestampprotocol.com/</link>
+<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays.</description>
+<language>en-us</language>
+<atom:link href="https://thestampprotocol.com/feed.xml" rel="self" type="application/rss+xml"/>
+<managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
+<lastBuildDate>Thu, 03 Sep 2026 07:37:00 -0500</lastBuildDate>
+<item>
+<title>Stop marking it like a student</title>
+<link>https://thestampprotocol.com/writing/marking/</link>
+<guid isPermaLink="true">https://thestampprotocol.com/writing/marking/</guid>
+<pubDate>Wed, 02 Sep 2026 07:37:00 -0500</pubDate>
+<description>A model guesses when your question looks like it wants help, and hedges when it looks like it might cause harm. Neither behavior is about what the model knows. Both are about how it is marked.</description>
+</item>
+<item>
+<title>Why "I don't know" can be a lie</title>
+<link>https://thestampprotocol.com/writing/abstention/</link>
+<guid isPermaLink="true">https://thestampprotocol.com/writing/abstention/</guid>
+<pubDate>Wed, 02 Sep 2026 07:37:00 -0500</pubDate>
+<description>Most prompt hygiene guards against invention and stops there. The case for treating abstention as a symmetric failure, and what it costs to guard only one side.</description>
+</item>
+<item>
+<title>The Calibration Vol 001 · Sun20260830</title>
+<link>https://thestampprotocol.com/calibration/001-issued-sun20260830/</link>
+<guid isPermaLink="true">https://thestampprotocol.com/calibration/001-issued-sun20260830/</guid>
+<pubDate>Sun, 30 Aug 2026 15:37:00 -0500</pubDate>
+<description>The dated record of what was measured: 32 pages, six findings, build be2bc9d7ca35. Written and signed by a person.</description>
+</item>
+</channel>
+</rss>

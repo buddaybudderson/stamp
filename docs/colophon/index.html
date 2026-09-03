@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://thestampprotocol.com/colophon/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="The STAMP Protocol"><meta property="og:title" content="Colophon · The STAMP Protocol"><meta property="og:description" content="How this site was made and why it looks the way it does."><meta property="og:url" content="https://thestampprotocol.com/colophon/"><meta property="og:image" content="https://thestampprotocol.com/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The STAMP Protocol" href="/feed.xml">
 <link rel="stylesheet" href="/finish.css">
 <script src="/finish.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -180,7 +181,7 @@ pre{background:var(--sunk);border-left:3px solid var(--stamp);border-radius:0 4p
 <pre>curl -s https://thestampprotocol.com/calibration/001-issued-sun20260830/source | sha256sum
 # be2bc9d7ca35…   100,707 bytes   — the fingerprint printed on every page of the PDF</pre>
   <p style="margin-top:14px"><b>How issues are named.</b> <i>The Calibration Vol 001 · Sun20260830</i>: the volume number, then the weekday and date it was issued, so a citation carries its own date and a name whose weekday disagrees with its date is refused by the naming gate before anything ships. The Log Vol 001 · Sat20260905, The Calibration Vol 002 · Sat20260912, The Log Vol 002 · Sat20260919, and so on. Vol 001's own cover reads the older form, <i>The Calibration 001 · ISSUED SUN20260830</i>, because that file is frozen; the site refers to it by the new one.</p>
-<p style="margin-top:14px">To keep that true, the site is <b>served exactly as written</b>: no analytics, no cookies, no tracking beacon, no script injected at the edge, no minifier, no email obfuscation. On launch day a default analytics beacon added 359 bytes to every HTML page and broke the fingerprint for three hours; the fix is recorded, and checking the byte length is now part of every release. A correction here is a finding, and is published like a finding.</p>
+<p style="margin-top:14px">To keep that true, every issue is <b>served exactly as written</b>: no analytics, no cookies, no tracking beacon, no script injected at the edge, no minifier, no email obfuscation. The home page and The Bench carry one advertising slot each, below the content, and it loads only after Google has approved the site; an issue never carries one, because an issue's bytes are its fingerprint. On launch day a default analytics beacon added 359 bytes to every HTML page and broke the fingerprint for three hours; the fix is recorded, and checking the byte length is now part of every release. A correction here is a finding, and is published like a finding.</p>
 </section>
 
 <section>
@@ -189,7 +190,7 @@ pre{background:var(--sunk);border-left:3px solid var(--stamp);border-radius:0 4p
   <p>Static HTML in a public repository, deployed on every commit. No framework, no bundler, no cookie banner because there is nothing to consent to. The day/night switch in the top corner stores one word in your own browser and nothing leaves it. Findings are produced with AI assistance throughout; this page, like every page, was written and signed off by a person — see <a href="/about/">About</a> for who does what, and what each may not do at all.</p>
 </section>
 
-<footer><b>The STAMP Protocol</b> · Colophon · A Budday Budderson Production<br>Published by Budday Budderson Studio LLC, Albuquerque, New Mexico<br>Lawrence Ho, Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a></footer>
+<footer><b>The STAMP Protocol</b> · Colophon · A Budday Budderson Production<br>Published by Budday Budderson Studio LLC, Albuquerque, New Mexico<br>Lawrence Ho, Chief Human Investigator, Evaluation Administrator &amp; Instrument Maker · <a href="mailto:s@bud.day">s@bud.day</a><br><br><a href="/methodology/">Methodology</a> · <a href="/definitions/">Definitions</a> · <a href="/independence/">Independence</a> · <a href="/corrections/">Corrections</a> · <a href="/subscribe/">Subscribe</a> · <a href="/feed.xml">RSS</a> · <a href="/data/bank_v1_public.jsonl">Public bank</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></footer>
 </div>
 <script>
 (function(){
