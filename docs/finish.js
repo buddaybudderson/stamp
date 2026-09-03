@@ -27,5 +27,15 @@
     b.addEventListener("click",function(){ var n=r.getAttribute("data-mode")==="night"?"day":"night";
       try{ localStorage.setItem("stamp-mode",n); }catch(e){} apply(n); });
     document.body.appendChild(b); apply(r.getAttribute("data-mode"));
+    // The playground pill: sits left of the switch, sends a first-time reader to the one page
+    // where the day may be changed. Not shown on the Colophon, which is that page.
+    if(location.pathname.indexOf("/colophon")!==0){
+      var a=document.createElement("a"); a.className="playlink"; a.href="/colophon/#playground";
+      a.setAttribute("aria-label","Playground: see all seven finishes");
+      a.innerHTML='<span class="seven" aria-hidden="true">'+["#E4EDF6","#F4E3E3","#E4EDE3","#EBE3F5","#F7E7D8","#E6E9ED","#F8EED3"].map(function(c){return '<i style="background:'+c+'"></i>'}).join("")+'</span><span class="txt">Playground</span>';
+      document.body.appendChild(a);
+      // place the switch to the left of the pill once both are laid out
+      requestAnimationFrame(function(){ b.style.right=(a.offsetWidth+22)+"px"; });
+    }
   });
 })();
