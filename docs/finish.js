@@ -1,5 +1,5 @@
 /* THE FINISH IS THE DAY, AND THE DAY IS CHICAGO'S. Runs in <head>, before first
-   paint, so the page never flashes the wrong colour. A page may pin its finish with
+   paint, so the page never flashes the wrong color. A page may pin its finish with
    <html data-pin="sun">: an issue wears the day it was issued, not the day it is read.
    The switch sets data-mode (day/night) AND data-theme (light/dark): the frozen issue
    pages read data-theme, everything else reads data-mode. The choice is remembered. */
