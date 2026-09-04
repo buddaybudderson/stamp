@@ -8,9 +8,8 @@ rather than guesses if a page does not have the shape it expects.
 """
 import sys, pathlib
 
-DISC = ('This program can be wrong, and has been. Every figure names the file it came from; '
-        'check one before you act on it, and see <a href="/corrections/">Corrections &amp; changes</a> '
-        'for what we have already got wrong.')
+DISC = ('The STAMP Protocol can make mistakes. Verify before you implement anything. '
+        'What we have already got wrong is in <a href="/corrections/">Corrections &amp; changes</a>.')
 NAV = '<a href="/methodology/">Methodology</a>'
 NOTSTAMP = '  Not the only STAMP — <a href="/other-stamps/">see who else uses the name</a>.<br>\n'
 
@@ -21,8 +20,8 @@ HOME_NOTE = ('  <p class="note" style="margin-top:16px"><b>A receipt is not a wa
 HOME_ANCHOR = ('  defect labels.</p>\n')
 
 TERMS_ANCHOR = '<section><p class="eyebrow">Use</p><h2>What you may do with this</h2>'
-TERMS_SECTION = """<section><p class="eyebrow">Fallibility</p><h2>This program can be wrong, and has been</h2>
-<p>Every part of this is capable of error, and the parts are worth separating because they fail differently.</p>
+TERMS_SECTION = """<section><p class="eyebrow">Fallibility</p><h2>The STAMP Protocol can make mistakes</h2>
+<p>It can be wrong, and has been. Every part of it is capable of error, and the parts are worth separating because they fail differently.</p>
 <p><b>A model running the protocol can be wrong.</b> The receipt line says the model could not stand behind a
 particular claim. Its absence does not certify the rest. A model can state something false in a sentence that
 carries no line at all, and the protocol makes that outcome less frequent rather than impossible. Nothing here

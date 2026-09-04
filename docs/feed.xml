@@ -3,7 +3,7 @@
 <channel>
 <title>The STAMP Protocol</title>
 <link>https://thestampprotocol.com/</link>
-<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays. This program can be wrong, and has been; every figure names the file it came from, and corrections are published at https://thestampprotocol.com/corrections/ under their own date.</description>
+<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays. The STAMP Protocol can make mistakes; verify before you implement anything, and see https://thestampprotocol.com/corrections/ for what we have already got wrong.</description>
 <language>en-us</language>
 <atom:link href="https://thestampprotocol.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
