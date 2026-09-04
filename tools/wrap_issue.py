@@ -37,6 +37,13 @@ FINISH = {"mon": "moon", "tue": "mars", "wed": "mercury", "thu": "jupiter",
           "fri": "venus", "sat": "saturn", "sun": "sun"}
 SLUG_RE = re.compile(r"^(calibration|log)-(\d{3})-issued-([a-z]{3})(\d{8})$")
 
+# THE DATELINE MOVES. A dateline names where the work was done, and this programme is run from
+# wherever its investigator happens to be that Saturday. Write the place into
+#     stage/<kind>/<slug>.dateline
+# as a single line -- "City, Region, Country" -- before staging. The release workflow runs on GitHub's
+# servers and cannot know where you are, so a missing file falls back to HOME and says so loudly.
+DATELINE_HOME = "Houston, Texas, USA"
+
 
 def sha(b): return hashlib.sha256(b).hexdigest()
 
@@ -45,7 +52,7 @@ def display(kind, no, date):
     return f"{KINDS[kind]} Vol {no:03d} · {DAYS[date.weekday()].title()}{date:%Y%m%d}"
 
 
-def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year):
+def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year, dateline, date):
     head = f'''<!doctype html>
 <html lang="en" data-pin="{pin}">
 <head>
@@ -70,6 +77,7 @@ def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year):
 <nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/archive/" style="color:var(--stamp);text-decoration:none">Archive</a></nav>
 '''.encode()
     foot = f'''<p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Source of this page, byte-exact: <a href="{src_href}" style="color:var(--stamp)">{src_href.rsplit('/',2)[-2]}/source</a> &middot; sha256 {sha(frag)[:12]}&hellip; &middot; {len(frag):,} bytes &middot; <a href="{pdf_href}" style="color:var(--stamp)">PDF{pages_note}</a></p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Issued from {dateline} at 15:37 America/Chicago on {date:%A %-d %B %Y}. The dateline names where the work was done; it moves with the investigator, and each issue keeps its own.</p>
 <p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: The STAMP Protocol. <i>{title}</i>. Budday Budderson Studio LLC, {year}. {canon} &middot; build {sha(frag)[:12]}. See <a href="/definitions/#cite" style="color:var(--stamp)">Definitions</a> for the form.</p>
 </body>
 </html>
@@ -110,10 +118,19 @@ def main():
         pdf = html.with_suffix(".pdf")
         if not pdf.exists():
             print(f"REFUSED {slug}: no PDF beside it"); return 1
+        dl_file = html.with_suffix(".dateline")
+        if dl_file.exists():
+            dateline = dl_file.read_text(encoding="utf-8").strip()
+            if not dateline:
+                print(f"REFUSED {slug}: {dl_file.name} is empty. Write the place, or delete the file to use {DATELINE_HOME}."); return 1
+        else:
+            dateline = DATELINE_HOME
+            print(f"  NOTE  no {dl_file.name}; using the home dateline {DATELINE_HOME}")
         frag = html.read_bytes()
         short = slug[len(kind) + 1:]                      # 001-issued-sat20260905
         name = display(kind, no, date)
         print(f"{'would release' if a.check else 'releasing'}  {name}   {slug}  sha {sha(frag)[:12]}  {len(frag):,} bytes")
+        print(f"        dateline: {dateline}")
         if a.check:
             continue
         out = DOCS / kind / short; out.mkdir(parents=True, exist_ok=True)
@@ -124,12 +141,12 @@ def main():
                 "calibration": "The dated record of what was measured, written and signed by a person."}[kind]
         title = name
         pin = FINISH[day]
-        wrapped = shell(title, desc, canon, pin, frag, f"/{kind}/{short}.pdf", f"/{kind}/{short}/source", "", date.year)
+        wrapped = shell(title, desc, canon, pin, frag, f"/{kind}/{short}.pdf", f"/{kind}/{short}/source", "", date.year, dateline, date)
         (out / "index.html").write_bytes(wrapped)
         assert frag in (out / "index.html").read_bytes() and sha((out / "source.html").read_bytes()) == sha(frag)
         # flip the pending rows
         links = f'<a href="/{kind}/{short}/">Read</a> · <a href="/{kind}/{short}.pdf">PDF</a> · <a href="/{kind}/{short}/source">Source</a>'
-        meta = f"Issued {date:%a %-d %B %Y} · build {sha(frag)[:12]}"
+        meta = f"Issued {date:%a %-d %B %Y} from {dateline.split(',')[0].strip()} · build {sha(frag)[:12]}"
         for page in ("index.html", "archive/index.html"):
             p = DOCS / page; s = p.read_text(encoding="utf-8")
             s2, n = flip_rows(s, name, links, meta)
@@ -154,6 +171,7 @@ def main():
                 f = f.replace("<item>", item + "<item>", 1) if "<item>" in f else f.replace("</channel>", item + "</channel>", 1)
                 fx.write_text(f, encoding="utf-8")
         html.unlink(); pdf.unlink()
+        if dl_file.exists(): dl_file.unlink()
         released += 1
     print(f"{released} issue(s) released" if not a.check else "check only, nothing written")
     return 0
