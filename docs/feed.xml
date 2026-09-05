@@ -7,7 +7,14 @@
 <language>en-us</language>
 <atom:link href="https://thestampprotocol.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Thu, 03 Sep 2026 07:37:00 -0500</lastBuildDate>
+<lastBuildDate>Sat, 05 Sep 2026 15:37:00 -0500</lastBuildDate>
+<item>
+<title>The Log Vol 001 · Sat20260905</title>
+<link>https://thestampprotocol.com/log/001-issued-sat20260905/</link>
+<guid isPermaLink="true">https://thestampprotocol.com/log/001-issued-sat20260905/</guid>
+<pubDate>Sat, 05 Sep 2026 15:37:00 -0500</pubDate>
+<description>What ran, what it cost and what moved - the derived record, written by the harness. Build db2d0f899034.</description>
+</item>
 <item>
 <title>Stop marking it like a student</title>
 <link>https://thestampprotocol.com/writing/marking/</link>
