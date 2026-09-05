@@ -1,12 +1,19 @@
 name: Release at 15:37 Chicago
 
-# Everything ships on Saturdays at 15:37 America/Chicago. Cron is UTC and Central Time
-# moves, so two crons fire and the job decides which one is really 15:37 local -
-# the same trick scripts/publish_gate.py uses. Only one of the two can pass the check.
+# Everything ships on Saturdays at 15:37 America/Chicago. Cron is UTC and Central Time moves,
+# so two crons fire and the job works out which one is really the release.
+#
+# WHY THIS IS NOT A NARROW WINDOW ANY MORE. It was, once: "release only between 15:37 and
+# 16:26 local". On Saturday 5 September 2026 GitHub started the 20:37 UTC run at 22:15 UTC -
+# 98 minutes late - the check said "not the release window (6 17:15)", every step was skipped,
+# and the job reported SUCCESS while publishing nothing. GitHub's scheduled runs are
+# best-effort and queue behind load; an hour of drift is ordinary. So the rule is now the one
+# that is actually true: on a Saturday, once 15:37 has passed, release whatever is staged.
+# A late release is a late release, and the issue's own foot prints the minute it really ran.
 on:
   schedule:
-    - cron: "37 20 * * 6"   # 15:37 CDT
-    - cron: "37 21 * * 6"   # 15:37 CST
+    - cron: "37 20 * * 6"   # 15:37 CDT / 14:37 CST
+    - cron: "37 21 * * 6"   # 16:37 CDT / 15:37 CST
   workflow_dispatch:
     inputs:
       force:
@@ -22,29 +29,65 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Is it Saturday 15:37 in Chicago?
+      - name: Is anything staged?
+        id: staged
+        run: |
+          if ls stage/*/*.html >/dev/null 2>&1; then
+            echo "stage/ holds:"; ls stage/*/*.html
+            echo "any=1" >> $GITHUB_OUTPUT
+          else
+            echo "stage/ is empty"; echo "any=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Is it past 15:37 on a Saturday in Chicago?
         id: clock
         run: |
           now=$(TZ=America/Chicago date +"%u %H:%M")
-          echo "chicago=$now"
           dow=${now%% *}; hm=${now##* }
-          if [ "${{ github.event.inputs.force }}" = "YES" ]; then echo "go=1" >> $GITHUB_OUTPUT; exit 0; fi
-          # Saturday, and between 15:37 and 16:26 local (the late firing is the other cron)
-          if [ "$dow" = "6" ] && [ "$hm" \> "15:36" ] && [ "$hm" \< "16:27" ]; then
-            echo "go=1" >> $GITHUB_OUTPUT
+          echo "chicago=$now"
+          if [ "${{ github.event.inputs.force }}" = "YES" ]; then
+            echo "forced by hand"; echo "go=1" >> $GITHUB_OUTPUT; echo "alarm=0" >> $GITHUB_OUTPUT; exit 0
+          fi
+          if [ "$dow" = "6" ] && [ "$hm" \> "15:36" ]; then
+            echo "Saturday, past 15:37 - releasing"
+            echo "go=1" >> $GITHUB_OUTPUT; echo "alarm=0" >> $GITHUB_OUTPUT
+          elif [ "$dow" = "6" ]; then
+            echo "Saturday but only $hm - too early; the later cron covers this"
+            echo "go=0" >> $GITHUB_OUTPUT; echo "alarm=0" >> $GITHUB_OUTPUT
           else
-            echo "not the release window ($now) - nothing to do"; echo "go=0" >> $GITHUB_OUTPUT
+            echo "not Saturday at all ($now)"
+            echo "go=0" >> $GITHUB_OUTPUT; echo "alarm=1" >> $GITHUB_OUTPUT
           fi
 
-      - name: Anything staged?
-        if: steps.clock.outputs.go == '1'
-        id: staged
+      # THE GATE THAT WAS MISSING. An issue sitting in stage/ that this job declines to
+      # release is not a quiet no-op, it is a missed publication - so it fails the run and
+      # sends the notification. A release job that can do nothing and still go green is not
+      # a gate.
+      - name: Refuse to pass while an issue is stranded in stage/
+        if: steps.staged.outputs.any == '1' && steps.clock.outputs.alarm == '1'
         run: |
-          if ls stage/*/*.html >/dev/null 2>&1; then echo "any=1" >> $GITHUB_OUTPUT; else echo "stage/ is empty"; echo "any=0" >> $GITHUB_OUTPUT; fi
+          echo "::error::An issue is staged and the release did not run. The scheduled job"
+          echo "::error::has drifted out of Saturday entirely. Release it by hand:"
+          echo "::error::  Actions -> Release at 15:37 Chicago -> Run workflow -> force: YES"
+          exit 1
 
       - name: Release staged issues into docs/
         if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
         run: python3 tools/wrap_issue.py
+
+      # The release said it worked; check that it did. wrap_issue.py deletes each file from
+      # stage/ as it publishes it, so anything still there was not released.
+      - name: Did it actually publish?
+        if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
+        run: |
+          if ls stage/*/*.html >/dev/null 2>&1; then
+            echo "::error::wrap_issue.py exited 0 but files are still in stage/:"; ls stage/*/*.html
+            exit 1
+          fi
+          if ! ls docs/calibration/*/index.html docs/log/*/index.html >/dev/null 2>&1; then
+            echo "::error::stage/ was emptied but no issue appeared under docs/"; exit 1
+          fi
+          echo "issue pages present:"; ls -la docs/calibration/*/index.html docs/log/*/index.html
 
       - name: Commit and push
         if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
