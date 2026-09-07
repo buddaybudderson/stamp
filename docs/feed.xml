@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>The STAMP Protocol</title>
+<title>Protocol STAMP</title>
 <link>https://thestampprotocol.com/</link>
-<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays. The STAMP Protocol can make mistakes; verify before you implement anything, and see https://thestampprotocol.com/corrections/ for what we have already got wrong.</description>
+<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays. Protocol STAMP can make mistakes; verify before you implement anything, and see https://thestampprotocol.com/corrections/ for what we have already got wrong.</description>
 <language>en-us</language>
 <atom:link href="https://thestampprotocol.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
