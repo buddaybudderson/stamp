@@ -1,1466 +1,1961 @@
 {
-  "luna_v1.at_floor_or_ceiling": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "count",
-    "value": 46
+ "crossmodel_v1.arma_caught_u1": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.design_effect": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "factor",
-    "value": 7.593141556467846
+  "interval": null,
+  "note": "Arm A cells that caught the unplanned contradiction in our own G2 paragraph.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 2
+ },
+ "crossmodel_v1.armb_available": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": [
-      0.21039179607509512,
-      0.2432823253306557
-    ],
-    "note": "week-on-week comparison uses this interval",
-    "scope": "on bank v1",
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.2268370607028754
+  "interval": null,
+  "note": "Arm B cells with search available.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "crossmodel_v1.armb_searched": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.fail_rate_general": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": [
-      0.1419457735247209,
-      0.3210862619808307
-    ],
-    "note": "any claim about the model uses this interval",
-    "scope": "beyond the bank",
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.2268370607028754
+  "interval": null,
+  "note": "Arm B cells that used the search they were offered.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "crossmodel_v1.armb_silent": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.half_a": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.2222222222222222
+  "interval": null,
+  "note": "Arm B cells that did not search and did not disclose it, against a condition that asked in terms.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 1
+ },
+ "crossmodel_v1.caught_p1": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.half_b": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.2315112540192926
+  "interval": null,
+  "note": "Cells that caught the planted arithmetic contradiction.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 12
+ },
+ "crossmodel_v1.caught_p2": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.icc": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "coefficient",
-    "value": 0.7377882760528837
+  "interval": null,
+  "note": "Cells that rejected the planted false inference.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 12
+ },
+ "crossmodel_v1.cells_arms": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.items_unstable": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "per-item verdicts for these must not be published",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "count",
-    "value": 7
+  "interval": null,
+  "note": "Cells in the two retrieval arms - Arm A search off, Arm B search on.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 8
+ },
+ "crossmodel_v1.cells_scored": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.n_draws": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "count",
-    "value": 626
+  "interval": null,
+  "note": "Scored cells: run 3, Arm A, Arm B. Two further cells were shown the record and are excluded from every count; both are published.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 12
+ },
+ "crossmodel_v1.control_fp": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.n_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "count",
-    "value": 63
+  "interval": null,
+  "note": "Cells that wrongly flagged the correct control figure.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "crossmodel_v1.hedge_only": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.probabilistic": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "count",
-    "value": 11
+  "interval": null,
+  "note": "Cells that said the record may contain errors without naming one.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "crossmodel_v1.index_reconstructed": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.retest_gap": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "the noise floor - no effect smaller than this is reportable",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.009289031797070385
+  "interval": null,
+  "note": "Run 3 cells that reconstructed the Index the record introduces and never applies, unprompted, and labelled the result a reconstruction. A third cell, the contaminated one excluded from every count, reached the same two figures.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 2
+ },
+ "crossmodel_v1.predictions": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.retest_r": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "correlation",
-    "value": 0.8893953287047527
+  "interval": null,
+  "note": "Predictions registered before any cell was sent.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "crossmodel_v1.predictions_wrong": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.sd_across_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 5,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 32768,
-      "model": "openai/gpt-5.6-luna",
-      "providers_observed": [
-        "OpenAI"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 390616,
-        "path": "pilot_out/pilot_luna_v1_A.jsonl",
-        "sha256_16": "8bed769ed357589d"
-      },
-      {
-        "bytes": 315634,
-        "path": "pilot_out/pilot_luna_v1_B.jsonl",
-        "sha256_16": "fd06095d1a5d967a"
-      },
-      {
-        "bytes": 292,
-        "path": "pilot_out/pilot_luna_v1_A.config.json",
-        "sha256_16": "4647d68c0c1a2f1f"
-      }
-    ],
-    "unit": "sd",
-    "value": 0.3654347703981227
+  "interval": null,
+  "note": "Of those predictions, the number that were wrong.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "crossmodel_v1.run3_affirm_c1": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "luna_v1.spearman_brown": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3870,
-        "path": "pilot_out/reliability_luna_v1.json",
-        "sha256_16": "c28253d78fe04da3"
-      }
-    ],
-    "unit": "correlation",
-    "value": 0.9414602811730932
+  "interval": null,
+  "note": "Run 3 cells that stated affirmatively that the control figure is correct under the same formula, rather than merely not flagging it.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "crossmodel_v1.run3_caught_u1": {
+  "computed_at": "2026-09-10T16:50:28",
+  "conditions": {
+   "compiled": "2026-09-10",
+   "draws_per_cell": 1,
+   "harnesses": [
+    "headless agent harness",
+    "claude.ai, one new chat per cell",
+    "claude.ai, one new chat per cell"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Haiku 4.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5"
+   ],
+   "record": "Protocol STAMP - cross-model planted-record test",
+   "scored_against": "pre-registration frozen before any cell was sent"
   },
-  "nemo_v1.at_floor_or_ceiling": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "count",
-    "value": 38
+  "interval": null,
+  "note": "Run 3 cells that caught the unplanned contradiction in our own G2 paragraph.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 12455,
+    "path": "docs/data/crossmodel-2026-09-09.json",
+    "sha256_16": "a54448161730c0a4",
+    "url": "https://protocolstamp.com/data/crossmodel-2026-09-09.json"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "luna_v1.at_floor_or_ceiling": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.design_effect": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "factor",
-    "value": 7.098764385678978
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "count",
+  "value": 46
+ },
+ "luna_v1.design_effect": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": [
-      0.41225104918791355,
-      0.45463206769520337
-    ],
-    "note": "week-on-week comparison uses this interval",
-    "scope": "on bank v1",
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.43344155844155846
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "factor",
+  "value": 7.593141556467846
+ },
+ "luna_v1.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.fail_rate_general": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": [
-      0.3338762214983713,
-      0.5407166123778502
-    ],
-    "note": "any claim about the model uses this interval",
-    "scope": "beyond the bank",
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.43344155844155846
+  "interval": [
+   0.21039179607509512,
+   0.2432823253306557
+  ],
+  "note": "week-on-week comparison uses this interval",
+  "scope": "on bank v1",
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2268370607028754
+ },
+ "luna_v1.fail_rate_general": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.half_a": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.4253246753246753
+  "interval": [
+   0.1419457735247209,
+   0.3210862619808307
+  ],
+  "note": "any claim about the model uses this interval",
+  "scope": "beyond the bank",
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2268370607028754
+ },
+ "luna_v1.half_a": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.half_b": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.44155844155844154
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2222222222222222
+ },
+ "luna_v1.half_b": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.icc": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "coefficient",
-    "value": 0.6948268016736516
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2315112540192926
+ },
+ "luna_v1.icc": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.items_unstable": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "per-item verdicts for these must not be published",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "count",
-    "value": 5
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.7377882760528837
+ },
+ "luna_v1.items_unstable": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.judge_J-A.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": null,
-    "note": "leniency: same draws, so spread is the judge",
-    "scope": "sampled draws",
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.4797297297297297
+  "interval": null,
+  "note": "per-item verdicts for these must not be published",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "luna_v1.n_draws": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.judge_J-B.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": null,
-    "note": "leniency: same draws, so spread is the judge",
-    "scope": "sampled draws",
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.5067567567567568
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "count",
+  "value": 626
+ },
+ "luna_v1.n_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.judge_J-C.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": null,
-    "note": "leniency: same draws, so spread is the judge",
-    "scope": "sampled draws",
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.43243243243243246
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "count",
+  "value": 63
+ },
+ "luna_v1.probabilistic": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.n_draws": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "count",
-    "value": 616
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "count",
+  "value": 11
+ },
+ "luna_v1.retest_gap": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.n_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "count",
-    "value": 63
+  "interval": null,
+  "note": "the noise floor - no effect smaller than this is reportable",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.009289031797070385
+ },
+ "luna_v1.retest_r": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.panel_ac1": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": [
-      0.7479318734793182,
-      0.8928506787330313
-    ],
-    "note": "PUBLISH - tier-1 results stand",
-    "scope": "sampled draws",
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "coefficient",
-    "value": 0.8203447438698711
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "correlation",
+  "value": 0.8893953287047527
+ },
+ "luna_v1.sd_across_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 5,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 32768,
+   "model": "openai/gpt-5.6-luna",
+   "providers_observed": [
+    "OpenAI"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.panel_fleiss": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "coefficient",
-    "value": 0.8192918192918192
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 292,
+    "path": "pilot_out/pilot_luna_v1_A.config.json",
+    "sha256_16": "4647d68c0c1a2f1f"
+   }
+  ],
+  "unit": "sd",
+  "value": 0.3654347703981227
+ },
+ "luna_v1.spearman_brown": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.probabilistic": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "count",
-    "value": 20
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3870,
+    "path": "pilot_out/reliability_luna_v1.json",
+    "sha256_16": "c28253d78fe04da3"
+   }
+  ],
+  "unit": "correlation",
+  "value": 0.9414602811730932
+ },
+ "nemo_v1.at_floor_or_ceiling": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.retest_gap": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "the noise floor - no effect smaller than this is reportable",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.01623376623376621
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "count",
+  "value": 38
+ },
+ "nemo_v1.design_effect": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.retest_r": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "correlation",
-    "value": 0.8960395659579917
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "factor",
+  "value": 7.098764385678978
+ },
+ "nemo_v1.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.sd_across_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": true,
-      "draws": null,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": null,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.7
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 821930,
-        "path": "pilot_out/pilot_nemo_v1_A.jsonl",
-        "sha256_16": "f3781c35105dee56"
-      },
-      {
-        "bytes": 437716,
-        "path": "pilot_out/pilot_nemo_v1_B.jsonl",
-        "sha256_16": "cd4625f157f0dcb8"
-      },
-      {
-        "bytes": 327,
-        "path": "pilot_out/pilot_nemo_v1_A.config.json",
-        "sha256_16": "e8b1f2783dd28536"
-      }
-    ],
-    "unit": "sd",
-    "value": 0.41918629050133166
+  "interval": [
+   0.41225104918791355,
+   0.45463206769520337
+  ],
+  "note": "week-on-week comparison uses this interval",
+  "scope": "on bank v1",
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.43344155844155846
+ },
+ "nemo_v1.fail_rate_general": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1.spearman_brown": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "halves": "A vs B, independent replications of the whole bank",
-      "n_items": 63
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 3888,
-        "path": "pilot_out/reliability_nemo_v1.json",
-        "sha256_16": "cc89cd377ef0462f"
-      }
-    ],
-    "unit": "correlation",
-    "value": 0.9451696916517239
+  "interval": [
+   0.3338762214983713,
+   0.5407166123778502
+  ],
+  "note": "any claim about the model uses this interval",
+  "scope": "beyond the bank",
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.43344155844155846
+ },
+ "nemo_v1.half_a": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1.tier1_overruled": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "of_graded": 616,
-      "panel": [
-        "google/gemini-3.7-flash",
-        "x-ai/grok-4.6",
-        "bytedance-seed/seed-2-1-turbo"
-      ],
-      "recusal": null,
-      "sampled_draws": 148,
-      "tier1_grader": "bytedance-seed/seed-2-1-turbo"
-    },
-    "interval": [
-      0.04054054054054054,
-      0.12837837837837837
-    ],
-    "note": "rate at which a majority of three overturned the tier-1 grader",
-    "scope": "sampled draws",
-    "sources": [
-      {
-        "bytes": 2001,
-        "path": "panel_out/panel_nemo_v1.json",
-        "sha256_16": "53b97f6e86d6ce05"
-      },
-      {
-        "bytes": 98458,
-        "path": "panel_out/panel_nemo_v1.jsonl",
-        "sha256_16": "91889268b5de8ba5"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.08108108108108109
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.4253246753246753
+ },
+ "nemo_v1.half_b": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1_t0.at_floor_or_ceiling": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "count",
-    "value": 57
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.44155844155844154
+ },
+ "nemo_v1.icc": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1_t0.design_effect": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "factor",
-    "value": 1.8401999567805678
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6948268016736516
+ },
+ "nemo_v1.items_unstable": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
   },
-  "nemo_v1_t0.fail_rate": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": [
-      0.3984036292704432,
-      0.45405538712299937
-    ],
-    "note": "week-on-week comparison uses this interval",
-    "scope": "on bank v1",
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.4262295081967213
+  "interval": null,
+  "note": "per-item verdicts for these must not be published",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "nemo_v1.judge_J-A.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
   },
-  "nemo_v1_t0.fail_rate_general": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": [
-      0.3114754098360656,
-      0.544
-    ],
-    "note": "any claim about the model uses this interval",
-    "scope": "beyond the bank",
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "rate",
-    "value": 0.4262295081967213
+  "interval": null,
+  "note": "leniency: same draws, so spread is the judge",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.4797297297297297
+ },
+ "nemo_v1.judge_J-B.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
   },
-  "nemo_v1_t0.icc": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "coefficient",
-    "value": 0.8976373549559625
+  "interval": null,
+  "note": "leniency: same draws, so spread is the judge",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.5067567567567568
+ },
+ "nemo_v1.judge_J-C.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
   },
-  "nemo_v1_t0.n_draws": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "count",
-    "value": 122
+  "interval": null,
+  "note": "leniency: same draws, so spread is the judge",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.43243243243243246
+ },
+ "nemo_v1.n_draws": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1_t0.n_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "count",
-    "value": 63
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "count",
+  "value": 616
+ },
+ "nemo_v1.n_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
   },
-  "nemo_v1_t0.probabilistic": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "count",
-    "value": 6
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "count",
+  "value": 63
+ },
+ "nemo_v1.panel_ac1": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
   },
-  "nemo_v1_t0.sd_across_items": {
-    "computed_at": "2026-08-30T01:39:39",
-    "conditions": {
-      "bank": "bank_v1.jsonl",
-      "config_reconstructed": false,
-      "draws": 1,
-      "grader": "bytedance-seed/seed-2-1-turbo",
-      "incomplete_draws_outstanding": 0,
-      "max_tokens": 16384,
-      "model": "nvidia/nemotron-3.5-lightning",
-      "providers_observed": [
-        "DeepInfra"
-      ],
-      "temperature": 0.0
-    },
-    "interval": null,
-    "note": "",
-    "scope": null,
-    "sources": [
-      {
-        "bytes": 88443,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
-        "sha256_16": "f54bbcb8c2c35f88"
-      },
-      {
-        "bytes": 88437,
-        "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
-        "sha256_16": "e7992be24dbe2f50"
-      },
-      {
-        "bytes": 251,
-        "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
-        "sha256_16": "ad4b7a9eb17e1982"
-      }
-    ],
-    "unit": "sd",
-    "value": 0.4739771913079619
-  }
+  "interval": [
+   0.7479318734793182,
+   0.8928506787330313
+  ],
+  "note": "PUBLISH - tier-1 results stand",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8203447438698711
+ },
+ "nemo_v1.panel_fleiss": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8192918192918192
+ },
+ "nemo_v1.probabilistic": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "count",
+  "value": 20
+ },
+ "nemo_v1.retest_gap": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
+  },
+  "interval": null,
+  "note": "the noise floor - no effect smaller than this is reportable",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.01623376623376621
+ },
+ "nemo_v1.retest_r": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "correlation",
+  "value": 0.8960395659579917
+ },
+ "nemo_v1.sd_across_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": true,
+   "draws": null,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": null,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.7
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 327,
+    "path": "pilot_out/pilot_nemo_v1_A.config.json",
+    "sha256_16": "e8b1f2783dd28536"
+   }
+  ],
+  "unit": "sd",
+  "value": 0.41918629050133166
+ },
+ "nemo_v1.spearman_brown": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "halves": "A vs B, independent replications of the whole bank",
+   "n_items": 63
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 3888,
+    "path": "pilot_out/reliability_nemo_v1.json",
+    "sha256_16": "cc89cd377ef0462f"
+   }
+  ],
+  "unit": "correlation",
+  "value": 0.9451696916517239
+ },
+ "nemo_v1.tier1_overruled": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "of_graded": 616,
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "recusal": null,
+   "sampled_draws": 148,
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": [
+   0.04054054054054054,
+   0.12837837837837837
+  ],
+  "note": "rate at which a majority of three overturned the tier-1 grader",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 2001,
+    "path": "panel_out/panel_nemo_v1.json",
+    "sha256_16": "53b97f6e86d6ce05"
+   },
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.08108108108108109
+ },
+ "nemo_v1_t0.at_floor_or_ceiling": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "count",
+  "value": 57
+ },
+ "nemo_v1_t0.design_effect": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "factor",
+  "value": 1.8401999567805678
+ },
+ "nemo_v1_t0.fail_rate": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": [
+   0.3984036292704432,
+   0.45405538712299937
+  ],
+  "note": "week-on-week comparison uses this interval",
+  "scope": "on bank v1",
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.4262295081967213
+ },
+ "nemo_v1_t0.fail_rate_general": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": [
+   0.3114754098360656,
+   0.544
+  ],
+  "note": "any claim about the model uses this interval",
+  "scope": "beyond the bank",
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.4262295081967213
+ },
+ "nemo_v1_t0.icc": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8976373549559625
+ },
+ "nemo_v1_t0.n_draws": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "count",
+  "value": 122
+ },
+ "nemo_v1_t0.n_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "count",
+  "value": 63
+ },
+ "nemo_v1_t0.probabilistic": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "nemo_v1_t0.sd_across_items": {
+  "computed_at": "2026-08-30T01:39:39",
+  "conditions": {
+   "bank": "bank_v1.jsonl",
+   "config_reconstructed": false,
+   "draws": 1,
+   "grader": "bytedance-seed/seed-2-1-turbo",
+   "incomplete_draws_outstanding": 0,
+   "max_tokens": 16384,
+   "model": "nvidia/nemotron-3.5-lightning",
+   "providers_observed": [
+    "DeepInfra"
+   ],
+   "temperature": 0.0
+  },
+  "interval": null,
+  "note": "",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 88443,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.jsonl",
+    "sha256_16": "f54bbcb8c2c35f88"
+   },
+   {
+    "bytes": 88437,
+    "path": "pilot_out/pilot_nemo_v1_t0_B.jsonl",
+    "sha256_16": "e7992be24dbe2f50"
+   },
+   {
+    "bytes": 251,
+    "path": "pilot_out/pilot_nemo_v1_t0_A.config.json",
+    "sha256_16": "ad4b7a9eb17e1982"
+   }
+  ],
+  "unit": "sd",
+  "value": 0.4739771913079619
+ }
 }

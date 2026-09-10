@@ -3,11 +3,25 @@
 <channel>
 <title>Protocol STAMP</title>
 <link>https://protocolstamp.com/</link>
-<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Sundays and Wednesdays. Protocol STAMP can make mistakes; verify before you implement anything, and see https://protocolstamp.com/corrections/ for what we have already got wrong.</description>
+<description>An independent program that measures whether an AI can be made to show its receipts. Issues on alternate Saturdays at 15:37 America/Chicago; The Bench on Mondays and Thursdays. Protocol STAMP can make mistakes; verify before you implement anything, and see https://protocolstamp.com/corrections/ for what we have already got wrong.</description>
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Sat, 05 Sep 2026 15:37:00 -0500</lastBuildDate>
+<lastBuildDate>Thu, 10 Sep 2026 07:37:00 -0500</lastBuildDate>
+<item>
+<title>The Bench Vol 002 &#183; Something It Can Actually Check</title>
+<link>https://protocolstamp.com/bench/something-it-can-check/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/something-it-can-check/</guid>
+<pubDate>Thu, 10 Sep 2026 07:37:00 -0500</pubDate>
+<description>Four Claude models were handed a record with two errors planted in it, twice - once with web search off, once with it on. All twelve cells caught both. Retrieval changed nothing about that, and everything about what could honestly be said afterwards.</description>
+</item>
+<item>
+<title>The Bench Vol 001 &#183; The No. 1 Complaint</title>
+<link>https://protocolstamp.com/bench/no-1-complaint/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/no-1-complaint/</guid>
+<pubDate>Sun, 06 Sep 2026 07:37:00 -0500</pubDate>
+<description>Is hallucination really what people hate most about AI? The review data says yes. Then thirteen AI models were asked the same question, word for word, and the answer that came back was that our own table was wrong. It was, nine times over.</description>
+</item>
 <item>
 <title>The Log Vol 001 · Sat20260905</title>
 <link>https://protocolstamp.com/log/001-issued-sat20260905/</link>
