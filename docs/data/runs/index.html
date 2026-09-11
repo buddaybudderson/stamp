@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run files · Protocol STAMP</title>
+<meta name="description" content="Every run file behind a published number: what is served, its SHA-256, which files match the hash registered in figures.json, what is withheld and why, and how to recompute a published rate yourself.">
+<link rel="canonical" href="https://protocolstamp.com/data/runs/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Protocol STAMP"><meta property="og:title" content="Run files · Protocol STAMP"><meta property="og:description" content="Every run file behind a published number: what is served, its SHA-256, which files match the hash registered in figures.json, what is withheld and why, and how to recompute a published rate yourself."><meta property="og:url" content="https://protocolstamp.com/data/runs/"><meta property="og:image" content="https://protocolstamp.com/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Protocol STAMP" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);margin:0;padding:0 22px 110px;font:400 16px/1.62 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:800px;margin:0 auto}a{color:var(--stamp)}:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
+nav.top{padding:18px 0 0;font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}nav.top a{text-decoration:none}
+h1{font:600 42px/1.05 "IBM Plex Serif",Georgia,serif;letter-spacing:-.025em;margin:44px 0 0}
+.rule{height:3px;background:var(--stamp);margin:22px 0 11px}
+.strap{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.strap .now{color:var(--stamp)}
+section{border-top:1px solid var(--rule);margin-top:48px;padding-top:24px}
+.eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin:0 0 14px}
+h2{font:600 27px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}p b{color:var(--ink);font-weight:500}p:last-child{margin-bottom:0}
+/* the crew */
+.crew{border-top:1px solid var(--rule);margin-top:6px}
+.crew-row{display:grid;grid-template-columns:1fr;gap:8px;padding:18px 0;border-bottom:1px solid var(--rule-soft)}
+.crew-name{display:inline;font:600 17px/1.2 "IBM Plex Serif",Georgia,serif;color:var(--ink);margin-right:10px}
+.crew-kind{display:inline-block;vertical-align:2px;border-radius:3px;padding:3px 6px;font:500 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--stamp);background:var(--stamp-soft)}
+.crew-kind.human{color:var(--ok);background:var(--ok-bg)}.crew-kind.org,.crew-kind.code{color:var(--ink-2);background:var(--sunk)}
+.crew-role{display:block;margin-top:4px;font:400 11px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.crew-what p{font-size:14.5px;margin-bottom:8px}
+
+/* the week as seven buttons */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:22px}
+.daybtn{appearance:none;border:1px solid var(--rule);border-radius:4px;padding:0;background:var(--paper);color:var(--ink);cursor:pointer;text-align:left;overflow:hidden;display:flex;flex-direction:column;transition:transform .12s ease}
+.daybtn:hover{transform:translateY(-2px)}.daybtn:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
+.daybtn .half{padding:10px 10px 9px;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;gap:6px;flex:1}
+.daybtn .half.night{border-top:1px solid var(--rule-soft)}
+.daybtn .abbr{font:600 13px/1.1 "IBM Plex Serif",Georgia,serif}
+.daybtn .planet{font:500 9px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.daybtn .mark{width:26px;height:26px;color:var(--ink)}
+.daybtn .chips{display:flex;gap:3px}.daybtn .chip{width:12px;height:12px;border-radius:2px;border:1px solid var(--rule)}
+.daybtn[aria-pressed="true"]{outline:2px solid var(--stamp);outline-offset:2px}
+.daybtn .tag{font:500 8.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--stamp)}
+/* the explanation card follows the chosen day */
+.tell{margin-top:18px;border:1px solid var(--rule);border-left:3px solid var(--stamp);background:var(--surface);padding:18px 20px;display:grid;grid-template-columns:1fr;gap:10px}
+.tell .head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.tell h3{font:600 22px/1.2 "IBM Plex Serif",Georgia,serif;margin:0}
+.tell .status{font:500 10.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--stamp)}
+.tell p{margin:0;font-size:15px}
+.tell dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:6px 0 0;font-size:14.5px}
+.tell dt{font:500 10.5px/1.7 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tell dd{margin:0;color:var(--ink)}.tell dd i{color:var(--ink-3);font-style:normal}
+.tell .reset{justify-self:start;margin-top:4px;appearance:none;border:1px solid var(--rule);background:var(--sunk);color:var(--ink-2);border-radius:999px;padding:6px 12px;font:500 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.tell .reset:hover{color:var(--ink)}
+.langs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 18px;margin-top:4px;font-size:14.5px}
+.langs div{display:flex;flex-direction:column;gap:1px}.langs .l{font:500 9.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.langs .w{color:var(--ink)}.langs .w em{color:var(--ink-2);font-style:normal}
+.langs .off .w{color:var(--ink-2)}
+@media (max-width:820px){.week{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:520px){.week{grid-template-columns:repeat(2,1fr)}}
+.swatch{background:var(--paper);color:var(--ink)}
+footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400 12.5px/1.75 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-2);max-width:74ch}footer b{color:var(--ink-2);font-weight:500}
+@media (max-width:640px){h1{font-size:32px}}
+
+.pg p{max-width:66ch}.pg h3{font:600 18px/1.3 "IBM Plex Serif",Georgia,serif;margin:22px 0 6px;color:var(--ink)}
+.pg ul{padding-left:20px;color:var(--ink-2);max-width:66ch}.pg li{margin:0 0 8px}.pg li b{color:var(--ink);font-weight:500}
+.pg table{border-collapse:collapse;width:100%;font:400 14px/1.5 "IBM Plex Mono",ui-monospace,monospace;margin:12px 0 4px}
+.pg th{text-align:left;font-weight:500;color:var(--ink-3);border-bottom:1px solid var(--ink);padding:6px 12px 6px 0;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.pg td{border-bottom:1px solid var(--rule-soft);padding:8px 12px 8px 0;vertical-align:top;color:var(--ink-2)}.pg td:first-child{color:var(--ink)}
+.pg pre{background:var(--sunk);border-left:3px solid var(--stamp);border-radius:0 4px 4px 0;padding:12px 16px;overflow-x:auto;font:400 12.5px/1.7 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink);margin:12px 0}
+.pg .lede{font:500 19px/1.45 "IBM Plex Serif",Georgia,serif;color:var(--ink-2);margin:26px 0 0;max-width:60ch}
+.sub{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px;max-width:66ch}
+.sub input[type=email]{flex:1 1 260px;font:400 15px/1.2 "IBM Plex Sans",system-ui,sans-serif;padding:11px 14px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink)}
+.sub button{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;border:1px solid var(--stamp);background:var(--stamp);color:#fff;border-radius:4px;cursor:pointer}
+.sub-note{font:400 12.5px/1.6 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);max-width:66ch}
+.adslot{max-width:800px;margin:44px auto 0;padding-top:12px;border-top:1px solid var(--rule-soft);display:none}
+.adslot .lab{font:400 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap pg">
+<nav class="top"><a href="/">&larr; Protocol STAMP</a> &nbsp;·&nbsp; <a href="/safety/">AI Safety + Governance</a> &nbsp;·&nbsp; <a href="/methodology/">Methodology</a> &nbsp;·&nbsp; <a href="/figures.json">figures.json</a></nav>
+<h1>Run files</h1>
+<div class="rule"></div>
+<div class="strap"><span>What every published number was computed from</span><span class="now">A Budday Budderson Production</span></div>
+
+<p class="lede">Every figure on this site registers the SHA-256 of the file it came from. Until today those hashes pointed at files nobody could download, which made them a promise rather than a proof. These are the files.</p>
+
+<section><p class="eyebrow">The files</p><h2>Thirteen files, and what form each is in</h2>
+<p>Six are served exactly as recorded, and their bytes hash to the value already registered in <a href="/figures.json">figures.json</a> — compare the last two columns. Seven are run files whose <span class="mono">text</span> and <span class="mono">why</span> fields quote the probe back, so those two fields are replaced with <span class="mono">[withheld: held-out probe]</span> on held-out items only. Every row survives, including every verdict.</p>
+<div class="tablescroll"><table><tr><th>Served file</th><th>Form</th><th>Bytes</th><th>SHA-256 (16)</th><th>Registered in figures.json</th><th>Same?</th></tr><tr><td><a href="/data/runs/panel_nemo_v1.json">panel_nemo_v1.json</a></td><td>as recorded</td><td>2,001</td><td>53b97f6e86d6ce05</td><td>53b97f6e86d6ce05</td><td>yes</td></tr><tr><td><a href="/data/runs/reliability_luna_v1.json">reliability_luna_v1.json</a></td><td>as recorded</td><td>3,870</td><td>c28253d78fe04da3</td><td>c28253d78fe04da3</td><td>yes</td></tr><tr><td><a href="/data/runs/reliability_nemo_v1.json">reliability_nemo_v1.json</a></td><td>as recorded</td><td>3,888</td><td>cc89cd377ef0462f</td><td>cc89cd377ef0462f</td><td>yes</td></tr><tr><td><a href="/data/runs/pilot_luna_v1_A.config.json">pilot_luna_v1_A.config.json</a></td><td>as recorded</td><td>292</td><td>4647d68c0c1a2f1f</td><td>4647d68c0c1a2f1f</td><td>yes</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_A.config.json">pilot_nemo_v1_A.config.json</a></td><td>as recorded</td><td>327</td><td>e8b1f2783dd28536</td><td>e8b1f2783dd28536</td><td>yes</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_t0_A.config.json">pilot_nemo_v1_t0_A.config.json</a></td><td>as recorded</td><td>251</td><td>ad4b7a9eb17e1982</td><td>ad4b7a9eb17e1982</td><td>yes</td></tr><tr><td><a href="/data/runs/panel_nemo_v1.redacted.jsonl">panel_nemo_v1.redacted.jsonl</a></td><td>held-out rows redacted</td><td>90,738</td><td>fa9baeebd8fb7b02</td><td>91889268b5de8ba5</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_luna_v1_A.redacted.jsonl">pilot_luna_v1_A.redacted.jsonl</a></td><td>held-out rows redacted</td><td>290,396</td><td>bdf2e4aee22c9381</td><td>8bed769ed357589d</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_luna_v1_B.redacted.jsonl">pilot_luna_v1_B.redacted.jsonl</a></td><td>held-out rows redacted</td><td>216,175</td><td>033c43fe0e172218</td><td>fd06095d1a5d967a</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_A.redacted.jsonl">pilot_nemo_v1_A.redacted.jsonl</a></td><td>held-out rows redacted</td><td>546,012</td><td>e89cb85092e137d0</td><td>f3781c35105dee56</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_B.redacted.jsonl">pilot_nemo_v1_B.redacted.jsonl</a></td><td>held-out rows redacted</td><td>284,019</td><td>3dda48f10c1cfe2a</td><td>cd4625f157f0dcb8</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_t0_A.redacted.jsonl">pilot_nemo_v1_t0_A.redacted.jsonl</a></td><td>held-out rows redacted</td><td>56,496</td><td>767176b4bd02c013</td><td>f54bbcb8c2c35f88</td><td>derived</td></tr><tr><td><a href="/data/runs/pilot_nemo_v1_t0_B.redacted.jsonl">pilot_nemo_v1_t0_B.redacted.jsonl</a></td><td>held-out rows redacted</td><td>55,078</td><td>7fd90cc2d172fa5b</td><td>e7992be24dbe2f50</td><td>derived</td></tr></table></div>
+<p>A redacted file necessarily hashes differently from the original it came from, so both values are printed above. The original stays unpublished for the same reason the bank does.</p></section>
+
+<section><p class="eyebrow">Checking</p><h2>Two things you can do with these</h2>
+<p><b>Check the bytes.</b> Any file whose last column reads <i>yes</i> can be checked straight against the register:</p>
+<pre>curl -s https://protocolstamp.com/data/runs/pilot_nemo_v1_A.config.json | sha256sum | cut -c1-16
+# e8b1f2783dd28536 — the value figures.json records</pre>
+<p><b>Recompute a published rate.</b> This is the part the redaction was designed to preserve. A rate is computed from verdicts, not from the text of a probe, so a redacted file reproduces the published figure exactly:</p>
+<pre>import json, pathlib, importlib.util
+sp = importlib.util.spec_from_file_location("stats", "harness/stats.py")
+S = importlib.util.module_from_spec(sp); sp.loader.exec_module(S)
+rows = {}
+for f in ("pilot_nemo_v1_A.redacted.jsonl", "pilot_nemo_v1_B.redacted.jsonl"):
+    for line in pathlib.Path(f).read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            r = json.loads(line); rows[(f, r["item_id"], r["draw"])] = r
+print(S.rate(S.per_item_from_rows(list(rows.values())))["mean_over_draws"])
+# 0.43344155844155846 — the value published as nemo_v1.fail_rate</pre>
+<p>Sixty-three items go in and sixty-three come out; the redaction removes prompt text, not evidence. If your number differs from the one on the page, that is a correction and it is <a href="/corrections/">welcome from anyone</a>.</p></section>
+
+<section><p class="eyebrow">Withheld</p><h2>What is still not here, and why</h2>
+<p><b>The seven originals.</b> Unredacted, they carry twenty-eight held-out probes in the responses and in the graders&rsquo; reasoning. Publishing them would retire those probes permanently, for this program and for anyone who would otherwise cite them.</p>
+<p><b>The bank.</b> <span class="mono">bank_v1.jsonl</span> is registered and will not be served, ever, for the same reason. The public half is at <a href="/data/bank_v1_public.jsonl">bank_v1_public.jsonl</a>.</p>
+<p><b>The intent files.</b> Each round&rsquo;s questions and thresholds are frozen before any model is called, and those files are not yet published. Until they are, these hashes show that a file has not changed since publication — not that the question was fixed before the answer was known. That gap is stated on <a href="/safety/">AI Safety + Governance</a> and it is not closed.</p></section>
+<footer><b>Protocol STAMP</b> · A Budday Budderson Production<br>Published by Budday Budderson Studio LLC, a New Mexico company<br>Begun by a person · Drafted by AI · Edited together · Signed by a person<br>Lawrence Ho · <a href="mailto:s@bud.day">s@bud.day</a><br>Chief Human Investigator, Evaluation Administrator + Instrument Maker<br><br>Protocol STAMP can make mistakes. Verify before you implement anything. What we have already got wrong is in <a href="/corrections/">Corrections + changes</a>.<br><br><a href="/methodology/">Methodology</a> · <a href="/definitions/">Definitions</a> · <a href="/independence/">Independence</a> · <a href="/support/">Support</a> · <a href="/corrections/">Corrections + changes</a> · <a href="/other-stamps/">Other STAMPs</a> · <a href="/subscribe/">Subscribe</a> · <a href="/feed.xml">RSS</a> · <a href="/data/bank_v1_public.jsonl">Public bank</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/safety/">AI Safety + Governance</a></footer>
+</div>
+</body>
+</html>

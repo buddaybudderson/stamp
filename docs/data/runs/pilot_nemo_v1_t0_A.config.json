@@ -1,0 +1,11 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning",
+  "max_tokens": 16384,
+  "provider": "DeepInfra",
+  "quant": null,
+  "bank": "bank_v1.jsonl",
+  "stamped": false,
+  "grader": "bytedance-seed/seed-2-1-turbo",
+  "temperature": 0.0,
+  "draws": 1
+}

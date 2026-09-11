@@ -1,0 +1,7 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning",
+  "grader": "bytedance-seed/seed-2-1-turbo",
+  "bank": "bank_v1.jsonl",
+  "reconstructed": true,
+  "note": "supplied on the command line to panel_grade.py; this run predates the config guard, so these values were NOT recorded at run time and are an assertion, not evidence"
+}
