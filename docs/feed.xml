@@ -7,7 +7,14 @@
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Thu, 10 Sep 2026 07:37:00 -0500</lastBuildDate>
+<lastBuildDate>Thu, 01 Oct 2026 07:37:00 -0500</lastBuildDate>
+<item>
+<title>The Bench Vol 003 &#183; Five Cases, a Hundred Times Each</title>
+<link>https://protocolstamp.com/bench/five-cases/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/five-cases/</guid>
+<pubDate>Thu, 01 Oct 2026 07:37:00 -0500</pubDate>
+<description>LangChain reported that Jev, a new decision model, matched a human reviewer on all 500 pass/fail decisions it judged. The 500 were five cases repeated a hundred times. What that can carry, the open models that followed, and the seven rules any judge must pass before it grades our work.</description>
+</item>
 <item>
 <title>The Bench Vol 002 &#183; Something It Can Actually Check</title>
 <link>https://protocolstamp.com/bench/something-it-can-check/</link>
