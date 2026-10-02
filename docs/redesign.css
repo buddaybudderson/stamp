@@ -1,81 +1,149 @@
-/* REDESIGN 2026-10 — a text-first site with a working toolbar and an icon on every
-   kind of thing. Loaded after a page's own <style>, so it only restyles; it never
-   changes a word. Colours are the publication's own tokens from finish.css: the
-   accent (--stamp) still marks a finding or a due date and nothing decorative.
-   Applies to pages whose <body> carries class "rd"; the home page also carries "rd-home".
-   Issued documents and Bench posts are never given it. */
+/* REDESIGN 2026-10, v2 — the structure of a product site (after openrouter.ai): an app header
+   with search, a centred hero with a row of numbers, a grid of feature cards, dense tabbed lists,
+   and long-form text in a docs layout with a sticky index. The publication's own system stays:
+   IBM Plex, the seven daily finishes and day/night from finish.css, and the accent (--stamp)
+   used for measured figures and due dates, never for decoration. Pages opt in with
+   <body class="rd">; the home page adds "rd-home". Issued documents never get it. */
 
-.ico{width:16px;height:16px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8;
+body.rd{padding:56px 0 0!important;margin:0;font-size:15px}
+body.rd .ico{width:16px;height:16px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8;
   stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
 
-/* ---------- toolbar: fixed to the window, so it does not depend on a page's layout ---------- */
-body.rd{padding-top:56px!important}
-.bar{position:fixed;top:0;left:0;right:0;z-index:40;padding:0 22px;
-  background:color-mix(in srgb,var(--paper) 88%,transparent);
-  backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);
-  border-bottom:1px solid var(--rule-soft)}
-.bar-in{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:18px;height:56px}
-.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);
-  font:600 15px/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:-.01em;white-space:nowrap}
-.brand svg{width:26px;height:26px;color:var(--ink)}
+/* ---------- header ---------- */
+.bar{position:fixed;top:0;left:0;right:0;z-index:40;height:56px;padding:0 20px;
+  background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule-soft)}
+.bar-in{max-width:1280px;margin:0 auto;height:100%;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);
+  font:600 15px/1 "IBM Plex Sans",system-ui,sans-serif;white-space:nowrap}
+.brand svg{width:24px;height:24px}
+.kbtn{display:flex;align-items:center;gap:8px;height:34px;width:240px;padding:0 10px;margin-left:10px;
+  border:1px solid var(--rule-soft);border-radius:8px;background:var(--surface);color:var(--ink-3);
+  font:400 13px/1 "IBM Plex Sans",system-ui,sans-serif;cursor:pointer}
+.kbtn:hover{border-color:var(--rule);color:var(--ink-2)}
+.kbtn kbd{margin-left:auto;font:500 11px/1 "IBM Plex Mono",monospace;padding:3px 5px;border-radius:4px;
+  background:var(--sunk);color:var(--ink-3)}
 .navl{display:flex;align-items:center;gap:2px;margin-left:auto;min-width:0;overflow-x:auto;scrollbar-width:none}
 .navl::-webkit-scrollbar{display:none}
-.navl a{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:7px;
-  color:var(--ink-2);text-decoration:none;font:500 13.5px/1 "IBM Plex Sans",system-ui,sans-serif;white-space:nowrap}
-.navl a:hover{background:var(--sunk);color:var(--ink)}
-.navl a.on{color:var(--ink);background:var(--surface);box-shadow:inset 0 0 0 1px var(--rule-soft)}
-@media (max-width:860px){.navl a span{display:none}.navl a{padding:8px}}
-/* the finish / day-night pills sit just under the toolbar, so they never cover a link */
-body.rd .playlink,body.rd .modeswitch{top:66px!important}
-/* the old text navigation stays in the file and is hidden where the toolbar replaces it */
+.navl a{padding:7px 10px;border-radius:7px;color:var(--ink-2);text-decoration:none;
+  font:500 13.5px/1 "IBM Plex Sans",system-ui,sans-serif;white-space:nowrap}
+.navl a:hover{color:var(--ink);background:var(--sunk)}
+.navl a.on{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 16px;border-radius:7px;
+  font:600 13.5px/1 "IBM Plex Sans",system-ui,sans-serif;text-decoration:none;white-space:nowrap;
+  border:1px solid var(--rule-soft);color:var(--ink);background:var(--surface)}
+.btn:hover{border-color:var(--rule)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary:hover{filter:brightness(1.15)}
+.bar .btn{height:32px;padding:0 12px;margin-left:6px}
 body.rd nav.sitenav,body.rd nav.top{display:none!important}
+body.rd .playlink,body.rd .modeswitch{top:auto!important;bottom:16px}
+@media (max-width:980px){.kbtn{width:auto}.kbtn span,.kbtn kbd{display:none}}
+@media (max-width:760px){.navl a:not(.keep){display:none}.bar .btn{display:none}}
 
-.chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:999px;
-  background:var(--sunk);color:var(--ink-2);font:500 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.02em;white-space:nowrap}
-.chip .ico{width:12px;height:12px;vertical-align:0}
-.chip.due{background:var(--stamp-soft);color:var(--stamp)}
+/* ---------- command palette ---------- */
+.pal{position:fixed;inset:0;z-index:60;display:none;background:rgba(0,0,0,.45);padding:12vh 16px 0}
+.pal.open{display:block}
+.pal-box{max-width:560px;margin:0 auto;background:var(--surface);border:1px solid var(--rule);
+  border-radius:12px;overflow:hidden;box-shadow:0 20px 60px -20px rgba(0,0,0,.5)}
+.pal input{width:100%;border:0;border-bottom:1px solid var(--rule-soft);padding:14px 16px;background:transparent;
+  color:var(--ink);font:400 15px/1.2 "IBM Plex Sans",system-ui,sans-serif;outline:none}
+.pal ul{list-style:none;margin:0;padding:6px;max-height:50vh;overflow:auto}
+.pal li a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:7px;color:var(--ink-2);
+  text-decoration:none;font-size:14px}
+.pal li a:hover,.pal li a.sel{background:var(--sunk);color:var(--ink)}
+.pal li small{margin-left:auto;color:var(--ink-3);font:400 11px/1 "IBM Plex Mono",monospace}
 
-/* ---------- issue rows become cards, wherever they appear ---------- */
-body.rd .issue{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:4px 14px;
-  background:var(--surface);border:1px solid var(--rule-soft);border-radius:10px;
-  padding:13px 16px;margin-top:8px}
-body.rd .issue:hover{border-color:var(--rule)}
-body.rd .issue .kind{grid-row:1/3;width:34px;height:34px;border-radius:8px;background:var(--sunk);
-  display:grid;place-items:center;color:var(--ink-2)}
-body.rd .issue .kind .ico{width:17px;height:17px}
-body.rd .issue .name{font:600 15.5px/1.35 "IBM Plex Sans",system-ui,sans-serif}
-body.rd .issue .meta{grid-column:2/-1;margin-top:0;font-size:11px}
-body.rd .issue .links{display:flex;gap:4px;font-size:11px}
-body.rd .issue .links a{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:6px;
-  text-decoration:none;color:var(--ink-2);border:1px solid var(--rule-soft)}
-body.rd .issue .links a:hover{color:var(--ink);border-color:var(--rule)}
-body.rd .issue.pending{background:transparent;border-style:dashed}
-body.rd .issue.pending .kind{background:transparent;box-shadow:inset 0 0 0 1px var(--rule-soft)}
-@media (max-width:640px){body.rd .issue{grid-template-columns:auto 1fr}body.rd .issue .links{grid-column:1/-1;flex-wrap:wrap}}
+/* ---------- home ---------- */
+.rd-home .wrap{max-width:none!important;padding:0!important}
+.rd-home .old-hero,.rd-home header.top,.rd-home .rule,.rd-home .strap{display:none!important}
+.shell{max-width:1152px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:72px 0 8px}
+.chipline{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border:1px solid var(--rule-soft);
+  border-radius:999px;font:500 12px/1 "IBM Plex Mono",monospace;letter-spacing:.06em;color:var(--ink-2);
+  background:var(--surface);text-decoration:none}
+.chipline b{color:var(--stamp);font-weight:500}
+.hero h1{font:700 clamp(36px,6vw,58px)/1.08 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:-.035em;
+  margin:22px auto 0;max-width:15ch;color:var(--ink)}
+.hero h1 b{color:var(--stamp)}
+.hero p.lead{font-size:17px;line-height:1.55;color:var(--ink-2);max-width:60ch;margin:18px auto 0}
+.hero p.lead b{color:var(--ink);font-weight:500}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:820px;margin:52px auto 0}
+.stat .n{font:700 34px/1 "IBM Plex Mono",monospace;letter-spacing:-.02em;color:var(--stamp)}
+.stat .l{margin-top:8px;font-size:12.5px;color:var(--ink-3)}
+.stat .l a{color:inherit}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr);gap:22px 8px}}
 
-body.rd .eyebrow{display:flex;align-items:center;gap:7px}
-body.rd .eyebrow .ico{width:14px;height:14px}
-body.rd h2 .ico,body.rd h3 .ico{width:18px;height:18px;margin-right:7px;color:var(--ink-2);vertical-align:-2px}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:64px 0 0}
+@media (max-width:980px){.feat{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.feat{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--rule-soft);border-radius:10px;padding:18px;
+  text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:10px;transition:border-color .15s}
+.card:hover{border-color:var(--rule)}
+.card .ic{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;background:var(--sunk);color:var(--ink)}
+.card .ic .ico{width:18px;height:18px}
+.card h3{font:600 15px/1.3 "IBM Plex Sans",system-ui,sans-serif!important;margin:0;color:var(--ink)}
+.card p{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:0}
+.card .more{margin-top:auto;font:500 12px/1 "IBM Plex Mono",monospace;color:var(--ink-3)}
 
-/* ---------- home page only: wider, with at-a-glance tiles ---------- */
-body.rd-home{padding-left:0!important;padding-right:0!important}
-body.rd-home .wrap{max-width:1040px;padding:0 22px}
-body.rd-home .top{padding-top:44px}
-body.rd-home .mast{font-size:40px}
-body.rd-home .tag{font-size:36px;max-width:24ch}
-body.rd-home section{border-top:0;margin-top:56px;padding-top:0}
-body.rd-home #publications .grid-3>div{background:var(--surface);border:1px solid var(--rule-soft);border-radius:12px;padding:18px}
-body.rd-home #publications h3{display:flex;align-items:center;gap:8px}
-body.rd-home footer{max-width:none;border-top:1px solid var(--rule)}
+.sechead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:72px 0 14px}
+.sechead h2{font:700 22px/1.2 "IBM Plex Sans",system-ui,sans-serif!important;letter-spacing:-.02em;margin:0}
+.sechead p{margin:6px 0 0;font-size:13.5px;color:var(--ink-3)}
+.sechead a{font-size:13px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
 
-.glance{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 0}
-.tile{background:var(--surface);border:1px solid var(--rule-soft);border-radius:12px;padding:16px 18px;
-  display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;
-  transition:border-color .15s,box-shadow .15s}
-.tile:hover{border-color:var(--rule);box-shadow:0 1px 0 var(--rule-soft),0 6px 18px -12px rgba(0,0,0,.35)}
-.tile .k{display:flex;align-items:center;gap:8px;font:600 15px/1.2 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink)}
-.tile .k .ico{width:18px;height:18px;color:var(--ink-2)}
-.tile .d{font-size:13.5px;line-height:1.5;color:var(--ink-2);margin:0}
-.tile .s{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px}
-@media (max-width:820px){.glance{grid-template-columns:1fr}}
+/* tabs + list */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule-soft);margin-bottom:6px;overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:9px 12px;cursor:pointer;
+  color:var(--ink-3);font:500 13.5px/1 "IBM Plex Sans",system-ui,sans-serif;white-space:nowrap}
+.tabs button .c{font:500 11px/1 "IBM Plex Mono",monospace;margin-left:6px;padding:2px 6px;border-radius:5px;background:var(--sunk)}
+.tabs button.on{color:var(--ink);border-bottom-color:var(--ink)}
+.list .issue{display:grid!important;grid-template-columns:36px 1fr auto;gap:2px 14px;align-items:start;
+  padding:16px 4px!important;border:0!important;border-bottom:1px solid var(--rule-soft)!important;border-radius:0;
+  background:none!important;margin:0!important}
+.list .issue:hover{background:color-mix(in srgb,var(--sunk) 45%,transparent)!important}
+.list .issue .kind{grid-row:1/3;width:32px;height:32px;border-radius:8px;background:var(--sunk);display:grid;place-items:center;color:var(--ink-2)}
+.list .issue .kind .ico{width:16px;height:16px}
+.list .issue .name{font:600 15px/1.35 "IBM Plex Sans",system-ui,sans-serif!important;color:var(--ink)}
+.list .issue .name a{color:inherit}
+.list .issue .meta{grid-column:2/3!important;margin:4px 0 0!important;font:400 13px/1.5 "IBM Plex Sans",system-ui,sans-serif!important;
+  letter-spacing:0!important;color:var(--ink-2)!important}
+.list .issue .links{grid-row:1/3;grid-column:3;display:flex;gap:6px;align-self:center;font:500 12px/1 "IBM Plex Sans",sans-serif!important;
+  letter-spacing:0!important;text-transform:none!important}
+.list .issue .links a{padding:6px 10px;border:1px solid var(--rule-soft);border-radius:6px;color:var(--ink-2);text-decoration:none;display:inline-flex;gap:5px;align-items:center}
+.list .issue .links a:hover{border-color:var(--rule);color:var(--ink)}
+.list .issue .links a .ico{width:13px;height:13px}
+.list .issue.pending .name{color:var(--ink-3)}
+.list .issue.pending .kind{background:none;box-shadow:inset 0 0 0 1px var(--rule-soft)}
+.list .badge{display:inline-block;margin-left:8px;vertical-align:2px;padding:2px 7px;border-radius:5px;
+  font:500 10.5px/1.3 "IBM Plex Mono",monospace;letter-spacing:.04em;background:var(--sunk);color:var(--ink-2)}
+.list .badge.due{background:var(--stamp-soft);color:var(--stamp)}
+@media (max-width:700px){.list .issue{grid-template-columns:36px 1fr}.list .issue .links{grid-row:auto;grid-column:2;margin-top:8px;flex-wrap:wrap}}
+
+/* long form: docs layout */
+.docs{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;margin-top:8px}
+.toc{position:sticky;top:76px;align-self:start;font-size:13px}
+.toc a{display:block;padding:6px 10px;border-left:2px solid var(--rule-soft);color:var(--ink-3);text-decoration:none}
+.toc a:hover,.toc a.on{color:var(--ink);border-left-color:var(--ink)}
+.toc .t{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px 12px}
+.prose{max-width:720px}
+.prose section{border-top:1px solid var(--rule-soft)!important;margin:0!important;padding:36px 0 8px!important;scroll-margin-top:72px}
+.prose section:first-child{border-top:0!important;padding-top:0!important}
+.prose h2{font:700 24px/1.2 "IBM Plex Sans",system-ui,sans-serif!important;letter-spacing:-.02em}
+.prose h3{font:600 16px/1.3 "IBM Plex Sans",system-ui,sans-serif!important}
+.prose .eyebrow{display:flex;align-items:center;gap:7px}
+.prose .eyebrow .ico{width:14px;height:14px}
+.prose .notes{font-size:14px;color:var(--ink-2)}
+@media (max-width:900px){.docs{grid-template-columns:1fr}.toc{display:none}}
+.rd-home footer{max-width:1152px!important;margin:72px auto 0!important;padding:22px 20px 0!important;border-top:1px solid var(--rule-soft)!important}
+
+/* ---------- standing pages: same header, cards for issue rows ---------- */
+body.rd:not(.rd-home) .issue{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:4px 14px;
+  background:var(--surface);border:1px solid var(--rule-soft);border-radius:10px;padding:13px 16px;margin-top:8px}
+body.rd:not(.rd-home) .issue .kind{grid-row:1/3;width:32px;height:32px;border-radius:8px;background:var(--sunk);display:grid;place-items:center;color:var(--ink-2)}
+body.rd:not(.rd-home) .issue .meta{grid-column:2/-1}
+body.rd:not(.rd-home) h1{font-family:"IBM Plex Sans",system-ui,sans-serif!important;font-weight:700!important;letter-spacing:-.03em!important}
+body.rd:not(.rd-home) h2{font-family:"IBM Plex Sans",system-ui,sans-serif!important;font-weight:700!important;letter-spacing:-.02em!important}
+body.rd:not(.rd-home) h2 .ico{width:18px;height:18px;margin-right:8px;vertical-align:-2px;color:var(--ink-2)}
+@media (max-width:640px){.chipline{font-size:11px;padding:6px 12px;text-align:center;flex-wrap:wrap;justify-content:center;max-width:100%}}
