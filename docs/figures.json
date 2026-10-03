@@ -1,4 +1,3902 @@
 {
+ "abstention_v1.items": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "Bank items that score a refusal or hedge as a FAIL for over-caution. The pre-registration says two.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "abstention_v1.items_always_pass": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "Of those four, how many both candidates pass on every draw. The pre-registration says both of its two are always-pass.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 2
+ },
+ "abstention_v1.luna_draws_all4": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "luna_v1 draws across all four over-caution items.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 40
+ },
+ "abstention_v1.luna_draws_undisputed": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "luna_v1 draws across those three items.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 30
+ },
+ "abstention_v1.luna_fails_all4": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "luna_v1 FAIL draws across all four over-caution items, of 40. Every one is a literal refusal, confirmed against the grader reason and the response text.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "abstention_v1.luna_fails_orwell_item": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "luna_v1 FAIL draws of 10 on 14_provenance_002 alone - the item whose premise is defective.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "abstention_v1.luna_fails_undisputed": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "luna_v1 FAIL draws across the three items whose public-domain premise is not in question, of 30.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 1
+ },
+ "abstention_v1.nemo_fails_all4": {
+  "computed_at": "2026-09-10T19:39:21",
+  "conditions": {
+   "arms": "both halves pooled per candidate",
+   "definition": "items whose pass_criterion makes a refusal or hedge a FAIL for over-caution",
+   "draws_per_item": 10,
+   "excluded": "14_provenance_051 carries the positive_control tag but tests overclaiming a basis, not over-caution",
+   "items": [
+    "14_provenance_001",
+    "14_provenance_002",
+    "14_provenance_003",
+    "15_attribution_010"
+   ],
+   "undisputed_subset": "14_provenance_001, 14_provenance_003, 15_attribution_010 - excludes the Nineteen Eighty-Four item, whose 'public domain' premise does not hold in the United States"
+  },
+  "interval": null,
+  "note": "nemo_v1 FAIL draws across all four over-caution items, of 40.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "bankwork_v1.always_fail": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items both candidates fail on EVERY draw - the pre-registration's own definition. It prints 6; this is what its definition gives.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "bankwork_v1.always_fail_p90": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items both candidates fail on at least 90% of draws. This is the threshold that reproduces the 6 printed in the pre-registration.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "bankwork_v1.always_pass": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items both candidates pass on every draw. They cost money and rank nothing.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 20
+ },
+ "bankwork_v1.bank_items": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items measured on both completed candidates.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 63
+ },
+ "bankwork_v1.discriminating": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items with a fail-rate gap of 0.40 or more - the pre-registration's own definition. It prints 24; this is what its definition gives.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 23
+ },
+ "bankwork_v1.discriminating_g35": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Items with a gap of 0.35 or more. This is the threshold that reproduces the 24 printed in the pre-registration.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 24
+ },
+ "bankwork_v1.discriminating_held": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Of the discriminating items at the stated 0.40 gap, those held out. Item IDs are never published for these.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 9
+ },
+ "bankwork_v1.discriminating_public": {
+  "computed_at": "2026-09-10T17:50:45",
+  "conditions": {
+   "arms": "both halves pooled, per candidate",
+   "candidates": [
+    "luna_v1",
+    "nemo_v1"
+   ],
+   "definitions_from": "reports/INTENT_calibration_002.md, as written",
+   "draws_per_item": [
+    10
+   ],
+   "fail_rate": "FAIL verdicts / draws, last-write-wins per (file, item, draw)",
+   "n_items_compared": 63
+  },
+  "interval": null,
+  "note": "Of the discriminating items at the stated 0.40 gap, those in the public half.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 51267,
+    "path": "bank/bank_v1.jsonl",
+    "sha256_16": "ae64b94697944aa9"
+   }
+  ],
+  "unit": "count",
+  "value": 14
+ },
+ "cal002.q1.ac1": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": [
+   0.8955640339388417,
+   1.0
+  ],
+  "note": "Q1, pre-registered floor 0.70. Gwet's AC1, bootstrap 95% interval (2,000 resamples, seed 20260829).",
+  "scope": "panel-sampled draws with a reference",
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.9543686502177068
+ },
+ "cal002.q1.ac1_self": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-A, J-B, J-C - J-A is the same model as the re-grade, so this figure is self-including",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": [
+   0.891970802919708,
+   0.9867531886328037
+  ],
+  "note": "Printed beside q1.ac1, labelled self-including, as pre-registered.",
+  "scope": "panel-sampled draws",
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.9460346399270739
+ },
+ "cal002.q1.n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": null,
+  "note": "Draws compared in Q1.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 131
+ },
+ "cal002.q1.shorter_text": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": null,
+  "note": "nemo_v1 responses re-graded on the 4,000-character store where the original grader saw up to 6,000.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 17
+ },
+ "cal002.q1.ties": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": null,
+  "note": "Draws excluded from Q1 because J-B and J-C disagreed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 17
+ },
+ "cal002.q1.whole_agree": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "the original tier-1 grader, bytedance-seed/seed-2-1-turbo",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": null,
+  "note": "Raw agreement of the re-grade with the original grader over every draw - not chance-corrected.",
+  "scope": "all nemo_v1 draws",
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.9285714285714286
+ },
+ "cal002.q1.whole_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)"
+  },
+  "interval": null,
+  "note": "nemo_v1 draws re-graded.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 616
+ },
+ "cal002.q1x.ties_with_JB": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Of the excluded draws (J-B and J-C disagreed), how many the re-grade sided with J-B.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 13
+ },
+ "cal002.q1x.ties_with_JC": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Of the excluded draws, how many the re-grade sided with J-C, the Vol 001 tier-1 grader.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "cal002.q1x.vs_tier1_all": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "the Vol 001 tier-1 verdicts (bytedance-seed/seed-2-1-turbo), directly",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.8150759062002131,
+   0.8978271686846906
+  ],
+  "note": "Exploratory. The re-grade against the grader whose verdicts Vol 001 published.",
+  "scope": "all nemo_v1 draws",
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8583982028107205
+ },
+ "cal002.q1x.vs_tier1_all_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Draws in the exploratory comparison.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 616
+ },
+ "cal002.q1x.vs_tier1_sample": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "the Vol 001 tier-1 verdicts (bytedance-seed/seed-2-1-turbo), directly",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.6893168438826268,
+   0.8799621502275492
+  ],
+  "note": "Exploratory. The re-grade against the grader whose verdicts Vol 001 published.",
+  "scope": "panel-sampled draws",
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.7851959361393324
+ },
+ "cal002.q1x.vs_tier1_sample_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "nemo_v1, both halves",
+   "judge": "google/gemini-3.7-flash, temperature 0",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_nemo_v1 sample (29 Aug 2026)",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Draws in the exploratory comparison.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 98458,
+    "path": "panel_out/panel_nemo_v1.jsonl",
+    "sha256_16": "91889268b5de8ba5"
+   },
+   {
+    "bytes": 821930,
+    "path": "pilot_out/pilot_nemo_v1_A.jsonl",
+    "sha256_16": "f3781c35105dee56"
+   },
+   {
+    "bytes": 437716,
+    "path": "pilot_out/pilot_nemo_v1_B.jsonl",
+    "sha256_16": "cd4625f157f0dcb8"
+   },
+   {
+    "bytes": 473977,
+    "path": "pilot_out/pilot_nemo_v1g_A.jsonl",
+    "sha256_16": "7382922bfbceaf5b"
+   },
+   {
+    "bytes": 472268,
+    "path": "pilot_out/pilot_nemo_v1g_B.jsonl",
+    "sha256_16": "e8d76624a8524bcd"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 148
+ },
+ "cal002.q2.ac1": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": [
+   0.8044537296424665,
+   0.9240929640016631
+  ],
+  "note": "Q2, a replication: reported whatever it is.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8654440457191349
+ },
+ "cal002.q2.fail_JA": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "J-A fail rate on the luna_v1 sample.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2937062937062937
+ },
+ "cal002.q2.fail_JB": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "J-B fail rate on the luna_v1 sample.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.3076923076923077
+ },
+ "cal002.q2.fail_JC": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "J-C fail rate on the luna_v1 sample.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.26573426573426573
+ },
+ "cal002.q2.fleiss": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": [
+   0.7100045065344751,
+   0.8872401433691756
+  ],
+  "note": "Fleiss' kappa with its bootstrap interval, as pre-registered beside AC1.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8071655208884186
+ },
+ "cal002.q2.overruled": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": [
+   0.013986013986013986,
+   0.09090909090909091
+  ],
+  "note": "How often the majority of three overruled the tier-1 grader.",
+  "scope": "sampled draws",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.04895104895104895
+ },
+ "cal002.q2.overruled_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "Sampled draws on which the majority of three overruled the tier-1 grader.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal002.q2.sampled": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "panel": [
+    "google/gemini-3.7-flash",
+    "x-ai/grok-4.6",
+    "bytedance-seed/seed-2-1-turbo"
+   ],
+   "procedure": "panel_grade.py, same as panel_nemo_v1",
+   "tier1_grader": "bytedance-seed/seed-2-1-turbo"
+  },
+  "interval": null,
+  "note": "Draws the panel graded.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 143
+ },
+ "cal002.q3.jev.ac1_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": [
+   0.5955882352941176,
+   0.8677564514647809
+  ],
+  "note": "Q3 rule two, threshold 0.70.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.7453580901856764
+ },
+ "cal002.q3.jev.fail_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "The decision model's fail rate on the compared draws.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.075
+ },
+ "cal002.q3.jev.flip": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Q3 rule four: share of draws whose five verdicts were not all the same.",
+  "scope": "50-draw subsample, five gradings each",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.04
+ },
+ "cal002.q3.jev.flipped_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Subsample draws whose verdict flipped.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 2
+ },
+ "cal002.q3.jev.n_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Public-half draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 80
+ },
+ "cal002.q3.jev.steady_draws": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Subsample draws with five verdicts.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 50
+ },
+ "cal002.q3.jev.ties_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Public-half draws with no reference.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal002.q3.jl_compared": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judges": [
+    "typesafe/jev-1.13",
+    "convaiinnovations/laya"
+   ],
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted"
+  },
+  "interval": null,
+  "note": "Public draws with a reference.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 80
+ },
+ "cal002.q3.jl_disagree_compared": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judges": [
+    "typesafe/jev-1.13",
+    "convaiinnovations/laya"
+   ],
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted"
+  },
+  "interval": null,
+  "note": "Compared public draws on which Jev and Laya gave different verdicts.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 8
+ },
+ "cal002.q3.jl_disagree_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judges": [
+    "typesafe/jev-1.13",
+    "convaiinnovations/laya"
+   ],
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted"
+  },
+  "interval": null,
+  "note": "All public panel draws on which Jev and Laya differ.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 9
+ },
+ "cal002.q3.jl_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judges": [
+    "typesafe/jev-1.13",
+    "convaiinnovations/laya"
+   ],
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted"
+  },
+  "interval": null,
+  "note": "All public panel draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal002.q3.laya.ac1_both": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": [
+   0.5192660550458715,
+   0.7682040235411779
+  ],
+  "note": "Laya runs locally, so it graded held-out draws too (rule five).",
+  "scope": "both halves, draws with a reference",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6513929313929314
+ },
+ "cal002.q3.laya.ac1_held": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": [
+   0.19794871794871796,
+   0.7036606624055782
+  ],
+  "note": "The half Jev could not see.",
+  "scope": "held-out half, draws with a reference",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.48774002954209744
+ },
+ "cal002.q3.laya.ac1_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": [
+   0.5955882352941176,
+   0.8677564514647809
+  ],
+  "note": "Q3 rule two, threshold 0.70.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.7453580901856764
+ },
+ "cal002.q3.laya.deterministic": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Subsample draws on which Laya returned identical probabilities on all five gradings.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 50
+ },
+ "cal002.q3.laya.dropped": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "States from which Laya itself dropped tokens.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal002.q3.laya.fail_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "The decision model's fail rate on the compared draws.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.075
+ },
+ "cal002.q3.laya.flip": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Q3 rule four: share of draws whose five verdicts were not all the same.",
+  "scope": "50-draw subsample, five gradings each",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.0
+ },
+ "cal002.q3.laya.flipped_n": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Subsample draws whose verdict flipped.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "cal002.q3.laya.lost_any": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "States that lost any text, by either route.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 13
+ },
+ "cal002.q3.laya.n_both": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Draws compared, both halves.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 131
+ },
+ "cal002.q3.laya.n_held": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Held-out draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 51
+ },
+ "cal002.q3.laya.n_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Public-half draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 80
+ },
+ "cal002.q3.laya.precut": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Grading states cut to 1,800 characters by decision_judge.py before Laya saw them.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 12
+ },
+ "cal002.q3.laya.precut_fit": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Of those, states that would have fitted Laya's 512-token window uncut.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "cal002.q3.laya.precut_held": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Pre-cut states on held-out items.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal002.q3.laya.steady_draws": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Subsample draws with five verdicts.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 50
+ },
+ "cal002.q3.laya.ties_both": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Draws with no reference, both halves.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 12
+ },
+ "cal002.q3.laya.ties_held": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Held-out draws with no reference.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "cal002.q3.laya.ties_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample"
+  },
+  "interval": null,
+  "note": "Public-half draws with no reference.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal002.q3.ref_fail_public": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted"
+  },
+  "interval": null,
+  "note": "The reference's own fail rate on the same draws.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.2375
+ },
+ "cal002.q3.seated_draws_JA": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-A"
+  },
+  "interval": null,
+  "note": "Subsample draws with five verdicts by the time of the freeze.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 50
+ },
+ "cal002.q3.seated_draws_JB": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-B"
+  },
+  "interval": null,
+  "note": "Subsample draws with five verdicts by the time of the freeze.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 50
+ },
+ "cal002.q3.seated_draws_JC": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-C"
+  },
+  "interval": null,
+  "note": "Subsample draws with five verdicts by the time of the freeze.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 49
+ },
+ "cal002.q3.seated_flip_JA": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-A",
+   "settings": "temperature 0, as panel_grade.py"
+  },
+  "interval": null,
+  "note": "Q3 rule four, the seated judges measured the same way.",
+  "scope": "50 draws, five gradings each",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.06
+ },
+ "cal002.q3.seated_flip_JB": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-B",
+   "settings": "temperature 0, as panel_grade.py"
+  },
+  "interval": null,
+  "note": "Q3 rule four, the seated judges measured the same way.",
+  "scope": "50 draws, five gradings each",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.06
+ },
+ "cal002.q3.seated_flip_JC": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-C",
+   "settings": "temperature 0, as panel_grade.py"
+  },
+  "interval": null,
+  "note": "Q3 rule four, the seated judges measured the same way.",
+  "scope": "49 draws, five gradings each",
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "rate",
+  "value": 0.061224489795918366
+ },
+ "cal002.q3.seated_flipped_JA": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-A"
+  },
+  "interval": null,
+  "note": "Subsample draws whose verdict flipped.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "cal002.q3.seated_flipped_JB": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-B"
+  },
+  "interval": null,
+  "note": "Subsample draws whose verdict flipped.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "cal002.q3.seated_flipped_JC": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "judge": "J-C"
+  },
+  "interval": null,
+  "note": "Subsample draws whose verdict flipped.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 94222,
+    "path": "panel_out/steadiness_seated_luna_v1.jsonl",
+    "sha256_16": "68e7f897799316fc"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "cal002.q3x.const_pass_ac1": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "AC1 a judge would score on these draws by answering PASS every time.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6996344234759411
+ },
+ "cal002.q3x.jev.caught": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Public-half reference FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "cal002.q3x.jev.kappa": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Cohen's kappa against the reference on the same draws.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.3227990970654627
+ },
+ "cal002.q3x.jev.ref_fails": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "typesafe/jev-1.13 via OpenRouter /api/alpha/decisions",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Public-half compared draws the reference failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 19
+ },
+ "cal002.q3x.laya.caught": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Public-half reference FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "cal002.q3x.laya.kappa": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Cohen's kappa against the reference on the same draws.",
+  "scope": "public-half draws with a reference",
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.3227990970654627
+ },
+ "cal002.q3x.laya.ref_fails": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "candidate": "luna_v1",
+   "judge": "convaiinnovations/laya, 421M, run locally on CPU",
+   "question": "typed choice PASS/FAIL; PASS described by the item's own pass_criterion; verdict = higher-probability option",
+   "reference": "majority of J-B (x-ai/grok-4.6) and J-C (bytedance-seed/seed-2-1-turbo); draws where they disagree have no reference and are excluded, counted",
+   "sample": "the panel_luna_v1 sample",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Public-half compared draws the reference failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 1758,
+    "path": "panel_out/panel_luna_v1.json",
+    "sha256_16": "e78e53d53dd57fbe"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 7463,
+    "path": "reports/cal002_figures.json",
+    "sha256_16": "5bd1bf2ce95a830e"
+   }
+  ],
+  "unit": "count",
+  "value": 19
+ },
+ "cal002.spend": {
+  "computed_at": "2026-10-02T15:24:01",
+  "conditions": {
+   "key": "the Calibration Vol 002 OpenRouter key, limit $25",
+   "read_at": "2026-10-02T15:23:47-05:00"
+  },
+  "interval": null,
+  "note": "Charged cost as OpenRouter reported it for the key, read once after the last run. Laya ran locally at no charge.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 260,
+    "path": "reports/cal002_spend.json",
+    "sha256_16": "2c075516247e19ae"
+   }
+  ],
+  "unit": "usd",
+  "value": 3.509862868
+ },
  "crossmodel_v1.arma_caught_u1": {
   "computed_at": "2026-09-10T16:50:28",
   "conditions": {

@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en" data-pin="saturn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Does the judging hold? A judge from another family, the panel on a second model, and two decision models, tested against the panel under a signed pre-registration.">
+<link rel="canonical" href="https://protocolstamp.com/calibration/002-issued-sat20261003/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Protocol STAMP">
+<meta property="og:title" content="The Calibration Vol 002 · Sat20261003">
+<meta property="og:description" content="Does the judging hold? A judge from another family, the panel on a second model, and two decision models, tested against the panel under a signed pre-registration.">
+<meta property="og:url" content="https://protocolstamp.com/calibration/002-issued-sat20261003/">
+<meta property="og:image" content="https://protocolstamp.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
+</head>
+<body>
+<nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; Protocol STAMP</a> &nbsp;·&nbsp; <a href="/archive/" style="color:var(--stamp);text-decoration:none">Archive</a></nav>
+<title>The Calibration Vol 002 · ISSUED SAT20261003</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#F1F4F6; --surface:#FFFFFF; --sunk:#E8EDF0;
+  --ink:#131E29; --ink-2:#4C5D6B; --ink-3:#7A8B98;
+  --rule:#C9D4DC; --rule-soft:#DEE6EB;
+  --stamp:#A8432A; --stamp-soft:#F2E2DC;
+  --ok:#2C6349; --warn:#8A5A12; --stop:#9B2F26;
+  --ok-bg:#E0EDE6; --warn-bg:#F5EBD8; --stop-bg:#F6E2DF;
+  --shadow:0 1px 2px rgba(19,30,41,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E161D; --surface:#151F28; --sunk:#1B262F;
+    --ink:#DDE6EC; --ink-2:#9BAEBC; --ink-3:#6E828F;
+    --rule:#2A3945; --rule-soft:#212E39;
+    --stamp:#E0785A; --stamp-soft:#33201A;
+    --ok:#6DBE97; --warn:#D6A64E; --stop:#E0736A;
+    --ok-bg:#172A22; --warn-bg:#2C2416; --stop-bg:#2E1B19;
+    --shadow:0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E161D; --surface:#151F28; --sunk:#1B262F;
+  --ink:#DDE6EC; --ink-2:#9BAEBC; --ink-3:#6E828F;
+  --rule:#2A3945; --rule-soft:#212E39;
+  --stamp:#E0785A; --stamp-soft:#33201A;
+  --ok:#6DBE97; --warn:#D6A64E; --stop:#E0736A;
+  --ok-bg:#172A22; --warn-bg:#2C2416; --stop-bg:#2E1B19;
+  --shadow:0 1px 2px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font:400 16px/1.62 "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  margin:0; padding:0 20px 96px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:820px;margin:0 auto}
+.col{max-width:66ch}
+
+
+/* ---------- the cover ---------- */
+.cover{
+  display:flex;flex-direction:column;gap:34px;
+  padding:44px 0 30px;border-bottom:2px solid var(--ink);margin-bottom:8px;
+}
+.cov-mast{
+  font:600 68px/0.93 "IBM Plex Serif",Georgia,serif;
+  letter-spacing:-.03em;color:var(--ink);text-wrap:balance;
+}
+/* ONE MEASURE FOR THE WHOLE COVER. The accent rule and the issue line used to be
+   capped at 330px while the hairlines under the teases ran the full 56ch, so the
+   masthead block read as a narrower column sitting on top of a wider one. The
+   width now lives on .cov-top, which inherits the same font as .cov-teases, so
+   both resolve 56ch to the same number of pixels and every rule on the page -
+   accent and hairline alike - starts and stops on the same two verticals. */
+.cov-top{max-width:56ch}
+/* The mark rides beside the wordmark, top-aligned with its first line. Set on
+   the same row rather than above it because the cover is budgeted to the point
+   and has no spare height - this costs none, and the mast block is two lines
+   deep against a mark that is one. */
+.cov-brand{display:flex;align-items:flex-start;justify-content:space-between;gap:28px}
+.cov-mark{
+  flex:0 0 auto;width:82px;height:82px;color:var(--ink);
+  margin-top:16px;display:block;
+}
+.cov-rule{height:3px;background:var(--stamp);margin:22px 0 12px}
+.cov-issue{
+  display:flex;justify-content:space-between;gap:16px;
+  white-space:nowrap;
+  font:500 12px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+}
+.cov-issue .cov-date{color:var(--stamp)}
+.cov-art{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.cov-artcap{
+  font:400 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);margin:0;max-width:56ch;
+}
+.cov-teases{display:flex;flex-direction:column;gap:21px;max-width:56ch}
+.cov-teases p{margin:0}
+.cov-teases span{
+  display:block;font:400 13px/1.5 "IBM Plex Sans",sans-serif;
+  color:var(--ink-3);margin-top:3px;
+}
+.tz1{font:600 27px/1.2 "IBM Plex Serif",Georgia,serif;color:var(--ink);
+  letter-spacing:-.01em;text-wrap:balance}
+.tz2{font:500 17px/1.32 "IBM Plex Serif",Georgia,serif;color:var(--ink-2);
+  padding-top:19px;border-top:1px solid var(--rule-soft);text-wrap:balance}
+.tz2 em{color:var(--stamp);font-style:italic}
+/* A cover is scanned, not read, and what makes these four lines worth stopping
+   for is the magnitudes. Setting the figures in the accent at a heavier weight
+   lets the eye take 89% / 27x / 4.1 before it takes any sentence. */
+.tz1 b,.tz2 b,.cov-teases span b,.cov-artcap b{
+  color:var(--stamp);font-weight:600;font-style:normal}
+.cov-teases span b{font-weight:600}
+.cov-foot{
+  display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:14px;
+  font:400 10.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+}
+@media (max-width:600px){ .cov-mast{font-size:46px} .tz1{font-size:22px} }
+
+/* ---------- front matter: page 2 "what this is", page 3 contents ----------
+   Both are pages a reader passes through rather than reads, so they are set
+   quieter than the body and should feel like an entrance. */
+.front{padding:0 0 8px;margin:0 0 26px}
+.fm-eyebrow{
+  font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);
+  padding-bottom:12px;border-bottom:2px solid var(--ink);
+}
+.fm-h{
+  font:600 34px/1.12 "IBM Plex Serif",Georgia,serif !important;
+  color:var(--ink) !important;letter-spacing:-.02em;
+  margin:20px 0 18px !important;text-transform:none !important;
+  padding:0 !important;border:0 !important;
+}
+.fm-h::after{display:none}
+.fm-lead{font-size:17px;line-height:1.6;color:var(--ink)}
+.fm-close{
+  font:400 12px/1.6 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);border-top:1px solid var(--rule);
+  padding-top:12px;margin-top:22px;max-width:66ch;
+}
+.fm-rules{display:flex;flex-direction:column;gap:13px;margin:22px 0 0;max-width:66ch}
+.fm-rule{display:flex;gap:14px;align-items:flex-start;
+  font-size:14px;line-height:1.55;color:var(--ink-2)}
+.fm-rule strong{color:var(--ink)}
+.fm-n{
+  flex:0 0 auto;font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--stamp);background:var(--stamp-soft);
+  border-radius:3px;padding:5px 6px;letter-spacing:.06em;
+}
+
+/* ---------- the plate: inside front cover ----------
+   It faces the cover, so it is the second thing anybody sees. Deliberately the
+   quietest page in the issue: one excerpt, one verse, one rule, and air. */
+.plate{display:flex;flex-direction:column;gap:0}
+.plate-code{
+  font:400 12px/1.65 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink);background:var(--sunk);border-left:3px solid var(--stamp);
+  padding:16px 18px;margin:26px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;
+}
+.plate-code .c{color:var(--ink-3)}
+.plate-code .s{color:var(--stamp)}
+.plate-cite{
+  font:400 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);margin:9px 0 0;
+}
+.plate-verse{margin:auto 0;padding:34px 0}
+.plate-verse p{
+  font:400 19px/1.75 "IBM Plex Serif",Georgia,serif;
+  color:var(--ink);margin:0;text-wrap:balance;
+}
+/* THE ONE NUMBER IN THE PROSE THE BUILD CHECKS. It counts the percentages that
+   were transcribed rather than substituted, so it is set in the face of the
+   harness rather than the face of the argument: a reader can see at a glance
+   that this figure is machine-verified even though the ones around it are not.
+   make_pdf.py refuses to render if it stops matching the document. */
+.fig-typed{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-weight:600;font-size:0.94em;font-variant-numeric:tabular-nums;
+}
+
+/* Set as spaced capitals rather than typed in caps, so the emphasis lands
+   without the line shouting: at 0.86em the capitals sit at the same optical
+   weight as the lowercase serif around them. Not in the accent colour - on
+   these pages the accent means a measured finding and nothing else. */
+.verse-must{
+  font-size:0.86em;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink);
+}
+.plate-attrib{
+  display:block;margin-top:14px;
+  font:400 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.plate-attrib::before{content:"— "}
+.plate-rule{border-top:1px solid var(--rule);padding-top:14px;margin-top:auto}
+.plate-rule p{
+  font:500 15px/1.55 "IBM Plex Serif",Georgia,serif;
+  color:var(--ink-2);margin:0;max-width:52ch;
+}
+.plate-rule em{color:var(--stamp);font-style:italic}
+.plate-rule span{
+  display:block;margin-top:8px;
+  font:400 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ---------- the crew: who makes this, and what each may do ----------
+   Two columns: who on the left, authority on the right. The limits are set in
+   the same size as the duties, deliberately - a masthead that lists what an
+   agent does in body text and what it may not do in small print is doing the
+   opposite of what this section is for. */
+.crew{margin:22px 0 0;max-width:74ch;border-top:1px solid var(--rule)}
+.crew-row{display:flex;gap:26px;padding:18px 0;border-bottom:1px solid var(--rule-soft)}
+/* min-width:0 is the load-bearing part. A flex item will not shrink below its
+   content by default, so "Budday Budderson Studio LLC" - held on one line by the
+   non-breaking spaces it used to carry - overrode the 148px basis, widened the
+   column and started that row's text 55px right of every other row's. The names
+   wrap now, and all four rows share one left edge. */
+.crew-who{flex:0 0 148px;min-width:0;display:flex;flex-direction:column;gap:5px}
+.crew-name{font:600 17px/1.2 "IBM Plex Serif",Georgia,serif;color:var(--ink)}
+.crew-kind{
+  align-self:flex-start;border-radius:3px;padding:3px 6px;
+  font:500 9.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--stamp);background:var(--stamp-soft);
+}
+.crew-role{
+  font:400 11px/1.4 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);
+}
+.crew-human{color:var(--ok) !important;background:var(--ok-bg) !important}
+.crew-org{color:var(--ink-2) !important;background:var(--sunk) !important}
+.crew-code{color:var(--ink-2) !important;background:var(--sunk) !important;border:1px solid var(--rule) !important}
+.crew-what{flex:1 1 auto}
+.crew-what p{margin:0 0 9px;font-size:14px;line-height:1.6;color:var(--ink-2)}
+.crew-what p:last-child{margin-bottom:0}
+.crew-lim strong{color:var(--ink)}
+.crew-what code{
+  font:400 12.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink);background:var(--sunk);border-radius:3px;padding:2px 4px;
+}
+.crew-note{font-size:14px;color:var(--ink-3);margin-top:18px}
+
+/* ---------- table of contents ----------
+   The leader dots are a border-bottom on a flexed spacer, so they stretch to
+   whatever room the title leaves and never wrap. On the web there are no
+   pages, so .toc-p is empty and collapses; the PDF renderer fills it. */
+.toc{list-style:none;margin:20px 0 0;padding:0;max-width:66ch}
+.toc li{margin:0}
+.toc a{display:flex;align-items:baseline;gap:9px;text-decoration:none;
+  color:var(--ink);padding:5px 0;border:0}
+/* The group label is the only thing separating four unrelated runs of entries,
+   so it needs air above it more than it needs weight. 30px over 8px reads as a
+   new section starting; 18px over 4px read as one long list. */
+/* `.toc li{margin:0}` is (0,1,1) and `.toc-grp` is (0,1,0), so the plain class
+   loses on specificity and every margin set here was silently discarded - which is
+   why the group labels sat flush against the entry above them. Qualified. */
+.toc li.toc-grp{
+  font:500 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--ink-2);
+  margin:30px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule);
+}
+.toc li.toc-grp:first-child{margin-top:0}
+.toc-n{
+  flex:0 0 auto;font:500 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--stamp);width:16px;
+}
+.toc-t{font:400 14.5px/1.35 "IBM Plex Serif",Georgia,serif}
+.toc-d{flex:1 1 auto;border-bottom:1px dotted var(--rule);
+  transform:translateY(-3px);min-width:14px}
+.toc-p{
+  flex:0 0 auto;font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);text-align:right;
+}
+
+/* ---------- masthead ---------- */
+header{border-bottom:2px solid var(--ink);padding:56px 0 20px;margin-bottom:8px}
+.eyebrow{
+  font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--stamp);
+}
+h1{
+  font:600 40px/1.1 "IBM Plex Serif",Georgia,serif;
+  margin:14px 0 10px;letter-spacing:-.015em;text-wrap:balance;
+}
+.dek{font-size:17px;color:var(--ink-2);margin:0;max-width:60ch}
+.meta{
+  display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:20px;
+  font:400 12.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);
+}
+.meta b{color:var(--ink-2);font-weight:500}
+
+h2{
+  font:600 13px/1.3 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
+  margin:52px 0 0;padding-bottom:8px;border-bottom:1px solid var(--rule);
+}
+h3{
+  font:600 22px/1.28 "IBM Plex Serif",Georgia,serif;
+  margin:30px 0 8px;letter-spacing:-.008em;text-wrap:balance;
+}
+p{margin:0 0 15px}
+.col p,.col li{max-width:66ch}
+strong{font-weight:600}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}
+code{background:var(--sunk);padding:1px 5px;border-radius:3px}
+a{color:var(--stamp)}
+
+/* ---------- finding blocks ---------- */
+.finding{border-top:1px solid var(--rule-soft);padding-top:6px;margin-top:34px}
+.finding:first-of-type{border-top:none}
+.fhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.fnum{
+  font:600 12px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--stamp);letter-spacing:.06em;padding-top:4px;
+}
+.chip{
+  display:inline-block;font:500 10.5px/1.7 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.09em;text-transform:uppercase;padding:1px 8px;border-radius:2px;
+  white-space:nowrap;
+}
+.c-ok{background:var(--ok-bg);color:var(--ok)}
+.c-warn{background:var(--warn-bg);color:var(--warn)}
+.c-stop{background:var(--stop-bg);color:var(--stop)}
+.c-neutral{background:var(--sunk);color:var(--ink-2)}
+
+/* ---------- the headline number ---------- */
+.stat{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;
+  background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--stamp);
+  padding:16px 20px;margin:18px 0;box-shadow:var(--shadow);
+}
+.stat .big{
+  font:500 34px/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;
+}
+.stat .say{font-size:14.5px;color:var(--ink-2);flex:1 1 260px;min-width:0}
+.fig{
+  font:400 11px/1 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);white-space:nowrap;
+}
+
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:520px;
+  font:400 13.5px/1.45 "IBM Plex Mono",ui-monospace,monospace;
+  font-variant-numeric:tabular-nums}
+caption{
+  text-align:left;font:500 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+  padding-bottom:8px;
+}
+th{
+  text-align:left;font-weight:500;color:var(--ink-3);
+  border-bottom:1px solid var(--ink);padding:6px 12px 6px 0;
+  font-size:12px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;
+}
+td{border-bottom:1px solid var(--rule-soft);padding:7px 12px 7px 0;vertical-align:top}
+td.n,th.n{text-align:right;padding-right:18px}
+tbody tr:last-child td{border-bottom:1px solid var(--rule)}
+.dim{color:var(--ink-3)}
+.bar{display:inline-block;height:8px;background:var(--stamp);opacity:.75;vertical-align:middle;border-radius:1px}
+
+/* ---------- callout ---------- */
+.note{
+  background:var(--sunk);border:1px solid var(--rule-soft);
+  padding:16px 20px;margin:20px 0;font-size:14.5px;color:var(--ink-2);
+}
+.note b{color:var(--ink)}
+.note.stamp{background:var(--stamp-soft);border-color:var(--stamp)}
+
+/* ---------- verbatim failure cases ---------- */
+.case{
+  border-left:3px solid var(--rule);padding:2px 0 2px 18px;margin:26px 0;
+}
+.chead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:9px}
+.cid{font:500 12px/1 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-2);letter-spacing:.03em}
+.crate{
+  font:500 10.5px/1.7 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;
+  text-transform:uppercase;background:var(--stop-bg);color:var(--stop);padding:1px 8px;border-radius:2px;
+}
+.case p{margin:0 0 9px;max-width:64ch}
+.ask{font-style:italic;color:var(--ink-2);font-size:15px}
+.said{
+  font:400 14px/1.55 "IBM Plex Mono",ui-monospace,monospace;
+  background:var(--sunk);border:1px solid var(--rule-soft);padding:11px 14px;
+  color:var(--ink);overflow-wrap:anywhere;
+}
+.said b{font-weight:600}
+.crit{font-size:14.5px;color:var(--ink-2)}
+
+/* ---------- charts: inline SVG, no library, identical in print ---------- */
+figure{margin:22px 0;max-width:66ch}
+figure svg{display:block}
+svg .cap{font:400 10px "IBM Plex Mono",ui-monospace,monospace;fill:var(--ink-3)}
+svg .sub{font:400 9.5px "IBM Plex Mono",ui-monospace,monospace;fill:var(--ink-3)}
+svg .val{font:500 11px "IBM Plex Mono",ui-monospace,monospace;fill:var(--ink-2)}
+svg .key{fill:var(--stamp)} svg .keyo{fill:var(--ink-3)}
+svg .axis{stroke:var(--rule);stroke-width:1}
+figcaption{font:400 12px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink-3);margin-top:8px;max-width:60ch}
+
+/* running production credit on every section rule */
+h2{position:relative}
+h2::after{content:"BUDDAY BUDDERSON";position:absolute;right:0;bottom:8px;
+  font:400 9px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;
+  color:var(--ink-3);opacity:.5}
+
+.disclaim{font-size:14px;color:var(--ink-2);max-width:66ch}
+.disclaim h4{font:600 13px/1.4 "IBM Plex Sans",sans-serif;color:var(--ink);
+  margin:18px 0 5px}
+.disclaim p{margin:0 0 11px}
+.disclaim .lead{border-left:3px solid var(--stamp);padding-left:16px;
+  font-size:15px;color:var(--ink)}
+
+ul{margin:0 0 15px;padding-left:20px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-3)}
+
+footer{
+  margin-top:64px;padding-top:18px;border-top:2px solid var(--ink);
+  font:400 12.5px/1.7 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);
+}
+@media (max-width:600px){
+  h1{font-size:31px} .stat .big{font-size:27px} body{padding:0 16px 64px}
+  header{padding-top:36px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<section class="cover">
+  <div class="cov-top">
+    <div class="cov-brand">
+      <div class="cov-mast">Protocol<br>STAMP</div>
+    </div>
+    <div class="cov-rule"></div>
+    <div class="cov-issue">
+      <span>The&nbsp;Calibration&nbsp;Vol&nbsp;002</span>
+      <span class="cov-date">ISSUED&nbsp;SAT20261003</span>
+    </div>
+  </div>
+
+  <div class="cov-teases">
+    <p class="tz1">We re-marked our own marking.<br>
+       <span>A judge from a different family agreed with the other two at <b>0.954 [0.896, 1.000] (panel-sampled draws with a reference)</b>. Vol&nbsp;001 passes the test this issue set it.</span></p>
+    <p class="tz2">The panel, run again on a second model.
+       <span>Three judges on Luna: <b>0.865 [0.804, 0.924] (sampled draws)</b>.</span></p>
+    <p class="tz2">Two decision models meet our agreement bar on the public half.
+       <span>So would a judge that said PASS to everything, almost.</span></p>
+    <p class="tz2">Two judges, one table.
+       <span>Jev and Laya disagreed on 8 compared draws and produced identical totals. We checked.</span></p>
+  </div>
+
+  <div class="cov-foot">
+    <span>A Budday Budderson Production</span>
+    <span>Houston, Texas</span>
+  </div>
+</section>
+
+<section class="front plate" id="harness">
+  <div class="fm-eyebrow">From the harness</div>
+  <pre class="plate-code"><span class="c">ONE CHOICE THE PRE-REGISTRATION DID NOT SPELL OUT, stated here and in the issue: it asks for
+agreement "against the majority of J-B and J-C". Two judges have a majority only when they agree.
+Draws where J-B and J-C disagree have no reference label; they are COUNTED AND EXCLUDED, never
+resolved by a third judge, and the count is printed beside every figure that uses the reference.</span></pre>
+  <p class="plate-cite">scripts/cal002_figures.py, lines 11&ndash;14 &middot; unedited</p>
+  <div class="plate-rule">
+    <p>An agent must never be <em>told</em> about a precondition it could
+       <em>verify</em>.</p>
+    <span>the house rule</span>
+  </div>
+</section>
+
+<section class="front" id="about">
+  <div class="fm-eyebrow">About this publication</div>
+  <h2 class="fm-h">What a Calibration is</h2>
+  <div class="col">
+  <p class="fm-lead">A <strong>Calibration</strong> is one dated issue of a measurement
+  programme. It is not a leaderboard, and the thing it is mostly about is not the models
+  &mdash; it is the <em>instruments</em> people use to rank them.</p>
+  <p>This issue is about one instrument: the judges. Every verdict in Vol 001 came from a
+  model grading another model&rsquo;s answers. Before measuring anything new, Vol 002 asked
+  whether that judging survives three tests: a different judge, a different model, and a
+  different kind of judge altogether.</p>
+  </div>
+  <div class="fm-rules">
+    <div class="fm-rule"><span class="fm-n">01</span>
+      <div><strong>Signed before any run.</strong> The questions were re-frozen and signed by
+      Lawrence Ho at 11:45 CDT on Friday 2 October 2026. No run for this issue started before
+      that signature.</div></div>
+    <div class="fm-rule"><span class="fm-n">02</span>
+      <div><strong>Every computed number is cited.</strong> Each figure and count from the runs
+      was substituted from <code>figures.json</code> by <code>figures.py render</code>, under
+      <code>cal002</code>, with the SHA-256 of the files it came from. Thresholds, dates and
+      settings are typed.</div></div>
+    <div class="fm-rule"><span class="fm-n">03</span>
+      <div><strong>Exploratory is labelled.</strong> Anything not asked by the pre-registration
+      is marked <em>exploratory</em> where it appears. Several such figures were added after an
+      independent review of the draft, because the pre-registered figures alone would have
+      overstated the result.</div></div>
+    <div class="fm-rule"><span class="fm-n">04</span>
+      <div><strong>An issued Calibration is never edited.</strong> If a number here changes, a
+      correction is issued under a new date and this issue stands.</div></div>
+  </div>
+  <p class="fm-close">Due Saturday 12 September 2026 and missed. The 1 October register row
+  re-dated it to Saturday 10 October. It was issued on Saturday 3 October instead: the runs were
+  in on Friday, the draft was reviewed twice, and it was signed and released the next morning.
+  Saturday is a publishing day, but this one belongs to The Log; the issue is off-cycle all the
+  same, and this note is where that is said.</p>
+</section>
+
+<section class="front" id="contents">
+  <div class="fm-eyebrow">The Calibration Vol 002 &middot; Issued Sat 2026-10-03</div>
+  <h2 class="fm-h">Contents</h2>
+  <ol class="toc">
+    <li class="toc-grp">The argument</li>
+    <li><a href="#bottom"><span class="toc-t">Bottom line</span><span class="toc-d"></span><span class="toc-p" data-find="Bottom line"></span></a></li>
+    <li><a href="#howread"><span class="toc-t">What was asked, and how</span><span class="toc-d"></span><span class="toc-p" data-find="What was asked, and how"></span></a></li>
+    <li class="toc-grp">Findings</li>
+    <li><a href="#f01"><span class="toc-n">01</span><span class="toc-t">A judge from another family agrees with the panel</span><span class="toc-d"></span><span class="toc-p" data-find="A judge from another family agrees"></span></a></li>
+    <li><a href="#f02"><span class="toc-n">02</span><span class="toc-t">The panel, run again on a second model</span><span class="toc-d"></span><span class="toc-p" data-find="The panel, run again on a second model"></span></a></li>
+    <li><a href="#f03"><span class="toc-n">03</span><span class="toc-t">Two decision models meet the bar, and what the bar misses</span><span class="toc-d"></span><span class="toc-p" data-find="Two decision models meet the bar"></span></a></li>
+    <li><a href="#f04"><span class="toc-n">04</span><span class="toc-t">Steadiness, counted</span><span class="toc-d"></span><span class="toc-p" data-find="Steadiness, counted"></span></a></li>
+    <li class="toc-grp">The evidence</li>
+    <li><a href="#known"><span class="toc-t">Known before signing</span><span class="toc-d"></span><span class="toc-p" data-find="Known before signing"></span></a></li>
+    <li><a href="#choices"><span class="toc-t">Choices and departures, stated</span><span class="toc-d"></span><span class="toc-p" data-find="Choices and departures, stated"></span></a></li>
+    <li><a href="#disk"><span class="toc-t">Data on disk, and what it cost</span><span class="toc-d"></span><span class="toc-p" data-find="Data on disk, and what it cost"></span></a></li>
+    <li><a href="#limits"><span class="toc-t">Standing limitations</span><span class="toc-d"></span><span class="toc-p" data-find="Standing limitations"></span></a></li>
+    <li><a href="#who"><span class="toc-t">Who makes this</span><span class="toc-d"></span><span class="toc-p" data-find="Who makes this"></span></a></li>
+  </ol>
+</section>
+
+<h2 id="bottom">Bottom line</h2>
+<div class="col">
+<p style="margin-top:20px"><strong>The judging passed the tests it was set.</strong> A judge from a different family re-graded Nemotron&rsquo;s answers and agreed with the other two judges at 0.954 [0.896, 1.000] (panel-sampled draws with a reference), above the pre-registered floor of 0.70. The three-judge panel, run for the first time on Luna, agreed at 0.865 [0.804, 0.924] (sampled draws). Vol&nbsp;001&rsquo;s per-model verdicts pass the test the pre-registration set for them. One caution travels with that: the reference includes the very grader whose verdicts Vol&nbsp;001 published, and a direct comparison with that grader, reported below as exploratory, is weaker.</p>
+<p><strong>Both decision models meet the agreement bar on the public half, and neither is seated by this issue.</strong> Hosted Jev and Laya each agreed with the reference at 0.745 [0.596, 0.868] (public-half draws with a reference) on the public half. On the same draws, a judge that answered PASS every time would score 0.700 (public-half draws with a reference), and Jev failed only 5 of the 19 draws the reference failed. Both of those are exploratory. Whether to seat either model is the investigator&rsquo;s decision, and it is not taken here.</p>
+</div>
+
+<h2 id="howread">What was asked, and how</h2>
+<div class="col">
+<p style="margin-top:20px"><strong>Three questions, pre-registered and signed before any run.</strong> Q1: does a re-grade by <code>google/gemini-3.7-flash</code> agree with the other two judges on the draws the panel sampled in Vol 001? Floor: an AC1 of at least 0.70. Q2: does the same three-judge panel replicate on Luna? No floor; a replication is reported whatever it is. Q3: can a decision model &mdash; hosted Jev, or the open Laya &mdash; hold one seat on the panel, under the seven rules published in The Bench Vol&nbsp;003?</p>
+<p><strong>The reference.</strong> Agreement is measured against the majority of J-B (<code>x-ai/grok-4.6</code>) and J-C (<code>bytedance-seed/seed-2-1-turbo</code>). Two judges have a majority only when they agree, so draws where they disagree are excluded and counted. J-A is the same Gemini model as the Q1 re-grade, so its figure is printed separately and labelled self-including. <strong>J-C is also the tier-1 grader whose verdicts Vol&nbsp;001 published</strong>: the reference contains the grader being validated. Rule six of The Bench Vol&nbsp;003 named this problem; the pre-registration did not end it, and this issue does not either.</p>
+<p><strong>The statistic.</strong> Gwet&rsquo;s AC1, the coefficient this programme uses because it is not dragged down when one verdict dominates, with a percentile bootstrap interval &mdash; computed by the same functions <code>panel_grade.py</code> uses. The intervals resample individual draws, not items, so they are narrower than they should be; read them as a guide to precision, not as a probability.</p>
+</div>
+
+<h2>Findings</h2>
+
+<div class="finding col" id="f01">
+  <div class="fhead"><span class="fnum">01</span><span class="chip c-ok">Pre-registered &middot; passes its floor</span></div>
+  <h3>A judge from another family agrees with the panel</h3>
+  <div class="stat"><span class="big">0.954 [0.896, 1.000] (panel-sampled draws with a reference)</span>
+    <span class="say">AC1 between the Gemini re-grade and the J-B/J-C reference, on 131 sampled draws; 17 excluded for want of a reference. Floor: 0.70.</span></div>
+  <p>All 616 of Nemotron&rsquo;s graded draws were re-graded by Gemini from the stored responses; generation was not repeated. On the panel sample, the re-grade cleared the floor. The self-including figure, against the majority of all three judges, is 0.946 [0.892, 0.987] (panel-sampled draws).</p>
+  <p><strong>Exploratory, and weaker.</strong> Against the Vol&nbsp;001 tier-1 verdicts directly, the re-grade&rsquo;s AC1 is 0.785 [0.689, 0.880] (panel-sampled draws) on the panel sample and 0.858 [0.815, 0.898] (all nemo_v1 draws) over every draw. The excluded draws are where Grok disputed the tier-1 grader; on them the re-grade sided with Grok 13 times and with the tier-1 grader 4 times.</p>
+  <div class="note"><b>What it does and does not show.</b> The pre-registration said that below the floor no Vol&nbsp;001 verdict would stand. It made the floor necessary, not sufficient. Clearing it means the verdicts pass the test that was set; it does not make them right. That needs agreement with a person, which has not been measured.</div>
+</div>
+
+<div class="finding col" id="f02">
+  <div class="fhead"><span class="fnum">02</span><span class="chip c-ok">Pre-registered replication</span></div>
+  <h3>The panel, run again on a second model</h3>
+  <div class="stat"><span class="big">0.865 [0.804, 0.924] (sampled draws)</span>
+    <span class="say">AC1 of the three-judge panel on Luna, over 143 sampled draws.</span></div>
+  <p>Same three judges, same sampling, same procedure as Vol&nbsp;001. The majority of three overruled the tier-1 grader on 7 of the sampled draws. Fleiss&rsquo; kappa, pre-registered beside AC1, is 0.807 [0.710, 0.887] (sampled draws).</p>
+  <p class="mono">Fail rate on the sample: J-A 29.4% (sampled draws)<br>J-B 30.8% (sampled draws)<br>J-C 26.6% (sampled draws)</p>
+</div>
+
+<div class="finding col" id="f03">
+  <div class="fhead"><span class="fnum">03</span><span class="chip c-warn">Pre-registered &middot; exploratory caveats beside it</span></div>
+  <h3>Two decision models meet the bar, and what the bar misses</h3>
+  <div class="stat"><span class="big">0.745 [0.596, 0.868] (public-half draws with a reference)</span>
+    <span class="say">AC1 of hosted Jev against the reference, public half, 80 draws; 7 excluded for want of a reference. Rule two: 0.70 on the point estimate, interval printed.</span></div>
+  <p>OpenRouter lists no data policy for Jev 1.13 (checked 2 October 2026), so under rule five it saw the public half only. On that half it meets rule two on the point estimate. So does Laya, with the identical figure 0.745 [0.596, 0.868] (public-half draws with a reference).</p>
+  <p>Laya runs on our own machine, so it also graded the held-out half, which Jev never saw. There it agreed at 0.488 [0.198, 0.704] (held-out half, draws with a reference) on 51 draws (5 excluded), and over both halves at 0.651 [0.519, 0.768] (both halves, draws with a reference) on 131 draws (12 excluded). The pre-registration did not say which Laya figure rule two applies to; all three are printed.</p>
+  <p><strong>Exploratory: what the bar misses.</strong> On the public draws a judge that answered PASS every time would score 0.700 (public-half draws with a reference) &mdash; right at the bar &mdash; because most answers pass. Jev failed 5 of the 19 draws the reference failed; its fail rate on the compared draws was 7.5% (public-half draws with a reference) against the reference&rsquo;s 23.8% (public-half draws with a reference). Cohen&rsquo;s kappa on the same table is 0.323 (public-half draws with a reference). AC1 is the right coefficient for this programme, and on a sample this lopsided it still cannot tell a cautious judge from a lenient one.</p>
+  <p><strong>Two judges, one table.</strong> Jev and Laya produced the same table: the same number of draws in each of its four cells. They did not agree draw for draw. Of the 80 compared draws they differed on 8, and the swaps cancelled exactly; of all 87 public panel draws they differed on 9. Identical tables give identical intervals, because the intervals are now resampled in a fixed order.</p>
+  <p><strong>What Laya saw.</strong> Laya&rsquo;s English checkpoint reads 512 tokens. The judging script cut 12 grading states to 1,800 characters before Laya saw them, 7 of them on held-out items; 3 of those would have fitted uncut. Laya itself dropped tokens from 10 states. In all, 13 states lost text before a verdict. The checkpoint warned that its shipped temperatures were invalid, so its probabilities are not used as confidence; only the higher-probability option is used, as the verdict.</p>
+  <div class="note stamp"><b>What the rules allow, and what they leave open.</b> A candidate that clears every <em>tested</em> rule may take one panel seat. Rule three, agreement with a person, was not tested: no human labels existed before the freeze. Seating either model is the investigator&rsquo;s decision. It is not taken in this issue.</div>
+</div>
+
+<div class="finding col" id="f04">
+  <div class="fhead"><span class="fnum">04</span><span class="chip c-ok">Pre-registered &middot; counts, not a ranking</span></div>
+  <h3>Steadiness, counted</h3>
+  <p>Rule four: grade the same draws five times at normal settings and publish how often the verdict changes, with the seated judges measured the same way. Draws whose five verdicts were not all the same:</p>
+  <p class="mono">Jev 2 of 50<br>Laya 0 of 50<br>J-A 3 of 50<br>J-B 3 of 50<br>J-C 3 of 49</p>
+  <p>Counts this small cannot be ranked against each other. Four further facts belong beside them. Laya returned identical probabilities on all five gradings of 50 draws: on this machine it is deterministic, so its count says nothing about stability. Jev was measured on fifty public draws, not the fifty the others shared. For the seated judges the first of the five verdicts is the one already on disk; for J-C that is the original tier-1 verdict. And one of J-C&rsquo;s re-grades hit its output limit before giving a verdict, so that draw lacks five verdicts and J-C&rsquo;s count covers one draw fewer.</p>
+</div>
+
+<h2 id="known">Known before signing</h2>
+<div class="col">
+<p style="margin-top:20px">Two questions in the unsigned first draft had answers before anyone signed anything. They are reported as description, not as findings.</p>
+<p><strong>How much of the bank does work.</strong> Of 63 items measured on both completed candidates, 20 are passed by both on every draw and 4 are failed by both on every draw. 23 separate the two candidates by a fail-rate gap of 0.40 or more, 14 of them in the public half. The first draft printed different counts, which its own definitions do not reproduce; the registry carries both.</p>
+<p><strong>Abstention.</strong> 4 items score an over-cautious refusal as a failure. Luna failed 7 of 40 draws on them, 6 of them on a single item whose premise is defective, and 1 of 30 on the other three. Nemotron failed 0. Their ground truth has not been verified by a person, so none of them ran in this issue.</p>
+</div>
+
+<h2 id="choices">Choices and departures, stated</h2>
+<div class="col">
+<ul>
+<li style="margin-top:14px"><strong>The reference needs two judges to agree.</strong> The pre-registration said &ldquo;the majority of J-B and J-C&rdquo; without saying what happens when two judges disagree. Those draws are excluded and counted beside every figure that uses the reference.</li>
+<li><strong>Exploratory figures were added after review.</strong> The comparison against the tier-1 grader, the constant-PASS benchmark, the caught-failure counts, Cohen&rsquo;s kappa and the held-out split for Laya were not pre-registered. An independent reviewer showed that, without them, the prose built on the pre-registered figures overstated the result; the figures themselves were correct.</li>
+<li><strong>Q1 re-graded more than it used, on shorter text.</strong> The re-grade script took every Nemotron run file, including the temperature-0 runs; only the two halves of <code>nemo_v1</code> enter any figure. 17 of those responses were re-graded from the 4,000-character store where the original grader had seen up to 6,000.</li>
+<li><strong>Steadiness reused one verdict.</strong> For the seated judges the first of five verdicts is the one on disk; Jev and Laya got five fresh gradings. The run was interrupted by a time limit, resumed where it stopped, and finished at 15:23 America/Chicago, before the 18:00 freeze.</li>
+<li><strong>Data terms.</strong> Rule five promised to check and publish the data terms of every judge that sees held-out probes, starting with the seated ones. That check has not been done for the seated judges, and it is owed.</li>
+<li><strong>The 8 compared draws where Jev and Laya differ</strong>, all public items: <code>01_arithmetic_038</code> B1, <code>04_false_premise_123</code> B3, <code>06_sycophancy_063</code> B0, <code>12_impossible_specifics_029</code> A1, <code>14_provenance_003</code> B2, <code>14_provenance_040</code> A1, A4 and B3. The further public draw on which they differ has no reference.</li>
+</ul>
+</div>
+
+<h2 id="disk">Data on disk, and what it cost</h2>
+<div class="col">
+<p style="margin-top:20px">Every figure is registered under <code>cal002.*</code> in <code>figures.json</code> with the SHA-256 of the run files it was computed from. The run files are served with the others at /data/runs/, redacted on held-out items as the 11 September row in Corrections + changes describes; the held-out probes themselves are never published.</p>
+<p><strong>Cost.</strong> The paid runs were made on a new key with a hard limit of $25 set on the key itself. OpenRouter charged $3.510 in all, read once after the last paid run. Laya ran on our own machine and cost nothing.</p>
+</div>
+
+<h2 id="limits">Standing limitations</h2>
+<div class="col">
+<ul>
+<li style="margin-top:14px"><strong>No human labels.</strong> Every agreement here is model against model. Agreement with a person is the test that would say whether any judge is right.</li>
+<li><strong>The tier-1 grader still holds a seat.</strong> Rule six is open.</li>
+<li><strong>Intervals are optimistic.</strong> Draws within an item are not independent, and the bootstrap treats them as if they were. Where an interval touches 1.000 it is at the edge of what the method can say.</li>
+<li><strong>Two candidates, one bank.</strong> Everything here is measured on <code>bank_v1</code> with Luna and Nemotron.</li>
+<li><strong>Open-Jev waited.</strong> Its 9B version is reported to run on a 16 GB consumer graphics card; the machine that ran this issue has none. The 27B needs a data-centre GPU. Neither was tested.</li>
+</ul>
+</div>
+
+<h2 id="who">Who makes this</h2>
+<div class="col">
+<p style="margin-top:20px"><strong>Lawrence Ho</strong>, Chief Human Investigator, Evaluation Administrator + Instrument Maker, signed the pre-registration and signs this issue, and is its sole authority. The prose was drafted by an AI agent, reviewed adversarially by a second, independent agent, and edited and signed by him. <strong>Juancho Lee</strong>, the panel registrar, is deterministic code that seats the judges and computes agreement and issues no verdict. <strong>Jayden Lee</strong>, the AI reporter, writes The Log and nothing here. <strong>Budday Budderson Studio LLC</strong> publishes the series and grades nothing.</p>
+</div>
+
+<footer>
+<p>The Calibration Vol 002 &middot; Sat20261003 &middot; Protocol STAMP &middot; protocolstamp.com</p>
+<p>Published by Budday Budderson Studio LLC, a New Mexico company &middot; Lawrence Ho, Chief Human Investigator, Evaluation Administrator + Instrument Maker</p>
+<p>Protocol STAMP can make mistakes. Verify before you implement anything. An issued document is never edited; corrections are issued under a new date.</p>
+</footer>
+</div>
+</body>
+</html>
+
+<p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Source of this page, byte-exact: <a href="/calibration/002-issued-sat20261003/source" style="color:var(--stamp)">002-issued-sat20261003/source</a> &middot; sha256 ae993179f05f&hellip; &middot; 40,803 bytes &middot; <a href="/calibration/002-issued-sat20261003.pdf" style="color:var(--stamp)">PDF, 12 pages</a></p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Issued from Houston, Texas, USA on Saturday 3 October 2026 at 11:52 America/Chicago, signed by Lawrence Ho. Pre-registered and signed at 11:45 on Friday 2 October; runs frozen at 18:00 that day. Off-cycle: this Saturday belongs to The Log. The time is the moment the release ran. The dateline names where the work was done; it moves with the investigator, and each issue keeps its own.</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: Protocol STAMP. <i>The Calibration Vol 002 · Sat20261003</i>. Budday Budderson Studio LLC, 2026. https://protocolstamp.com/calibration/002-issued-sat20261003/ &middot; build ae993179f05f. See <a href="/definitions/#cite" style="color:var(--stamp)">Definitions</a> for the form.</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Protocol STAMP can make mistakes. Verify before you implement anything. An issued document is never edited, so a correction to this one is issued under a new date and this page stands as it was. See <a href="/corrections/" style="color:var(--stamp)">Corrections + changes</a>.</p>
+</body>
+</html>
