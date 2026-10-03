@@ -3897,6 +3897,2733 @@
   "unit": "usd",
   "value": 3.509862868
  },
+ "cal003.JA.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.5149199793495096,
+   0.8190327613104523
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6846924177396282
+ },
+ "cal003.JA.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal003.JA.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 16
+ },
+ "cal003.JA.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.JA.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.JA.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "google/gemini-3.7-flash",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.JB.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.45250737463126844,
+   0.7798111554560497
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6311428020813259
+ },
+ "cal003.JB.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "cal003.JB.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 18
+ },
+ "cal003.JB.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.JB.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.JB.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "x-ai/grok-4.6",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.JC.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.4789881259679917,
+   0.797976447172002
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6586641756188696
+ },
+ "cal003.JC.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "cal003.JC.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 16
+ },
+ "cal003.JC.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.JC.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.JC.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "bytedance-seed/seed-2-1-turbo (tier-1)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.Jev.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.7408218697975992,
+   0.9348070438366429
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8464993183094074
+ },
+ "cal003.Jev.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 3
+ },
+ "cal003.Jev.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "cal003.Jev.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.Jev.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.Jev.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "typesafe/jev-1.13",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.Laya.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.6569224174882126,
+   0.8852999340804218
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.7792228390166535
+ },
+ "cal003.Laya.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "cal003.Laya.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "cal003.Laya.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.Laya.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.Laya.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "convaiinnovations/laya",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.REF.ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": [
+   0.5199999999999999,
+   0.8261041399071238
+  ],
+  "note": "Q1: AC1 against the human labels.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6836555360281196
+ },
+ "cal003.REF.caught": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human FAILs the judge also failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 5
+ },
+ "cal003.REF.false_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q2: human PASSes the judge failed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 14
+ },
+ "cal003.REF.human_fails": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human FAILs among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 9
+ },
+ "cal003.REF.human_passes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Human PASSes among the compared draws.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 71
+ },
+ "cal003.REF.n": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "judge": "J-B/J-C reference (both must agree)",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws compared.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 80
+ },
+ "cal003.REF.ties": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Labelled draws with no J-B/J-C reference because the two disagreed.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 7
+ },
+ "cal003.labels.draws": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Draws labelled.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 87
+ },
+ "cal003.labels.fail": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Labelled FAIL.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.labels.pass": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Labelled PASS.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 77
+ },
+ "cal003.labels.unsure": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Labelled UNSURE, excluded.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 0
+ },
+ "cal003.q3.lowest_seated_ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT"
+  },
+  "interval": null,
+  "note": "Q3 threshold: the lowest of the three seated judges' AC1 with the person.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.6311428020813259
+ },
+ "cal003.x.const_pass_ac1": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "AC1 a judge would score against the person by answering PASS to every draw.",
+  "scope": "labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8710920136316491
+ },
+ "cal003.x.fail_items": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Distinct items carrying the person's FAILs.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 6
+ },
+ "cal003.x.fail_max_per_item": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Most FAILs on a single item.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 4
+ },
+ "cal003.x.label_gaps_under_5s": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Consecutive labels saved under five seconds apart.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 10
+ },
+ "cal003.x.label_median_seconds": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Median seconds between consecutive labels.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 11.0
+ },
+ "cal003.x.label_minutes": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Minutes from first to last label.",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 42
+ },
+ "cal003.x.pair_AB": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.8150903294367694,
+   0.9810230123241357
+  ],
+  "note": "Agreement among the seated judges on the same draws the person labelled.",
+  "scope": "the same labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.9051150616206783
+ },
+ "cal003.x.pair_AC": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.7366486486486485,
+   0.949187189720627
+  ],
+  "note": "Agreement among the seated judges on the same draws the person labelled.",
+  "scope": "the same labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8521979188787429
+ },
+ "cal003.x.pair_BC": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.7625653854901068,
+   0.9630494797196858
+  ],
+  "note": "Agreement among the seated judges on the same draws the person labelled.",
+  "scope": "the same labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8694953391192543
+ },
+ "cal003.x.stored_text_shorter": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": null,
+  "note": "Labelled draws whose stored response (4,000 characters) is shorter than what the tier-1 grader saw (up to 6,000).",
+  "scope": null,
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "count",
+  "value": 2
+ },
+ "cal003.x.three_way": {
+  "computed_at": "2026-10-03T12:48:45",
+  "conditions": {
+   "draws": "the 87 public-half draws of panel_luna_v1",
+   "labeller": "Lawrence Ho, blind to every judge's verdict",
+   "pre_registration": "reports/INTENT_calibration_003_FOR_SIGNATURE.md, signed 2026-10-03 12:00 CDT",
+   "status": "EXPLORATORY - not pre-registered; added after the independent review"
+  },
+  "interval": [
+   0.7894085688927137,
+   0.9495420603658683
+  ],
+  "note": "Agreement among the seated judges on the same draws the person labelled.",
+  "scope": "the same labelled draws",
+  "sources": [
+   {
+    "bytes": 81730,
+    "path": "panel_out/decision_jev_luna_v1.jsonl",
+    "sha256_16": "2c0dafdd9c820627"
+   },
+   {
+    "bytes": 127284,
+    "path": "panel_out/decision_laya_luna_v1.jsonl",
+    "sha256_16": "e7eb29bb236fb284"
+   },
+   {
+    "bytes": 95418,
+    "path": "panel_out/panel_luna_v1.jsonl",
+    "sha256_16": "fb7821504f6348b4"
+   },
+   {
+    "bytes": 390616,
+    "path": "pilot_out/pilot_luna_v1_A.jsonl",
+    "sha256_16": "8bed769ed357589d"
+   },
+   {
+    "bytes": 315634,
+    "path": "pilot_out/pilot_luna_v1_B.jsonl",
+    "sha256_16": "fd06095d1a5d967a"
+   },
+   {
+    "bytes": 12688,
+    "path": "reports/human_labels_cal003.jsonl",
+    "sha256_16": "68dbba6fa55c2acb"
+   },
+   {
+    "bytes": 3612,
+    "path": "reports/cal003_figures.json",
+    "sha256_16": "0cd02ac35ef83b14"
+   }
+  ],
+  "unit": "coefficient",
+  "value": 0.8753373295440973
+ },
  "crossmodel_v1.arma_caught_u1": {
   "computed_at": "2026-09-10T16:50:28",
   "conditions": {

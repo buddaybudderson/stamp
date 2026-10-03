@@ -7,7 +7,14 @@
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Sat, 03 Oct 2026 11:52:00 -0500</lastBuildDate>
+<lastBuildDate>Sat, 03 Oct 2026 13:02:00 -0500</lastBuildDate>
+<item>
+<title>The Calibration Vol 003 · Sat20261003</title>
+<link>https://protocolstamp.com/calibration/003-issued-sat20261003/</link>
+<guid isPermaLink="true">https://protocolstamp.com/calibration/003-issued-sat20261003/</guid>
+<pubDate>Sat, 03 Oct 2026 13:02:00 -0500</pubDate>
+<description>Are the judges right? One person labelled 87 draws blind; every judge is scored against him. The judges agree with each other more than with the person, and the decision models catch least. Build af3906b9d9ad.</description>
+</item>
 <item>
 <title>The Calibration Vol 002 · Sat20261003</title>
 <link>https://protocolstamp.com/calibration/002-issued-sat20261003/</link>
