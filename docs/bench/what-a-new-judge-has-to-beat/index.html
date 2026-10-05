@@ -246,7 +246,7 @@ footer .k{color:var(--ink);}
 </div>
 <h1 class="mast">What a New Judge Has to Beat</h1>
 <p class="sub">Four days ago this blog set seven rules for any new kind of model that wanted to grade our work, and two decision models went through them. The rule on agreement with our judges was met, to three decimal places, by a judge that never says anything but PASS. What stopped the two models was the test that asked a person. <b>So we propose that the first thing any new judge has to beat is the judge that always says yes.</b> This post sets out a proposal, not yet binding, for how a new kind of model, Jev or whatever comes after it, should be tested here.</p>
-<p class="meta">Mon 5 Oct 2026 &middot; Houston, Texas &middot; Drafted by AI, edited and signed by a person</p>
+<p class="meta">Mon Oct 05, 2026 &middot; Houston, Texas &middot; Drafted by AI, edited and signed by a person</p>
 
 <div class="facts">
   <div class="fact"><div class="n">0.700</div><div class="t">The agreement a judge would score by answering <b>PASS to everything</b>, measured against our two-judge reference on the 80 public-half draws that had a reference. Rule two&rsquo;s bar was 0.70.<span class="src">Calibration Vol 002 &middot; exploratory</span></div></div>
@@ -309,7 +309,7 @@ footer .k{color:var(--ink);}
 <p class="lede"><b>Decision models were the new thing in September. Something else will be new next quarter.</b> We propose that any kind of model that wants to grade our work go through these steps, in this order. Each step could end the trial, and a trial that ends early would still be published.</p>
 
 <h3>Step one: a file before any run</h3>
-<p>Before a candidate grades anything, we would write down what it is and date it: who makes it, whether the weights are published, the license, the context length, the price, and what its makers and testers have published about it. Its <b>data terms</b> would be checked and quoted. If the terms are unknown, as Jev&rsquo;s were on OpenRouter on 2 October, the candidate would see only the public half of the bank. A model on our own hardware could see both.</p>
+<p>Before a candidate grades anything, we would write down what it is and date it: who makes it, whether the weights are published, the license, the context length, the price, and what its makers and testers have published about it. Its <b>data terms</b> would be checked and quoted. If the terms are unknown, as Jev&rsquo;s were on OpenRouter on Oct 02, 2026, the candidate would see only the public half of the bank. A model on our own hardware could see both.</p>
 
 <h3>Step two: does the work fit?</h3>
 <p>In Calibration Vol 002, 13 of Laya&rsquo;s grading states lost text before it gave a verdict. Some were cut by our own script, which shortened 12 states to 1,800 characters, 3 of which would have fitted uncut. Others were cut by the model&rsquo;s 512-token reading limit. Before a run we would count both kinds of cut, use the checkpoint and settings that cut the fewest, and report any draw that lost text separately rather than mixing it in.</p>
@@ -356,9 +356,9 @@ footer .k{color:var(--ink);}
 
 <div class="panel">
   <h3>Sources</h3>
-  <p>Protocol STAMP, <a class="u" href="/calibration/002-issued-sat20261003/">The Calibration Vol 002</a>, issued 3 October 2026. From it: Jev&rsquo;s and Laya&rsquo;s agreement with the majority of J-B and J-C on the public half (0.745, 80 draws, 7 without a reference), Laya&rsquo;s held-out figure (0.488), and the always-PASS score on the same draws (0.700, exploratory). Also the steadiness counts, the data-terms note for Jev, and Laya&rsquo;s context length, truncation counts and temperature warning.</p>
-  <p>Protocol STAMP, <a class="u" href="/calibration/003-issued-sat20261003/">The Calibration Vol 003</a>, issued 3 October 2026. From it: the 87 blind labels, every judge&rsquo;s agreement with the person, the caught and failed counts, the always-PASS score (0.871, exploratory), the six-item spread of the person&rsquo;s FAILs, and the two-part test for rule three. Registry keys <code>cal003.judges.*</code>, <code>cal003.q3.*</code> and <code>cal003.exploratory.*</code> in <code>figures.json</code>.</p>
-  <p>Protocol STAMP, <a class="u" href="/bench/five-cases/">The Bench Vol 003</a>, 1 October 2026: the seven rules, and the makers&rsquo; note that Laya&rsquo;s probabilities are over-confident as shipped.</p>
+  <p>Protocol STAMP, <a class="u" href="/calibration/002-issued-sat20261003/">The Calibration Vol 002</a>, issued Oct 03, 2026. From it: Jev&rsquo;s and Laya&rsquo;s agreement with the majority of J-B and J-C on the public half (0.745, 80 draws, 7 without a reference), Laya&rsquo;s held-out figure (0.488), and the always-PASS score on the same draws (0.700, exploratory). Also the steadiness counts, the data-terms note for Jev, and Laya&rsquo;s context length, truncation counts and temperature warning.</p>
+  <p>Protocol STAMP, <a class="u" href="/calibration/003-issued-sat20261003/">The Calibration Vol 003</a>, issued Oct 03, 2026. From it: the 87 blind labels, every judge&rsquo;s agreement with the person, the caught and failed counts, the always-PASS score (0.871, exploratory), the six-item spread of the person&rsquo;s FAILs, and the two-part test for rule three. Registry keys <code>cal003.judges.*</code>, <code>cal003.q3.*</code> and <code>cal003.exploratory.*</code> in <code>figures.json</code>.</p>
+  <p>Protocol STAMP, <a class="u" href="/bench/five-cases/">The Bench Vol 003</a>, Oct 01, 2026: the seven rules, and the makers&rsquo; note that Laya&rsquo;s probabilities are over-confident as shipped.</p>
   <p>The balanced-accuracy figures and their intervals are our own, computed for this post from the same label and verdict files that Calibration Vol 003 served. They are not in either issue.</p>
 </div>
 
@@ -387,6 +387,6 @@ footer .k{color:var(--ink);}
 
 <p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Previous issue: <a href="/bench/five-cases/" style="color:var(--stamp)">Vol 003, Five Cases, a Hundred Times Each</a></p>
 
-<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: Protocol STAMP. <i>What a New Judge Has to Beat</i>. The Bench, Vol 004, 5 October 2026. Budday Budderson Studio LLC. https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: Protocol STAMP. <i>What a New Judge Has to Beat</i>. The Bench, Vol 004, Oct 05, 2026. Budday Budderson Studio LLC. https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/</p>
 </body>
 </html>
