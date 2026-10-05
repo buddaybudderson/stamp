@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" data-pin="jupiter">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Two decision models went through our seven rules for a new judge. The agreement bar was nearly met by a judge that only ever says PASS; the rule that asked a person stopped them. A proposal for how any new kind of model, Jev or whatever comes next, should be tested here.">
+<link rel="canonical" href="https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Protocol STAMP">
+<meta property="og:title" content="What a New Judge Has to Beat &middot; The Bench Vol 004">
+<meta property="og:description" content="Two decision models went through our seven rules for a new judge. The agreement bar was nearly met by a judge that only ever says PASS; the rule that asked a person stopped them. A proposal for how any new kind of model, Jev or whatever comes next, should be tested here.">
+<meta property="og:url" content="https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/">
+<meta property="og:image" content="https://protocolstamp.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>What a New Judge Has to Beat</title>
+<link rel="stylesheet" href="/finish.css">
+<script src="/finish.js"></script>
+</head>
+<body>
+<nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; Protocol STAMP</a> &nbsp;&middot;&nbsp; <a href="/writing/" style="color:var(--stamp);text-decoration:none">The Bench</a></nav>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ The STAMP Protocol — house tokens, read from protocolstamp.com ============ */
+:root{
+  --paper:#F8EED3; --surface:#FFFFFF; --sunk:#F0E1B8;
+  --ink:#131E29; --ink-2:#5A4B26; --ink-3:#8B7A50;
+  --rule:#D3BD84; --rule-soft:rgba(19,30,41,.13);
+  --stamp:#A8432A; --stamp-soft:color-mix(in srgb,#A8432A 12%,#F8EED3);
+  --ok:#2C6349; --warn:#8A5A12; --stop:#9B2F26;
+}
+:root{ --fig-mute:#C9B98C; --fig-fam:#C98B72; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16130E; --surface:#1E1A13; --sunk:#100E0A;
+    --ink:#F4EFE5; --ink-2:#ADA290; --ink-3:color-mix(in srgb,#ADA290 62%,#16130E);
+    --rule:rgba(255,255,255,.21); --rule-soft:rgba(255,255,255,.11);
+    --stamp:#E0785A; --stamp-soft:color-mix(in srgb,#E0785A 14%,#16130E);
+    --ok:#6DBE97; --warn:#D6A64E; --stop:#E0736A;
+    --fig-mute:#6B6152; --fig-fam:#9A5A46;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16130E; --surface:#1E1A13; --sunk:#100E0A;
+  --ink:#F4EFE5; --ink-2:#ADA290; --ink-3:color-mix(in srgb,#ADA290 62%,#16130E);
+  --rule:rgba(255,255,255,.21); --rule-soft:rgba(255,255,255,.11);
+  --stamp:#E0785A; --stamp-soft:color-mix(in srgb,#E0785A 14%,#16130E);
+  --ok:#6DBE97; --warn:#D6A64E; --stop:#E0736A;
+  --fig-mute:#6B6152; --fig-fam:#9A5A46;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{background:var(--paper);color:var(--ink);
+  font:400 14.5px/1.62 "IBM Plex Sans",system-ui,sans-serif;
+  margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:800px;margin:0 auto;padding:38px 22px 64px;}
+p{margin:0 0 13px;color:var(--ink-2);orphans:3;widows:3;}
+p b,p strong{color:var(--ink);font-weight:500;}
+em{font-style:italic;}
+a{color:var(--stamp);text-decoration:none;border-bottom:1px solid var(--rule);}
+a:hover{border-bottom-color:var(--stamp);}
+a:focus-visible{outline:2px solid var(--stamp);outline-offset:2px;border-radius:2px;}
+a.u{border-bottom:1px solid color-mix(in srgb,var(--stamp) 40%, transparent);}
+
+/* ---- masthead ---- */
+.strap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink-2);align-items:center;}
+.strap .now{color:var(--stamp);}
+.brand{display:flex;align-items:center;gap:9px;}
+svg.mark{width:15px;height:15px;color:var(--ink);flex:none;}
+.lockup{display:flex;align-items:center;gap:16px;margin:0 0 6px;}
+svg.hmark{width:52px;height:52px;flex:none;color:var(--ink);}
+.lockup .lk{font:500 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);}
+.lockup .lk b{display:block;color:var(--stamp);font-weight:600;}
+.fn{border-top:1px solid var(--rule-soft);margin:14px 0 0;padding-top:9px;
+  font:400 11.5px/1.55 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);}
+.fn p{margin:0 0 7px;color:var(--ink-3);font-size:11.5px;}
+.fn p:last-child{margin:0;}
+.fn sup{color:var(--stamp);font-weight:600;}
+sup{font-size:.72em;line-height:0;vertical-align:super;color:var(--stamp);font-weight:600;}
+.rule{height:3px;background:var(--stamp);margin:22px 0 11px;}
+.eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--stamp);margin:0 0 14px;}
+.mast{font:600 46px/.98 "IBM Plex Serif",Georgia,serif;letter-spacing:-.028em;
+  margin:0;text-wrap:balance;color:var(--ink);}
+.sub{font-size:17.5px;line-height:1.6;color:var(--ink-2);margin:20px 0 0;max-width:64ch;}
+.sub b{color:var(--ink);font-weight:500;}
+.meta{font:400 11.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;
+  color:var(--ink-3);margin:16px 0 0;text-transform:uppercase;}
+
+/* ---- facts ---- */
+.facts{display:flex;flex-direction:column;margin:26px 0 4px;}
+.fact{display:grid;grid-template-columns:104px 1fr;gap:20px;align-items:baseline;
+  padding:14px 0;border-top:1px solid var(--rule-soft);break-inside:avoid;}
+.fact .n{font:600 21px/1 "IBM Plex Mono",ui-monospace,monospace;
+  font-variant-numeric:tabular-nums;color:var(--stamp);}
+.fact .t{font-size:15px;line-height:1.55;color:var(--ink-2);}
+.fact .t b{color:var(--ink);font-weight:500;}
+.fact .src{display:block;margin-top:5px;font:400 10.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);}
+
+/* ---- structure ---- */
+h2{font:600 27px/1.16 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;
+  color:var(--ink);margin:44px 0 12px;text-wrap:balance;break-after:avoid;}
+h3{font:600 17px/1.3 "IBM Plex Serif",Georgia,serif;color:var(--ink);
+  margin:26px 0 8px;break-after:avoid;}
+.lede{font-size:16px;line-height:1.6;}
+
+/* ---- spec / verbatim ---- */
+.spec{background:var(--sunk);border-left:3px solid var(--stamp);border-radius:0 4px 4px 0;
+  padding:16px 20px;margin:20px 0 6px;break-inside:avoid;}
+.spec p{margin:0 0 9px;font-size:14px;line-height:1.6;color:var(--ink-2);}
+.spec p:last-child{margin:0;}
+.spec .r{font:500 10.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--stamp);}
+.spec .a{color:var(--ink);}
+
+/* ---- figures ---- */
+figure{margin:26px 0 6px;break-inside:avoid;}
+figure svg{width:100%;height:auto;display:block;}
+.cap{font:400 11.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;color:var(--ink-3);
+  margin:9px 0 0;letter-spacing:.04em;}
+
+/* ---- table ---- */
+.tw{overflow-x:auto;margin:20px 0 6px;}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);
+  min-width:560px;break-inside:avoid;}
+caption{text-align:left;font:400 10.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding-bottom:8px;}
+th{font:500 10px/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-2);text-align:left;
+  border-bottom:1.5px solid var(--ink);padding:7px 9px;}
+td{padding:7px 9px;font-variant-numeric:tabular-nums;border-bottom:1px solid var(--rule-soft);color:var(--ink-2);vertical-align:top;}
+td.m{color:var(--ink);font-weight:500;white-space:nowrap;}
+td.y{color:var(--stamp);font-weight:600;}
+
+/* ---- apparatus ---- */
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+  padding:20px 22px;margin:26px 0 0;}
+.panel h3{margin-top:0;}
+.panel p{font-size:14px;}
+.panel p:last-child{margin-bottom:0;}
+ol.src-list{margin:0;padding:0 0 0 18px;font-size:13.5px;line-height:1.55;color:var(--ink-2);}
+ol.src-list li{margin-bottom:11px;break-inside:avoid;}
+ol.src-list li:last-child{margin-bottom:0;}
+ol.src-list .t{color:var(--ink);font-weight:500;}
+ol.src-list .u{font:400 11px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--stamp);
+  word-break:break-word;}
+ol.src-list .r{font:400 10.5px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3);white-space:nowrap;}
+
+.warnbar{border:1px solid var(--stamp);background:var(--stamp-soft);border-radius:4px;
+  padding:13px 18px;margin:26px 0 0;font:600 13.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.02em;color:var(--stamp);break-inside:avoid;}
+
+footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--ink);
+  font:400 11px/1.85 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.05em;
+  color:var(--ink-3);}
+footer .k{color:var(--ink);}
+
+@media (max-width:620px){
+  .mast{font-size:34px;}
+  h2{font-size:22px;}
+  .sub{font-size:16px;}
+  .fact{grid-template-columns:1fr;gap:6px;}
+}
+
+/* ---- print: force the light book, set the page ---- */
+@media print{
+  :root{
+    --paper:#F8EED3; --surface:#FFFFFF; --sunk:#F0E1B8;
+    --ink:#131E29; --ink-2:#5A4B26; --ink-3:#8B7A50;
+    --rule:#D3BD84; --rule-soft:rgba(19,30,41,.13);
+    --stamp:#A8432A; --stamp-soft:#F3E2CF;
+    --fig-mute:#C9B98C; --fig-fam:#C98B72;
+  }
+  @page{size:Letter;margin:18mm 16mm;}
+  body{font-size:9.9pt;line-height:1.52;}
+  .wrap{max-width:none;padding:0;}
+  p{margin:0 0 8pt;}
+  .mast{font-size:36pt;}
+  h2{font-size:17.5pt;margin:19pt 0 7pt;}
+  h3{font-size:11.5pt;margin:0 0 6pt;}
+  .sub{font-size:12.4pt;margin-top:14pt;}
+  .meta{margin-top:11pt;}
+  .facts{margin:18pt 0 0;}
+  .fact{padding:8pt 0;grid-template-columns:78pt 1fr;gap:14pt;}
+  .fact .n{font-size:15pt;}
+  .fact .t{font-size:9.8pt;}
+  .fact .src{font-size:7.2pt;}
+  .spec{padding:9pt 12pt;margin:12pt 0 4pt;}
+  .spec p{font-size:9.4pt;margin-bottom:6pt;}
+  figure{margin:16pt 0 4pt;}
+  .cap{font-size:7.4pt;margin-top:6pt;}
+  .tw{overflow:visible;margin:12pt 0 4pt;}
+  table{min-width:0;font-size:8.2pt;}
+  th,td{padding:3.5pt 5pt;}
+  /* panels lose the box in print — a boxed block strands whole pages at a break */
+  .panel{background:none;border:0;border-top:1.5pt solid var(--stamp);border-radius:0;
+    padding:9pt 0 0;margin:16pt 0 0;}
+  .panel p{font-size:9.2pt;}
+  ol.src-list{font-size:8.8pt;padding-left:13pt;}
+  ol.src-list li{margin-bottom:7pt;}
+  .warnbar{margin:14pt 0 0;padding:8pt 12pt;font-size:9.6pt;}
+  footer{margin-top:12pt;padding-top:8pt;font-size:7.4pt;line-height:1.7;}
+  a{border-bottom:0;}
+  .endmatter{break-inside:avoid;}
+  .warnbar,figure,.spec,.fact,tr{break-inside:avoid;}
+}
+.wrap > h3{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:17px;line-height:1.3;color:var(--ink);margin:26px 0 8px;}
+</style>
+
+<div class="wrap">
+
+<div class="strap">
+  <span class="brand">
+    <svg class="mark" viewBox="0 0 100 100" role="img" aria-label="Protocol STAMP">
+      <g stroke="currentColor" stroke-width="7">
+        <line x1="15" y1="50" x2="85" y2="50"/><line x1="15" y1="31" x2="15" y2="69"/><line x1="85" y1="31" x2="85" y2="69"/>
+      </g>
+      <line x1="38.11" y1="17" x2="38.11" y2="83" stroke="var(--stamp)" stroke-width="13"/>
+    </svg>
+    Protocol STAMP &middot; The Bench
+  </span>
+  <span class="now">Independent &middot; Who pays is published</span>
+</div>
+
+<div class="rule"></div>
+
+<div class="lockup">
+  <svg class="hmark" viewBox="0 0 100 100" role="img" aria-label="Protocol STAMP mark: two bounds with a measured position between them">
+    <g stroke="currentColor" stroke-width="7" stroke-linecap="square">
+      <line x1="15" y1="50" x2="85" y2="50"/><line x1="15" y1="31" x2="15" y2="69"/><line x1="85" y1="31" x2="85" y2="69"/>
+    </g>
+    <line x1="38.11" y1="17" x2="38.11" y2="83" stroke="var(--stamp)" stroke-width="13"/>
+  </svg>
+  <span class="lk">The Bench &middot; Vol 004<b>A proposal for how a new kind of model should be tested here</b></span>
+</div>
+<h1 class="mast">What a New Judge Has to Beat</h1>
+<p class="sub">Four days ago this blog set seven rules for any new kind of model that wanted to grade our work, and two decision models went through them. The rule on agreement with our judges was met, to three decimal places, by a judge that never says anything but PASS. What stopped the two models was the test that asked a person. <b>So we propose that the first thing any new judge has to beat is the judge that always says yes.</b> This post sets out a proposal, not yet binding, for how a new kind of model, Jev or whatever comes after it, should be tested here.</p>
+<p class="meta">Mon 5 Oct 2026 &middot; Houston, Texas &middot; Drafted by AI, edited and signed by a person</p>
+
+<div class="facts">
+  <div class="fact"><div class="n">0.700</div><div class="t">The agreement a judge would score by answering <b>PASS to everything</b>, measured against our two-judge reference on the 80 public-half draws that had a reference. Rule two&rsquo;s bar was 0.70.<span class="src">Calibration Vol 002 &middot; exploratory</span></div></div>
+  <div class="fact"><div class="n">0.871</div><div class="t">The agreement with a person that the same always-PASS judge would score, higher than any judge we use.<span class="src">Calibration Vol 003 &middot; exploratory</span></div></div>
+  <div class="fact"><div class="n">3 and 0</div><div class="t">Of the 10 answers the person failed, the number Jev caught and the number Laya caught. Calibration Vol 003&rsquo;s pre-registration required at least half.<span class="src">Calibration Vol 003 &middot; pre-registered</span></div></div>
+  <div class="fact"><div class="n">0 of 50</div><div class="t">Verdicts that changed when Laya graded the same 50 draws five times. It returned identical probabilities every time, so the count says nothing about stability.<span class="src">Calibration Vol 002 &middot; pre-registered</span></div></div>
+</div>
+
+<h2>What the seven rules caught, and what they missed</h2>
+
+<p class="lede"><b>The Bench Vol 003 promised that hosted Jev and the open model Laya would go first, under seven rules written before any run.</b> They did. Calibration Vol 002 tested them against our judges, and Calibration Vol 003 tested every judge against one person&rsquo;s blind labels. Here is what each rule did when it met a real candidate.</p>
+
+<div class="tw">
+<table>
+<caption>The seven rules from The Bench Vol 003, after their first use</caption>
+<tr><th>Rule</th><th>What happened</th><th>Verdict on the rule</th></tr>
+<tr><td class="m">1 &middot; Shadow first</td><td>Neither model&rsquo;s verdict touched a published rate.</td><td>Worked</td></tr>
+<tr><td class="m">2 &middot; Agreement with the panel, 0.70</td><td>Against the majority of two seated judges, both models scored 0.745 on the public half. An always-PASS judge would have scored 0.700 on the same draws. Laya also scored 0.488 on the held-out half, and Vol 002 left open which figure the rule applies to.</td><td class="y">Too easy to pass</td></tr>
+<tr><td class="m">3 &middot; Agreement with a person</td><td>Calibration Vol 003&rsquo;s pre-registration made this a two-part test. Both models cleared the agreement part and failed the part that asked them to catch failures.</td><td>Worked; it was the test that decided</td></tr>
+<tr><td class="m">4 &middot; Steadiness</td><td>Jev changed its verdict on 2 of 50 draws. Laya changed on 0 of 50, because it returned identical outputs every time.</td><td class="y">Measured nothing for Laya</td></tr>
+<tr><td class="m">5 &middot; Held-out probes and data terms</td><td>OpenRouter listed no data policy for Jev, so it saw only the public half. Laya, running locally, graded both halves.</td><td>Worked for the candidates. The check on our seated judges&rsquo; terms is still owed.</td></tr>
+<tr><td class="m">6 &middot; A judge should not check itself</td><td>The reference still contains the grader whose verdicts Calibration Vol 001 published.</td><td class="y">Still open</td></tr>
+<tr><td class="m">7 &middot; Published either way</td><td>Two candidates that were not seated got the same tables as the seated judges.</td><td>Worked</td></tr>
+</table>
+</div>
+<p class="cap">Figures from Calibration Vol 002 and Vol 003. The always-PASS scores are labelled exploratory in both issues: they were added after review, not pre-registered. Whether to seat either model was left to the investigator in Vol 002; neither was seated after Vol 003.</p>
+
+<p>Two of the seven did not do their job on their own: rule two, which was too easy, and rule four, which could not measure a model that never varies. Rule two matters most. On a sample where most answers pass, a judge that rarely fails anything agrees with the majority almost automatically, and the coefficient we use cannot tell a careful judge from a lenient one. Calibration Vol 002 said so in its own words, and that problem is the main subject of this post.</p>
+
+<h2>The judge that always says yes</h2>
+
+<p class="lede"><b>We propose that every candidate be scored beside a judge that does nothing.</b> That judge answers PASS to every draw. If a candidate cannot beat it, this test gives no evidence that the candidate can tell failures from passes.</p>
+
+<p>On Calibration Vol 003&rsquo;s labels the do-nothing judge looks very good: its agreement with the person, 0.871, beats every judge we seat. That is not because it is right. The person passed 77 of the 87 draws, so a judge that passes everything is right 77 times by default. What it cannot do is catch a single one of the 10 failures.</p>
+
+<p>The fix is to score the two piles separately and weight them equally. One share is how many of the person&rsquo;s FAILs a judge caught; the other is how many of the person&rsquo;s PASSes it left alone; the score is their average. This is called balanced accuracy. A judge that says PASS to everything scores exactly 0.500 on it, and so, on average, does one that guesses. Applied to Calibration Vol 003&rsquo;s labels, it gives this.</p>
+
+<div class="tw">
+<table>
+<caption>Balanced accuracy against Calibration Vol 003&rsquo;s labels &middot; our arithmetic &middot; exploratory, not pre-registered, not a finding</caption>
+<tr><th>Judge</th><th>Caught, of 10 FAILs</th><th>Left alone, of 77 PASSes</th><th>Balanced accuracy</th><th>95% interval, by item</th><th>AC1 with the person</th></tr>
+<tr><td class="m">Always PASS</td><td>0</td><td>77</td><td>0.500</td><td>&mdash;</td><td>0.871</td></tr>
+<tr><td class="m">J-A &middot; Gemini</td><td>7</td><td>61</td><td>0.746</td><td>0.594&ndash;0.887</td><td>0.685</td></tr>
+<tr><td class="m">J-B &middot; Grok</td><td>6</td><td>59</td><td>0.683</td><td>0.555&ndash;0.873</td><td>0.631</td></tr>
+<tr><td class="m">J-C &middot; tier-1 grader</td><td>5</td><td>61</td><td>0.646</td><td class="y">0.491&ndash;0.806</td><td>0.659</td></tr>
+<tr><td class="m">Jev</td><td>3</td><td>73</td><td>0.624</td><td class="y">0.482&ndash;0.858</td><td>0.846</td></tr>
+<tr><td class="m">Laya</td><td>0</td><td>71</td><td>0.461</td><td class="y">0.416&ndash;0.494</td><td>0.779</td></tr>
+</table>
+</div>
+<p class="cap">One labeller, 87 public draws from 35 items. The person&rsquo;s 10 FAILs fall on 6 items. Intervals are 95% percentile bootstraps that resample whole items, not single draws, so draws of the same item move together (20,000 resamples, seed 20261005; the few resamples with no FAIL in them are dropped). Re-run with four other seeds, every lower end moved by 0.005 or less. Read the order as rough, not as a measured gap. Laya&rsquo;s 0.461 here is a coincidence of numbers: it is unrelated to the 0.461 majority-class baseline quoted for Laya in The Bench Vol 003.</p>
+
+<p>The balanced-accuracy and AC1 columns tell opposite stories. By agreement, the decision models look like the best judges we have. By balanced accuracy, every judge except Laya is above the do-nothing judge&rsquo;s 0.500 on these counts. The margins are J-A 0.246, J-B 0.183, J-C 0.146 and Jev 0.124. Laya sits below 0.500: it failed six answers the person passed and caught none that the person failed.</p>
+
+<p><b>The intervals matter as much as the points.</b> Only J-A&rsquo;s and J-B&rsquo;s intervals sit wholly above 0.500. Jev&rsquo;s lower end is 0.482. J-C&rsquo;s, the tier-1 grader whose verdicts Calibration Vol 001 published, is 0.491: just under the line on every seed we tried, and close enough that a handful more labels could move it either way. With ten failures on six items, these counts cannot show that J-C or Jev beats the do-nothing judge. A test that a judge we already rely on only narrowly misses is not comfortable, but the same test has to apply to all of them.</p>
+
+<p><b>None of this makes the seated judges right.</b> Each of them failed between 16 and 18 answers the person passed. Calibration Vol 003 found that, on Luna&rsquo;s public half, they are stricter than this person, and one person cannot say which standard is correct.</p>
+
+<h2>A proposed intake for any new kind of model</h2>
+
+<p class="lede"><b>Decision models were the new thing in September. Something else will be new next quarter.</b> We propose that any kind of model that wants to grade our work go through these steps, in this order. Each step could end the trial, and a trial that ends early would still be published.</p>
+
+<h3>Step one: a file before any run</h3>
+<p>Before a candidate grades anything, we would write down what it is and date it: who makes it, whether the weights are published, the license, the context length, the price, and what its makers and testers have published about it. Its <b>data terms</b> would be checked and quoted. If the terms are unknown, as Jev&rsquo;s were on OpenRouter on 2 October, the candidate would see only the public half of the bank. A model on our own hardware could see both.</p>
+
+<h3>Step two: does the work fit?</h3>
+<p>In Calibration Vol 002, 13 of Laya&rsquo;s grading states lost text before it gave a verdict. Some were cut by our own script, which shortened 12 states to 1,800 characters, 3 of which would have fitted uncut. Others were cut by the model&rsquo;s 512-token reading limit. Before a run we would count both kinds of cut, use the checkpoint and settings that cut the fewest, and report any draw that lost text separately rather than mixing it in.</p>
+
+<h3>Step three: what does it return, and what do we use?</h3>
+<p>A decision model returns a probability with every verdict, and that is much of its appeal. Laya&rsquo;s checkpoint warned that its shipped temperatures were invalid, and its makers say its probabilities are over-confident as shipped. <b>We would not use a candidate&rsquo;s probabilities as confidence until they had been checked against a person&rsquo;s labels.</b> Until then, only the verdict would count.</p>
+
+<h3>Step four: shadow grading against a person, beside the do-nothing judge</h3>
+<p>The candidate would grade draws that a person has labelled blind, and its verdicts would count for nothing while it did. To pass, it would have to clear three tests on the same draws.</p>
+<p><b>Catch at least half of the person&rsquo;s FAILs.</b> This is the failure half of the test Calibration Vol 003 pre-registered for rule three.</p>
+<p><b>Beat the always-PASS judge on balanced accuracy.</b> The lower end of its 95% interval, resampled by item with 20,000 resamples and a seed fixed in the pre-registration, would have to be above 0.500. This is new.</p>
+<p><b>Agree with the person at least as well as the weakest judge we already seat.</b> This is the agreement half of Calibration Vol 003&rsquo;s test. It is now the weakest of the three, because the do-nothing judge passes it, and it cannot test an incumbent, since the weakest seated judge always clears its own score. For incumbents, the floor would be fixed in advance in the pre-registration: Vol 003&rsquo;s lowest seated score, 0.631, unless the pre-registration says otherwise and why.</p>
+<p>The first two tests overlap. A judge that catches half the failures will usually clear 0.500 on its point estimate. The interval is what separates them: it asks whether the counts are large enough to show the judge is better than doing nothing. On Vol 003&rsquo;s counts, Jev fails both of the first two tests. J-C passes the first, catching exactly half, and falls just short on the second, by a margin small enough that the next labels could reverse it. Agreement with the panel, the old rule two, would still be computed and printed, but it would no longer decide anything on its own.</p>
+
+<h3>Step five: steadiness, only where it can be measured</h3>
+<p>The candidate would grade a sample five times at its normal settings, and we would count how often its verdict changed, as before. If it gave identical outputs every time, as Laya did, we would call it <b>deterministic</b> and report its steadiness as not measured, not as zero. A model that cannot vary has not shown that it is stable.</p>
+
+<h3>Step six: one seat, never the whole job</h3>
+<p>A candidate that passed every step could take one panel seat. It would never become the only grader, and it would never sit in a reference that checks its own verdicts. The seat would be reviewed at the end of the quarter against fresh human labels.</p>
+
+<h3>Step seven: published either way</h3>
+<p>Unchanged. A candidate that fails at step two would get the same kind of page as one that is seated.</p>
+
+<h3>And the judges we already seat</h3>
+<p>Rule three of The Bench Vol 003 already promised that every judge, including the ones we use, would be scored against a person&rsquo;s labels. If this proposal is adopted, J-A, J-B and J-C would be scored under step four in the same Calibration as the next candidate, on the same labels. If one of them fails, that Calibration would say so and say what happens to its seat.</p>
+
+<h2>Two things the sample itself would have to change</h2>
+
+<p><b>It needs more failures.</b> Calibration Vol 003&rsquo;s person failed 10 draws, on 6 items, with up to 4 on one item. That is why every interval above is so wide. The next human labelling round should deliberately include more of the draws that any judge failed, so that the person sees more of the hard cases. That would change the share of failures in the sample, which is exactly why each pile would be scored separately, with the old agreement figure printed beside it.</p>
+
+<p><b>It needs a second person.</b> One labeller is a reference, not ground truth, and that labeller built the bank. A second, independent labeller, scored against the first, is the only way to say whether the seated judges are too strict or the first person too lenient. We are looking for one, and the Calibration that uses them will say who they are and what they were paid.</p>
+
+<h2>And when the new kind of model is the one being measured</h2>
+
+<p>Everything above is about a new model as a <em>judge</em>. Protocol STAMP&rsquo;s main measurement points the other way: it asks a model questions and checks whether its prose answer shows its receipts. A decision model does not write prose. It picks among options you give it, scores on levels you define, or returns a probability. <b>So we propose not to score Jev or anything like it on the prose bank, and not to rank it beside models that write.</b> It would fail for the wrong reason.</p>
+
+<p>The honest version would be a typed form of the bank, where each probe offers the options a careful answer would choose between, including &ldquo;I can&rsquo;t verify that.&rdquo; That is a different instrument, with its own pre-registration. We have not started it, and if we do, the plan will be published here before any run.</p>
+
+<h2>What happens next</h2>
+
+<p>None of this changes a published number. The seven steps are a proposal until they are written into the pre-registration of the next Calibration that tests a judge and signed before any run. If that happens, the seven rules of Vol 003 stay on the page where they were published, and the corrections register records the change.</p>
+
+<p>Jev and Laya are not seated, and nothing in this post reopens that. A newer version of either, Open-Jev&rsquo;s 9B or 27B, or the next model nobody has heard of yet, would start at step one like everything else. The first hurdle would be the cheapest judge there is: one that never fails anything.</p>
+
+<div class="panel">
+  <h3>Sources</h3>
+  <p>Protocol STAMP, <a class="u" href="/calibration/002-issued-sat20261003/">The Calibration Vol 002</a>, issued 3 October 2026. From it: Jev&rsquo;s and Laya&rsquo;s agreement with the majority of J-B and J-C on the public half (0.745, 80 draws, 7 without a reference), Laya&rsquo;s held-out figure (0.488), and the always-PASS score on the same draws (0.700, exploratory). Also the steadiness counts, the data-terms note for Jev, and Laya&rsquo;s context length, truncation counts and temperature warning.</p>
+  <p>Protocol STAMP, <a class="u" href="/calibration/003-issued-sat20261003/">The Calibration Vol 003</a>, issued 3 October 2026. From it: the 87 blind labels, every judge&rsquo;s agreement with the person, the caught and failed counts, the always-PASS score (0.871, exploratory), the six-item spread of the person&rsquo;s FAILs, and the two-part test for rule three. Registry keys <code>cal003.judges.*</code>, <code>cal003.q3.*</code> and <code>cal003.exploratory.*</code> in <code>figures.json</code>.</p>
+  <p>Protocol STAMP, <a class="u" href="/bench/five-cases/">The Bench Vol 003</a>, 1 October 2026: the seven rules, and the makers&rsquo; note that Laya&rsquo;s probabilities are over-confident as shipped.</p>
+  <p>The balanced-accuracy figures and their intervals are our own, computed for this post from the same label and verdict files that Calibration Vol 003 served. They are not in either issue.</p>
+</div>
+
+<div class="panel">
+  <h3>What this post is and is not</h3>
+  <p><b>This is not a new measurement.</b> No model was run for this post. Every figure comes from the two issues above, except the balanced-accuracy table, which is computed from the same files and labelled as ours.</p>
+  <p><b>The steps are a proposal.</b> They bind us once they are signed into a pre-registration, and not before.</p>
+  <p><b>Trademarks.</b> Product, model and company names are used to identify the things discussed. No affiliation, sponsorship or endorsement is claimed or implied, in either direction.</p>
+  <p><b>Right of reply stands open.</b> TypeSafe, Convai Innovations, the Open-Jev authors, or anyone else named here may respond, and a response will be published in full.</p>
+  <p><b>An issued Bench post is corrected in the open.</b> Corrections are findings, and are published like findings.</p>
+</div>
+
+<div class="endmatter">
+<div class="warnbar">Protocol STAMP can make mistakes. Verify before you implement anything.</div>
+
+<footer>
+  <div class="k">Published by Budday Budderson Studio LLC, a New Mexico company</div>
+  <div>Lawrence Ho &middot; Chief Human Investigator, Evaluation Administrator + Instrument Maker</div>
+  <div>Drafted by AI &middot; Edited together &middot; Signed by a person</div>
+  <div>Independent &middot; Who pays is published</div>
+  <div style="margin-top:9px;">Protocol STAMP &middot; The Bench &middot; protocolstamp.com &middot; s@bud.day</div>
+</footer>
+</div>
+
+</div>
+
+<p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Previous issue: <a href="/bench/five-cases/" style="color:var(--stamp)">Vol 003, Five Cases, a Hundred Times Each</a></p>
+
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: Protocol STAMP. <i>What a New Judge Has to Beat</i>. The Bench, Vol 004, 5 October 2026. Budday Budderson Studio LLC. https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/</p>
+</body>
+</html>
