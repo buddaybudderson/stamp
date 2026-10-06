@@ -17,6 +17,8 @@ name: Eval gate
 
 on:
   pull_request:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -65,6 +67,11 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: |
-          git diff --name-only "origin/${{ github.base_ref || 'main' }}...HEAD" > changed.txt || git diff --name-only HEAD~1 > changed.txt
+          if [ "${{ github.event_name }}" = "push" ]; then
+            # compare the push's own range; comparing with origin/main would see nothing and pass
+            git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" > changed.txt || git diff --name-only HEAD~1 > changed.txt
+          else
+            git diff --name-only "origin/${{ github.base_ref || 'main' }}...HEAD" > changed.txt || git diff --name-only HEAD~1 > changed.txt
+          fi
           cat changed.txt
           python harness/eval_gate.py --pr changed.txt --evals evals

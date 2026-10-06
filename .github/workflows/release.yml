@@ -27,7 +27,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      # Pushes with the release deploy key when the RELEASE_DEPLOY_KEY secret exists. The main
+      # branch requires the Eval gate check, and that deploy key is the one exemption - the
+      # release job publishes what was already gated. Without the secret, checkout falls back
+      # to the workflow token, as before.
       - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
 
       - name: Is anything staged?
         id: staged
