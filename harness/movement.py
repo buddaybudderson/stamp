@@ -36,7 +36,7 @@ import argparse, collections, importlib.util, json, math, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "pilot_out"
-_sp = importlib.util.spec_from_file_location("stats", ROOT / "scripts" / "stats.py")
+_sp = importlib.util.spec_from_file_location("stats", pathlib.Path(__file__).resolve().parent / "stats.py")
 S = importlib.util.module_from_spec(_sp); _sp.loader.exec_module(S)
 
 

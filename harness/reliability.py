@@ -14,7 +14,7 @@ OUT  = ROOT / "pilot_out"
 
 # Shared statistics - one implementation, so a rate published here and a rate
 # published anywhere else carry the same interval computed the same way.
-_sp = importlib.util.spec_from_file_location("stats", ROOT / "scripts" / "stats.py")
+_sp = importlib.util.spec_from_file_location("stats", pathlib.Path(__file__).resolve().parent / "stats.py")
 S = importlib.util.module_from_spec(_sp); _sp.loader.exec_module(S)
 
 

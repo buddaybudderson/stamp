@@ -28,7 +28,7 @@ import collections, hashlib, importlib.util, json, pathlib, re, sys, time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REG = ROOT / "figures.json"
-_sp = importlib.util.spec_from_file_location("stats", ROOT / "scripts" / "stats.py")
+_sp = importlib.util.spec_from_file_location("stats", pathlib.Path(__file__).resolve().parent / "stats.py")
 S = importlib.util.module_from_spec(_sp); _sp.loader.exec_module(S)
 
 

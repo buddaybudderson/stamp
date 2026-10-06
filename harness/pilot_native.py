@@ -399,7 +399,11 @@ def main():
         for n, (it, k) in enumerate(todo, 1):
             # temperature 0 on draw 0, then vary so repeated draws are informative
             msgs = ([{"role": "system", "content": SYSTEM}] if SYSTEM else []) + it["messages"]
+            t_gen = time.time()
             gen = call(MODEL, msgs, TEMPERATURE, CAND_PIN)
+            # Wall-clock seconds for the generation call, retries included - what a user
+            # waits. Recorded from 2026-10-05 so eval_gate.py can test latency.
+            latency_s = round(time.time() - t_gen, 3)
             gfin = "-"
             gspend = {"cost": None, "prompt_tokens": None, "completion_tokens": None}
             if gen["err"]:
@@ -420,6 +424,7 @@ def main():
                 # measurement one the grader was 27x the models it graded, and a single
                 # pooled number would have hidden the most useful cost finding we had.
                 "cost_model": gen["cost"], "cost_grader": gspend["cost"],
+                "latency_s": latency_s,
                 "tokens_in": gen["prompt_tokens"], "tokens_out": gen["completion_tokens"],
                 "tokens_in_grader": gspend["prompt_tokens"],
                 "tokens_out_grader": gspend["completion_tokens"],

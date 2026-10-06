@@ -50,7 +50,7 @@ SLEEP  = float(os.environ.get("SLEEP") or 0.6)
 PARSER_EXPORT = "parse_verdict"
 
 def _lift_from_runner():
-    src = (ROOT / "scripts" / "pilot_native.py").read_text(encoding="utf-8")
+    src = (pathlib.Path(__file__).resolve().parent / "pilot_native.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
     tmpl = None
     fn_node = None
@@ -155,11 +155,17 @@ def call(model, prompt, timeout=180):
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 d = json.loads(r.read().decode("utf-8"))
             ch = d["choices"][0]
-            ctd = (d.get("usage") or {}).get("completion_tokens_details") or {}
+            u = d.get("usage") or {}
+            ctd = u.get("completion_tokens_details") or {}
+            # Spend recorded, not reconstructed - as pilot_native.py does. Before
+            # 2026-10-05 this script dropped usage.cost, which is why the Log showed $0
+            # for every regrade and panel. None (not 0) when absent: absent and free differ.
             return {"text": ch["message"].get("content") or "",
                     "finish": ch.get("finish_reason", "?"),
                     "reasoning_tokens": ctd.get("reasoning_tokens", 0) or 0,
-                    "served_by": d.get("provider", "?"), "err": None}
+                    "served_by": d.get("provider", "?"), "err": None,
+                    "cost": u.get("cost"), "prompt_tokens": u.get("prompt_tokens"),
+                    "completion_tokens": u.get("completion_tokens")}
         except urllib.error.HTTPError as e:
             last = f"HTTP {e.code}: {e.read()[:200].decode('utf-8', 'replace')}"
             if e.code in (400, 401, 402, 404):
@@ -168,7 +174,8 @@ def call(model, prompt, timeout=180):
             last = f"{type(e).__name__}: {e}"
         time.sleep(2 * (attempt + 1))
     return {"text": "", "finish": "error", "reasoning_tokens": 0,
-            "served_by": "?", "err": last}
+            "served_by": "?", "err": last, "cost": None,
+            "prompt_tokens": None, "completion_tokens": None}
 
 
 # ------------------------------------------------------------------ sampling
@@ -476,7 +483,9 @@ def main():
             fh.write(json.dumps({"judge": j["id"], "model": j["model"], "item_id": iid,
                                  "half": half, "draw": draw, "verdict": v, "why": wy,
                                  "finish": fin, "reasoning_tokens": r["reasoning_tokens"],
-                                 "served_by": r["served_by"],
+                                 "served_by": r["served_by"], "cost": r["cost"],
+                                 "prompt_tokens": r["prompt_tokens"],
+                                 "completion_tokens": r["completion_tokens"],
                                  "selected_by": why.get(k, "?")}) + "\n")
             fh.flush()
             if v in ("PASS", "FAIL"):

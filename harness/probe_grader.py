@@ -44,7 +44,7 @@ if not KEY:
 
 
 def lift():
-    src = (ROOT / "scripts" / "pilot_native.py").read_text(encoding="utf-8")
+    src = (pathlib.Path(__file__).resolve().parent / "pilot_native.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
     tmpl = fn = None
     for n in tree.body:

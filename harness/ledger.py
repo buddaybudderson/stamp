@@ -402,7 +402,7 @@ def render_spend(sp):
 
 def render(no, date, reg, moves, prev_date, sp, cond, att, rs):
     import importlib.util as _il
-    _s = _il.spec_from_file_location("issue_name", ROOT / "scripts" / "issue_name.py")
+    _s = _il.spec_from_file_location("issue_name", pathlib.Path(__file__).resolve().parent / "issue_name.py")
     _n = _il.module_from_spec(_s); _s.loader.exec_module(_n)
     title = _n.display("log", no, dt.date.fromisoformat(date))
     cands = candidates(reg)
@@ -555,7 +555,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     SNAPS.mkdir(exist_ok=True)
     import importlib.util as _il
-    _s = _il.spec_from_file_location("issue_name", ROOT / "scripts" / "issue_name.py")
+    _s = _il.spec_from_file_location("issue_name", pathlib.Path(__file__).resolve().parent / "issue_name.py")
     _n = _il.module_from_spec(_s); _s.loader.exec_module(_n)
     page = OUT / f"{_n.slug('log', no, dt.date.fromisoformat(date))}.html"
     page.write_text(html, encoding="utf-8")

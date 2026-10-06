@@ -23,7 +23,7 @@ this programme or was one edit away from doing so:
 import importlib.util, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-spec = importlib.util.spec_from_file_location("pg", ROOT / "scripts" / "panel_grade.py")
+spec = importlib.util.spec_from_file_location("pg", pathlib.Path(__file__).resolve().parent / "panel_grade.py")
 pg = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pg)          # check 3 happens here, at import
 

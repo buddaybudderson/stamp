@@ -1,0 +1,70 @@
+name: Eval gate
+
+# Runs on every pull request. Blocks the merge when:
+#   - the harness's own self-tests fail (an instrument that cannot pass its own checks
+#     does not get to grade anything), or
+#   - STAMP.md's worked examples no longer carry a true receipt, or
+#   - STAMP.md or a variant changed and the committed public-half measurement shows a
+#     regression (fail rate up > 2 points with the item interval excluding zero, median
+#     latency or mean cost up > 25%, or more false receipts) - or no measurement at all.
+#
+# It never calls a model. Paid runs need a signed pre-registration and are made locally on
+# the PUBLIC half only; the held-out half never enters a public runner. This job checks the
+# arithmetic of what was committed, which is free and deterministic.
+#
+# Make it a required status check (Settings > Branches > main > Require status checks) or
+# it is a dashboard, not a gate.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Harness self-tests (no bank, no key, no network)
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          python harness/test_stats.py
+          python harness/test_receipts.py
+
+      - name: STAMP.md's own examples carry true receipts
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          python - <<'EOF'
+          import re, sys, importlib.util
+          sp = importlib.util.spec_from_file_location("fc", "harness/footer_check.py")
+          fc = importlib.util.module_from_spec(sp); sp.loader.exec_module(fc)
+          core = open("STAMP.md", encoding="utf-8").read()
+          ver = re.search(r"STAMP (v\d+\.\d+)", core).group(1)
+          ex = re.findall(r'A: "(.*?)"\n?(?=\n|$)', core, re.S)
+          if not ex:
+              sys.exit("REFUSED - found no worked examples in STAMP.md; nothing was checked")
+          bad = [(e[:50], p) for e in ex for p in [fc.check(e, version=ver)] if p]
+          for e, p in bad:
+              print("FALSE RECEIPT in example:", repr(e), p)
+          print(f"{len(ex)} examples checked against {ver}: " + ("FAIL" if bad else "all consistent"))
+          sys.exit(1 if bad else 0)
+          EOF
+
+      - name: Regression gate on protocol changes
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          git diff --name-only "origin/${{ github.base_ref || 'main' }}...HEAD" > changed.txt || git diff --name-only HEAD~1 > changed.txt
+          cat changed.txt
+          python harness/eval_gate.py --pr changed.txt --evals evals

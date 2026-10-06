@@ -18,7 +18,7 @@ error as publishing a rate without saying what it estimates.
 import collections, importlib.util, pathlib, random, statistics as st, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-spec = importlib.util.spec_from_file_location("stats", ROOT / "scripts" / "stats.py")
+spec = importlib.util.spec_from_file_location("stats", pathlib.Path(__file__).resolve().parent / "stats.py")
 S = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(S)
 
