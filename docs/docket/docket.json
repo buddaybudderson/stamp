@@ -1,0 +1,391 @@
+{
+ "built": "2026-10-05",
+ "not_legal_advice": true,
+ "entries": [
+  {
+   "id": "us-ca-sb813-2026-09-09",
+   "date": "2026-09-09",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California SB 813: independent verification organizations",
+   "summary": "Signed and chaptered (Chapter 179). Creates a state framework under which the Government Operations Agency designates 'independent verification organizations' (IVOs): AI auditors with demonstrated expertise in assessing the risks of AI systems and models. The agency must set application requirements, qualification criteria and suspension procedures by 1 January 2028.",
+   "measures": "IVOs must identify the benchmarks, metrics and methodologies behind each assessment, stay independent of the party assessed (no payment conditioned on results), and file annual reports to the agency and the Legislature.",
+   "applies": "2028-01-01",
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method",
+    "evaluator independence"
+   ],
+   "sources": [
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB813",
+     "issuer": "California Legislature",
+     "primary": true
+    },
+    {
+     "url": "https://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/",
+     "issuer": "Office of the Governor of California",
+     "primary": true
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "none",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-ca-ab1405-2026-09-09",
+   "date": "2026-09-09",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California AB 1405: state registry for AI auditors",
+   "summary": "Signed the same day as SB 813. Creates a state registry for AI auditors with independence and transparency standards.",
+   "measures": "Who may audit AI systems, and the independence and transparency standards an auditor must meet to be registered.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluator independence"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/",
+     "issuer": "Office of the Governor of California",
+     "primary": true
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "Summarised from the Governor's release; the bill text itself was not retrieved for this entry.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-ca-eo-n-9-26-2026-09-18",
+   "date": "2026-09-18",
+   "jurisdiction": "US-CA",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "California Executive Order N-9-26: accelerating independent oversight",
+   "summary": "Directs the Government Operations Agency, with the Office of Emergency Services, to speed up implementation of SB 813 and AB 1405 and to convene outside experts within two months. Measures under consideration include placing independent verification organizations onsite at frontier AI developers, verified safety frameworks, an emergency shutoff mechanism for frontier models, and counting loss-of-control events as critical safety incidents.",
+   "measures": "Regular onsite audits by independent verifiers; verification of developers' safety frameworks and risk assessments (under consideration, not yet required).",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "N-9-26"
+     ]
+    },
+    {
+     "url": "https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "Summarised from the release; the signed order's PDF was located but not read in full.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-ca-bills-2026-09-30",
+   "date": "2026-09-30",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California: 13 AI bills signed, including human review of automated discipline and AI provenance",
+   "summary": "Signed 13 bills. Within scope: SB 947 requires a person to review automated employment disciplinary decisions; AB 2713 and SB 1000 amend the California AI Transparency Act on provenance data for AI-generated material; SB 1159 adds AI transparency and governance requirements. Others cover workplace surveillance, health care, legal practice and digital replicas.",
+   "measures": "Provenance data that lets AI-generated material be identified (AB 2713, SB 1000); human review of automated decisions in employment discipline (SB 947).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "SB 947",
+      "AB 2713"
+     ]
+    }
+   ],
+   "quotes": [
+    {
+     "text": "AI should expand opportunity – not come at the expense of workers and families.",
+     "speaker": "Gavin Newsom, Governor of California",
+     "source": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+     "record": "official press release"
+    }
+   ],
+   "label": "Supported",
+   "limits": "Bill-level detail is the Governor's one-line summaries; individual bill texts not retrieved.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "eu-omnibus-ai-2026-07-27",
+   "date": "2026-07-27",
+   "jurisdiction": "EU",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "EU Digital Omnibus on AI: high-risk obligations deferred",
+   "summary": "The AI Omnibus amending the AI Act entered into force on 27 July 2026. High-risk obligations for stand-alone (Annex III) systems in areas such as biometrics, employment, education and critical infrastructure now apply from 2 December 2027; for AI embedded in regulated products (Annex I), from 2 August 2028. General-purpose AI model obligations have applied since 2 August 2025.",
+   "measures": "Unchanged in kind: risk management, testing, accuracy and robustness requirements for high-risk systems now bind later; GPAI evaluation duties already apply.",
+   "applies": "2027-12-02",
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "2 December 2027",
+      "2027"
+     ]
+    },
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2026/1744"
+     ]
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "Dates from the Commission's page. The regulation number (2026/1744) and Official Journal date (24 July 2026) come from secondary sources; EUR-Lex did not render to our fetcher.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-fed-eo14365-2025-12-11",
+   "date": "2025-12-11",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "US Executive Order 14365: national policy framework and state AI laws",
+   "summary": "Directs the Attorney General to form an AI Litigation Task Force to challenge state AI laws that conflict with federal policy; the Commerce Secretary to identify 'onerous' state laws within 90 days; agencies to consider conditioning BEAD and discretionary grants; the FCC to begin a proceeding on a federal AI reporting standard; and officials to draft preemptive federal legislation, with carve-outs including child safety.",
+   "measures": "A proposed federal AI reporting standard (FCC proceeding); otherwise none stated. Bears on whether state evaluation and audit laws, such as California's, remain enforceable.",
+   "applies": null,
+   "stamp_relevance": [
+    "preemption of evaluation laws",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+     "issuer": "The White House",
+     "primary": true
+    },
+    {
+     "url": "https://www.govinfo.gov/app/details/FR-2025-12-16/2025-23092",
+     "issuer": "US Government Publishing Office (Federal Register)",
+     "primary": true
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "An executive order cannot itself overturn state law; that requires Congress or the courts.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-co-sb26-189-2026-05-14",
+   "date": "2026-05-14",
+   "jurisdiction": "US-CO",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Colorado SB26-189 repeals and replaces the Colorado AI Act",
+   "summary": "Signed 14 May 2026. Repeals and re-enacts the provisions of SB 24-205, the 2024 Colorado AI Act, around 'automated decision-making technology' used in consequential decisions such as employment, housing and financial services, in place of 'high-risk artificial intelligence systems'.",
+   "measures": "Disclosure and consumer rights around automated decisions; the impact-assessment model of the 2024 Act is replaced.",
+   "applies": "2027-01-01",
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://leg.colorado.gov/bills/sb26-189",
+     "issuer": "Colorado General Assembly",
+     "primary": true
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "The 1 January 2027 date for the new obligations comes from secondary sources; the bill page lists the act's effective date as 14 May 2026.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-ny-raise-2025-12-19",
+   "date": "2025-12-19",
+   "jurisdiction": "US-NY",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "New York RAISE Act signed (S6953B/A6453B)",
+   "summary": "Requires frontier AI developers to create and publish safety protocol information and to report critical-harm incidents to the state within 72 hours. Oversight sits with a new office in the Department of Financial Services, which assesses large frontier developers and issues annual transparency reports. Penalties up to $1 million for a first violation and $3 million for later ones.",
+   "measures": "Published safety protocols; incident reports within 72 hours; state assessment of large frontier developers.",
+   "applies": "2027-01-01",
+   "stamp_relevance": [
+    "incident reporting",
+    "transparency",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
+     "issuer": "Office of the Governor of New York",
+     "primary": true,
+     "expect": [
+      "RAISE"
+     ]
+    }
+   ],
+   "quotes": [
+    {
+     "text": "setting a strong standard for frontier AI safety",
+     "speaker": "Kathy Hochul, Governor of New York",
+     "source": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
+     "record": "official press release"
+    }
+   ],
+   "label": "Supported",
+   "limits": "The 1 January 2027 date is the amended law's, from the entry below.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "us-ny-raise-amend-2026-03-27",
+   "date": "2026-03-27",
+   "jurisdiction": "US-NY",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "New York RAISE Act chapter amendment",
+   "summary": "A chapter amendment signed 27 March 2026 is reported to be the final form of the RAISE Act: it aligns key definitions with California's Transparency in Frontier AI Act while keeping a 72-hour incident-reporting window (California's is 15 days), with obligations from 1 January 2027.",
+   "measures": "As above; definitions aligned with California's frontier-model law.",
+   "applies": "2027-01-01",
+   "stamp_relevance": [
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wiley.law/alert-New-York-Finalizes-RAISE-Act-for-Frontier-AI-Models-Law-Takes-Effect-January-1-2027",
+     "issuer": "Wiley Rein LLP (law firm)",
+     "primary": false
+    },
+    {
+     "url": "https://www.cooley.com/news/insight/2026/2026-03-31-new-yorks-frontier-ai-law-gets-a-california-makeover-with-some-key-differences",
+     "issuer": "Cooley LLP (law firm)",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "No primary source retrieved for the amendment; two law-firm analyses agree on the date and terms.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "kr-ai-basic-act-2026-01-22",
+   "date": "2026-01-22",
+   "jurisdiction": "KR",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "South Korea AI Basic Act and Enforcement Decree take effect",
+   "summary": "The AI Basic Act and its Enforcement Decree took effect on 22 January 2026, combining support for the AI industry with baseline duties of trust, safety, transparency and user protection. The ministry (MSIT) is deferring fact-finding investigations and fines for at least a year except in exceptional cases.",
+   "measures": "Advance notice to users of high-impact and generative AI; labelling of synthetic content; risk management plans, explainability and human-oversight documentation for high-impact systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.trade.gov/market-intelligence/south-korea-ai-basic-act",
+     "issuer": "US International Trade Administration",
+     "primary": false
+    },
+    {
+     "url": "https://www.loc.gov/item/global-legal-monitor/2026-02-20/south-korea-comprehensive-ai-legal-framework-takes-effect",
+     "issuer": "US Library of Congress, Global Legal Monitor",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "Official US-government summaries, not the Korean issuer's text; the Library of Congress page refused our fetcher (403).",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  },
+  {
+   "id": "uk-kings-speech-2026-05-13",
+   "date": "2026-05-13",
+   "jurisdiction": "UK",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "UK King's Speech 2026: no standalone AI bill",
+   "summary": "The King's Speech did not announce a dedicated AI bill. It announced a Regulating for Growth Bill with cross-economy sandboxing powers that would let businesses test products, including AI, in controlled environments. Sector regulators keep their AI remits.",
+   "measures": "None stated for AI evaluation; sandbox testing powers proposed.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://researchbriefings.files.parliament.uk/documents/LLN-2026-0020/2026-0020-KS-Science-innovation-and-technology-LARGE.pdf",
+     "issuer": "House of Commons Library",
+     "primary": true,
+     "expect": [
+      "King's Speech"
+     ]
+    },
+    {
+     "url": "https://iapp.org/news/a/king-s-speech-signals-diffuse-uk-digital-policy-agenda-but-no-ai-bill",
+     "issuer": "IAPP",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "The Commons Library briefing refused our fetcher (403); summary rests on IAPP and law-firm reports that agree.",
+   "added": "2026-10-05",
+   "checked": "2026-10-05"
+  }
+ ],
+ "rejected": [
+  {
+   "claim": "The UK updated the statutory footing of its AI Safety Institute under a '2026 Digital Security and AI Bill', mandating pre-deployment evaluations of frontier models.",
+   "seen_in": "https://app.stationx.net/articles/ai-regulations-around-the-world",
+   "checked": "2026-10-05",
+   "reason": "Contradicted: IAPP and law-firm reports of the 13 May 2026 King's Speech say no AI bill was announced. No bill of that name was found in any primary source."
+  },
+  {
+   "claim": "October 2026 directives from the Cyberspace Administration of China mandate real-time cryptographic watermarking for all public-facing synthesis algorithms.",
+   "seen_in": "https://app.stationx.net/articles/ai-regulations-around-the-world",
+   "checked": "2026-10-05",
+   "reason": "Unverified: no primary source (CAC) found. Not printed until one is."
+  }
+ ]
+}
