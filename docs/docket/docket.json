@@ -1,5 +1,5 @@
 {
- "built": "2026-10-05",
+ "built": "2026-10-06",
  "not_legal_advice": true,
  "entries": [
   {
@@ -33,7 +33,12 @@
    "label": "Supported",
    "limits": "none",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-ca-ab1405-2026-09-09",
@@ -60,7 +65,12 @@
    "label": "Supported",
    "limits": "Summarised from the Governor's release; the bill text itself was not retrieved for this entry.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-ca-eo-n-9-26-2026-09-18",
@@ -98,7 +108,12 @@
    "label": "Supported",
    "limits": "Summarised from the release; the signed order's PDF was located but not read in full.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-ca-bills-2026-09-30",
@@ -136,7 +151,12 @@
    "label": "Supported",
    "limits": "Bill-level detail is the Governor's one-line summaries; individual bill texts not retrieved.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "eu-omnibus-ai-2026-07-27",
@@ -175,7 +195,12 @@
    "label": "Supported",
    "limits": "Dates from the Commission's page. The regulation number (2026/1744) and Official Journal date (24 July 2026) come from secondary sources; EUR-Lex did not render to our fetcher.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-fed-eo14365-2025-12-11",
@@ -207,7 +232,12 @@
    "label": "Supported",
    "limits": "An executive order cannot itself overturn state law; that requires Congress or the courts.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-co-sb26-189-2026-05-14",
@@ -234,7 +264,12 @@
    "label": "Supported",
    "limits": "The 1 January 2027 date for the new obligations comes from secondary sources; the bill page lists the act's effective date as 14 May 2026.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-ny-raise-2025-12-19",
@@ -272,7 +307,12 @@
    "label": "Supported",
    "limits": "The 1 January 2027 date is the amended law's, from the entry below.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "us-ny-raise-amend-2026-03-27",
@@ -304,7 +344,12 @@
    "label": "Likely",
    "limits": "No primary source retrieved for the amendment; two law-firm analyses agree on the date and terms.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "kr-ai-basic-act-2026-01-22",
@@ -337,7 +382,12 @@
    "label": "Likely",
    "limits": "Official US-government summaries, not the Korean issuer's text; the Library of Congress page refused our fetcher (403).",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   },
   {
    "id": "uk-kings-speech-2026-05-13",
@@ -371,7 +421,129 @@
    "label": "Likely",
    "limits": "The Commons Library briefing refused our fetcher (403); summary rests on IAPP and law-firm reports that agree.",
    "added": "2026-10-05",
-   "checked": "2026-10-05"
+   "checked": "2026-10-05",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
+  },
+  {
+   "id": "us-fed-eo-super-intelligence-2026-09-29",
+   "date": "2026-09-29",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "US executive order replaces 'Artificial Intelligence' with 'Super Intelligence' in executive-branch documents",
+   "summary": "Directs departments and agencies to use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in official correspondence, public communications, policy documents and non-statutory documents, and directs the Assistant to the President for Science and Technology to propose a federal definition of the term. The President announced the name in his address to the UN General Assembly on 22 September 2026.",
+   "measures": "None stated. A federal definition of the term is to be proposed; definitions decide what later evaluation and reporting rules cover.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/",
+     "issuer": "The White House (fact sheet)",
+     "primary": true,
+     "expect": [
+      "Super Intelligence",
+      "non-statutory"
+     ]
+    },
+    {
+     "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted/",
+     "issuer": "The White House (UN address)",
+     "primary": true,
+     "expect": [
+      "hereinafter officially called"
+     ]
+    }
+   ],
+   "quotes": [
+    {
+     "text": "hereinafter officially called 'Super Intelligence.'",
+     "speaker": "Donald J. Trump, President of the United States, at the UN General Assembly",
+     "source": "https://www.whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted/",
+     "record": "official White House release"
+    }
+   ],
+   "label": "Supported",
+   "limits": "The order's number and Federal Register citation were not retrieved from a primary source; the Federal Register refused our fetcher.",
+   "added": "2026-10-06",
+   "checked": "2026-10-06",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
+  },
+  {
+   "id": "us-fed-frontier-accord-2026-09-29",
+   "date": "2026-09-29",
+   "jurisdiction": "US-FED",
+   "instrument": "voluntary commitment",
+   "stage": "signed",
+   "title": "White House and six AI company leaders sign a frontier-model safety accord",
+   "summary": "Signed by the President and the heads of Google, Anthropic, Meta, OpenAI, xAI and NVIDIA. Each company commits to internal controls monitoring its models' capabilities and alignment, an internal team overseeing those controls, partnerships with independent external auditors, and an independent committee overseeing the auditors' reports. Voluntary; no penalties reported.",
+   "measures": "Ongoing monitoring of model capabilities and alignment; reports by internal teams and independent external auditors to an independent committee.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluator independence"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325/",
+     "issuer": "Nextgov/FCW",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "No White House or company text of the accord was retrieved; the White House fact sheet on the same day does not mention it. Summary rests on Nextgov's report.",
+   "added": "2026-10-06",
+   "checked": "2026-10-06",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
+  },
+  {
+   "id": "eu-anthropic-claude-watermark-2026-08-14",
+   "date": "2026-08-14",
+   "jurisdiction": "EU",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Anthropic: future Claude models will watermark text, to meet the EU AI Act's marking duty",
+   "summary": "Anthropic says future Claude models will produce text carrying an imperceptible watermark, applied globally because it cannot yet be scoped by region, and that it will attach C2PA provenance data to files. A detection API is in private preview for eligible organizations such as regulators and researchers. Models launched before 2 August 2026 are in a transition period.",
+   "measures": "Whether a text was written or heavily edited by Claude, checked by a key-holding detector; provenance of files via C2PA.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.anthropic.com/news/claude-text-watermark",
+     "issuer": "Anthropic",
+     "primary": true,
+     "issuer_site": "anthropic.com",
+     "expect": [
+      "Future Claude models will generate text"
+     ]
+    }
+   ],
+   "quotes": [],
+   "label": "Supported",
+   "limits": "Anthropic's own account; the method has not been independently evaluated here. It says other major developers signed the same EU Code of Practice; their marks are not covered by this entry.",
+   "added": "2026-10-06",
+   "checked": "2026-10-06",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-06",
+    "how": "in chat"
+   }
   }
  ],
  "rejected": [
