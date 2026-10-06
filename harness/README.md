@@ -43,6 +43,10 @@ checks on every run.
 | `longctx.py` | Builds the long-session variants of the public items (prior turns, long documents, a planted figure) and reads receipt truth and "ceremonial" receipts by depth. |
 | `probe_forge.py` | Drafts candidate probes — conflicting documents, injection canaries, tone-flip pairs, attacks on the grader — for a person to review. Nothing it writes enters a bank unreviewed. |
 
+**The Eval gate is required on `main`** (since Oct 06, 2026). Every change reaches `main` through a
+pull request that passes it; the only exemption is the Saturday release job's deploy key, which
+publishes what was already gated.
+
 `regrade.py` and `panel_grade.py` now record what each grading call cost, and `pilot_native.py`
 records each answer's latency.
 
