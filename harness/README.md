@@ -4,7 +4,7 @@ The instrument is open. The bank is not.
 
 This directory holds the code that runs a measurement: the candidate runner, the
 graders, the release gates, the statistics and the figure generation. It does not
-hold the probe bank, and it never will — 28 of the 63 probes in the evaluation
+hold the probe bank, and it never will — 26 of the 63 probes in the evaluation
 bank are held out and never published, because an instrument that can be trained
 against stops measuring anything.
 
@@ -19,8 +19,10 @@ Point it at your own probes and run it. That is the whole reason it is here: a s
 you cannot reproduce is a claim, and this is the difference between asking you to
 believe our numbers and letting you generate your own.
 
-The public portion of our bank — 35 of the 63 probes, every row flagged
-`holdout: false` — is published at `docs/data/bank_v1_public.jsonl` in this repository.
+The public portion of our bank — 37 of the 63 probes, every row flagged
+`holdout: false` — is published at `docs/data/bank_v1_1_public.jsonl` in this repository.
+Two of them were held out until Oct 05, 2026 and are marked `reclassified`; the 35
+published with bank v1 stay at `docs/data/bank_v1_public.jsonl`, unchanged.
 
 ## Added 2026-10-05 — checks that need no judge, and tests of the judges
 
