@@ -98,19 +98,27 @@ footer{border-top:2px solid var(--ink);margin-top:56px;padding-top:18px;font:400
 
 <p class="lede">One list. You receive every issue of The Calibration and The Log the moment it ships — alternate Saturdays, 15:37 Chicago — and the occasional one-time announcement. Nothing else, ever.</p>
 <section><p class="eyebrow">Sign up</p><h2>Confirm from your inbox, leave in one click</h2>
+<div id="eo-slot" data-eo-src=""></div>
 <form class="sub" id="subform" method="post" action="" data-endpoint="">
   <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">
   <input type="hidden" name="l" value="">
   <button type="submit">Subscribe</button>
 </form>
-<p class="sub-note" id="subnote">You will get one message asking you to confirm. Until you do, nothing is stored beyond the request. Every issue carries a one-click unsubscribe. See the <a href="/privacy/">privacy statement</a>.</p>
+<p class="sub-note" id="subnote">Only your email address: no name, no phone number. You will get one message asking you to confirm, and nothing else until you do. Every issue carries a one-click unsubscribe. The list is kept for us by our mail provider, EmailOctopus; the <a href="/privacy/">privacy statement</a> says what that means.</p>
 <h3>Other ways to follow</h3>
 <p><a href="/feed.xml">RSS feed</a> of every issue and post · the <a href="/archive/">archive</a> · the studio’s accounts are Budday Budderson; they distribute what the publication issues and never speak for it.</p></section>
 <script>
 (function(){
-  // Until the list server is up, the form falls back to mail: a subscribe request to s@bud.day,
-  // which is answered by hand. Set data-endpoint to the Listmonk subscription URL to go live.
+  // To go live with EmailOctopus: in its dashboard, enable double opt-in on the list, create an
+  // embedded form, and paste the form script's URL (https://.../form/<id>.js) into data-eo-src
+  // above. The site's own form is then replaced by EmailOctopus's, and its script loads on this
+  // page only. Until then the form falls back to mail: a request to s@bud.day, answered by hand.
+  var slot=document.getElementById("eo-slot"), eo=slot.getAttribute("data-eo-src");
   var f=document.getElementById("subform"), ep=f.getAttribute("data-endpoint");
+  if(eo){ f.style.display="none";
+    var s=document.createElement("script"); s.async=true; s.src=eo;
+    s.setAttribute("data-form",(eo.split("/").pop()||"").replace(/\.js$/,""));
+    slot.appendChild(s); return; }
   if(ep){ f.action=ep; return; }
   f.addEventListener("submit",function(e){ e.preventDefault();
     var em=f.email.value; location.href="mailto:s@bud.day?subject="+encodeURIComponent("Subscribe: "+em)+"&body="+encodeURIComponent("Please add "+em+" to Protocol STAMP list (Calibration, Log, announcements).");
