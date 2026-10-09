@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08",
+ "built": "2026-10-09",
  "not_legal_advice": true,
  "entries": [
   {
@@ -5315,6 +5315,739 @@
    ],
    "label": "Supported",
    "permalink": "https://protocolstamp.com/docket/#us-fed-harris-ai-speech-2023-11-01"
+  },
+  {
+   "id": "ru-123fz-2020-04-24",
+   "date": "2020-04-24",
+   "jurisdiction": "RU",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Russia Federal Law No. 123-FZ: experimental legal regime for AI in Moscow",
+   "summary": "Signed 24 April 2020. Set up, from 1 July 2020 and for five years, an experimental legal regime for developing and deploying AI technologies in Moscow, with a register of participants, and amended the federal Personal Data law to allow processing of depersonalised data within the regime. The law defines 'artificial intelligence' and 'AI technologies'.",
+   "measures": "None stated; defines AI in federal law and sets conditions for participants in the regime.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "http://publication.pravo.gov.ru/Document/View/0001202004240030",
+     "issuer": "Official Internet Portal of Legal Information (Russia)",
+     "primary": true,
+     "expect": [
+      "123-ФЗ"
+     ]
+    },
+    {
+     "url": "http://kremlin.ru/acts/bank/45475",
+     "issuer": "President of Russia (kremlin.ru)",
+     "primary": true,
+     "expect": [
+      "123-ФЗ"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Whether the regime was extended after its five-year term was not checked.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ru-123fz-2020-04-24"
+  },
+  {
+   "id": "ru-decree124-2024-02-15",
+   "date": "2024-02-15",
+   "jurisdiction": "RU",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "Russia Presidential Decree No. 124 updates the National AI Strategy to 2030",
+   "summary": "Amends Decree No. 490 of 10 October 2019 and the National Strategy for the Development of AI to 2030. Adds definitions including large generative models, large foundation models and trusted AI technologies, directs federal bodies to follow the strategy in sectoral planning, and requires annual reporting to the President.",
+   "measures": "Defines 'trusted' AI technologies; reporting on strategy implementation.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "http://publication.pravo.gov.ru/document/0001202402150063",
+     "issuer": "Official Internet Portal of Legal Information (Russia)",
+     "primary": true,
+     "expect": [
+      "124"
+     ]
+    },
+    {
+     "url": "http://kremlin.ru/acts/bank/44731/page/1",
+     "issuer": "President of Russia (Decree No. 490 of 2019, as amended)",
+     "primary": true,
+     "expect": [
+      "490"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Definitions and reporting duty are from the official summary of the amended text; the full consolidated text was not read.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ru-decree124-2024-02-15"
+  },
+  {
+   "id": "ae-ai-charter-2024-06-10",
+   "date": "2024-06-10",
+   "jurisdiction": "AE",
+   "instrument": "guidance",
+   "stage": "adopted",
+   "title": "UAE Cabinet approves the Charter for the Development and Use of Artificial Intelligence",
+   "summary": "Approved at a Cabinet meeting chaired by the Prime Minister on 10 June 2024. The Charter comprises 12 principles on human values and fair, safe treatment, covering among others safety, algorithmic bias, data privacy, transparency, human oversight and compliance with treaties and applicable laws.",
+   "measures": "Principles on safety, algorithmic bias, transparency and human oversight (non-binding).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://uaecabinet.ae/en/news/chaired-by-mohammed-bin-rashid-uae-cabinet-reviews-achievements-of-emirates-genome-council-approves-ethical-charter-of-ai-framework-for-sustainable-digital-transformation",
+     "issuer": "UAE Cabinet",
+     "primary": true,
+     "expect": [
+      "Charter"
+     ]
+    },
+    {
+     "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+     "issuer": "UAE Government portal (u.ae)",
+     "primary": true,
+     "expect": [
+      "Charter"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ae-ai-charter-2024-06-10"
+  },
+  {
+   "id": "sa-sdaia-ai-ethics-2023-09-01",
+   "date": "2023-09-01",
+   "jurisdiction": "SA",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Saudi Arabia: SDAIA AI Ethics Principles (version 1.0)",
+   "summary": "The Saudi Data and AI Authority issued AI Ethics Principles applying to all AI stakeholders in the Kingdom across the AI lifecycle: fairness, privacy and security, humanity, social and environmental benefits, reliability and safety, transparency and explainability, and accountability and responsibility. Generative AI guidelines for government and the public followed.",
+   "measures": "Risk categorisation of AI systems; controls per principle across the lifecycle; self-assessment.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=ROOTWORKSPACE-4c56ed1c-1b82-447d-ac29-638f5f99c12e-p3k51U9",
+     "issuer": "Saudi Data and AI Authority (SDAIA)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The issuer dates this document to the month only; the entry is placed on the first day of that month.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#sa-sdaia-ai-ethics-2023-09-01"
+  },
+  {
+   "id": "eg-ai-strategy-2-2025-01-16",
+   "date": "2025-01-16",
+   "jurisdiction": "EG",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "Egypt National Artificial Intelligence Strategy, second edition (2025-2030)",
+   "summary": "Issued by the National Council for Artificial Intelligence with a statement from the President of the Republic. Six pillars: governance, technology, data, infrastructure, ecosystem and talent. Plans include a national Arabic large language model and work toward an AI law, building on the Egyptian Charter for Responsible AI.",
+   "measures": "Governance pillar: responsible-AI framework and a path to binding rules (planned).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+     "issuer": "National Council for Artificial Intelligence (Egypt)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Entry date taken from the official file name (16-1-2025); the pillar list and planned initiatives are from the document's summary pages.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#eg-ai-strategy-2-2025-01-16"
+  },
+  {
+   "id": "ke-ai-strategy-2025-03-27",
+   "date": "2025-03-27",
+   "jurisdiction": "KE",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "Kenya National Artificial Intelligence Strategy 2025-2030 launched",
+   "summary": "Launched at the Kenyatta International Convention Centre, Nairobi, on 27 March 2025 by the Ministry of Information, Communications and the Digital Economy. Three pillars: AI digital infrastructure, data, and AI research and innovation, with governance and ethics among its enablers. A draft AI and Emerging Technologies Policy followed in 2026.",
+   "measures": "Governance and ethics frameworks (planned); no evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ict.go.ke/index.php/kenyas-artificial-intelligence-ai-strategy-2025-2030-launched-kicc-nairobi",
+     "issuer": "Ministry of ICT and the Digital Economy (Kenya)",
+     "primary": true,
+     "expect": [
+      "Strategy"
+     ]
+    },
+    {
+     "url": "https://ict.go.ke/sites/default/files/AI%20Policy%20Doc/draft-kenya-ai-and-emerging-technologies-policy-2026.pdf",
+     "issuer": "Ministry of ICT and the Digital Economy (Kenya), draft 2026 policy",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Pillars are from secondary summaries of the strategy.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ke-ai-strategy-2025-03-27"
+  },
+  {
+   "id": "rw-ai-policy-2023-04-20",
+   "date": "2023-04-20",
+   "jurisdiction": "RW",
+   "instrument": "strategy",
+   "stage": "adopted",
+   "title": "Rwanda National Artificial Intelligence Policy approved",
+   "summary": "Approved by Cabinet in April 2023; developed by the Ministry of ICT and Innovation with the regulator RURA. Aims to use AI for growth while positioning Rwanda as a responsible-AI champion; priorities include AI literacy, infrastructure, an open data ecosystem, public-sector adoption and practical ethical guidelines. A readiness and maturity framework tracks implementation.",
+   "measures": "Practical AI ethics guidelines; a readiness and maturity framework to track progress.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.minict.gov.rw/index.php?eID=dumpFile&t=f&f=67550&token=6195a53203e197efa47592f40ff4aaf24579640e",
+     "issuer": "Ministry of ICT and Innovation (Rwanda)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+     "issuer": "Ministry of ICT and Innovation (Rwanda)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The Cabinet date (20 April 2023) is from secondary reports of the Prime Minister's Office communique, not from the policy document.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#rw-ai-policy-2023-04-20"
+  },
+  {
+   "id": "ng-ai-strategy-draft-2024-08-01",
+   "date": "2024-08-01",
+   "jurisdiction": "NG",
+   "instrument": "strategy",
+   "stage": "proposed",
+   "title": "Nigeria publishes its draft National Artificial Intelligence Strategy",
+   "summary": "The Federal Ministry of Communications, Innovation and Digital Economy published a draft strategy, co-created at a workshop in April 2024 and hosted by NITDA's National Centre for AI and Robotics. Five pillars cover infrastructure, the ecosystem, sector adoption, responsible and ethical AI, and governance.",
+   "measures": "Recommends testing, evaluation and certification infrastructure, bias audits, model documentation and incident reporting (proposed).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+     "issuer": "NCAIR / NITDA (Nigeria)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://fmcide.gov.ng/initiative/nais/",
+     "issuer": "Federal Ministry of Communications, Innovation and Digital Economy (Nigeria)",
+     "primary": true,
+     "expect": [
+      "Strategy"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Entry dated from the file name (01082024); whether a final text superseded the draft was not confirmed. Evaluation measures listed are from secondary summaries.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ng-ai-strategy-draft-2024-08-01"
+  },
+  {
+   "id": "cl-ai-bill-2025-08-04",
+   "date": "2025-08-04",
+   "jurisdiction": "CL",
+   "instrument": "bill",
+   "stage": "passed",
+   "title": "Chile's Chamber of Deputies approves the AI regulation bill in general",
+   "summary": "The Chamber approved in general bills 15869 and 16821, which regulate the development, implementation and use of AI, by 63 votes to 47 with 6 abstentions; provisions needing a special quorum were rejected and the bill returned to committee. It assigns supervision to the Personal Data Protection Agency and uses a risk-based approach.",
+   "measures": "Risk classification of AI systems; supervision by the data-protection agency (proposed).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.camara.cl/cms/2025/08/04/camara-apoyo-en-general-regulacion-de-inteligencia-artificial-ia/",
+     "issuer": "Cámara de Diputadas y Diputados de Chile",
+     "primary": true,
+     "expect": [
+      "inteligencia"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Status after August 2025 (committee report, Senate) was not checked.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#cl-ai-bill-2025-08-04"
+  },
+  {
+   "id": "intl-santiago-declaration-2023-10-24",
+   "date": "2023-10-24",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Santiago Declaration to promote ethical AI in Latin America and the Caribbean",
+   "summary": "Adopted at the first Ministerial and High Authorities Summit of Latin America and the Caribbean in Santiago de Chile, 23 and 24 October 2023, organised by Chile's Ministry of Science with UNESCO and CAF. Agreed a working group toward an intergovernmental AI council for the region, building on the UNESCO Recommendation.",
+   "measures": "None directly; regional commitment to ethical-impact frameworks.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://minciencia.gob.cl/uploads/filer_public/40/2a/402a35a0-1222-4dab-b090-5c81bbf34237/declaracion_de_santiago.pdf",
+     "issuer": "Ministerio de Ciencia, Tecnología, Conocimiento e Innovación (Chile)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Signatory count (about 20) is from press reports.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-santiago-declaration-2023-10-24"
+  },
+  {
+   "id": "intl-montevideo-declaration-2024-10-04",
+   "date": "2024-10-04",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Montevideo Declaration on a regional approach to AI governance (Latin America and the Caribbean)",
+   "summary": "Approved at the second Ministerial Summit on the Ethics of AI in Latin America and the Caribbean in Montevideo, 3 and 4 October 2024. Set a 2024-2025 regional roadmap for ethical AI, a standing working group led by Uruguay, and annual ministerial summits.",
+   "measures": "None directly.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/noticias/aprobacion-declaracion-montevideo",
+     "issuer": "AGESIC, Government of Uruguay",
+     "primary": true,
+     "expect": [
+      "Montevideo"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Summit dates and the working-group handover are from the declaration text as reported; check the declaration PDF for exact wording.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-montevideo-declaration-2024-10-04"
+  },
+  {
+   "id": "co-conpes-4144-2025-02-14",
+   "date": "2025-02-14",
+   "jurisdiction": "CO",
+   "instrument": "strategy",
+   "stage": "adopted",
+   "title": "Colombia approves its National Artificial Intelligence Policy (CONPES 4144)",
+   "summary": "Approved by the National Council for Economic and Social Policy on 14 February 2025, succeeding CONPES 3975 of 2019. Six strategic axes, from ethics and governance to data and infrastructure, risk mitigation and adoption, with more than 100 actions to 2030 led by MinTIC and MinCiencias.",
+   "measures": "Ethics and governance axis; risk mitigation measures for AI use.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/4144.pdf",
+     "issuer": "Departamento Nacional de Planeación (Colombia)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Investment figure and action count are from DNP summaries, not checked line by line.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#co-conpes-4144-2025-02-14"
+  },
+  {
+   "id": "ar-disposicion-2-2023-06-02",
+   "date": "2023-06-02",
+   "jurisdiction": "AR",
+   "instrument": "guidance",
+   "stage": "in force",
+   "title": "Argentina approves Recommendations for Trustworthy AI in the public sector (Disposición 2/2023)",
+   "summary": "The Undersecretariat of Information Technologies approved 'Recommendations for a Trustworthy Artificial Intelligence', published in the Official Bulletin on 2 June 2023, for public innovation projects using AI. Principles include proportionality, safety, fairness, transparency and explainability, and accountability with oversight and audit mechanisms.",
+   "measures": "Risk assessment across the AI project lifecycle; audit and oversight mechanisms; informing people when AI is used.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-2-2023-384656",
+     "issuer": "Argentina.gob.ar (official legal database)",
+     "primary": true,
+     "expect": [
+      "2023"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ar-disposicion-2-2023-06-02"
+  },
+  {
+   "id": "my-aige-2024-09-20",
+   "date": "2024-09-20",
+   "jurisdiction": "MY",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Malaysia: National Guidelines on AI Governance and Ethics (AIGE)",
+   "summary": "Launched by the Ministry of Science, Technology and Innovation to support the National AI Roadmap 2021-2025. Voluntary guidelines for end users, policymakers, designers, developers and suppliers, setting seven principles including fairness, reliability, safety and control, transparency and accountability.",
+   "measures": "Voluntary principles for responsible AI; no binding evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.malaysia.gov.my/en/my-initiative/whole-government-digital-services/tadbir-urus/national-guidelines-on-artificial-intelligence-governance-and-ethics-aige",
+     "issuer": "Government of Malaysia portal",
+     "primary": true,
+     "expect": [
+      "AIGE"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Launch date (20 September 2024) is from secondary reports; the portal page does not print it.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#my-aige-2024-09-20"
+  },
+  {
+   "id": "tr-ai-strategy-2021-08-20",
+   "date": "2021-08-20",
+   "jurisdiction": "TR",
+   "instrument": "strategy",
+   "stage": "in force",
+   "title": "Turkey's National Artificial Intelligence Strategy 2021-2025 published in the Official Gazette",
+   "summary": "Presidential Circular 2021/18 put into force the strategy prepared by the Presidency's Digital Transformation Office and the Ministry of Industry and Technology: six strategic priorities, 24 objectives and 119 measures, including regulation to speed socioeconomic adaptation. A 2024-2025 action plan updated it.",
+   "measures": "None stated for evaluation.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+     "issuer": "Resmî Gazete (Official Gazette of Türkiye)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://cbddo.gov.tr/uyzs",
+     "issuer": "Presidency of the Republic of Türkiye, Digital Transformation Office",
+     "primary": true,
+     "expect": [
+      "2021"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Priority, objective and measure counts are from the Digital Transformation Office's summary.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#tr-ai-strategy-2021-08-20"
+  },
+  {
+   "id": "il-ai-policy-2023-12-01",
+   "date": "2023-12-01",
+   "jurisdiction": "IL",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "Israel publishes its first policy on AI regulation and ethics",
+   "summary": "The Ministry of Innovation, Science and Technology, with the Ministry of Justice, recommended sector-specific regulation rather than a horizontal AI law, a risk-based approach consistent with leading countries, 'soft' regulatory tools such as sandboxes, and a coordination centre for AI policy.",
+   "measures": "Risk-based, sector-by-sector regulation (recommended).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.il/BlobFolder/policy/ai_2023/en/Israels%20AI%20Policy%202023.pdf",
+     "issuer": "Ministry of Innovation, Science and Technology (Israel)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The issuer dates this document to the month only; the entry is placed on the first day of that month.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#il-ai-policy-2023-12-01"
+  },
+  {
+   "id": "ua-ai-strategy-draft-2026-03-01",
+   "date": "2026-03-01",
+   "jurisdiction": "UA",
+   "instrument": "strategy",
+   "stage": "proposed",
+   "title": "Ukraine publishes a draft AI Development Strategy to 2030",
+   "summary": "The Ministry of Digital Transformation published a draft AI Development Strategy to 2030 and an operational plan for 2026-2028, after a two-stage regulatory roadmap, a white paper, a voluntary code of conduct (December 2024) and a series of sector recommendations, as Ukraine prepares legislation aligned with the EU AI Act.",
+   "measures": "Voluntary code and sector recommendations now; legislation aligned with the EU AI Act planned.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://ai.thedigital.gov.ua/documents",
+     "issuer": "Ministry of Digital Transformation of Ukraine (Centre for Responsible AI)",
+     "primary": true,
+     "expect": [
+      "ШІ"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The issuer dates this document to the month only; the entry is placed on the first day of that month. The EU-alignment aim is from the Verkhovna Rada research service and press coverage.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#ua-ai-strategy-draft-2026-03-01"
+  },
+  {
+   "id": "id-se9-2023-12-19",
+   "date": "2023-12-19",
+   "jurisdiction": "ID",
+   "instrument": "guidance",
+   "stage": "in force",
+   "title": "Indonesia: Ministerial Circular No. 9 of 2023 on AI Ethics",
+   "summary": "The Minister of Communication and Informatics issued an ethics circular for businesses programming with AI and for public and private electronic system operators. AI is not to be used as the decision-maker on matters of humanity; developers must provide information to prevent harm and apply risk and crisis management.",
+   "measures": "Risk management in AI development; information duties on developers.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+     "issuer": "JDIH, Ministry of Communication and Digital Affairs (Indonesia)",
+     "primary": true,
+     "expect": [
+      "Nomor 9 Tahun 2023"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#id-se9-2023-12-19"
+  },
+  {
+   "id": "intl-achpr-res473-2021-02-25",
+   "date": "2021-02-25",
+   "jurisdiction": "INTL",
+   "instrument": "resolution",
+   "stage": "adopted",
+   "title": "African Commission on Human and Peoples' Rights Resolution 473 on AI and human rights",
+   "summary": "Adopted at the Commission's 31st Extraordinary Session, held virtually 19 to 25 February 2021. Calls on States to keep AI consistent with the African Charter and to ensure meaningful human control over AI systems, and launches a study on AI, robotics and emerging technologies in Africa; a draft study was published in March 2025.",
+   "measures": "Meaningful human control over consequential AI systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://achpr.au.int/en/adopted-resolutions/473-resolution-need-undertake-study-human-and-peoples-rights-and-art",
+     "issuer": "African Commission on Human and Peoples' Rights",
+     "primary": true,
+     "expect": [
+      "473"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Entry dated to the last day of the session; the page does not print the day of adoption.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-achpr-res473-2021-02-25"
   }
  ],
  "rejected": [
