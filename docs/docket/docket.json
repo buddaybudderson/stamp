@@ -1,5 +1,5 @@
 {
- "built": "2026-10-06",
+ "built": "2026-10-08",
  "not_legal_advice": true,
  "entries": [
   {
@@ -33,7 +33,7 @@
    "label": "Supported",
    "limits": "none",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -65,7 +65,7 @@
    "label": "Supported",
    "limits": "Summarised from the Governor's release; the bill text itself was not retrieved for this entry.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -108,7 +108,7 @@
    "label": "Supported",
    "limits": "Summarised from the release; the signed order's PDF was located but not read in full.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -151,7 +151,7 @@
    "label": "Supported",
    "limits": "Bill-level detail is the Governor's one-line summaries; individual bill texts not retrieved.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -195,7 +195,7 @@
    "label": "Supported",
    "limits": "Dates from the Commission's page. The regulation number (2026/1744) and Official Journal date (24 July 2026) come from secondary sources; EUR-Lex did not render to our fetcher.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -232,7 +232,7 @@
    "label": "Supported",
    "limits": "An executive order cannot itself overturn state law; that requires Congress or the courts.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -264,7 +264,7 @@
    "label": "Supported",
    "limits": "The 1 January 2027 date for the new obligations comes from secondary sources; the bill page lists the act's effective date as 14 May 2026.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -298,7 +298,7 @@
    ],
    "quotes": [
     {
-     "text": "setting a strong standard for frontier AI safety",
+     "text": "setting a strong and sensible standard for frontier AI safety",
      "speaker": "Kathy Hochul, Governor of New York",
      "source": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
      "record": "official press release"
@@ -307,7 +307,7 @@
    "label": "Supported",
    "limits": "The 1 January 2027 date is the amended law's, from the entry below.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -344,7 +344,7 @@
    "label": "Likely",
    "limits": "No primary source retrieved for the amendment; two law-firm analyses agree on the date and terms.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -382,7 +382,7 @@
    "label": "Likely",
    "limits": "Official US-government summaries, not the Korean issuer's text; the Library of Congress page refused our fetcher (403).",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -415,13 +415,18 @@
      "url": "https://iapp.org/news/a/king-s-speech-signals-diffuse-uk-digital-policy-agenda-but-no-ai-bill",
      "issuer": "IAPP",
      "primary": false
+    },
+    {
+     "url": "https://www.lewissilkin.com/en/insights/2026/05/13/kings-speech-2026-commercial-technology-and-regulatory-developments-102msjh",
+     "issuer": "Lewis Silkin LLP (law firm)",
+     "primary": false
     }
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "The Commons Library briefing refused our fetcher (403); summary rests on IAPP and law-firm reports that agree.",
+   "limits": "The Commons Library briefing refused our fetcher (403). The IAPP report confirms no AI bill; the Regulating for Growth Bill and its AI sandbox powers are from Lewis Silkin's note, which quotes the government's briefing notes.",
    "added": "2026-10-05",
-   "checked": "2026-10-05",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -434,14 +439,22 @@
    "jurisdiction": "US-FED",
    "instrument": "executive order",
    "stage": "in force",
-   "title": "US executive order replaces 'Artificial Intelligence' with 'Super Intelligence' in executive-branch documents",
-   "summary": "Directs departments and agencies to use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in official correspondence, public communications, policy documents and non-statutory documents, and directs the Assistant to the President for Science and Technology to propose a federal definition of the term. The President announced the name in his address to the UN General Assembly on 22 September 2026.",
-   "measures": "None stated. A federal definition of the term is to be proposed; definitions decide what later evaluation and reporting rules cover.",
+   "title": "US Executive Order 14434 replaces 'Artificial Intelligence' with 'Super Intelligence' in executive-branch documents",
+   "summary": "Executive Order 14434 directs agencies to use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in correspondence, communications, websites, reports and other non-statutory documents, and asks the Assistant to the President for Science and Technology to propose a federal definition. The President announced the name at the UN General Assembly on 22 September 2026.",
+   "measures": "None stated. Until a new definition is adopted, the order defines the terms by the statutory definition of artificial intelligence in 15 U.S.C. 9401(3); definitions decide what evaluation rules cover.",
    "applies": null,
    "stamp_relevance": [
     "definitions"
    ],
    "sources": [
+    {
+     "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+     "issuer": "The White House (Executive Order 14434)",
+     "primary": true,
+     "expect": [
+      "Executive Order 14434"
+     ]
+    },
     {
      "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/",
      "issuer": "The White House (fact sheet)",
@@ -469,9 +482,9 @@
     }
    ],
    "label": "Supported",
-   "limits": "The order's number and Federal Register citation were not retrieved from a primary source; the Federal Register refused our fetcher.",
+   "limits": "Federal Register citation not retrieved. Earlier versions of this entry (before 2026-10-08) said the order's number was not yet published.",
    "added": "2026-10-06",
-   "checked": "2026-10-06",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -503,7 +516,7 @@
    "label": "Likely",
    "limits": "No White House or company text of the accord was retrieved; the White House fact sheet on the same day does not mention it. Summary rests on Nextgov's report.",
    "added": "2026-10-06",
-   "checked": "2026-10-06",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
@@ -538,12 +551,4636 @@
    "label": "Supported",
    "limits": "Anthropic's own account; the method has not been independently evaluated here. It says other major developers signed the same EU Code of Practice; their marks are not covered by this entry.",
    "added": "2026-10-06",
-   "checked": "2026-10-06",
+   "checked": "2026-10-08",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-06",
     "how": "in chat"
    }
+  },
+  {
+   "id": "eu-ai-act-art50-applies-2026-08-02",
+   "date": "2026-08-02",
+   "jurisdiction": "EU",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "EU AI Act transparency obligations (Article 50) apply",
+   "summary": "From 2 August 2026, providers of generative AI systems must mark outputs in a machine-readable way, and deployers must disclose deepfakes and certain AI-generated text. The 2026 Omnibus did not move these dates, which also brought most remaining AI Act provisions into application.",
+   "measures": "Machine-readable marking and detectability of AI-generated content; disclosure duties for deployers.",
+   "applies": "2026-08-02",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Article 50"
+     ]
+    },
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2024/1689"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Transitional relief for systems already on the market (reported to run to 2 December 2026) is from secondary sources.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-il-sb315-2026-07-06",
+   "date": "2026-07-06",
+   "jurisdiction": "US-IL",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Illinois Artificial Intelligence Safety Measures Act (SB 315, Public Act 104-0538)",
+   "summary": "Became Public Act 104-0538 on 6 July 2026, effective 1 January 2027. Large frontier developers must publish and annually update a frontier AI framework (catastrophic-risk assessment, mitigations, governance, cybersecurity, third-party evaluations, internal-use risks), publish transparency reports before deploying new or substantially modified frontier models, undergo annual independent third-party audits, and report critical safety incidents.",
+   "measures": "Annual independent third-party audits; published frontier AI frameworks; pre-deployment transparency reports; critical safety incident reporting.",
+   "applies": "2027-01-01",
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluator independence",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0315.html",
+     "issuer": "Illinois General Assembly",
+     "primary": true,
+     "expect": [
+      "104-0538"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Some duties reportedly start 1 January 2028 (secondary sources); the act text was not read in full.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-code-ai-generated-content-2026-06-10",
+   "date": "2026-06-10",
+   "jurisdiction": "EU",
+   "instrument": "voluntary commitment",
+   "stage": "published",
+   "title": "EU Code of Practice on Transparency of AI-generated Content published",
+   "summary": "Final code published at a closing plenary on 10 June 2026, to help providers and deployers meet the AI Act's Article 50 duties to mark and label AI-generated content. Adherence is voluntary; the Article 50 obligations themselves apply from 2 August 2026.",
+   "measures": "Machine-readable marking of AI-generated output by providers; labelling of deepfakes and certain AI-generated text by deployers.",
+   "applies": "2026-08-02",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Article 50"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-eo14409-2026-06-02",
+   "date": "2026-06-02",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "US Executive Order 14409: Promoting Advanced Artificial Intelligence Innovation and Security",
+   "summary": "Directs cyber-defence upgrades for federal and national-security systems within 30 days, an AI cybersecurity clearinghouse run by CISA in voluntary collaboration with industry and critical-infrastructure operators, and the design of a voluntary framework with AI developers. States that nothing in the section authorises a mandatory licensing, preclearance or permitting requirement for AI models. Issued alongside NSPM-11.",
+   "measures": "A voluntary framework for government access to advanced models (per law-firm summaries, up to 30 days pre-release for models with advanced cyber capabilities identified by classified benchmarking).",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+     "issuer": "The White House",
+     "primary": true,
+     "expect": [
+      "14409"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The 30-day pre-release access and classified benchmarking details are from law-firm summaries; the order's definitions section was not read in full.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ct-sb5-2026-05-27",
+   "date": "2026-05-27",
+   "jurisdiction": "US-CT",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Connecticut SB 5 (Public Act 26-15), 'An Act Concerning Online Safety', with AI provisions",
+   "summary": "Signed by the Governor on 27 May 2026. An omnibus act whose AI provisions, per law-firm summaries, cover AI in employment decisions, AI companions and consumer generative-AI tools, frontier-model developers, and platforms used by minors, with staggered effective dates from 1 October 2026 to 1 January 2028. Commentators have called it the 'Connecticut Artificial Intelligence Responsibility and Transparency Act'; the Legislature's title is 'An Act Concerning Online Safety'.",
+   "measures": "Notices for AI-driven employment decisions; duties for AI companion operators and frontier developers (details from secondary summaries).",
+   "applies": "2026-10-01",
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&which_year=2026&bill_num=5",
+     "issuer": "Connecticut General Assembly",
+     "primary": true,
+     "expect": [
+      "Public Act No. 26-15"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Provision-level detail and effective dates are from law-firm summaries; the act's text was not read.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-new-delhi-declaration-2026-02-19",
+   "date": "2026-02-19",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "New Delhi Declaration on AI Impact (AI Impact Summit, India)",
+   "summary": "Adopted at the close of the AI Impact Summit held in New Delhi on 18-19 February 2026, per the Government of India. Secondary reports describe seven pillars ('chakras'), one on secure and trusted AI, and endorsement counts between 86 and 92 countries and organisations as more joined.",
+   "measures": "None specific; a pillar on secure and trusted AI systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://negd.gov.in/press_release/ai-impact-summit-2026-concludes-with-adoption-of-new-delhi-declaration/",
+     "issuer": "National e-Governance Division, Government of India",
+     "primary": true,
+     "expect": [
+      "Declaration"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The issuer page confirms dates and adoption only; pillars and signatory counts are from secondary reports and vary by date.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "in-it-rules-sgi-2026-02-10",
+   "date": "2026-02-10",
+   "jurisdiction": "IN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "India IT Rules amended for synthetically generated information",
+   "summary": "MeitY notified the IT (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026 by Gazette notification G.S.R. 120(E) dated 10 February 2026, in force 20 February 2026, after a draft in October 2025. Defines 'synthetically generated information' in Rule 2(1)(wa).",
+   "measures": "Visible labels and embedded metadata on synthetic content; user declarations and technical verification by significant social media intermediaries.",
+   "applies": "2026-02-20",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://egovernance.vikaspedia.in/viewcontent/e-governance/digital-india/data-protection-and-privacy/the-information-technology-(intermediary-guidelines-and-digital-media-ethics-code)-amendment-rules,-2026?lgn=en",
+     "issuer": "Vikaspedia (Government of India portal run by C-DAC for MeitY)",
+     "primary": false,
+     "expect": [
+      "synthetically generated"
+     ]
+    },
+    {
+     "url": "https://www.dsci.in/resource/content/it-amendment-rules-2026",
+     "issuer": "Data Security Council of India",
+     "primary": false,
+     "expect": [
+      "2026"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The Gazette PDF itself was not retrieved; details from a government information portal and DSCI. A draft Second Amendment followed in 2026.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "tw-ai-basic-act-2025-12-23",
+   "date": "2025-12-23",
+   "jurisdiction": "TW",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Taiwan Artificial Intelligence Fundamental Act (AI Basic Act)",
+   "summary": "Passed third reading in the Legislative Yuan on 23 December 2025 (the Ministry of Digital Affairs' English name is 'Artificial Intelligence Fundamental Act'); reported promulgated 14 January 2026. Sets principles, a national AI strategy committee, and assigns the Ministry of Digital Affairs to develop risk classification frameworks.",
+   "measures": "Risk classification framework; verification and labelling mechanisms for AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://moda.gov.tw/en/press/press-releases/18316",
+     "issuer": "Ministry of Digital Affairs (Taiwan)",
+     "primary": true,
+     "expect": [
+      "Artificial Intelligence"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Promulgation date from secondary sources.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "vn-ai-law-2025-12-10",
+   "date": "2025-12-10",
+   "jurisdiction": "VN",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Vietnam Law on Artificial Intelligence (No. 134/2025/QH15)",
+   "summary": "Passed by the National Assembly on 10 December 2025 (429 of 434 votes); effective 1 March 2026. Risk-based, three tiers; transition to 1 March 2027 (1 September 2027 for health, education and finance).",
+   "measures": "Risk classification and conformity duties for higher-risk AI; labelling of AI-generated content.",
+   "applies": "2026-03-01",
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://en.vneconomy.vn/national-assembly-approves-vietnams-first-ai-law.htm",
+     "issuer": "VnEconomy",
+     "primary": false,
+     "expect": [
+      "AI"
+     ]
+    },
+    {
+     "url": "https://www.bakermckenzie.com/en/insight/publications/2026/02/vietnam-artificial-intelligence-law-foundation-and-outlook",
+     "issuer": "Baker McKenzie (law firm)",
+     "primary": false,
+     "expect": [
+      "Vietnam"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "No Vietnamese government text retrieved.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "au-national-ai-plan-2025-12-02",
+   "date": "2025-12-02",
+   "jurisdiction": "AU",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "Australia National AI Plan: mandatory guardrails paused, AI Safety Institute funded",
+   "summary": "Published 2 December 2025. Says regulation will build on Australia's existing legal and regulatory frameworks rather than a standalone AI act, and establishes an AI Safety Institute to monitor, test and share information on emerging AI capabilities, risks and harms.",
+   "measures": "AI Safety Institute to monitor and test emerging AI risks; no binding evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.industry.gov.au/publications/national-ai-plan",
+     "issuer": "Department of Industry, Science and Resources (Australia)",
+     "primary": true,
+     "expect": [
+      "National AI Plan"
+     ]
+    },
+    {
+     "url": "https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe",
+     "issuer": "Department of Industry, Science and Resources (Australia)",
+     "primary": true,
+     "expect": [
+      "AI Safety Institute"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The A$29.9 million AISI figure and the description of mandatory guardrails as paused come from press coverage, not the plan pages read.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-digital-omnibus-proposal-2025-11-19",
+   "date": "2025-11-19",
+   "jurisdiction": "EU",
+   "instrument": "bill",
+   "stage": "proposed",
+   "title": "Digital Omnibus on AI proposed",
+   "summary": "Commission proposal of 19 November 2025 for 'targeted simplification measures' to the AI Act's implementation. As adopted in 2026, it moved the high-risk dates to 2 December 2027 (Annex III) and 2 August 2028 (Annex I); see the July 2026 entry.",
+   "measures": "Timing of high-risk testing and conformity duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Omnibus"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "kz-ai-law-2025-11-17",
+   "date": "2025-11-17",
+   "jurisdiction": "KZ",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Kazakhstan Law on Artificial Intelligence signed",
+   "summary": "Signed by President Tokayev on 17 November 2025; the first comprehensive AI law in Central Asia. Risk tiers, prohibited manipulative uses, and mandatory labelling of AI-generated content.",
+   "measures": "Risk classification with special control of high-risk systems; labelling of generated text, images, audio and video.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://astanatimes.com/2025/11/kazakhstan-adopts-central-asias-first-ai-law/",
+     "issuer": "The Astana Times",
+     "primary": false,
+     "expect": [
+      "AI"
+     ]
+    },
+    {
+     "url": "https://www.kt.kz/eng/government/tokayev_signs_law_on_artificial_intelligence_1377983990.html",
+     "issuer": "Kazakhstan Today",
+     "primary": false,
+     "expect": [
+      "artificial intelligence"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "No Akorda (presidential) or Adilet text retrieved.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "in-ai-governance-guidelines-2025-11-05",
+   "date": "2025-11-05",
+   "jurisdiction": "IN",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "India AI Governance Guidelines",
+   "summary": "Released by MeitY on 5 November 2025 (per DSCI). A governance framework that relies on existing laws rather than a new AI statute, per officials quoted in coverage.",
+   "measures": "Recommends techno-legal tools, incident databases and voluntary frameworks; no binding evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.dsci.in/resource/content/summary-india-ai-governance-guidelines",
+     "issuer": "Data Security Council of India",
+     "primary": false,
+     "expect": [
+      "Guidelines"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Primary MeitY/PIB document not retrieved; date differs by one day across sources (4 or 5 November 2025).",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-cybersecurity-law-amend-2025-10-28",
+   "date": "2025-10-28",
+   "jurisdiction": "CN",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "China amends the Cybersecurity Law to add AI provisions",
+   "summary": "Adopted by the NPC Standing Committee on 28 October 2025; effective 1 January 2026. A new article supports AI research and infrastructure and calls for AI ethics rules, risk monitoring and safety evaluation.",
+   "measures": "AI risk monitoring and safety evaluation (framework level; details left to implementing rules).",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cac.gov.cn/2026-01/02/c_1769093523928606.htm",
+     "issuer": "Cyberspace Administration of China",
+     "primary": true,
+     "expect": [
+      "网络安全法"
+     ]
+    },
+    {
+     "url": "https://www.news.cn/politics/20251028/b3400522666a4b3f8c844b9fa6c31131/c.html",
+     "issuer": "Xinhua (state news agency)",
+     "primary": false,
+     "expect": [
+      "网络安全法"
+     ]
+    },
+    {
+     "url": "https://subsites.chinadaily.com.cn/npc/2025-10/29/c_1136120.htm",
+     "issuer": "China Daily (NPC subsite)",
+     "primary": false,
+     "expect": [
+      "cybersecurity"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The NPC's own page was not reached; the CAC source is an expert commentary on the amendment published by the regulator.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-sb243-2025-10-13",
+   "date": "2025-10-13",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California SB 243: companion chatbots",
+   "summary": "Signed 13 October 2025, effective 1 January 2026. Operators of companion chatbots must disclose that the chatbot is AI, maintain protocols for suicidal ideation and self-harm, add protections for minors, and report annually from July 2027.",
+   "measures": "Annual reports to the Office of Suicide Prevention on crisis-referral protocols and counts.",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "transparency",
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB243",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "SB-243"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "it-law-132-2025-10-10",
+   "date": "2025-10-10",
+   "jurisdiction": "IT",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Italy Law 132/2025 on artificial intelligence",
+   "summary": "Published in the Gazzetta Ufficiale on 25 September 2025 and in force 10 October 2025; the first national AI law in the EU, complementing the AI Act. Designates AgID and ACN as national AI authorities and adds a deepfake offence.",
+   "measures": "Sectoral transparency and human-oversight rules (health, employment, professions, public administration).",
+   "applies": "2025-10-10",
+   "stamp_relevance": [
+    "human oversight",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gazzettaufficiale.it/eli/id/2025/09/25/25G00143/sg",
+     "issuer": "Gazzetta Ufficiale della Repubblica Italiana",
+     "primary": true,
+     "expect": [
+      "intelligenza artificiale"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-crd-ads-regs-2025-10-01",
+   "date": "2025-10-01",
+   "jurisdiction": "US-CA",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "California Civil Rights Council regulations on automated-decision systems in employment",
+   "summary": "Effective 1 October 2025. Clarifies that use of automated-decision systems in hiring and employment can violate the Fair Employment and Housing Act and that anti-bias testing is relevant to defences; four-year record retention.",
+   "measures": "Anti-bias testing of automated-decision systems (relevant evidence); record retention of ADS data.",
+   "applies": "2025-10-01",
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://calcivilrights.ca.gov/2025/06/30/civil-rights-council-secures-approval-for-regulations-to-protect-against-employment-discrimination-related-to-artificial-intelligence/",
+     "issuer": "California Civil Rights Department",
+     "primary": true,
+     "expect": [
+      "regulations"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-sb53-2025-09-29",
+   "date": "2025-09-29",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California SB 53: Transparency in Frontier Artificial Intelligence Act",
+   "summary": "Signed 29 September 2025, effective 1 January 2026. Large frontier developers must publish a frontier AI framework and transparency reports, and report critical safety incidents to the Office of Emergency Services within 15 days (24 hours if there is imminent risk of death or serious injury). 'Frontier model' means training compute above 10^26 operations; 'large' means over $500,000,000 in annual revenue.",
+   "measures": "Published frontier AI framework covering catastrophic-risk assessment and third-party evaluation use; critical safety incident reports; summaries of catastrophic-risk assessments.",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "incident reporting",
+    "transparency",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "SB-53"
+     ]
+    },
+    {
+     "url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "SB 53"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-cppa-admt-2025-09-23",
+   "date": "2025-09-23",
+   "jurisdiction": "US-CA",
+   "instrument": "regulation",
+   "stage": "signed",
+   "title": "California CPPA regulations on automated decision-making technology, risk assessments and cybersecurity audits",
+   "summary": "Approved by the Office of Administrative Law in September 2025, effective 1 January 2026 with phased compliance: ADMT duties from 1 January 2027; risk-assessment attestations from 2028; cybersecurity audits phased from 2028.",
+   "measures": "Pre-use notices and opt-out for significant decisions made by ADMT; risk assessments submitted to the CPPA; independent cybersecurity audits.",
+   "applies": "2027-01-01",
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://cppa.ca.gov/regulations/ccpa_updates.html",
+     "issuer": "California Privacy Protection Agency",
+     "primary": true,
+     "expect": [
+      "automated decisionmaking"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "un-ga-res-79-325-2025-08-26",
+   "date": "2025-08-26",
+   "jurisdiction": "UN",
+   "instrument": "resolution",
+   "stage": "adopted",
+   "title": "UN General Assembly resolution 79/325: Scientific Panel on AI and Global Dialogue on AI Governance",
+   "summary": "Adopted by consensus. Sets terms of reference for an Independent International Scientific Panel on AI (40 members) and a Global Dialogue on AI Governance, both agreed in principle in the 2024 Global Digital Compact.",
+   "measures": "A standing scientific panel to assess AI opportunities, risks and impacts and report annually.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.un.org/pga/wp-content/uploads/sites/110/2025/12/A_RES_79_325-EN.pdf",
+     "issuer": "United Nations (Office of the President of the General Assembly)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Panel report cadence taken from secondary summaries of draft text.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-ai-action-plan-2025-07-23",
+   "date": "2025-07-23",
+   "jurisdiction": "US-FED",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "America's AI Action Plan and executive orders of 23 July 2025",
+   "summary": "White House plan with over 90 federal actions. Same day: EO 14319 'Preventing Woke AI in the Federal Government' requiring federally procured LLMs to meet 'unbiased AI principles', plus orders on data-centre permitting and AI exports.",
+   "measures": "CAISI evaluations of frontier models for national-security risks; an AI evaluations ecosystem; procurement conditions on LLM neutrality and truthfulness.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "preemption of evaluation laws"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+     "issuer": "The White House",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/07/preventing-woke-ai-in-the-federal-government/",
+     "issuer": "The White House",
+     "primary": true,
+     "expect": [
+      "Woke"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-gpai-guidelines-2025-07-18",
+   "date": "2025-07-18",
+   "jurisdiction": "EU",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Commission guidelines on obligations for general-purpose AI model providers and training-data summary template",
+   "summary": "Guidelines (18 July 2025) clarify who is a GPAI provider, compute thresholds, and systemic-risk classification. A mandatory public template for summarising training content followed on 24 July 2025.",
+   "measures": "Training compute (10^23 FLOP indicative GPAI threshold; 10^25 FLOP presumption of systemic risk); public summary of training data.",
+   "applies": "2025-08-02",
+   "stamp_relevance": [
+    "definitions",
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "general-purpose"
+     ]
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "template"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-gpai-code-2025-07-10",
+   "date": "2025-07-10",
+   "jurisdiction": "EU",
+   "instrument": "voluntary commitment",
+   "stage": "published",
+   "title": "General-Purpose AI Code of Practice published",
+   "summary": "Three chapters (transparency, copyright, safety and security) drafted by independent experts. Signing is voluntary and offers a way to show compliance with the AI Act's GPAI obligations, which applied from 2 August 2025.",
+   "measures": "Model documentation form; for systemic-risk models: state-of-the-art model evaluations, systemic-risk assessment, external evaluation in some cases, and serious-incident reporting.",
+   "applies": "2025-08-02",
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Code of Practice"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-senate-moratorium-vote-2025-07-01",
+   "date": "2025-07-01",
+   "jurisdiction": "US-FED",
+   "instrument": "vote",
+   "stage": "decided",
+   "title": "US Senate votes 99-1 to strip a state AI-law moratorium from the budget bill",
+   "summary": "During debate on the reconciliation bill later enacted as the One Big Beautiful Bill Act, the Senate adopted Blackburn Amendment No. 2814, 'to strike the section relating to support for artificial intelligence', by 99 votes to 1. The stricken section would have conditioned federal funds on states not enforcing AI laws.",
+   "measures": "Bears on whether state AI evaluation and audit laws remain enforceable.",
+   "applies": null,
+   "stamp_relevance": [
+    "preemption of evaluation laws"
+   ],
+   "sources": [
+    {
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00363.htm",
+     "issuer": "United States Senate (roll call vote)",
+     "primary": true,
+     "expect": [
+      "99"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "What the stricken section did is from contemporaneous reporting; the roll call gives only the amendment's stated purpose.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-tx-traiga-2025-06-22",
+   "date": "2025-06-22",
+   "jurisdiction": "US-TX",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Texas Responsible Artificial Intelligence Governance Act (HB 149)",
+   "summary": "Signed 22 June 2025, effective 1 January 2026. Prohibits certain intentional harmful AI uses, requires government agencies to disclose AI interactions, creates a regulatory sandbox and an AI council; enforcement by the Attorney General.",
+   "measures": "Disclosure of AI interaction by government agencies and health-care providers; safe-harbour for compliance with the NIST AI RMF.",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149",
+     "issuer": "Texas Legislature Online",
+     "primary": true,
+     "expect": [
+      "HB 149"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-data-use-access-act-2025-06-19",
+   "date": "2025-06-19",
+   "jurisdiction": "UK",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "UK Data (Use and Access) Act 2025: automated decision-making rules reformed",
+   "summary": "Royal Assent 19 June 2025. Replaces UK GDPR Article 22 with new rules permitting solely automated decisions with significant effects in more cases, subject to safeguards; stricter limits remain for special-category data. Commenced in stages.",
+   "measures": "Safeguards for automated decisions: information to the individual, ability to contest and obtain human intervention.",
+   "applies": null,
+   "stamp_relevance": [
+    "human oversight",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/contents",
+     "issuer": "legislation.gov.uk",
+     "primary": true,
+     "expect": [
+      "Data (Use and Access) Act 2025"
+     ]
+    },
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/introduction",
+     "issuer": "legislation.gov.uk",
+     "primary": true,
+     "expect": [
+      "19th June 2025"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Commencement dates for the ADM provisions are set by regulations; check before relying on them.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-frontier-report-2025-06-17",
+   "date": "2025-06-17",
+   "jurisdiction": "US-CA",
+   "instrument": "report",
+   "stage": "published",
+   "title": "California Report on Frontier AI Policy",
+   "summary": "Final report of the Joint California Policy Working Group on AI Frontier Models (co-led by Fei-Fei Li, Mariano-Florentino Cuéllar and Jennifer Tour Chayes), convened after the SB 1047 veto.",
+   "measures": "Recommends third-party risk assessment, transparency, whistleblower protections and adverse-event reporting.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/2025/06/17/as-trump-moves-to-decimate-state-ai-laws-governor-newsom-taps-the-nations-top-experts-for-groundbreaking-ai-report/",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "California Report on Frontier AI Policy"
+     ]
+    },
+    {
+     "url": "https://www.gov.ca.gov/wp-content/uploads/2025/06/June-17-2025-%E2%80%93-The-California-Report-on-Frontier-AI-Policy.pdf",
+     "issuer": "Office of the Governor of California (PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "A policy report, not a law. The working group's own domain (cafrontieraigov.org) has lapsed and served unrelated gambling content on 2026-10-08; do not cite it.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "jp-ai-promotion-act-2025-06-04",
+   "date": "2025-06-04",
+   "jurisdiction": "JP",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Japan Act on Promotion of Research, Development and Utilization of AI-Related Technologies",
+   "summary": "Passed by the Diet on 28 May 2025, promulgated 4 June 2025 (Act No. 53 of 2025); the AI Strategy Headquarters provisions took effect 1 September 2025. A framework law without penalties; the government may investigate and publicise inappropriate AI use.",
+   "measures": "Government research into AI-related incidents and rights infringements; a national AI Basic Plan.",
+   "applies": null,
+   "stamp_relevance": [
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/5066",
+     "issuer": "Japanese Law Translation (Ministry of Justice)",
+     "primary": true,
+     "expect": [
+      "Artificial Intelligence"
+     ]
+    },
+    {
+     "url": "https://www.shugiin.go.jp/internet/itdb_housei.nsf/html/housei/21720250604053.htm",
+     "issuer": "House of Representatives of Japan",
+     "primary": true,
+     "expect": [
+      "人工知能"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-caisi-2025-06-03",
+   "date": "2025-06-03",
+   "jurisdiction": "US-FED",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "US AI Safety Institute reformed as the Center for AI Standards and Innovation (CAISI)",
+   "summary": "The Commerce Secretary announced the reform of the AI Safety Institute into CAISI, to work with industry on voluntary agreements and evaluate frontier models for national-security risks.",
+   "measures": "Voluntary evaluations of frontier models for demonstrable risks such as cybersecurity, biosecurity and chemical weapons; evaluation of adversary AI systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.commerce.gov/news/press-releases/2025/06/statement-us-secretary-commerce-howard-lutnick-transforming-us-ai-safety-institute",
+     "issuer": "US Department of Commerce",
+     "primary": true,
+     "expect": [
+      "Center for AI Standards"
+     ]
+    },
+    {
+     "url": "https://www.nist.gov/caisi",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "NIST"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Commerce.gov served a bot-check page to our fetcher. As of 2026-10-08 the NIST page is titled 'Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)'; the date and instrument of that rename were not retrieved.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-take-it-down-2025-05-19",
+   "date": "2025-05-19",
+   "jurisdiction": "US-FED",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "TAKE IT DOWN Act signed (Public Law 119-12)",
+   "summary": "Criminalises publishing non-consensual intimate imagery, including AI-generated 'digital forgeries', and requires covered platforms to remove such content within 48 hours of a valid request; platform duties applied one year after enactment.",
+   "measures": "Notice-and-removal process with a 48-hour removal window.",
+   "applies": "2026-05-19",
+   "stamp_relevance": [
+    "definitions",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.congress.gov/bill/119th-congress/senate-bill/146",
+     "issuer": "US Congress (Congress.gov)",
+     "primary": true,
+     "expect": [
+      "146"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-omb-m25-21-2025-04-03",
+   "date": "2025-04-03",
+   "jurisdiction": "US-FED",
+   "instrument": "guidance",
+   "stage": "in force",
+   "title": "OMB Memoranda M-25-21 and M-25-22 on federal AI use and procurement",
+   "summary": "Replaced M-24-10 and M-24-18. Keeps Chief AI Officers and minimum risk practices, now for 'high-impact AI', and sets procurement guidance.",
+   "measures": "Pre-deployment testing, AI impact assessments and ongoing monitoring for high-impact AI; human oversight.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf",
+     "issuer": "Office of Management and Budget",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-22-Driving-Efficient-Acquisition-of-Artificial-Intelligence-in-Government.pdf",
+     "issuer": "Office of Management and Budget",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-labeling-measures-2025-03-14",
+   "date": "2025-03-14",
+   "jurisdiction": "CN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "China: Measures for Labeling AI-Generated Synthetic Content",
+   "summary": "Issued by the CAC and three other agencies; effective 1 September 2025, with the mandatory national standard GB 45438-2025 on the same date.",
+   "measures": "Explicit (visible) labels and implicit labels (metadata) on AI-generated text, images, audio, video and virtual scenes; platform detection duties.",
+   "applies": "2025-09-01",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+     "issuer": "Cyberspace Administration of China",
+     "primary": true,
+     "expect": [
+      "标识"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-aisi-rename-2025-02-14",
+   "date": "2025-02-14",
+   "jurisdiction": "UK",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "UK AI Safety Institute renamed AI Security Institute",
+   "summary": "The institute was refocused on serious AI risks with security implications, such as chemical and biological weapons uplift, cyber attacks and crime.",
+   "measures": "Evaluation focus narrowed to security-relevant capabilities.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/news/tackling-ai-security-risks-to-unleash-growth-and-deliver-plan-for-change",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "AI Security Institute"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ch-coe-ratification-plan-2025-02-12",
+   "date": "2025-02-12",
+   "jurisdiction": "CH",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Switzerland decides to ratify the Council of Europe AI Convention and adapt existing law",
+   "summary": "The Federal Council chose to ratify the CoE Framework Convention and to make sector-specific amendments to Swiss law rather than adopt a horizontal AI act, with a consultation draft due by end-2026.",
+   "measures": "Implementing the Convention's risk and impact assessment duties through sectoral law (planned).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.admin.ch/en/nsb?id=104110",
+     "issuer": "Swiss Federal Council",
+     "primary": true,
+     "expect": [
+      "artificial intelligence"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-paris-statement-2025-02-11",
+   "date": "2025-02-11",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Paris AI Action Summit: Statement on Inclusive and Sustainable AI",
+   "summary": "Issued at the AI Action Summit in Paris; signed by about 60 countries including China and India. The United States and United Kingdom did not sign.",
+   "measures": "None stated for evaluation; references openness, inclusivity and trustworthy AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
+     "issuer": "Élysée (Presidency of France)",
+     "primary": true,
+     "expect": [
+      "Inclusive"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-prohibited-practices-2025-02-02",
+   "date": "2025-02-02",
+   "jurisdiction": "EU",
+   "instrument": "guidance",
+   "stage": "in force",
+   "title": "AI Act prohibitions and AI literacy apply; Commission guidelines on prohibited practices and AI-system definition",
+   "summary": "Article 5 prohibitions (e.g. social scoring, untargeted facial-image scraping, certain emotion recognition) and the Article 4 AI-literacy duty applied from 2 February 2025. The Commission published guidelines on prohibited practices (4 February 2025) and on the definition of an AI system (6 February 2025).",
+   "measures": "Whether a system meets the AI-system definition; whether a use falls within a prohibited practice.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "prohibited"
+     ]
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "definition"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-ai-cyber-code-2025-01-31",
+   "date": "2025-01-31",
+   "jurisdiction": "UK",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "UK AI Cyber Security Code of Practice",
+   "summary": "Voluntary code from DSIT setting 13 baseline cyber-security principles across the AI lifecycle; intended as the basis of an ETSI global standard.",
+   "measures": "Security testing of AI models and systems before release; documentation of data, models and prompts; monitoring.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/ai-cyber-security-code-of-practice",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Code of Practice"
+     ]
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/ai-cyber-security-code-of-practice/code-of-practice-for-the-cyber-security-of-ai",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Principle 13"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-ai-safety-report-2025-01-29",
+   "date": "2025-01-29",
+   "jurisdiction": "INTL",
+   "instrument": "report",
+   "stage": "published",
+   "title": "International AI Safety Report 2025",
+   "summary": "Chaired by Yoshua Bengio and mandated at the Bletchley summit, written by 96 experts nominated by 30 countries, the OECD, EU and UN. Summarises the science on general-purpose AI capabilities, risks and mitigations.",
+   "measures": "States of evidence on evaluation methods, their limits, and risk-management techniques for general-purpose AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/international-ai-safety-report-2025",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "International AI Safety Report"
+     ]
+    },
+    {
+     "url": "https://internationalaisafetyreport.org/",
+     "issuer": "International AI Safety Report",
+     "primary": false,
+     "expect": [
+      "Report"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "A scientific report, not a binding instrument.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-eo14179-2025-01-23",
+   "date": "2025-01-23",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "US Executive Order 14179: removing barriers to American leadership in AI",
+   "summary": "Signed 23 January 2025 after EO 14110 was revoked on 20 January 2025. Directed a review of actions taken under EO 14110 and an AI Action Plan within 180 days.",
+   "measures": "Rescinds or revises federal evaluation and reporting requirements adopted under EO 14110.",
+   "applies": null,
+   "stamp_relevance": [
+    "preemption of evaluation laws"
+   ],
+   "sources": [
+    {
+     "url": "https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence",
+     "issuer": "Federal Register",
+     "primary": true,
+     "expect": [
+      "14179"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "kr-ai-basic-act-promulgated-2025-01-21",
+   "date": "2025-01-21",
+   "jurisdiction": "KR",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "South Korea Framework Act on AI promulgated",
+   "summary": "Passed by the National Assembly on 26 December 2024 and promulgated 21 January 2025; took effect 22 January 2026 (see existing entry). Second comprehensive AI law after the EU's.",
+   "measures": "Risk management and explainability for high-impact AI; generative-AI notice and labelling; safety duties for models above a compute threshold.",
+   "applies": "2026-01-22",
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.law.go.kr/LSW/eng/engLsSc.do?menuId=2&query=artificial%20intelligence",
+     "issuer": "Korea Law Information Center (Ministry of Government Legislation)",
+     "primary": true,
+     "expect": [
+      "Law"
+     ]
+    },
+    {
+     "url": "https://www.msit.go.kr/eng/index.do",
+     "issuer": "Ministry of Science and ICT",
+     "primary": true,
+     "expect": [
+      "MSIT"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Links are to the official law database search and ministry site, not a deep link to the act. Korea's Ministry of Foreign Affairs hosts the Korean text as a PDF, which redirected without content to our fetcher; per secondary sources the current text is Act No. 21311 (amended 20 January 2026).",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "br-pl-2338-senate-2024-12-10",
+   "date": "2024-12-10",
+   "jurisdiction": "BR",
+   "instrument": "bill",
+   "stage": "passed",
+   "title": "Brazil AI bill PL 2338/2023 passes the Senate",
+   "summary": "The Federal Senate approved a risk-based AI framework bill on 10 December 2024. As of October 2026 it is pending in the Chamber of Deputies.",
+   "measures": "Algorithmic impact assessments for high-risk systems; rights of affected people; a national AI regulation and governance system (proposed).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233",
+     "issuer": "Federal Senate of Brazil",
+     "primary": true,
+     "expect": [
+      "2338"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Chamber status conflicts across secondary sources; check the Chamber page before relying on it.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ms-aisi-network-2024-11-20",
+   "date": "2024-11-20",
+   "jurisdiction": "INTL",
+   "instrument": "agreement",
+   "stage": "signed",
+   "title": "International Network of AI Safety Institutes convenes in San Francisco",
+   "summary": "Founding members (Australia, Canada, the EU, France, Japan, Kenya, Korea, Singapore, the UK and the US) held the network's first meeting and released a joint testing exercise and a mission statement.",
+   "measures": "Joint testing of models across institutes; shared evaluation methods.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nist.gov/news-events/news/2024/11/fact-sheet-us-department-commerce-us-department-state-launch-international",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "International Network"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-aisi-joint-eval-claude-2024-11-19",
+   "date": "2024-11-19",
+   "jurisdiction": "INTL",
+   "instrument": "evaluation report",
+   "stage": "published",
+   "title": "US and UK AI safety institutes publish their first joint pre-deployment evaluation (upgraded Claude 3.5 Sonnet)",
+   "summary": "The US AI Safety Institute and UK AI Safety Institute jointly tested Anthropic's upgraded Claude 3.5 Sonnet before release, across biological capabilities, cyber capabilities, software and AI development, and safeguard efficacy, and published the results.",
+   "measures": "Government pre-deployment testing in four domains, benchmarked against reference models.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nist.gov/news-events/news/2024/11/pre-deployment-evaluation-anthropics-upgraded-claude-35-sonnet",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "Pre-Deployment Evaluation"
+     ]
+    },
+    {
+     "url": "https://www.aisi.gov.uk/work/pre-deployment-evaluation-of-anthropics-upgraded-claude-3-5-sonnet",
+     "issuer": "UK AI Security Institute",
+     "primary": true,
+     "expect": [
+      "Pre-deployment evaluation"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-pld-2024-11-18",
+   "date": "2024-11-18",
+   "jurisdiction": "EU",
+   "instrument": "directive",
+   "stage": "in force",
+   "title": "Product Liability Directive (EU) 2024/2853 covers software and AI systems",
+   "summary": "Replaces the 1985 directive. Software, including AI systems, is a 'product'; manufacturers can be liable for defects including those arising after updates or machine learning. Member states must transpose by 9 December 2026.",
+   "measures": "Disclosure of evidence by defendants; defectiveness judged with regard to safety requirements including cybersecurity.",
+   "applies": "2026-12-09",
+   "stamp_relevance": [
+    "definitions",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2024/2853"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ca-caisi-2024-11-12",
+   "date": "2024-11-12",
+   "jurisdiction": "CA",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Canadian Artificial Intelligence Safety Institute launched",
+   "summary": "Launched with C$50 million over five years to study AI risks and work with the international network of AI safety institutes.",
+   "measures": "Research on AI evaluation and safety risks.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2024/11/canada-launches-canadian-artificial-intelligence-safety-institute.html",
+     "issuer": "Government of Canada",
+     "primary": true,
+     "expect": [
+      "Safety Institute"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-nsm-ai-2024-10-24",
+   "date": "2024-10-24",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "statement",
+   "title": "National Security Memorandum on AI",
+   "summary": "Designated the US AI Safety Institute as industry's primary point of contact for voluntary pre-deployment testing of frontier models for national-security risks, and set a framework for AI governance in national security.",
+   "measures": "Classified and unclassified pre-deployment testing of frontier models for cyber, biological, chemical and nuclear risks.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/10/24/memorandum-on-advancing-the-united-states-leadership-in-artificial-intelligence-harnessing-artificial-intelligence-to-fulfill-national-security-objectives-and-fostering-the-safety-security/",
+     "issuer": "The White House (archived)",
+     "primary": true,
+     "expect": [
+      "Memorandum"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Status under the current administration not confirmed here.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-sb1047-veto-2024-09-29",
+   "date": "2024-09-29",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "vetoed",
+   "title": "California SB 1047 (frontier model safety) vetoed",
+   "summary": "Governor Newsom vetoed the Safe and Secure Innovation for Frontier AI Models Act, which would have required safety testing, a shutdown capability and third-party audits for large models. He convened a working group whose 2025 report informed SB 53.",
+   "measures": "Would have required pre-deployment safety testing and annual third-party audits (not enacted).",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/wp-content/uploads/2024/09/SB-1047-Veto-Message.pdf",
+     "issuer": "Office of the Governor of California",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1047",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "SB-1047"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "en-us-ftc-ai-comply-2024-09-25",
+   "date": "2024-09-25",
+   "jurisdiction": "US-FED",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "FTC 'Operation AI Comply' against deceptive AI claims",
+   "summary": "Five law-enforcement actions announced together, including against DoNotPay ('robot lawyer') and businesses selling AI-powered income schemes, for deceptive claims about AI.",
+   "measures": "Substantiation of claims about what AI products can do.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+     "issuer": "US Federal Trade Commission",
+     "primary": true,
+     "expect": [
+      "Operation AI Comply"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ca-sb942-ab2013-2024-09-19",
+   "date": "2024-09-19",
+   "jurisdiction": "US-CA",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "California AI Transparency Act (SB 942) and training-data transparency (AB 2013)",
+   "summary": "SB 942 covers generative AI systems with over 1,000,000 monthly users: a free AI detection tool, latent disclosures in generated content, and $5,000 per violation. AB 853 (2025) delayed it to 2 August 2026 and added platform (2027) and capture-device (2028) duties. AB 2013 requires training-data documentation by 1 January 2026 for systems released on or after 1 January 2022.",
+   "measures": "Provenance disclosures and public detection tools (SB 942); published training-data documentation (AB 2013).",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB942",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "SB-942"
+     ]
+    },
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2013",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "AB-2013"
+     ]
+    },
+    {
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB853",
+     "issuer": "California Legislature",
+     "primary": true,
+     "expect": [
+      "AB-853"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-ai-safety-framework-2024-09-09",
+   "date": "2024-09-09",
+   "jurisdiction": "CN",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "China AI Safety Governance Framework 1.0 (TC260)",
+   "summary": "Released by TC260. Classifies inherent and application risks of AI and sets technical and governance responses. Version 2.0 followed in September 2025.",
+   "measures": "Risk classification; safety testing and evaluation; traceability and labelling.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.tc260.org.cn/upload/2024-09-09/1725849192841090989.pdf",
+     "issuer": "TC260 (National Information Security Standardization Technical Committee)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "coe-framework-convention-2024-09-05",
+   "date": "2024-09-05",
+   "jurisdiction": "COE",
+   "instrument": "treaty",
+   "stage": "signed",
+   "title": "Council of Europe Framework Convention on AI (CETS No. 225) opens for signature",
+   "summary": "Adopted by the Committee of Ministers on 17 May 2024 and opened for signature in Vilnius on 5 September 2024; first signatories included the EU, UK and US. First legally binding international treaty on AI, human rights, democracy and the rule of law. Enters into force after five ratifications including three Council of Europe members.",
+   "measures": "Risk and impact assessment of AI systems, documentation, transparency and oversight measures; remedies for people affected.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+     "issuer": "Council of Europe",
+     "primary": true,
+     "expect": [
+      "Framework Convention"
+     ]
+    },
+    {
+     "url": "https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=225",
+     "issuer": "Council of Europe Treaty Office",
+     "primary": true,
+     "expect": [
+      "225"
+     ]
+    },
+    {
+     "url": "https://www.coe.int/en/web/portal/-/council-of-europe-adopts-first-international-treaty-on-artificial-intelligence",
+     "issuer": "Council of Europe (Newsroom)",
+     "primary": true,
+     "expect": [
+      "treaty"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Not in force as of 2026-10-08 (no entry-into-force date on the Treaty Office page); ratification count changes.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "au-voluntary-safety-standard-2024-09-05",
+   "date": "2024-09-05",
+   "jurisdiction": "AU",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "Australia Voluntary AI Safety Standard and proposals for mandatory guardrails",
+   "summary": "Published 5 September 2024 by the Department of Industry, Science and Resources: 10 voluntary guardrails, alongside a proposals paper on mandatory guardrails for high-risk AI. On 21 October 2025 the National AI Centre published Guidance for AI Adoption (6 essential practices). The mandatory proposal was set aside in the December 2025 National AI Plan.",
+   "measures": "Testing and monitoring of AI systems; record-keeping; conformity assessments (proposed for high-risk use).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.industry.gov.au/publications/voluntary-ai-safety-standard",
+     "issuer": "Department of Industry, Science and Resources (Australia)",
+     "primary": true,
+     "expect": [
+      "Voluntary AI Safety Standard"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-aisi-agreements-2024-08-29",
+   "date": "2024-08-29",
+   "jurisdiction": "US-FED",
+   "instrument": "agreement",
+   "stage": "signed",
+   "title": "US AI Safety Institute agreements with OpenAI and Anthropic for pre-release model testing",
+   "summary": "NIST's AI Safety Institute signed memoranda of understanding giving it access to major new models from OpenAI and Anthropic before and after public release, for research, testing and evaluation.",
+   "measures": "Government pre-deployment and post-deployment evaluation of frontier models.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "Anthropic"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-il-hb3773-2024-08-09",
+   "date": "2024-08-09",
+   "jurisdiction": "US-IL",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Illinois HB 3773: AI in employment under the Human Rights Act",
+   "summary": "Public Act 103-0804, approved 9 August 2024. Amends the Illinois Human Rights Act, effective 1 January 2026, to make it a civil-rights violation for employers to use AI that has a discriminatory effect, or zip codes as a proxy, and requires notice to employees when AI is used.",
+   "measures": "Notice when AI is used in employment decisions; discriminatory-effect standard.",
+   "applies": "2026-01-01",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ilga.gov/Legislation/BillStatus?DocNum=3773&GAID=17&GA=103&DocTypeID=HB&SessionID=112",
+     "issuer": "Illinois General Assembly",
+     "primary": true,
+     "expect": [
+      "3773"
+     ]
+    },
+    {
+     "url": "https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0804",
+     "issuer": "Illinois General Assembly (Public Act 103-0804)",
+     "primary": true,
+     "expect": [
+      "January 1, 2026"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-act-2024-08-01",
+   "date": "2024-08-01",
+   "jurisdiction": "EU",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "EU AI Act (Regulation (EU) 2024/1689) enters into force",
+   "summary": "Published in the Official Journal on 12 July 2024 and in force from 1 August 2024. Staggered application: prohibitions and AI literacy from 2 February 2025; general-purpose AI model duties from 2 August 2025; most other provisions from 2 August 2026, with high-risk dates later moved by the 2026 Omnibus.",
+   "measures": "Conformity assessment, risk management, data governance, testing, accuracy and robustness for high-risk AI; model evaluation and adversarial testing for GPAI models with systemic risk; serious-incident reporting; transparency for generated content.",
+   "applies": "2025-02-02",
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2024/1689"
+     ]
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "AI Act"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-nist-600-1-2024-07-26",
+   "date": "2024-07-26",
+   "jurisdiction": "US-FED",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "NIST AI 600-1: Generative AI Profile of the AI RMF",
+   "summary": "Companion profile to the AI RMF identifying 12 risks unique to or exacerbated by generative AI and over 200 suggested actions.",
+   "measures": "Pre-deployment testing, red-teaming, content provenance, incident disclosure for generative AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "Generative"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "african-union-ai-strategy-2024-07-18",
+   "date": "2024-07-18",
+   "jurisdiction": "INTL",
+   "instrument": "strategy",
+   "stage": "adopted",
+   "title": "African Union Continental Artificial Intelligence Strategy endorsed",
+   "summary": "Endorsed by the AU Executive Council in July 2024. Sets a continental, development-oriented approach to AI, including governance and regulation, for AU member states.",
+   "measures": "Calls for national AI governance frameworks and risk-based regulation; no specific evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy",
+     "issuer": "African Union",
+     "primary": true,
+     "expect": [
+      "Continental"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "sg-genai-framework-2024-05-30",
+   "date": "2024-05-30",
+   "jurisdiction": "SG",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Singapore Model AI Governance Framework for Generative AI",
+   "summary": "Nine dimensions for a trusted generative AI ecosystem, from accountability to testing and assurance and content provenance.",
+   "measures": "Third-party testing and assurance; incident reporting; content provenance.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "incident reporting",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://aiverifyfoundation.sg/resources/mgf-gen-ai/",
+     "issuer": "AI Verify Foundation",
+     "primary": false,
+     "expect": [
+      "Generative AI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Sources are copies or reports, not the issuer's own site, so the entry is Likely.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-seoul-commitments-2024-05-21",
+   "date": "2024-05-21",
+   "jurisdiction": "INTL",
+   "instrument": "voluntary commitment",
+   "stage": "signed",
+   "title": "Frontier AI Safety Commitments (AI Seoul Summit)",
+   "summary": "Sixteen AI companies committed to publish safety frameworks setting out how they assess and manage severe risks from frontier models, including thresholds at which risks would be deemed intolerable.",
+   "measures": "Published frontier safety frameworks; pre-deployment risk assessment; internal and external red-teaming; thresholds and the actions taken if they are crossed.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Frontier AI Safety Commitments"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-act-council-adoption-2024-05-21",
+   "date": "2024-05-21",
+   "jurisdiction": "EU",
+   "instrument": "vote",
+   "stage": "decided",
+   "title": "Council of the EU gives final approval to the AI Act",
+   "summary": "The final legislative step: the Council approved Parliament's first-reading position on 21 May 2024, adopting the AI Act. It was signed on 13 June 2024 and published in the Official Journal on 12 July 2024.",
+   "measures": "As in the AI Act entry.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=CELEX:32024R1689",
+     "issuer": "EUR-Lex (procedure history)",
+     "primary": true,
+     "expect": [
+      "Council"
+     ]
+    },
+    {
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/",
+     "issuer": "Council of the European Union",
+     "primary": true,
+     "expect": [
+      "Council"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The Council press release served a bot check on 2026-10-08; dates from the EUR-Lex procedure record.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-co-sb24-205-2024-05-17",
+   "date": "2024-05-17",
+   "jurisdiction": "US-CO",
+   "instrument": "law",
+   "stage": "repealed",
+   "title": "Colorado SB24-205: Colorado AI Act (consumer protections for high-risk AI)",
+   "summary": "First comprehensive US state law on high-risk AI systems used in consequential decisions. Its start date was delayed to 30 June 2026 by SB25B-004 (August 2025), then it was repealed and replaced by SB26-189 in May 2026.",
+   "measures": "Impact assessments, risk-management programmes, notices and algorithmic-discrimination duties for developers and deployers (as enacted in 2024).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://leg.colorado.gov/bills/sb24-205",
+     "issuer": "Colorado General Assembly",
+     "primary": true,
+     "expect": [
+      "SB24-205"
+     ]
+    },
+    {
+     "url": "https://leg.colorado.gov/bills/sb25b-004",
+     "issuer": "Colorado General Assembly",
+     "primary": true,
+     "expect": [
+      "SB25B-004"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ms-gdm-fsf-2024-05-17",
+   "date": "2024-05-17",
+   "jurisdiction": "INTL",
+   "instrument": "voluntary commitment",
+   "stage": "published",
+   "title": "Google DeepMind publishes its Frontier Safety Framework",
+   "summary": "Defined 'Critical Capability Levels' in domains such as autonomy, biosecurity, cybersecurity and machine-learning R&D, with early-warning evaluations to detect when a model approaches them. Later versions followed in 2025.",
+   "measures": "Early-warning evaluations against Critical Capability Levels; mitigation plans when thresholds are reached.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/",
+     "issuer": "Google DeepMind",
+     "primary": true,
+     "expect": [
+      "Frontier Safety Framework"
+     ],
+     "issuer_site": "deepmind.google"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "oecd-ai-principles-rev-2024-05-03",
+   "date": "2024-05-03",
+   "jurisdiction": "INTL",
+   "instrument": "recommendation",
+   "stage": "adopted",
+   "title": "OECD AI Principles revised (Recommendation of the Council on AI)",
+   "summary": "OECD ministers updated the 2019 Recommendation on AI to address general-purpose and generative AI, information integrity, and the definition of an 'AI system'. The OECD definition was the basis for the EU AI Act's definition.",
+   "measures": "Definition of an AI system; transparency and responsible disclosure; robustness, security and safety throughout the lifecycle; traceability.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+     "issuer": "OECD Legal Instruments",
+     "primary": true,
+     "expect": [
+      "Recommendation of the Council on Artificial Intelligence"
+     ]
+    },
+    {
+     "url": "https://oecd.ai/en/ai-principles",
+     "issuer": "OECD.AI",
+     "primary": false,
+     "expect": [
+      "Principles"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "jp-ai-guidelines-business-2024-04-19",
+   "date": "2024-04-19",
+   "jurisdiction": "JP",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Japan AI Guidelines for Business (version 1.0)",
+   "summary": "METI and MIC consolidated earlier guidelines into one voluntary document for AI developers, providers and business users. Later versions followed.",
+   "measures": "Risk assessment, verification and documentation across the AI lifecycle; transparency to stakeholders.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.meti.go.jp/english/press/2024/0419_002.html",
+     "issuer": "Ministry of Economy, Trade and Industry (Japan)",
+     "primary": true,
+     "expect": [
+      "AI Guidelines for Business"
+     ]
+    },
+    {
+     "url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html",
+     "issuer": "Ministry of Economy, Trade and Industry (Japan)",
+     "primary": true,
+     "expect": [
+      "AI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-omb-m24-10-2024-03-28",
+   "date": "2024-03-28",
+   "jurisdiction": "US-FED",
+   "instrument": "guidance",
+   "stage": "rescinded",
+   "title": "OMB Memorandum M-24-10 on agency use of AI (rescinded 2025)",
+   "summary": "Required federal agencies to designate Chief AI Officers and apply minimum risk-management practices to 'rights-impacting' and 'safety-impacting' AI. Replaced by M-25-21 in April 2025.",
+   "measures": "AI impact assessments, real-world testing, independent evaluation and ongoing monitoring for rights- and safety-impacting AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf",
+     "issuer": "Office of Management and Budget (archived)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "un-ga-res-78-265-2024-03-21",
+   "date": "2024-03-21",
+   "jurisdiction": "UN",
+   "instrument": "resolution",
+   "stage": "adopted",
+   "title": "UN General Assembly resolution 78/265 on safe, secure and trustworthy AI",
+   "summary": "First UN General Assembly resolution on AI, adopted without a vote. Encourages member states to develop regulatory and governance approaches for safe, secure and trustworthy AI systems.",
+   "measures": "Encourages risk monitoring, impact assessment, testing and evaluation across the AI lifecycle; content authentication and provenance mechanisms.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://digitallibrary.un.org/record/4043244",
+     "issuer": "United Nations Digital Library",
+     "primary": true,
+     "expect": [
+      "78/265"
+     ]
+    },
+    {
+     "url": "https://press.un.org/en/2024/ga12588.doc.htm",
+     "issuer": "United Nations (Meetings Coverage)",
+     "primary": true,
+     "expect": [
+      "artificial intelligence"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "in-meity-advisory-2024-03-15",
+   "date": "2024-03-15",
+   "jurisdiction": "IN",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "India MeitY advisory on AI models and deepfakes (revised)",
+   "summary": "MeitY advisory of 1 March 2024, revised 15 March 2024, asking intermediaries to label AI-generated content and inform users of unreliability of under-tested models; the revision dropped a requirement for prior government permission.",
+   "measures": "Labelling of potentially unreliable outputs; metadata or identifiers for synthetic content.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.meity.gov.in/",
+     "issuer": "Ministry of Electronics and Information Technology",
+     "primary": true,
+     "expect": [
+      "MeitY"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The advisory text was not located at a stable MeitY URL; summary from contemporaneous reporting. Keep as Likely unless the PDF is found.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-ut-sb149-2024-03-13",
+   "date": "2024-03-13",
+   "jurisdiction": "US-UT",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Utah Artificial Intelligence Policy Act (SB 149)",
+   "summary": "Signed March 2024, effective 1 May 2024. Requires disclosure when consumers interact with generative AI in certain circumstances and created the Office of Artificial Intelligence Policy and a regulatory learning laboratory.",
+   "measures": "Disclosure of generative AI interaction; regulatory mitigation agreements for testing in a learning lab.",
+   "applies": "2024-05-01",
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "issuer": "Utah State Legislature",
+     "primary": true,
+     "expect": [
+      "SB0149",
+      "Artificial Intelligence"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Signing date (13 March 2024) from the Legislature page; the 1 May 2024 effective date is Utah's default for the 2024 session and is not printed on that page. Later amendments (2025) not checked here.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-act-plenary-2024-03-13",
+   "date": "2024-03-13",
+   "jurisdiction": "EU",
+   "instrument": "vote",
+   "stage": "decided",
+   "title": "European Parliament adopts the AI Act (523-46-49)",
+   "summary": "Plenary approved the AI Act text agreed with the Council in December 2023, by 523 votes to 46 with 49 abstentions. Council adoption followed on 21 May 2024.",
+   "measures": "As in the AI Act entry.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law",
+     "issuer": "European Parliament",
+     "primary": true,
+     "expect": [
+      "Artificial Intelligence Act"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-tc260-genai-security-2024-02-29",
+   "date": "2024-02-29",
+   "jurisdiction": "CN",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "China TC260-003: Basic security requirements for generative AI services",
+   "summary": "Technical document from National Information Security Standardization Technical Committee (TC260) setting security requirements for training data, models and safety measures; used in the CAC filing process. Later developed into national standards in 2025.",
+   "measures": "Sampling-based assessment of training data; refusal-rate and answer-safety test question banks; keyword filtering.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.tc260.org.cn/upload/2023-10-11/1697008495851003865.pdf",
+     "issuer": "TC260 (National Information Security Standardization Technical Committee)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "TC260's site serves a script page to automated fetchers; the PDF was not opened. URL from a policy archive's record of the original link.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "jp-aisi-2024-02-14",
+   "date": "2024-02-14",
+   "jurisdiction": "JP",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Japan AI Safety Institute (J-AISI) established",
+   "summary": "Set up within the Information-technology Promotion Agency (IPA). Published a Guide to Evaluation Perspectives on AI Safety and a Guide to Red Teaming Methodology in 2024.",
+   "measures": "AI safety evaluation perspectives; red-teaming methodology.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://aisi.go.jp/",
+     "issuer": "Japan AI Safety Institute",
+     "primary": true,
+     "expect": [
+      "AISI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-fcc-ai-voices-2024-02-08",
+   "date": "2024-02-08",
+   "jurisdiction": "US-FED",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "FCC rules AI-generated voices in robocalls are 'artificial' under the TCPA",
+   "summary": "Declaratory Ruling FCC 24-17 confirmed that calls using AI-generated voice clones fall under the Telephone Consumer Protection Act's restrictions on artificial or prerecorded voices.",
+   "measures": "Defines AI voice cloning as an 'artificial' voice for consent and disclosure requirements.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf",
+     "issuer": "US Federal Communications Commission",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-white-paper-response-2024-02-06",
+   "date": "2024-02-06",
+   "jurisdiction": "UK",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "UK government response to the AI white paper consultation",
+   "summary": "Confirmed the sector-regulator approach, asked key regulators to publish AI strategies by 30 April 2024, and set out initial thinking on future binding requirements for developers of highly capable general-purpose AI.",
+   "measures": "Regulators' AI strategies; possible future binding duties on frontier developers (not enacted).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "response"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-office-2024-01-24",
+   "date": "2024-01-24",
+   "jurisdiction": "EU",
+   "instrument": "decision",
+   "stage": "in force",
+   "title": "Commission Decision establishing the European AI Office",
+   "summary": "Commission Decision C(2024) 390 created the AI Office within DG CONNECT to implement and enforce the AI Act's rules on general-purpose AI models.",
+   "measures": "Evaluation of general-purpose AI models, including models with systemic risk; monitoring and enforcement.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-decision-establishing-european-ai-office",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "AI Office"
+     ]
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "AI Office"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "en-us-ftc-rite-aid-2023-12-19",
+   "date": "2023-12-19",
+   "jurisdiction": "US-FED",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "FTC bans Rite Aid from using facial recognition for five years",
+   "summary": "Settlement over Rite Aid's use of facial-recognition surveillance in stores that the FTC said falsely flagged consumers, disproportionately women and people of colour. The FTC alleged Rite Aid failed to test, assess, measure or document the system's accuracy before deploying it, and that false positives were more frequent in stores in plurality-Black and Asian communities.",
+   "measures": "Pre-deployment testing and assessment of accuracy (the failure alleged); the order's conditions on any future use were not read here.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+     "issuer": "US Federal Trade Commission",
+     "primary": true,
+     "expect": [
+      "Rite Aid"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "iso-iec-42001-2023-12-18",
+   "date": "2023-12-18",
+   "jurisdiction": "INTL",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "ISO/IEC 42001:2023 AI management system standard published",
+   "summary": "First certifiable international management-system standard for AI. Specifies requirements for establishing, maintaining and improving an AI management system within an organisation; third-party certification is available.",
+   "measures": "AI risk assessment and AI system impact assessment; internal audit; third-party certification audits.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.iso.org/standard/42001",
+     "issuer": "International Organization for Standardization",
+     "primary": true,
+     "expect": [
+      "42001"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "A voluntary standard; the text is paywalled.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ms-openai-preparedness-2023-12-18",
+   "date": "2023-12-18",
+   "jurisdiction": "INTL",
+   "instrument": "voluntary commitment",
+   "stage": "published",
+   "title": "OpenAI publishes its Preparedness Framework (beta)",
+   "summary": "Set out how OpenAI tracks, evaluates and forecasts catastrophic risks from frontier models, with risk categories and scorecards, and a rule that only models with post-mitigation scores of 'medium' or below can be deployed. Updated in April 2025.",
+   "measures": "Capability evaluations across tracked risk categories (e.g. cybersecurity, CBRN, persuasion, model autonomy); scorecards; deployment thresholds.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://openai.com/index/updating-our-preparedness-framework/",
+     "issuer": "OpenAI",
+     "primary": true,
+     "expect": [
+      "Preparedness Framework"
+     ],
+     "issuer_site": "openai.com"
+    },
+    {
+     "url": "https://cdn.openai.com/openai-preparedness-framework-beta.pdf",
+     "issuer": "OpenAI (PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ],
+     "issuer_site": "openai.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-act-political-deal-2023-12-08",
+   "date": "2023-12-08",
+   "jurisdiction": "EU",
+   "instrument": "agreement",
+   "stage": "signed",
+   "title": "EU institutions reach political agreement on the AI Act",
+   "summary": "Parliament and Council negotiators agreed the AI Act on 8 December 2023, including rules for general-purpose AI models and a list of banned applications.",
+   "measures": "Model evaluations, adversarial testing and serious-incident reporting for high-impact GPAI models (as agreed).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.europarl.europa.eu/news/en/press-room/20231206IPR15699/artificial-intelligence-act-deal-on-comprehensive-rules-for-trustworthy-ai",
+     "issuer": "European Parliament",
+     "primary": true,
+     "expect": [
+      "Artificial Intelligence Act"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-aisi-2023-11-02",
+   "date": "2023-11-02",
+   "jurisdiction": "UK",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "UK AI Safety Institute established",
+   "summary": "Announced at the Bletchley summit as the successor to the Frontier AI Taskforce, with a mission to evaluate advanced AI systems. Renamed the AI Security Institute on 14 February 2025.",
+   "measures": "Pre- and post-deployment evaluations of advanced AI models; development of evaluation tools (e.g. the open-source Inspect framework, May 2024).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/ai-safety-institute-overview/introducing-the-ai-safety-institute",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "AI Safety Institute"
+     ]
+    },
+    {
+     "url": "https://www.aisi.gov.uk/",
+     "issuer": "AI Security Institute",
+     "primary": true,
+     "expect": [
+      "AI Security Institute"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-bletchley-2023-11-01",
+   "date": "2023-11-01",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Bletchley Declaration (AI Safety Summit, UK)",
+   "summary": "Signed by 28 countries and the EU at the first AI Safety Summit. Recognises risks from frontier AI and states that developers of highly capable systems bear responsibility for their safety, including through safety testing.",
+   "measures": "Safety testing and evaluation of frontier AI by developers; transparency on plans to measure, monitor and mitigate dangerous capabilities.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Bletchley"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "g7-hiroshima-code-2023-10-30",
+   "date": "2023-10-30",
+   "jurisdiction": "INTL",
+   "instrument": "voluntary commitment",
+   "stage": "adopted",
+   "title": "G7 Hiroshima Process: Guiding Principles and Code of Conduct for advanced AI systems",
+   "summary": "G7 leaders endorsed 11 guiding principles and a voluntary International Code of Conduct for organisations developing advanced AI, including foundation models and generative AI.",
+   "measures": "Evaluation across the AI lifecycle including red-teaming; public reporting of capabilities, limitations and domains of appropriate use; incident information-sharing; content authentication and provenance.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Hiroshima"
+     ]
+    },
+    {
+     "url": "https://www.soumu.go.jp/hiroshimaaiprocess/en/documents.html",
+     "issuer": "G7 Hiroshima AI Process (Ministry of Internal Affairs and Communications, Japan)",
+     "primary": true,
+     "expect": [
+      "Code of Conduct"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-eo14110-2023-10-30",
+   "date": "2023-10-30",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "revoked",
+   "title": "US Executive Order 14110 on safe, secure and trustworthy AI (revoked 2025)",
+   "summary": "Required developers of dual-use foundation models above a compute threshold (10^26 operations) to report red-team results to the government under the Defense Production Act, and directed NIST guidance on evaluations. Revoked on 20 January 2025 by EO 14148.",
+   "measures": "Reporting of red-team test results for large models; NIST red-teaming and evaluation guidance; watermarking guidance.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "incident reporting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence",
+     "issuer": "Federal Register",
+     "primary": true,
+     "expect": [
+      "14110"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-dsa-audit-delegated-2023-10-20",
+   "date": "2023-10-20",
+   "jurisdiction": "EU",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "DSA Delegated Regulation (EU) 2024/436 on independent audits",
+   "summary": "Adopted by the Commission on 20 October 2023. Sets rules for how independent auditors audit very large online platforms under Art. 37 DSA, including methodology, audit risk and report templates.",
+   "measures": "Audit methodology, auditor independence, report and implementation templates for audits that include algorithmic systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluator independence",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg_del/2024/436/oj",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2024/436"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-global-ai-governance-initiative-2023-10-18",
+   "date": "2023-10-18",
+   "jurisdiction": "CN",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "China announces the Global AI Governance Initiative",
+   "summary": "Announced at the Belt and Road Forum. Calls for a people-centred approach, a testing and assessment system based on AI risk levels, and a greater role for developing countries in global AI governance.",
+   "measures": "A risk-level-based testing and assessment system (proposed).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.mfa.gov.cn/eng/zy/gb/202405/t20240531_11367503.html",
+     "issuer": "Ministry of Foreign Affairs of the PRC",
+     "primary": true,
+     "expect": [
+      "Global AI Governance Initiative"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ca-genai-code-2023-09-27",
+   "date": "2023-09-27",
+   "jurisdiction": "CA",
+   "instrument": "voluntary commitment",
+   "stage": "signed",
+   "title": "Canada: Voluntary Code of Conduct on advanced generative AI systems",
+   "summary": "ISED code with commitments on accountability, safety, fairness, transparency, human oversight and robustness; signatories added over time.",
+   "measures": "Adversarial testing and red-teaming; third-party audits for public-facing systems; detection methods for generated content.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://ised-isde.canada.ca/site/ised/en/voluntary-code-conduct-responsible-development-and-management-advanced-generative-ai-systems",
+     "issuer": "Innovation, Science and Economic Development Canada",
+     "primary": true,
+     "expect": [
+      "Voluntary Code"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ms-anthropic-rsp-2023-09-19",
+   "date": "2023-09-19",
+   "jurisdiction": "INTL",
+   "instrument": "voluntary commitment",
+   "stage": "published",
+   "title": "Anthropic publishes its Responsible Scaling Policy",
+   "summary": "Introduced 'AI Safety Levels' (ASL) with capability thresholds that trigger stronger safety and security measures, and commitments to evaluate models for dangerous capabilities before scaling further. Revised in later versions.",
+   "measures": "Dangerous-capability evaluations at defined points in training and before deployment; ASL thresholds.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+     "issuer": "Anthropic",
+     "primary": true,
+     "expect": [
+      "Responsible Scaling Policy"
+     ],
+     "issuer_site": "anthropic.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-ethics-review-measures-2023-09-07",
+   "date": "2023-09-07",
+   "jurisdiction": "CN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "China: Measures for Ethical Review of Science and Technology Activities (trial)",
+   "summary": "Issued by the Ministry of Science and Technology and other agencies; effective 1 December 2023. Requires ethics review committees and lists activities needing expert re-review, including some algorithm and automated decision-making systems with public-opinion mobilisation capacity.",
+   "measures": "Ethics review, and expert re-review for listed high-risk activities.",
+   "applies": "2023-12-01",
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2023/202310/t20231008_188309.html",
+     "issuer": "Ministry of Science and Technology of the PRC",
+     "primary": true,
+     "expect": [
+      "科技伦理审查办法"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-voluntary-commitments-2023-07-21",
+   "date": "2023-07-21",
+   "jurisdiction": "US-FED",
+   "instrument": "voluntary commitment",
+   "stage": "signed",
+   "title": "White House voluntary AI commitments (seven companies)",
+   "summary": "Amazon, Anthropic, Google, Inflection, Meta, Microsoft and OpenAI committed to safety, security and trust measures; eight more companies joined in September 2023.",
+   "measures": "Internal and external security testing before release, carried out in part by independent experts; information-sharing on risks; watermarking or provenance for AI audio and visual content; public reporting of capabilities and limitations.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntary-commitments-from-leading-artificial-intelligence-companies-to-manage-the-risks-posed-by-ai/",
+     "issuer": "The White House (archived)",
+     "primary": true,
+     "expect": [
+      "voluntary commitments"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-genai-measures-2023-07-10",
+   "date": "2023-07-10",
+   "jurisdiction": "CN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "China: Interim Measures for the Management of Generative AI Services",
+   "summary": "Issued by the CAC and six other agencies; effective 15 August 2023. Applies to generative AI services offered to the public in China.",
+   "measures": "Security assessments and algorithm filing for services with public-opinion attributes; training-data legality and quality; labelling of generated content.",
+   "applies": "2023-08-15",
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+     "issuer": "Cyberspace Administration of China",
+     "primary": true,
+     "expect": [
+      "生成式人工智能"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "pe-law-31814-2023-07-05",
+   "date": "2023-07-05",
+   "jurisdiction": "PE",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Peru Law 31814 promoting the use of AI, and its regulation (DS 115-2025-PCM)",
+   "summary": "Law 31814 (July 2023) was among the first AI laws in Latin America. Its implementing regulation, Supreme Decree 115-2025-PCM, was published on 9 September 2025 with risk-based provisions for public entities and voluntary adoption by the private sector.",
+   "measures": "Risk classification of AI uses; transparency and human oversight for higher-risk uses by public entities.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gob.pe/institucion/pcm/normas-legales/7133522-115-2025-pcm",
+     "issuer": "Presidency of the Council of Ministers (Peru)",
+     "primary": true,
+     "expect": [
+      "115-2025-PCM"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-joint-statement-2023-04-25",
+   "date": "2023-04-25",
+   "jurisdiction": "US-FED",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "FTC, CFPB, DOJ and EEOC joint statement on automated systems",
+   "summary": "Four federal enforcement agencies stated that existing civil-rights, consumer-protection and fair-competition laws apply to automated systems and AI.",
+   "measures": "None new; existing law applies to outcomes of automated systems.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/public-statements/joint-statement-enforcement-efforts-against-discrimination-bias-automated-systems",
+     "issuer": "US Federal Trade Commission",
+     "primary": true,
+     "expect": [
+      "Automated Systems"
+     ]
+    },
+    {
+     "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/EEOC-CRT-FTC-CFPB-AI-Joint-Statement%28final%29.pdf",
+     "issuer": "US Federal Trade Commission (PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-ai-white-paper-2023-03-29",
+   "date": "2023-03-29",
+   "jurisdiction": "UK",
+   "instrument": "white paper",
+   "stage": "published",
+   "title": "UK AI regulation white paper: a pro-innovation approach",
+   "summary": "Proposed a non-statutory, principles-based framework applied by existing sector regulators rather than a single AI law. Five principles: safety, security and robustness; transparency and explainability; fairness; accountability and governance; contestability and redress.",
+   "measures": "Regulators to apply principles within their remits; assurance techniques and technical standards as tools.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "pro-innovation"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ms-gpt4-system-card-2023-03-14",
+   "date": "2023-03-14",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "published",
+   "title": "GPT-4 released with a technical report and system card",
+   "summary": "OpenAI released GPT-4 with a technical report that withheld architecture, model size and training details, and a system card describing pre-deployment red-teaming by external experts, including an evaluation by the Alignment Research Center of risky emergent behaviours.",
+   "measures": "External red-teaming before release; published system card; dangerous-capability evaluation by a third party (ARC).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2303.08774",
+     "issuer": "arXiv (OpenAI, GPT-4 Technical Report)",
+     "primary": true,
+     "expect": [
+      "GPT-4"
+     ],
+     "issuer_site": "arxiv.org"
+    },
+    {
+     "url": "https://cdn.openai.com/papers/gpt-4-system-card.pdf",
+     "issuer": "OpenAI (system card PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ],
+     "issuer_site": "openai.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-nist-ai-rmf-2023-01-26",
+   "date": "2023-01-26",
+   "jurisdiction": "US-FED",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "NIST AI Risk Management Framework 1.0 (NIST AI 100-1)",
+   "summary": "Voluntary framework organised around four functions (Govern, Map, Measure, Manage). Widely referenced by later laws, including Colorado's and Texas's AI acts as a compliance reference.",
+   "measures": "The Measure function: test, evaluation, verification and validation (TEVV) of AI risks and trustworthiness characteristics.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "Risk Management Framework"
+     ]
+    },
+    {
+     "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+     "issuer": "US National Institute of Standards and Technology",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-deep-synthesis-2022-11-25",
+   "date": "2022-11-25",
+   "jurisdiction": "CN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "China: Provisions on Administration of Deep Synthesis Internet Information Services",
+   "summary": "Issued by the CAC, MIIT and MPS; effective 10 January 2023. Applies to deepfake and synthetic-media services.",
+   "measures": "Labelling of deep-synthesis content; security assessments; algorithm filing; real-name verification.",
+   "applies": "2023-01-10",
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
+     "issuer": "Cyberspace Administration of China",
+     "primary": true,
+     "expect": [
+      "深度合成"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-dsa-2022-10-19",
+   "date": "2022-10-19",
+   "jurisdiction": "EU",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "Digital Services Act (Regulation (EU) 2022/2065): audits of very large platforms' algorithmic systems",
+   "summary": "Adopted 19 October 2022; applied to very large online platforms and search engines from August 2023 and to all services from 17 February 2024. Very large platforms must assess systemic risks, including from recommender and algorithmic systems, and undergo annual independent audits.",
+   "measures": "Annual systemic-risk assessments covering algorithmic systems; annual independent audits (Art. 37); researcher data access; recommender-system transparency.",
+   "applies": "2024-02-17",
+   "stamp_relevance": [
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj",
+     "issuer": "EUR-Lex (Official Journal)",
+     "primary": true,
+     "expect": [
+      "2022/2065"
+     ]
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "Digital Services Act"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Not AI-specific; included because it mandates independent audits of algorithmic systems.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-ai-bill-of-rights-2022-10-04",
+   "date": "2022-10-04",
+   "jurisdiction": "US-FED",
+   "instrument": "white paper",
+   "stage": "published",
+   "title": "Blueprint for an AI Bill of Rights (White House OSTP)",
+   "summary": "Non-binding framework of five principles for automated systems: safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives and fallback.",
+   "measures": "Pre-deployment testing, risk identification and ongoing monitoring; independent evaluation; plain-language reporting.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/",
+     "issuer": "The White House (archived)",
+     "primary": true,
+     "expect": [
+      "Bill of Rights"
+     ]
+    },
+    {
+     "url": "https://bidenwhitehouse.archives.gov/ostp/news-updates/2022/10/04/blueprint-for-an-ai-bill-of-rightsa-vision-for-protecting-our-civil-rights-in-the-algorithmic-age/",
+     "issuer": "White House OSTP (archived)",
+     "primary": true,
+     "expect": [
+      "Blueprint"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Withdrawn from the live White House site in January 2025; the archive remains.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-liability-proposal-2022-09-28",
+   "date": "2022-09-28",
+   "jurisdiction": "EU",
+   "instrument": "bill",
+   "stage": "withdrawn",
+   "title": "AI Liability Directive proposed (later withdrawn)",
+   "summary": "Proposal to ease claims for damage caused by AI, including disclosure of evidence on high-risk AI systems and a rebuttable presumption of causality. Listed for withdrawal in the Commission's 2025 work programme in February 2025.",
+   "measures": "Court-ordered disclosure of documentation and logs for high-risk AI systems (proposed, not adopted).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496",
+     "issuer": "EUR-Lex",
+     "primary": true,
+     "expect": [
+      "2022"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Withdrawal status from the Commission work programme; confirm against the Official Journal notice.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ca-c27-aida-2022-06-16",
+   "date": "2022-06-16",
+   "jurisdiction": "CA",
+   "instrument": "bill",
+   "stage": "died",
+   "title": "Canada Bill C-27 / Artificial Intelligence and Data Act (died on the Order Paper)",
+   "summary": "Tabled 16 June 2022. AIDA would have regulated 'high-impact' AI systems. The bill died when Parliament was prorogued on 6 January 2025.",
+   "measures": "Would have required risk assessment, mitigation, monitoring and record-keeping for high-impact systems (not enacted).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.parl.ca/legisinfo/en/bill/44-1/c-27",
+     "issuer": "Parliament of Canada (LEGISinfo)",
+     "primary": true,
+     "expect": [
+      "C-27"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "sg-ai-verify-2022-05-25",
+   "date": "2022-05-25",
+   "jurisdiction": "SG",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "Singapore launches AI Verify testing framework and toolkit",
+   "summary": "IMDA and PDPC launched AI Verify as a pilot governance testing framework and software toolkit; open-sourced in 2023 under the AI Verify Foundation.",
+   "measures": "Technical tests and process checks against 11 governance principles, mapped to international frameworks.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2022/sg-launches-worlds-first-ai-testing-framework-and-toolkit-to-promote-transparency",
+     "issuer": "Infocomm Media Development Authority",
+     "primary": true,
+     "expect": [
+      "Verify"
+     ]
+    },
+    {
+     "url": "https://aiverifyfoundation.sg/what-is-ai-verify/",
+     "issuer": "AI Verify Foundation",
+     "primary": false,
+     "expect": [
+      "AI Verify"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-algorithm-recommendation-2021-12-31",
+   "date": "2021-12-31",
+   "jurisdiction": "CN",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "China: Provisions on Algorithmic Recommendation Management for Internet Information Services",
+   "summary": "Issued by the CAC and three other agencies; effective 1 March 2022. Created the algorithm filing (registry) system.",
+   "measures": "Algorithm filing with the CAC; security self-assessments; user options to switch off personalised recommendation; algorithm transparency.",
+   "applies": "2022-03-01",
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+     "issuer": "Cyberspace Administration of China",
+     "primary": true,
+     "expect": [
+      "算法推荐"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-nyc-ll144-2021-12-11",
+   "date": "2021-12-11",
+   "jurisdiction": "US-NY",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "New York City Local Law 144: bias audits of automated employment decision tools",
+   "summary": "Enacted December 2021; enforcement began 5 July 2023 after DCWP rules. Employers and agencies using an automated employment decision tool must have an independent bias audit within the past year and publish a summary.",
+   "measures": "Annual independent bias audit with impact ratios by sex and race/ethnicity; public summary; notice to candidates.",
+   "applies": "2023-07-05",
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluator independence",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://legistar.council.nyc.gov/LegislationDetail.aspx?ID=4344524&GUID=B051915D-A9AC-451E-81F8-6596032FA3F9",
+     "issuer": "New York City Council",
+     "primary": true,
+     "expect": [
+      "2021"
+     ]
+    },
+    {
+     "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+     "issuer": "NYC Department of Consumer and Worker Protection",
+     "primary": true,
+     "expect": [
+      "Automated Employment Decision Tools"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "A city law; jurisdiction coded US-NY.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-cdei-assurance-roadmap-2021-12-08",
+   "date": "2021-12-08",
+   "jurisdiction": "UK",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "CDEI roadmap to an effective AI assurance ecosystem",
+   "summary": "Centre for Data Ethics and Innovation roadmap describing how audit, certification, impact assessment and other assurance services for AI could develop in the UK.",
+   "measures": "Types of AI assurance: impact assessment, bias audit, compliance audit, certification, conformity assessment, performance testing.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/the-roadmap-to-an-effective-ai-assurance-ecosystem",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "assurance"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-atrs-2021-11-29",
+   "date": "2021-11-29",
+   "jurisdiction": "UK",
+   "instrument": "standard",
+   "stage": "published",
+   "title": "Algorithmic Transparency Recording Standard (ATRS)",
+   "summary": "Published by the Cabinet Office and CDEI in November 2021. Made mandatory for central government departments in February 2024 (per the government's white paper response).",
+   "measures": "Public records of algorithmic tools used in public-sector decisions: purpose, data, human oversight, risks.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Algorithmic Transparency"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "intl-unesco-ethics-2021-11-23",
+   "date": "2021-11-23",
+   "jurisdiction": "INTL",
+   "instrument": "recommendation",
+   "stage": "adopted",
+   "title": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+   "summary": "Adopted by UNESCO's 193 member states at the 41st General Conference. The first global standard-setting instrument on AI ethics; it asks states to set up ethical impact assessment and readiness assessment tools and report on implementation.",
+   "measures": "Ethical impact assessments of AI systems; national readiness assessments (UNESCO's Readiness Assessment Methodology); periodic state reporting.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+     "issuer": "UNESCO",
+     "primary": true,
+     "expect": [
+      "Recommendation"
+     ]
+    },
+    {
+     "url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137",
+     "issuer": "UNESCO (UNESDOC)",
+     "primary": true,
+     "expect": [
+      "Recommendation"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "cn-ethics-norms-2021-09-25",
+   "date": "2021-09-25",
+   "jurisdiction": "CN",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "China: Ethical Norms for New Generation Artificial Intelligence",
+   "summary": "Issued by the National New Generation AI Governance Specialist Committee under the Ministry of Science and Technology. Six basic ethical requirements and specific norms for management, R&D, supply and use.",
+   "measures": "Ethical review and risk assessment across the AI lifecycle; controllability and human decision-making authority.",
+   "applies": null,
+   "stamp_relevance": [
+    "human oversight",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.most.gov.cn/kjbgz/202109/t20210926_177063.html",
+     "issuer": "Ministry of Science and Technology of the PRC",
+     "primary": true,
+     "expect": [
+      "伦理"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "uk-national-ai-strategy-2021-09-22",
+   "date": "2021-09-22",
+   "jurisdiction": "UK",
+   "instrument": "strategy",
+   "stage": "published",
+   "title": "UK National AI Strategy",
+   "summary": "Published 22 September 2021. Committed to developing an AI assurance ecosystem and to a white paper on AI governance and regulation.",
+   "measures": "Commitment to an AI assurance roadmap and AI standards hub.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/national-ai-strategy",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "National AI Strategy"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-co-sb21-169-2021-07-06",
+   "date": "2021-07-06",
+   "jurisdiction": "US-CO",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Colorado SB21-169: insurers' use of external data and algorithms",
+   "summary": "Prohibits insurers from unfair discrimination through external consumer data, algorithms and predictive models; the Division of Insurance adopted governance and testing regulations for life insurers in 2023.",
+   "measures": "Governance frameworks and quantitative testing of algorithms for unfairly discriminatory outcomes.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://leg.colorado.gov/bills/sb21-169",
+     "issuer": "Colorado General Assembly",
+     "primary": true,
+     "expect": [
+      "SB21-169"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-ai-act-proposal-2021-04-21",
+   "date": "2021-04-21",
+   "jurisdiction": "EU",
+   "instrument": "bill",
+   "stage": "proposed",
+   "title": "European Commission proposes the Artificial Intelligence Act (COM(2021) 206)",
+   "summary": "Proposal for a regulation laying down harmonised rules on AI using a risk-based structure: prohibited practices, high-risk systems subject to conformity assessment, transparency duties for certain systems.",
+   "measures": "Conformity assessment, quality management, testing, accuracy, robustness and post-market monitoring for high-risk AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206",
+     "issuer": "EUR-Lex",
+     "primary": true,
+     "expect": [
+      "2021"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-ftc-ai-guidance-2021-04-19",
+   "date": "2021-04-19",
+   "jurisdiction": "US-FED",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "FTC guidance: 'Aiming for truth, fairness, and equity in your company's use of AI'",
+   "summary": "FTC business guidance stating that sale or use of racially biased algorithms may violate Section 5 of the FTC Act, the FCRA or ECOA, and urging companies to test algorithms for discriminatory outcomes.",
+   "measures": "Testing algorithms for discriminatory outcomes before and during use; truthful claims about AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20250101014735/https://www.ftc.gov/business-guidance/blog/2021/04/aiming-truth-fairness-equity-your-companys-use-ai",
+     "issuer": "US Federal Trade Commission (Internet Archive copy)",
+     "primary": true,
+     "expect": [
+      "truth"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The post now returns 404 at ftc.gov (checked 2026-10-08); cited from the Internet Archive capture of 1 January 2025.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-niaia-2021-01-01",
+   "date": "2021-01-01",
+   "jurisdiction": "US-FED",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "National Artificial Intelligence Initiative Act of 2020",
+   "summary": "Enacted as Division E of the FY2021 National Defense Authorization Act (veto overridden 1 January 2021). Created the National AI Initiative Office and directed NIST to develop a voluntary AI risk management framework.",
+   "measures": "Directed NIST to develop the AI Risk Management Framework and AI measurement standards.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.congress.gov/bill/116th-congress/house-bill/6395",
+     "issuer": "US Congress (Congress.gov)",
+     "primary": true,
+     "expect": [
+      "6395"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The AI provisions are within the NDAA (Public Law 116-283).",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-fed-eo13960-2020-12-03",
+   "date": "2020-12-03",
+   "jurisdiction": "US-FED",
+   "instrument": "executive order",
+   "stage": "in force",
+   "title": "US Executive Order 13960: trustworthy AI in the federal government",
+   "summary": "Set nine principles for federal agencies' use of AI and required agencies to inventory their AI use cases.",
+   "measures": "Annual agency AI use-case inventories; AI that is accurate, reliable, effective, safe, transparent, accountable and regularly monitored.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.federalregister.gov/documents/2020/12/08/2020-27065/promoting-the-use-of-trustworthy-artificial-intelligence-in-the-federal-government",
+     "issuer": "Federal Register",
+     "primary": true,
+     "expect": [
+      "13960"
+     ]
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/FR-2020-12-08/pdf/2020-27065.pdf",
+     "issuer": "US Government Publishing Office",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-altai-2020-07-17",
+   "date": "2020-07-17",
+   "jurisdiction": "EU",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Assessment List for Trustworthy AI (ALTAI) published",
+   "summary": "Final self-assessment checklist from the Commission's High-Level Expert Group on AI, turning the 2019 Ethics Guidelines' seven requirements into an operational tool for organisations.",
+   "measures": "Self-assessment against seven requirements: human agency and oversight, technical robustness and safety, privacy, transparency, diversity and fairness, societal well-being, accountability.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "ALTAI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Voluntary self-assessment tool.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "ca-directive-adm-2020-04-01",
+   "date": "2020-04-01",
+   "jurisdiction": "CA",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "Canada: Directive on Automated Decision-Making compliance date",
+   "summary": "Treasury Board directive (issued 2019) with which federal departments had to comply from 1 April 2020. Requires an Algorithmic Impact Assessment before production use of an automated decision system; updated in 2023 and 2025.",
+   "measures": "Algorithmic Impact Assessment (published); peer review for higher-impact levels; testing for unintended bias; human intervention.",
+   "applies": "2020-04-01",
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment",
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592",
+     "issuer": "Treasury Board of Canada Secretariat",
+     "primary": true,
+     "expect": [
+      "Automated Decision-Making"
+     ]
+    },
+    {
+     "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/algorithmic-impact-assessment.html",
+     "issuer": "Government of Canada",
+     "primary": true,
+     "expect": [
+      "Algorithmic Impact Assessment"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "eu-white-paper-ai-2020-02-19",
+   "date": "2020-02-19",
+   "jurisdiction": "EU",
+   "instrument": "white paper",
+   "stage": "published",
+   "title": "European Commission White Paper on Artificial Intelligence",
+   "summary": "Set out policy options for an EU regulatory framework for AI, proposing mandatory requirements for 'high-risk' applications and prior conformity assessment. Precursor to the AI Act.",
+   "measures": "Proposed prior conformity assessment, testing and certification for high-risk AI; record-keeping and transparency.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://commission.europa.eu/publications/white-paper-artificial-intelligence-european-approach-excellence-and-trust_en",
+     "issuer": "European Commission",
+     "primary": true,
+     "expect": [
+      "White Paper"
+     ]
+    },
+    {
+     "url": "https://commission.europa.eu/document/download/d2ec4039-c5be-423a-81ef-b9e44e79825b_en?filename=commission-white-paper-artificial-intelligence-feb2020_en.pdf",
+     "issuer": "European Commission (PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "sg-model-framework-2020-01-21",
+   "date": "2020-01-21",
+   "jurisdiction": "SG",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "Singapore Model AI Governance Framework, second edition",
+   "summary": "PDPC and IMDA updated the voluntary framework launched at Davos 2019, with an Implementation and Self-Assessment Guide for Organisations.",
+   "measures": "Self-assessment; human involvement levels by risk; explainability, repeatability and robustness testing.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.pdpc.gov.sg/organisations/resources/guidance-by-topic/singapores-approach-to-ai-governance",
+     "issuer": "Personal Data Protection Commission Singapore",
+     "primary": true,
+     "expect": [
+      "second edition"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "id": "us-il-aivia-2020-01-01",
+   "date": "2020-01-01",
+   "jurisdiction": "US-IL",
+   "instrument": "law",
+   "stage": "in force",
+   "title": "Illinois Artificial Intelligence Video Interview Act takes effect",
+   "summary": "Employers using AI to analyse video interviews must notify applicants, explain how the AI works, and obtain consent; 2022 amendments added demographic reporting where AI alone decides who gets an in-person interview.",
+   "measures": "Notice and consent; annual demographic data reporting to the state (from 2022).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=4015&ChapterID=68",
+     "issuer": "Illinois General Assembly",
+     "primary": true,
+     "expect": [
+      "Video Interview"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   }
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "totally rejects any attempt to construct a globalist scheme of control",
+     "speaker": "Donald J. Trump, President of the United States, at the UN General Assembly",
+     "source": "https://www.whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted/",
+     "record": "official White House release"
+    },
+    {
+     "text": "hereinafter officially called ‘Super Intelligence.’",
+     "speaker": "Donald J. Trump, President of the United States, at the UN General Assembly",
+     "source": "https://www.whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted/",
+     "record": "official White House release"
+    }
+   ],
+   "limits": "The White House release gives excerpts of the address with video links, not a full transcript; the UN's own record was not retrieved.",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "us-fed-trump-unga-2026-09-22",
+   "date": "2026-09-22",
+   "jurisdiction": "US-FED",
+   "title": "President Trump at the UN General Assembly rejects a global AI control scheme and renames AI 'Super Intelligence'",
+   "summary": "In his address to the 81st UN General Assembly, the President said the United States rejects any attempt to build a global scheme of control for AI, and named the technology 'Super Intelligence'. Executive Order 14434 of 29 September 2026 applied the name across the executive branch.",
+   "measures": "None stated. Bears on international AI governance and on the definitions later evaluation rules use.",
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-at-the-united-nations-while-others-have-talked-i-have-acted/",
+     "issuer": "The White House (release of the address)",
+     "primary": true,
+     "expect": [
+      "hereinafter officially called"
+     ]
+    },
+    {
+     "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+     "issuer": "The White House (Executive Order 14434)",
+     "primary": true,
+     "expect": [
+      "Executive Order 14434"
+     ]
+    }
+   ],
+   "label": "Supported"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "carefully examine, evaluate, and test new types of AI",
+     "speaker": "Rishi Sunak, Prime Minister of the United Kingdom",
+     "source": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023",
+     "record": "official GOV.UK transcript"
+    },
+    {
+     "text": "there is even the risk that humanity could lose control of AI completely",
+     "speaker": "Rishi Sunak, Prime Minister of the United Kingdom",
+     "source": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023",
+     "record": "official GOV.UK transcript"
+    }
+   ],
+   "limits": "none",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "uk-sunak-ai-speech-2023-10-26",
+   "date": "2023-10-26",
+   "jurisdiction": "UK",
+   "title": "Prime Minister Sunak's speech on AI announces a UK AI Safety Institute",
+   "summary": "At the Royal Society, a week before the Bletchley summit, the Prime Minister announced the UK AI Safety Institute to evaluate and test new AI models, and named loss of control of AI as an extreme risk, referring to 'super intelligence'.",
+   "measures": "Government testing and evaluation of new frontier models by a national institute.",
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023",
+     "issuer": "UK Government (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "26 October 2023"
+     ]
+    }
+   ],
+   "label": "Supported"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "create rigorous standards to test the safety of AI models for public use",
+     "speaker": "Kamala Harris, Vice President of the United States",
+     "source": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2023/11/01/remarks-by-vice-president-harris-on-the-future-of-artificial-intelligence-london-united-kingdom/",
+     "record": "official White House transcript (archived)"
+    }
+   ],
+   "limits": "none",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "us-fed-harris-ai-speech-2023-11-01",
+   "date": "2023-11-01",
+   "jurisdiction": "US-FED",
+   "title": "Vice President Harris's London speech on the future of AI announces a US AI Safety Institute",
+   "summary": "Speaking at the US Embassy in London on the eve of the Bletchley summit, the Vice President announced the US AI Safety Institute and argued that AI safety must cover the full spectrum of AI risk, including harms to individuals and institutions as well as existential threats.",
+   "measures": "Standards for testing the safety of AI models for public use (to be set by the new institute).",
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2023/11/01/remarks-by-vice-president-harris-on-the-future-of-artificial-intelligence-london-united-kingdom/",
+     "issuer": "The White House (archived)",
+     "primary": true,
+     "expect": [
+      "AI Safety Institute"
+     ]
+    }
+   ],
+   "label": "Supported"
   }
  ],
  "rejected": [
