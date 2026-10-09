@@ -1711,6 +1711,411 @@
     "how": "in chat: \"add ... like a library for others\""
    },
    "permalink": "https://protocolstamp.com/chronicle/#za-ai-policy-withdrawn-2026-04-26"
+  },
+  {
+   "id": "intl-biden-xi-nuclear-ai-2024-11-16",
+   "date": "2024-11-16",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Biden and Xi affirm human control over the decision to use nuclear weapons",
+   "summary": "Meeting in Lima at APEC, the US and Chinese presidents affirmed the need to keep human control over decisions to use nuclear weapons, and to develop military AI prudently and responsibly. It was the first such statement by China; it is not binding and set no follow-up.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2024/11/16/readout-of-president-joe-bidens-meeting-with-president-xi-jinping-of-the-peoples-republic-of-china-3",
+     "issuer": "The White House (archived readout)",
+     "primary": true
+    },
+    {
+     "url": "https://www.npr.org/2024/11/16/nx-s1-5193893/xitrump-biden-ai-export-controls-tariffs",
+     "issuer": "NPR",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#intl-biden-xi-nuclear-ai-2024-11-16"
+  },
+  {
+   "id": "un-ga-res-80-57-2025-12-01",
+   "date": "2025-12-01",
+   "jurisdiction": "UN",
+   "instrument": "resolution",
+   "stage": "decided",
+   "title": "UN General Assembly resolution 80/57 on lethal autonomous weapons systems",
+   "summary": "The General Assembly's third consecutive resolution on lethal autonomous weapons systems, approved in the First Committee on 6 November 2025. It urges the CCW Group of Governmental Experts to complete a set of elements for an instrument, with a view to future negotiation. 156 states supported it, as reported by the Stop Killer Robots campaign.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.stopkillerrobots.org/news/156-states-support-unga-resolution/",
+     "issuer": "Stop Killer Robots (campaign; secondary)",
+     "primary": false
+    },
+    {
+     "url": "https://dig.watch/processes/gge-laws",
+     "issuer": "Digital Watch",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "The resolution text and the recorded vote were not retrieved; the 156 figure may be the First Committee count. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#un-ga-res-80-57-2025-12-01"
+  },
+  {
+   "id": "ms-microsoft-imod-azure-2025-09-25",
+   "date": "2025-09-25",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "Microsoft disables some cloud and AI services to a unit of Israel's Ministry of Defence",
+   "summary": "After reporting by The Guardian, +972 Magazine and Local Call that Unit 8200 stored intercepted phone-call data on Azure, Microsoft's review found evidence supporting elements of the reporting, including use of Azure storage in the Netherlands and of AI services, and it disabled specific services to a unit of the ministry. Israel's statements on its use of Microsoft services varied.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.nbcnews.com/tech/tech-news/microsoft-ends-israel-military-units-access-cloud-service-rcna233723",
+     "issuer": "NBC News",
+     "primary": false
+    },
+    {
+     "url": "https://www.aljazeera.com/news/2025/9/26/microsoft-cuts-israeli-militarys-access-to-some-cloud-computing-ai",
+     "issuer": "Al Jazeera",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Microsoft's own statement was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-microsoft-imod-azure-2025-09-25"
+  },
+  {
+   "id": "us-fed-anthropic-supply-chain-2026-02-27",
+   "date": "2026-02-27",
+   "jurisdiction": "US-FED",
+   "instrument": "decision",
+   "stage": "decided",
+   "title": "The Pentagon designates Anthropic a supply-chain risk",
+   "summary": "The President directed federal agencies to stop using Anthropic's models, and the Secretary of Defense designated the company a supply-chain risk, the first US company so designated; formal letters are dated 3 March 2026. Anthropic had declined contract terms allowing 'any lawful use' of its models, which would have removed its limits on fully autonomous weapons and domestic mass surveillance.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.npr.org/2026/03/06/g-s1-112713/pentagon-labels-ai-company-anthropic-a-supply-chain-risk",
+     "issuer": "NPR",
+     "primary": false
+    },
+    {
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/pentagon-designates-anthropic-a-supply-chain-risk-what-government-contractors-need-to-know",
+     "issuer": "Mayer Brown",
+     "primary": false
+    },
+    {
+     "url": "https://www.congress.gov/crs-product/IN12669",
+     "issuer": "Congressional Research Service",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses and whose models this program measures. The designation letters were not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-anthropic-supply-chain-2026-02-27"
+  },
+  {
+   "id": "ct-anthropic-dow-pi-2026-03-26",
+   "date": "2026-03-26",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Anthropic v. Department of War: preliminary injunction against the supply-chain designation",
+   "summary": "In the Northern District of California, where Anthropic sued on 9 March 2026, Judge Rita Lin preliminarily enjoined the designation and the directive that agencies stop using Anthropic's services, pending a decision on the merits. The order was stayed for seven days to allow an appeal.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.npr.org/2026/03/26/nx-s1-5762971/judge-temporarily-blocks-trump-administrations-anthropic-ban",
+     "issuer": "NPR",
+     "primary": false
+    },
+    {
+     "url": "https://www.cnbc.com/2026/03/26/anthropic-pentagon-dod-claude-court-ruling.html",
+     "issuer": "CNBC",
+     "primary": false
+    },
+    {
+     "url": "https://fedscoop.com/district-court-temporarily-blocks-anthropic-ban-supply-chain-risk-designation/",
+     "issuer": "FedScoop",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The order was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-anthropic-dow-pi-2026-03-26"
+  },
+  {
+   "id": "ct-anthropic-dow-ndcal-2026-08-27",
+   "date": "2026-08-27",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Anthropic v. Department of War: court vacates the supply-chain designation",
+   "summary": "Granting summary judgment, Judge Rita Lin held that the designation was retaliation against Anthropic's speech in violation of the First Amendment, denied due process under the Fifth Amendment, and was arbitrary and capricious; she vacated it. The order does not require the government to buy Anthropic's products. A separate challenge in the D.C. Circuit was still pending.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html",
+     "issuer": "CNBC",
+     "primary": false
+    },
+    {
+     "url": "https://www.cbsnews.com/news/judge-rules-trump-administration-illegally-punished-ai-firm-anthropic/",
+     "issuer": "CBS News",
+     "primary": false
+    },
+    {
+     "url": "https://thehill.com/policy/technology/6056436-judge-rules-pentagon-anthropic-blacklist-illegal/",
+     "issuer": "The Hill",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The judgment was not retrieved; reports of the evening of 27 August 2026 are dated 28 August. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-anthropic-dow-ndcal-2026-08-27"
+  },
+  {
+   "id": "ct-anthropic-dccir-2026-09-25",
+   "date": "2026-09-25",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "D.C. Circuit upholds the Pentagon's designation of Anthropic, 2 to 1",
+   "summary": "In Anthropic's separate challenge to the designation, a D.C. Circuit panel upheld it by two votes to one. The majority found the department had enough evidence to conclude that Claude's built-in restrictions and the unresolved contract dispute could make it unreliable for military operations; the dissent read the statute differently. Anthropic said it disagreed with the decision.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://abcnews.com/Business/anthropic-appeals-court-declines-block-pentagon-blacklisting/story?id=136755690",
+     "issuer": "ABC News",
+     "primary": false
+    },
+    {
+     "url": "https://letsdatascience.com/news/appeals-court-upholds-anthropic-supply-chain-risk-designatio-8a5fbe8e",
+     "issuer": "Let's Data Science",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The opinion was not retrieved, and its citation was not reported in the coverage found. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-anthropic-dccir-2026-09-25"
+  },
+  {
+   "id": "un-ccw-gge-laws-ends-2026-09-04",
+   "date": "2026-09-04",
+   "jurisdiction": "UN",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "UN expert group on lethal autonomous weapons ends its last session without a binding instrument",
+   "summary": "The CCW Group of Governmental Experts met from 31 August 2026 to 4 September 2026 for the last time under its mandate and ended without a legally binding agreement. Its rolling text of elements for an instrument, carried in a draft report, goes to the Seventh CCW Review Conference in November 2026. Brazil, for 47 states, and the African Group called the text a sufficient basis for negotiation.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://meetings.unoda.org/ccw-/convention-on-certain-conventional-weapons-group-of-governmental-experts-on-lethal-autonomous-weapons-systems-2026",
+     "issuer": "UN Office for Disarmament Affairs",
+     "primary": true
+    },
+    {
+     "url": "https://davisvanguard.org/2026/09/un-lethal-weapons-talks-conclude/",
+     "issuer": "Davis Vanguard",
+     "primary": false
+    },
+    {
+     "url": "https://automatedresearch.org/news/over-70-states-support-rolling-text-as-basis-for-negotiations/",
+     "issuer": "Automated Research",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "Whether the final report was adopted by consensus was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#un-ccw-gge-laws-ends-2026-09-04"
+  },
+  {
+   "id": "us-fed-state-si-directive-2026-09-24",
+   "date": "2026-09-24",
+   "jurisdiction": "US-FED",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "State Department tells staff to say 'SI' for AI",
+   "summary": "Following the President's renaming of AI as 'Super Intelligence' at the UN on 22 September 2026, an internal State Department email told staff to use 'SI' in all remarks, positions and press elements, as reported by the Associated Press. US representatives used the term at the UN Security Council.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.yahoo.com/news/politics/articles/diplomats-ordered-super-intelligence-instead-180310912.html",
+     "issuer": "Associated Press via Yahoo News",
+     "primary": false
+    },
+    {
+     "url": "https://www.euronews.com/2026/09/24/artificial-is-out-trump-orders-officials-to-call-it-super-intelligence-instead",
+     "issuer": "Euronews",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "The email was not retrieved; the date is that of the first report found, not the email's own. See the Docket entry on Executive Order 14434. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-state-si-directive-2026-09-24"
+  },
+  {
+   "id": "us-fed-trump-si-enemy-2026-10-08",
+   "date": "2026-10-08",
+   "jurisdiction": "US-FED",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "President calls people who say 'Artificial Intelligence' instead of 'Super Intelligence' 'THE ENEMY!'",
+   "summary": "Nine days after Executive Order 14434, the President wrote that anyone using 'Artificial Intelligence' rather than 'Super Intelligence' is 'THE ENEMY!'. Axios reported that White House pages still used 'AI'.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.axios.com/2026/10/08/trump-ai-super-intelligence-white-house",
+     "issuer": "Axios",
+     "primary": false
+    },
+    {
+     "url": "https://www.forbes.com/sites/conormurray/2026/10/08/trump-calls-anyone-who-says-ai-instead-of-super-intelligence-an-enemy/",
+     "issuer": "Forbes",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "The post itself was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-trump-si-enemy-2026-10-08"
+  },
+  {
+   "id": "us-fed-autonomous-warfare-command-2026-09-30",
+   "date": "2026-09-30",
+   "jurisdiction": "US-FED",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "US Defense Secretary orders an Autonomous Warfare Command",
+   "summary": "A memo directs the department to begin building a four-star combatant command with service-like authorities to scale autonomous and robotic capabilities across the joint force, to stand up by 1 October 2027.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.defenseone.com/policy/2026/09/hegseth-plans-autonomous-warfare-command/416358/",
+     "issuer": "Defense One",
+     "primary": false
+    },
+    {
+     "url": "https://insidedefense.com/document/hegseth-memo-autowarcom",
+     "issuer": "Inside Defense (memo text)",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "limits": "The memo was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "label": "Likely",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-autonomous-warfare-command-2026-09-30"
   }
  ],
  "rejected": []
