@@ -169,7 +169,7 @@ def main():
         assert frag in (out / "index.html").read_bytes() and sha((out / "source.html").read_bytes()) == sha(frag)
         # flip the pending rows
         links = f'<a href="/{kind}/{short}/">Read</a> · <a href="/{kind}/{short}.pdf">PDF</a> · <a href="/{kind}/{short}/source">Source</a>'
-        meta = f"Issued {date:%a %-d %B %Y} {ran_at:%H:%M} from {dateline.split(',')[0].strip()} · build {sha(frag)[:12]}"
+        meta = f"Issued {date:%b} {date.day:02d}, {date.year} {ran_at:%H:%M} from {dateline.split(',')[0].strip()} · build {sha(frag)[:12]}"
         for page in ("index.html", "archive/index.html"):
             p = DOCS / page; s = p.read_text(encoding="utf-8")
             s2, n = flip_rows(s, name, links, meta)
