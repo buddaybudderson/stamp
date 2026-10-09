@@ -1,0 +1,1674 @@
+{
+ "built": "2026-10-08",
+ "not_legal_advice": true,
+ "entries": [
+  {
+   "id": "ct-bartz-final-approval-2026-07-20",
+   "date": "2026-07-20",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Court grants final approval of the USD 1.5 billion Bartz v. Anthropic settlement",
+   "summary": "The Northern District of California granted final approval of the class settlement and entered judgment, about USD 3,000 per eligible work. Anthropic must destroy copies obtained from pirate libraries; the settlement covers past conduct only.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/",
+     "issuer": "The Authors Guild (supported the class; secondary)",
+     "primary": false,
+     "expect": [
+      "Anthropic"
+     ]
+    },
+    {
+     "url": "https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/",
+     "issuer": "CourtListener (Free Law Project) docket",
+     "primary": false,
+     "expect": [
+      "Bartz"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The final-approval order itself was not retrieved; date (20 July 2026) and terms from the Authors Guild and news reports. Reports name Judge Araceli Martinez-Olguin as approving after Judge Alsup's retirement.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-bartz-final-approval-2026-07-20"
+  },
+  {
+   "id": "ct-gema-openai-2025-11-11",
+   "date": "2025-11-11",
+   "jurisdiction": "DE",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "GEMA v OpenAI: Munich Regional Court finds song lyrics memorised by ChatGPT infringe",
+   "summary": "The 42nd Civil Chamber of the Landgericht München I (case 42 O 14139/24) held that OpenAI's models memorised and reproduced protected German song lyrics, which infringed copyright, and that the text-and-data-mining exception did not cover it.",
+   "measures": "None directly; memorisation of training data as a legal test.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki",
+     "issuer": "Legal Tribune Online (secondary)",
+     "primary": false,
+     "expect": [
+      "OpenAI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Not final. The court's own press release was not retrieved; summary from legal press citing the judgment (Az. 42 O 14139/24).",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-gema-openai-2025-11-11"
+  },
+  {
+   "id": "ct-getty-stability-ukhc-2025-11-04",
+   "date": "2025-11-04",
+   "jurisdiction": "UK",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Getty Images v Stability AI: UK High Court judgment",
+   "summary": "The High Court (Joanna Smith J) largely dismissed Getty's remaining claims, holding that the Stable Diffusion model weights are not an 'infringing copy' because they do not store the training images; Getty succeeded in part on trade marks for some older model versions.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.judiciary.uk/judgments/getty-images-v-stability-ai/",
+     "issuer": "Courts and Tribunals Judiciary (England and Wales)",
+     "primary": true,
+     "expect": [
+      "Getty"
+     ]
+    },
+    {
+     "url": "https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf",
+     "issuer": "Courts and Tribunals Judiciary (judgment PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-getty-stability-ukhc-2025-11-04"
+  },
+  {
+   "id": "ct-bartz-anthropic-2025-06-23",
+   "date": "2025-06-23",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Bartz v. Anthropic: training on lawfully acquired books is fair use; pirated library is not",
+   "summary": "Judge William Alsup (N.D. Cal.) held that training Claude on purchased and scanned books was fair use, but that building a central library from pirated copies was not. The case later settled as a class action for USD 1.5 billion, which the court preliminarily approved in September 2025.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.434709/gov.uscourts.cand.434709.231.0.pdf",
+     "issuer": "US District Court, N.D. Cal. (Order on Fair Use, via RECAP)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    },
+    {
+     "url": "https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/",
+     "issuer": "CourtListener (Free Law Project) docket",
+     "primary": false,
+     "expect": [
+      "Bartz"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Settlement amount and approval date from news reports; confirm against the court's approval order.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-bartz-anthropic-2025-06-23"
+  },
+  {
+   "id": "us-fed-copyright-part3-2025-05-09",
+   "date": "2025-05-09",
+   "jurisdiction": "US-FED",
+   "instrument": "report",
+   "stage": "published",
+   "title": "US Copyright Office pre-publication report on generative AI training (Part 3)",
+   "summary": "A pre-publication version said some training uses may be fair use and others not, depending on factors including whether outputs compete with the works trained on. The Register of Copyrights, Shira Perlmutter, was dismissed the next day, a removal she challenged in court.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+     "issuer": "US Copyright Office",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The dismissal and litigation are from news reporting, not the report.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-copyright-part3-2025-05-09"
+  },
+  {
+   "id": "ct-thaler-perlmutter-2025-03-18",
+   "date": "2025-03-18",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "US Court of Appeals (D.C. Cir.): work generated autonomously by AI is not copyrightable (Thaler v. Perlmutter)",
+   "summary": "Affirmed the 2023 district-court ruling that the Copyright Act requires human authorship, upholding the Copyright Office's refusal to register a work listing the 'Creativity Machine' as author.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://media.cadc.uscourts.gov/opinions/docs/2025/03/23-5233.pdf",
+     "issuer": "US Court of Appeals for the D.C. Circuit",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-thaler-perlmutter-2025-03-18"
+  },
+  {
+   "id": "ct-thomson-reuters-ross-2025-02-11",
+   "date": "2025-02-11",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Thomson Reuters v. Ross Intelligence: fair-use defence rejected for AI training on Westlaw headnotes",
+   "summary": "Judge Stephanos Bibas (D. Del., sitting by designation) granted partial summary judgment to Thomson Reuters, holding that Ross's copying of Westlaw headnotes to build a competing (non-generative) AI legal-research tool was not fair use. Interlocutory appeal to the Third Circuit followed.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.ded.uscourts.gov/sites/ded/files/opinions/20-613_5.pdf",
+     "issuer": "US District Court for the District of Delaware",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-thomson-reuters-ross-2025-02-11"
+  },
+  {
+   "id": "en-it-garante-deepseek-2025-01-30",
+   "date": "2025-01-30",
+   "jurisdiction": "IT",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "Italy's Garante orders DeepSeek blocked",
+   "summary": "Ordered an urgent limitation on DeepSeek's processing of Italian users' data after the companies said they were not subject to EU law; the app was removed from Italian app stores. Other states restricted DeepSeek on government devices in the following weeks.",
+   "measures": "None directly.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10097450",
+     "issuer": "Garante per la protezione dei dati personali",
+     "primary": true,
+     "expect": [
+      "DeepSeek"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#en-it-garante-deepseek-2025-01-30"
+  },
+  {
+   "id": "us-fed-copyright-part2-2025-01-29",
+   "date": "2025-01-29",
+   "jurisdiction": "US-FED",
+   "instrument": "report",
+   "stage": "published",
+   "title": "US Copyright Office report on the copyrightability of AI outputs (Part 2)",
+   "summary": "Concluded that existing law suffices: outputs are protectable only where a human author has determined sufficient expressive elements; prompts alone generally do not give enough control.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+     "issuer": "US Copyright Office",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-copyright-part2-2025-01-29"
+  },
+  {
+   "id": "ms-stargate-2025-01-21",
+   "date": "2025-01-21",
+   "jurisdiction": "US-FED",
+   "instrument": "milestone",
+   "stage": "statement",
+   "title": "Stargate Project announced",
+   "summary": "OpenAI announced Stargate, a new company intending to invest USD 500 billion over four years in AI infrastructure for OpenAI in the United States, deploying USD 100 billion immediately. Initial equity funders: SoftBank, OpenAI, Oracle and MGX.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://openai.com/index/announcing-the-stargate-project/",
+     "issuer": "OpenAI",
+     "primary": true,
+     "expect": [
+      "Stargate"
+     ],
+     "issuer_site": "openai.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-stargate-2025-01-21"
+  },
+  {
+   "id": "ms-deepseek-r1-2025-01-20",
+   "date": "2025-01-20",
+   "jurisdiction": "CN",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "DeepSeek releases R1 reasoning model with open weights",
+   "summary": "The Chinese lab DeepSeek released DeepSeek-R1 under an MIT licence, reporting reasoning-benchmark performance comparable to OpenAI's o1. The release moved markets and prompted several governments to restrict the app on official devices.",
+   "measures": "Self-reported benchmark results (e.g. AIME 2024, MATH-500); open weights allow independent evaluation.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2501.12948",
+     "issuer": "arXiv (DeepSeek-AI)",
+     "primary": true,
+     "expect": [
+      "DeepSeek-R1"
+     ],
+     "issuer_site": "arxiv.org"
+    },
+    {
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+     "issuer": "Hugging Face (DeepSeek-AI model card)",
+     "primary": true,
+     "expect": [
+      "DeepSeek-R1"
+     ],
+     "issuer_site": "huggingface.co"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-deepseek-r1-2025-01-20"
+  },
+  {
+   "id": "en-it-garante-openai-fine-2024-12-20",
+   "date": "2024-12-20",
+   "jurisdiction": "IT",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "Italy's Garante fines OpenAI EUR 15 million over ChatGPT",
+   "summary": "Concluded the 2023 investigation with a EUR 15 million fine and an order for a six-month public information campaign about how ChatGPT collects data for training. OpenAI said it would appeal.",
+   "measures": "Transparency to users and non-users about training-data processing.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432",
+     "issuer": "Garante per la protezione dei dati personali",
+     "primary": true,
+     "expect": [
+      "OpenAI"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#en-it-garante-openai-fine-2024-12-20"
+  },
+  {
+   "id": "ms-nobel-chemistry-2024-10-09",
+   "date": "2024-10-09",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "Nobel Prize in Chemistry 2024 to David Baker, Demis Hassabis and John Jumper",
+   "summary": "Half to David Baker for computational protein design and half jointly to Demis Hassabis and John Jumper for protein structure prediction (AlphaFold).",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+     "issuer": "The Nobel Prize (Royal Swedish Academy of Sciences)",
+     "primary": true,
+     "expect": [
+      "Hassabis"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-nobel-chemistry-2024-10-09"
+  },
+  {
+   "id": "ms-nobel-physics-2024-10-08",
+   "date": "2024-10-08",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "Nobel Prize in Physics 2024 to John Hopfield and Geoffrey Hinton",
+   "summary": "Awarded 'for foundational discoveries and inventions that enable machine learning with artificial neural networks'.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.nobelprize.org/prizes/physics/2024/press-release/",
+     "issuer": "The Nobel Prize (Royal Swedish Academy of Sciences)",
+     "primary": true,
+     "expect": [
+      "Hopfield"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-nobel-physics-2024-10-08"
+  },
+  {
+   "id": "en-nl-ap-clearview-2024-09-03",
+   "date": "2024-09-03",
+   "jurisdiction": "NL",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "Dutch Data Protection Authority fines Clearview AI EUR 30.5 million",
+   "summary": "The Autoriteit Persoonsgegevens fined Clearview EUR 30.5 million for building an illegal database of facial images, with further penalty payments of up to EUR 5.1 million if violations continue.",
+   "measures": "None directly.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.autoriteitpersoonsgegevens.nl/actueel/ap-legt-clearview-boete-op-voor-illegale-dataverzameling-voor-gezichtsherkenning",
+     "issuer": "Autoriteit Persoonsgegevens (in Dutch)",
+     "primary": true,
+     "expect": [
+      "Clearview"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#en-nl-ap-clearview-2024-09-03"
+  },
+  {
+   "id": "us-tn-elvis-act-2024-03-21",
+   "date": "2024-03-21",
+   "jurisdiction": "US-TN",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Tennessee ELVIS Act protects voice against AI cloning",
+   "summary": "The Ensuring Likeness Voice and Image Security (ELVIS) Act updated Tennessee's Protection of Personal Rights law to protect songwriters', performers' and others' voices from misuse of AI, including through tools and services that enable unauthorised impersonation.",
+   "measures": "None.",
+   "applies": "2024-07-01",
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.tn.gov/governor/news/2024/3/21/photos--gov--lee-signs-elvis-act-into-law.html",
+     "issuer": "Office of the Governor of Tennessee",
+     "primary": true,
+     "expect": [
+      "ELVIS"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The 1 July 2024 effective date is from secondary reporting, not the Governor's release.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-tn-elvis-act-2024-03-21"
+  },
+  {
+   "id": "br-tse-elections-ai-2024-02-27",
+   "date": "2024-02-27",
+   "jurisdiction": "BR",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "Brazil's Superior Electoral Court regulates AI in election campaigns",
+   "summary": "On 27 February 2024 the court amended Resolution 23.610/2019 on electoral propaganda to ban deepfakes and require notice of AI use in campaign content, and to restrict the use of bots to contact voters, for the October 2024 municipal elections.",
+   "measures": "Labelling of synthetic campaign content.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/tse-proibe-uso-de-inteligencia-artificial-para-criar-e-propagar-conteudos-falsos-nas-eleicoes",
+     "issuer": "Tribunal Superior Eleitoral",
+     "primary": true,
+     "expect": [
+      "inteligência artificial"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#br-tse-elections-ai-2024-02-27"
+  },
+  {
+   "id": "ms-gemini-image-pause-2024-02-23",
+   "date": "2024-02-23",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Google pauses Gemini image generation of people after inaccurate historical images",
+   "summary": "Google said Gemini's image generation 'got it wrong', producing inaccurate or offensive depictions, and paused generating images of people while it worked on a fix.",
+   "measures": "Pre-release testing gaps acknowledged by the developer.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://blog.google/products/gemini/gemini-image-generation-issue/",
+     "issuer": "Google",
+     "primary": true,
+     "expect": [
+      "Gemini"
+     ],
+     "issuer_site": "blog.google"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-gemini-image-pause-2024-02-23"
+  },
+  {
+   "id": "ct-moffatt-air-canada-2024-02-14",
+   "date": "2024-02-14",
+   "jurisdiction": "CA",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Moffatt v. Air Canada: airline liable for its chatbot's wrong answer",
+   "summary": "British Columbia's Civil Resolution Tribunal rejected Air Canada's argument that its website chatbot was a separate entity responsible for its own actions, and ordered the airline to honour the bereavement-fare information the chatbot gave.",
+   "measures": "None directly; companies answer for what their chatbots tell customers.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do?iframe=true",
+     "issuer": "Civil Resolution Tribunal of British Columbia (2024 BCCRT 149)",
+     "primary": true,
+     "expect": [
+      "Moffatt"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-moffatt-air-canada-2024-02-14"
+  },
+  {
+   "id": "us-fed-uspto-inventorship-2024-02-13",
+   "date": "2024-02-13",
+   "jurisdiction": "US-FED",
+   "instrument": "guidance",
+   "stage": "published",
+   "title": "USPTO inventorship guidance for AI-assisted inventions",
+   "summary": "Clarified that AI-assisted inventions are not categorically unpatentable, but each named inventor must be a natural person who made a significant contribution, applying the Pannu factors.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.federalregister.gov/documents/2024/02/13/2024-02623/inventorship-guidance-for-ai-assisted-inventions",
+     "issuer": "Federal Register",
+     "primary": true,
+     "expect": [
+      "Inventorship"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-uspto-inventorship-2024-02-13"
+  },
+  {
+   "id": "ct-nyt-openai-complaint-2023-12-27",
+   "date": "2023-12-27",
+   "jurisdiction": "US-FED",
+   "instrument": "court filing",
+   "stage": "pending",
+   "title": "The New York Times sues Microsoft and OpenAI for copyright infringement",
+   "summary": "Complaint filed in the Southern District of New York alleging that millions of Times articles were used without permission to train GPT models and that the models can reproduce Times content nearly verbatim.",
+   "measures": "Memorisation and regurgitation of training data (examples of near-verbatim output in the complaint).",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf",
+     "issuer": "The New York Times Company (complaint PDF)",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ],
+     "issuer_site": "nytimes.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-nyt-openai-complaint-2023-12-27"
+  },
+  {
+   "id": "ct-thaler-dabus-uksc-2023-12-20",
+   "date": "2023-12-20",
+   "jurisdiction": "UK",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "UK Supreme Court: an AI system cannot be named as an inventor (Thaler v Comptroller-General)",
+   "summary": "Held that under the Patents Act 1977 an inventor must be a natural person, so applications naming the AI system DABUS as inventor were properly refused. Part of a worldwide test-case series by Stephen Thaler.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.supremecourt.uk/cases/uksc-2021-0201",
+     "issuer": "The Supreme Court of the United Kingdom",
+     "primary": true,
+     "expect": [
+      "Thaler"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-thaler-dabus-uksc-2023-12-20"
+  },
+  {
+   "id": "ms-openai-board-2023-11-17",
+   "date": "2023-11-17",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "statement",
+   "title": "OpenAI board removes Sam Altman as CEO; reinstated days later",
+   "summary": "OpenAI's nonprofit board announced that Altman was departing after it concluded he was 'not consistently candid'. After staff and investor pressure he returned as CEO with a new initial board on 21 November 2023 and 22 November 2023. A recurring case study in AI lab governance.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://openai.com/index/openai-announces-leadership-transition/",
+     "issuer": "OpenAI",
+     "primary": true,
+     "expect": [
+      "leadership transition"
+     ],
+     "issuer_site": "openai.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-openai-board-2023-11-17"
+  },
+  {
+   "id": "us-hollywood-wga-2023-09-27",
+   "date": "2023-09-27",
+   "jurisdiction": "US-FED",
+   "instrument": "agreement",
+   "stage": "signed",
+   "title": "Writers Guild of America contract sets rules on AI in screenwriting",
+   "summary": "The 2023 WGA Minimum Basic Agreement, ending a 148-day strike, provides that neither traditional nor generative AI is a 'writer', so its output is not 'literary material', and unpublished AI-generated material given to a writer is not 'source material' for credit, and requires disclosure when studios hand writers AI-generated material.",
+   "measures": "Disclosure when AI-generated material is provided to writers.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wga.org/contracts/know-your-rights/artificial-intelligence",
+     "issuer": "Writers Guild of America West",
+     "primary": true,
+     "expect": [
+      "AI"
+     ],
+     "issuer_site": "wga.org"
+    }
+   ],
+   "quotes": [],
+   "limits": "The 148-day strike length and ratification date are from contemporaneous reporting, not this page.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-hollywood-wga-2023-09-27"
+  },
+  {
+   "id": "ct-mata-avianca-2023-06-22",
+   "date": "2023-06-22",
+   "jurisdiction": "US-FED",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "Mata v. Avianca: lawyers sanctioned for citing fake cases generated by ChatGPT",
+   "summary": "Judge P. Kevin Castel (S.D.N.Y.) sanctioned two lawyers and their firm USD 5,000 for submitting a brief with non-existent judicial opinions produced by ChatGPT. Led many courts to adopt rules on AI use in filings.",
+   "measures": "None directly; prompted court disclosure rules for AI-assisted filings.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/",
+     "issuer": "CourtListener (Free Law Project) docket",
+     "primary": false,
+     "expect": [
+      "Mata"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Docket page from a public court-records mirror, not PACER; sanction amount from the opinion as reported.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-mata-avianca-2023-06-22"
+  },
+  {
+   "id": "ms-cais-statement-2023-05-30",
+   "date": "2023-05-30",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Center for AI Safety one-sentence Statement on AI Risk",
+   "summary": "A one-sentence statement that mitigating the risk of extinction from AI should be a global priority alongside pandemics and nuclear war, signed by leading AI researchers and the heads of major AI labs.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://safe.ai/work/statement-on-ai-risk",
+     "issuer": "Center for AI Safety",
+     "primary": true,
+     "expect": [
+      "extinction"
+     ],
+     "issuer_site": "safe.ai"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-cais-statement-2023-05-30"
+  },
+  {
+   "id": "ms-us-senate-hearing-2023-05-16",
+   "date": "2023-05-16",
+   "jurisdiction": "US-FED",
+   "instrument": "hearing",
+   "stage": "statement",
+   "title": "US Senate Judiciary subcommittee hearing 'Oversight of A.I.: Rules for Artificial Intelligence' with Sam Altman",
+   "summary": "First appearance by OpenAI's chief executive before Congress. Witnesses discussed licensing, independent audits and a possible federal AI agency.",
+   "measures": "Proposals for licensing and independent audits of powerful models (not enacted).",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+     "issuer": "US Senate Committee on the Judiciary",
+     "primary": true,
+     "expect": [
+      "Oversight of A.I."
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-us-senate-hearing-2023-05-16"
+  },
+  {
+   "id": "en-it-garante-chatgpt-2023-03-30",
+   "date": "2023-03-30",
+   "jurisdiction": "IT",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "Italy's data-protection authority temporarily limits ChatGPT",
+   "summary": "The Garante ordered OpenAI to stop processing Italian users' data, citing the lack of a legal basis for training-data collection, inaccurate outputs and no age verification. OpenAI suspended service in Italy and restored it in late April 2023 after changes.",
+   "measures": "None directly; data-protection conditions on model training and age checks.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+     "issuer": "Garante per la protezione dei dati personali",
+     "primary": true,
+     "expect": [
+      "9870832"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#en-it-garante-chatgpt-2023-03-30"
+  },
+  {
+   "id": "ms-fli-pause-letter-2023-03-22",
+   "date": "2023-03-22",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Future of Life Institute open letter calling for a six-month pause on giant AI experiments",
+   "summary": "Called on all AI labs to pause for at least six months the training of AI systems more powerful than GPT-4, and to use the pause to develop shared safety protocols audited and overseen by independent outside experts. Signed by tens of thousands; no lab announced a pause.",
+   "measures": "Proposed independent audits of safety protocols for advanced AI.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+     "issuer": "Future of Life Institute",
+     "primary": true,
+     "expect": [
+      "Pause Giant AI Experiments"
+     ],
+     "issuer_site": "futureoflife.org"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-fli-pause-letter-2023-03-22"
+  },
+  {
+   "id": "ms-claude-launch-2023-03-14",
+   "date": "2023-03-14",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "Anthropic releases Claude",
+   "summary": "Anthropic made its Claude assistant available through a chat interface and API after testing with early partners. Released the same day as GPT-4.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.anthropic.com/news/introducing-claude",
+     "issuer": "Anthropic",
+     "primary": true,
+     "expect": [
+      "Claude"
+     ],
+     "issuer_site": "anthropic.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-claude-launch-2023-03-14"
+  },
+  {
+   "id": "us-fed-copyright-zarya-2023-02-21",
+   "date": "2023-02-21",
+   "jurisdiction": "US-FED",
+   "instrument": "decision",
+   "stage": "decided",
+   "title": "US Copyright Office: Zarya of the Dawn registration limited to human-authored elements",
+   "summary": "The Office cancelled and reissued the registration of Kristina Kashtanova's comic book, covering the text and the selection and arrangement of images but not the individual images generated with Midjourney.",
+   "measures": "None; human authorship as the test for registration.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.copyright.gov/docs/zarya-of-the-dawn.pdf",
+     "issuer": "US Copyright Office",
+     "primary": true,
+     "expect": [
+      "%PDF"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-copyright-zarya-2023-02-21"
+  },
+  {
+   "id": "ms-chatgpt-2022-11-30",
+   "date": "2022-11-30",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "OpenAI releases ChatGPT",
+   "summary": "OpenAI released ChatGPT as a 'research preview', a conversational model fine-tuned from the GPT-3.5 series with reinforcement learning from human feedback. Its rapid adoption set off the generative-AI policy wave of 2023.",
+   "measures": "None; the launch post lists known limitations such as plausible-sounding but incorrect answers.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://openai.com/index/chatgpt/",
+     "issuer": "OpenAI",
+     "primary": true,
+     "expect": [
+      "ChatGPT"
+     ],
+     "issuer_site": "openai.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-chatgpt-2022-11-30"
+  },
+  {
+   "id": "us-fed-bis-chip-controls-2022-10-07",
+   "date": "2022-10-07",
+   "jurisdiction": "US-FED",
+   "instrument": "regulation",
+   "stage": "in force",
+   "title": "US export controls on advanced computing chips and semiconductor manufacturing items",
+   "summary": "The Bureau of Industry and Security issued an interim final rule (released 7 October 2022, published 13 October 2022) restricting exports of advanced AI chips, supercomputer end uses and chip-making equipment to China. Tightened in October 2023 and December 2024.",
+   "measures": "Performance thresholds for controlled chips; no evaluation duties.",
+   "applies": null,
+   "stamp_relevance": [
+    "definitions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.federalregister.gov/documents/2022/10/13/2022-21658/implementation-of-additional-export-controls-certain-advanced-computing-and-semiconductor-manufacturing",
+     "issuer": "Federal Register",
+     "primary": true,
+     "expect": [
+      "Advanced Computing"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "Later tightenings (2023, 2024) are not covered by this source.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-bis-chip-controls-2022-10-07"
+  },
+  {
+   "id": "ms-stable-diffusion-2022-08-22",
+   "date": "2022-08-22",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "Stable Diffusion released with open weights",
+   "summary": "Stability AI publicly released the Stable Diffusion text-to-image model. Open release of an image model spurred both adoption and litigation, including Getty Images' UK and US suits.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://stability.ai/news/stable-diffusion-public-release",
+     "issuer": "Stability AI",
+     "primary": true,
+     "expect": [
+      "Stable Diffusion"
+     ],
+     "issuer_site": "stability.ai"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-stable-diffusion-2022-08-22"
+  },
+  {
+   "id": "en-uk-ico-clearview-2022-05-23",
+   "date": "2022-05-23",
+   "jurisdiction": "UK",
+   "instrument": "enforcement action",
+   "stage": "in force",
+   "title": "UK ICO fines Clearview AI GBP 7.5 million",
+   "summary": "The ICO fined Clearview AI GBP 7,552,800 and ordered it to delete UK residents' data scraped from the internet for its facial-recognition database. The First-tier Tribunal overturned the decision on jurisdiction in 2023; the Upper Tribunal later found for the ICO on that point in 2025.",
+   "measures": "None directly; limits on scraping biometric data to build recognition systems.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20220615101034/https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2022/05/ico-fines-facial-recognition-database-company-clearview-ai-inc/",
+     "issuer": "Information Commissioner's Office (Internet Archive copy)",
+     "primary": false,
+     "expect": [
+      "Clearview"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The ICO notice no longer resolves at either of its ico.org.uk addresses (checked 2026-10-08); cited from the Internet Archive capture of 15 June 2022. Appeal history from secondary reporting; check the tribunal judgments before relying on it. Sources are copies or reports, not the issuer's own site, so the entry is Likely.",
+   "label": "Likely",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#en-uk-ico-clearview-2022-05-23"
+  },
+  {
+   "id": "ms-github-copilot-2021-06-29",
+   "date": "2021-06-29",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "GitHub Copilot technical preview",
+   "summary": "GitHub announced Copilot, an 'AI pair programmer' powered by OpenAI Codex and trained on public source code. It later became the subject of a class action over open-source licences (Doe v. GitHub, filed November 2022).",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/",
+     "issuer": "GitHub",
+     "primary": true,
+     "expect": [
+      "Copilot"
+     ],
+     "issuer_site": "github.blog"
+    }
+   ],
+   "quotes": [],
+   "limits": "The Doe v. GitHub lawsuit is mentioned from general knowledge, not this source.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-github-copilot-2021-06-29"
+  },
+  {
+   "id": "ms-alphafold-casp14-2020-11-30",
+   "date": "2020-11-30",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "AlphaFold 2 results at CASP14",
+   "summary": "DeepMind's AlphaFold 2 achieved a median GDT score of about 92.4 in the CASP14 protein-structure-prediction assessment, a result the organisers described as a solution to a 50-year-old grand challenge for many proteins. The 2021 Nature paper and open database followed.",
+   "measures": "Blind community assessment (CASP) as an independent benchmark.",
+   "applies": null,
+   "stamp_relevance": [
+    "independent assessment",
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+     "issuer": "Google DeepMind",
+     "primary": true,
+     "expect": [
+      "AlphaFold"
+     ],
+     "issuer_site": "deepmind.google"
+    },
+    {
+     "url": "https://www.nature.com/articles/s41586-021-03819-2",
+     "issuer": "Nature (Jumper et al. 2021)",
+     "primary": true,
+     "expect": [
+      "AlphaFold"
+     ],
+     "issuer_site": "nature.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-alphafold-casp14-2020-11-30"
+  },
+  {
+   "id": "us-or-portland-facial-ban-2020-09-09",
+   "date": "2020-09-09",
+   "jurisdiction": "US-OR",
+   "instrument": "law",
+   "stage": "signed",
+   "title": "Portland bans face recognition by city bureaus and by private entities in public places",
+   "summary": "Portland City Council approved two ordinances: one banning city bureaus from using face recognition, the other banning private entities from using it in places of public accommodation.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.portland.gov/smart-city-pdx/news/2020/9/9/city-council-approves-ordinances-banning-use-face-recognition",
+     "issuer": "City of Portland",
+     "primary": true,
+     "expect": [
+      "face recognition"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#us-or-portland-facial-ban-2020-09-09"
+  },
+  {
+   "id": "uk-ofqual-algorithm-2020-08-17",
+   "date": "2020-08-17",
+   "jurisdiction": "UK",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "England's exam regulator abandons algorithm-standardised A-level grades",
+   "summary": "After a statistical model downgraded many teachers' assessed grades, Ofqual announced that students would receive their centre assessment grades instead. A defining public controversy over algorithmic decision-making in the UK.",
+   "measures": "None.",
+   "applies": null,
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/news/statement-from-roger-taylor-chair-ofqual",
+     "issuer": "Ofqual (GOV.UK)",
+     "primary": true,
+     "expect": [
+      "Ofqual"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#uk-ofqual-algorithm-2020-08-17"
+  },
+  {
+   "id": "ms-ibm-amazon-facial-recognition-2020-06-08",
+   "date": "2020-06-08",
+   "jurisdiction": "US-FED",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "IBM exits general-purpose facial recognition; Amazon pauses police use of Rekognition",
+   "summary": "IBM's CEO wrote to Congress on 8 June 2020 that IBM no longer offers general-purpose facial recognition or analysis software and called for testing for bias. On 10 June 2020 Amazon announced a one-year moratorium on police use of Rekognition, later extended indefinitely.",
+   "measures": "Calls for vendor testing of AI systems for bias, audited and reported.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "independent assessment"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ibm.com/policy/facial-recognition-sunset-racial-justice-reforms/",
+     "issuer": "IBM",
+     "primary": true,
+     "expect": [
+      "facial recognition"
+     ],
+     "issuer_site": "ibm.com"
+    },
+    {
+     "url": "https://www.aboutamazon.com/news/policy-news-views/we-are-implementing-a-one-year-moratorium-on-police-use-of-rekognition",
+     "issuer": "Amazon",
+     "primary": true,
+     "expect": [
+      "moratorium"
+     ],
+     "issuer_site": "aboutamazon.com"
+    }
+   ],
+   "quotes": [],
+   "limits": "IBM's letter URL now redirects to ibm.com/policy and the text was not retrieved (Internet Archive offline on 2026-10-08); IBM details are from contemporaneous reporting. The indefinite extension of Amazon's moratorium is also from reporting.",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-ibm-amazon-facial-recognition-2020-06-08"
+  },
+  {
+   "id": "ms-gpt3-2020-05-28",
+   "date": "2020-05-28",
+   "jurisdiction": "INTL",
+   "instrument": "milestone",
+   "stage": "published",
+   "title": "GPT-3 paper: 'Language Models are Few-Shot Learners'",
+   "summary": "OpenAI researchers described GPT-3, a 175-billion-parameter language model, and reported few-shot performance across many benchmarks. OpenAI opened an API to it in June 2020.",
+   "measures": "Benchmark-based evaluation of few-shot learning; the paper's own discussion of data contamination between training data and benchmarks.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://arxiv.org/abs/2005.14165",
+     "issuer": "arXiv (Brown et al., OpenAI)",
+     "primary": true,
+     "expect": [
+      "Few-Shot Learners"
+     ],
+     "issuer_site": "arxiv.org"
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ms-gpt3-2020-05-28"
+  },
+  {
+   "id": "ct-nl-syri-2020-02-05",
+   "date": "2020-02-05",
+   "jurisdiction": "NL",
+   "instrument": "court ruling",
+   "stage": "decided",
+   "title": "The Hague District Court strikes down SyRI, the Dutch welfare-fraud risk algorithm",
+   "summary": "Held that the legislation for SyRI (System Risk Indication), which linked government data to flag people for welfare-fraud investigation, violated the right to private life in Article 8 of the European Convention on Human Rights, citing its lack of transparency.",
+   "measures": "Transparency and verifiability of a government risk-scoring model (absent here).",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBDHA:2020:865",
+     "issuer": "Rechtspraak.nl (ECLI:NL:RBDHA:2020:865)",
+     "primary": true,
+     "expect": [
+      "Rechtspraak"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "none",
+   "label": "Supported",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#ct-nl-syri-2020-02-05"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "a new United Nations entity to support collective efforts to govern this extraordinary technology",
+     "speaker": "António Guterres, UN Secretary-General",
+     "source": "https://www.un.org/sg/en/content/sg/statements/2023-07-18/secretary-generals-remarks-the-security-council-artificial-intelligence-bilingual-delivered-scroll-down-for-all-english",
+     "record": "official UN transcript"
+    }
+   ],
+   "limits": "none",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "un-guterres-unsc-ai-2023-07-18",
+   "date": "2023-07-18",
+   "jurisdiction": "UN",
+   "title": "UN Secretary-General addresses the Security Council's first debate on AI",
+   "summary": "At the first Security Council debate on artificial intelligence, convened by the United Kingdom, the Secretary-General welcomed calls for a new UN entity to support collective governance of AI, citing bodies such as the International Atomic Energy Agency as models.",
+   "measures": "None stated.",
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.un.org/sg/en/content/sg/statements/2023-07-18/secretary-generals-remarks-the-security-council-artificial-intelligence-bilingual-delivered-scroll-down-for-all-english",
+     "issuer": "United Nations Secretary-General",
+     "primary": true,
+     "expect": [
+      "first debate"
+     ]
+    }
+   ],
+   "label": "Supported",
+   "permalink": "https://protocolstamp.com/chronicle/#un-guterres-unsc-ai-2023-07-18"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "I believe we need a similar body for AI",
+     "speaker": "Ursula von der Leyen, President of the European Commission",
+     "source": "https://ec.europa.eu/commission/presscorner/detail/en/speech_23_4426",
+     "record": "official Commission transcript"
+    }
+   ],
+   "limits": "The Commission page does not print the date; 13 September 2023 is from contemporaneous press reports.",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "eu-vdl-soteu-ai-2023-09-13",
+   "date": "2023-09-13",
+   "jurisdiction": "EU",
+   "title": "Commission President von der Leyen proposes an IPCC-style global panel for AI (State of the Union 2023)",
+   "summary": "In her 2023 State of the Union address, the Commission President cited the warning on the risk of extinction from AI and proposed a global scientific panel for AI on the model of the IPCC.",
+   "measures": "None stated.",
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_23_4426",
+     "issuer": "European Commission (Press corner)",
+     "primary": true,
+     "expect": [
+      "IPCC"
+     ]
+    },
+    {
+     "url": "https://thepeninsulaqatar.com/article/13/09/2023/eu-chief-wants-global-expert-panel-on-ai",
+     "issuer": "The Peninsula (secondary)",
+     "primary": false
+    }
+   ],
+   "label": "Supported",
+   "permalink": "https://protocolstamp.com/chronicle/#eu-vdl-soteu-ai-2023-09-13"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "could kill a transformative industry just as it's taking off",
+     "speaker": "JD Vance, Vice President of the United States",
+     "source": "https://www.presidency.ucsb.edu/documents/remarks-the-vice-president-the-artificial-intelligence-action-summit-paris-france",
+     "record": "transcript, American Presidency Project"
+    }
+   ],
+   "limits": "No White House copy was found (404); the transcript is from a university archive. Non-signature of the statement is from the Paris statement entry's sources.",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "us-fed-vance-paris-2025-02-11",
+   "date": "2025-02-11",
+   "jurisdiction": "US-FED",
+   "title": "Vice President Vance at the Paris AI Action Summit argues against excessive AI regulation",
+   "summary": "At the AI Action Summit in Paris, the Vice President said the United States would favour pro-growth AI policies and argued that excessive regulation could harm the AI industry. The US did not sign the summit statement.",
+   "measures": "None stated.",
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.presidency.ucsb.edu/documents/remarks-the-vice-president-the-artificial-intelligence-action-summit-paris-france",
+     "issuer": "The American Presidency Project, UC Santa Barbara (transcript archive)",
+     "primary": false
+    }
+   ],
+   "label": "Likely",
+   "permalink": "https://protocolstamp.com/chronicle/#us-fed-vance-paris-2025-02-11"
+  },
+  {
+   "applies": null,
+   "quotes": [
+    {
+     "text": "another industrial revolution and to developments in the field of artificial intelligence",
+     "speaker": "Pope Leo XIV",
+     "source": "https://www.vatican.va/content/leo-xiv/en/speeches/2025/may/documents/20250510-collegio-cardinalizio.html",
+     "record": "official Vatican transcript"
+    }
+   ],
+   "limits": "none",
+   "added": "2026-10-08",
+   "checked": "2026-10-08",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-08",
+    "how": "in chat: \"post everything on our site\""
+   },
+   "instrument": "speech",
+   "stage": "statement",
+   "id": "va-pope-leo-cardinals-ai-2025-05-10",
+   "date": "2025-05-10",
+   "jurisdiction": "VA",
+   "title": "Pope Leo XIV ties his papal name to AI in his first address to the College of Cardinals",
+   "summary": "Explaining his choice of name, the new pope recalled Leo XIII's response to the first industrial revolution and said the Church offers its social teaching in response to developments in artificial intelligence that challenge human dignity, justice and labour.",
+   "measures": "None stated.",
+   "stamp_relevance": [],
+   "sources": [
+    {
+     "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2025/may/documents/20250510-collegio-cardinalizio.html",
+     "issuer": "The Holy See (vatican.va)",
+     "primary": true,
+     "expect": [
+      "artificial intelligence"
+     ]
+    }
+   ],
+   "label": "Supported",
+   "permalink": "https://protocolstamp.com/chronicle/#va-pope-leo-cardinals-ai-2025-05-10"
+  }
+ ],
+ "rejected": []
+}
