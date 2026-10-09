@@ -6048,6 +6048,301 @@
     "how": "in chat: \"add ... like a library for others\""
    },
    "permalink": "https://protocolstamp.com/docket/#intl-achpr-res473-2021-02-25"
+  },
+  {
+   "id": "us-fed-dodd-3000-09-2023-01-25",
+   "date": "2023-01-25",
+   "jurisdiction": "US-FED",
+   "instrument": "directive",
+   "stage": "in force",
+   "title": "US DoD Directive 3000.09 updated: Autonomy in Weapon Systems",
+   "summary": "The Department of Defense updated its policy for autonomous and semi-autonomous weapon systems. Systems must be designed to let commanders and operators exercise appropriate levels of human judgment over the use of force, and most need senior-level review before formal development and again before fielding. A national security memorandum of 5 June 2026 (NSPM-11) ordered the directive rewritten.",
+   "measures": "Verification and validation, and test and evaluation, of autonomous weapon systems before fielding; senior review before development and before fielding. The department has not published how many systems it has reviewed.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf",
+     "issuer": "US Department of Defense (directive text)",
+     "primary": true
+    },
+    {
+     "url": "https://www.congress.gov/crs-product/IN12669",
+     "issuer": "Congressional Research Service",
+     "primary": false
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Department_of_Defense_Directive_3000.09",
+     "issuer": "Wikipedia",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "The directive text was not retrieved; the summary rests on the Congressional Research Service and other secondary accounts. Whether the rewrite ordered by NSPM-11 within 90 days has been issued was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#us-fed-dodd-3000-09-2023-01-25"
+  },
+  {
+   "id": "us-fed-dow-ai-first-memo-2026-01-09",
+   "date": "2026-01-09",
+   "jurisdiction": "US-FED",
+   "instrument": "directive",
+   "stage": "signed",
+   "title": "US Defense Secretary memo: an 'AI-first' department and 'any lawful use' terms in AI contracts",
+   "summary": "A memo from the Secretary of Defense, styled Secretary of War, directs the department to adopt AI across all components and to use models without vendor usage-policy limits. The Under Secretary for Acquisition and Sustainment is to add standard 'any lawful use' language to every contract that procures AI services within 180 days. Companion memos reorganised the department's AI and technology offices. The policy led to the department's dispute with Anthropic.",
+   "measures": "Benchmarks for model objectivity from the Chief Digital and AI Office within 90 days, as reported; expanded AI compute at the tactical edge. No public test or pass mark.",
+   "applies": "2026-07-08",
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://defensescoop.com/2026/01/13/hegseth-ai-tech-hubs-reorganization-dod-dow/",
+     "issuer": "DefenseScoop",
+     "primary": false
+    },
+    {
+     "url": "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors",
+     "issuer": "Holland & Knight",
+     "primary": false
+    },
+    {
+     "url": "https://www.lawfaremedia.org/article/military-ai-policy-by-contract--the-limits-of-procurement-as-governance",
+     "issuer": "Lawfare",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "No department text of the memo was retrieved. The applies date is 180 days after 9 January 2026, computed from the reported deadline. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#us-fed-dow-ai-first-memo-2026-01-09"
+  },
+  {
+   "id": "us-fed-nspm-11-2026-06-05",
+   "date": "2026-06-05",
+   "jurisdiction": "US-FED",
+   "instrument": "directive",
+   "stage": "signed",
+   "title": "NSPM-11: Artificial Intelligence in the National Security Enterprise",
+   "summary": "A national security presidential memorandum directs the Department of War, the intelligence community and other national security agencies to speed AI adoption, under four pillars: adoption, adaptation, assurance and accountability. It rescinds and replaces the 2024 memorandum NSM-25, bars commercial vendors from disabling, degrading or modifying an AI system warfighters depend on without government approval, and orders DoD Directive 3000.09 on autonomy in weapon systems rewritten within 90 days.",
+   "measures": "Assurance of AI used for national security; an AI governance policy for national security systems and a rewritten Directive 3000.09 within 90 days; procurement processes updated before 3 October 2026 so models from several vendors can be onboarded.",
+   "applies": "2026-09-03",
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.globalsecurity.org/military/library/news/2026/06/mil-260605-whitehouse01.htm",
+     "issuer": "The White House (text as reproduced by GlobalSecurity.org)",
+     "primary": false
+    },
+    {
+     "url": "https://smallwarsjournal.com/2026/06/08/speed-over-caution-what-nspm-11-means/",
+     "issuer": "Small Wars Journal",
+     "primary": false
+    },
+    {
+     "url": "https://thenextweb.com/news/trump-orders-the-military-to-adopt-ai-faster-protect-models-from-china-and-never-let-a-vendor-pull-the-plug",
+     "issuer": "The Next Web",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "The memorandum was read only as reproduced by a third party. The applies date is the 90-day deadline as reported. Whether the rewritten Directive 3000.09 was issued was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#us-fed-nspm-11-2026-06-05"
+  },
+  {
+   "id": "uk-mod-jsp936-2024-11-14",
+   "date": "2024-11-14",
+   "jurisdiction": "UK",
+   "instrument": "directive",
+   "stage": "published",
+   "title": "UK Ministry of Defence JSP 936: Dependable AI in Defence (Part 1: Directive)",
+   "summary": "The Ministry of Defence's principal policy for adopting AI safely and responsibly. It turns the department's AI ethical principles into direction on governance, development and assurance across the AI lifecycle, and has each part of the MOD name a Responsible AI Senior Officer. It follows the 2022 Defence AI Strategy and the 'Ambitious, Safe, Responsible' policy; the first Responsible AI Senior Officers' report followed in 2025.",
+   "measures": "Assurance of AI systems across their lifecycle; governance and development requirements; a Responsible AI Senior Officer in each MOD component, reporting on progress.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/jsp-936-dependable-artificial-intelligence-ai-in-defence-part-1-directive",
+     "issuer": "UK Ministry of Defence",
+     "primary": true
+    },
+    {
+     "url": "https://assets.publishing.service.gov.uk/media/6735fc89f6920bfb5abc7b62/JSP936_Part1.pdf",
+     "issuer": "UK Ministry of Defence (directive text)",
+     "primary": true
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/laying-the-groundwork-responsible-ai-senior-officers-report-2025",
+     "issuer": "UK Ministry of Defence (2025 report)",
+     "primary": true
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "The date is taken from the upload time encoded in the published PDF's address; the publication page was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#uk-mod-jsp936-2024-11-14"
+  },
+  {
+   "id": "intl-us-political-declaration-2023-02-16",
+   "date": "2023-02-16",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "statement",
+   "title": "Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy",
+   "summary": "A non-binding declaration launched by the United States at the first REAIM summit sets out measures for military use of AI, including compliance with international humanitarian law and human responsibility. 31 states had endorsed it by November 2023 and about 50 by 2024; China, Russia, India, Israel, Brazil and Saudi Arabia had not, as of March 2024. Endorsing states meet each year.",
+   "measures": "Testing and assurance of military AI capabilities and human responsibility for their use; the text was not retrieved for this entry.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy",
+     "issuer": "US Department of State",
+     "primary": true
+    },
+    {
+     "url": "https://www.foxnews.com/us/us-holds-conference-military-ai-use-dozens-allies-determine-responsible-use",
+     "issuer": "Fox News",
+     "primary": false
+    },
+    {
+     "url": "https://www.lawfaremedia.org/article/making-unilateral-norms-military-ai-multilateral",
+     "issuer": "Lawfare",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "Endorsement counts differ by source and date (45, 49, 53 and 54 were all reported in 2024); no 2026 count was found. The launch date is from contemporaneous accounts of the 2023 REAIM summit. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-us-political-declaration-2023-02-16"
+  },
+  {
+   "id": "intl-nato-ai-strategy-rev-2024-07-10",
+   "date": "2024-07-10",
+   "jurisdiction": "INTL",
+   "instrument": "strategy",
+   "stage": "adopted",
+   "title": "NATO publishes a summary of its revised AI strategy",
+   "summary": "The revision updates NATO's 2021 AI Strategy to speed safe and responsible use of AI across the Alliance. It prioritises putting NATO's six Principles of Responsible Use into practice (lawfulness; responsibility and accountability; explainability and traceability; reliability; governability; bias mitigation), interoperability and work with industry and academia, and names AI-enabled disinformation and information operations as concerns.",
+   "measures": "Implementation of the Principles of Responsible Use, including reliability and traceability of AI systems. No public test or pass mark.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy",
+     "issuer": "NATO",
+     "primary": true
+    },
+    {
+     "url": "https://www.globalsecurity.org/military/library/news/2024/07/mil-240710-nato06.htm",
+     "issuer": "GlobalSecurity.org",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-nato-ai-strategy-rev-2024-07-10"
+  },
+  {
+   "id": "intl-reaim-coruna-2026-02-05",
+   "date": "2026-02-05",
+   "jurisdiction": "INTL",
+   "instrument": "statement",
+   "stage": "adopted",
+   "title": "REAIM 2026 in A Coruña adopts 'Pathways to Action' on military AI",
+   "summary": "The third summit on Responsible AI in the Military Domain, held by Spain's foreign and defence ministries over two days ending 5 February 2026, adopted a declaration on putting responsible development, deployment and use of military AI into practice, including human responsibility over AI-enabled weapons and command chains and sharing information on national oversight. The United States and China did not endorse it. The document stays open to further states.",
+   "measures": "States share information on their national oversight of military AI; human responsibility and accountability over AI-enabled weapons.",
+   "applies": null,
+   "stamp_relevance": [
+    "transparency",
+    "human oversight"
+   ],
+   "sources": [
+    {
+     "url": "https://www.exteriores.gob.es/es/REAIM2026/paginas/default.aspx",
+     "issuer": "Ministerio de Asuntos Exteriores, Spain",
+     "primary": true
+    },
+    {
+     "url": "https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/Exteriores-clausura-en-A-Coruna-el-mayor-debate-mundial-sobre-el-uso-responsable-de-la-IA-militar.aspx",
+     "issuer": "Ministerio de Asuntos Exteriores, Spain (press release)",
+     "primary": true
+    },
+    {
+     "url": "https://thedefensewatch.com/policy-strategy/us-and-china-refuse-to-sign-military-ai-declaration-at-reaim-summit/",
+     "issuer": "The Defense Watch",
+     "primary": false
+    }
+   ],
+   "quotes": [],
+   "label": "Likely",
+   "limits": "Endorsement counts differ: 34 or 35 of about 85 attending states at the summit, as reported; more than 40 per the organisers later, and about 45 on the ministry's list as read in a search result. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"you can post everything under SI and military now\""
+   },
+   "permalink": "https://protocolstamp.com/docket/#intl-reaim-coruna-2026-02-05"
   }
  ],
  "rejected": [
