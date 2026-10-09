@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08",
+ "built": "2026-10-09",
  "not_legal_advice": true,
  "entries": [
   {
@@ -1668,6 +1668,49 @@
    ],
    "label": "Supported",
    "permalink": "https://protocolstamp.com/chronicle/#va-pope-leo-cardinals-ai-2025-05-10"
+  },
+  {
+   "id": "za-ai-policy-withdrawn-2026-04-26",
+   "date": "2026-04-26",
+   "jurisdiction": "ZA",
+   "instrument": "statement",
+   "stage": "withdrawn",
+   "title": "South Africa withdraws its draft National AI Policy after fictitious references are found",
+   "summary": "The Minister of Communications and Digital Technologies withdrew the draft National AI Policy, approved by Cabinet on 25 March 2026 and gazetted for comment, after internal checks confirmed that its reference list contained fictitious sources, which he linked to unverified AI-generated citations. Cabinet approved the withdrawal; a revised policy is to return for comment.",
+   "measures": "None directly; a case of unverified AI-generated citations in an official policy draft.",
+   "applies": null,
+   "stamp_relevance": [
+    "evaluation method"
+   ],
+   "sources": [
+    {
+     "url": "https://www.sanews.gov.za/south-africa/minister-announces-withdrawal-draft-ai-policy",
+     "issuer": "SAnews (South African Government News Agency)",
+     "primary": true,
+     "expect": [
+      "withdrawal"
+     ]
+    },
+    {
+     "url": "https://www.sanews.gov.za/south-africa/cabinet-approves-withdrawal-ai-policy",
+     "issuer": "SAnews (South African Government News Agency)",
+     "primary": true,
+     "expect": [
+      "withdrawal"
+     ]
+    }
+   ],
+   "quotes": [],
+   "limits": "The link to AI-generated citations is from the Minister's budget vote speech as reported; the gazetted withdrawal notice was not read.",
+   "label": "Supported",
+   "added": "2026-10-09",
+   "checked": "2026-10-09",
+   "approved": {
+    "by": "Lawrence Ho",
+    "date": "2026-10-09",
+    "how": "in chat: \"add ... like a library for others\""
+   },
+   "permalink": "https://protocolstamp.com/chronicle/#za-ai-policy-withdrawn-2026-04-26"
   }
  ],
  "rejected": []
