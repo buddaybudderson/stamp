@@ -204,6 +204,7 @@ def sitemap(cal, log):
     play = "".join(f'<i style="background:{c}"></i>' for c in SWATCH)
     return ('<!-- sf:start --><nav class="sf" aria-label="Site map"><div class="sf-cols">' + cols + '</div>'
             '<div class="sf-bottom"><span>Protocol STAMP · A Budday Budderson Production</span>'
+            '<span>Protocol STAMP and bud.day are under Budday Budderson Studio LLC · 2105 Vista Oeste NW, Suite #E3993, Albuquerque, NM 87120</span>'
             f'<a class="sf-play" href="/colophon/#playground">{play}<span>The seven finishes: playground</span></a>'
             '<a href="/feed.xml">RSS</a></div></nav><!-- sf:end -->')
 
