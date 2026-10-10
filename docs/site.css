@@ -4,86 +4,13 @@
    carry their sources, and one scale from a phone to a television.
    What it keeps: IBM Plex, the seven finishes and day/night from finish.css, and the accent
    (--stamp) for measured figures, dates and sources only, never for decoration.
-   Issued documents never load this file. Bench posts load it for the header alone (body.sh-post). */
+   Only standing pages load this file; Bench posts and issued documents load chrome.css alone. */
 
 :root{--r-sm:6px;--r-md:10px;--r-lg:16px;--shell:1180px;--read:760px;--gut:clamp(16px,4vw,32px);
   --f-sans:"IBM Plex Sans",system-ui,sans-serif;--f-serif:"IBM Plex Serif",Georgia,serif;
   --f-mono:"IBM Plex Mono",ui-monospace,monospace;--hdr:60px}
 
-/* ---------- one scale, phone to television ----------
-   A television is read from across a room: the same layout, drawn larger. zoom keeps every
-   measurement in proportion; the media query reads the screen before the zoom, so it cannot loop. */
-@media (min-width:1900px){html{zoom:1.18}}
-@media (min-width:2500px){html{zoom:1.5}}
-@media (min-width:3400px){html{zoom:2}}
-
-/* ---------- header ---------- */
-.sh{position:fixed;inset:0 0 auto;z-index:45;height:var(--hdr);
-  background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:saturate(1.4) blur(12px);
-  -webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--rule-soft)}
-.sh-in{max-width:var(--shell);height:100%;margin:0 auto;padding:0 var(--gut);display:flex;align-items:center;gap:6px}
-.sh-brand{display:flex;align-items:center;gap:9px;margin-right:14px;color:var(--ink);text-decoration:none;
-  font:700 16px/1 var(--f-sans);letter-spacing:-.01em;white-space:nowrap}
-.sh-brand svg{width:26px;height:26px}
-.sh-nav{display:flex;align-items:center;gap:2px;height:100%}
-.sh-item{position:relative;height:100%;display:flex;align-items:center}
-.sh-top{display:inline-flex;align-items:center;gap:5px;height:36px;padding:0 11px;border:0;border-radius:8px;
-  background:none;color:var(--ink-2);font:500 14px/1 var(--f-sans);text-decoration:none;cursor:pointer;white-space:nowrap}
-.sh-top:hover,.sh-item.open .sh-top,.sh-item:focus-within .sh-top{color:var(--ink);background:var(--sunk)}
-.sh-top[aria-current="true"]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--stamp)}
-.sh-top .chev{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .15s}
-.sh-item.open .chev{transform:rotate(180deg)}
-.sh-panel{position:absolute;top:calc(100% - 6px);left:-8px;min-width:340px;display:none;padding:10px;
-  background:var(--surface);border:1px solid var(--rule-soft);border-radius:var(--r-lg);
-  box-shadow:0 24px 60px -24px rgba(0,0,0,.45)}
-.sh-item.open .sh-panel{display:grid}
-@media (hover:hover){.sh-item:hover .sh-panel{display:grid}.sh-item:hover .chev{transform:rotate(180deg)}}
-.sh-panel a{display:grid;grid-template-columns:34px 1fr;gap:2px 12px;padding:10px;border-radius:10px;
-  color:var(--ink);text-decoration:none}
-.sh-panel a:hover,.sh-panel a:focus-visible{background:var(--sunk)}
-.sh-panel .i{grid-row:1/3;width:34px;height:34px;border-radius:9px;background:var(--sunk);display:grid;place-items:center;color:var(--ink-2)}
-.sh-panel a:hover .i{background:var(--paper)}
-.sh-panel .i svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.sh-panel b{font:600 14px/1.3 var(--f-sans)}
-.sh-panel small{font:400 12.5px/1.4 var(--f-sans);color:var(--ink-3)}
-.sh-panel .sep{grid-column:1/-1;height:1px;background:var(--rule-soft);margin:6px 4px}
-.sh-tools{margin-left:auto;display:flex;align-items:center;gap:8px}
-.sh-search{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 10px;border:1px solid var(--rule-soft);
-  border-radius:9px;background:var(--surface);color:var(--ink-3);font:400 13px/1 var(--f-sans);cursor:pointer}
-.sh-search:hover{border-color:var(--rule);color:var(--ink-2)}
-.sh-search svg,.sh-menu svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round}
-.sh-search kbd{font:500 10.5px/1 var(--f-mono);padding:3px 5px;border-radius:4px;background:var(--sunk);color:var(--ink-3)}
-.sh-cta{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:9px;white-space:nowrap;
-  background:var(--ink);color:var(--paper);text-decoration:none;font:600 13.5px/1 var(--f-sans)}
-.sh-cta:hover{filter:brightness(1.15)}
-.sh-menu{display:none;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--rule-soft);
-  border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer}
-/* the drawer: every section, grouped, on a phone or a tablet */
-.sh-drawer{position:fixed;inset:var(--hdr) 0 0;z-index:44;display:none;overflow-y:auto;padding:12px var(--gut) 40px;
-  background:var(--paper)}
-.sh-drawer.open{display:block}
-.sh-drawer h4{margin:22px 4px 8px;font:500 11px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--stamp)}
-.sh-drawer a{display:flex;justify-content:space-between;gap:12px;padding:13px 12px;border-bottom:1px solid var(--rule-soft);
-  color:var(--ink);text-decoration:none;font:500 16px/1.3 var(--f-sans)}
-.sh-drawer a small{color:var(--ink-3);font:400 12.5px/1.3 var(--f-sans);text-align:right}
-.sh-drawer .sh-cta{margin-top:22px;justify-content:center;height:46px;font-size:15px;border-bottom:0}
-html.sh-lock{overflow:hidden}
-@media (max-width:1180px){.sh-search span{display:none}}
-@media (max-width:1060px){.sh-nav{display:none}.sh-menu{display:inline-flex}}
-@media (max-width:560px){.sh-cta.sh-hide-s{display:none}.sh-search kbd{display:none}.sh-brand{margin-right:auto}}
-
-/* the old bars, retired everywhere the new one is drawn */
-body.has-sh{padding-top:var(--hdr)!important}
-body.has-sh header.bar,body.has-sh .bar{display:none!important}
-body.has-sh .playlink,body.has-sh .modeswitch{top:auto!important;bottom:16px}
-/* the breadcrumb a Bench post used to carry is the header's job now */
-body.sh-post>nav:first-of-type,body.sh-post nav.top{display:none}
-
-/* announcement strip under the header */
-.sh-note{border-bottom:1px solid var(--rule-soft);background:var(--sunk);padding:9px var(--gut);text-align:center;
-  font:500 12px/1.5 var(--f-mono);letter-spacing:.04em;color:var(--ink-2)}
-.sh-note b{color:var(--stamp);font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-right:8px}
-.sh-note a{color:var(--ink)}
+/* The header, menus, footer and page tools are in chrome.css, which every page loads. */
 
 /* ---------- the standing-page shell ----------
    Every standing page is the same object: a hero (title, accent rule, strap, lede) and a reading
@@ -111,6 +38,8 @@ body.rd .tablescroll{overflow-x:auto;margin:18px 0;border:1px solid var(--rule-s
 body.rd:not(.rd-home) table{width:100%;border-collapse:collapse;font:400 14.5px/1.5 var(--f-sans);margin:0}
 body.rd:not(.rd-home) th{text-align:left;font:500 10.5px/1.3 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;
   color:var(--ink-3);background:var(--sunk);padding:11px 14px;border-bottom:1px solid var(--rule-soft)}
+/* only the header row is shaded: a row-label cell keeps the page's ground, so links in it stay readable */
+body.rd:not(.rd-home) tr:not(:first-child)>th{background:none;text-transform:none;letter-spacing:0;font:500 14px/1.45 var(--f-sans);color:var(--ink)}
 body.rd:not(.rd-home) td{padding:13px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-2)}
 body.rd:not(.rd-home) tr:last-child td{border-bottom:0}
 body.rd:not(.rd-home) td:first-child{color:var(--ink);font-weight:500}
@@ -158,7 +87,7 @@ body.rd .wrap a[href^="#r"]:not(.otp-chips a):not([href="#refs"]):not([href="#re
    INFOGRAPHIC COMPONENTS. Each one states its source in the figure itself.
    ====================================================================== */
 .bleed{width:min(var(--shell) - 2*var(--gut),100vw - 2*var(--gut));position:relative;left:50%;transform:translateX(-50%)}
-.src{display:inline-block;margin-top:8px;font:400 10.5px/1.4 var(--f-mono);letter-spacing:.05em;color:var(--ink-3)}
+.src{display:inline-block;margin-top:8px;font:400 11.5px/1.45 var(--f-mono);letter-spacing:.05em;color:var(--ink-3)}
 .src a{color:inherit}
 figure.fig{margin:22px 0}
 figure.fig figcaption{margin-top:10px;font:400 12px/1.5 var(--f-mono);color:var(--ink-3);letter-spacing:.02em}
@@ -304,10 +233,7 @@ details.more>div{padding:0 18px 8px}
 .rd-home .stat .src{display:block;margin-top:6px;font-size:10.5px}
 .rd-home .stat .src a{color:var(--ink-3)}
 
-/* focus that can be seen from a sofa (remote controls move focus with the arrow keys) */
-:focus-visible{outline:3px solid var(--stamp)!important;outline-offset:3px!important;border-radius:4px}
 
-@media print{.sh,.sh-drawer,.otp,.otp-chips,.playlink,.modeswitch{display:none!important}body.has-sh{padding-top:0!important}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* home: the four feature cards read as one row; their text is a teaser, the section below has it in full */
@@ -322,29 +248,26 @@ details.more>div{padding:0 18px 8px}
 body.rd code{overflow-wrap:anywhere}
 .rd-home .fact>*,.rd-home .grid>*{min-width:0}
 body.rd .wrap a,body.sh-post a{overflow-wrap:anywhere}
-.sh-drawer a{align-items:baseline}
-.sh-drawer a>:not(small){white-space:nowrap}
-.sh-drawer a{white-space:nowrap}.sh-drawer a small{white-space:normal;flex:1 1 auto;min-width:0}
-html.sh-lock .playlink,html.sh-lock .modeswitch{display:none!important}
 
 
-/* page search, for pages that do not load redesign.css (Bench posts); the same rules */
-/* ---------- command palette ---------- */
-.pal{position:fixed;inset:0;z-index:60;display:none;background:rgba(0,0,0,.45);padding:12vh 16px 0}
-.pal.open{display:block}
-.pal-box{max-width:560px;margin:0 auto;background:var(--surface);border:1px solid var(--rule);
-  border-radius:12px;overflow:hidden;box-shadow:0 20px 60px -20px rgba(0,0,0,.5)}
-.pal input{width:100%;border:0;border-bottom:1px solid var(--rule-soft);padding:14px 16px;background:transparent;
-  color:var(--ink);font:400 15px/1.2 "IBM Plex Sans",system-ui,sans-serif;outline:none}
-.pal ul{list-style:none;margin:0;padding:6px;max-height:50vh;overflow:auto}
-.pal li a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:7px;color:var(--ink-2);
-  text-decoration:none;font-size:14px}
-.pal li a:hover,.pal li a.sel{background:var(--sunk);color:var(--ink)}
-.pal li small{margin-left:auto;color:var(--ink-3);font:400 11px/1 "IBM Plex Mono",monospace}
-.sh a,.sh button{border-bottom:0!important;text-decoration:none!important;box-shadow:none}
-.sh .sh-top[aria-current="true"]{box-shadow:inset 0 -2px 0 var(--stamp)!important}
-body.sh-post .sh,body.sh-post .sh-drawer,body.sh-post .pal{font-family:var(--f-sans)}
 .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (hover:none){.sh-search kbd{display:none}}
 body.rd:not(.rd-home) .wrap>h2{text-transform:none!important;color:var(--ink)!important;font:700 clamp(24px,3vw,32px)/1.15 var(--f-sans)!important;letter-spacing:-.025em!important;margin:48px 0 14px!important;display:flex;align-items:center;gap:10px}
+@media print{.otp,.otp-chips{display:none!important}}
+
+/* figures first: the tiles sit under the title, the introduction follows them */
+body.rd:not(.rd-home) .wrap>.kpis{margin:24px 0 8px}
+body.rd:not(.rd-home) .wrap>.kpis+.lede,body.rd:not(.rd-home) .wrap>.kpis+.sub-note{margin-top:18px}
+/* home on a phone: a shorter hero, so the four numbers are on the first screen */
+@media (max-width:640px){.rd-home .hero{padding-top:26px}.rd-home .hero h1{margin-top:14px}.rd-home .hero p.lead{font-size:15.5px;margin-top:12px}
+  .rd-home .cta{margin-top:18px}.rd-home .stats{margin-top:28px}}
+/* home cards: the teaser is clipped to four lines and can never run into the card's foot */
+.rd-home .feat .card p{max-height:6.3em;overflow:hidden!important}
+.rd-home .feat .card .more{position:relative;background:var(--surface);padding-top:6px}
+/* the strap reads as one row of tags from the left, the cite chip among them */
+body.rd:not(.rd-home) .strap{justify-content:flex-start!important}
+.rd-home .card .ch{font:600 15px/1.3 var(--f-sans)!important;margin:0!important;letter-spacing:0!important;color:var(--ink)}
+.rd-home .stat .src{font-size:11px!important}
+.rd-home .spec{background:var(--surface)!important}
+body.rd:not(.rd-home) th a{color:var(--ink);text-decoration:underline}
+body.rd .dk-viz-stats b{display:block;margin-bottom:6px;line-height:1.1}
