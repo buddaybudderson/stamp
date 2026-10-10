@@ -6099,7 +6099,7 @@
    "instrument": "directive",
    "stage": "signed",
    "title": "US Defense Secretary memo: an 'AI-first' department and 'any lawful use' terms in AI contracts",
-   "summary": "A memo from the Secretary of Defense, styled Secretary of War, directs the department to adopt AI across all components and to use models without vendor usage-policy limits. The Under Secretary for Acquisition and Sustainment is to add standard 'any lawful use' language to every contract that procures AI services within 180 days. Companion memos reorganised the department's AI and technology offices. The policy led to the department's dispute with Anthropic.",
+   "summary": "A memo from the Secretary of Defense, styled Secretary of War, directs the department to adopt AI across all components and to use models without vendor usage-policy limits. The Under Secretary for Acquisition and Sustainment is to add standard 'any lawful use' language to every contract that procures AI services within 180 days. The policy led to the department's dispute with Anthropic.",
    "measures": "Benchmarks for model objectivity from the Chief Digital and AI Office within 90 days, as reported; expanded AI compute at the tactical edge. No public test or pass mark.",
    "applies": "2026-07-08",
    "stamp_relevance": [
