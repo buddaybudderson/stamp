@@ -23,7 +23,9 @@ import argparse, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
-FROZEN = ("calibration/", "log/", "protocol/", "bench/no-1-complaint/", "bench/something-it-can-check/record/")
+FROZEN = ("protocol/",)               # the archived v1.25 page keeps its own design; run records are framed like posts
+# an issued document is framed, never edited: the frame goes around bytes that stay exactly as issued
+ISSUE = re.compile(r"^(?:(?:calibration|log)/[0-9]{3}-issued-[a-z]{3}[0-9]{8}/|bench/no-1-complaint/)index\.html$")
 POSTS = ("bench/", "writing/marking/", "writing/abstention/")
 
 # 24x24 stroke icons, drawn once here
@@ -114,6 +116,8 @@ MARK = ('<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="currentColor" 
         '<line x1="15" y1="31" x2="15" y2="69"/><line x1="85" y1="31" x2="85" y2="69"/></g>'
         '<line x1="38.11" y1="17" x2="38.11" y2="83" stroke="var(--stamp)" stroke-width="13"/></svg>')
 SEARCH = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>'
+SUN = '<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+MOON = '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>'
 BURGER = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
 
 
@@ -128,13 +132,14 @@ def header(rel, latest_cal, latest_log):
                    f'<button class="sh-top sh-x" type="button" aria-expanded="false" aria-label="{label}: show pages" style="padding:0 6px;margin-left:-6px">{CHEV}</button>'
                    f'<div class="sh-panel" role="menu">{links}</div></div>')
         drawer.append(f'<h4>{label}</h4>' + "".join(f'<a href="{e[2]}">{e[0]}<small>{e[1]}</small></a>' for e in entries if e))
-    return ('<!-- sh:start -->'
+    return ('<!-- sh:start --><a class="sx-skip" href="#main">Skip to content</a>'
             f'<header class="sh"><div class="sh-in"><a class="sh-brand" href="/">{MARK}Protocol STAMP</a>'
             f'<nav class="sh-nav" aria-label="Site">{"".join(nav)}</nav>'
-            f'<div class="sh-tools"><button class="sh-search" type="button" data-pal aria-label="Search pages">{SEARCH}<span>Search</span><kbd>Ctrl K</kbd></button>'
+            f'<div class="sh-tools"><button class="sh-mode" type="button" aria-label="Switch between day and night">{SUN}{MOON}</button>'
+            f'<button class="sh-search" type="button" data-pal aria-label="Search pages">{SEARCH}<span>Search</span><kbd>Ctrl K</kbd></button>'
             f'<a class="sh-cta sh-hide-s" href="{latest_cal}">Latest Calibration</a>'
             f'<button class="sh-menu" type="button" aria-expanded="false" aria-controls="sh-drawer">{BURGER}<span class="lab" style="position:absolute;left:-9999px">Menu</span></button></div></div></header>'
-            f'<div class="sh-drawer" id="sh-drawer"><button class="sh-search" type="button" data-pal style="width:100%;height:44px;margin-top:6px">{SEARCH}Search pages and issues</button>'
+            f'<div class="sh-drawer" id="sh-drawer"><button class="sh-search" type="button" data-pal>{SEARCH}Search pages and issues</button>'
             f'{"".join(drawer)}<a class="sh-cta" href="{latest_cal}">Latest Calibration</a></div>'
             '<!-- sh:end -->')
 
@@ -184,7 +189,63 @@ def palette_js():
 
 PAL_BLOCK = ('<div class="pal" role="dialog" aria-label="Search pages"><div class="pal-box"><input type="text" placeholder="Search pages and issues" '
              'aria-label="Search pages and issues"><ul></ul></div></div>')
-ASSETS = '<link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script>'
+OLD_ASSETS = '<link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script>'
+SWATCH = ["#E4EDF6", "#F4E3E3", "#E4EDE3", "#EBE3F5", "#F7E7D8", "#E6E9ED", "#F8EED3"]   # the seven finishes, as finish.js draws them
+
+
+def assets(kind):
+    css = '<link rel="stylesheet" href="/chrome.css">' + ('<link rel="stylesheet" href="/site.css">' if kind == "standing" else "")
+    return f'<!-- sa:start -->{css}<script src="/site.js" defer></script><!-- sa:end -->'
+
+
+def sitemap(cal, log):
+    cols = "".join(f'<div><h5>{label}</h5><ul>' + "".join(f'<li><a href="{e[2]}">{e[0]}</a></li>' for e in entries if e) + '</ul></div>'
+                   for key, label, hub, entries in groups(cal, log))
+    play = "".join(f'<i style="background:{c}"></i>' for c in SWATCH)
+    return ('<!-- sf:start --><nav class="sf" aria-label="Site map"><div class="sf-cols">' + cols + '</div>'
+            '<div class="sf-bottom"><span>Protocol STAMP · A Budday Budderson Production</span>'
+            f'<a class="sf-play" href="/colophon/#playground">{play}<span>The seven finishes: playground</span></a>'
+            '<a href="/feed.xml">RSS</a></div></nav><!-- sf:end -->')
+
+
+def issue_card(rel):
+    """The issue at a glance, from the row the archive (or, for Bench Vol 001, the home page) already prints for it."""
+    path = "/" + rel[: -len("index.html")]
+    src = (DOCS / ("index.html" if rel.startswith("bench/") else "archive/index.html")).read_text(encoding="utf-8")
+    row = next((r for r in re.findall(r'<div class="issue"[^>]*>.*?</div>', src, re.S) if f'href="{path}"' in r), None)
+    if not row:
+        return ""
+    name = re.sub(r"<[^>]+>", "", re.search(r'<span class="name">(.*?)</span>\s*<span class="links">', row, re.S).group(1)).strip()
+    meta = re.sub(r"<[^>]+>", "", re.search(r'<span class="meta">(.*?)</span>', row, re.S).group(1)).strip()
+    meta = re.sub(r"\s+", " ", meta)
+    parts = [x.strip() for x in meta.split("·")]
+    facts = []
+    issued = re.search(r"([A-Z][a-z]{2} \d{2}, \d{4})(?: (\d{2}:\d{2}))?(?: from ([A-Z][A-Za-z ]+?))?(?: ·|$)", meta)
+    if issued:
+        facts.append((issued.group(1), "issued" + (f" at {issued.group(2)} America/Chicago" if issued.group(2) else "")
+                      + (f", from {issued.group(3).strip()}" if issued.group(3) else "")))
+    for x in parts:
+        if re.fullmatch(r"\d+ pages", x):
+            facts.append((x.split()[0], "pages in the PDF"))
+        elif re.fullmatch(r"(?:one|two|three|four|five|six|seven|eight|nine|ten) findings", x):
+            facts.append((x.split()[0].capitalize(), "findings"))
+    b = re.search(r"build ([0-9a-f]{12})", meta)
+    if b:
+        facts.append((b.group(1), "build: the first 12 characters of the source’s SHA-256"))
+    links = re.findall(r'<a href="([^"]+)"[^>]*>(?:<svg.*?</svg>)?(Read|PDF|Source|Run record)</a>', row, re.S)
+    acts = "".join(f'<a href="{h}"{" class=p" if t == "PDF" else ""}>{t}</a>' for h, t in links if t != "Read")
+    exact = f"https://raw.githubusercontent.com/buddaybudderson/stamp/main/docs/{rel[: -len('index.html')]}source.html" if not rel.startswith("bench/") else ""
+    if exact: acts += f'<a href="{exact}">Exact copy</a>'
+    acts += '<a href="/archive/">Archive</a>'
+    kind = "The Calibration" if rel.startswith("calibration/") else "The Log" if rel.startswith("log/") else "The Bench"
+    tiles = "".join(f"<div><b>{v}</b><span>{k}</span></div>" for v, k in facts[:4])
+    return ('<!-- sx:start --><section class="sx-issue" aria-label="This issue at a glance"><div class="card">'
+            f'<div><span class="kind">{kind} · issued document</span><h1 class="ttl">{name}</h1><span class="meta">{meta}</span></div>'
+            f'<div class="acts">{acts}</div><div class="facts">{tiles}</div>'
+            '<p class="note">Below is the issue exactly as it was issued; nothing in it has been edited. This frame, the menu and the footer are the site’s, not the issue’s. '
+            'To check it, hash the issued file and compare the first twelve characters with the build above. Use the <b>Exact copy</b> in the public repository: '
+            'until a setting is switched off, our host adds a short bot-detection script to every page it serves, Source included, so the copy served here '
+            'does not hash to the build.</p></div></section><!-- sx:end -->')
 
 
 def latest(kind):
@@ -199,6 +260,8 @@ def latest(kind):
 def owned(rel, s):
     if rel.startswith(FROZEN):
         return None
+    if ISSUE.match(rel):
+        return "issue"
     if re.search(r'<body class="rd\b', s):
         return "standing"
     if rel.startswith(POSTS):
@@ -216,7 +279,7 @@ def apply(rel, s, kind, cal, log, pal_src):
     else:                                               # a Bench post: straight after <body>
         s = re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + "\n" + hdr, s, count=1)
     # body classes
-    want = ["has-sh"] + (["sh-post"] if kind == "post" else [])
+    want = ["has-sh"] + (["sh-post"] if kind == "post" else ["sh-issue"] if kind == "issue" else [])
     def body(m):
         cls = (m.group(1) or "").split()
         cls += [w for w in want if w not in cls]
@@ -232,14 +295,32 @@ def apply(rel, s, kind, cal, log, pal_src):
     if 'class="pal"' not in s:
         s = s.replace("<!-- sh:end -->", "<!-- sh:end -->\n" + PAL_BLOCK + pal_src, 1)
     s = re.sub(r"var P=\[.*?\];", lambda m: palette_js(), s, count=1, flags=re.S)
-    # assets, once, after redesign.css when a page has it (site.css must win over it)
-    if 'href="/site.css"' not in s:
-        if '<link rel="stylesheet" href="/redesign.css">' in s:
-            s = s.replace('<link rel="stylesheet" href="/redesign.css">', '<link rel="stylesheet" href="/redesign.css">' + ASSETS, 1)
-        else:
-            s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + ASSETS, 1)
-    # the footer's "Public bank" is the current public half
-    s = s.replace('<a href="/data/bank_v1_public.jsonl">Public bank</a>', '<a href="/data/bank_v1_1_public.jsonl">Public bank</a>')
+    # assets: chrome.css on every page, site.css on standing pages only; after redesign.css where a page has it
+    s = s.replace(OLD_ASSETS, "")
+    if "<!-- sa:start -->" in s:
+        s = re.sub(r"<!-- sa:start -->.*?<!-- sa:end -->", lambda m: assets(kind), s, count=1, flags=re.S)
+    elif '<link rel="stylesheet" href="/redesign.css">' in s:
+        s = s.replace('<link rel="stylesheet" href="/redesign.css">', '<link rel="stylesheet" href="/redesign.css">' + assets(kind), 1)
+    else:
+        s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + assets(kind), 1)
+    # the sitemap footer: before the identity footer, or at the end of an issue page
+    sm = sitemap(cal, log)
+    if "<!-- sf:start -->" in s:
+        s = re.sub(r"<!-- sf:start -->.*?<!-- sf:end -->", lambda m: sm, s, count=1, flags=re.S)
+    elif "<footer" in s and kind != "issue":          # an issue may carry a <footer> of its own; never write inside it
+        s = s.replace("<footer", sm + "\n<footer", 1)
+    else:
+        i = s.rindex("</body>"); s = s[:i] + sm + "\n" + s[i:]
+    # an issue: its card at a glance, between the old breadcrumb and the document
+    if kind == "issue":
+        card = issue_card(rel)
+        if "<!-- sx:start -->" in s:
+            s = re.sub(r"<!-- sx:start -->.*?<!-- sx:end -->", lambda m: card, s, count=1, flags=re.S)
+        elif card:
+            i = s.index("</nav>", s.index("<!-- sh:end -->")) + len("</nav>")
+            s = s[:i] + "\n" + card + s[i:]
+    # the footer's "Public bank" is the current public half (a standing page's footer; an issue keeps its own words)
+    if kind != "issue": s = s.replace('<a href="/data/bank_v1_public.jsonl">Public bank</a>', '<a href="/data/bank_v1_1_public.jsonl">Public bank</a>')
     return s, s != s0
 
 
@@ -260,6 +341,9 @@ def main():
         if not kind or (skip and rel.startswith(skip)):
             continue
         s2, ch = apply(rel, s, kind, cal, log, pal_src)
+        src = p.parent / "source.html"
+        if kind == "issue" and src.exists() and src.read_bytes() in b and src.read_bytes() not in s2.encode("utf-8"):
+            sys.exit(f"REFUSED {rel}: the issued bytes would no longer be contained exactly")
         if ch:
             changed += 1
             print(("would change  " if a.check else "changed  ") + f"{kind:8} {rel}")
