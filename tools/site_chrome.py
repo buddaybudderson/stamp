@@ -243,9 +243,8 @@ def issue_card(rel):
             f'<div><span class="kind">{kind} · issued document</span><h1 class="ttl">{name}</h1><span class="meta">{meta}</span></div>'
             f'<div class="acts">{acts}</div><div class="facts">{tiles}</div>'
             '<p class="note">Below is the issue exactly as it was issued; nothing in it has been edited. This frame, the menu and the footer are the site’s, not the issue’s. '
-            'To check it, hash the issued file and compare the first twelve characters with the build above. Use the <b>Exact copy</b> in the public repository: '
-            'until a setting is switched off, our host adds a short bot-detection script to every page it serves, Source included, so the copy served here '
-            'does not hash to the build.</p></div></section><!-- sx:end -->')
+            'To check it, download the Source and hash it: the first twelve characters of its SHA-256 are the build above. The <b>Exact copy</b> in the '
+            'public repository is the same bytes.</p></div></section><!-- sx:end -->')
 
 
 def latest(kind):
