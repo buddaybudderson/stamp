@@ -55,7 +55,18 @@ SCHEDULED = dt.time(15, 37)
 GRACE_MIN = 2          # inside this, "15:37" and the measured minute are the same event
 
 
+# The program was renamed Protocol STAMP on Sep 07, 2026 and moved to protocolstamp.com. Work
+# issued under the old name keeps it; anything this script issues from now on carries the new one.
+SITE = "https://protocolstamp.com"
+NAME = "Protocol STAMP"
+
+
 def sha(b): return hashlib.sha256(b).hexdigest()
+
+
+def house(d):
+    """The house date, the only form a reader sees: Oct 10, 2026. (%-d is not portable.)"""
+    return f"{d:%b} {d.day:02d}, {d.year}"
 
 
 def display(kind, no, date):
@@ -71,11 +82,11 @@ def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year, d
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canon}">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="The STAMP Protocol">
+<meta property="og:site_name" content="{NAME}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canon}">
-<meta property="og:image" content="https://thestampprotocol.com/og.png">
+<meta property="og:image" content="{SITE}/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -84,7 +95,7 @@ def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year, d
 <script src="/finish.js"></script>
 </head>
 <body>
-<nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; The STAMP Protocol</a> &nbsp;·&nbsp; <a href="/archive/" style="color:var(--stamp);text-decoration:none">Archive</a></nav>
+<nav style="max-width:820px;margin:0 auto;padding:18px 20px 0;font:500 11.5px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase"><a href="/" style="color:var(--stamp);text-decoration:none">&larr; {NAME}</a> &nbsp;·&nbsp; <a href="/archive/" style="color:var(--stamp);text-decoration:none">Archive</a></nav>
 '''.encode()
     released = f"{ran_at:%H:%M}"
     due = dt.datetime.combine(date, SCHEDULED, tzinfo=ZONE)
@@ -96,9 +107,9 @@ def shell(title, desc, canon, pin, frag, pdf_href, src_href, pages_note, year, d
     else:
         lateness = f", {-late} minutes before the 15:37 it was due"
     foot = f'''<p style="max-width:820px;margin:28px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Source of this page, byte-exact: <a href="{src_href}" style="color:var(--stamp)">{src_href.rsplit('/',2)[-2]}/source</a> &middot; sha256 {sha(frag)[:12]}&hellip; &middot; {len(frag):,} bytes &middot; <a href="{pdf_href}" style="color:var(--stamp)">PDF{pages_note}</a></p>
-<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Issued from {dateline} on {date:%A %-d %B %Y} at {released} America/Chicago{lateness}. The time is the moment the release ran, not the moment it was due. The dateline names where the work was done; it moves with the investigator, and each issue keeps its own.</p>
-<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: The STAMP Protocol. <i>{title}</i>. Budday Budderson Studio LLC, {year}. {canon} &middot; build {sha(frag)[:12]}. See <a href="/definitions/#cite" style="color:var(--stamp)">Definitions</a> for the form.</p>
-<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">The STAMP Protocol can make mistakes. Verify before you implement anything. An issued document is never edited, so a correction to this one is issued under a new date and this page stands as it was. See <a href="/corrections/" style="color:var(--stamp)">Corrections &amp; changes</a>.</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">Issued from {dateline} on {house(date)} at {released} America/Chicago{lateness}. The time is the moment the release ran, not the moment it was due. The dateline names where the work was done; it moves with the investigator, and each issue keeps its own.</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">To cite: {NAME}. <i>{title}</i>. Budday Budderson Studio LLC, {year}. {canon} &middot; build {sha(frag)[:12]}. See <a href="/definitions/#cite" style="color:var(--stamp)">Definitions</a> for the form.</p>
+<p style="max-width:820px;margin:-24px auto 40px;padding:0 20px;font:400 11.5px/1.7 'IBM Plex Mono',ui-monospace,monospace;color:var(--ink-3)">{NAME} can make mistakes. Verify before you implement anything. An issued document is never edited, so a correction to this one is issued under a new date and this page stands as it was. See <a href="/corrections/" style="color:var(--stamp)">Corrections + changes</a>.</p>
 </body>
 </html>
 '''.encode()
@@ -110,12 +121,37 @@ def flip_rows(html, name, links_html, meta_html):
     name ("The Log Vol 001"); the live row gets the full display name with its date.
     Works on both the home page (multi-line row) and the archive (single-line row)."""
     short_name = name.split(" · ")[0]
-    pat = re.compile(r'<div class="issue pending">\s*<span class="name">' + re.escape(short_name) +
-                     r'(?: · [A-Za-z]{3}\d{8})?</span>\s*<span class="links due">[^<]*</span>\s*<span class="meta">[^<]*</span>\s*</div>')
-    new = (f'<div class="issue">\n    <span class="name">{name}</span>\n    <span class="links">{links_html}</span>\n'
-           f'    <span class="meta">{meta_html}</span>\n  </div>')
-    out, n = pat.subn(new, html)
-    return out, n
+    # Since the Oct 02, 2026 redesign a row also carries data-kind, a kind icon, and its due note
+    # either as <span class="links due">…</span> (archive) or as a badge inside the links (home).
+    pat = re.compile(r'<div class="issue pending"(?P<attrs>(?: data-kind="[a-z]+")?)>\s*(?P<kind><span class="kind">.*?</span>)?'
+                     r'\s*<span class="name">' + re.escape(short_name) + r'(?: · [A-Za-z]{3}\d{8})?</span>\s*'
+                     r'<span class="links(?: due)?">(?:<span class="badge due">[^<]*</span>|[^<]*)</span>\s*'
+                     r'<span class="meta">[^<]*</span>\s*</div>', re.S)
+
+    def live(m):
+        return (f'<div class="issue"{m.group("attrs")}>\n    {m.group("kind") or ""}<span class="name">{name}</span>\n'
+                f'    <span class="links">{links_html}</span>\n    <span class="meta">{meta_html}</span>\n  </div>')
+    return pat.subn(live, html)
+
+
+def ico(name):
+    return f'<svg class="ico" aria-hidden="true"><use href="#i-{name}"/></svg>'
+
+
+def point_latest(kind, href):
+    """The header's "Latest Calibration" button, on every page that carries it, follows the release."""
+    if kind != "calibration":
+        return 0
+    n = 0
+    for p in DOCS.rglob("index.html"):
+        if "/calibration/" in p.as_posix() or "/log/" in p.as_posix():
+            continue                                   # issued pages are frozen
+        s = p.read_text(encoding="utf-8")
+        s2, k = re.subn(r'href="/calibration/[^"]+/"(?P<rest>[^>]*>(?:<[^>]+>)*\s*Latest Calibration)',
+                        lambda m: f'href="{href}"{m.group("rest")}', s)
+        if k and s2 != s:
+            p.write_text(s2, encoding="utf-8"); n += 1
+    return n
 
 
 def main():
@@ -152,14 +188,14 @@ def main():
         name = display(kind, no, date)
         print(f"{'would release' if a.check else 'releasing'}  {name}   {slug}  sha {sha(frag)[:12]}  {len(frag):,} bytes")
         print(f"        dateline: {dateline}")
-        print(f"        would stamp: {ran_at:%A %-d %B %Y %H:%M} America/Chicago"
-              if a.check else f"        stamped:     {ran_at:%A %-d %B %Y %H:%M} America/Chicago")
+        print(f"        would stamp: {house(ran_at)} {ran_at:%H:%M} America/Chicago"
+              if a.check else f"        stamped:     {house(ran_at)} {ran_at:%H:%M} America/Chicago")
         if a.check:
             continue
         out = DOCS / kind / short; out.mkdir(parents=True, exist_ok=True)
         (out / "source.html").write_bytes(frag)
         (DOCS / kind / f"{short}.pdf").write_bytes(pdf.read_bytes())
-        canon = f"https://thestampprotocol.com/{kind}/{short}/"
+        canon = f"{SITE}/{kind}/{short}/"
         desc = {"log": "What ran, what it cost and what moved - the derived record, written by the harness.",
                 "calibration": "The dated record of what was measured, written and signed by a person."}[kind]
         title = name
@@ -168,14 +204,20 @@ def main():
         (out / "index.html").write_bytes(wrapped)
         assert frag in (out / "index.html").read_bytes() and sha((out / "source.html").read_bytes()) == sha(frag)
         # flip the pending rows
-        links = f'<a href="/{kind}/{short}/">Read</a> · <a href="/{kind}/{short}.pdf">PDF</a> · <a href="/{kind}/{short}/source">Source</a>'
-        meta = f"Issued {date:%b} {date.day:02d}, {date.year} {ran_at:%H:%M} from {dateline.split(',')[0].strip()} · build {sha(frag)[:12]}"
+        links = (f'<a href="/{kind}/{short}/">{ico("arrow")}Read</a> · <a href="/{kind}/{short}.pdf">{ico("file")}PDF</a> · '
+                 f'<a href="/{kind}/{short}/source">{ico("code")}Source</a>')
+        meta = f"Issued {house(date)} {ran_at:%H:%M} from {dateline.split(',')[0].strip()} · build {sha(frag)[:12]}"
         for page in ("index.html", "archive/index.html"):
             p = DOCS / page; s = p.read_text(encoding="utf-8")
             s2, n = flip_rows(s, name, links, meta)
             if n == 0:
-                print(f"  note: no pending row named '{name}' on {page}; leaving it unchanged")
+                print(f"  WARNING: no pending row named '{name}' on {page}; it still reads 'Not yet published'")
+            else:
+                print(f"  flipped {n} row(s) on {page}")
             p.write_text(s2, encoding="utf-8")
+        k = point_latest(kind, f"/{kind}/{short}/")
+        if k:
+            print(f"  'Latest Calibration' now points at /{kind}/{short}/ on {k} page(s)")
         # sitemap
         sm = DOCS / "sitemap.xml"; t = sm.read_text(encoding="utf-8")
         if canon not in t:
