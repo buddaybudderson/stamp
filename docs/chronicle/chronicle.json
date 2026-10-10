@@ -1,5 +1,5 @@
 {
- "built": "2026-10-09",
+ "built": "2026-10-10",
  "not_legal_advice": true,
  "entries": [
   {
@@ -1979,7 +1979,7 @@
    "instrument": "milestone",
    "stage": "published",
    "title": "UN expert group on lethal autonomous weapons ends its last session without a binding instrument",
-   "summary": "The CCW Group of Governmental Experts met from 31 August 2026 to 4 September 2026 for the last time under its mandate and ended without a legally binding agreement. Its rolling text of elements for an instrument, carried in a draft report, goes to the Seventh CCW Review Conference in November 2026. Brazil, for 47 states, and the African Group called the text a sufficient basis for negotiation.",
+   "summary": "The CCW Group of Governmental Experts held its last session under its mandate from Aug 31, 2026. It ran into the early hours of Sep 05, 2026 and adopted a final report, without a legally binding agreement; Human Rights Watch called the text significantly watered down. The report goes to the Seventh CCW Review Conference in November 2026. 76 states now support negotiating a legally binding instrument.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -1998,13 +1998,18 @@
      "url": "https://automatedresearch.org/news/over-70-states-support-rolling-text-as-basis-for-negotiations/",
      "issuer": "Automated Research",
      "primary": false
+    },
+    {
+     "url": "https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-ends-with-calls-for-negotiations-growing",
+     "issuer": "Human Rights Watch",
+     "primary": false
     }
    ],
    "quotes": [],
-   "limits": "Whether the final report was adopted by consensus was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Corrected Oct 10, 2026: the entry first said the session ended Sep 04, 2026 with a draft report. The UN's final report was not retrieved; the timing, the adoption and the 76 states come from Human Rights Watch (Sep 07, 2026), read in full from an archived copy. Whether it was adopted by consensus is not confirmed.",
    "label": "Likely",
    "added": "2026-10-09",
-   "checked": "2026-10-09",
+   "checked": "2026-10-10",
    "approved": {
     "by": "Lawrence Ho",
     "date": "2026-10-09",
