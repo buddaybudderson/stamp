@@ -177,3 +177,15 @@ html[data-finish="saturn"]:not([data-mode="night"]) body.sh-post{--ink-3:#545F6C
 html[data-finish="sun"]:not([data-mode="night"]) body.sh-post{--ink-3:#6C6246}
 .sx-crumbs i{color:var(--ink-3)}
 body.sh-post .spec{background:var(--surface)!important}
+
+/* an issued document styles its own elements (header, nav, a, h1, footer); none of that may reach the site's frame */
+header.sh{padding:0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--rule-soft)!important;height:var(--hdr)!important;max-width:none!important;box-sizing:border-box}
+.sh *,.sh-drawer *,.sf *,.sx-issue *{box-sizing:border-box}
+.sh .sh-brand,.sh .sh-top,.sh .sh-cta{padding-top:0!important;padding-bottom:0!important}
+.sh .sh-brand{display:flex!important;gap:9px!important}.sh .sh-cta{display:inline-flex!important}
+.sh-panel a{display:grid!important;padding:9px 10px!important}
+nav.sf{margin:64px auto 0!important;border-bottom:0!important}
+/* "On this page" sits in the page's own layout column, so a scaled page (a television) cannot slide it over the text */
+.otp-col{position:absolute;top:0;bottom:0;left:var(--gut);width:200px;display:none}
+.otp-col .otp{position:sticky;top:calc(var(--hdr) + 56px);left:auto;display:block}
+@media (min-width:1320px){.otp-col{display:block}body .otp:not(.otp-col .otp){display:none}}

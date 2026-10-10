@@ -58,7 +58,7 @@ body.rd:not(.rd-home) td:first-child{color:var(--ink);font-weight:500}
 body.rd ol.refs{font-size:13.5px;line-height:1.5;color:var(--ink-2);padding-left:2.2em}
 body.rd ol.refs li{margin:0 0 7px}
 body.rd ol.refs li:target{background:var(--stamp-soft);border-radius:4px;outline:4px solid var(--stamp-soft)}
-body.rd .wrap a[href^="#r"]:not(.otp-chips a):not([href="#refs"]):not([href="#register"]){font:500 11px/1 var(--f-mono);text-decoration:none;vertical-align:1px;margin-left:1px}
+body.rd .wrap a[href^="#r"]:not(.otp-chips a):not(.otp a):not([href="#refs"]):not([href="#register"]){font:500 11px/1 var(--f-mono);text-decoration:none;vertical-align:1px;margin-left:1px}
 
 /* ---------- on this page: a rail on wide screens, a chip row on narrow ones (site.js builds it) ---------- */
 .otp{position:fixed;top:calc(var(--hdr) + 56px);left:max(var(--gut),calc((100vw - var(--shell))/2 + var(--gut)));width:200px;
@@ -271,3 +271,4 @@ body.rd:not(.rd-home) .strap{justify-content:flex-start!important}
 .rd-home .spec{background:var(--surface)!important}
 body.rd:not(.rd-home) th a{color:var(--ink);text-decoration:underline}
 body.rd .dk-viz-stats b{display:block;margin-bottom:6px;line-height:1.1}
+body.rd.has-otp:not(.rd-home) .wrap{position:relative}

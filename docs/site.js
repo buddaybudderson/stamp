@@ -121,7 +121,7 @@
     function mk(cls,title){ var n=d.createElement("nav"); n.className=cls; n.setAttribute("aria-label","On this page");
       n.innerHTML=(title?'<p>On this page</p>':"")+links.map(function(l){return '<a href="#'+l.id+'">'+l.t.replace(/</g,"&lt;")+'</a>';}).join("");
       return n; }
-    var rail=mk("otp",true); d.body.appendChild(rail); d.body.classList.add("has-otp");
+    var rail=mk("otp",true), col=el("div","otp-col"), wrapEl=d.querySelector(".wrap"); col.appendChild(rail); (wrapEl||d.body).appendChild(col); d.body.classList.add("has-otp");
     var chips=mk("otp-chips",false), anchor=d.querySelector(".wrap .lede")||d.querySelector(".wrap .strap");
     if(anchor) anchor.insertAdjacentElement("afterend",chips);
     if("IntersectionObserver" in window){
