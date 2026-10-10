@@ -347,3 +347,4 @@ body.sh-post .sh,body.sh-post .sh-drawer,body.sh-post .pal{font-family:var(--f-s
 .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (hover:none){.sh-search kbd{display:none}}
+body.rd:not(.rd-home) .wrap>h2{text-transform:none!important;color:var(--ink)!important;font:700 clamp(24px,3vw,32px)/1.15 var(--f-sans)!important;letter-spacing:-.025em!important;margin:48px 0 14px!important;display:flex;align-items:center;gap:10px}

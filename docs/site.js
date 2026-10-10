@@ -46,6 +46,11 @@
         if(td.tagName==="TD" && heads[i]) td.setAttribute("data-label",heads[i]); }); });
     });
 
+    // live counts on lists: a tile that counts rows cannot drift from them
+    d.querySelectorAll("[data-count]").forEach(function(el){ el.textContent=d.querySelectorAll(el.getAttribute("data-count")).length; });
+    d.querySelectorAll("[data-next]").forEach(function(el){ var n=d.querySelector(el.getAttribute("data-next"));
+      if(n){ el.textContent=n.textContent.trim(); } else { el.textContent="Nothing due"; } });
+
     // live counts on the register: the tiles count the rows, so they cannot drift from them
     var rows=[].slice.call(d.querySelectorAll("#register table tr")).filter(function(tr){return tr.children[1] && tr.children[1].tagName==="TD";});
     if(rows.length){
