@@ -32,17 +32,20 @@ import argparse, json, pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 # v1.1 (2026-10-05) is v1 with two probes reclassified as public: 01_arithmetic_076 was
-# public before the split, and 14_provenance_002's subject was named on the site. The
-# gate guards what is held out NOW, so it reads v1.1; measurement keeps reading v1 so
-# every published figure recomputes as issued. STAMP_BANK overrides both.
+# public before the split, and 14_provenance_002's subject was named on the site.
+# v1.2 (2026-10-10) reclassifies eight more whose text (one reworded) has been in tests/PROBES.md since
+# 2026-07-24. The gate guards what is held out NOW, so it reads the newest bank;
+# measurement keeps reading v1 so every published figure recomputes as issued.
+# STAMP_BANK overrides both.
 import os as _os
 BANK = pathlib.Path(_os.environ["STAMP_BANK"]) if _os.environ.get("STAMP_BANK") else \
-    next(p for p in (ROOT / "bank" / "bank_v1_1.jsonl", ROOT / "bank" / "bank_v1.jsonl")
+    next(p for p in (ROOT / "bank" / "bank_v1_2.jsonl", ROOT / "bank" / "bank_v1_1.jsonl", ROOT / "bank" / "bank_v1.jsonl")
          if p.exists() or p.name == "bank_v1.jsonl")
 
 # Files that may NEVER be tracked, whatever they contain.
 FORBIDDEN_NAMES = {
-    "bank_v1_1.jsonl":    "the full bank v1.1 - contains all 26 held-out probes",
+    "bank_v1_2.jsonl":    "the full bank v1.2 - contains all 18 held-out probes",
+    "bank_v1_1.jsonl":    "the full bank v1.1 - contains the 26 probes held out before v1.2",
     "bank_v1.jsonl":      "the full bank v1 - contains the 28 probes held out before v1.1",
     "pilot_v1.jsonl":     "source bank - contains held-out probes",
     "provenance_v1.jsonl": "source bank - contains held-out probes",
