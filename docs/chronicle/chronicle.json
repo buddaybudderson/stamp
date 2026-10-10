@@ -1754,7 +1754,7 @@
    "instrument": "resolution",
    "stage": "decided",
    "title": "UN General Assembly resolution 80/57 on lethal autonomous weapons systems",
-   "summary": "The General Assembly's third consecutive resolution on lethal autonomous weapons systems, approved in the First Committee on 6 November 2025. It urges the CCW Group of Governmental Experts to complete a set of elements for an instrument, with a view to future negotiation. 156 states supported it, as reported by the Stop Killer Robots campaign.",
+   "summary": "The General Assembly's third consecutive resolution on lethal autonomous weapons systems. It urges the CCW expert group to complete elements for an instrument, with a view to negotiation. The First Committee approved it on Nov 06, 2025 by 156 to 5, with 8 abstentions; the Assembly adopted it on Dec 01, 2025 by 164 to 6, with 7 abstentions.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -1771,7 +1771,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The resolution text and the recorded vote were not retrieved; the 156 figure may be the First Committee count. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Corrected Oct 09, 2026: the entry first gave 156, the First Committee count, as the Assembly's. Vote figures come from the UN press release GA/12736 as quoted in search results and the UN Digital Library record 4095989; neither could be opened from our fetcher, so the entry stays Likely.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1846,7 +1846,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses and whose models this program measures. The designation letters were not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model and whose models this program measures. The designation letters were not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1886,7 +1886,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The order was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The order was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1926,7 +1926,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The judgment was not retrieved; reports of the evening of 27 August 2026 are dated 28 August. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The judgment was not retrieved; reports of the evening of 27 August 2026 are dated Aug 28, 2026. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1961,7 +1961,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic makes Claude, a tool this site uses. The opinion was not retrieved, and its citation was not reported in the coverage found. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The opinion was not retrieved, and its citation was not reported in the coverage found. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
