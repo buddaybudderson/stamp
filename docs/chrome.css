@@ -189,3 +189,7 @@ nav.sf{margin:64px auto 0!important;border-bottom:0!important}
 .otp-col{position:absolute;top:0;bottom:0;left:var(--gut);width:200px;display:none}
 .otp-col .otp{position:sticky;top:calc(var(--hdr) + 56px);left:auto;display:block}
 @media (min-width:1320px){.otp-col{display:block}body .otp:not(.otp-col .otp){display:none}}
+
+/* phone: the header's own button is in the menu; at this width it ran off the right edge. The announcement wraps, so nothing hides off-screen. */
+@media (max-width:560px){.sh .sh-cta.sh-hide-s{display:none!important}}
+@media (max-width:700px){.sh-note{white-space:normal!important;overflow:visible!important;line-height:1.75}}

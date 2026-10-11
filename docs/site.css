@@ -272,3 +272,22 @@ body.rd:not(.rd-home) .strap{justify-content:flex-start!important}
 body.rd:not(.rd-home) th a{color:var(--ink);text-decoration:underline}
 body.rd .dk-viz-stats b{display:block;margin-bottom:6px;line-height:1.1}
 body.rd.has-otp:not(.rd-home) .wrap{position:relative}
+
+/* colour for icons, stripes and charts. Red is kept for a measured figure (Colophon), so it is never used here. */
+:root{--v1:#0F766E;--v2:#1D4ED8;--v3:#6D28D9;--v4:#A16207;--vz:#CBD5E1}
+:root[data-mode="night"]{--v1:#2DD4BF;--v2:#60A5FA;--v3:#A78BFA;--v4:#FACC15;--vz:#475569}
+.kpis>.kpi{border-top:3px solid var(--v1)}
+.kpis>.kpi:nth-child(4n+2){border-top-color:var(--v2)}.kpis>.kpi:nth-child(4n+3){border-top-color:var(--v3)}.kpis>.kpi:nth-child(4n){border-top-color:var(--v4)}
+.card:nth-child(4n+1) .ic{--vc:var(--v1)}.card:nth-child(4n+2) .ic{--vc:var(--v2)}.card:nth-child(4n+3) .ic{--vc:var(--v3)}.card:nth-child(4n) .ic{--vc:var(--v4)}
+.card .ic{background:color-mix(in srgb,var(--vc,var(--ink)) 15%,var(--surface));color:var(--vc,var(--ink))}
+.viz-bar{display:flex;gap:2px;height:10px;margin-top:12px;border-radius:5px;overflow:hidden;background:var(--sunk)}
+.viz-bar i{display:block;flex:0 0 auto;width:var(--w);min-width:3px}
+.viz-bar .a,.viz-key .a{--k:var(--v1)}.viz-bar .b,.viz-key .b{--k:var(--v2)}.viz-bar .c,.viz-key .c{--k:var(--v4)}.viz-bar .z,.viz-key .z{--k:var(--vz)}
+.viz-bar i{background:var(--k)}
+.viz-key{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:7px;font:500 11.5px/1.35 var(--f-mono);color:var(--ink-2)}
+.viz-key span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--k);margin-right:5px;vertical-align:-1px}
+.kpis.flow>.kpi{position:relative}
+.kpis.flow>.kpi+.kpi::before{content:"";position:absolute;left:-9px;top:50%;width:12px;height:12px;transform:translate(-50%,-50%) rotate(45deg);
+  border-top:2px solid var(--ink-3);border-right:2px solid var(--ink-3);background:transparent}
+@media (max-width:700px){.kpis.flow>.kpi+.kpi::before{display:none}}
+.kpis.flow{column-gap:24px}.kpis.flow>.kpi+.kpi::before{left:-12px;width:9px;height:9px}
