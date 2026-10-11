@@ -81,6 +81,16 @@ jobs:
         if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
         run: python3 tools/wrap_issue.py
 
+      # Then everything a release used to need done by hand afterwards, in the same commit: every issue list
+      # in order (rows moved, never edited), and the new issue page framed like the others: menu, figures card,
+      # site map with the publisher line from tools/house.py, page search. site_chrome.py refuses, and fails
+      # this job, if an issue's frozen bytes would no longer be contained exactly.
+      - name: Order the lists and frame the new issue page
+        if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
+        run: |
+          python3 tools/sort_issue_lists.py docs
+          python3 tools/site_chrome.py
+
       # The release said it worked; check that it did. wrap_issue.py deletes each file from
       # stage/ as it publishes it, so anything still there was not released.
       - name: Did it actually publish?
