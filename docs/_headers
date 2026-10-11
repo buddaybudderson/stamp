@@ -1,0 +1,21 @@
+# The Source of an issue is served as plain text: it is the byte-exact file whose SHA-256 is printed in the
+# issue's PDF, meant to be downloaded and hashed, not rendered. As text, nothing on the way (our host's
+# bot-detection script, which it adds to HTML pages) can change a byte of it.
+/calibration/*/source
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+/calibration/*/source.html
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+/log/*/source
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+/log/*/source.html
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+/bench/no-1-complaint/source
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff
+/bench/no-1-complaint/source.html
+  Content-Type: text/plain; charset=utf-8
+  X-Content-Type-Options: nosniff

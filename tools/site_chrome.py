@@ -19,6 +19,8 @@ The order of the groups is argued in the PR that introduced it (Oct 09, 2026) an
 what the program publishes, how it measures, the policy it tracks, why it can be trusted, who it is.
 """
 import argparse, pathlib, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import house
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
@@ -204,6 +206,7 @@ def sitemap(cal, log):
     play = "".join(f'<i style="background:{c}"></i>' for c in SWATCH)
     return ('<!-- sf:start --><nav class="sf" aria-label="Site map"><div class="sf-cols">' + cols + '</div>'
             '<div class="sf-bottom"><span>Protocol STAMP · A Budday Budderson Production</span>'
+            f'<span>{house.SHORT}</span>'
             f'<a class="sf-play" href="/colophon/#playground">{play}<span>The seven finishes: playground</span></a>'
             '<a href="/feed.xml">RSS</a></div></nav><!-- sf:end -->')
 
@@ -243,9 +246,8 @@ def issue_card(rel):
             f'<div><span class="kind">{kind} · issued document</span><h1 class="ttl">{name}</h1><span class="meta">{meta}</span></div>'
             f'<div class="acts">{acts}</div><div class="facts">{tiles}</div>'
             '<p class="note">Below is the issue exactly as it was issued; nothing in it has been edited. This frame, the menu and the footer are the site’s, not the issue’s. '
-            'To check it, hash the issued file and compare the first twelve characters with the build above. Use the <b>Exact copy</b> in the public repository: '
-            'until a setting is switched off, our host adds a short bot-detection script to every page it serves, Source included, so the copy served here '
-            'does not hash to the build.</p></div></section><!-- sx:end -->')
+            'To check it, download the Source and hash it: the first twelve characters of its SHA-256 are the build above. The <b>Exact copy</b> in the '
+            'public repository is the same bytes.</p></div></section><!-- sx:end -->')
 
 
 def latest(kind):
@@ -319,6 +321,9 @@ def apply(rel, s, kind, cal, log, pal_src):
         elif card:
             i = s.index("</nav>", s.index("<!-- sh:end -->")) + len("</nav>")
             s = s[:i] + "\n" + card + s[i:]
+    # the publisher line in the page's own footer, from tools/house.py (an issue and a run record keep their own words)
+    if kind != "issue" and "/record/" not in rel and "<footer" in s:
+        i = s.rindex("<footer"); s = s[:i] + house.stamp(s[i:])[0]
     # the footer's "Public bank" is the current public half (a standing page's footer; an issue keeps its own words)
     if kind != "issue": s = s.replace('<a href="/data/bank_v1_public.jsonl">Public bank</a>', '<a href="/data/bank_v1_1_public.jsonl">Public bank</a>')
     return s, s != s0
