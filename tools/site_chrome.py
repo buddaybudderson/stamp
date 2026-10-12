@@ -195,9 +195,16 @@ OLD_ASSETS = '<link rel="stylesheet" href="/site.css"><script src="/site.js" def
 SWATCH = ["#E4EDF6", "#F4E3E3", "#E4EDE3", "#EBE3F5", "#F7E7D8", "#E6E9ED", "#F8EED3"]   # the seven finishes, as finish.js draws them
 
 
+def v(name):
+    """A version for a stylesheet or script: the start of its own SHA-256. Browsers keep these files for hours;
+    a new version is a new address, so a change is seen on the next page load, not hours later."""
+    import hashlib
+    return hashlib.sha256((DOCS / name).read_bytes()).hexdigest()[:10]
+
+
 def assets(kind):
-    css = '<link rel="stylesheet" href="/chrome.css">' + ('<link rel="stylesheet" href="/site.css">' if kind == "standing" else "")
-    return f'<!-- sa:start -->{css}<script src="/site.js" defer></script><!-- sa:end -->'
+    css = f'<link rel="stylesheet" href="/chrome.css?v={v("chrome.css")}">' + (f'<link rel="stylesheet" href="/site.css?v={v("site.css")}">' if kind == "standing" else "")
+    return f'<!-- sa:start -->{css}<script src="/site.js?v={v("site.js")}" defer></script><!-- sa:end -->'
 
 
 def sitemap(cal, log):
