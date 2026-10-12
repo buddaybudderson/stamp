@@ -146,6 +146,10 @@ def header(rel, latest_cal, latest_log):
             '<!-- sh:end -->')
 
 
+# the standing notice, on every page, like the line under an AI chat box (Lawrence Ho, Oct 12, 2026)
+AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP uses AI and can make mistakes. '
+           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
+
 NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/si/">Super Intelligence (SI): the US rename of AI, traced</a>'
         ' &nbsp;·&nbsp; <a href="/military/">Militaries and AI, country by country</a></div><!-- topband:end -->')
 
@@ -300,6 +304,11 @@ def apply(rel, s, kind, cal, log, pal_src):
             s = re.sub(r"<!-- topband:start -->.*?<!-- topband:end -->", lambda m: NOTE, s, count=1, flags=re.S)
         else:
             s = s.replace("<!-- sh:end -->", "<!-- sh:end -->\n" + NOTE, 1)
+    # the AI notice, fixed to the foot of the screen on every page (outside any issued bytes)
+    if "<!-- sai:start -->" in s:
+        s = re.sub(r"<!-- sai:start -->.*?<!-- sai:end -->", lambda m: AI_NOTE, s, count=1, flags=re.S)
+    else:
+        s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + AI_NOTE, 1)
     # page search: posts had none
     if 'class="pal"' not in s:
         s = s.replace("<!-- sh:end -->", "<!-- sh:end -->\n" + PAL_BLOCK + pal_src, 1)
