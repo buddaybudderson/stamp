@@ -253,8 +253,10 @@ def issue_card(rel):
     acts += '<a href="/archive/">Archive</a>'
     kind = "The Calibration" if rel.startswith("calibration/") else "The Log" if rel.startswith("log/") else "The Bench"
     tiles = "".join(f"<div><b>{v}</b><span>{k}</span></div>" for v, k in facts[:4])
+    src = DOCS / rel[: -len("index.html")] / "source.html"
+    h = "p" if src.exists() and "<h1" in src.read_text(encoding="utf-8") else "h1"   # one main heading: the issue's own, if it has one
     return ('<!-- sx:start --><section class="sx-issue" aria-label="This issue at a glance"><div class="card">'
-            f'<div><span class="kind">{kind} · issued document</span><h1 class="ttl">{name}</h1><span class="meta">{meta}</span></div>'
+            f'<div><span class="kind">{kind} · issued document</span><{h} class="ttl">{name}</{h}><span class="meta">{meta}</span></div>'
             f'<div class="acts">{acts}</div><div class="facts">{tiles}</div>'
             '<p class="note">Below is the issue exactly as it was issued; nothing in it has been edited. This frame, the menu and the footer are the site’s, not the issue’s. '
             'To check it, download the Source and hash it: the first twelve characters of its SHA-256 are the build above. The <b>Exact copy</b> in the '
