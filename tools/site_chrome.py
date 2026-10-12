@@ -87,6 +87,7 @@ def groups(latest_cal, latest_log):
             ("Militaries and AI", "Country by country", "/military/", "fence"),
         ]),
         ("trust", "Trust", "/independence/", [
+            ("The Ten House Protocols", "How we keep AI from making things up", "/house-protocols/", "list"),
             ("Independence", "Who pays, and the rules on it", "/independence/", "shield"),
             ("Corrections + changes", "What we got wrong, dated", "/corrections/", "redo"),
             ("AI Safety + Governance", "What our agents may and may not do", "/safety/", "eye"),
@@ -106,7 +107,7 @@ def groups(latest_cal, latest_log):
 def section_of(rel):
     for key, pref in (("pub", ("archive/", "writing/", "bench/", "subscribe/")), ("method", ("methodology/", "definitions/", "data/")),
                       ("policy", ("docket/", "chronicle/", "si/", "military/")),
-                      ("trust", ("independence/", "corrections/", "safety/", "support/", "privacy/", "terms/")),
+                      ("trust", ("house-protocols/", "independence/", "corrections/", "safety/", "support/", "privacy/", "terms/")),
                       ("about", ("about/", "colophon/", "other-stamps/"))):
         if rel.startswith(pref):
             return key
@@ -150,8 +151,8 @@ def header(rel, latest_cal, latest_log):
 AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is teamed with AI and can make mistakes. '
            'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
 
-NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/si/">Super Intelligence (SI): the US rename of AI, traced</a>'
-        ' &nbsp;·&nbsp; <a href="/military/">Militaries and AI, country by country</a></div><!-- topband:end -->')
+NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
+        ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">JesterMind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
 
 # page search: every page a reader might look for, newest issue first. Pages that do not exist yet are skipped.
 PALETTE = [
@@ -176,7 +177,7 @@ PALETTE = [
     ("Super Intelligence (SI)", "/si/"), ("Militaries and AI", "/military/"),
     ("Methodology", "/methodology/"), ("Definitions", "/definitions/"), ("The protocol, v1.25", "/protocol/v1.25/"),
     ("Run files", "/data/runs/"), ("figures.json, the registry", "/figures.json"),
-    ("Independence", "/independence/"), ("Corrections + changes", "/corrections/"),
+    ("The Ten House Protocols", "/house-protocols/"), ("Independence", "/independence/"), ("Corrections + changes", "/corrections/"),
     ("AI Safety + Governance", "/safety/"), ("Support", "/support/"),
     ("Colophon", "/colophon/"), ("Subscribe", "/subscribe/"), ("Other STAMPs", "/other-stamps/"),
     ("Privacy", "/privacy/"), ("Terms", "/terms/"), ("RSS feed", "/feed.xml"),
