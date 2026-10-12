@@ -300,3 +300,9 @@ body.rd.has-otp:not(.rd-home) .wrap{position:relative}
 @media (max-width:900px){.kpis.flow>.kpi+.kpi::before{display:none}}
 /* page labels wrap instead of clipping on a phone */
 body.rd:not(.rd-home) .strap>span{max-width:100%;white-space:normal;line-height:1.35}
+
+/* timelines, Oct 12, 2026 (second pass): the date column is wide enough for its longest date, so the date never runs into the line */
+.tl>li{grid-template-columns:124px 1fr;gap:0 44px}.tl .d{white-space:nowrap}
+.tl::before{left:145px}.tl>li::before{left:140px}
+@media (max-width:560px){.tl>li{grid-template-columns:1fr;gap:0}.tl::before{left:5px}.tl>li::before{left:0}.tl .d{white-space:normal}}
+.tl{padding-left:0!important;padding-right:0!important}
