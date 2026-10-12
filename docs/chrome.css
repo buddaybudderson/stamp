@@ -206,3 +206,13 @@ h2.h3{font:600 17px/1.35 "IBM Plex Serif",Georgia,serif!important;margin:0 0 8px
 .half.swatch[data-finish="moon"]{--ink-3:#526375}.half.swatch[data-finish="mars"]{--ink-3:#68575D}.half.swatch[data-finish="mercury"]{--ink-3:#51645A}.half.swatch[data-finish="jupiter"]{--ink-3:#5D5675}.half.swatch[data-finish="venus"]{--ink-3:#6A5C4F}.half.swatch[data-finish="saturn"]{--ink-3:#545F6C}.half.swatch[data-finish="sun"]{--ink-3:#6C6246}
 /* the mail provider's form keeps its own dark text, so it always sits on white, in day and night */
 #eo-slot{background:#fff;color:#212529;border:1px solid var(--rule-soft);border-radius:var(--r-md,12px);padding:14px 16px 8px;margin:6px 0 14px}
+
+/* the AI notice: one quiet line at the foot of the screen, always (as under an AI chat box); content scrolls clear of it */
+.sx-ai{position:fixed;left:0;right:0;bottom:0;z-index:45;margin:0!important;padding:7px var(--gut,16px) calc(7px + env(safe-area-inset-bottom));
+  text-align:center;font:500 12px/1.4 var(--f-sans,"IBM Plex Sans",system-ui,sans-serif)!important;letter-spacing:0!important;color:var(--ink-2)!important;
+  background:var(--paper);border-top:1px solid var(--rule-soft);max-width:none!important}
+.sx-ai a{color:var(--ink-2)!important;text-decoration:underline;text-underline-offset:2px;margin-left:4px;white-space:nowrap}
+body.has-sh::after{content:"";display:block;height:44px}
+.sx-top{bottom:58px!important}
+@media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:52px}}
+@media print{.sx-ai{position:static;border:0;padding:12px 0 0}body.has-sh::after{display:none}}
