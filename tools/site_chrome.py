@@ -147,7 +147,7 @@ def header(rel, latest_cal, latest_log):
 
 
 # the standing notice, on every page, like the line under an AI chat box (Lawrence Ho, Oct 12, 2026)
-AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP uses AI and can make mistakes. '
+AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is teamed with AI and can make mistakes. '
            'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
 
 NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/si/">Super Intelligence (SI): the US rename of AI, traced</a>'
