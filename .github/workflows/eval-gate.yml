@@ -36,6 +36,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      # The Ten House Protocols (signed Oct 12, 2026), R5: the house gate is part of the required check.
+      # A FAIL (a date that breaks Protocol 5, a citation marker that does not land, the house mark cut
+      # short, the standing notice missing, red in a chart) blocks the merge. Warnings are printed, not fatal.
+      - name: House gate (Ten House Protocols)
+        run: python tools/house_gate.py docs
+
       - name: Harness self-tests (no bank, no key, no network)
         env:
           PYTHONUTF8: "1"

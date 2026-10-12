@@ -91,6 +91,12 @@ jobs:
         run: |
           python3 tools/sort_issue_lists.py docs
           python3 tools/site_chrome.py
+
+      # The Ten House Protocols, R5: the release refuses to publish a tree that fails the house gate.
+      # The issue's own frozen bytes are never checked against today's rules; only the site around it is.
+      - name: House gate on the released tree
+        if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
+        run: python3 tools/house_gate.py docs
           python3 tools/seo.py
 
       # The release said it worked; check that it did. wrap_issue.py deletes each file from
