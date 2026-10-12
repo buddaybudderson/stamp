@@ -189,3 +189,20 @@ nav.sf{margin:64px auto 0!important;border-bottom:0!important}
 .otp-col{position:absolute;top:0;bottom:0;left:var(--gut);width:200px;display:none}
 .otp-col .otp{position:sticky;top:calc(var(--hdr) + 56px);left:auto;display:block}
 @media (min-width:1320px){.otp-col{display:block}body .otp:not(.otp-col .otp){display:none}}
+
+/* phone: the header's own button is in the menu; at this width it ran off the right edge. The announcement wraps, so nothing hides off-screen. */
+@media (max-width:560px){.sh .sh-cta.sh-hide-s{display:none!important}}
+@media (max-width:700px){.sh-note{white-space:normal!important;overflow:visible!important;line-height:1.75}}
+
+/* an issue's figures wear the same coloured stripe as every other figure tile; long values wrap */
+.sx-issue .facts div{border-top:3px solid var(--v1,#0F766E)}.sx-issue .facts div:nth-child(4n+2){border-top-color:var(--v2,#1D4ED8)}
+.sx-issue .facts div:nth-child(4n+3){border-top-color:var(--v3,#6D28D9)}.sx-issue .facts div:nth-child(4n){border-top-color:var(--v4,#A16207)}
+.sx-issue .facts b{overflow-wrap:break-word;font-size:clamp(14px,3.9vw,18px)}
+
+/* a note's heading: a level-2 heading in the outline, set at the size of a level-3 one */
+h2.h3{font:600 17px/1.35 "IBM Plex Serif",Georgia,serif!important;margin:0 0 8px!important;letter-spacing:0!important}
+
+/* the Colophon's finish cards show each finish by day: its secondary text gets the same AA-passing grey as the pages */
+.half.swatch[data-finish="moon"]{--ink-3:#526375}.half.swatch[data-finish="mars"]{--ink-3:#68575D}.half.swatch[data-finish="mercury"]{--ink-3:#51645A}.half.swatch[data-finish="jupiter"]{--ink-3:#5D5675}.half.swatch[data-finish="venus"]{--ink-3:#6A5C4F}.half.swatch[data-finish="saturn"]{--ink-3:#545F6C}.half.swatch[data-finish="sun"]{--ink-3:#6C6246}
+/* the mail provider's form keeps its own dark text, so it always sits on white, in day and night */
+#eo-slot{background:#fff;color:#212529;border:1px solid var(--rule-soft);border-radius:var(--r-md,12px);padding:14px 16px 8px;margin:6px 0 14px}
