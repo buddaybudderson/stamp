@@ -152,7 +152,7 @@ AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is tea
            'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
 
 NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
-        ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">JesterMind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
+        ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">Jester Mind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
 
 # page search: every page a reader might look for, newest issue first. Pages that do not exist yet are skipped.
 PALETTE = [
