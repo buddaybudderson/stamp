@@ -149,7 +149,8 @@ def header(rel, latest_cal, latest_log):
 
 # the standing notice, on every page, like the line under an AI chat box (Lawrence Ho, Oct 12, 2026)
 AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is teamed with AI and can make mistakes. '
-           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
+           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a>'
+           '<span class="sx-pay"> · Free to read, paid for by readers: <a href="/support/">Contribute</a></span></p><!-- sai:end -->')
 
 NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/support/">Contributions are open</a>'
         ' &nbsp;·&nbsp; <a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'

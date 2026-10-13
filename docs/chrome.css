@@ -228,5 +228,6 @@ h2.h3{font:600 17px/1.35 "IBM Plex Serif",Georgia,serif!important;margin:0 0 8px
 .sx-ai a{color:var(--ink-2)!important;text-decoration:underline;text-underline-offset:2px;margin-left:4px;white-space:nowrap}
 body.has-sh::after{content:"";display:block;height:44px}
 .sx-top{bottom:58px!important}
-@media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:52px}}
+.sx-ai .sx-pay a{color:var(--stamp)!important;font-weight:500}
+@media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:66px}}
 @media print{.sx-ai{position:static;border:0;padding:12px 0 0}body.has-sh::after{display:none}}
