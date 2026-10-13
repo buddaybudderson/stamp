@@ -105,6 +105,20 @@ body.sh-post>nav:first-of-type,body.sh-post nav.top,body.sh-issue>nav:first-of-t
 .sx-cite:hover{border-color:var(--rule);color:var(--ink)}
 .sx-cite svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8}
 
+/* ---------- the reader ask, at the end of every page ---------- */
+.rs{max-width:var(--shell);margin:64px auto 0;padding:26px var(--gut) 24px;border-top:3px solid var(--stamp);background:var(--sunk);font-family:var(--f-sans)}
+.rs p{text-transform:none;margin:0 0 12px;max-width:66ch;color:var(--ink-2);font-size:15px;line-height:1.6}
+.rs a{color:var(--stamp)}
+.rs .rs-eye{font:500 11px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);margin-bottom:12px}
+.rs .rs-h{text-transform:none;border:0;padding:0;font:600 23px/1.2 "IBM Plex Serif",Georgia,serif;letter-spacing:-.01em;color:var(--ink);margin:0 0 12px;max-width:30ch;text-wrap:balance}
+.rs .rs-btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 14px}
+.rs .rs-b{display:inline-block;padding:11px 16px;border:1px solid var(--stamp);border-radius:4px;color:var(--stamp);text-decoration:none;
+  font:500 11.5px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
+.rs .rs-b.rs-main{background:var(--stamp);color:#fff}
+.rs .rs-b:hover{transform:translateY(-1px)}
+.rs .rs-fine{font:400 12px/1.65 var(--f-mono);color:var(--ink-3);margin:0}
+.rs + .sf{margin-top:0}
+
 /* ---------- the sitemap footer ---------- */
 .sf{max-width:var(--shell);margin:64px auto 0;padding:32px var(--gut) 8px;border-top:1px solid var(--rule-soft);font-family:var(--f-sans)}
 .sf-cols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
@@ -214,5 +228,6 @@ h2.h3{font:600 17px/1.35 "IBM Plex Serif",Georgia,serif!important;margin:0 0 8px
 .sx-ai a{color:var(--ink-2)!important;text-decoration:underline;text-underline-offset:2px;margin-left:4px;white-space:nowrap}
 body.has-sh::after{content:"";display:block;height:44px}
 .sx-top{bottom:58px!important}
-@media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:52px}}
+.sx-ai .sx-pay a{color:var(--stamp)!important;font-weight:500}
+@media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:66px}}
 @media print{.sx-ai{position:static;border:0;padding:12px 0 0}body.has-sh::after{display:none}}

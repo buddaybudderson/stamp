@@ -149,10 +149,30 @@ def header(rel, latest_cal, latest_log):
 
 # the standing notice, on every page, like the line under an AI chat box (Lawrence Ho, Oct 12, 2026)
 AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is teamed with AI and can make mistakes. '
-           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a></p><!-- sai:end -->')
+           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a>'
+           '<span class="sx-pay"> · Free to read, paid for by readers: <a href="/support/">Contribute</a></span></p><!-- sai:end -->')
 
-NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
+NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/support/">Contributions are open</a>'
+        ' &nbsp;·&nbsp; <a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
         ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">Jester Mind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
+
+# the reader ask, at the end of every page it owns, after the content and before the site map (Oct 13, 2026).
+# Placed where a reader finishes, as reader-funded publications do, and never inside an issue's own bytes.
+# The words follow /support/: nothing is bought, nothing is tax-deductible, the publisher is a for-profit company.
+# The buttons are the live Stripe Payment Links; /support/ carries the terms and the ledger.
+PAY = [("Once, any amount", "https://buy.stripe.com/dRm8wIe1F1Uu6M074F4Rq00"),
+       ("$5 a month", "https://buy.stripe.com/14A8wI8Hl56G2vKbkV4Rq01"),
+       ("$25 a month", "https://buy.stripe.com/7sY8wIaPt1Uudao88J4Rq02")]
+NO_ASK = ("support/", "subscribe/", "privacy/", "terms/")    # the page that is the ask, the sign-up, and the legal pages
+ASK = ('<!-- rs:start --><aside class="rs" aria-label="Reader support"><p class="rs-eye">Readers pay for this</p>'
+       '<div class="rs-h">Free to read, free to check, paid for by the people who read it.</div>'
+       '<p>There is no paywall, no advertising on an issue, and no money from a measured company outside '
+       '<a href="/independence/">the ten conditions</a>. What each round costs is printed in <a href="{log}">The Log</a>. '
+       'The first thing reader money buys is a round recorded end to end, so the price of a measurement can be quoted instead of estimated.</p>'
+       '<p class="rs-btns">' + "".join(f'<a class="rs-b{" rs-main" if i == 1 else ""}" href="{u}" rel="noopener">{t}</a>' for i, (t, u) in enumerate(PAY)) + '</p>'
+       '<p class="rs-fine">A contribution buys nothing and is not tax-deductible: the publisher is a for-profit company. '
+       'Payment is taken by Stripe; a monthly contribution is cancelled by writing to <a href="mailto:s@bud.day">s@bud.day</a>. '
+       '<a href="/support/">Where the money goes, and the ledger</a></p></aside><!-- rs:end -->')
 
 # page search: every page a reader might look for, newest issue first. Pages that do not exist yet are skipped.
 PALETTE = [
@@ -326,6 +346,10 @@ def apply(rel, s, kind, cal, log, pal_src):
         s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + assets(kind), 1)
     # the sitemap footer: before the identity footer, or at the end of an issue page
     sm = sitemap(cal, log)
+    # the reader ask goes straight before the site map, so it follows the content (or the issue's frame) on every page
+    ask = "" if rel.startswith(NO_ASK) else ASK.replace("{log}", log)
+    s = re.sub(r"<!-- rs:start -->.*?<!-- rs:end -->\n?", "", s, count=1, flags=re.S)
+    sm = ask + "\n" + sm if ask else sm
     if "<!-- sf:start -->" in s:
         s = re.sub(r"<!-- sf:start -->.*?<!-- sf:end -->", lambda m: sm, s, count=1, flags=re.S)
     elif "<footer" in s and kind != "issue":          # an issue may carry a <footer> of its own; never write inside it
