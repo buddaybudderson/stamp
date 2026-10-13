@@ -395,3 +395,14 @@ body.rd:not(.rd-home) .strap>span{max-width:100%;white-space:normal;line-height:
 .rd-home .hero .kept a::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px;background:linear-gradient(135deg,var(--v1),var(--v3))}
 .rd-home .hpx{margin-top:30px}
 .rd-home .hero.hero-figs{padding:4px 0 8px}.rd-home .hero.hero-figs .stats{margin-top:30px}
+
+/* one right edge, Oct 13, 2026: everything in the reading column ends where the text ends. The cards, the rules
+   between sections, the reader ask and the sitemap used to run wider than the paragraphs (868px against 760px beside
+   the rail; past the column on narrower screens, where .bleed broke out of it), and the lede, the lists and the notes
+   stopped short of it, so the right edge moved from block to block. The column is now the text's measure, and every
+   block fills it. */
+body.rd:not(.rd-home) .bleed{width:auto;left:0;transform:none}
+body.rd:not(.rd-home) .wrap :is(p,ul,ol,dl,dd,figure,.callout){max-width:none}
+@media (min-width:1320px){
+  body.rd.has-otp:not(.rd-home) .wrap{padding-right:calc(var(--shell) - var(--read) - var(--gut) - 248px)}
+}
