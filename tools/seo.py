@@ -144,7 +144,7 @@ def main():
     if new != sm.read_text(encoding="utf-8"):
         changed += 1
         print(("would change  " if a.check else "changed  ") + "sitemap.xml")
-        if not a.check: sm.write_text(new, encoding="utf-8")
+        if not a.check: sm.write_text(new, encoding="utf-8", newline="\n")  # LF on every OS, as committed
     print(f"{changed} file(s) {'would change' if a.check else 'changed'}")
     return 0
 
