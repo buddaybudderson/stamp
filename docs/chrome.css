@@ -243,5 +243,14 @@ body:has(#main>.cover) #main,body:has(#main>.article) #main{max-width:var(--col)
 body:is(.sh-issue,.sh-post) #main :is(div,p,ol,ul,li,figure,figcaption,dl,dd){max-width:none}
 body:is(.sh-issue,.sh-post) #main :is(footer,.sf){max-width:none!important;padding-left:0!important;padding-right:0!important}
 body:is(.sh-issue,.sh-post)>:is(p:not(.sx-ai),nav.social-row){max-width:var(--col)!important;padding-left:0!important;padding-right:0!important}
-body:is(.sh-issue,.sh-post)>section.sx-issue{max-width:var(--col);padding-left:0;padding-right:0}
+body:is(.sh-issue,.sh-post)>:is(section.sx-issue,section.dash){max-width:var(--col);padding-left:0;padding-right:0}
 body:is(.sh-issue,.sh-post)>aside.rs,body:is(.sh-issue,.sh-post) #main aside.rs{max-width:var(--col)}
+/* the reader ask's text runs the width of its panel, wherever the panel sits */
+.rs p{max-width:none!important}
+/* phone: an issue's cover line wraps instead of running past the right edge, and a Log table that is wider than the
+   screen scrolls inside the column instead of pushing the whole page sideways */
+@media (max-width:600px){body.sh-issue .cov-issue{flex-wrap:wrap;white-space:normal}}
+@media (max-width:860px){body.sh-issue:has(#main>.top) #main>table{display:block;overflow-x:auto}}
+@media (max-width:600px){body.sh-issue .crew-what{min-width:0;overflow-wrap:anywhere}}
+/* a Log's title band is a panel: its edges sit on the column's edges, like every other panel's */
+body.sh-issue:has(#main>.top) #main>.top{margin-left:0!important;margin-right:0!important}
