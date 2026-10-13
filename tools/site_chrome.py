@@ -71,6 +71,7 @@ def groups(latest_cal, latest_log):
             ("The Log", "What ran, what it cost, what moved", latest_log, "terminal"),
             ("The Bench", "What we read and argue with · Mon and Thu", "/writing/", "book"),
             ("Archive", "Every issue, by number and date", "/archive/", "archive"),
+            ("The technical report", "The program in one paper, with its data", "/paper/", "page"),
             None,
             ("Subscribe", "One email per issue", "/subscribe/", "mail"),
         ]),
@@ -107,7 +108,7 @@ def groups(latest_cal, latest_log):
 
 
 def section_of(rel):
-    for key, pref in (("pub", ("archive/", "writing/", "bench/", "subscribe/")), ("method", ("methodology/", "definitions/", "data/")),
+    for key, pref in (("pub", ("archive/", "writing/", "bench/", "subscribe/", "paper/")), ("method", ("methodology/", "definitions/", "data/")),
                       ("policy", ("docket/", "chronicle/", "si/", "military/")),
                       ("trust", ("house-protocols/", "independence/", "corrections/", "safety/", "support/", "privacy/", "terms/")),
                       ("about", ("about/", "colophon/", "other-stamps/"))):
@@ -154,7 +155,8 @@ AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is tea
            'Verify before you implement anything. <a href="/corrections/">What we got wrong</a>'
            '<span class="sx-pay"> · Free to read, paid for by readers: <a href="/support/">Contribute</a></span></p><!-- sai:end -->')
 
-NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/support/">Contributions are open</a>'
+NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/paper/">The technical report: STAMP, and what it takes to measure one</a>'
+        ' &nbsp;·&nbsp; <a href="/support/">Contributions are open</a>'
         ' &nbsp;·&nbsp; <a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
         ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">Jester Mind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
 
@@ -186,6 +188,7 @@ PALETTE = [
     ("The Log Vol 003", "/log/003-issued-sat20261003/"),
     ("The Log Vol 002", "/log/002-issued-thu20261001/"),
     ("The Log Vol 001", "/log/001-issued-sat20260905/"),
+    ("The technical report", "/paper/"),
     ("The Bench", "/writing/"),
     ("Bench Vol 006 · A Name Is Not a Test", "/bench/a-name-is-not-a-test/"),
     ("Bench Vol 005 · Judges Who Agree With Each Other", "/bench/judges-who-agree-with-each-other/"),

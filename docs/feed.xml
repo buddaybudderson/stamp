@@ -7,7 +7,14 @@
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Sat, 10 Oct 2026 15:37:00 -0500</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 15:00:00 -0500</lastBuildDate>
+<item>
+<title>The technical report: STAMP, and what it takes to measure one</title>
+<link>https://protocolstamp.com/paper/</link>
+<guid isPermaLink="true">https://protocolstamp.com/paper/</guid>
+<pubDate>Tue, 13 Oct 2026 15:00:00 -0500</pubDate>
+<description>The program in one paper, as a preprint with its PDF: the protocol and its receipt, what four Calibrations found about the instruments, and five native-versus-STAMP runs not printed here before. On the probes it was written against, STAMP lowered fail rates by 7 to 23 points; on a bank it was not tuned on, the effect could not be told apart from grader bias.</description>
+</item>
 <item>
 <title>The Bench Vol 006 &#183; A Name Is Not a Test</title>
 <link>https://protocolstamp.com/bench/a-name-is-not-a-test/</link>

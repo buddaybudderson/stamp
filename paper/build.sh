@@ -11,4 +11,6 @@ echo "wrote paper/stamp-report.tex"
 if [ "$1" = "pdf" ]; then
   pdflatex -interaction=nonstopmode -halt-on-error stamp-report.tex >/dev/null && pdflatex -interaction=nonstopmode -halt-on-error stamp-report.tex >/dev/null
   echo "wrote paper/stamp-report.pdf"
+  cp stamp-report.pdf ../docs/paper/stamp-report.pdf
+  echo "copied it to docs/paper/ (the site's copy; keep them identical)"
 fi
