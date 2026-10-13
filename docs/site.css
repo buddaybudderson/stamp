@@ -388,3 +388,10 @@ body.rd:not(.rd-home) .strap>span{max-width:100%;white-space:normal;line-height:
 .hp-scale .b2{background:color-mix(in srgb,var(--v4) 18%,color-mix(in srgb,var(--v2) 18%,var(--surface)))}.hp-scale .b3{background:color-mix(in srgb,var(--v2) 30%,var(--surface))}
 .hp-scale .b4{background:color-mix(in srgb,var(--v3) 30%,var(--surface))}.hp-scale .b5{background:color-mix(in srgb,var(--v1) 34%,var(--surface))}
 .hp-scale .b6{background:var(--ink);color:var(--paper)!important}
+
+/* home, Oct 12, 2026: the receipt is the promise, the protocols are how it is kept; the protocols sit between the headline and the figures */
+.rd-home .hero .kept{margin:14px auto 0;font:500 14px/1.4 var(--f-sans)}
+.rd-home .hero .kept a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--v2);padding-bottom:1px}
+.rd-home .hero .kept a::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px;background:linear-gradient(135deg,var(--v1),var(--v3))}
+.rd-home .hpx{margin-top:30px}
+.rd-home .hero.hero-figs{padding:4px 0 8px}.rd-home .hero.hero-figs .stats{margin-top:30px}
