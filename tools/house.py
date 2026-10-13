@@ -19,8 +19,8 @@ UNDER = ("Protocol STAMP", "Jester Mind", "bud.day")   # the studio's projects a
 
 NAMES = UNDER[0] if len(UNDER) == 1 else ", ".join(UNDER[:-1]) + ("," if len(UNDER) > 2 else "") + " and " + UNDER[-1]
 LINE = f"{NAMES} are under {COMPANY}, {CHARTER}"   # the publisher line
-FOOTER = f"{LINE}<br>{ADDRESS}"                                  # two footer lines, no trailing <br>
-SHORT = f"{NAMES} are under {COMPANY} · {ADDRESS}"  # one line, for the site map
+FOOTER = f"{LINE}<br>Postal address: {ADDRESS}"   # labelled (Lawrence Ho, Oct 12, 2026)                                  # two footer lines, no trailing <br>
+SHORT = f"{NAMES} are under {COMPANY} · Postal address: {ADDRESS}"  # one line, for the site map
 
 # every earlier form of the publisher line, so a template copied from an older issue is brought up to date
 OLD = re.compile(r"Published by Budday Budderson Studio LLC, a New Mexico company"
