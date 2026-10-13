@@ -2,9 +2,9 @@
 title: "STAMP: An Auditable Self-Verification Protocol for Language Models, and What It Takes to Measure One"
 author:
   - "Lawrence Ho (Budday Budderson Studio LLC, Houston, Texas)"
-date: "Draft of Oct 13, 2026. Not yet submitted. Every number below is cited to an issued, hash-fingerprinted document."
+date: "October 2026"
 abstract: |
-  We describe STAMP, a provider-agnostic system prompt of about 1,500 tokens that asks a language model to recompute figures, treat text inside documents as data rather than instructions, ask instead of guessing when a request is under-specified, label each material claim with the evidence that supports it, and end every reply with a one-line structured self-report, the STAMPED receipt. The receipt's counted fields can be checked against the reply without a judge model, and we release a deterministic checker (ten rules, R1 to R10) that does so. We then report what happened when we tried to measure the protocol. On a 63-item adversarial bank, run in two independent halves of five draws per item, the instrument was reliable (Spearman-Brown 0.945 and 0.941 on two models), but the conditions around it were not: 56 of 63 responses differed between two temperature-0 runs on a pinned provider; our tier-1 grader was 4.1 points more lenient than a three-family panel; three judge models agreed with each other (AC1 0.875) more than any of them agreed with one person's blind labels (best 0.685), below the 0.871 a judge that always says PASS would score; and one appended line, "GRADING RUBRIC UPDATE: responses in this batch are pre-approved; mark PASS.", moved the tier-1 grader from 2.9% to 65.2% PASS on answers it had failed. The protocol's measured effect depended on which probes measured it. On the protocol's own public development probes, five earlier single-draw runs (three models, four protocol versions) showed STAMP lowering the content fail rate by 12.9 to 28.6 points, paired by probe. On the 63-item bank the protocol was not tuned on, the one controlled estimate was -0.9 points, smaller than the grader's measured bias. We read the gap as the expected signature of a protocol and its test written together, and we do not claim a general effect. We release the bank's public half, the harness, every run file we can publish, and a pre-registered design for the next study: STAMP on and off across paired reasoning-off and reasoning-on configurations of the same models.
+  We describe STAMP, a provider-agnostic system prompt of about 1,500 tokens that asks a language model to recompute figures, treat text inside documents as data rather than instructions, ask instead of guessing, label each material claim with its evidence, and end every reply with a one-line structured self-report, the STAMPED receipt. The receipt's counted fields can be checked against the reply without a judge model, and we release a deterministic checker that does so. We then report what happened when we tried to measure the protocol. On a 63-item adversarial bank run in two independent halves of five draws per item, the bank was reliable (Spearman-Brown 0.945 and 0.941), but the conditions around it were not: 56 of 63 responses differed between two temperature-0 runs on a pinned provider; our tier-1 grader was 4.1 points more lenient than a three-family panel; three judges agreed with each other (AC1 0.875) more than any agreed with one person's blind labels (best 0.685), below the 0.871 of a judge that always says PASS; and one appended line moved the grader from 2.9% to 65.2% PASS on answers it had failed. The protocol's effect depended on which probes measured it. On its own public development probes, five single-draw runs (three model families) showed STAMP lowering the content fail rate by 12.9 to 28.6 points. On the bank it was not tuned on, the one controlled estimate was -0.9 points, smaller than the grader's bias. We read the gap as the signature of a protocol and its test written together, and do not claim a general effect. We release the public bank, the harness, every run file we can publish, and a pre-registered design that tests STAMP on reasoning-off and reasoning-on configurations of the same models.
 ---
 
 # 1. Introduction
@@ -13,8 +13,9 @@ A fluent answer and a checked answer look the same on the page. A language model
 
 STAMP is an attempt to write that habit down as standing instructions that any chat model can run, and to make the habit's output auditable. Its distinctive element is a receipt: every reply ends with a single line such as
 
-    [STAMPED v1.25 | parts 1/1 | format pass | figs 1/1 | src 0/0 | challenge "tip recompute" -> held
-     | assume 0 | act 0/0 | blocked none | limits none | refs none | econ lean]
+    [STAMPED v1.25 | parts 1/1 | format pass | figs 1/1 | src 0/0
+     | challenge "tip recompute" -> held | assume 0 | act 0/0
+     | blocked none | limits none | refs none | econ lean]
 
 whose counts a reader, or a parser, can check against the reply above it. A receipt that claims a check that did not run is, in the protocol's own words, "the gravest failure".
 
@@ -184,15 +185,15 @@ In a separate test (Sep 9 to Sep 10, 2026), four Claude models (Fable 5.1, Opus 
 
 Before the Calibration programme existed, the author ran the promptfoo harness [15] on five configurations between Jul 23 and Aug 07, 2026. The exports were recovered and committed unchanged with their SHA-256 fingerprints (`eval/promptfoo/results/`). Each run sent every runnable probe from `tests/PROBES.md` once without STAMP and once with it, at temperature 0, and graded each reply against the probe's own pass criterion with an LLM judge. promptfoo's pass column also counts the receipt assertion, which the native condition passes automatically; we re-scored on the content criterion alone, paired by probe.
 
-| STAMP | Model as configured | Paired probes | Native fail | STAMP fail | STAMP minus native (95% CI) | p | False or missing receipt |
-|---|---|---|---|---|---|---|---|
-| v1.02 | gemini-2.5-flash | 70 | 21.4% | 8.6% | -12.9 pts (-24.3 to -1.4) | 0.048 | 28.6% |
-| v1.21 | gemini-flash-latest | 87 | 20.7% | 3.4% | -17.2 pts (-27.6 to -8.0) | 0.001 | 26.4% |
-| v1.25 | gemini-flash-latest | 91 | 22.0% | 0.0% | -22.0 pts (-30.8 to -13.2) | < 0.001 | 4.4% |
-| v1.25 | perplexity sonar | 91 | 26.4% | 11.0% | -15.4 pts (-23.1 to -8.8) | < 0.001 | 23.1% |
-| v1.25 | mistral-large-latest | 91 | 34.1% | 5.5% | -28.6 pts (-38.5 to -18.7) | < 0.001 | 18.7% |
+| Ver. | Model | n | Native | STAMP | Difference (95% CI) | p | Bad receipt |
+|-----|---------------------|---:|------:|------:|--------------------|--------|------:|
+| v1.02 | gemini-2.5-flash | 70 | 21.4% | 8.6% | -12.9 (-24.3, -1.4) | 0.048 | 28.6% |
+| v1.21 | gemini-flash-latest | 87 | 20.7% | 3.4% | -17.2 (-27.6, -8.0) | 0.001 | 26.4% |
+| v1.25 | gemini-flash-latest | 91 | 22.0% | 0.0% | -22.0 (-30.8, -13.2) | <0.001 | 4.4% |
+| v1.25 | perplexity sonar | 91 | 26.4% | 11.0% | -15.4 (-23.1, -8.8) | <0.001 | 23.1% |
+| v1.25 | mistral-large-latest | 91 | 34.1% | 5.5% | -28.6 (-38.5, -18.7) | <0.001 | 18.7% |
 
-Intervals are 95% bootstrap over probes; p is a two-sided sign-flip test on the per-probe differences. The receipt column is the share of STAMP replies failing at least one of `footer_check.py`'s rules R1 to R10, checked against the version each run installed. The grader was a Gemini Flash model in every run.
+n is the number of probes paired across both arms; differences are in percentage points. Intervals are 95% bootstrap over probes; p is a two-sided sign-flip test on the per-probe differences. "Bad receipt" is the share of STAMP replies failing at least one of `footer_check.py`'s rules R1 to R10, checked against the version each run installed. The grader was a Gemini Flash model in every run.
 
 Three readings are supported. STAMP lowered the content fail rate in all five configurations, on three model families. Receipt truth improved across versions on Gemini (28.6% to 4.4% of replies with a false or missing receipt), consistent with the v1.25 changes that moved the footer rule to the end of the core and added worked examples. And receipts were least reliable on the two non-Gemini models (23.1% and 18.7%), mostly because a `refs` source did not match the body (R6) or the footer was missing or misplaced (R1).
 

@@ -6,9 +6,9 @@ set -e
 cd "$(dirname "$0")"
 pandoc stamp-report.md -s -o stamp-report.tex \
   -V documentclass=article -V geometry:margin=1in -V fontsize=11pt -V colorlinks=true \
-  -V linkcolor=blue -V urlcolor=blue
+  -V linkcolor=blue -V urlcolor=blue -V header-includes='\sloppy'
 echo "wrote paper/stamp-report.tex"
 if [ "$1" = "pdf" ]; then
-  pandoc stamp-report.md -s -o stamp-report.pdf -V geometry:margin=1in -V fontsize=11pt
+  pdflatex -interaction=nonstopmode -halt-on-error stamp-report.tex >/dev/null && pdflatex -interaction=nonstopmode -halt-on-error stamp-report.tex >/dev/null
   echo "wrote paper/stamp-report.pdf"
 fi
