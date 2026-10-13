@@ -402,7 +402,18 @@ body.rd:not(.rd-home) .strap>span{max-width:100%;white-space:normal;line-height:
    stopped short of it, so the right edge moved from block to block. The column is now the text's measure, and every
    block fills it. */
 body.rd:not(.rd-home) .bleed{width:auto;left:0;transform:none}
-body.rd:not(.rd-home) .wrap :is(p,ul,ol,dl,dd,figure,.callout){max-width:none}
+body.rd:not(.rd-home) .wrap :is(p,ul,ol,li,dl,dd,figure,.callout){max-width:none}
 @media (min-width:1320px){
   body.rd.has-otp:not(.rd-home) .wrap{padding-right:calc(var(--shell) - var(--read) - var(--gut) - 248px)}
 }
+
+/* the home page, Oct 13, 2026: one right edge here too. The home shell is 1152px, but the reader ask, the sitemap and
+   the identity block were set to the 1180px shell of the standing pages, so they ran past it on both sides; and inside
+   it the program statement was capped at 720px beside its contents rail, its paragraphs shorter still, the figures at
+   820px and the section notes at 55ch. All of them now end where the publication rows and the cards end. The hero
+   stays centred. */
+.rd-home .prose,.rd-home .prose :is(p,ul,ol,li,dl,dd,figure),.rd-home .sechead p,.rd-home .stats{max-width:none}
+.rd-home .rs{max-width:none;margin-left:max(20px,calc((100% - 1112px) / 2));margin-right:max(20px,calc((100% - 1112px) / 2))}
+body.rd-home .sf,body.rd-home footer{max-width:none!important;padding-left:max(20px,calc((100% - 1112px) / 2))!important;padding-right:max(20px,calc((100% - 1112px) / 2))!important}
+/* phone: a key row's label and its explanation stack, so the explanation no longer runs past the right edge */
+@media (max-width:560px){.we .key div{flex-direction:column;align-items:flex-start;gap:4px}}
