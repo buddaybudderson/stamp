@@ -9,15 +9,15 @@
 | `REA_agent_eval.md` | Design for an agent study: injections planted inside binaries a coding agent analyses. |
 
 The evaluation that goes with the pre-registration is
-`../CROSSPLATFORM_EVAL_v1.25/promptfoo/promptfooconfig.system1-vs-system2.yaml`, read by
-`../CROSSPLATFORM_EVAL_v1.25/promptfoo/analyze_s1s2.py`.
+`../eval/promptfoo/promptfooconfig.system1-vs-system2.yaml`, read by
+`../eval/promptfoo/analyze_s1s2.py`.
 
 ## Before submitting to arXiv
 
 1. **Read every number against its source.** Each figure in Sections 5 and 6 names the Calibration
    issue it comes from. Open the issue and check it. Nothing in the report should be taken from memory.
-2. **Open every reference.** Confirm authors, venue and identifier for all 16. Four ([9] to [12])
-   were checked online on Oct 13, 2026; the other twelve were not.
+2. **References.** All 16 were checked online on Oct 13, 2026 (authors, venue, identifier; DOIs
+   and pages added where found). Re-check any you edit.
 3. **Decide on Section 6.** You can submit now as a methods and measurement report (the effect is
    stated as not established), or wait for the System 1 / System 2 study and add its results. The first
    is honest and citable now. The second is a stronger paper.

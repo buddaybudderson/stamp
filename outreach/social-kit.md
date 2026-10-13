@@ -99,7 +99,7 @@ so we don't claim it); judges agreed with each other far more than with a person
 line moved our grader from 2.9% to 65.2% PASS.
 
 Repo: <link>. Report: <link>. Paired reasoning-on and reasoning-off config for anyone who wants to run
-the next study before we do: `CROSSPLATFORM_EVAL_v1.25/promptfoo/promptfooconfig.system1-vs-system2.yaml`.
+the next study before we do: `eval/promptfoo/promptfooconfig.system1-vs-system2.yaml`.
 
 (Read the HN guidelines before posting. Don't ask anyone to upvote, and don't post from several
 accounts.)

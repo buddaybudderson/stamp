@@ -21,7 +21,7 @@
 # count in results.json for every "s1" row; a non-zero count means drop the pair, and say so.
 #
 # Run:
-#   cd CROSSPLATFORM_EVAL_v1.25/promptfoo
+#   cd eval/promptfoo
 #   npx promptfoo@latest eval -c promptfooconfig.system1-vs-system2.yaml -o results.s1s2.json
 #   python3 analyze_s1s2.py results.s1s2.json
 #

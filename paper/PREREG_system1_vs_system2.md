@@ -14,7 +14,7 @@ prompt that tells it to check its work may add nothing, or may only add a receip
 ## Design
 
 - **Conditions.** native (no system prompt) and stamp (STAMP v1.25 core in the system slot), built by
-  `CROSSPLATFORM_EVAL_v1.25/promptfoo/prompts.js` from the shipped files.
+  `eval/promptfoo/prompts.js` from the shipped files.
 - **Rows.** Each model that allows it runs twice through OpenRouter's `reasoning` switch: off ("-s1") and
   effort high ("-s2"). Models that always reason run as "-s2" only. The rows are fixed in
   `promptfooconfig.system1-vs-system2.yaml`; every model id is checked against the live catalog on the

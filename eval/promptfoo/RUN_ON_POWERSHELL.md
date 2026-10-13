@@ -1,5 +1,7 @@
 # Running the STAMP eval on Windows PowerShell — step by step
 
+> These steps are for the zip bundle. From a clone of the repository, the same files are in `eval/promptfoo\` and every command below runs there unchanged.
+
 Yes, this runs on PowerShell. promptfoo is a Node.js CLI, so everything is cross-platform;
 the only Windows-specific bit is how you set the API key (shown below). Do a cheap
 Gemini-only run first, confirm the matrix looks right, then add the other models.

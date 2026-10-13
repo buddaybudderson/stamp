@@ -218,7 +218,7 @@ A prompt can ask a model to check its work and to say what it checked. Writing t
 
 # Reproducibility
 
-Repository: <https://github.com/buddaybudderson/stamp> (MIT). Site and issued documents: <https://protocolstamp.com>. Public bank: `docs/data/bank_v1_1_public.jsonl` (37 items). Published run files: `docs/data/runs/`. Citable figures with source hashes: `docs/figures.json`. Harness: `harness/`. Chat-model evaluation: `CROSSPLATFORM_EVAL_v1.25/promptfoo/`. A Zenodo DOI for the tagged release will be added before submission.
+Repository: <https://github.com/buddaybudderson/stamp> (MIT). Site and issued documents: <https://protocolstamp.com>. Public bank: `docs/data/bank_v1_1_public.jsonl` (37 items). Published run files: `docs/data/runs/`. Citable figures with source hashes: `docs/figures.json`. Harness: `harness/`. Chat-model evaluation: `eval/promptfoo/`. A Zenodo DOI for the tagged release will be added before submission.
 
 # Use of AI tools
 
@@ -232,13 +232,13 @@ The author developed STAMP and operates the studio that publishes it. The progra
 
 [1] N. G. Leveson. *Engineering a Safer World: Systems Thinking Applied to Safety.* MIT Press, 2011.
 
-[2] S. Dhuliawala, M. Komeili, J. Xu, R. Raileanu, X. Li, A. Celikyilmaz, J. Weston. Chain-of-Verification Reduces Hallucination in Large Language Models. Findings of ACL 2024. arXiv:2309.11495.
+[2] S. Dhuliawala, M. Komeili, J. Xu, R. Raileanu, X. Li, A. Celikyilmaz, J. Weston. Chain-of-Verification Reduces Hallucination in Large Language Models. Findings of ACL 2024, pp. 3563 to 3578. doi:10.18653/v1/2024.findings-acl.212. arXiv:2309.11495.
 
 [3] A. Madaan et al. Self-Refine: Iterative Refinement with Self-Feedback. NeurIPS 2023. arXiv:2303.17651.
 
 [4] J. Huang, X. Chen, S. Mishra, H. S. Zheng, A. W. Yu, X. Song, D. Zhou. Large Language Models Cannot Self-Correct Reasoning Yet. ICLR 2024. arXiv:2310.01798.
 
-[5] K. Greshake, S. Abdelnabi, S. Mishra, C. Endres, T. Holz, M. Fritz. Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. AISec 2023. arXiv:2302.12173.
+[5] K. Greshake, S. Abdelnabi, S. Mishra, C. Endres, T. Holz, M. Fritz. Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. AISec 2023, pp. 79 to 90. arXiv:2302.12173.
 
 [6] E. Wallace, K. Xiao, R. Leike, L. Weng, J. Heidecke, A. Beutel. The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions. arXiv:2404.13208, 2024.
 
@@ -254,9 +254,9 @@ The author developed STAMP and operates the studio that publishes it. The progra
 
 [12] B. Atil et al. Non-Determinism of "Deterministic" LLM Settings. arXiv:2408.04667, 2024; Eval4NLP 2025.
 
-[13] K. L. Gwet. Computing inter-rater reliability and its variance in the presence of high agreement. *British Journal of Mathematical and Statistical Psychology* 61(1):29 to 48, 2008.
+[13] K. L. Gwet. Computing inter-rater reliability and its variance in the presence of high agreement. *British Journal of Mathematical and Statistical Psychology* 61(1):29 to 48, 2008. doi:10.1348/000711006X126600.
 
-[14] M. Mitchell et al. Model Cards for Model Reporting. FAT* 2019. arXiv:1810.03993.
+[14] M. Mitchell et al. Model Cards for Model Reporting. FAT* 2019. doi:10.1145/3287560.3287596. arXiv:1810.03993.
 
 [15] Budday Budderson Studio LLC. Protocol STAMP: repository (github.com/buddaybudderson/stamp) and issued documents, The Calibration Vol 001 to 004 and The Log Vol 001 to 003 (protocolstamp.com), Aug 30 to Oct 10, 2026.
 
