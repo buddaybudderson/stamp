@@ -24,6 +24,7 @@ WARN  a pattern that is usually a defect; a person decides, and says so in AUDIT
   H8  freshness   a "Last checked" date more than 14 days old (WARN)
   H9  notice      the standing AI notice is on every framed page, word for word
   H10 red         the measured-figure red is not used as a chart colour (Colophon rule)
+  H14 writing     the mechanical items of the studio's human-writing checklist (WARN)
 
 Issued documents (source.html and the frozen bytes inside an issue page) and the archived protocol
 page are never checked against today's rules: they are kept as issued, and are corrected only by a
@@ -53,6 +54,22 @@ SLOP = {
     r"\bworld[- ]class\b": "unmeasured claim", r"\bunprecedented\b": "unmeasured claim (say against what)",
 }
 # the Docket and the Chronicle are left out: every entry carries its own source line, and docket.py's gate (D1-D12) owns that rule
+# H14: what gives machine writing away, after the studio's own proofreading gate (lint_book.py, "I Make Because We Make", Sep 2026).
+# Each is a habit a careful human editor removes. Warnings, not failures: the site predates the checklist.
+WRITING = {
+    "em dash (the checklist allows none; use a comma, a colon or parentheses)": r"—",
+    "'not only/just X but Y'": r"\bnot (?:only|just)\b[^.]{0,60}\bbut\b",
+    "negative parallelism ('It is not X. It is Y.')": r"\b(?:it|that|this) (?:is|was)n?'?t? not [^.;]{1,50}[;.] (?:it|that|this) (?:is|was)\b",
+    "'Enter X.' device": r"(?:^|[.!?]\s+)Enter [A-Z]",
+    "doubled word (lowercase prose only; table cells and headings read as runs)": r"(?-i:\b(?!(?:that|had|is|do)\b)([a-z]{2,}) \1\b)",
+    "stock connective (moreover, furthermore, additionally, ultimately)": r"\b(?:moreover|furthermore|additionally|ultimately)\b,",
+    "throat-clearing (here's the thing, the truth is, let that sink in, needless to say)": r"\b(?:here's the thing|the truth is|let that sink in|needless to say|it bears repeating|at the end of the day|simply put)\b",
+    "hedge-intensifier (genuinely, truly, arguably, quietly)": r"\b(?:genuinely|arguably|quietly)\b",
+    "inflated verb or noun (serves as, stands as, at its core, landscape, journey, navigate)": r"\b(?:serves as|stands as|at its core|at the heart of|the landscape of|journey|navigat(?:e|es|ing) the)\b",
+    "British spelling in an American text": r"\b(?:colour|centre|judgement|whilst|organisation|recognise|practise|towards)\b",
+    "straight double quote in visible text": r'"',
+}
+
 SOURCED = ("si/", "military/", "safety/", "independence/", "methodology/", "archive/")
 
 
@@ -141,6 +158,15 @@ def main():
         for pat, why in SLOP.items():
             for m in re.finditer(pat, text, re.I):
                 add("WARN", "H6", rel, f'"{m.group(0)}" ({why}): "…{text[max(0, m.start() - 50):m.end() + 40].strip()}…"')
+        # H14 writing like a person (Budday Budderson Studio's own checklist, from "I Make Because We Make",
+        # lint_book.py, Sep 2026): the mechanical items, one warning per kind per page, with a count and a first example.
+        # Quotations are skipped: what a source said is never rewritten.
+        prose = re.sub(r"“[^”]{0,400}”|‘[^’]{0,200}’", " ", text)
+        for kind, pat in WRITING.items():
+            hits = list(re.finditer(pat, prose, re.I))
+            if hits:
+                m = hits[0]
+                add("WARN", "H14", rel, f'{kind}: {len(hits)}x, first "…{prose[max(0, m.start() - 40):m.end() + 40].strip()}…"')
         # H7 unsourced figures on sourced standing pages
         if rel.startswith(SOURCED):
             for para in re.findall(r"<(p|li|td)\b[^>]*>(.*?)</\1>", body, flags=re.S):
