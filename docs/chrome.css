@@ -231,3 +231,17 @@ body.has-sh::after{content:"";display:block;height:44px}
 .sx-ai .sx-pay a{color:var(--stamp)!important;font-weight:500}
 @media (max-width:560px){.sx-ai{font-size:11px!important;padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}body.has-sh::after{height:66px}}
 @media print{.sx-ai{position:static;border:0;padding:12px 0 0}body.has-sh::after{display:none}}
+
+/* one right edge, Oct 13, 2026: on an issued document and a post, every block in the reading column ends where the
+   text ends. Each template keeps its own measure (--col); what changes is that nothing runs past it or stops short
+   of it: the issue card above, the document's own blocks, the source and citation lines under it and the reader ask
+   now share the text's two edges. The issued bytes are untouched; this frames them. */
+body.sh-issue:has(#main>.cover),body.sh-post:has(#main>.article){--col:634px}
+body:has(#main>h1.mast){--col:756px}
+body.sh-issue:has(#main>.top){--col:808px}
+body:has(#main>.cover) #main,body:has(#main>.article) #main{max-width:var(--col)}
+body:is(.sh-issue,.sh-post) #main :is(div,p,ol,ul,li,figure,figcaption,dl,dd){max-width:none}
+body:is(.sh-issue,.sh-post) #main :is(footer,.sf){max-width:none!important;padding-left:0!important;padding-right:0!important}
+body:is(.sh-issue,.sh-post)>:is(p:not(.sx-ai),nav.social-row){max-width:var(--col)!important;padding-left:0!important;padding-right:0!important}
+body:is(.sh-issue,.sh-post)>section.sx-issue{max-width:var(--col);padding-left:0;padding-right:0}
+body:is(.sh-issue,.sh-post)>aside.rs,body:is(.sh-issue,.sh-post) #main aside.rs{max-width:var(--col)}
