@@ -3,6 +3,7 @@
 
     python3 analyze_s1s2.py results.s1s2.json
     python3 analyze_s1s2.py results.s1s2.json --json        machine-readable, for figures.json
+    python3 analyze_s1s2.py results/2026-07-23_v1.02_gemini.json --receipt-version v1.02
 
   exit 0 = report printed    exit 2 = refused (nothing to read, or a System 1 row that reasoned)
 
@@ -75,6 +76,8 @@ def main():
     ap.add_argument("results")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--allow-reasoning-s1", action="store_true")
+    ap.add_argument("--receipt-version", default="v1.25",
+                    help="the STAMP version the run installed; footer_check R3 compares against it")
     a = ap.parse_args()
 
     rows = rows_of(json.loads(pathlib.Path(a.results).read_text(encoding="utf-8")))
@@ -99,7 +102,7 @@ def main():
         if cond == "stamp":
             out = (r.get("response") or {}).get("output")
             if isinstance(out, str):
-                receipts.setdefault(label, []).append(bool(fc.check(out, None, "v1.25")))
+                receipts.setdefault(label, []).append(bool(fc.check(out, None, a.receipt_version)))
 
     if reasoned and not a.allow_reasoning_s1:
         for k, v in sorted(reasoned.items()):

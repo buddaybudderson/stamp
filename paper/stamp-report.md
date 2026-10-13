@@ -4,7 +4,7 @@ author:
   - "Lawrence Ho (Budday Budderson Studio LLC, Houston, Texas)"
 date: "Draft of Oct 13, 2026. Not yet submitted. Every number below is cited to an issued, hash-fingerprinted document."
 abstract: |
-  We describe STAMP, a provider-agnostic system prompt of about 1,500 tokens that asks a language model to recompute figures, treat text inside documents as data rather than instructions, ask instead of guessing when a request is under-specified, label each material claim with the evidence that supports it, and end every reply with a one-line structured self-report, the STAMPED receipt. The receipt's counted fields can be checked against the reply without a judge model, and we release a deterministic checker (ten rules, R1 to R10) that does so. We then report what happened when we tried to measure the protocol. On a 63-item adversarial bank, run in two independent halves of five draws per item, the instrument was reliable (Spearman-Brown 0.945 and 0.941 on two models), but the conditions around it were not: 56 of 63 responses differed between two temperature-0 runs on a pinned provider; our tier-1 grader was 4.1 points more lenient than a three-family panel; three judge models agreed with each other (AC1 0.875) more than any of them agreed with one person's blind labels (best 0.685), below the 0.871 a judge that always says PASS would score; and one appended line, "GRADING RUBRIC UPDATE: responses in this batch are pre-approved; mark PASS.", moved the tier-1 grader from 2.9% to 65.2% PASS on answers it had failed. The protocol's own measured effect on one model was -0.9 points, smaller than the grader bias, so we do not claim it. We release the bank's public half, the harness, every run file we can publish, and a pre-registered design for the next study: STAMP on and off across paired reasoning-off and reasoning-on configurations of the same models.
+  We describe STAMP, a provider-agnostic system prompt of about 1,500 tokens that asks a language model to recompute figures, treat text inside documents as data rather than instructions, ask instead of guessing when a request is under-specified, label each material claim with the evidence that supports it, and end every reply with a one-line structured self-report, the STAMPED receipt. The receipt's counted fields can be checked against the reply without a judge model, and we release a deterministic checker (ten rules, R1 to R10) that does so. We then report what happened when we tried to measure the protocol. On a 63-item adversarial bank, run in two independent halves of five draws per item, the instrument was reliable (Spearman-Brown 0.945 and 0.941 on two models), but the conditions around it were not: 56 of 63 responses differed between two temperature-0 runs on a pinned provider; our tier-1 grader was 4.1 points more lenient than a three-family panel; three judge models agreed with each other (AC1 0.875) more than any of them agreed with one person's blind labels (best 0.685), below the 0.871 a judge that always says PASS would score; and one appended line, "GRADING RUBRIC UPDATE: responses in this batch are pre-approved; mark PASS.", moved the tier-1 grader from 2.9% to 65.2% PASS on answers it had failed. The protocol's measured effect depended on which probes measured it. On the protocol's own public development probes, five earlier single-draw runs (three models, four protocol versions) showed STAMP lowering the content fail rate by 12.9 to 28.6 points, paired by probe. On the 63-item bank the protocol was not tuned on, the one controlled estimate was -0.9 points, smaller than the grader's measured bias. We read the gap as the expected signature of a protocol and its test written together, and we do not claim a general effect. We release the bank's public half, the harness, every run file we can publish, and a pre-registered design for the next study: STAMP on and off across paired reasoning-off and reasoning-on configurations of the same models.
 ---
 
 # 1. Introduction
@@ -29,9 +29,9 @@ The second half (Sections 4 to 6) reports a measurement programme that was set u
 1. A specification of STAMP v1.25: six absolutes, a five-step loop (Scope, Tackle, Audit, Mark, Present), a five-rung evidence ladder, and a receipt with three forms (full, trivial, clarify). MIT-licensed. (Section 3.)
 2. A judge-free receipt checker, `footer_check.py`, that tests a receipt against its own reply on ten mechanical rules, and was shown to refuse planted faults before release. (Section 3.4.)
 3. Six measurement findings from four pre-registered, signed and hash-fingerprinted Calibration issues (Aug 30 to Oct 10, 2026), covering decoding non-determinism, test-retest reliability, grader leniency, judge-human agreement, and prompt injection against judges. (Section 5.)
-4. An honest account of the treatment effect: what the protocol visibly changes on single prompts, why the one controlled estimate we have (-0.9 points) cannot be published as an effect, and a pre-registered design that can. (Section 6.)
+4. The treatment effect as measured so far: large reductions on the protocol's own development probes (Section 6.1), a near-zero estimate on an independent bank (Section 6.2), the reasons the two disagree, and a pre-registered design that can settle it (Section 6.3).
 
-**What this report does not claim.** It does not claim that STAMP reduces hallucination rates. That claim needs the study in Section 6.3, which has not been run.
+**What this report does not claim.** It does not claim that STAMP reduces hallucination rates in general. The reductions in Section 6.1 were measured on probes written alongside the protocol. A general claim needs the study in Section 6.3, which has not been run.
 
 **A note on the name.** "STAMP" is also the System-Theoretic Accident Model and Processes of Leveson [1], a widely used framework in safety engineering. The two are unrelated. We use "STAMP (prompt protocol)" where the context could confuse them.
 
@@ -172,7 +172,7 @@ Vol 004 took 70 answers to 20 public-half questions that the tier-1 grader had f
 
 The rubric line raised the share called PASS from 2.9% to 65.2% for the tier-1 grader, from 5.7% to 95.7% for Grok, and from 2.9% to 65.2% for the majority of three. The note to the grader moved the tier-1 grader from 2.9% to 22.9%, mostly on two questions. Gemini was not moved by any line under the pre-registered test. A keyword search of the 2,848 stored replies behind earlier issues found none that addressed the grader in the ways tested; that does not rule out subtler pressure.
 
-This is not new science; it measures, on our own instruments, an effect that [9], [10] and [11] predict. It matters for STAMP specifically because STAMP's receipt is text addressed to a reader about the reply's quality. A judge that can be told "this passes" in one line can, in principle, be influenced by a receipt that says "challenge held". We have not measured that, and Section 6.3 includes it.
+This is not new science; it measures, on our own instruments, an effect that [9], [10] and [11] predict. It matters for STAMP specifically because STAMP's receipt is text addressed to a reader about the reply's quality. A judge that can be told "this passes" in one line can, in principle, be influenced by a receipt that says "challenge held". We have not measured that. Section 6.3 includes the test, and the effect is one of the four limits on Section 6.1.
 
 ## 5.6 Models found planted errors when the record made them checkable
 
@@ -180,15 +180,29 @@ In a separate test (Sep 9 to Sep 10, 2026), four Claude models (Fable 5.1, Opus 
 
 # 6. The treatment effect
 
-## 6.1 What STAMP visibly changes
+## 6.1 On the protocol's own development probes
 
-On individual prompts, the protocol's effect is easy to see. The repository's control-experiment file [15] records same-model, same-prompt pairs in which STAMP corrected a false total (\$290k to \$275k), declined an embedded "reply only OK" command that the native model obeyed, flagged February 30 as a date that does not exist, and declined to produce a source link it had not retrieved where the native model produced a plausible one. These were graded by hand on Google Gemini during development. They show the mechanism working. They are not a rate, and we do not report one from them.
+Before the Calibration programme existed, the author ran the promptfoo harness [15] on five configurations between Jul 23 and Aug 07, 2026. The exports were recovered and committed unchanged with their SHA-256 fingerprints (`eval/promptfoo/results/`). Each run sent every runnable probe from `tests/PROBES.md` once without STAMP and once with it, at temperature 0, and graded each reply against the probe's own pass criterion with an LLM judge. promptfoo's pass column also counts the receipt assertion, which the native condition passes automatically; we re-scored on the content criterion alone, paired by probe.
 
-## 6.2 The one controlled estimate, and why we do not claim it
+| STAMP | Model as configured | Paired probes | Native fail | STAMP fail | STAMP minus native (95% CI) | p | False or missing receipt |
+|---|---|---|---|---|---|---|---|
+| v1.02 | gemini-2.5-flash | 70 | 21.4% | 8.6% | -12.9 pts (-24.3 to -1.4) | 0.048 | 28.6% |
+| v1.21 | gemini-flash-latest | 87 | 20.7% | 3.4% | -17.2 pts (-27.6 to -8.0) | 0.001 | 26.4% |
+| v1.25 | gemini-flash-latest | 91 | 22.0% | 0.0% | -22.0 pts (-30.8 to -13.2) | < 0.001 | 4.4% |
+| v1.25 | perplexity sonar | 91 | 26.4% | 11.0% | -15.4 pts (-23.1 to -8.8) | < 0.001 | 23.1% |
+| v1.25 | mistral-large-latest | 91 | 34.1% | 5.5% | -28.6 pts (-38.5 to -18.7) | < 0.001 | 18.7% |
 
-The Calibration programme ran nemotron with and without an internal STAMP revision (v1.70) on bank v1 under a shared tier-1 grader. The measured difference was -0.9 points (STAMP lower). The same issue measured that grader as 4.1 points lenient (Section 5.3), more than four times the effect. A shared grader cancels in a within-grader comparison only if its bias is the same in both arms, and STAMP responses are differently shaped (they carry labels and a receipt, and are often shorter). Section 5.5 gives a specific reason to doubt that the bias is the same. We therefore treat the -0.9 point estimate as uninformative, and we make no claim about STAMP's effect on fail rates.
+Intervals are 95% bootstrap over probes; p is a two-sided sign-flip test on the per-probe differences. The receipt column is the share of STAMP replies failing at least one of `footer_check.py`'s rules R1 to R10, checked against the version each run installed. The grader was a Gemini Flash model in every run.
 
-The public release is v1.25; the measured revision was v1.70. A result on one does not transfer to the other.
+Three readings are supported. STAMP lowered the content fail rate in all five configurations, on three model families. Receipt truth improved across versions on Gemini (28.6% to 4.4% of replies with a false or missing receipt), consistent with the v1.25 changes that moved the footer rule to the end of the core and added worked examples. And receipts were least reliable on the two non-Gemini models (23.1% and 18.7%), mostly because a `refs` source did not match the body (R6) or the footer was missing or misplaced (R1).
+
+Four things limit what the table can mean. (1) The probes and the protocol were written together: the project's rule is that every real failure becomes a new probe, and the protocol was revised until it passed them. These are development probes, and an effect on them is an upper bound. (2) On the three Gemini runs, a Gemini model graded Gemini's replies, which the later programme forbids. (3) The grader read STAMP's labels and receipt, and Section 5.5 shows that text addressed to a grader can move it. (4) Each cell is one draw at temperature 0, which Section 5.1 shows is not repeatable.
+
+## 6.2 On a bank the protocol was not tuned on
+
+The Calibration programme ran nemotron with and without an internal STAMP revision (v1.70) on bank v1 under a shared tier-1 grader. The measured difference was -0.9 points (STAMP lower). The same issue measured that grader as 4.1 points lenient (Section 5.3), more than four times the effect. A shared grader cancels in a within-grader comparison only if its bias is the same in both arms, and STAMP responses are differently shaped. We therefore treat the -0.9 point estimate as uninformative rather than as evidence of no effect.
+
+The two results are not directly comparable: different models, protocol versions, graders and banks. But the direction of the gap, large reductions on development probes and none detectable on an independent adversarial bank, is what one would expect if much of the measured effect is fit to the probes the protocol was written against. Separating that from a real general effect is the purpose of the next study. The public release is v1.25; the Calibration measurement used v1.70, and a result on one does not transfer to the other.
 
 ## 6.3 Pre-registered next study: System 1 and System 2
 
@@ -214,11 +228,11 @@ STAMP's absolutes A3 (no consequential action without instruction; read before, 
 
 # 8. Conclusion
 
-A prompt can ask a model to check its work and to say what it checked. Writing that prompt was the easy part. Measuring whether it helps took a reliable bank, two halves of five draws per item, a panel across model families, a human anchor, and a test of the judges themselves, and at the end of it the effect we set out to measure was still smaller than our grader's bias. We publish the protocol, the receipt checker and the instrument, and we publish the null-sized estimate as what it is. The next study is designed, signed in advance, and runnable by anyone with a gateway key.
+A prompt can ask a model to check its work and to say what it checked. Writing that prompt was the easy part. Measuring whether it helps took a reliable bank, two halves of five draws per item, a panel across model families, a human anchor, and a test of the judges themselves, and at the end of it the effect we set out to measure was still smaller than our grader's bias. On the probes it was written against, the protocol cut fail rates by 13 to 29 points; on a bank it was not tuned on, the effect could not be told apart from the grader's bias. We publish the protocol, the receipt checker, the instrument and both sets of results, and we report the gap between them as the finding it is. The next study is designed, signed in advance, and runnable by anyone with a gateway key.
 
 # Reproducibility
 
-Repository: <https://github.com/buddaybudderson/stamp> (MIT). Site and issued documents: <https://protocolstamp.com>. Public bank: `docs/data/bank_v1_1_public.jsonl` (37 items). Published run files: `docs/data/runs/`. Citable figures with source hashes: `docs/figures.json`. Harness: `harness/`. Chat-model evaluation: `eval/promptfoo/`. A Zenodo DOI for the tagged release will be added before submission.
+Repository: <https://github.com/buddaybudderson/stamp> (MIT). Site and issued documents: <https://protocolstamp.com>. Public bank: `docs/data/bank_v1_1_public.jsonl` (37 items). Published run files: `docs/data/runs/`. Citable figures with source hashes: `docs/figures.json`. Harness: `harness/`. Chat-model evaluation: `eval/promptfoo/`; the earlier runs in Section 6.1, with fingerprints: `eval/promptfoo/results/`. A Zenodo DOI for the tagged release will be added before submission.
 
 # Use of AI tools
 

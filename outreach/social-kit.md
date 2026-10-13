@@ -52,8 +52,9 @@ what it checked. A receipt is text about the answer's quality. If one line can t
 PASS, a receipt might as well. So the next study regrades every answer with the receipt removed.
 
 6/ Report, data and code (MIT): <arXiv link> · <repo link>
-We have not shown that STAMP lowers hallucination rates. Our one estimate was smaller than our
-grader's own bias, so we don't claim it. The report says why.
+On the probes we wrote it against, STAMP cut fail rates by 13 to 29 points across Gemini, Mistral
+and Perplexity. On an independent bank, we couldn't tell its effect from our grader's bias. We
+report both, and the gap, rather than the flattering half.
 
 ## Post B: LinkedIn
 
@@ -75,7 +76,9 @@ Measuring it properly was another matter:
   lower than a judge that says PASS to everything would score.
 - One appended line moved our grader from 2.9% to 65.2% PASS.
 
-So the report I'm publishing today says plainly: the protocol's effect is not established. What it does
+On the 93 probes I wrote alongside it, STAMP cut fail rates by 13 to 29 points on three model
+families. On an independent bank it wasn't tuned on, the effect was too small to tell apart from the
+grader's bias. So the report I'm publishing today says plainly: the general effect is not established. What it does
 establish is how easily an AI evaluation can fool its own authors, and a design that should be able to
 tell. The next study tests the prompt on reasoning-on and reasoning-off versions of the same models.
 
@@ -96,7 +99,9 @@ The part I think HN will find more useful is the measurement write-up. Trying to
 effect, we found: 56 of 63 temperature-0 responses changed between two runs on a pinned provider; our
 grader was 4.1 points softer than a three-family panel (the prompt's measured effect was -0.9 points,
 so we don't claim it); judges agreed with each other far more than with a person; and one appended
-line moved our grader from 2.9% to 65.2% PASS.
+line moved our grader from 2.9% to 65.2% PASS. On the probes the prompt was developed against it cut
+fail rates by 13 to 29 points; on an independent bank we couldn't separate it from grader bias. Both
+are in the report.
 
 Repo: <link>. Report: <link>. Paired reasoning-on and reasoning-off config for anyone who wants to run
 the next study before we do: `eval/promptfoo/promptfooconfig.system1-vs-system2.yaml`.
