@@ -7,7 +7,11 @@ STAMPED receipt is graded separately by assert.js. Canaries #100/#101 and citati
 probe #102 get extra deterministic checks so the asymmetry is machine-visible."""
 import re, json, pathlib
 
-SRC = pathlib.Path(__file__).resolve().parents[2] / "STAMP_v1.25" / "tests" / "PROBES.md"
+_ROOT = pathlib.Path(__file__).resolve().parents[2]
+# Release-bundle layout keeps STAMP_v1.25/ beside this folder; the git repository keeps the
+# same files at its root. Use whichever exists.
+SRC = next((p for p in (_ROOT / "STAMP_v1.25" / "tests" / "PROBES.md", _ROOT / "tests" / "PROBES.md") if p.exists()),
+           _ROOT / "tests" / "PROBES.md")
 lines = SRC.read_text(encoding="utf-8").splitlines()
 
 probe_re = re.compile(r'^\s*(\d+)\.\s*Prompt:\s*(.*?)\s*->\s*Pass:\s*(.*)$')

@@ -1,0 +1,70 @@
+# Pre-registration: STAMP on System 1 and System 2 configurations
+
+**Status: DRAFT, UNSIGNED.** No model call for this study may be made until this file is signed below
+and committed. A change after signing is an amendment: it is numbered, dated, signed, and says what had
+been seen before it was made.
+
+## Why this study
+
+The one controlled estimate of STAMP's effect so far (-0.9 points, internal v1.70, nemotron, Calibration
+Vol 001) is smaller than the measured bias of the grader that produced it (+4.1 points). It is not an
+effect. Reasoning models add a second open question: if a model already deliberates before answering, a
+prompt that tells it to check its work may add nothing, or may only add a receipt.
+
+## Design
+
+- **Conditions.** native (no system prompt) and stamp (STAMP v1.25 core in the system slot), built by
+  `CROSSPLATFORM_EVAL_v1.25/promptfoo/prompts.js` from the shipped files.
+- **Rows.** Each model that allows it runs twice through OpenRouter's `reasoning` switch: off ("-s1") and
+  effort high ("-s2"). Models that always reason run as "-s2" only. The rows are fixed in
+  `promptfooconfig.system1-vs-system2.yaml`; every model id is checked against the live catalog on the
+  run date, and any substitution is recorded here before the run.
+- **Items.** The 93 runnable chat probes (84 generated from `tests/PROBES.md`, 9 hand-authored fixtures).
+  Agent probes 81 to 90 are out of scope (see `REA_agent_eval.md`).
+- **Draws.** Two independent halves. Each half is one full pass at temperature 0 where the model accepts
+  it, run as a separate `promptfoo eval --no-cache` writing `results.s1s2.A.json` and `results.s1s2.B.json`.
+  The retest gap between halves is the noise floor for each row.
+- **Grader.** Tier 1: `bytedance-seed/seed-2-1-turbo` (no ByteDance model is a candidate). Tier 2: the
+  three-family panel (`harness/panel_grade.py`) on a 20% stratified sample of both conditions, plus every
+  item whose tier-1 verdict differs between halves.
+
+## Questions and primary analysis
+
+| | Question | Analysis |
+|---|---|---|
+| Q1 | Does STAMP change the fail rate on System 1 rows? | stamp minus native, paired by probe, 95% bootstrap CI over probes, sign-flip p (`analyze_s1s2.py`) |
+| Q2 | Does it change the fail rate on System 2 rows? | as Q1 |
+| Q3 | Is the STAMP effect different with reasoning on? | (s2 effect) minus (s1 effect), paired by probe, within each model |
+| Q4 | Is receipt truth different between System 1 and System 2? | share of stamp replies failing `harness/footer_check.py` R1 to R10, per row |
+
+**Secondary (still pre-registered).**
+
+- **S1, receipt influence on the grader.** Regrade every stamp reply with its receipt line removed. The
+  difference in tier-1 PASS share (receipt present minus removed), paired by reply, measures how much the
+  receipt itself moves the grader. If it exceeds the row's noise floor, Q1 to Q3 are reported on the
+  receipt-stripped verdicts.
+- **S2, cost.** Input, output and reasoning tokens per reply, and charged cost as the gateway reports it.
+
+## Decision rules, fixed now
+
+- An effect is reported as an effect only when its 95% interval excludes zero **and** its size exceeds
+  both the row's retest gap and the panel-measured grader bias for that row. Otherwise it is reported as
+  "this design cannot tell", with the minimum detectable effect.
+- A "-s1" row whose replies report reasoning tokens is dropped with its pair, and the drop is reported.
+  (`analyze_s1s2.py` refuses to proceed otherwise.)
+- A row losing more than 10% of draws (empty, truncated or refused) is reported, and its rate is not
+  compared until the loss is explained.
+- No row is added or dropped after the first call except under the two rules above.
+- Every number in the report is computed from the committed `results.s1s2.json` and registered in
+  `docs/figures.json` with its source hash.
+
+## Predictions (recorded so they can be wrong)
+
+1. Q1: STAMP lowers the fail rate on at least half of the System 1 rows.
+2. Q3: the STAMP effect is smaller with reasoning on for at least half of the paired models.
+3. Q4: System 2 rows produce false or missing receipts less often than System 1 rows.
+4. S1: removing the receipt lowers the tier-1 PASS share by more than 1 point.
+
+## Signature
+
+Signed: ______________________  Date and time (America/Chicago): ______________________
