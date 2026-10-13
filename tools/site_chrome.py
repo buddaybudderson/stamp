@@ -49,6 +49,7 @@ I = {
  "fence": '<path d="M5 21V7l2-3 2 3v14"/><path d="M15 21V7l2-3 2 3v14"/><path d="M9 10h6"/><path d="M9 16h6"/>',
  "redo": '<path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/>',
  "eye": '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+ "leaf": '<path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"/><path d="M5 19l7-7"/>',
  "heart": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
  "lock": '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
  "page": '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/>',
@@ -92,6 +93,7 @@ def groups(latest_cal, latest_log):
             ("Corrections + changes", "What we got wrong, dated", "/corrections/", "redo"),
             ("AI Safety + Governance", "What our agents may and may not do", "/safety/", "eye"),
             ("Support", "How the program is paid for", "/support/", "heart"),
+            ("Footprint", "What our tokens cost in power, and who pays it", "/footprint/", "leaf"),
             None,
             ("Privacy", "What we keep, and for how long", "/privacy/", "lock"),
             ("Terms", "The terms of use", "/terms/", "page"),
@@ -198,7 +200,7 @@ PALETTE = [
     ("Methodology", "/methodology/"), ("Definitions", "/definitions/"), ("The protocol, v1.25", "/protocol/v1.25/"),
     ("Run files", "/data/runs/"), ("figures.json, the registry", "/figures.json"),
     ("The Ten House Protocols", "/house-protocols/"), ("Independence", "/independence/"), ("Corrections + changes", "/corrections/"),
-    ("AI Safety + Governance", "/safety/"), ("Support", "/support/"),
+    ("AI Safety + Governance", "/safety/"), ("Support", "/support/"), ("Footprint", "/footprint/"),
     ("Colophon", "/colophon/"), ("Subscribe", "/subscribe/"), ("Other STAMPs", "/other-stamps/"),
     ("Privacy", "/privacy/"), ("Terms", "/terms/"), ("RSS feed", "/feed.xml"),
 ]
@@ -240,6 +242,7 @@ def sitemap(cal, log):
             '<div class="sf-bottom"><span>Protocol STAMP · A Budday Budderson Production</span>'
             f'<span>{house.SHORT}</span>'
             f'<a class="sf-play" href="/colophon/#playground">{play}<span>The seven finishes: playground</span></a>'
+            '<a href="/footprint/">Every token draws power: our footprint</a>'
             '<a href="/feed.xml">RSS</a></div></nav><!-- sf:end -->')
 
 
