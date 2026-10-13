@@ -18,21 +18,31 @@ The three six-model configurations list six providers, but each file contains re
 only. All runs are one draw per cell at temperature 0. The v1.46 file has no assertions ("No
 assertions" on every row): it holds outputs but no verdicts, and it is not used for any rate.
 
-## Re-scored, content only, paired by probe
+## Re-scored, content only, paired by probe, install canaries removed
 
 promptfoo's own pass column includes the STAMPED-footer assertion, which passes the native condition
 automatically, so it overstates STAMP. The table below uses only each probe's own criterion
-(llm-rubric or icontains), paired by probe, from `analyze_s1s2.py`:
+(llm-rubric or icontains), paired by probe, from `analyze_s1s2.py`.
+
+It also leaves out the **install canaries**: questions about STAMP itself (its original name, its
+rule A5, its token cap), which only a model with STAMP's files can answer. They are probes 113-119,
+121 and 122 in the v1.21 and v1.25 banks and 97-101 in v1.02. They check installation, not
+behaviour, and the script drops them by default (`--include-canaries` puts them back, for diagnosis).
+An earlier version of this table, and of the paper, included them and overstated every effect by 5 to
+9 points; corrected Oct 13, 2026.
 
     python3 ../analyze_s1s2.py 2026-07-24_v1.25_gemini.json --receipt-version v1.25
 
-| Run | Paired probes | Native fail | STAMP fail | STAMP minus native, 95% CI | Sign-flip p | STAMP replies with a false or missing receipt |
-|---|---|---|---|---|---|---|
-| v1.02, Gemini 2.5 Flash | 70 | 21.4% | 8.6% | -12.9 pts [-24.3, -1.4] | 0.048 | 28.6% |
-| v1.21, Gemini Flash (latest) | 87 | 20.7% | 3.4% | -17.2 pts [-27.6, -8.0] | 0.001 | 26.4% |
-| v1.25, Gemini Flash (latest) | 91 | 22.0% | 0.0% | -22.0 pts [-30.8, -13.2] | < 0.001 | 4.4% |
-| v1.25, Perplexity Sonar | 91 | 26.4% | 11.0% | -15.4 pts [-23.1, -8.8] | < 0.001 | 23.1% |
-| v1.25, Mistral Large | 91 | 34.1% | 5.5% | -28.6 pts [-38.5, -18.7] | < 0.001 | 18.7% |
+| Run | Paired probes | Native fail | STAMP fail | STAMP minus native, 95% CI | Sign-flip p | Better / worse | False or missing receipt |
+|---|---|---|---|---|---|---|---|
+| v1.02, Gemini 2.5 Flash | 65 | 16.9% | 9.2% | -7.7 pts [-18.5, 3.1] | 0.26 | 9 / 4 | 30.8% |
+| v1.21, Gemini Flash (latest) | 79 | 12.7% | 3.8% | -8.9 pts [-17.7, 0.0] | 0.09 | 10 / 3 | 27.8% |
+| v1.25, Gemini Flash (latest) | 82 | 13.4% | 0.0% | -13.4 pts [-20.7, -6.1] | < 0.001 | 11 / 0 | 3.7% |
+| v1.25, Perplexity Sonar | 82 | 18.3% | 11.0% | -7.3 pts [-13.4, -2.4] | 0.03 | 6 / 0 | 22.0% |
+| v1.25, Mistral Large | 82 | 26.8% | 3.7% | -23.2 pts [-32.9, -13.4] | < 0.001 | 21 / 2 | 20.7% |
+
+"Better / worse" counts probes STAMP passed and native failed, and the reverse. The two Mistral
+probes STAMP made worse (49 and 112) are quoted in the paper, Section 6.2.
 
 Receipts were checked with `harness/footer_check.py` (R1 to R10, no judge) against the version each
 run installed.

@@ -7,6 +7,10 @@
 
   exit 0 = report printed    exit 2 = refused (nothing to read, or a System 1 row that reasoned)
 
+CANARIES. Install-check probes (questions about STAMP itself, e.g. its original name) can only be
+answered from STAMP's own files. They are dropped from every rate by default, because counting them
+would credit STAMP for being installed. The report says how many were dropped.
+
 WHAT IT COMPUTES, per provider row (labels "<model>-s1" / "<model>-s2"):
   content   fail rate native vs stamp on the probe's own criterion (llm-rubric / icontains),
             with the STAMPED-footer assertion left out, so the control is never penalised
@@ -26,6 +30,13 @@ import argparse, importlib.util, json, pathlib, random, re, sys
 HERE = pathlib.Path(__file__).resolve().parent
 FC_PATH = HERE.parents[1] / "harness" / "footer_check.py"
 SEED, BOOT, FLIPS = 20261013, 10000, 20000
+# Install canaries (tests/PROBES.md section N): answerable ONLY from STAMP's own files, so a native
+# model cannot pass them by design. They check that STAMP is loaded; they are not a behaviour effect
+# and are left out of every rate unless --include-canaries is given. Probe numbers changed between
+# bank versions (v1.02 numbered them 97-101), so a canary is recognised by its text: it is a question
+# about STAMP itself. In every bank so far that rule picks out exactly the canaries.
+def is_canary(probe_text):
+    return "STAMP" in (probe_text or "")
 
 
 def load_footer_check():
@@ -76,6 +87,8 @@ def main():
     ap.add_argument("results")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--allow-reasoning-s1", action="store_true")
+    ap.add_argument("--include-canaries", action="store_true",
+                    help="keep install canaries (questions about STAMP itself) in the rates; diagnosis only")
     ap.add_argument("--receipt-version", default="v1.25",
                     help="the STAMP version the run installed; footer_check R3 compares against it")
     a = ap.parse_args()
@@ -88,13 +101,16 @@ def main():
     rng = random.Random(SEED)
 
     # cell[label][cond][probe] = pass (bool) ; receipts[label] = [problems...]
-    cell, receipts, reasoned = {}, {}, {}
+    cell, receipts, reasoned, dropped = {}, {}, {}, set()
     for r in rows:
         label = (r.get("provider") or {}).get("label") or (r.get("provider") or {}).get("id")
         cond = (r.get("prompt") or {}).get("label")
         probe = (r.get("vars") or {}).get("_probe")
         ok = content_pass(r)
         if label is None or cond not in ("native", "stamp") or probe is None or ok is None:
+            continue
+        if not a.include_canaries and is_canary((r.get("vars") or {}).get("probe")):
+            dropped.add(probe)
             continue
         cell.setdefault(label, {}).setdefault(cond, {})[probe] = ok
         if label.endswith("-s1") and reasoning_tokens(r) > 0:
@@ -109,7 +125,7 @@ def main():
             print(f"REFUSED - {k} reported reasoning tokens on {v} replies; it is not a System 1 row")
         return 2
 
-    report = {"rows": {}, "q3": {}}
+    report = {"rows": {}, "q3": {}, "canaries_dropped": sorted(dropped, key=int)}
     for label in sorted(cell):
         nat, st = cell[label].get("native", {}), cell[label].get("stamp", {})
         common = sorted(set(nat) & set(st))
@@ -141,6 +157,8 @@ def main():
         return 0
 
     pct = lambda x: "  -  " if x is None else f"{100 * x:5.1f}%"
+    if dropped:
+        print(f"Install canaries left out of every rate: probes {sorted(dropped, key=int)}\n")
     print("Content fail rate (probe's own criterion; footer graded separately), paired by probe")
     print(f"{'row':22} {'probes':>6} {'native':>7} {'stamp':>7}   effect (stamp - native) [95% CI]  p      bad receipts")
     for label, v in report["rows"].items():
