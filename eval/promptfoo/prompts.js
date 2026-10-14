@@ -12,7 +12,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const REL = path.join(__dirname, '..', '..', 'STAMP_v1.25');
+// Release-bundle layout keeps STAMP_v1.25/ beside this folder; the git repository keeps the
+// same files at its root. Use whichever exists.
+const BUNDLE = path.join(__dirname, '..', '..', 'STAMP_v1.25');
+const REL = fs.existsSync(path.join(BUNDLE, 'STAMP.md')) ? BUNDLE : path.join(__dirname, '..', '..');
 
 // Probes whose answer requires the knowledge doc (simulated retrieval hit): #114 (why
 // 'Craft' was rejected) and #122 (why July 23 was chosen) both live only in the story.
