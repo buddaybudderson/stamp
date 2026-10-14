@@ -139,3 +139,9 @@ luna, gemini-flash, haiku, grok, sonnet), both halves per model, stopping before
 reached is reported as not run.
 
 Signed: Lawrence Ho (approved when asked, Oct 13, 2026 22:45 CDT)
+
+## Run record (Oct 14, 2026; not an amendment)
+
+Run Oct 14, 2026 03:45 to 05:50 UTC under Amendment 3. Files, analysis and write-up:
+`eval/promptfoo/results/2026-10-14_s1s2/`. Not run: the tier-2 panel, the receipt-stripped regrade (S1),
+and registration in `docs/figures.json`; every number reported from this run is tier-1 and says so.
