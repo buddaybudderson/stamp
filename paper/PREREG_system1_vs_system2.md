@@ -121,3 +121,21 @@ tier-1 verdicts are reported with that caveat. The run goes row by row with a sp
 stops before the key limit; any row not run is reported as not run.
 
 Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:33 CDT)
+
+## Amendment 3 (Oct 13, 2026 22:45 CDT, before any study call)
+
+**What had been seen.** Two more pilots on the nemotron pair (10 probes each, $0.27 together; not study
+data). With effort `low` the grader still reasoned 3,000 to 4,000 tokens on some grades and reached its
+8,192-token limit on 5 of 80 pilot grades, so Amendment 2 did not bring the run inside the budget. The
+pilots also showed that promptfoo's OpenRouter provider puts a model's reasoning in front of its reply
+("Thinking: ...") unless `showThinking` is false, so the grader had been reading System 2 chain-of-thought.
+With reasoning hidden and the grader's reasoning off, a pilot gave 0 grader errors, $0.00044 per grade, and
+the same verdict as the effort-low grader on all 35 items where both returned one.
+
+**Change.** `showThinking: false` on every row and on the grader; grader reasoning off
+(`reasoning: { enabled: false }`), same model and rubric. Items that end in an error are run once more
+(`--filter-errors-only`), and the retry is reported. Rows run one model at a time, cheapest first (nemotron,
+luna, gemini-flash, haiku, grok, sonnet), both halves per model, stopping before the key limit; a model not
+reached is reported as not run.
+
+Signed: Lawrence Ho (approved when asked, Oct 13, 2026 22:45 CDT)
