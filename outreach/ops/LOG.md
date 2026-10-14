@@ -51,3 +51,18 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
   skipped, and the run says so.
 - **Superseded:** the earlier OPEN items about bud.day dead routes and the launch-kit ZIP. Parked with
   bud.day.
+
+### 2026-10-14, evening: /shop/ drafted
+- Built `docs/shop/index.html` in site chrome, with three items marked "Not yet / price to be set" and
+  no checkout links. Added "Shop" to the Trust menu, page search and sitemap, a Change row in
+  /corrections/, and set no reader-ask box on the shop page.
+- Gates: house_gate PASS (0 FAIL). The holdout gate could not run in the cloud session (the bank
+  is not in the repo); Lawrence runs `python harness/holdout_gate.py --path docs` locally before
+  merge. Rendered at 1280px and 390px with no horizontal overflow.
+- **Waiting for Lawrence:**
+  1. Approve the page text.
+  2. Get the designs from ChatGPT (brief in the critique).
+  3. Order samples.
+  4. Create the 3 Stripe Payment Links with shipping-address collection on.
+  5. Add shipping and returns text to /terms/ and the printer line to /privacy/.
+  6. Merge.

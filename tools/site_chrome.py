@@ -56,6 +56,7 @@ I = {
  "info": '<circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7.5v.5"/>',
  "pen": '<path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/>',
  "tag": '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/>',
+ "bag": '<path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
 }
 
 
@@ -94,6 +95,7 @@ def groups(latest_cal, latest_log):
             ("Corrections + changes", "What we got wrong, dated", "/corrections/", "redo"),
             ("AI Safety + Governance", "What our agents may and may not do", "/safety/", "eye"),
             ("Support", "How the program is paid for", "/support/", "heart"),
+            ("Shop", "Three things to wear and use, in preparation", "/shop/", "bag"),
             ("Footprint", "What our tokens cost in power, and who pays it", "/footprint/", "leaf"),
             None,
             ("Privacy", "What we keep, and for how long", "/privacy/", "lock"),
@@ -110,7 +112,7 @@ def groups(latest_cal, latest_log):
 def section_of(rel):
     for key, pref in (("pub", ("archive/", "writing/", "bench/", "subscribe/", "paper/")), ("method", ("methodology/", "definitions/", "data/")),
                       ("policy", ("docket/", "chronicle/", "si/", "military/")),
-                      ("trust", ("house-protocols/", "independence/", "corrections/", "safety/", "support/", "privacy/", "terms/")),
+                      ("trust", ("house-protocols/", "independence/", "corrections/", "safety/", "support/", "shop/", "privacy/", "terms/")),
                       ("about", ("about/", "colophon/", "other-stamps/"))):
         if rel.startswith(pref):
             return key
@@ -167,7 +169,7 @@ NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/paper/">
 PAY = [("Once, any amount", "https://buy.stripe.com/dRm8wIe1F1Uu6M074F4Rq00"),
        ("$5 a month", "https://buy.stripe.com/14A8wI8Hl56G2vKbkV4Rq01"),
        ("$25 a month", "https://buy.stripe.com/7sY8wIaPt1Uudao88J4Rq02")]
-NO_ASK = ("support/", "subscribe/", "privacy/", "terms/")    # the page that is the ask, the sign-up, and the legal pages
+NO_ASK = ("support/", "shop/", "subscribe/", "privacy/", "terms/")    # the page that is the ask, the sign-up, and the legal pages
 ASK = ('<!-- rs:start --><aside class="rs" aria-label="Reader support"><p class="rs-eye">Readers pay for this</p>'
        '<div class="rs-h">Free to read, free to check, paid for by the people who read it.</div>'
        '<p>There is no paywall, no advertising on an issue, and no money from a measured company outside '
@@ -203,7 +205,7 @@ PALETTE = [
     ("Methodology", "/methodology/"), ("Definitions", "/definitions/"), ("The protocol, v1.25", "/protocol/v1.25/"),
     ("Run files", "/data/runs/"), ("figures.json, the registry", "/figures.json"),
     ("The Ten House Protocols", "/house-protocols/"), ("Independence", "/independence/"), ("Corrections + changes", "/corrections/"),
-    ("AI Safety + Governance", "/safety/"), ("Support", "/support/"), ("Footprint", "/footprint/"),
+    ("AI Safety + Governance", "/safety/"), ("Support", "/support/"), ("Shop", "/shop/"), ("Footprint", "/footprint/"),
     ("Colophon", "/colophon/"), ("Subscribe", "/subscribe/"), ("Other STAMPs", "/other-stamps/"),
     ("Privacy", "/privacy/"), ("Terms", "/terms/"), ("RSS feed", "/feed.xml"),
 ]

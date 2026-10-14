@@ -167,7 +167,7 @@ Lawrence's call. The Budday Studio Editions plan above is parked. Here is what c
 **Rules the page must carry:**
 - Merch buys no tier, badge, vote or mention, the same as a contribution.
 - Merch revenue goes in the /support/ ledger as its own line ("Merch, net of production").
-- No merch link on any issue page, only in the site chrome and on /support/.
+- No merch link inside an issue's own text. The site menu and /support/ are the only places it is linked.
 - /privacy/ gets one line saying Stripe and the printer receive the name and address needed to ship.
 - /terms/ gets returns and shipping text.
 - Record the change in /corrections/ (Change row), as the site does for every policy change.
