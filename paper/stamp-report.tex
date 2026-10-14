@@ -95,15 +95,15 @@ each other (AC1 0.875) more than any agreed with one person's blind
 labels (best 0.685), below the 0.871 of a judge that always says PASS;
 and one appended line moved the grader from 2.9\% to 65.2\% PASS on
 answers it had failed. The protocol's effect depended on which probes
-measured it. On its own public development probes, five single-draw runs
-(three model families) showed STAMP lowering the content fail rate by
-7.3 to 23.2 points, with install-check probes excluded. On the bank it
-was not tuned on, the one controlled estimate was -0.9 points, smaller
-than the grader's bias. We read the gap as the signature of a protocol
-and its test written together, and do not claim a general effect. We
-release the public bank, the harness, every run file we can publish, and
-a pre-registered design that tests STAMP on reasoning-off and
-reasoning-on configurations of the same models.
+measured it. On its own public development probes, ten single-draw runs
+(eight models from eight developers) showed STAMP lowering the content
+fail rate by 7.3 to 23.2 points, with install-check probes excluded. On
+the bank it was not tuned on, the one controlled estimate was -0.9
+points, smaller than the grader's bias. We read the gap as the signature
+of a protocol and its test written together, and do not claim a general
+effect. We release the public bank, the harness, every run file we can
+publish, and a pre-registered design that tests STAMP on reasoning-off
+and reasoning-on configurations of the same models.
 \end{abstract}
 
 \hypertarget{introduction}{%
@@ -613,30 +613,31 @@ checkable from the page.
 probes}\label{on-the-protocols-own-development-probes}}
 
 Before the Calibration programme existed, the author ran the promptfoo
-harness {[}15{]} on five configurations between Jul 23 and Aug 07, 2026.
-The exports were recovered and committed unchanged with their SHA-256
-fingerprints (\texttt{eval/promptfoo/results/}). Each run sent every
-runnable probe from \texttt{tests/PROBES.md} once without STAMP and once
-with it, at temperature 0, and graded each reply against the probe's own
-pass criterion with an LLM judge. promptfoo's pass column also counts
-the receipt assertion, which the native condition passes automatically;
-we re-scored on the content criterion alone, paired by probe. We also
-left out the install canaries: nine probes (five in the v1.02 bank) that
-ask about STAMP itself, such as its original name, which only a model
-with STAMP's files can answer. They check that STAMP is loaded, not that
-it changes behaviour, and counting them would have added 5 to 9 points
-to every STAMP effect below.
+harness {[}15{]} on ten configurations between Jul 23 and Aug 08, 2026:
+four protocol versions, eight models from eight developers. The exports
+were recovered and committed unchanged with their SHA-256 fingerprints
+(\texttt{eval/promptfoo/results/}). Each run sent every runnable probe
+from \texttt{tests/PROBES.md} once without STAMP and once with it, at
+temperature 0, and graded each reply against the probe's own pass
+criterion with an LLM judge. promptfoo's pass column also counts the
+receipt assertion, which the native condition passes automatically; we
+re-scored on the content criterion alone, paired by probe. We also left
+out the install canaries: nine probes (five in the v1.02 bank) that ask
+about STAMP itself, such as its original name, which only a model with
+STAMP's files can answer. They check that STAMP is loaded, not that it
+changes behaviour, and counting them would have added 5 to 9 points to
+every STAMP effect below.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0633}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1772}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0506}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0886}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0886}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.2532}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0759}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0886}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1139}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0610}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.2073}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0488}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.2439}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0732}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1098}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Ver.
@@ -671,6 +672,16 @@ v1.25 & Perplexity Sonar & 82 & 18.3\% & 11.0\% & -7.3 (-13.4, -2.4) &
 0.03 & 6 / 0 & 22.0\% \\
 v1.25 & Mistral Large & 82 & 26.8\% & 3.7\% & -23.2 (-32.9, -13.4) &
 \textless0.001 & 21 / 2 & 20.7\% \\
+v1.25 & gpt-oss-120b & 82 & 31.7\% & 9.8\% & -22.0 (-31.7, -12.2) &
+\textless0.001 & 19 / 1 & 82.9\%* \\
+v1.25 & GLM-4.7 & 82 & 29.3\% & 12.2\% & -17.1 (-28.0, -6.1) & 0.006 &
+19 / 5 & 84.1\%* \\
+v1.25 & DeepSeek V4 Flash & 82 & 23.2\% & 11.0\% & -12.2 (-22.0, -2.4) &
+0.04 & 15 / 5 & 87.8\%* \\
+v1.25 & Step 3.7 Flash & 82 & 26.8\% & 15.9\% & -11.0 (-20.7, -1.2) &
+0.06 & 14 / 5 & 81.7\%* \\
+v1.25 & Nemotron 3 Super & 82 & 25.6\% & 15.9\% & -9.8 (-20.7, 1.2) &
+0.11 & 14 / 6 & 86.6\%* \\
 \end{longtable}
 
 n is the number of probes paired across both arms after canaries are
@@ -681,21 +692,34 @@ per-probe differences. ``Bad receipt'' is the share of STAMP replies
 failing at least one of \texttt{footer\_check.py}'s rules R1 to R10,
 checked against the version each run installed. Models as configured:
 \texttt{gemini-2.5-flash}, \texttt{gemini-flash-latest} (an alias; the
-model behind it was not recorded), \texttt{perplexity:sonar} and
-\texttt{mistral-large-latest}. The grader was a Gemini Flash model in
-every run.
+model behind it was not recorded), \texttt{perplexity:sonar},
+\texttt{mistral-large-latest}, and, in one run through a free
+OpenAI-compatible gateway, \texttt{openai/gpt-oss-120b},
+\texttt{zai-glm-4.7}, \texttt{deepseek-ai/deepseek-v4-flash},
+\texttt{stepfun-ai/step-3.7-flash} and
+\texttt{nvidia/nemotron-3-super-120b-a12b}. The grader was a Gemini
+Flash model in every run. * These five models returned their reasoning
+with the answer, and the reasoning usually contains a draft receipt, so
+68\% to 77\% of their STAMP replies carry two footers and fail R1;
+counting every other rule, 3.6\% to 13.1\% of their receipts fail.
 
 Three readings are supported. STAMP lowered the content fail rate in all
-five configurations, on three model families, though for the two
-earliest versions the interval includes zero. At v1.25 it was never
-worse than native on Gemini or Perplexity, and worse on 2 of 82 probes
-on Mistral (Section 6.2). Receipt truth improved across versions on
-Gemini (30.8\% to 3.7\% of replies with a false or missing receipt),
-consistent with the v1.25 changes that moved the footer rule to the end
-of the core and added worked examples. And receipts were least reliable
-on the two non-Gemini models (22.0\% and 20.7\%), mostly because a
+ten configurations, on eight models from eight developers, by 7.3 to
+23.2 points. For the two earliest versions and for Nemotron 3 Super the
+interval includes zero, and for Step 3.7 Flash the two tests disagree at
+the margin (interval excludes zero, p = 0.06). At v1.25 it was never
+worse than native on Gemini or Perplexity; on the other six models it
+was worse on 1 to 6 of 82 probes, against 14 to 21 where it was better
+(Section 6.2). Receipt truth improved across versions on Gemini (30.8\%
+to 3.7\% of replies with a false or missing receipt), consistent with
+the v1.25 changes that moved the footer rule to the end of the core and
+added worked examples. And receipts were least reliable away from
+Gemini: 22.0\% and 20.7\% on Perplexity and Mistral, mostly because a
 \texttt{refs} source did not match the body (R6) or the footer was
-missing or misplaced (R1).
+missing or misplaced (R1); on the five reasoning-capable models, most
+failures came from a second, draft footer inside the returned reasoning.
+A deployment that shows a model's reasoning to the user would show that
+draft receipt too.
 
 Four things limit what the table can mean. (1) The probes and the
 protocol were written together: the project's rule is that every real
@@ -867,12 +891,13 @@ reliable bank, two halves of five draws per item, a panel across model
 families, a human anchor, and a test of the judges themselves, and at
 the end of it the effect we set out to measure was still smaller than
 our grader's bias. On the probes it was written against, the protocol
-cut fail rates by 7 to 23 points, and on one model it also made two
-answers worse; on a bank it was not tuned on, the effect could not be
-told apart from the grader's bias. We publish the protocol, the receipt
-checker, the instrument and both sets of results, and we report the gap
-between them as the finding it is. The next study is designed, signed in
-advance, and runnable by anyone with a gateway key.
+cut fail rates by 7 to 23 points across eight models, and on six of them
+it also made a few answers worse; on a bank it was not tuned on, the
+effect could not be told apart from the grader's bias. We publish the
+protocol, the receipt checker, the instrument and both sets of results,
+and we report the gap between them as the finding it is. The next study
+is designed, signed in advance, and runnable by anyone with a gateway
+key.
 
 \hypertarget{reproducibility}{%
 \section{Reproducibility}\label{reproducibility}}
