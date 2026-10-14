@@ -150,3 +150,49 @@ and ordering samples all wait for Lawrence's approval.
 **For STAMP itself:** two or three restrained items at most (the receipt tee, the "February 30 does
 not exist." mug, a sticker). Sell them from bud.day's shop, with a single "Merch" line on /support/.
 Put the revenue in the ledger as its own line, and disclose that buying merch buys no influence.
+
+## Decision, 14 Oct: merch is sold on protocolstamp.com first; bud.day comes later
+
+Lawrence's call. The Budday Studio Editions plan above is parked. Here is what changes for STAMP.
+
+**Storefront: a `/shop/` page on protocolstamp.com. No embedded store and no third-party script.**
+- Each product is a plain link to a Stripe Payment Link with shipping-address collection on, the same
+  pattern /support/ already uses. Stripe hosts the checkout, so the site never touches card data and
+  stays analytics-free.
+- Fulfillment: at launch volume, orders are entered by hand in Printify or Printful from Stripe's
+  order email. Automate only once there are more than about 30 orders a month.
+- Embedded storefront widgets (Shopify Buy Button, Fourthwall and similar) would load third-party JS
+  and cookies, which breaks the no-analytics promise on /privacy/. Don't use them.
+
+**Rules the page must carry:**
+- Merch buys no tier, badge, vote or mention, the same as a contribution.
+- Merch revenue goes in the /support/ ledger as its own line ("Merch, net of production").
+- No merch link on any issue page, only in the site chrome and on /support/.
+- /privacy/ gets one line saying Stripe and the printer receive the name and address needed to ship.
+- /terms/ gets returns and shipping text.
+- Record the change in /corrections/ (Change row), as the site does for every policy change.
+
+**First drop, three items, all print-on-demand:**
+1. **The receipt tee.** A full `[STAMPED v1.25 | parts 3/3 | figs 2/2 | ... ]` line across the chest,
+   in IBM Plex Mono. Around $30.
+2. **"February 30 does not exist." mug.** Stamp red on paper cream. Around $18.
+3. **Sticker sheet:** "temperature 0 is not a measurement", "show your work", and the paw. Around $6.
+
+Prices are placeholders at roughly 2x base cost, to be confirmed from real quotes and samples. Gates
+before the page goes live:
+- Lawrence approves the designs.
+- Samples are ordered and photographed.
+- The Stripe products are created (Lawrence's yes required).
+- The page passes `holdout_gate.py` and the site's house gate.
+
+**Updated brief to paste into the same ChatGPT chat:**
+
+> Change of plan: park Budday Studio Editions. Design a 3-item first merch drop for **Protocol STAMP
+> (protocolstamp.com) only**: (1) a tee printing a full STAMPED receipt line in IBM Plex Mono,
+> (2) a mug reading "February 30 does not exist.", (3) a sticker sheet: "temperature 0 is not a
+> measurement", "show your work", and a paw mark. Palette: paper #F8EED3, ink #131E29, stamp red
+> #A8432A. For each: exact text/art layout, print placement, garment/mug/sticker spec, Printify AND
+> Printful base cost + US shipping (cite the pricing page and date), suggested retail at ~2x base,
+> and a 2-sentence description with no claim that STAMP "stops hallucinations". Checkout will be a
+> Stripe Payment Link per product on a static page with no tracking scripts. Give me print-ready
+> file specs (px, DPI, transparent PNG/SVG) so a designer or I can produce the files.

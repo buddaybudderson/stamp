@@ -37,3 +37,17 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
   shop launch.
 - **Decision needed:** the storefront. My recommendation is Stripe Payment Links plus Printify, or
   Etsy, rather than WooCommerce, since bud.day is not WordPress.
+
+### 2026-10-14, later still: decision on merch focus
+- **Decision (Lawrence):** sell merch on protocolstamp.com first; bud.day is parked. The critique has
+  a new section setting out the storefront design (Stripe Payment Links, no embedded scripts), the
+  first drop of three items, and an updated brief for ChatGPT.
+- **Next revenue run (Wed 14 Oct, 17:46):** draft `docs/shop/index.html` on this branch, in site
+  chrome, with the products marked "coming soon" and no Stripe links yet. Also draft the
+  /privacy/, /terms/, /support/ and /corrections/ lines. Nothing goes live until Lawrence approves
+  the designs and samples and creates the Stripe products.
+- **OPEN:** the routine was created without Gmail or Drive connectors. Lawrence has to add them in
+  claude.ai → Routines → "STAMP ops desk" → connectors. Until then, Gmail triage and drafts are
+  skipped, and the run says so.
+- **Superseded:** the earlier OPEN items about bud.day dead routes and the launch-kit ZIP. Parked with
+  bud.day.

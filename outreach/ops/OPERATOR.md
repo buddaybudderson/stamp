@@ -91,7 +91,7 @@ monitor reads it, so don't duplicate that report.
 
 ### 5. Revenue and merch (with ChatGPT through Lawrence)
 Work from `outreach/ops/revenue-critique-*.md`, including its addendum on ChatGPT's merch plan.
-ChatGPT owns product design and merch strategy for Budday Studio Editions on bud.day. Lawrence
+Merch is sold on **protocolstamp.com `/shop/`** first; bud.day is parked until Lawrence reopens it (decision of 14 Oct, see the critique). ChatGPT owns product design. Lawrence
 carries its output here, from share links or the launch-kit ZIP saved to Drive. You check every factual
 claim in it before building on it. bud.day is a static Cloudflare site, not WordPress. Then you build:
 - the `/shop/` page and its disclosure
