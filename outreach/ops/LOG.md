@@ -128,3 +128,13 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
 - **OPEN, due Oct 31, 23:59 PDT:** Lawrence to supply a reference (name and email), then file.
   Remind him on every run until it is filed. When he says it's filed, add the filing date to
   `/writing/grants/`.
+
+### 2026-10-14: California letter ready to send
+- Contact found: GovOps has no AI-specific address, so the letter goes to its general inbox,
+  AskGovOps@govops.ca.gov, with SB 813, AB 1405 and N-9-26 in the subject and a forwarding
+  request in the body. Source: https://www.govops.ca.gov/about/contact-us/
+- The Gmail draft is now send-ready (all notes removed), and the figures were checked against the
+  report.
+- **Waiting for Lawrence:** press Send. The draft sits in b@bud.day but signs s@bud.day; send it
+  from the account where replies should land.
+- Follow up if there's no reply in 10 business days.
