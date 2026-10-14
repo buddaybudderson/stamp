@@ -16,6 +16,11 @@ def rows(doc):
     return doc["results"]["results"]
 
 
+def is_error(x):
+    # promptfoo writes an assertion's failure reason into "error" too; only failureReason 2 is an ERROR.
+    return x.get("failureReason") == 2
+
+
 def key(x):
     # By the probe's own variables, not testIdx: a filtered retry renumbers its tests.
     return (x["provider"].get("label"), x["prompt"].get("label"), json.dumps(x.get("vars"), sort_keys=True))
@@ -31,15 +36,15 @@ def main():
         p = pathlib.Path(f)
         doc = json.loads(p.read_text())
         rs = rows(doc)
-        errored = [x for x in rs if x.get("error")]
+        errored = [x for x in rs if is_error(x)]
         fixed = still = 0
         rt = p.with_name(p.stem + ".retry.json")
         if errored and rt.exists():
             retry = {key(x): x for x in rows(json.loads(rt.read_text()))}
             for i, x in enumerate(rs):
-                if x.get("error"):
+                if is_error(x):
                     y = retry.get(key(x))
-                    if y is not None and not y.get("error"):
+                    if y is not None and not is_error(y):
                         rs[i] = y
                         fixed += 1
                     else:
