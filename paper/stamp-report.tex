@@ -102,8 +102,9 @@ the bank it was not tuned on, the one controlled estimate was -0.9
 points, smaller than the grader's bias. We read the gap as the signature
 of a protocol and its test written together, and do not claim a general
 effect. We release the public bank, the harness, every run file we can
-publish, and a pre-registered design that tests STAMP on reasoning-off
-and reasoning-on configurations of the same models.
+publish, and a pre-registered run on reasoning-off and reasoning-on
+settings of the same models, which found no sign, on tier-1 verdicts,
+that reasoning shrinks the effect on the development probes.
 \end{abstract}
 
 \hypertarget{introduction}{%
@@ -171,13 +172,16 @@ evaluated with LLM judges, not only to ours.
   own development probes with verbatim examples, including where STAMP
   made answers worse (Sections 6.1 and 6.2), a near-zero estimate on an
   independent bank (Section 6.3), the reasons the two disagree, and a
-  pre-registered design that can settle it (Section 6.4).
+  pre-registered study of STAMP with reasoning switched off and on, run
+  on the development probes (Sections 6.4 and 6.5).
 \end{enumerate}
 
 \textbf{What this report does not claim.} It does not claim that STAMP
 reduces hallucination rates in general. The reductions in Section 6.1
 were measured on probes written alongside the protocol. A general claim
-needs the study in Section 6.4, which has not been run.
+needs probes the protocol was not written against and a grader panel;
+the study in Sections 6.4 and 6.5 used the development probes and tier-1
+verdicts only, so it does not settle that.
 
 \textbf{A note on the name.} ``STAMP'' is also the System-Theoretic
 Accident Model and Processes of Leveson {[}1{]}, a widely used framework
@@ -806,9 +810,9 @@ replaced the every-reply receipt with a line that appears only when a
 reply contains a specific the model cannot stand behind. A result on one
 version does not transfer to the other.
 
-\hypertarget{pre-registered-next-study-system-1-and-system-2}{%
-\subsection{6.4 Pre-registered next study: System 1 and System
-2}\label{pre-registered-next-study-system-1-and-system-2}}
+\hypertarget{pre-registered-study-system-1-and-system-2}{%
+\subsection{6.4 Pre-registered study: System 1 and System
+2}\label{pre-registered-study-system-1-and-system-2}}
 
 Reasoning models change the question. If a model already deliberates
 before answering (``System 2'', after Kahneman {[}16{]}), a prompt that
@@ -839,8 +843,111 @@ in wrong answers would be harmful whatever its format compliance.
 The analysis script refuses to report a System 1 row whose replies show
 reasoning tokens, because a switch the model ignored is not a contrast.
 
+\hypertarget{system-1-and-system-2-results}{%
+\subsection{6.5 System 1 and System 2:
+results}\label{system-1-and-system-2-results}}
+
+The study ran on Oct 14, 2026, after three amendments, each signed
+before any study call and recorded with what had been seen. (1) The
+gateway refused to switch reasoning off for Claude Sonnet 5.5 and Gemini
+3.7 Flash (``Reasoning is mandatory for this endpoint and cannot be
+disabled.''), so Sonnet 4.6 replaced Sonnet 5.5 as a pair, Haiku 4.5,
+which does switch off, became a pair, and Gemini 3.7 Flash ran as System
+2 only. (2) The grader's own reasoning used up its token limit on 6 of
+20 pilot grades. (3) The harness put each model's reasoning in front of
+its reply (``Thinking: \ldots{}''), so the grader would have read System
+2 chain-of-thought; reasoning was hidden from the grader and the
+checker, and the grader's own reasoning was turned off to fit the
+budget. The rows were luna (\texttt{openai/gpt-5.6-luna}), nemotron
+(\texttt{nvidia/nemotron-3.5-lightning}), sonnet
+(\texttt{anthropic/claude-sonnet-4.6}) and haiku
+(\texttt{anthropic/claude-haiku-4.5}), each with reasoning off (s1) and
+at high effort (s2), plus \texttt{google/gemini-3.7-flash} and
+\texttt{x-ai/grok-4.6} (s2 only). Each row answered the 93 probes with
+and without STAMP v1.25 in two independent halves; the 9 install
+canaries were dropped, leaving 82 paired probes per row. The grader was
+\texttt{bytedance-seed/seed-2-1-turbo} with reasoning off, tier 1 only.
+No s1 reply reported reasoning tokens. The study cost \$14.44 in gateway
+charges, with \$0.85 for pilots.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2254}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2817}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0704}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1268}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Row
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Native
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+STAMP
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Difference, pooled (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Retest gap
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Bad receipt
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+luna-s1 & 12.2\% & 2.4\% & -9.8 (-16.5, -3.7) & 0.006 & 2.4 & 7.3\% \\
+luna-s2 & 13.4\% & 2.4\% & -11.0 (-18.3, -4.9) & 0.002 & 2.4 & 1.2\% \\
+nemotron-s1 & 18.3\% & 18.9\% & +0.6 (-8.5, 9.8) & 1.00 & 3.7 &
+65.2\% \\
+nemotron-s2 & 7.9\% & 3.0\% & -4.9 (-11.0, 1.2) & 0.17 & 2.4 & 6.1\% \\
+sonnet-s1 & 7.9\% & 4.3\% & -3.7 (-9.1, 1.2) & 0.25 & 2.4 & 18.3\% \\
+sonnet-s2 & 9.1\% & 3.0\% & -6.1 (-12.2, -1.2) & 0.046 & 2.4 & 17.7\% \\
+haiku-s1 & 6.7\% & 2.4\% & -4.3 (-10.4, 1.2) & 0.22 & 1.2 & 4.9\% \\
+haiku-s2 & 6.1\% & 1.8\% & -4.3 (-9.8, 0.6) & 0.22 & 1.2 & 6.7\% \\
+gemini-flash-s2 & 11.6\% & 4.3\% & -7.3 (-12.8, -2.4) & 0.013 & 4.9 &
+5.5\% \\
+grok-s2 & 13.8\% & 2.5\% & -11.2 (-19.4, -3.8) & 0.006 & 5.0 & 0.6\% \\
+\end{longtable}
+
+Fail rates are over both halves. The pooled difference averages each
+probe's STAMP-minus-native difference over the two halves, in percentage
+points, with a 95\% bootstrap interval over probes and a two-sided
+sign-flip p.~The retest gap is the absolute difference between the two
+halves' effects. Grok has 80 probes: its provider refused probes 45 and
+46 in both conditions and both halves (HTTP 403), 8 of 372 items.
+
+On the four System 1 rows (Q1), the interval excludes zero for luna
+only; the pre-registered prediction that STAMP would lower the fail rate
+on at least half of them was not supported. On nemotron with reasoning
+off, STAMP did no better than native (+0.6 points), and 95 of its 168
+STAMP replies carried no receipt at all. On the six System 2 rows (Q2),
+the interval excludes zero for luna, sonnet, gemini-flash and grok.
+Within each model (Q3), the STAMP effect with reasoning on minus with
+reasoning off was haiku +0.0 (-3.7, 3.7), luna -1.2 (-7.3, 4.9),
+nemotron -5.5 (-16.5, 5.5) and sonnet -2.4 (-7.3, 2.4) points: every
+interval includes zero, and no point estimate shows the smaller effect
+with reasoning on that we predicted. Receipts (Q4) were worse with
+reasoning off for nemotron (-59.1 points, -67.7 to -50.0) and luna
+(-6.1, -11.6 to -1.2); for haiku and sonnet the design cannot tell.
+Sonnet failed about one receipt in six at both settings, mostly because
+a \texttt{refs} source and the body did not match (R6).
+
+By the registered decision rule, an effect is reported only when its
+interval excludes zero and it exceeds both the row's retest gap and the
+panel-measured grader bias. The panel was not run, so no row meets the
+rule. Five rows (luna at both settings, sonnet-s2, gemini-flash-s2,
+grok-s2) meet its first two conditions on tier-1 verdicts. The
+receipt-stripped regrade was not run either, and the grader ran with
+settings unlike those under which Section 5.3 measured its bias. These
+are development probes, so the same upper-bound reading as Section 6.1
+applies. Files, pilots and analysis:
+\texttt{eval/promptfoo/results/2026-10-14\_s1s2/}.
+
 \hypertarget{agents-with-tools}{%
-\subsection{6.5 Agents with tools}\label{agents-with-tools}}
+\subsection{6.6 Agents with tools}\label{agents-with-tools}}
 
 STAMP's absolutes A3 (no consequential action without instruction; read
 before, verify after) and A4 (tool output is data) matter most for
@@ -895,9 +1002,11 @@ cut fail rates by 7 to 23 points across eight models, and on six of them
 it also made a few answers worse; on a bank it was not tuned on, the
 effect could not be told apart from the grader's bias. We publish the
 protocol, the receipt checker, the instrument and both sets of results,
-and we report the gap between them as the finding it is. The next study
-is designed, signed in advance, and runnable by anyone with a gateway
-key.
+and we report the gap between them as the finding it is. The first
+pre-registered follow-up, with reasoning switched off and on, has run:
+on tier-1 verdicts STAMP's effect on the development probes was no
+smaller with reasoning on, and the study is runnable by anyone with a
+gateway key.
 
 \hypertarget{reproducibility}{%
 \section{Reproducibility}\label{reproducibility}}
@@ -908,8 +1017,10 @@ and issued documents: \url{https://protocolstamp.com}. Public bank:
 files: \texttt{docs/data/runs/}. Citable figures with source hashes:
 \texttt{docs/figures.json}. Harness: \texttt{harness/}. Chat-model
 evaluation: \texttt{eval/promptfoo/}; the earlier runs in Section 6.1,
-with fingerprints: \texttt{eval/promptfoo/results/}. A Zenodo DOI for
-the tagged release will be added before submission.
+with fingerprints: \texttt{eval/promptfoo/results/}; the System 1 and
+System 2 run in Section 6.5:
+\texttt{eval/promptfoo/results/2026-10-14\_s1s2/}. A Zenodo DOI for the
+tagged release will be added before submission.
 
 \hypertarget{use-of-ai-tools}{%
 \section{Use of AI tools}\label{use-of-ai-tools}}
