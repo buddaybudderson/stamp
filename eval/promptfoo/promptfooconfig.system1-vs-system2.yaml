@@ -91,7 +91,8 @@ defaultTest:
     # used up on 6 of 20 pilot grades ("Could not extract JSON from llm-rubric response").
     provider:
       id: openrouter:bytedance-seed/seed-2-1-turbo
-      config: { max_tokens: 8192 }
+      # Amendment 2: grader reasoning effort low, to fit the key budget ($17.79 left on Oct 14, 2026).
+      config: { max_tokens: 8192, passthrough: { reasoning: { effort: low } } }
   assert:
     - type: javascript
       value: file://assert.js

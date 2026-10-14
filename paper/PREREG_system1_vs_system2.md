@@ -108,3 +108,16 @@ only: grok-4.6, gemini-3.7-flash (registered rule for models that always reason)
 `max_tokens: 8192`. Questions, analysis and decision rules are unchanged.
 
 Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:22 CDT)
+
+## Amendment 2 (Oct 13, 2026 22:33 CDT, before any study call)
+
+**What had been seen.** A second pilot of the amended Sonnet pair (10 probes, 40 grades, 0 errors, spend
+$0.43; not study data). Projected full-run cost: $24 central, $47 if System 2 rows reason heavily, of
+which the grader's own reasoning is about $15. The key had $17.79 left. No study reply had been graded.
+
+**Change.** The grader keeps the same model, rubric and `max_tokens: 8192`, with OpenRouter reasoning
+effort set to `low`. Its settings therefore differ from Calibration 001, where its bias was measured; the
+tier-1 verdicts are reported with that caveat. The run goes row by row with a spend check between rows and
+stops before the key limit; any row not run is reported as not run.
+
+Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:33 CDT)
