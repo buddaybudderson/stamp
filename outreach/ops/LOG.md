@@ -95,3 +95,15 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
   - BlueDot Rapid: file.
   - FLOSS/fund: confirm 2026 intake.
   - NSF: pitch.
+
+### 2026-10-14: grants post live
+- Merged buddaybudderson/stamp PR #57 with Lawrence's approval; Eval gate and Cloudflare Pages both
+  green. https://protocolstamp.com/writing/grants/ is served with status 200.
+- **OPEN, site-wide, not caused by this PR:** Cloudflare injects its bot-detection script
+  (`/cdn-cgi/challenge-platform/...`) before `</body>` on every HTML page checked: /, /support/ and
+  /writing/grants/. That breaks the house rule that nothing rewrites HTML at the edge, and the
+  promise of no third-party scripts.
+  - Frozen issue `source` files are NOT affected; Calibration 004's source is served clean.
+  - Fix, in the Cloudflare dashboard: Security → Bots → turn off "JavaScript Detections" (and
+    Bot Fight Mode, if it is on). Then purge the cache.
+  - The Cloudflare connector is not authorized in this session, so this needs Lawrence.
