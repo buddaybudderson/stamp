@@ -1,6 +1,6 @@
 # Pre-registration: STAMP on System 1 and System 2 configurations
 
-**Status: DRAFT, UNSIGNED.** No model call for this study may be made until this file is signed below
+**Status: SIGNED Oct 13, 2026 22:13 CDT.** No model call for this study may be made until this file is signed below
 and committed. A change after signing is an amendment: it is numbered, dated, signed, and says what had
 been seen before it was made.
 
@@ -65,6 +65,26 @@ prompt that tells it to check its work may add nothing, or may only add a receip
 3. Q4: System 2 rows produce false or missing receipts less often than System 1 rows.
 4. S1: removing the receipt lowers the tier-1 PASS share by more than 1 point.
 
+## Model-id check (Oct 14, 2026, before any paid call)
+
+Every id in `promptfooconfig.system1-vs-system2.yaml` was checked against
+`https://openrouter.ai/api/v1/models` (462 models listed on Oct 14, 2026). All seven are present and all
+list `reasoning` in `supported_parameters`. **No substitution was made.**
+
+| Row(s) | Id | Present | Lists `temperature` |
+|---|---|---|---|
+| gemini-flash-s1, -s2 | `google/gemini-3.7-flash` | yes | yes |
+| luna-s1, -s2 | `openai/gpt-5.6-luna` | yes | no |
+| nemotron-s1, -s2 | `nvidia/nemotron-3.5-lightning` | yes | yes |
+| sonnet-s1, -s2 | `anthropic/claude-sonnet-5.5` (marked VERIFY) | yes | no |
+| grok-s2 | `x-ai/grok-4.6` | yes | yes |
+| haiku-s2 | `anthropic/claude-haiku-4.5` (marked VERIFY) | yes | yes |
+| grader | `bytedance-seed/seed-2-1-turbo` | yes | yes |
+
+Two rows (luna, sonnet) do not list `temperature`, so "temperature 0 where the model accepts it" means the
+provider default for those rows; the retest gap between halves measures what that costs. The catalog also
+lists `anthropic/claude-haiku-5.5`; the registered row stays `claude-haiku-4.5` because that id exists.
+
 ## Signature
 
-Signed: ______________________  Date and time (America/Chicago): ______________________
+Signed: Lawrence Ho  Date and time (America/Chicago): Oct 13, 2026 22:13 CDT
