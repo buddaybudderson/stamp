@@ -76,3 +76,9 @@ run installed.
 4. **One draw at temperature 0.** Calibration 001 found 56 of 63 temperature-0 responses changed
    between two runs on a pinned provider.
 5. **"gemini-flash-latest" is an alias.** The underlying model is not recorded.
+
+## System 1 vs System 2 run, Oct 14, 2026
+
+`2026-10-14_s1s2/` holds the pre-registered System 1 vs System 2 run (ten rows, two halves, 93 probes,
+STAMP v1.25), its four pilots, the analysis outputs and a write-up (`2026-10-14_s1s2/README.md`). Its files
+are fingerprinted in `2026-10-14_s1s2/SHA256SUMS.txt`.
