@@ -88,3 +88,23 @@ lists `anthropic/claude-haiku-5.5`; the registered row stays `claude-haiku-4.5` 
 ## Signature
 
 Signed: Lawrence Ho  Date and time (America/Chicago): Oct 13, 2026 22:13 CDT
+
+## Amendment 1 (Oct 13, 2026 22:22 CDT, before any study call)
+
+**What had been seen.** A pilot of the Sonnet pair on the first 10 probes (spend $0.145, OpenRouter key
+usage; not part of the study data) and one-line reachability calls to every row. No study reply had been
+graded or analysed. Two faults:
+
+1. OpenRouter rejected reasoning off for `anthropic/claude-sonnet-5.5` and `google/gemini-3.7-flash`
+   with: "Reasoning is mandatory for this endpoint and cannot be disabled." Neither can be a System 1
+   row. `anthropic/claude-haiku-4.5` accepted reasoning off (0 reasoning tokens), so the registered note
+   that it always reasons does not hold on this gateway.
+2. The grader stopped at promptfoo's default 1,024-token limit on 6 of 20 pilot grades, all 1,024 tokens
+   spent on reasoning, giving "Could not extract JSON from llm-rubric response".
+
+**Change.** Rows, still 10: pairs luna, nemotron, sonnet (`anthropic/claude-sonnet-4.6`, substituted for
+`claude-sonnet-5.5`; it accepts reasoning off), haiku (`claude-haiku-4.5`, gains a "-s1" row); System 2
+only: grok-4.6, gemini-3.7-flash (registered rule for models that always reason). Grader unchanged except
+`max_tokens: 8192`. Questions, analysis and decision rules are unchanged.
+
+Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:22 CDT)
