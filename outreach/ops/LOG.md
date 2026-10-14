@@ -66,3 +66,32 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
   4. Create the 3 Stripe Payment Links with shipping-address collection on.
   5. Add shipping and returns text to /terms/ and the printer line to /privacy/.
   6. Merge.
+
+### 2026-10-14, late: grants researched and the grants post written
+- **Grants:** checked 25+ programs, using official pages where reachable and Manifund's AI Safety
+  Funder Bulletin (updated Oct 1). Published as the essay `/writing/grants/`
+  (buddaybudderson/stamp PR #57), on Lawrence's instruction to post it publicly.
+  - Eight to apply to, none asking above $60,000: Foresight (Oct 31), SFF Speculation, Lightcone
+    Commons, EA Funds TAIF, Manifund, FLOSS/fund, BlueDot Rapid, NSF SBIR pitch.
+  - Not applying, with reasons on the page: Humanity AI (needs a 501(c)(3) lead), Amazon Research
+    Awards, NLnet, Middle Powers, Mercor, and the closed calls.
+- **Corrections to the critique:**
+  - SFF's 2026 main round is closed. Speculation grants are rolling via the SFF rolling form.
+  - Coefficient Giving's technical AI safety RFP, Schmidt Sciences and UK AISI are all closed.
+- **Gmail drafts created (b@bud.day, not sent):**
+  1. Foresight application answers.
+  2. Letter of interest to California's Government Operations Agency (SB 813 IVOs / N-9-26
+     convening, roughly mid-November).
+- **Evaluation:** the S1 vs S2 pre-registration is UNSIGNED, so no model calls until Lawrence signs.
+  The cost estimate for the first full report is $19.24, and preflight wants $29 on the key.
+- **Bench cadence resolved:** the site is right (Mon and Thu since Sep 10). `harness/whats_due.py`
+  still says Sun and Wed and needs fixing.
+- **OPEN, in deadline order:**
+  - Foresight, Oct 31: file.
+  - SFF rolling form: file.
+  - Lightcone: next answer around Jan 23, 2027.
+  - TAIF: ask about for-profit eligibility, then file.
+  - Manifund: post the project.
+  - BlueDot Rapid: file.
+  - FLOSS/fund: confirm 2026 intake.
+  - NSF: pitch.
