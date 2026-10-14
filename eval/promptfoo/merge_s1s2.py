@@ -58,7 +58,7 @@ def main():
         else:
             rows(merged).extend(rs)
     merged["merge"] = info
-    pathlib.Path(a.out).write_text(json.dumps(merged, indent=1))
+    pathlib.Path(a.out).write_text(json.dumps(merged, separators=(",", ":")))
     for i in info:
         print(i)
     print("wrote", a.out, "items", len(rows(merged)))
