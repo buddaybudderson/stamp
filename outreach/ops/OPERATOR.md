@@ -51,6 +51,10 @@ Every run also starts with a **triage** of at most 5 minutes:
 
 Then do the run's job.
 
+Settled decisions (don't reopen): Cloudflare's bot-detection script stays on and is disclosed on
+/privacy/ (decided Oct 14, 2026). Before flagging a site-wide issue, check whether /privacy/,
+/colophon/ or /corrections/ already addresses it.
+
 ### 1. Social (X, Bluesky, LinkedIn, Reddit, YouTube; the accounts are listed on /subscribe/)
 You can't post or follow; Lawrence does both. Each social run produces:
 - 2 to 4 ready-to-paste posts, one finding, chart or link each, in the voice of `outreach/social-kit.md`

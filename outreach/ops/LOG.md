@@ -107,3 +107,11 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
   - Fix, in the Cloudflare dashboard: Security → Bots → turn off "JavaScript Detections" (and
     Bot Fight Mode, if it is on). Then purge the cache.
   - The Cloudflare connector is not authorized in this session, so this needs Lawrence.
+
+### 2026-10-14: DECISION, Cloudflare bot detection stays ON
+- Lawrence's decision: keep it. It is already disclosed on /privacy/: Cloudflare inserts a
+  bot-detection script on web pages, Bot Fight Mode is off, and no setting on the plan removes it.
+  Issue sources are served clean.
+- The OPEN item above is withdrawn; I flagged it without reading /privacy/ first. **Do not raise
+  this again** unless Cloudflare's behaviour changes, for example if the script appears on an
+  issue's source file.
