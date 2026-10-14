@@ -115,3 +115,16 @@ Newest entry first. Every run of the ops desk appends one entry. See `OPERATOR.m
 - The OPEN item above is withdrawn; I flagged it without reading /privacy/ first. **Do not raise
   this again** unless Cloudflare's behaviour changes, for example if the script appears on an
   issue's source file.
+
+### 2026-10-14: Foresight application finalised, except the reference
+- Lawrence's answers, given one question at a time:
+  - Bay Area node, two one-week sprints in 2027, travelling from Houston.
+  - Open source: yes, except the held-out probes (reason stated in the application).
+  - Workshop: yes, Bay Area or Berlin.
+  - Lightcone Commons sharing: yes.
+  - Ask: $60,000, as published.
+- Gmail draft "Foresight Nodes application, ready except the reference" (b@bud.day) is mapped field
+  by field to the real Airtable form. Every figure was checked against `paper/stamp-report.md`.
+- **OPEN, due Oct 31, 23:59 PDT:** Lawrence to supply a reference (name and email), then file.
+  Remind him on every run until it is filed. When he says it's filed, add the filing date to
+  `/writing/grants/`.
