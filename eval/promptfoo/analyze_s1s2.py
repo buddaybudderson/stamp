@@ -19,7 +19,8 @@ WHAT IT COMPUTES, per provider row (labels "<model>-s1" / "<model>-s2"):
   Q3        for each model with both rows: the s2 effect minus the s1 effect, paired by probe
   Q4        receipt truth on every stamp reply: harness/footer_check.py's R1-R10, no judge
 
-WHAT IT REFUSES. A "-s1" row whose replies report reasoning tokens is not a System 1 row: the
+WHAT IT REFUSES. A "-s1" row whose replies report reasoning tokens, or return reasoning text
+("Thinking:" or a <think> block), is not a System 1 row: the
 switch was ignored. The script names the row and exits 2 rather than reporting a contrast that
 did not happen. Pass --allow-reasoning-s1 only to read such a run for diagnosis, never to publish.
 
@@ -68,6 +69,15 @@ def reasoning_tokens(row):
     return int(det.get("reasoning") or 0)
 
 
+def shows_reasoning(row):
+    """True if the reply reports reasoning tokens or carries returned reasoning in its text.
+    The Aug 08, 2026 gateway run reported no count on 348 of 930 replies that began "Thinking:"."""
+    if reasoning_tokens(row) > 0:
+        return True
+    out = (row.get("response") or {}).get("output")
+    return isinstance(out, str) and (out.lstrip().startswith("Thinking:") or "<think>" in out)
+
+
 def paired(diffs, rng):
     """Mean of per-probe differences, 95% bootstrap CI over probes, two-sided sign-flip p."""
     n = len(diffs)
@@ -113,7 +123,7 @@ def main():
             dropped.add(probe)
             continue
         cell.setdefault(label, {}).setdefault(cond, {})[probe] = ok
-        if label.endswith("-s1") and reasoning_tokens(r) > 0:
+        if label.endswith("-s1") and shows_reasoning(r):
             reasoned[label] = reasoned.get(label, 0) + 1
         if cond == "stamp":
             out = (r.get("response") or {}).get("output")
@@ -122,7 +132,7 @@ def main():
 
     if reasoned and not a.allow_reasoning_s1:
         for k, v in sorted(reasoned.items()):
-            print(f"REFUSED - {k} reported reasoning tokens on {v} replies; it is not a System 1 row")
+            print(f"REFUSED - {k} showed reasoning (tokens or returned text) on {v} replies; it is not a System 1 row")
         return 2
 
     report = {"rows": {}, "q3": {}, "canaries_dropped": sorted(dropped, key=int)}
