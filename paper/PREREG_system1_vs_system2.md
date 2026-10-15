@@ -1,6 +1,6 @@
 # Pre-registration: STAMP on System 1 and System 2 configurations
 
-**Status: DRAFT, UNSIGNED.** No model call for this study may be made until this file is signed below
+**Status: SIGNED Oct 13, 2026 22:13 CDT.** No model call for this study may be made until this file is signed below
 and committed. A change after signing is an amendment: it is numbered, dated, signed, and says what had
 been seen before it was made.
 
@@ -65,6 +65,83 @@ prompt that tells it to check its work may add nothing, or may only add a receip
 3. Q4: System 2 rows produce false or missing receipts less often than System 1 rows.
 4. S1: removing the receipt lowers the tier-1 PASS share by more than 1 point.
 
+## Model-id check (Oct 14, 2026, before any paid call)
+
+Every id in `promptfooconfig.system1-vs-system2.yaml` was checked against
+`https://openrouter.ai/api/v1/models` (462 models listed on Oct 14, 2026). All seven are present and all
+list `reasoning` in `supported_parameters`. **No substitution was made.**
+
+| Row(s) | Id | Present | Lists `temperature` |
+|---|---|---|---|
+| gemini-flash-s1, -s2 | `google/gemini-3.7-flash` | yes | yes |
+| luna-s1, -s2 | `openai/gpt-5.6-luna` | yes | no |
+| nemotron-s1, -s2 | `nvidia/nemotron-3.5-lightning` | yes | yes |
+| sonnet-s1, -s2 | `anthropic/claude-sonnet-5.5` (marked VERIFY) | yes | no |
+| grok-s2 | `x-ai/grok-4.6` | yes | yes |
+| haiku-s2 | `anthropic/claude-haiku-4.5` (marked VERIFY) | yes | yes |
+| grader | `bytedance-seed/seed-2-1-turbo` | yes | yes |
+
+Two rows (luna, sonnet) do not list `temperature`, so "temperature 0 where the model accepts it" means the
+provider default for those rows; the retest gap between halves measures what that costs. The catalog also
+lists `anthropic/claude-haiku-5.5`; the registered row stays `claude-haiku-4.5` because that id exists.
+
 ## Signature
 
-Signed: ______________________  Date and time (America/Chicago): ______________________
+Signed: Lawrence Ho  Date and time (America/Chicago): Oct 13, 2026 22:13 CDT
+
+## Amendment 1 (Oct 13, 2026 22:22 CDT, before any study call)
+
+**What had been seen.** A pilot of the Sonnet pair on the first 10 probes (spend $0.145, OpenRouter key
+usage; not part of the study data) and one-line reachability calls to every row. No study reply had been
+graded or analysed. Two faults:
+
+1. OpenRouter rejected reasoning off for `anthropic/claude-sonnet-5.5` and `google/gemini-3.7-flash`
+   with: "Reasoning is mandatory for this endpoint and cannot be disabled." Neither can be a System 1
+   row. `anthropic/claude-haiku-4.5` accepted reasoning off (0 reasoning tokens), so the registered note
+   that it always reasons does not hold on this gateway.
+2. The grader stopped at promptfoo's default 1,024-token limit on 6 of 20 pilot grades, all 1,024 tokens
+   spent on reasoning, giving "Could not extract JSON from llm-rubric response".
+
+**Change.** Rows, still 10: pairs luna, nemotron, sonnet (`anthropic/claude-sonnet-4.6`, substituted for
+`claude-sonnet-5.5`; it accepts reasoning off), haiku (`claude-haiku-4.5`, gains a "-s1" row); System 2
+only: grok-4.6, gemini-3.7-flash (registered rule for models that always reason). Grader unchanged except
+`max_tokens: 8192`. Questions, analysis and decision rules are unchanged.
+
+Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:22 CDT)
+
+## Amendment 2 (Oct 13, 2026 22:33 CDT, before any study call)
+
+**What had been seen.** A second pilot of the amended Sonnet pair (10 probes, 40 grades, 0 errors, spend
+$0.43; not study data). Projected full-run cost: $24 central, $47 if System 2 rows reason heavily, of
+which the grader's own reasoning is about $15. The key had $17.79 left. No study reply had been graded.
+
+**Change.** The grader keeps the same model, rubric and `max_tokens: 8192`, with OpenRouter reasoning
+effort set to `low`. Its settings therefore differ from Calibration 001, where its bias was measured; the
+tier-1 verdicts are reported with that caveat. The run goes row by row with a spend check between rows and
+stops before the key limit; any row not run is reported as not run.
+
+Signed: Lawrence Ho (chose this option when asked, Oct 13, 2026 22:33 CDT)
+
+## Amendment 3 (Oct 13, 2026 22:45 CDT, before any study call)
+
+**What had been seen.** Two more pilots on the nemotron pair (10 probes each, $0.27 together; not study
+data). With effort `low` the grader still reasoned 3,000 to 4,000 tokens on some grades and reached its
+8,192-token limit on 5 of 80 pilot grades, so Amendment 2 did not bring the run inside the budget. The
+pilots also showed that promptfoo's OpenRouter provider puts a model's reasoning in front of its reply
+("Thinking: ...") unless `showThinking` is false, so the grader had been reading System 2 chain-of-thought.
+With reasoning hidden and the grader's reasoning off, a pilot gave 0 grader errors, $0.00044 per grade, and
+the same verdict as the effort-low grader on all 35 items where both returned one.
+
+**Change.** `showThinking: false` on every row and on the grader; grader reasoning off
+(`reasoning: { enabled: false }`), same model and rubric. Items that end in an error are run once more
+(`--filter-errors-only`), and the retry is reported. Rows run one model at a time, cheapest first (nemotron,
+luna, gemini-flash, haiku, grok, sonnet), both halves per model, stopping before the key limit; a model not
+reached is reported as not run.
+
+Signed: Lawrence Ho (approved when asked, Oct 13, 2026 22:45 CDT)
+
+## Run record (Oct 14, 2026; not an amendment)
+
+Run Oct 14, 2026 03:45 to 05:50 UTC under Amendment 3. Files, analysis and write-up:
+`eval/promptfoo/results/2026-10-14_s1s2/`. Not run: the tier-2 panel, the receipt-stripped regrade (S1),
+and registration in `docs/figures.json`; every number reported from this run is tier-1 and says so.

@@ -59,7 +59,7 @@ Every reply is stamped, in one of three forms: the **full** receipt above; a sho
 
 ## The technical report
 
-**[STAMP: An Auditable Self-Verification Protocol for Language Models, and What It Takes to Measure One](https://protocolstamp.com/paper/)** - the program in one paper (preprint, 14 pages): the protocol and its receipt, a judge-free receipt checker, what four pre-registered Calibrations found about the instruments, and every native-versus-STAMP run so far, including the answers STAMP made worse. Its honest headline: on the probes it was written against, STAMP lowered fail rates by 7 to 23 points across three model families; on a bank it was not tuned on, the effect could not be told apart from grader bias. Source and build: `paper/`. Run files: `eval/promptfoo/results/`.
+**[STAMP: An Auditable Self-Verification Protocol for Language Models, and What It Takes to Measure One](https://protocolstamp.com/paper/)** - the program in one paper (preprint, 15 pages): the protocol and its receipt, a judge-free receipt checker, what four pre-registered Calibrations found about the instruments, and every native-versus-STAMP run so far, including the answers STAMP made worse. Its honest headline: on the probes it was written against, STAMP lowered fail rates by 7 to 23 points across three model families; on a bank it was not tuned on, the effect could not be told apart from grader bias. Source and build: `paper/`. Run files: `eval/promptfoo/results/`.
 
 ## What's in the box
 
