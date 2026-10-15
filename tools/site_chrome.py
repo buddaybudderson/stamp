@@ -191,6 +191,7 @@ PALETTE = [
     ("The technical report", "/paper/"),
     ("The Bench", "/writing/"),
     ("Essay · The grants we are applying for", "/writing/grants/"),
+    ("Bench Vol 007 · Check the Facts, Free the Fiction", "/bench/check-the-facts-free-the-fiction/"),
     ("Bench Vol 006 · A Name Is Not a Test", "/bench/a-name-is-not-a-test/"),
     ("Bench Vol 005 · Judges Who Agree With Each Other", "/bench/judges-who-agree-with-each-other/"),
     ("Bench Vol 004 · What a New Judge Has to Beat", "/bench/what-a-new-judge-has-to-beat/"),

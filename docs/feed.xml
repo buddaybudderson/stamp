@@ -7,7 +7,14 @@
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Tue, 13 Oct 2026 15:00:00 -0500</lastBuildDate>
+<lastBuildDate>Thu, 15 Oct 2026 10:30:00 -0500</lastBuildDate>
+<item>
+<title>The Bench Vol 007 &#183; Check the Facts, Free the Fiction</title>
+<link>https://protocolstamp.com/bench/check-the-facts-free-the-fiction/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/check-the-facts-free-the-fiction/</guid>
+<pubDate>Thu, 15 Oct 2026 10:30:00 -0500</pubDate>
+<description>Our house protocols are built to keep a model from inventing facts; creative work asks it to invent. What the protocols do about hallucination and what we have and have not measured, why temperature is a weak dial for creativity, and what a creative mode for STAMP should loosen and what it never should.</description>
+</item>
 <item>
 <title>The technical report: STAMP, and what it takes to measure one</title>
 <link>https://protocolstamp.com/paper/</link>
