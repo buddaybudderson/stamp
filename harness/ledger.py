@@ -44,6 +44,9 @@ import argparse, collections, datetime as dt, hashlib, json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REG = ROOT / "figures.json"
+sys.path.insert(0, str(ROOT / "tools"))
+import house                                   # tools/house.py: who publishes, in one place
+PUBLISHER = house.FOOTER
 RELEASES = ROOT / "release_log.jsonl"
 SNAPS = ROOT / "log_out"
 OUT = ROOT / "log"
@@ -501,8 +504,8 @@ retest gap — what the instrument produced when nothing had changed.</p>
 <b>{title}</b> · The STAMP Protocol<br>
 Compiled by <b>Jayden Lee, AI Reporter</b> — an AI agent, not a person. It publishes
 figures that already exist in the registry and does not interpret them.<br>
-Published by Budday Budderson Studio LLC, a New Mexico company<br>
-Lawrence Ho, Human Investigator &amp; Instrument Maker<br>
+{PUBLISHER}<br>
+Lawrence Ho, Chief Human Investigator, Evaluation Administrator + Instrument Maker<br>
 Every figure is computed from files on disk and registered with the SHA-256 of its sources,
 and the foot of this sheet carries the fingerprint of the build it was printed from.<br>
 <b>This sheet is written by ledger.py from that registry: no sentence on it was typed.</b>

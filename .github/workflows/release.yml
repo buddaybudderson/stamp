@@ -96,7 +96,8 @@ jobs:
       # The issue's own frozen bytes are never checked against today's rules; only the site around it is.
       - name: House gate on the released tree
         if: steps.clock.outputs.go == '1' && steps.staged.outputs.any == '1'
-        run: python3 tools/house_gate.py docs
+        run: |
+          python3 tools/house_gate.py docs
           python3 tools/seo.py
 
       # The release said it worked; check that it did. wrap_issue.py deletes each file from

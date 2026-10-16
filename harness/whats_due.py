@@ -63,7 +63,7 @@ LEDGER = ROOT / "release_log.jsonl"
 # 2026-09-05, the first Saturday after Calibration No. 1 went out, and a Log week.
 ANCHOR = dt.date(2026, 9, 5)
 SATURDAY = 5
-SUNDAY, WEDNESDAY = 6, 2   # The Bench, added 2026-09-07
+MONDAY, THURSDAY = 0, 3   # The Bench: Sun and Wed from 2026-09-07, Mon and Thu from 2026-09-10
 FLOOR_DAYS = 12          # minimum between Calibrations, per protocol/channels.json
 TZ = "America/Chicago"
 RELEASE = dt.time(15, 37)
@@ -74,14 +74,14 @@ WINDOW_MIN = 50          # how late a firing may be and still publish
 # no issue floor, so it has no parity and no minimum gap - only its weekday and its
 # own 07:37 slot. Kept in this file so one script answers "what ships today" for
 # every channel rather than two scripts disagreeing.
-BENCH_DAYS = (SUNDAY, WEDNESDAY)
+BENCH_DAYS = (MONDAY, THURSDAY)
 
 
 def due_on(d):
     """'log', 'calibration', 'bench', or None.
 
     Saturdays alternate Log/Calibration by whole weeks from the anchor, never ISO
-    weeks. Sundays and Wednesdays are The Bench, which does not alternate."""
+    weeks. Mondays and Thursdays are The Bench, which does not alternate."""
     if d.weekday() in BENCH_DAYS:
         return "bench"
     if d.weekday() != SATURDAY:
@@ -143,7 +143,7 @@ def main():
 
     if a.schedule:
         print("=" * 62)
-        print(f"NEXT {a.schedule} RELEASES  -  Saturdays alternate; The Bench Sun & Wed")
+        print(f"NEXT {a.schedule} RELEASES  -  Saturdays alternate; The Bench Mon & Thu")
         print("=" * 62)
         prev = {}
         for d, what in schedule(today, a.schedule):
@@ -161,7 +161,7 @@ def main():
     if not what:
         nxt = schedule(today, 1)[0]
         print(f"  [ STOP ] nothing is due today. The Calibration and The Log alternate")
-        print(f"           on Saturdays; The Bench runs Sundays and Wednesdays.")
+        print(f"           on Saturdays; The Bench runs Mondays and Thursdays.")
         print(f"           next: {nxt[0]} ({KIND_NAME[nxt[1]]})")
         print("-" * 62)
         return 1
