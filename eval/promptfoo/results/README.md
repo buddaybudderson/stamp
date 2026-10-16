@@ -45,17 +45,20 @@ An earlier version of this table, and of the paper, included them and overstated
 | v1.25, Gemini Flash (latest) | 82 | 13.4% | 0.0% | -13.4 pts [-20.7, -6.1] | < 0.001 | 11 / 0 | 3.7% |
 | v1.25, Perplexity Sonar | 82 | 18.3% | 11.0% | -7.3 pts [-13.4, -2.4] | 0.03 | 6 / 0 | 22.0% |
 | v1.25, Mistral Large | 82 | 26.8% | 3.7% | -23.2 pts [-32.9, -13.4] | < 0.001 | 21 / 2 | 20.7% |
-| v1.25, gpt-oss-120b | 82 | 31.7% | 9.8% | -22.0 pts [-31.7, -12.2] | < 0.001 | 19 / 1 | 82.9%* |
-| v1.25, GLM-4.7 | 82 | 29.3% | 12.2% | -17.1 pts [-28.0, -6.1] | 0.006 | 19 / 5 | 84.1%* |
-| v1.25, DeepSeek V4 Flash | 82 | 23.2% | 11.0% | -12.2 pts [-22.0, -2.4] | 0.04 | 15 / 5 | 87.8%* |
-| v1.25, Step 3.7 Flash | 82 | 26.8% | 15.9% | -11.0 pts [-20.7, -1.2] | 0.06 | 14 / 5 | 81.7%* |
-| v1.25, Nemotron 3 Super 120B | 82 | 25.6% | 15.9% | -9.8 pts [-20.7, +1.2] | 0.11 | 14 / 6 | 86.6%* |
+| v1.25, gpt-oss-120b* | 82 | 29.3% | 15.9% | -13.4 pts [-23.2, -3.7] | 0.02 | 15 / 4 | 26.8% |
+| v1.25, GLM-4.7* | 82 | 36.6% | 18.3% | -18.3 pts [-29.3, -8.5] | 0.002 | 18 / 3 | 28.0% |
+| v1.25, DeepSeek V4 Flash* | 82 | 20.7% | 14.6% | -6.1 pts [-15.9, +3.7] | 0.36 | 12 / 7 | 31.7% |
+| v1.25, Step 3.7 Flash* | 82 | 24.4% | 15.9% | -8.5 pts [-18.3, 0.0] | 0.12 | 11 / 4 | 22.0% |
+| v1.25, Nemotron 3 Super 120B* | 82 | 22.0% | 14.6% | -7.3 pts [-17.1, +2.4] | 0.20 | 11 / 5 | 22.0% |
 
-\* These five models returned their reasoning together with the answer, and the reasoning usually
-contains a draft receipt, so 68% to 77% of their STAMP replies carry two footers and fail R1 ("exactly
-one footer"). Counting every other rule, 3.6% to 13.1% of their receipts fail, close to the earlier
-runs. Step 3.7 Flash's bootstrap interval excludes zero while its sign-flip p is 0.06; the two tests
-disagree at the margin, and the row is reported as borderline.
+\* Corrected Oct 15, 2026. These five models returned their reasoning with every reply, and promptfoo
+put it in front of the answer ("Thinking: ..."), so the first grader and `footer_check.py` read it as
+part of the reply. The rows above are graded on the answer alone by `google/gemini-3.7-flash`, with
+receipts checked on the answer alone. The verdicts as first published were: gpt-oss-120b -22.0 pts
+[-31.7, -12.2], GLM-4.7 -17.1 [-28.0, -6.1], DeepSeek V4 Flash -12.2 [-22.0, -2.4], Step 3.7 Flash
+-11.0 [-20.7, -1.2], Nemotron 3 Super -9.8 [-20.7, +1.2], with 81.7% to 87.8% bad receipts. See
+`regrade_2026-10-14/README.md` for the method, a second grader, and what the reasoning did to the
+verdicts. The committed export is unchanged.
 
 "Better / worse" counts probes STAMP passed and native failed, and the reverse. The two Mistral
 probes STAMP made worse (49 and 112) are quoted in the paper, Section 6.2.
