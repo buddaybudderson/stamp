@@ -28,7 +28,7 @@ DOCS = ROOT / "docs"
 FROZEN = ("protocol/",)               # the archived v1.25 page keeps its own design; run records are framed like posts
 # an issued document is framed, never edited: the frame goes around bytes that stay exactly as issued
 ISSUE = re.compile(r"^(?:(?:calibration|log)/[0-9]{3}-issued-[a-z]{3}[0-9]{8}/|bench/no-1-complaint/)index\.html$")
-POSTS = ("bench/", "writing/marking/", "writing/abstention/", "writing/grants/")
+POSTS = ("bench/", "writing/marking/", "writing/abstention/", "writing/grants/", "writing/did-stamp-help/")
 
 # 24x24 stroke icons, drawn once here
 I = {
@@ -190,6 +190,7 @@ PALETTE = [
     ("The Log Vol 001", "/log/001-issued-sat20260905/"),
     ("The technical report", "/paper/"),
     ("The Bench", "/writing/"),
+    ("Essay · Did STAMP help?", "/writing/did-stamp-help/"),
     ("Essay · The grants we are applying for", "/writing/grants/"),
     ("Bench Vol 007 · Check the Facts, Free the Fiction", "/bench/check-the-facts-free-the-fiction/"),
     ("Bench Vol 006 · A Name Is Not a Test", "/bench/a-name-is-not-a-test/"),
