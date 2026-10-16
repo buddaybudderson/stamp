@@ -22,7 +22,7 @@ and 6 against the issue or file it cites. You sign for it, not the tool that dra
 - **Cross-lists:** cs.AI, cs.CR
 - **Title:** STAMP: An Auditable Self-Verification Protocol for Language Models, and What It Takes to Measure One
 - **Authors:** Lawrence Ho
-- **Comments:** 15 pages, 5 tables. Code, data and run files: https://github.com/buddaybudderson/stamp
+- **Comments:** 16 pages, 5 tables. Code, data and run files: https://github.com/buddaybudderson/stamp
 - **Report number, journal reference, DOI, MSC, ACM:** leave blank
 - **Abstract** (1872 characters; arXiv's limit is 1,920):
 

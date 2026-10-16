@@ -52,7 +52,7 @@ what it checked. A receipt is text about the answer's quality. If one line can t
 PASS, a receipt might as well. So the next study regrades every answer with the receipt removed.
 
 6/ Report, data and code (MIT): <arXiv link> · <repo link>
-On the probes we wrote it against, STAMP cut fail rates by 7 to 23 points across eight models
+On the probes we wrote it against, STAMP cut fail rates by 6 to 23 points across eight models
 from eight developers. On an independent bank, we couldn't tell its effect from our grader's bias. We
 report both, and the gap, rather than the flattering half.
 
@@ -76,7 +76,7 @@ Measuring it properly was another matter:
   lower than a judge that says PASS to everything would score.
 - One appended line moved our grader from 2.9% to 65.2% PASS.
 
-On the probes I wrote alongside it, STAMP cut fail rates by 7 to 23 points on eight models. On an independent bank it wasn't tuned on, the effect was too small to tell apart from the
+On the probes I wrote alongside it, STAMP cut fail rates by 6 to 23 points on eight models. On an independent bank it wasn't tuned on, the effect was too small to tell apart from the
 grader's bias. So the report I'm publishing today says plainly: the general effect is not established. What it does
 establish is how easily an AI evaluation can fool its own authors, and a design that should be able to
 tell. The next study tests the prompt on reasoning-on and reasoning-off versions of the same models.
@@ -99,7 +99,7 @@ effect, we found: 56 of 63 temperature-0 responses changed between two runs on a
 grader was 4.1 points softer than a three-family panel (the prompt's measured effect was -0.9 points,
 so we don't claim it); judges agreed with each other far more than with a person; and one appended
 line moved our grader from 2.9% to 65.2% PASS. On the probes the prompt was developed against it cut
-fail rates by 7 to 23 points; on an independent bank we couldn't separate it from grader bias. Both
+fail rates by 6 to 23 points; on an independent bank we couldn't separate it from grader bias. Both
 are in the report.
 
 Repo: <link>. Report: <link>. Paired reasoning-on and reasoning-off config for anyone who wants to run
