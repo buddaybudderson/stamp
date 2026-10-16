@@ -752,7 +752,7 @@ and among replies that finished, 9.9\% to 22.2\% fail. A second cutting
 rule that strips more planning text lowers two models' receipt rates by
 2.5 and 3.7 points; the content re-grade used the first rule only.
 
-Four things limit what the table can mean. (1) The probes and the
+Five things limit what the table can mean. (1) The probes and the
 protocol were written together: the project's rule is that every real
 failure becomes a new probe, and the protocol was revised until it
 passed them. These are development probes, and an effect on them is an
@@ -760,7 +760,12 @@ upper bound. (2) On the three Gemini runs, a Gemini model graded
 Gemini's replies, which the later programme forbids. (3) The grader read
 STAMP's labels and receipt, and Section 5.5 shows that text addressed to
 a grader can move it. (4) Each cell is one draw at temperature 0, which
-Section 5.1 shows is not repeatable.
+Section 5.1 shows is not repeatable. (5) For the five gateway models,
+the first grader read the returned reasoning together with the answer:
+all 930 of their replies, in both arms, begin with the model's
+reasoning, and the grader's prompt contained it. Their rows are now
+graded on the answer alone (the correction above), but where each answer
+begins had to be estimated, because the export does not mark it.
 
 \subsection{6.2 What the differences look
 like}\label{what-the-differences-look-like}
@@ -864,8 +869,30 @@ it more, when a receipt vouches for it, and do they catch it more often
 when the receipt contradicts the body? A receipt that raised confidence
 in wrong answers would be harmful whatever its format compliance.
 
-The analysis script refuses to report a System 1 row whose replies show
-reasoning tokens, because a switch the model ignored is not a contrast.
+\textbf{What the archive already says, and does not.} None of the ten
+runs in Section 6.1 switched reasoning off; no reasoning parameter was
+sent, so each model ran at its default. Eight of the ten reasoned at
+that default. On the three Gemini runs every reply reports reasoning
+tokens (506 of 506) and none shows its reasoning. On the Aug 08, 2026
+gateway run all 930 replies begin with visible reasoning (``Thinking:
+\ldots{}''), but only 582 of them (62.6\%) report a reasoning-token
+count; the other 348 report none. Perplexity Sonar and Mistral Large
+reported no reasoning tokens and returned no reasoning text on any of
+372 replies. So the earlier runs hold no System 1 arm for any model. The
+only reasoning-off rows are two different models, and their STAMP
+effects (-7.3 and -23.2 points) bracket those of the six reasoning rows
+at v1.25 (-9.8 to -22.0). That comparison is between models, gateways
+and probe sets at once, and we read nothing about reasoning from it. The
+within-model contrast is the study in Section 6.5.
+
+The Aug 08 run also shows that a reasoning-token count is not a reliable
+test of a System 1 row: on 37.4\% of replies that visibly reasoned, the
+gateway reported no count. The analysis script therefore refuses a
+System 1 row if any reply reports reasoning tokens or begins with
+returned reasoning (``Thinking:'' or a
+\texttt{\textless{}think\textgreater{}} block), because a switch the
+model ignored is not a contrast. The study's two committed halves pass
+this stricter check, and the script's output on them is unchanged.
 
 \subsection{6.5 System 1 and System 2:
 results}\label{system-1-and-system-2-results}
