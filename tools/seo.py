@@ -99,15 +99,16 @@ def apply(rel, s, p):
     # the site's name in the title, where the title is the site's to change
     if t and not issued and rel != "index.html" and not rel.startswith(KEEP_TITLE) and NAME not in title:
         s = s[: t.end(1)] + SUFFIX + s[t.end(1):]
+    before = s                                             # read the date written so far, before its block goes
     s = re.sub(r"\n?<!-- ld:start -->.*?<!-- ld:end -->", "", s, count=1, flags=re.S)
-    ld = block(data(rel, s, p, title))
+    ld = block(data(rel, before, p, title))
     cut = s.index(frag) if frag and frag in s else len(s)
     i = s.find("</head>", 0, cut)
     if i < 0: i = cut                                      # the issue carries the only head: put it just before
     s = s[:i] + ld + "\n" + s[i:]
     if frag and frag not in s:
         sys.exit(f"REFUSED {rel}: the issued bytes would no longer be contained exactly")
-    return s, published(rel, s, p)
+    return s, published(rel, before, p)
 
 
 def sitemap(pages):
