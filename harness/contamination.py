@@ -32,9 +32,10 @@ Stdlib only. No network.
 import collections, json, pathlib, random, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-# The scan guards what is held out NOW (v1.1); divergence compares the halves as they were
+# The scan guards what is held out NOW (the newest bank); divergence compares the halves as they were
 # when the runs were made, which for every run on disk is v1. See holdout_gate.py.
-BANK = ROOT / "bank" / ("bank_v1_1.jsonl" if (ROOT / "bank" / "bank_v1_1.jsonl").exists() else "bank_v1.jsonl")
+BANK = next(p for p in (ROOT / "bank" / n for n in ("bank_v1_2.jsonl", "bank_v1_1.jsonl", "bank_v1.jsonl"))
+            if p.exists() or p.name == "bank_v1.jsonl")
 BANK_V1 = ROOT / "bank" / "bank_v1.jsonl"
 OUT = ROOT / "pilot_out"
 PUBLISHED = "2026-09-03"

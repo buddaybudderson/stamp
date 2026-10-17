@@ -377,7 +377,9 @@ def apply(rel, s, kind, cal, log, pal_src):
     if kind != "issue" and "/record/" not in rel and "<footer" in s:
         i = s.rindex("<footer"); s = s[:i] + house.stamp(s[i:])[0]
     # the footer's "Public bank" is the current public half (a standing page's footer; an issue keeps its own words)
-    if kind != "issue": s = s.replace('<a href="/data/bank_v1_public.jsonl">Public bank</a>', '<a href="/data/bank_v1_1_public.jsonl">Public bank</a>')
+    if kind != "issue":
+        for old in ("bank_v1_public.jsonl", "bank_v1_1_public.jsonl"):
+            s = s.replace(f'<a href="/data/{old}">Public bank</a>', '<a href="/data/bank_v1_2_public.jsonl">Public bank</a>')
     return s, s != s0
 
 

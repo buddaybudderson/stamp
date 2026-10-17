@@ -19,10 +19,12 @@ Point it at your own probes and run it. That is the whole reason it is here: a s
 you cannot reproduce is a claim, and this is the difference between asking you to
 believe our numbers and letting you generate your own.
 
-The public portion of our bank — 37 of the 63 probes, every row flagged
-`holdout: false` — is published at `docs/data/bank_v1_1_public.jsonl` in this repository.
-Two of them were held out until Oct 05, 2026 and are marked `reclassified`; the 35
-published with bank v1 stay at `docs/data/bank_v1_public.jsonl`, unchanged.
+The public portion of our bank — 45 of the 63 probes, every row flagged
+`holdout: false` — is published at `docs/data/bank_v1_2_public.jsonl` in this repository.
+Ten of them were held out until they were found to be public already and are marked
+`reclassified`: two on Oct 05, 2026 (bank v1.1) and eight on Oct 10, 2026 (bank v1.2).
+The earlier files stay unchanged: `docs/data/bank_v1_public.jsonl` (35, bank v1) and
+`docs/data/bank_v1_1_public.jsonl` (37, bank v1.1).
 
 ## Added 2026-10-05 — checks that need no judge, and tests of the judges
 
