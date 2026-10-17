@@ -125,7 +125,10 @@ def flip_rows(html, name, links_html, meta_html):
     short_name = name.split(" · ")[0]
     # Since the Oct 02, 2026 redesign a row also carries data-kind, a kind icon, and its due note
     # either as <span class="links due">…</span> (archive) or as a badge inside the links (home).
-    pat = re.compile(r'<div class="issue pending"(?P<attrs>(?: data-kind="[a-z]+")?)>\s*(?P<kind><span class="kind">.*?</span>)?'
+    # The kind span may not run past its own row: on Oct 17, 2026 an unbounded .*? started at the
+    # pending Bench Vol 008 row, ran on to "The Log Vol 004", and left Bench 008 looking issued and
+    # Log 004 looking pending on the home page.
+    pat = re.compile(r'<div class="issue pending"(?P<attrs>(?: data-kind="[a-z]+")?)>\s*(?P<kind><span class="kind">(?:(?!<div class="issue).)*?</span>)?'
                      r'\s*<span class="name">' + re.escape(short_name) + r'(?: · [A-Za-z]{3}\d{8})?</span>\s*'
                      r'<span class="links(?: due)?">(?:<span class="badge due">[^<]*</span>|[^<]*)</span>\s*'
                      r'<span class="meta">[^<]*</span>\s*</div>', re.S)
