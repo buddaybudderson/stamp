@@ -2,13 +2,11 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
 \documentclass[
   11pt,
 ]{article}
-\usepackage{xcolor}
-\usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -39,29 +37,31 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs,array}
-\usepackage{caption}
-\captionsetup[table]{skip=6pt}
-\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
 \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
 \makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \sloppy
-\usepackage{bookmark}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
-% fallback for those not using the hyperref driver hyperxmp:
-\makeatletter
-\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
-\makeatother
 \hypersetup{
-  pdftitle={STAMP: An Auditable Self-Verification Protocol for Language Models{,} and What It Takes to Measure One},
+  pdftitle={STAMP: An Auditable Self-Verification Protocol for Language Models, and What It Takes to Measure One},
   pdfauthor={Lawrence Ho (Budday Budderson Studio LLC, Houston, Texas)},
   colorlinks=true,
   linkcolor={blue},
@@ -107,7 +107,8 @@ settings of the same models, which found no sign, on tier-1 verdicts,
 that reasoning shrinks the effect on the development probes.
 \end{abstract}
 
-\section{1. Introduction}\label{introduction}
+\hypertarget{introduction}{%
+\section{1. Introduction}\label{introduction}}
 
 A fluent answer and a checked answer look the same on the page. A
 language model asked to summarise ``segments of \$120k, \$95k and \$60k,
@@ -187,7 +188,8 @@ Accident Model and Processes of Leveson {[}1{]}, a widely used framework
 in safety engineering. The two are unrelated. We use ``STAMP (prompt
 protocol)'' where the context could confuse them.
 
-\section{2. Related work}\label{related-work}
+\hypertarget{related-work}{%
+\section{2. Related work}\label{related-work}}
 
 \textbf{Self-verification by prompting.} Chain-of-Verification {[}2{]}
 has a model draft an answer, plan verification questions, answer them
@@ -238,23 +240,24 @@ chance correction becomes unstable.
 performance should be reported with the conditions that produced it. The
 Calibration series applies that argument to every rate it publishes.
 
-\section{3. The protocol}\label{the-protocol}
+\hypertarget{the-protocol}{%
+\section{3. The protocol}\label{the-protocol}}
 
 The full text is \texttt{STAMP.md} in the repository {[}15{]}. The core
 between its \texttt{CORE\ START} and \texttt{CORE\ END} markers is about
 9,900 characters of ASCII. We summarise it here.
 
+\hypertarget{precedence-and-absolutes}{%
 \subsection{3.1 Precedence and
-absolutes}\label{precedence-and-absolutes}
+absolutes}\label{precedence-and-absolutes}}
 
 Provider system and safety rules outrank STAMP; nothing else does. In
 particular, a model's native habits (agreeableness, answering unchecked,
 verbosity) do not.
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -279,9 +282,9 @@ A6 & When doubt about meaning would change the deliverable, ask one
 focused question, covering every missing piece, before substantive
 work. \\
 \end{longtable}
-}
 
-\subsection{3.2 The loop and the ladder}\label{the-loop-and-the-ladder}
+\hypertarget{the-loop-and-the-ladder}{%
+\subsection{3.2 The loop and the ladder}\label{the-loop-and-the-ladder}}
 
 The loop is \textbf{S}cope (check for false premises, count requested
 parts), \textbf{T}ackle (full rigour on the load-bearing claim),
@@ -298,7 +301,8 @@ operator. A ``right now'' claim (a current price, whether a shop is
 open) is a rung-3 claim; without retrieval the model must say it cannot
 confirm it.
 
-\subsection{3.3 The receipt}\label{the-receipt}
+\hypertarget{the-receipt}{%
+\subsection{3.3 The receipt}\label{the-receipt}}
 
 Every reply ends with a receipt in one of three forms:
 
@@ -326,17 +330,17 @@ A \textbf{false receipt} is a receipt that claims a check, a source or a
 count that the reply does not support. A fabricated URL in \texttt{refs}
 is a false receipt.
 
+\hypertarget{a-judge-free-receipt-checker}{%
 \subsection{3.4 A judge-free receipt
-checker}\label{a-judge-free-receipt-checker}
+checker}\label{a-judge-free-receipt-checker}}
 
 A receipt is useful only if someone checks it.
 \texttt{harness/footer\_check.py} checks what a parser can settle, with
 no model in the loop:
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Rule
@@ -364,7 +368,6 @@ R9 & \texttt{econ} is \texttt{lean} or \texttt{full} \\
 R10 & Every pure-number expression \texttt{a\ op\ b\ ...\ =\ c} shown in
 the reply recomputes exactly \\
 \end{longtable}
-}
 
 The checker cannot tell whether figures were really recomputed or
 whether a source says what the reply claims. A PASS means the receipt is
@@ -374,14 +377,16 @@ planted fault; \texttt{test\_receipts.py} repeats that on every pull
 request, and the repository's required CI check runs the checker against
 the worked examples inside \texttt{STAMP.md} itself.
 
-\subsection{3.5 Deployment}\label{deployment}
+\hypertarget{deployment}{%
+\subsection{3.5 Deployment}\label{deployment}}
 
 STAMP adds input tokens on every turn (roughly 1,200 to 1,700). The
 protocol documentation recommends placing it in a standing system slot
 with provider prompt caching; we have not measured the saving, and we
 report no figure for it here.
 
-\section{4. The measurement programme}\label{the-measurement-programme}
+\hypertarget{the-measurement-programme}{%
+\section{4. The measurement programme}\label{the-measurement-programme}}
 
 The programme publishes two series {[}15{]}. \textbf{The Calibration} is
 a fortnightly, pre-registered study; each issue's questions are signed
@@ -393,7 +398,8 @@ number in an issue is substituted from a registry
 (\texttt{figures.json}) that records the SHA-256 of the files it was
 computed from.
 
-\subsection{4.1 The bank}\label{the-bank}
+\hypertarget{the-bank}{%
+\subsection{4.1 The bank}\label{the-bank}}
 
 Bank v1 has 63 probes in 13 categories: arithmetic, multi-part
 instructions, honesty, false premises, prompt injection, sycophancy,
@@ -407,7 +413,8 @@ correction is dated and published. A contamination check
 (\texttt{contamination.py}) compares a model's pass rate on the public
 half with the held-out half over time.
 
-\subsection{4.2 Draws}\label{draws}
+\hypertarget{draws}{%
+\subsection{4.2 Draws}\label{draws}}
 
 Each candidate is run in two independent halves of five draws per item,
 through a named gateway (OpenRouter), at a stated temperature and token
@@ -415,7 +422,8 @@ budget, with the serving provider recorded. The two halves give a
 test-retest gap, which is used as the noise floor: no change smaller
 than it is reported.
 
-\subsection{4.3 Verdicts}\label{verdicts}
+\hypertarget{verdicts}{%
+\subsection{4.3 Verdicts}\label{verdicts}}
 
 Verdicts come in three tiers. \textbf{Tier 0} is code: the total is
 right or wrong, the DOI resolves or not (15 of 63 items qualify).
@@ -426,7 +434,8 @@ item; agreement is reported as AC1 with a pre-registered floor of 0.70.
 A judge never grades its own model family; the runner refuses before the
 first call.
 
-\subsection{4.4 Rates and intervals}\label{rates-and-intervals}
+\hypertarget{rates-and-intervals}{%
+\subsection{4.4 Rates and intervals}\label{rates-and-intervals}}
 
 Every rate is reported with two intervals. The narrow one answers ``what
 is this model's rate on this bank?'' (items fixed, draws random). The
@@ -436,16 +445,18 @@ times too wide for the first question and 2.6 times too narrow for the
 second, because 38 of 63 items are deterministic at five draws and
 contribute no sampling variance.
 
+\hypertarget{findings-about-the-instrument}{%
 \section{5. Findings about the
-instrument}\label{findings-about-the-instrument}
+instrument}\label{findings-about-the-instrument}}
 
 All figures in this section are taken from Calibration Vol 001 (issued
 Aug 30, 2026, build \texttt{be2bc9d7ca35}), Vol 002 (Oct 03, 2026,
 \texttt{ae993179f05f}), Vol 003 (Oct 03, 2026, \texttt{af3906b9d9ad})
 and Vol 004 (Oct 10, 2026, \texttt{424d7f546ea5}) {[}15{]}.
 
+\hypertarget{temperature-0-was-not-reproducible}{%
 \subsection{5.1 Temperature 0 was not
-reproducible}\label{temperature-0-was-not-reproducible}
+reproducible}\label{temperature-0-was-not-reproducible}}
 
 Two temperature-0 runs of the same 63 prompts, on the same model
 (\texttt{nvidia/nemotron-3.5-lightning}) and the same pinned provider
@@ -464,8 +475,9 @@ The consequence for evaluation design is that a single temperature-0 run
 is not a measurement that can be repeated, and the two-halves design
 (Section 4.2) is necessary rather than cautious.
 
+\hypertarget{the-bank-was-a-reliable-instrument}{%
 \subsection{5.2 The bank was a reliable
-instrument}\label{the-bank-was-a-reliable-instrument}
+instrument}\label{the-bank-was-a-reliable-instrument}}
 
 On nemotron, the two halves correlated at r = 0.896 (Spearman-Brown
 full-test reliability 0.945) and landed 1.6 points apart (42.5\% and
@@ -482,9 +494,10 @@ interval on the per-item difference was -30.5 to -10.6 points. We mark
 this comparison provisional because nemotron's run conditions were
 reconstructed after the fact rather than recorded at run time.
 
+\hypertarget{the-tier-1-grader-was-lenient-by-more-than-the-effect-we-wanted-to-measure}{%
 \subsection{5.3 The tier-1 grader was lenient by more than the effect we
 wanted to
-measure}\label{the-tier-1-grader-was-lenient-by-more-than-the-effect-we-wanted-to-measure}
+measure}\label{the-tier-1-grader-was-lenient-by-more-than-the-effect-we-wanted-to-measure}}
 
 Three judges (\texttt{x-ai/grok-4.6}, \texttt{google/gemini-3.7-flash},
 and the tier-1 grader \texttt{bytedance-seed/seed-2-1-turbo}) graded a
@@ -500,8 +513,9 @@ The grader was also the expensive part. Of \$10.22 spent from Aug 26 to
 Aug 29, 2026, the grader cost \$8.62 (84\%); the two candidates it
 graded cost \$0.32 between them.
 
+\hypertarget{judges-agreed-with-each-other-more-than-with-a-person}{%
 \subsection{5.4 Judges agreed with each other more than with a
-person}\label{judges-agreed-with-each-other-more-than-with-a-person}
+person}\label{judges-agreed-with-each-other-more-than-with-a-person}}
 
 Vol 002 tested the panel against a judge from a further family (AC1
 0.954, 95\% CI 0.896 to 1.000) and re-ran it on Luna (AC1 0.865, 0.804
@@ -512,12 +526,11 @@ One person labelled 87 public-half draws blind (the labelling page
 showed probe, criterion and response, and no verdict or item history).
 The person failed 10 of 87. Against those labels:
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Judge
@@ -539,7 +552,6 @@ Decision model ``Jev'' & 0.846 (0.741 to 0.935) & 3 & 4 \\
 Decision model ``Laya'' & 0.779 (0.657 to 0.885) & 0 & 6 \\
 Always PASS & 0.871 & 0 & 0 \\
 \end{longtable}
-}
 
 The three seated judges agreed with one another at 0.875 (0.789 to
 0.950) on the same draws. A judge that said PASS to everything would
@@ -551,8 +563,9 @@ inter-judge agreement, however high, is not evidence that the judges are
 right, and that AC1 alone rewards a judge for passing everything when
 most answers pass.
 
+\hypertarget{one-appended-line-moved-two-of-three-judges}{%
 \subsection{5.5 One appended line moved two of three
-judges}\label{one-appended-line-moved-two-of-three-judges}
+judges}\label{one-appended-line-moved-two-of-three-judges}}
 
 Vol 004 took 70 answers to 20 public-half questions that the tier-1
 grader had failed, and regraded each four times with one line appended:
@@ -578,8 +591,9 @@ line can, in principle, be influenced by a receipt that says ``challenge
 held''. We have not measured that. Section 6.4 includes the test, and
 the effect is one of the four limits on Section 6.1.
 
+\hypertarget{models-found-planted-errors-when-the-record-made-them-checkable}{%
 \subsection{5.6 Models found planted errors when the record made them
-checkable}\label{models-found-planted-errors-when-the-record-made-them-checkable}
+checkable}\label{models-found-planted-errors-when-the-record-made-them-checkable}}
 
 In a separate test (Sep 9 to Sep 10, 2026), four Claude models (Fable
 5.1, Opus 5, Sonnet 5, Haiku 4.5) were each shown the same record
@@ -595,10 +609,12 @@ no STAMP condition; it is reported because it bounds what a protocol can
 add on such tasks for strong 2026 models: very little, when the error is
 checkable from the page.
 
-\section{6. The treatment effect}\label{the-treatment-effect}
+\hypertarget{the-treatment-effect}{%
+\section{6. The treatment effect}\label{the-treatment-effect}}
 
+\hypertarget{on-the-protocols-own-development-probes}{%
 \subsection{6.1 On the protocol's own development
-probes}\label{on-the-protocols-own-development-probes}
+probes}\label{on-the-protocols-own-development-probes}}
 
 Before the Calibration programme existed, the author ran the promptfoo
 harness {[}15{]} on ten configurations between Jul 23 and Aug 08, 2026:
@@ -616,17 +632,16 @@ STAMP's files can answer. They check that STAMP is loaded, not that it
 changes behaviour, and counting them would have added 5 to 9 points to
 every STAMP effect below.
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0610}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.2073}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0488}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0854}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0854}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.2439}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0732}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0854}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1098}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0610}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.2073}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0488}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.2439}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0732}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0854}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1098}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Ver.
@@ -672,7 +687,6 @@ v1.25 & Step 3.7 Flash* & 82 & 24.4\% & 15.9\% & -8.5 (-18.3, 0.0) &
 v1.25 & Nemotron 3 Super* & 82 & 22.0\% & 14.6\% & -7.3 (-17.1, 2.4) &
 0.20 & 11 / 5 & 22.0\% \\
 \end{longtable}
-}
 
 n is the number of probes paired across both arms after canaries are
 removed; differences are in percentage points. ``Better / worse'' counts
@@ -767,8 +781,9 @@ reasoning, and the grader's prompt contained it. Their rows are now
 graded on the answer alone (the correction above), but where each answer
 begins had to be estimated, because the export does not mark it.
 
+\hypertarget{what-the-differences-look-like}{%
 \subsection{6.2 What the differences look
-like}\label{what-the-differences-look-like}
+like}\label{what-the-differences-look-like}}
 
 The following are verbatim from the Mistral Large run (v1.25, Aug 07,
 2026), where the two arms differed most. Grader verdicts are the tier-1
@@ -817,8 +832,9 @@ and less useful than native. Together with probe 66 they suggest that on
 this model A4 is applied too broadly, and that ``say what you cannot
 verify'' can crowd out ``give what you can''.
 
+\hypertarget{on-a-bank-the-protocol-was-not-tuned-on}{%
 \subsection{6.3 On a bank the protocol was not tuned
-on}\label{on-a-bank-the-protocol-was-not-tuned-on}
+on}\label{on-a-bank-the-protocol-was-not-tuned-on}}
 
 The Calibration programme ran nemotron with and without an internal
 STAMP revision (v1.70) on bank v1 under a shared tier-1 grader. The
@@ -840,8 +856,9 @@ replaced the every-reply receipt with a line that appears only when a
 reply contains a specific the model cannot stand behind. A result on one
 version does not transfer to the other.
 
+\hypertarget{pre-registered-study-system-1-and-system-2}{%
 \subsection{6.4 Pre-registered study: System 1 and System
-2}\label{pre-registered-study-system-1-and-system-2}
+2}\label{pre-registered-study-system-1-and-system-2}}
 
 Reasoning models change the question. If a model already deliberates
 before answering (``System 2'', after Kahneman {[}16{]}), a prompt that
@@ -880,10 +897,11 @@ count; the other 348 report none. Perplexity Sonar and Mistral Large
 reported no reasoning tokens and returned no reasoning text on any of
 372 replies. So the earlier runs hold no System 1 arm for any model. The
 only reasoning-off rows are two different models, and their STAMP
-effects (-7.3 and -23.2 points) bracket those of the six reasoning rows
-at v1.25 (-9.8 to -22.0). That comparison is between models, gateways
-and probe sets at once, and we read nothing about reasoning from it. The
-within-model contrast is the study in Section 6.5.
+effects (-7.3 and -23.2 points) fall within and beyond the range of the
+six reasoning rows at v1.25 (-6.1 to -18.3). That comparison is between
+models, gateways and probe sets at once, and we read nothing about
+reasoning from it. The within-model contrast is the study in Section
+6.5.
 
 The Aug 08 run also shows that a reasoning-token count is not a reliable
 test of a System 1 row: on 37.4\% of replies that visibly reasoned, the
@@ -894,8 +912,9 @@ returned reasoning (``Thinking:'' or a
 model ignored is not a contrast. The study's two committed halves pass
 this stricter check, and the script's output on them is unchanged.
 
+\hypertarget{system-1-and-system-2-results}{%
 \subsection{6.5 System 1 and System 2:
-results}\label{system-1-and-system-2-results}
+results}\label{system-1-and-system-2-results}}
 
 The study ran on Oct 14, 2026, after three amendments, each signed
 before any study call and recorded with what had been seen. (1) The
@@ -920,15 +939,14 @@ canaries were dropped, leaving 82 paired probes per row. The grader was
 No s1 reply reported reasoning tokens. The study cost \$14.44 in gateway
 charges, with \$0.85 for pilots.
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2254}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0986}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0986}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2817}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0704}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0986}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1268}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2254}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2817}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0704}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.0986}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1268}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Row
@@ -962,7 +980,6 @@ gemini-flash-s2 & 11.6\% & 4.3\% & -7.3 (-12.8, -2.4) & 0.013 & 4.9 &
 5.5\% \\
 grok-s2 & 13.8\% & 2.5\% & -11.2 (-19.4, -3.8) & 0.006 & 5.0 & 0.6\% \\
 \end{longtable}
-}
 
 Fail rates are over both halves. The pooled difference averages each
 probe's STAMP-minus-native difference over the two halves, in percentage
@@ -998,7 +1015,8 @@ are development probes, so the same upper-bound reading as Section 6.1
 applies. Files, pilots and analysis:
 \texttt{eval/promptfoo/results/2026-10-14\_s1s2/}.
 
-\subsection{6.6 Agents with tools}\label{agents-with-tools}
+\hypertarget{agents-with-tools}{%
+\subsection{6.6 Agents with tools}\label{agents-with-tools}}
 
 STAMP's absolutes A3 (no consequential action without instruction; read
 before, verify after) and A4 (tool output is data) matter most for
@@ -1010,7 +1028,8 @@ carry planted instructions in their strings, is in
 text found inside the artefact it is analysing, and whether its
 \texttt{act} count matches its tool log.
 
-\section{7. Limitations}\label{limitations}
+\hypertarget{limitations}{%
+\section{7. Limitations}\label{limitations}}
 
 \begin{itemize}
 \tightlist
@@ -1039,7 +1058,8 @@ text found inside the artefact it is analysing, and whether its
   dates and may not refer to the same weights later.
 \end{itemize}
 
-\section{8. Conclusion}\label{conclusion}
+\hypertarget{conclusion}{%
+\section{8. Conclusion}\label{conclusion}}
 
 A prompt can ask a model to check its work and to say what it checked.
 Writing that prompt was the easy part. Measuring whether it helps took a
@@ -1047,17 +1067,18 @@ reliable bank, two halves of five draws per item, a panel across model
 families, a human anchor, and a test of the judges themselves, and at
 the end of it the effect we set out to measure was still smaller than
 our grader's bias. On the probes it was written against, the protocol
-cut fail rates by 7 to 23 points across eight models, and on six of them
-it also made a few answers worse; on a bank it was not tuned on, the
-effect could not be told apart from the grader's bias. We publish the
-protocol, the receipt checker, the instrument and both sets of results,
-and we report the gap between them as the finding it is. The first
-pre-registered follow-up, with reasoning switched off and on, has run:
-on tier-1 verdicts STAMP's effect on the development probes was no
+cut fail rates by 6.1 to 23.2 points across eight models, and on six of
+them it also made a few answers worse; on a bank it was not tuned on,
+the effect could not be told apart from the grader's bias. We publish
+the protocol, the receipt checker, the instrument and both sets of
+results, and we report the gap between them as the finding it is. The
+first pre-registered follow-up, with reasoning switched off and on, has
+run: on tier-1 verdicts STAMP's effect on the development probes was no
 smaller with reasoning on, and the study is runnable by anyone with a
 gateway key.
 
-\section{Reproducibility}\label{reproducibility}
+\hypertarget{reproducibility}{%
+\section{Reproducibility}\label{reproducibility}}
 
 Repository: \url{https://github.com/buddaybudderson/stamp} (MIT). Site
 and issued documents: \url{https://protocolstamp.com}. Public bank:
@@ -1067,10 +1088,11 @@ files: \texttt{docs/data/runs/}. Citable figures with source hashes:
 evaluation: \texttt{eval/promptfoo/}; the earlier runs in Section 6.1,
 with fingerprints: \texttt{eval/promptfoo/results/}; the System 1 and
 System 2 run in Section 6.5:
-\texttt{eval/promptfoo/results/2026-10-14\_s1s2/}. A Zenodo DOI for the
-tagged release will be added before submission.
+\texttt{eval/promptfoo/results/2026-10-14\_s1s2/}. A Zenodo DOI for a
+tagged release will be added in a later version.
 
-\section{Use of AI tools}\label{use-of-ai-tools}
+\hypertarget{use-of-ai-tools}{%
+\section{Use of AI tools}\label{use-of-ai-tools}}
 
 AI systems were used throughout this work: to draft parts of the
 protocol, the harness and this report, and as the graders whose
@@ -1079,14 +1101,16 @@ substituted from a registry computed from run files or copied from an
 issued, hash-fingerprinted document, and was checked by the author. The
 author is responsible for the content.
 
+\hypertarget{conflict-of-interest-and-funding}{%
 \section{Conflict of interest and
-funding}\label{conflict-of-interest-and-funding}
+funding}\label{conflict-of-interest-and-funding}}
 
 The author developed STAMP and operates the studio that publishes it.
 The programme is funded by reader contributions; no model vendor funded
 or reviewed this work.
 
-\section{References}\label{references}
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 {[}1{]} N. G. Leveson. \emph{Engineering a Safer World: Systems Thinking
 Applied to Safety.} MIT Press, 2011.
