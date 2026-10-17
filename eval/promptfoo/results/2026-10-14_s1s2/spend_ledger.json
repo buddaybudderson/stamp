@@ -1,0 +1,101 @@
+{
+ "source": "OpenRouter GET /api/v1/key 'usage', read before and after each step (20 s settle); USD",
+ "pilots": [
+  {
+   "step": "pilot1 sonnet-5.5 pair, 10 probes, registered config",
+   "cost": 0.1451
+  },
+  {
+   "step": "pilot2 sonnet-4.6 pair, 10 probes, Amendment 1",
+   "cost": 0.4294
+  },
+  {
+   "step": "pilot3 nemotron pair, 10 probes, grader effort low (Amendment 2)",
+   "cost": 0.2545
+  },
+  {
+   "step": "pilot4 nemotron pair, 10 probes, Amendment 3 settings",
+   "cost": 0.0176
+  }
+ ],
+ "study": [
+  {
+   "model": "nemotron",
+   "half": "A",
+   "cost": 0.2273,
+   "minutes": 8.0
+  },
+  {
+   "model": "nemotron",
+   "half": "B",
+   "cost": 0.2228,
+   "minutes": 7.6
+  },
+  {
+   "model": "luna",
+   "half": "A",
+   "cost": 0.2689,
+   "minutes": 7.5
+  },
+  {
+   "model": "luna",
+   "half": "B",
+   "cost": 0.3261,
+   "minutes": 7.7
+  },
+  {
+   "model": "gemini-flash",
+   "half": "A",
+   "cost": 0.8854,
+   "minutes": 7.4
+  },
+  {
+   "model": "gemini-flash",
+   "half": "B",
+   "cost": 0.992,
+   "minutes": 6.7
+  },
+  {
+   "model": "haiku",
+   "half": "A",
+   "cost": 1.1397,
+   "minutes": 7.4
+  },
+  {
+   "model": "haiku",
+   "half": "B",
+   "cost": 1.3106,
+   "minutes": 7.3
+  },
+  {
+   "model": "grok",
+   "half": "A",
+   "cost": 0.6248,
+   "minutes": 5.1
+  },
+  {
+   "model": "grok",
+   "half": "B",
+   "cost": 0.519,
+   "minutes": 5.2
+  },
+  {
+   "model": "sonnet",
+   "half": "A",
+   "cost": 2.8324,
+   "minutes": 8.9
+  },
+  {
+   "model": "sonnet",
+   "half": "B",
+   "cost": 2.9332,
+   "minutes": 8.8
+  }
+ ],
+ "grok_fill": {
+  "step": "grok-s2 items lost to promptfoo's abort after an xAI HTTP 403, both halves",
+  "cost": 2.16
+ },
+ "study_total": 14.44,
+ "pilot_total": 0.85
+}

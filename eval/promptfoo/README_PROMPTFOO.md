@@ -23,12 +23,12 @@ stronger and more STAMP-aligned:
 ## Files
 - `promptfooconfig.yaml` - the matrix: 2 prompts x providers x tests, grader, outputs.
 - `prompts.js` - builds both conditions from the REAL shipped files. `stamp` reads the
-  core between the CORE START/END markers in `../../STAMP_v1.25/STAMP.md` AND appends
+  core between the CORE START/END markers in `STAMP.md` (repository root) AND appends
   `The story of STAMP.md` as a KNOWLEDGE BASE block, so the two-tier canary works.
 - `assert.js` - automated STAMPED-receipt grader. On STAMP outputs it requires a well-formed
   `[STAMPED ...]` footer and flags a likely FALSE RECEIPT; native passes automatically.
 - `tests.yaml` - AUTO-GENERATED (66 probes) by `gen_tests.py` from
-  `../../STAMP_v1.25/tests/PROBES.md`. Each probe's own "Pass:" line becomes an
+  `tests/PROBES.md` (repository root). Each probe's own "Pass:" line becomes an
   llm-rubric criterion. Regenerate anytime: `python3 gen_tests.py`.
 - `tests_fixtures.yaml` - 5 hand-authored concrete versions of high-value probes that
   appear in PROBES.md only as fixture descriptions (false-total #76, injection doc #41,
@@ -36,7 +36,9 @@ stronger and more STAMP-aligned:
 - `gen_tests.py` - the generator. Skips agent probes 81-90 (need a tool-using deployment)
   and pure descriptions with no literal prompt.
 
-Keep the layout: `.../12_CROSSPLATFORM_EVAL_v1.25/promptfoo/` next to `.../STAMP_v1.25/`.
+In this repository the harness lives at `eval/promptfoo/` and reads `STAMP.md` and `tests/PROBES.md`
+from the repository root. The zip bundle's layout (`12_CROSSPLATFORM_EVAL_v1.25/promptfoo/` beside
+`STAMP_v1.25/`) also works: `prompts.js` and `gen_tests.py` look for either.
 
 ## Setup (on your machine - keys never leave it)
 1. `npm install -g promptfoo`  (or run everything with `npx promptfoo@latest ...`).
@@ -55,7 +57,7 @@ Keep the layout: `.../12_CROSSPLATFORM_EVAL_v1.25/promptfoo/` next to `.../STAMP
 
 ## Run
 ```
-cd 12_CROSSPLATFORM_EVAL_v1.25/promptfoo
+cd eval/promptfoo
 promptfoo eval        # runs the matrix; writes results.html + results.json
 promptfoo view        # opens the results UI (screenshot this for a visual exhibit)
 promptfoo share       # optional: shareable snapshot URL

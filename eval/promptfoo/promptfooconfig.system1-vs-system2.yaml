@@ -1,0 +1,108 @@
+# STAMP v1.25 - System 1 vs System 2: does the protocol still earn its keep when the model
+# already "thinks"?
+#
+# Design: 2 conditions (native | stamp) x paired providers x the same 93 probes (84 generated + 9 fixtures) as
+# promptfooconfig.yaml. Each model that lets you switch its reasoning on and off appears TWICE,
+# once with reasoning off (fast, "System 1") and once with reasoning on (deliberate, "System 2"),
+# so a difference between the two rows is the reasoning effect on ONE model, not a
+# difference between two models. Models that always reason appear once, as System 2 only.
+#
+# The question this answers (pre-register it first: paper/PREREG_system1_vs_system2.md):
+#   Q1  Does STAMP lower the fail rate on System 1 rows?          (native vs stamp, per row)
+#   Q2  Does STAMP lower it on System 2 rows?                      (native vs stamp, per row)
+#   Q3  Is the STAMP effect smaller with reasoning on?             (Q1 effect minus Q2 effect, same model)
+#   Q4  Do reasoning rows keep a TRUE receipt as often?            (harness/footer_check.py, R1-R10)
+#
+# One key covers every row: OPENROUTER_API_KEY (the same gateway the Calibration runs use).
+# Every model id below must be checked before a paid run - ids and reasoning switches change:
+#     curl -s https://openrouter.ai/api/v1/models | python3 -c "import json,sys;\
+#       [print(m['id']) for m in json.load(sys.stdin)['data'] if 'reasoning' in m.get('supported_parameters',[])]"
+# A row whose model ignores the reasoning switch is not a System 1 row. Check the reasoning token
+# count in results.json for every "s1" row; a non-zero count means drop the pair, and say so.
+#
+# Run:
+#   cd eval/promptfoo
+#   npx promptfoo@latest eval -c promptfooconfig.system1-vs-system2.yaml -o results.s1s2.json
+#   python3 analyze_s1s2.py results.s1s2.json
+#
+# Cost: 2 x 10 rows x 93 probes = 1,860 model calls plus up to 1,860 grading calls.
+# Estimate it first with a one-row run and harness/cost_estimate.py; do not guess.
+description: "STAMP v1.25 - System 1 (reasoning off) vs System 2 (reasoning on), native vs STAMP"
+
+prompts:
+  - id: file://prompts.js:native
+    label: native
+  - id: file://prompts.js:stamp
+    label: stamp
+
+# Labels are "<model>-s1" or "<model>-s2". analyze_s1s2.py reads the suffix to pair the rows.
+# Amendment 3: showThinking false on every row, or promptfoo puts the model's reasoning in front of the
+# reply as "Thinking: ..." and the grader and footer_check read it as part of the reply.
+# The `passthrough` block is sent unchanged in the request body; `reasoning` is OpenRouter's
+# single switch across vendors (effort "none" / enabled false = off, effort "high" = on).
+providers:
+  # --- Pairs: one model, reasoning off and on ---
+  - id: openrouter:openai/gpt-5.6-luna             # Calibration candidate luna_v1
+    label: luna-s1
+    config: { showThinking: false, temperature: 0, max_tokens: 4096, passthrough: { reasoning: { effort: none } } }
+  - id: openrouter:openai/gpt-5.6-luna
+    label: luna-s2
+    config: { showThinking: false, temperature: 0, max_tokens: 16384, passthrough: { reasoning: { effort: high } } }
+
+  - id: openrouter:nvidia/nemotron-3.5-lightning   # Calibration candidate nemo_v1
+    label: nemotron-s1
+    config: { showThinking: false, temperature: 0, max_tokens: 4096, passthrough: { reasoning: { enabled: false } } }
+  - id: openrouter:nvidia/nemotron-3.5-lightning
+    label: nemotron-s2
+    config: { showThinking: false, temperature: 0, max_tokens: 16384, passthrough: { reasoning: { effort: high } } }
+
+  # Amendment 1 (Oct 14, 2026): claude-sonnet-5.5 refuses reasoning off on OpenRouter ("Reasoning is
+  # mandatory for this endpoint and cannot be disabled."), so the Sonnet pair uses claude-sonnet-4.6.
+  - id: openrouter:anthropic/claude-sonnet-4.6
+    label: sonnet-s1
+    config: { showThinking: false, temperature: 0, max_tokens: 4096, passthrough: { reasoning: { enabled: false } } }
+  - id: openrouter:anthropic/claude-sonnet-4.6
+    label: sonnet-s2
+    config: { showThinking: false, max_tokens: 16384, passthrough: { reasoning: { effort: high } } }   # thinking requires the default temperature
+
+  # Amendment 1: claude-haiku-4.5 accepts reasoning off through the API, so it is a pair, not System 2 only.
+  - id: openrouter:anthropic/claude-haiku-4.5
+    label: haiku-s1
+    config: { showThinking: false, temperature: 0, max_tokens: 4096, passthrough: { reasoning: { enabled: false } } }
+  - id: openrouter:anthropic/claude-haiku-4.5
+    label: haiku-s2
+    config: { showThinking: false, max_tokens: 16384, passthrough: { reasoning: { effort: high } } }
+
+  # --- Always-reasoning models: System 2 only, no pair ---
+  - id: openrouter:x-ai/grok-4.6                   # used as a judge in Calibration 001-004
+    label: grok-s2
+    config: { showThinking: false, temperature: 0, max_tokens: 16384 }
+  # Amendment 1: gemini-3.7-flash refuses reasoning off on OpenRouter, so it runs as System 2 only.
+  - id: openrouter:google/gemini-3.7-flash        # used as a judge in Calibration 002-004
+    label: gemini-flash-s2
+    config: { showThinking: false, temperature: 0, max_tokens: 16384, passthrough: { reasoning: { effort: high } } }
+
+# THE GRADER. House rule: a judge never grades its own model family. No ByteDance model is a
+# candidate above, so the tier-1 grader of Calibration 001 can grade every row. It was measured
+# 4.1 points lenient on nemotron (Calibration 001, Finding 02) and was moved by an appended
+# rubric line (Calibration 004), so report its verdicts as tier 1 and send a stratified sample to
+# a panel (harness/panel_grade.py) before quoting any effect smaller than 5 points.
+defaultTest:
+  options:
+    # Amendment 1: max_tokens raised from promptfoo's default 1,024, which the grader's own reasoning
+    # used up on 6 of 20 pilot grades ("Could not extract JSON from llm-rubric response").
+    provider:
+      id: openrouter:bytedance-seed/seed-2-1-turbo
+      # Amendment 2 set reasoning effort low; Amendment 3 turns it off (low still ran to 8,192 tokens).
+      config: { showThinking: false, max_tokens: 8192, passthrough: { reasoning: { enabled: false } } }
+  assert:
+    - type: javascript
+      value: file://assert.js
+
+tests:
+  - file://tests.yaml
+  - file://tests_fixtures.yaml
+
+outputPath:
+  - results.s1s2.json
+  - results.s1s2.html

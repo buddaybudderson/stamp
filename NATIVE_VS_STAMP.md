@@ -1,6 +1,6 @@
 # Native vs STAMP - the control experiment
 
-*STAMP is designed to be measured against itself-off. This is the standing comparison: the same model, the same prompts, run first with no STAMP (control) and then with STAMP installed (treatment). The point is not one headline number - it is a method you can re-run on your exact deployment and grade yourself. A reproducible harness ships in `12_CROSSPLATFORM_EVAL_v1.25/promptfoo/` (promptfoo config: native vs STAMP columns, per-probe assertions, and an automated STAMPED-footer grader).*
+*STAMP is designed to be measured against itself-off. This is the standing comparison: the same model, the same prompts, run first with no STAMP (control) and then with STAMP installed (treatment). The point is not one headline number - it is a method you can re-run on your exact deployment and grade yourself. A reproducible harness ships in `eval/promptfoo/` (promptfoo config: native vs STAMP columns, per-probe assertions, and an automated STAMPED-footer grader).*
 
 ## What STAMP reliably changes
 
@@ -18,7 +18,7 @@ On probes a strong model already handles - honesty about fictional entities, no-
 
 ## Run it yourself (this is the real evidence)
 
-**Automated (recommended):** use the promptfoo harness in `12_CROSSPLATFORM_EVAL_v1.25/promptfoo/`. It sends every runnable probe twice - native and STAMP - grades each with the probe's own pass criterion plus a machine check that the STAMPED footer is present and its counts are plausible, and exports a full transcript (`results.json` / `results.html`) with tokens, latency, and pass/fail reasons per cell. That reproducible config + exported transcript is stronger proof than any screenshot.
+**Automated (recommended):** use the promptfoo harness in `eval/promptfoo/`. It sends every runnable probe twice - native and STAMP - grades each with the probe's own pass criterion plus a machine check that the STAMPED footer is present and its counts are plausible, and exports a full transcript (`results.json` / `results.html`) with tokens, latency, and pass/fail reasons per cell. That reproducible config + exported transcript is stronger proof than any screenshot.
 
 **By hand:** (1) pick 10-15 prompts from `tests/PROBES.md` or your own real tasks; (2) run each in a fresh chat with no STAMP - that's your control; (3) install STAMP (`INSTALL.md`) and run the same prompts - that's your treatment; (4) for each, check whether behavior improved and whether the STAMPED footer's counts match reality when you count them. A truthful footer over a wrong answer still fails; a false footer is the most serious failure. Your pass rate is your number, and it is honest only with the runs behind it.
 

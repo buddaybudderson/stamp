@@ -32,7 +32,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The final-approval order itself was not retrieved; date (20 July 2026) and terms from the Authors Guild and news reports. Reports name Judge Araceli Martinez-Olguin as approving after Judge Alsup's retirement.",
+   "limits": "The final-approval order itself was not retrieved; date (Jul 20, 2026) and terms from the Authors Guild and news reports. Reports name Judge Araceli Martinez-Olguin as approving after Judge Alsup's retirement.",
    "label": "Likely",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -569,7 +569,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The 1 July 2024 effective date is from secondary reporting, not the Governor's release.",
+   "limits": "The Jul 01, 2024 effective date is from secondary reporting, not the Governor's release.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -587,7 +587,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "Brazil's Superior Electoral Court regulates AI in election campaigns",
-   "summary": "On 27 February 2024 the court amended Resolution 23.610/2019 on electoral propaganda to ban deepfakes and require notice of AI use in campaign content, and to restrict the use of bots to contact voters, for the October 2024 municipal elections.",
+   "summary": "On Feb 27, 2024 the court amended Resolution 23.610/2019 on electoral propaganda to ban deepfakes and require notice of AI use in campaign content, and to restrict the use of bots to contact voters, for the October 2024 municipal elections.",
    "measures": "Labelling of synthetic campaign content.",
    "applies": null,
    "stamp_relevance": [
@@ -799,7 +799,7 @@
    "instrument": "milestone",
    "stage": "statement",
    "title": "OpenAI board removes Sam Altman as CEO; reinstated days later",
-   "summary": "OpenAI's nonprofit board announced that Altman was departing after it concluded he was 'not consistently candid'. After staff and investor pressure he returned as CEO with a new initial board on 21 November 2023 and 22 November 2023. A recurring case study in AI lab governance.",
+   "summary": "OpenAI's nonprofit board announced that Altman was departing after it concluded he was 'not consistently candid'. After staff and investor pressure he returned as CEO with a new initial board on Nov 21, 2023 and Nov 22, 2023. A recurring case study in AI lab governance.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -1149,7 +1149,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "US export controls on advanced computing chips and semiconductor manufacturing items",
-   "summary": "The Bureau of Industry and Security issued an interim final rule (released 7 October 2022, published 13 October 2022) restricting exports of advanced AI chips, supercomputer end uses and chip-making equipment to China. Tightened in October 2023 and December 2024.",
+   "summary": "The Bureau of Industry and Security issued an interim final rule (released Oct 07, 2022, published Oct 13, 2022) restricting exports of advanced AI chips, supercomputer end uses and chip-making equipment to China. Tightened in October 2023 and December 2024.",
    "measures": "Performance thresholds for controlled chips; no evaluation duties.",
    "applies": null,
    "stamp_relevance": [
@@ -1233,7 +1233,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The ICO notice no longer resolves at either of its ico.org.uk addresses (checked 2026-10-08); cited from the Internet Archive capture of 15 June 2022. Appeal history from secondary reporting; check the tribunal judgments before relying on it. Sources are copies or reports, not the issuer's own site, so the entry is Likely.",
+   "limits": "The ICO notice no longer resolves at either of its ico.org.uk addresses (checked Oct 08, 2026); cited from the Internet Archive capture of Jun 15, 2022. Appeal history from secondary reporting; check the tribunal judgments before relying on it. Sources are copies or reports, not the issuer's own site, so the entry is Likely.",
    "label": "Likely",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -1397,7 +1397,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "IBM exits general-purpose facial recognition; Amazon pauses police use of Rekognition",
-   "summary": "IBM's CEO wrote to Congress on 8 June 2020 that IBM no longer offers general-purpose facial recognition or analysis software and called for testing for bias. On 10 June 2020 Amazon announced a one-year moratorium on police use of Rekognition, later extended indefinitely.",
+   "summary": "IBM's CEO wrote to Congress on Jun 08, 2020 that IBM no longer offers general-purpose facial recognition or analysis software and called for testing for bias. On Jun 10, 2020 Amazon announced a one-year moratorium on police use of Rekognition, later extended indefinitely.",
    "measures": "Calls for vendor testing of AI systems for bias, audited and reported.",
    "applies": null,
    "stamp_relevance": [
@@ -1425,7 +1425,7 @@
     }
    ],
    "quotes": [],
-   "limits": "IBM's letter URL now redirects to ibm.com/policy and the text was not retrieved (Internet Archive offline on 2026-10-08); IBM details are from contemporaneous reporting. The indefinite extension of Amazon's moratorium is also from reporting.",
+   "limits": "IBM's letter URL now redirects to ibm.com/policy and the text was not retrieved (Internet Archive offline on Oct 08, 2026); IBM details are from contemporaneous reporting. The indefinite extension of Amazon's moratorium is also from reporting.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -1557,7 +1557,7 @@
      "record": "official Commission transcript"
     }
    ],
-   "limits": "The Commission page does not print the date; 13 September 2023 is from contemporaneous press reports.",
+   "limits": "The Commission page does not print the date; Sep 13, 2023 is from contemporaneous press reports.",
    "added": "2026-10-08",
    "checked": "2026-10-08",
    "approved": {
@@ -1676,7 +1676,7 @@
    "instrument": "statement",
    "stage": "withdrawn",
    "title": "South Africa withdraws its draft National AI Policy after fictitious references are found",
-   "summary": "The Minister of Communications and Digital Technologies withdrew the draft National AI Policy, approved by Cabinet on 25 March 2026 and gazetted for comment, after internal checks confirmed that its reference list contained fictitious sources, which he linked to unverified AI-generated citations. Cabinet approved the withdrawal; a revised policy is to return for comment.",
+   "summary": "The Minister of Communications and Digital Technologies withdrew the draft National AI Policy, approved by Cabinet on Mar 25, 2026 and gazetted for comment, after internal checks confirmed that its reference list contained fictitious sources, which he linked to unverified AI-generated citations. Cabinet approved the withdrawal; a revised policy is to return for comment.",
    "measures": "None directly; a case of unverified AI-generated citations in an official policy draft.",
    "applies": null,
    "stamp_relevance": [
@@ -1736,7 +1736,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1806,7 +1806,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Microsoft's own statement was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Microsoft's own statement was not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1824,7 +1824,7 @@
    "instrument": "decision",
    "stage": "decided",
    "title": "The Pentagon designates Anthropic a supply-chain risk",
-   "summary": "The President directed federal agencies to stop using Anthropic's models, and the Secretary of Defense designated the company a supply-chain risk, the first US company so designated; formal letters are dated 3 March 2026. Anthropic had declined contract terms allowing 'any lawful use' of its models, which would have removed its limits on fully autonomous weapons and domestic mass surveillance.",
+   "summary": "The President directed federal agencies to stop using Anthropic's models, and the Secretary of Defense designated the company a supply-chain risk, the first US company so designated; formal letters are dated Mar 03, 2026. Anthropic had declined contract terms allowing 'any lawful use' of its models, which would have removed its limits on fully autonomous weapons and domestic mass surveillance.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -1846,7 +1846,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model and whose models this program measures. The designation letters were not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model and whose models this program measures. The designation letters were not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1864,7 +1864,7 @@
    "instrument": "court ruling",
    "stage": "decided",
    "title": "Anthropic v. Department of War: preliminary injunction against the supply-chain designation",
-   "summary": "In the Northern District of California, where Anthropic sued on 9 March 2026, Judge Rita Lin preliminarily enjoined the designation and the directive that agencies stop using Anthropic's services, pending a decision on the merits. The order was stayed for seven days to allow an appeal.",
+   "summary": "In the Northern District of California, where Anthropic sued on Mar 09, 2026, Judge Rita Lin preliminarily enjoined the designation and the directive that agencies stop using Anthropic's services, pending a decision on the merits. The order was stayed for seven days to allow an appeal.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -1886,7 +1886,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The order was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The order was not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1926,7 +1926,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The judgment was not retrieved; reports of the evening of 27 August 2026 are dated Aug 28, 2026. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The judgment was not retrieved; reports of the evening of Aug 27, 2026 are dated Aug 28, 2026. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -1961,7 +1961,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The opinion was not retrieved, and its citation was not reported in the coverage found. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Disclosure: Anthropic, a party here, makes Claude, a tool this site uses; this entry was drafted and gated by a Claude model. The opinion was not retrieved, and its citation was not reported in the coverage found. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -2024,7 +2024,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "State Department tells staff to say 'SI' for AI",
-   "summary": "Following the President's renaming of AI as 'Super Intelligence' at the UN on 22 September 2026, an internal State Department email told staff to use 'SI' in all remarks, positions and press elements, as reported by the Associated Press. US representatives used the term at the UN Security Council.",
+   "summary": "Following the President's renaming of AI as 'Super Intelligence' at the UN on Sep 22, 2026, an internal State Department email told staff to use 'SI' in all remarks, positions and press elements, as reported by the Associated Press. US representatives used the term at the UN Security Council.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -2041,7 +2041,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The email was not retrieved; the date is that of the first report found, not the email's own. See the Docket entry on Executive Order 14434. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The email was not retrieved; the date is that of the first report found, not the email's own. See the Docket entry on Executive Order 14434. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -2076,7 +2076,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The post itself was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The post itself was not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -2094,7 +2094,7 @@
    "instrument": "milestone",
    "stage": "published",
    "title": "US Defense Secretary orders an Autonomous Warfare Command",
-   "summary": "A memo directs the department to begin building a four-star combatant command with service-like authorities to scale autonomous and robotic capabilities across the joint force, to stand up by 1 October 2027.",
+   "summary": "A memo directs the department to begin building a four-star combatant command with service-like authorities to scale autonomous and robotic capabilities across the joint force, to stand up by Oct 01, 2027.",
    "measures": "None.",
    "applies": null,
    "stamp_relevance": [],
@@ -2111,7 +2111,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The memo was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The memo was not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "label": "Likely",
    "added": "2026-10-09",
    "checked": "2026-10-09",

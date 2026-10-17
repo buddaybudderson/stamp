@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://protocolstamp.com/</loc><lastmod>2026-09-02</lastmod></url>
+<url><loc>https://protocolstamp.com/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://protocolstamp.com/calibration/001-issued-sun20260830/</loc><lastmod>2026-08-30</lastmod></url>
 <url><loc>https://protocolstamp.com/calibration/002-issued-sat20261003/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://protocolstamp.com/calibration/003-issued-sat20261003/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://protocolstamp.com/archive/</loc><lastmod>2026-09-02</lastmod></url>
 <url><loc>https://protocolstamp.com/protocol/v1.25/</loc><lastmod>2026-08-31</lastmod></url>
 <url><loc>https://protocolstamp.com/writing/</loc><lastmod>2026-09-02</lastmod></url>
+<url><loc>https://protocolstamp.com/writing/did-stamp-help/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://protocolstamp.com/writing/grants/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://protocolstamp.com/writing/marking/</loc><lastmod>2026-09-02</lastmod></url>
 <url><loc>https://protocolstamp.com/writing/abstention/</loc><lastmod>2026-09-02</lastmod></url>
 <url><loc>https://protocolstamp.com/about/</loc><lastmod>2026-09-02</lastmod></url>
 <url><loc>https://protocolstamp.com/colophon/</loc><lastmod>2026-09-03</lastmod></url>
 <url><loc>https://protocolstamp.com/methodology/</loc><lastmod>2026-09-03</lastmod></url>
 <url><loc>https://protocolstamp.com/definitions/</loc><lastmod>2026-09-03</lastmod></url>
+<url><loc>https://protocolstamp.com/footprint/</loc><lastmod>2026-10-13</lastmod></url>
 <url><loc>https://protocolstamp.com/independence/</loc><lastmod>2026-09-03</lastmod></url>
 <url><loc>https://protocolstamp.com/corrections/</loc><lastmod>2026-09-03</lastmod></url>
-<url><loc>https://protocolstamp.com/docket/</loc><lastmod>2026-10-09</lastmod></url><url><loc>https://protocolstamp.com/chronicle/</loc><lastmod>2026-10-09</lastmod></url><url><loc>https://protocolstamp.com/si/</loc><lastmod>2026-10-09</lastmod></url><url><loc>https://protocolstamp.com/military/</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://protocolstamp.com/docket/</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://protocolstamp.com/chronicle/</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://protocolstamp.com/si/</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://protocolstamp.com/military/</loc><lastmod>2026-10-09</lastmod></url>
 <url><loc>https://protocolstamp.com/terms/</loc><lastmod>2026-09-03</lastmod></url>
 <url><loc>https://protocolstamp.com/privacy/</loc><lastmod>2026-09-03</lastmod></url>
 <url><loc>https://protocolstamp.com/subscribe/</loc><lastmod>2026-09-03</lastmod></url>
@@ -25,6 +31,8 @@
 <url><loc>https://protocolstamp.com/log/003-issued-sat20261003/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://protocolstamp.com/support/</loc><lastmod>2026-09-09</lastmod></url>
 <url><loc>https://protocolstamp.com/bench/no-1-complaint/</loc><lastmod>2026-09-06</lastmod></url>
+<url><loc>https://protocolstamp.com/bench/check-the-facts-free-the-fiction/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://protocolstamp.com/bench/a-name-is-not-a-test/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://protocolstamp.com/bench/judges-who-agree-with-each-other/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://protocolstamp.com/bench/what-a-new-judge-has-to-beat/</loc><lastmod>2026-10-05</lastmod></url>
 <url><loc>https://protocolstamp.com/bench/five-cases/</loc><lastmod>2026-10-01</lastmod></url>
@@ -33,4 +41,10 @@
 <url><loc>https://protocolstamp.com/bench/no-1-complaint/record/</loc><lastmod>2026-09-10</lastmod></url>
 <url><loc>https://protocolstamp.com/safety/</loc><lastmod>2026-09-11</lastmod></url>
 <url><loc>https://protocolstamp.com/data/runs/</loc><lastmod>2026-09-11</lastmod></url>
+<url><loc>https://protocolstamp.com/calibration/004-issued-sat20261010/</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://protocolstamp.com/kit/</loc><lastmod>2026-09-02</lastmod></url>
+<url><loc>https://protocolstamp.com/house-protocols/</loc><lastmod>2026-09-02</lastmod></url>
+<url><loc>https://protocolstamp.com/house-protocols/worked-example/</loc><lastmod>2026-10-12</lastmod></url>
+<url><loc>https://protocolstamp.com/paper/</loc><lastmod>2026-10-13</lastmod></url>
+<url><loc>https://protocolstamp.com/log/004-issued-sat20261017/</loc><lastmod>2026-10-17</lastmod></url>
 </urlset>

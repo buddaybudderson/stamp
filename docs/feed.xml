@@ -7,7 +7,42 @@
 <language>en-us</language>
 <atom:link href="https://protocolstamp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <managingEditor>s@bud.day (Lawrence Ho)</managingEditor>
-<lastBuildDate>Fri, 09 Oct 2026 15:00:00 -0500</lastBuildDate>
+<lastBuildDate>Sat, 17 Oct 2026 15:37:00 -0500</lastBuildDate>
+<item>
+<title>The Log Vol 004 · Sat20261017</title>
+<link>https://protocolstamp.com/log/004-issued-sat20261017/</link>
+<guid isPermaLink="true">https://protocolstamp.com/log/004-issued-sat20261017/</guid>
+<pubDate>Sat, 17 Oct 2026 15:37:00 -0500</pubDate>
+<description>What ran, what it cost and what moved - the derived record, written by the harness. Build 18a253173809.</description>
+</item>
+<item>
+<title>The Bench Vol 007 &#183; Check the Facts, Free the Fiction</title>
+<link>https://protocolstamp.com/bench/check-the-facts-free-the-fiction/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/check-the-facts-free-the-fiction/</guid>
+<pubDate>Thu, 15 Oct 2026 23:04:00 -0500</pubDate>
+<description>Our house protocols are built to keep a model from inventing facts; creative work asks it to invent. What the protocols do about hallucination and what we have and have not measured, why temperature is a weak dial for creativity, and what a creative mode for STAMP should loosen and what it never should.</description>
+</item>
+<item>
+<title>The technical report: STAMP, and what it takes to measure one</title>
+<link>https://protocolstamp.com/paper/</link>
+<guid isPermaLink="true">https://protocolstamp.com/paper/</guid>
+<pubDate>Tue, 13 Oct 2026 15:00:00 -0500</pubDate>
+<description>The program in one paper, as a preprint with its PDF: the protocol and its receipt, what four Calibrations found about the instruments, and five native-versus-STAMP runs not printed here before. On the probes it was written against, STAMP lowered fail rates by 7 to 23 points; on a bank it was not tuned on, the effect could not be told apart from grader bias.</description>
+</item>
+<item>
+<title>The Bench Vol 006 &#183; A Name Is Not a Test</title>
+<link>https://protocolstamp.com/bench/a-name-is-not-a-test/</link>
+<guid isPermaLink="true">https://protocolstamp.com/bench/a-name-is-not-a-test/</guid>
+<pubDate>Mon, 12 Oct 2026 07:37:00 -0500</pubDate>
+<description>The US renamed AI &#8220;Super Intelligence&#8221; without changing what the word covers, and the UN talks on autonomous weapons ended without a treaty. Both turn on one question: who checks what an AI is said to be? Why we still write &#8220;AI,&#8221; where military AI rules reach testing, and what we propose.</description>
+</item>
+<item>
+<title>The Calibration Vol 004 · Sat20261010</title>
+<link>https://protocolstamp.com/calibration/004-issued-sat20261010/</link>
+<guid isPermaLink="true">https://protocolstamp.com/calibration/004-issued-sat20261010/</guid>
+<pubDate>Sat, 10 Oct 2026 15:37:00 -0500</pubDate>
+<description>The dated record of what was measured, written and signed by a person. Build 424d7f546ea5.</description>
+</item>
 <item>
 <title>Militaries and AI, country by country</title>
 <link>https://protocolstamp.com/military/</link>

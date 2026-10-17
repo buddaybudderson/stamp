@@ -9,7 +9,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "California SB 813: independent verification organizations",
-   "summary": "Signed and chaptered (Chapter 179). Creates a state framework under which the Government Operations Agency designates 'independent verification organizations' (IVOs): AI auditors with demonstrated expertise in assessing the risks of AI systems and models. The agency must set application requirements, qualification criteria and suspension procedures by 1 January 2028.",
+   "summary": "Signed and chaptered (Chapter 179). Creates a state framework under which the Government Operations Agency designates 'independent verification organizations' (IVOs): AI auditors with demonstrated expertise in assessing the risks of AI systems and models. The agency must set application requirements, qualification criteria and suspension procedures by Jan 01, 2028.",
    "measures": "IVOs must identify the benchmarks, metrics and methodologies behind each assessment, stay independent of the party assessed (no payment conditioned on results), and file annual reports to the agency and the Legislature.",
    "applies": "2028-01-01",
    "stamp_relevance": [
@@ -169,7 +169,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "EU Digital Omnibus on AI: high-risk obligations deferred",
-   "summary": "The AI Omnibus amending the AI Act entered into force on 27 July 2026. High-risk obligations for stand-alone (Annex III) systems in areas such as biometrics, employment, education and critical infrastructure now apply from 2 December 2027; for AI embedded in regulated products (Annex I), from 2 August 2028. General-purpose AI model obligations have applied since 2 August 2025.",
+   "summary": "The AI Omnibus amending the AI Act entered into force on Jul 27, 2026. High-risk obligations for stand-alone (Annex III) systems in areas such as biometrics, employment, education and critical infrastructure now apply from Dec 02, 2027; for AI embedded in regulated products (Annex I), from Aug 02, 2028. General-purpose AI model obligations have applied since Aug 02, 2025.",
    "measures": "Unchanged in kind: risk management, testing, accuracy and robustness requirements for high-risk systems now bind later; GPAI evaluation duties already apply.",
    "applies": "2027-12-02",
    "stamp_relevance": [
@@ -197,7 +197,7 @@
    ],
    "quotes": [],
    "label": "Supported",
-   "limits": "Dates from the Commission's page. The regulation number (2026/1744) and Official Journal date (24 July 2026) come from secondary sources; EUR-Lex did not render to our fetcher.",
+   "limits": "Dates from the Commission's page. The regulation number (2026/1744) and Official Journal date (Jul 24, 2026) come from secondary sources; EUR-Lex did not render to our fetcher.",
    "added": "2026-10-05",
    "checked": "2026-10-08",
    "approved": {
@@ -252,7 +252,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Colorado SB26-189 repeals and replaces the Colorado AI Act",
-   "summary": "Signed 14 May 2026. Repeals and re-enacts the provisions of SB 24-205, the 2024 Colorado AI Act, around 'automated decision-making technology' used in consequential decisions such as employment, housing and financial services, in place of 'high-risk artificial intelligence systems'.",
+   "summary": "Signed May 14, 2026. Repeals and re-enacts the provisions of SB 24-205, the 2024 Colorado AI Act, around 'automated decision-making technology' used in consequential decisions such as employment, housing and financial services, in place of 'high-risk artificial intelligence systems'.",
    "measures": "Disclosure and consumer rights around automated decisions; the impact-assessment model of the 2024 Act is replaced.",
    "applies": "2027-01-01",
    "stamp_relevance": [
@@ -268,7 +268,7 @@
    ],
    "quotes": [],
    "label": "Supported",
-   "limits": "The 1 January 2027 date for the new obligations comes from secondary sources; the bill page lists the act's effective date as 14 May 2026.",
+   "limits": "The Jan 01, 2027 date for the new obligations comes from secondary sources; the bill page lists the act's effective date as May 14, 2026.",
    "added": "2026-10-05",
    "checked": "2026-10-08",
    "approved": {
@@ -312,7 +312,7 @@
     }
    ],
    "label": "Supported",
-   "limits": "The 1 January 2027 date is the amended law's, from the entry below.",
+   "limits": "The Jan 01, 2027 date is the amended law's, from the entry below.",
    "added": "2026-10-05",
    "checked": "2026-10-08",
    "approved": {
@@ -329,7 +329,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "New York RAISE Act chapter amendment",
-   "summary": "A chapter amendment signed 27 March 2026 is reported to be the final form of the RAISE Act: it aligns key definitions with California's Transparency in Frontier AI Act while keeping a 72-hour incident-reporting window (California's is 15 days), with obligations from 1 January 2027.",
+   "summary": "A chapter amendment signed Mar 27, 2026 is reported to be the final form of the RAISE Act: it aligns key definitions with California's Transparency in Frontier AI Act while keeping a 72-hour incident-reporting window (California's is 15 days), with obligations from Jan 01, 2027.",
    "measures": "As above; definitions aligned with California's frontier-model law.",
    "applies": "2027-01-01",
    "stamp_relevance": [
@@ -367,7 +367,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "South Korea AI Basic Act and Enforcement Decree take effect",
-   "summary": "The AI Basic Act and its Enforcement Decree took effect on 22 January 2026, combining support for the AI industry with baseline duties of trust, safety, transparency and user protection. The ministry (MSIT) is deferring fact-finding investigations and fines for at least a year except in exceptional cases.",
+   "summary": "The AI Basic Act and its Enforcement Decree took effect on Jan 22, 2026, combining support for the AI industry with baseline duties of trust, safety, transparency and user protection. The ministry (MSIT) is deferring fact-finding investigations and fines for at least a year except in exceptional cases.",
    "measures": "Advance notice to users of high-impact and generative AI; labelling of synthetic content; risk management plans, explainability and human-oversight documentation for high-impact systems.",
    "applies": null,
    "stamp_relevance": [
@@ -451,7 +451,7 @@
    "instrument": "executive order",
    "stage": "in force",
    "title": "US Executive Order 14434 replaces 'Artificial Intelligence' with 'Super Intelligence' in executive-branch documents",
-   "summary": "Executive Order 14434 directs agencies to use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in correspondence, communications, websites, reports and other non-statutory documents, and asks the Assistant to the President for Science and Technology to propose a federal definition. The President announced the name at the UN General Assembly on 22 September 2026.",
+   "summary": "Executive Order 14434 directs agencies to use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in correspondence, communications, websites, reports and other non-statutory documents, and asks the Assistant to the President for Science and Technology to propose a federal definition. The President announced the name at the UN General Assembly on Sep 22, 2026.",
    "measures": "None stated. Until a new definition is adopted, the order defines the terms by the statutory definition of artificial intelligence in 15 U.S.C. 9401(3); definitions decide what evaluation rules cover.",
    "applies": null,
    "stamp_relevance": [
@@ -493,7 +493,7 @@
     }
    ],
    "label": "Supported",
-   "limits": "Federal Register citation not retrieved. Earlier versions of this entry (before 2026-10-08) said the order's number was not yet published.",
+   "limits": "Federal Register citation not retrieved. Earlier versions of this entry (before Oct 08, 2026) said the order's number was not yet published.",
    "added": "2026-10-06",
    "checked": "2026-10-08",
    "approved": {
@@ -543,7 +543,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "Anthropic: future Claude models will watermark text, to meet the EU AI Act's marking duty",
-   "summary": "Anthropic says future Claude models will produce text carrying an imperceptible watermark, applied globally because it cannot yet be scoped by region, and that it will attach C2PA provenance data to files. A detection API is in private preview for eligible organizations such as regulators and researchers. Models launched before 2 August 2026 are in a transition period.",
+   "summary": "Anthropic says future Claude models will produce text carrying an imperceptible watermark, applied globally because it cannot yet be scoped by region, and that it will attach C2PA provenance data to files. A detection API is in private preview for eligible organizations such as regulators and researchers. Models launched before Aug 02, 2026 are in a transition period.",
    "measures": "Whether a text was written or heavily edited by Claude, checked by a key-holding detector; provenance of files via C2PA.",
    "applies": null,
    "stamp_relevance": [
@@ -579,7 +579,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "EU AI Act transparency obligations (Article 50) apply",
-   "summary": "From 2 August 2026, providers of generative AI systems must mark outputs in a machine-readable way, and deployers must disclose deepfakes and certain AI-generated text. The 2026 Omnibus did not move these dates, which also brought most remaining AI Act provisions into application.",
+   "summary": "From Aug 02, 2026, providers of generative AI systems must mark outputs in a machine-readable way, and deployers must disclose deepfakes and certain AI-generated text. The 2026 Omnibus did not move these dates, which also brought most remaining AI Act provisions into application.",
    "measures": "Machine-readable marking and detectability of AI-generated content; disclosure duties for deployers.",
    "applies": "2026-08-02",
    "stamp_relevance": [
@@ -604,7 +604,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Transitional relief for systems already on the market (reported to run to 2 December 2026) is from secondary sources.",
+   "limits": "Transitional relief for systems already on the market (reported to run to Dec 02, 2026) is from secondary sources.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -622,7 +622,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Illinois Artificial Intelligence Safety Measures Act (SB 315, Public Act 104-0538)",
-   "summary": "Became Public Act 104-0538 on 6 July 2026, effective 1 January 2027. Large frontier developers must publish and annually update a frontier AI framework (catastrophic-risk assessment, mitigations, governance, cybersecurity, third-party evaluations, internal-use risks), publish transparency reports before deploying new or substantially modified frontier models, undergo annual independent third-party audits, and report critical safety incidents.",
+   "summary": "Became Public Act 104-0538 on Jul 06, 2026, effective Jan 01, 2027. Large frontier developers must publish and annually update a frontier AI framework (catastrophic-risk assessment, mitigations, governance, cybersecurity, third-party evaluations, internal-use risks), publish transparency reports before deploying new or substantially modified frontier models, undergo annual independent third-party audits, and report critical safety incidents.",
    "measures": "Annual independent third-party audits; published frontier AI frameworks; pre-deployment transparency reports; critical safety incident reporting.",
    "applies": "2027-01-01",
    "stamp_relevance": [
@@ -642,7 +642,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Some duties reportedly start 1 January 2028 (secondary sources); the act text was not read in full.",
+   "limits": "Some duties reportedly start Jan 01, 2028 (secondary sources); the act text was not read in full.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -660,7 +660,7 @@
    "instrument": "voluntary commitment",
    "stage": "published",
    "title": "EU Code of Practice on Transparency of AI-generated Content published",
-   "summary": "Final code published at a closing plenary on 10 June 2026, to help providers and deployers meet the AI Act's Article 50 duties to mark and label AI-generated content. Adherence is voluntary; the Article 50 obligations themselves apply from 2 August 2026.",
+   "summary": "Final code published at a closing plenary on Jun 10, 2026, to help providers and deployers meet the AI Act's Article 50 duties to mark and label AI-generated content. Adherence is voluntary; the Article 50 obligations themselves apply from Aug 02, 2026.",
    "measures": "Machine-readable marking of AI-generated output by providers; labelling of deepfakes and certain AI-generated text by deployers.",
    "applies": "2026-08-02",
    "stamp_relevance": [
@@ -731,7 +731,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Connecticut SB 5 (Public Act 26-15), 'An Act Concerning Online Safety', with AI provisions",
-   "summary": "Signed by the Governor on 27 May 2026. An omnibus act whose AI provisions, per law-firm summaries, cover AI in employment decisions, AI companions and consumer generative-AI tools, frontier-model developers, and platforms used by minors, with staggered effective dates from 1 October 2026 to 1 January 2028. Commentators have called it the 'Connecticut Artificial Intelligence Responsibility and Transparency Act'; the Legislature's title is 'An Act Concerning Online Safety'.",
+   "summary": "Signed by the Governor on May 27, 2026. An omnibus act whose AI provisions, per law-firm summaries, cover AI in employment decisions, AI companions and consumer generative-AI tools, frontier-model developers, and platforms used by minors, with staggered effective dates from Oct 01, 2026 to Jan 01, 2028. Commentators have called it the 'Connecticut Artificial Intelligence Responsibility and Transparency Act'; the Legislature's title is 'An Act Concerning Online Safety'.",
    "measures": "Notices for AI-driven employment decisions; duties for AI companion operators and frontier developers (details from secondary summaries).",
    "applies": "2026-10-01",
    "stamp_relevance": [
@@ -767,7 +767,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "New Delhi Declaration on AI Impact (AI Impact Summit, India)",
-   "summary": "Adopted at the close of the AI Impact Summit held in New Delhi on 18 February 2026 and 19 February 2026, per the Government of India. Secondary reports describe seven pillars ('chakras'), one on secure and trusted AI, and endorsement counts between 86 and 92 countries and organisations as more joined.",
+   "summary": "Adopted at the close of the AI Impact Summit held in New Delhi on Feb 18, 2026 and Feb 19, 2026, per the Government of India. Secondary reports describe seven pillars ('chakras'), one on secure and trusted AI, and endorsement counts between 86 and 92 countries and organisations as more joined.",
    "measures": "None specific; a pillar on secure and trusted AI systems.",
    "applies": null,
    "stamp_relevance": [
@@ -802,7 +802,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "India IT Rules amended for synthetically generated information",
-   "summary": "MeitY notified the IT (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026 by Gazette notification G.S.R. 120(E) dated 10 February 2026, in force 20 February 2026, after a draft in October 2025. Defines 'synthetically generated information' in Rule 2(1)(wa).",
+   "summary": "MeitY notified the IT (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026 by Gazette notification G.S.R. 120(E) dated Feb 10, 2026, in force Feb 20, 2026, after a draft in October 2025. Defines 'synthetically generated information' in Rule 2(1)(wa).",
    "measures": "Visible labels and embedded metadata on synthetic content; user declarations and technical verification by significant social media intermediaries.",
    "applies": "2026-02-20",
    "stamp_relevance": [
@@ -845,7 +845,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Taiwan Artificial Intelligence Fundamental Act (AI Basic Act)",
-   "summary": "Passed third reading in the Legislative Yuan on 23 December 2025 (the Ministry of Digital Affairs' English name is 'Artificial Intelligence Fundamental Act'); reported promulgated 14 January 2026. Sets principles, a national AI strategy committee, and assigns the Ministry of Digital Affairs to develop risk classification frameworks.",
+   "summary": "Passed third reading in the Legislative Yuan on Dec 23, 2025 (the Ministry of Digital Affairs' English name is 'Artificial Intelligence Fundamental Act'); reported promulgated Jan 14, 2026. Sets principles, a national AI strategy committee, and assigns the Ministry of Digital Affairs to develop risk classification frameworks.",
    "measures": "Risk classification framework; verification and labelling mechanisms for AI.",
    "applies": null,
    "stamp_relevance": [
@@ -881,7 +881,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Vietnam Law on Artificial Intelligence (No. 134/2025/QH15)",
-   "summary": "Passed by the National Assembly on 10 December 2025 (429 of 434 votes); effective 1 March 2026. Risk-based, three tiers; transition to 1 March 2027 (1 September 2027 for health, education and finance).",
+   "summary": "Passed by the National Assembly on Dec 10, 2025 (429 of 434 votes); effective Mar 01, 2026. Risk-based, three tiers; transition to Mar 01, 2027 (Sep 01, 2027 for health, education and finance).",
    "measures": "Risk classification and conformity duties for higher-risk AI; labelling of AI-generated content.",
    "applies": "2026-03-01",
    "stamp_relevance": [
@@ -925,7 +925,7 @@
    "instrument": "strategy",
    "stage": "published",
    "title": "Australia National AI Plan: mandatory guardrails paused, AI Safety Institute funded",
-   "summary": "Published 2 December 2025. Says regulation will build on Australia's existing legal and regulatory frameworks rather than a standalone AI act, and establishes an AI Safety Institute to monitor, test and share information on emerging AI capabilities, risks and harms.",
+   "summary": "Published Dec 02, 2025. Says regulation will build on Australia's existing legal and regulatory frameworks rather than a standalone AI act, and establishes an AI Safety Institute to monitor, test and share information on emerging AI capabilities, risks and harms.",
    "measures": "AI Safety Institute to monitor and test emerging AI risks; no binding evaluation duties.",
    "applies": null,
    "stamp_relevance": [
@@ -968,7 +968,7 @@
    "instrument": "bill",
    "stage": "proposed",
    "title": "Digital Omnibus on AI proposed",
-   "summary": "Commission proposal of 19 November 2025 for 'targeted simplification measures' to the AI Act's implementation. As adopted in 2026, it moved the high-risk dates to 2 December 2027 (Annex III) and 2 August 2028 (Annex I); see the July 2026 entry.",
+   "summary": "Commission proposal of Nov 19, 2025 for 'targeted simplification measures' to the AI Act's implementation. As adopted in 2026, it moved the high-risk dates to Dec 02, 2027 (Annex III) and Aug 02, 2028 (Annex I); see the July 2026 entry.",
    "measures": "Timing of high-risk testing and conformity duties.",
    "applies": null,
    "stamp_relevance": [
@@ -1003,7 +1003,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Kazakhstan Law on Artificial Intelligence signed",
-   "summary": "Signed by President Tokayev on 17 November 2025; the first comprehensive AI law in Central Asia. Risk tiers, prohibited manipulative uses, and mandatory labelling of AI-generated content.",
+   "summary": "Signed by President Tokayev on Nov 17, 2025; the first comprehensive AI law in Central Asia. Risk tiers, prohibited manipulative uses, and mandatory labelling of AI-generated content.",
    "measures": "Risk classification with special control of high-risk systems; labelling of generated text, images, audio and video.",
    "applies": null,
    "stamp_relevance": [
@@ -1047,7 +1047,7 @@
    "instrument": "guidance",
    "stage": "published",
    "title": "India AI Governance Guidelines",
-   "summary": "Released by MeitY on 5 November 2025 (per DSCI). A governance framework that relies on existing laws rather than a new AI statute, per officials quoted in coverage.",
+   "summary": "Released by MeitY on Nov 05, 2025 (per DSCI). A governance framework that relies on existing laws rather than a new AI statute, per officials quoted in coverage.",
    "measures": "Recommends techno-legal tools, incident databases and voluntary frameworks; no binding evaluation duties.",
    "applies": null,
    "stamp_relevance": [
@@ -1065,7 +1065,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Primary MeitY/PIB document not retrieved; date differs by one day across sources (4 or 5 November 2025).",
+   "limits": "Primary MeitY/PIB document not retrieved; date differs by one day across sources (Nov 04, 2025 or Nov 05, 2025).",
    "label": "Likely",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -1083,7 +1083,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "China amends the Cybersecurity Law to add AI provisions",
-   "summary": "Adopted by the NPC Standing Committee on 28 October 2025; effective 1 January 2026. A new article supports AI research and infrastructure and calls for AI ethics rules, risk monitoring and safety evaluation.",
+   "summary": "Adopted by the NPC Standing Committee on Oct 28, 2025; effective Jan 01, 2026. A new article supports AI research and infrastructure and calls for AI ethics rules, risk monitoring and safety evaluation.",
    "measures": "AI risk monitoring and safety evaluation (framework level; details left to implementing rules).",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -1134,7 +1134,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "California SB 243: companion chatbots",
-   "summary": "Signed 13 October 2025, effective 1 January 2026. Operators of companion chatbots must disclose that the chatbot is AI, maintain protocols for suicidal ideation and self-harm, add protections for minors, and report annually from July 2027.",
+   "summary": "Signed Oct 13, 2025, effective Jan 01, 2026. Operators of companion chatbots must disclose that the chatbot is AI, maintain protocols for suicidal ideation and self-harm, add protections for minors, and report annually from July 2027.",
    "measures": "Annual reports to the Office of Suicide Prevention on crisis-referral protocols and counts.",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -1170,7 +1170,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Italy Law 132/2025 on artificial intelligence",
-   "summary": "Published in the Gazzetta Ufficiale on 25 September 2025 and in force 10 October 2025; the first national AI law in the EU, complementing the AI Act. Designates AgID and ACN as national AI authorities and adds a deepfake offence.",
+   "summary": "Published in the Gazzetta Ufficiale on Sep 25, 2025 and in force Oct 10, 2025; the first national AI law in the EU, complementing the AI Act. Designates AgID and ACN as national AI authorities and adds a deepfake offence.",
    "measures": "Sectoral transparency and human-oversight rules (health, employment, professions, public administration).",
    "applies": "2025-10-10",
    "stamp_relevance": [
@@ -1206,7 +1206,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "California Civil Rights Council regulations on automated-decision systems in employment",
-   "summary": "Effective 1 October 2025. Clarifies that use of automated-decision systems in hiring and employment can violate the Fair Employment and Housing Act and that anti-bias testing is relevant to defences; four-year record retention.",
+   "summary": "Effective Oct 01, 2025. Clarifies that use of automated-decision systems in hiring and employment can violate the Fair Employment and Housing Act and that anti-bias testing is relevant to defences; four-year record retention.",
    "measures": "Anti-bias testing of automated-decision systems (relevant evidence); record retention of ADS data.",
    "applies": "2025-10-01",
    "stamp_relevance": [
@@ -1241,7 +1241,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "California SB 53: Transparency in Frontier Artificial Intelligence Act",
-   "summary": "Signed 29 September 2025, effective 1 January 2026. Large frontier developers must publish a frontier AI framework and transparency reports, and report critical safety incidents to the Office of Emergency Services within 15 days (24 hours if there is imminent risk of death or serious injury). 'Frontier model' means training compute above 10^26 operations; 'large' means over $500,000,000 in annual revenue.",
+   "summary": "Signed Sep 29, 2025, effective Jan 01, 2026. Large frontier developers must publish a frontier AI framework and transparency reports, and report critical safety incidents to the Office of Emergency Services within 15 days (24 hours if there is imminent risk of death or serious injury). 'Frontier model' means training compute above 10^26 operations; 'large' means over $500,000,000 in annual revenue.",
    "measures": "Published frontier AI framework covering catastrophic-risk assessment and third-party evaluation use; critical safety incident reports; summaries of catastrophic-risk assessments.",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -1286,7 +1286,7 @@
    "instrument": "regulation",
    "stage": "signed",
    "title": "California CPPA regulations on automated decision-making technology, risk assessments and cybersecurity audits",
-   "summary": "Approved by the Office of Administrative Law in September 2025, effective 1 January 2026 with phased compliance: ADMT duties from 1 January 2027; risk-assessment attestations from 2028; cybersecurity audits phased from 2028.",
+   "summary": "Approved by the Office of Administrative Law in September 2025, effective Jan 01, 2026 with phased compliance: ADMT duties from Jan 01, 2027; risk-assessment attestations from 2028; cybersecurity audits phased from 2028.",
    "measures": "Pre-use notices and opt-out for significant decisions made by ADMT; risk assessments submitted to the CPPA; independent cybersecurity audits.",
    "applies": "2027-01-01",
    "stamp_relevance": [
@@ -1358,7 +1358,7 @@
    "jurisdiction": "US-FED",
    "instrument": "strategy",
    "stage": "published",
-   "title": "America's AI Action Plan and executive orders of 23 July 2025",
+   "title": "America's AI Action Plan and executive orders of Jul 23, 2025",
    "summary": "White House plan with over 90 federal actions. Same day: EO 14319 'Preventing Woke AI in the Federal Government' requiring federally procured LLMs to meet 'unbiased AI principles', plus orders on data-centre permitting and AI exports.",
    "measures": "CAISI evaluations of frontier models for national-security risks; an AI evaluations ecosystem; procurement conditions on LLM neutrality and truthfulness.",
    "applies": null,
@@ -1403,7 +1403,7 @@
    "instrument": "guidance",
    "stage": "published",
    "title": "Commission guidelines on obligations for general-purpose AI model providers and training-data summary template",
-   "summary": "Guidelines (18 July 2025) clarify who is a GPAI provider, compute thresholds, and systemic-risk classification. A mandatory public template for summarising training content followed on 24 July 2025.",
+   "summary": "Guidelines (Jul 18, 2025) clarify who is a GPAI provider, compute thresholds, and systemic-risk classification. A mandatory public template for summarising training content followed on Jul 24, 2025.",
    "measures": "Training compute (10^23 FLOP indicative GPAI threshold; 10^25 FLOP presumption of systemic risk); public summary of training data.",
    "applies": "2025-08-02",
    "stamp_relevance": [
@@ -1448,7 +1448,7 @@
    "instrument": "voluntary commitment",
    "stage": "published",
    "title": "General-Purpose AI Code of Practice published",
-   "summary": "Three chapters (transparency, copyright, safety and security) drafted by independent experts. Signing is voluntary and offers a way to show compliance with the AI Act's GPAI obligations, which applied from 2 August 2025.",
+   "summary": "Three chapters (transparency, copyright, safety and security) drafted by independent experts. Signing is voluntary and offers a way to show compliance with the AI Act's GPAI obligations, which applied from Aug 02, 2025.",
    "measures": "Model documentation form; for systemic-risk models: state-of-the-art model evaluations, systemic-risk assessment, external evaluation in some cases, and serious-incident reporting.",
    "applies": "2025-08-02",
    "stamp_relevance": [
@@ -1521,7 +1521,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Texas Responsible Artificial Intelligence Governance Act (HB 149)",
-   "summary": "Signed 22 June 2025, effective 1 January 2026. Prohibits certain intentional harmful AI uses, requires government agencies to disclose AI interactions, creates a regulatory sandbox and an AI council; enforcement by the Attorney General.",
+   "summary": "Signed Jun 22, 2025, effective Jan 01, 2026. Prohibits certain intentional harmful AI uses, requires government agencies to disclose AI interactions, creates a regulatory sandbox and an AI council; enforcement by the Attorney General.",
    "measures": "Disclosure of AI interaction by government agencies and health-care providers; safe-harbour for compliance with the NIST AI RMF.",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -1556,7 +1556,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "UK Data (Use and Access) Act 2025: automated decision-making rules reformed",
-   "summary": "Royal Assent 19 June 2025. Replaces UK GDPR Article 22 with new rules permitting solely automated decisions with significant effects in more cases, subject to safeguards; stricter limits remain for special-category data. Commenced in stages.",
+   "summary": "Royal Assent Jun 19, 2025. Replaces UK GDPR Article 22 with new rules permitting solely automated decisions with significant effects in more cases, subject to safeguards; stricter limits remain for special-category data. Commenced in stages.",
    "measures": "Safeguards for automated decisions: information to the individual, ability to contest and obtain human intervention.",
    "applies": null,
    "stamp_relevance": [
@@ -1627,7 +1627,7 @@
     }
    ],
    "quotes": [],
-   "limits": "A policy report, not a law. The working group's own domain (cafrontieraigov.org) has lapsed and served unrelated gambling content on 2026-10-08; do not cite it.",
+   "limits": "A policy report, not a law. The working group's own domain (cafrontieraigov.org) has lapsed and served unrelated gambling content on Oct 08, 2026; do not cite it.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -1645,7 +1645,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Japan Act on Promotion of Research, Development and Utilization of AI-Related Technologies",
-   "summary": "Passed by the Diet on 28 May 2025, promulgated 4 June 2025 (Act No. 53 of 2025); the AI Strategy Headquarters provisions took effect 1 September 2025. A framework law without penalties; the government may investigate and publicise inappropriate AI use.",
+   "summary": "Passed by the Diet on May 28, 2025, promulgated Jun 04, 2025 (Act No. 53 of 2025); the AI Strategy Headquarters provisions took effect Sep 01, 2025. A framework law without penalties; the government may investigate and publicise inappropriate AI use.",
    "measures": "Government research into AI-related incidents and rights infringements; a national AI Basic Plan.",
    "applies": null,
    "stamp_relevance": [
@@ -1714,7 +1714,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Commerce.gov served a bot-check page to our fetcher. As of 2026-10-08 the NIST page is titled 'Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)'; the date and instrument of that rename were not retrieved.",
+   "limits": "Commerce.gov served a bot-check page to our fetcher. As of Oct 08, 2026 the NIST page is titled 'Center for Advancing Innovation and Standards for Super Intelligence (CAISSI)'; the date and instrument of that rename were not retrieved.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -1812,7 +1812,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "China: Measures for Labeling AI-Generated Synthetic Content",
-   "summary": "Issued by the CAC and three other agencies; effective 1 September 2025, with the mandatory national standard GB 45438-2025 on the same date.",
+   "summary": "Issued by the CAC and three other agencies; effective Sep 01, 2025, with the mandatory national standard GB 45438-2025 on the same date.",
    "measures": "Explicit (visible) labels and implicit labels (metadata) on AI-generated text, images, audio, video and virtual scenes; platform detection duties.",
    "applies": "2025-09-01",
    "stamp_relevance": [
@@ -1952,7 +1952,7 @@
    "instrument": "guidance",
    "stage": "in force",
    "title": "AI Act prohibitions and AI literacy apply; Commission guidelines on prohibited practices and AI-system definition",
-   "summary": "Article 5 prohibitions (e.g. social scoring, untargeted facial-image scraping, certain emotion recognition) and the Article 4 AI-literacy duty applied from 2 February 2025. The Commission published guidelines on prohibited practices (4 February 2025) and on the definition of an AI system (6 February 2025).",
+   "summary": "Article 5 prohibitions (e.g. social scoring, untargeted facial-image scraping, certain emotion recognition) and the Article 4 AI-literacy duty applied from Feb 02, 2025. The Commission published guidelines on prohibited practices (Feb 04, 2025) and on the definition of an AI system (Feb 06, 2025).",
    "measures": "Whether a system meets the AI-system definition; whether a use falls within a prohibited practice.",
    "applies": null,
    "stamp_relevance": [
@@ -2081,7 +2081,7 @@
    "instrument": "executive order",
    "stage": "in force",
    "title": "US Executive Order 14179: removing barriers to American leadership in AI",
-   "summary": "Signed 23 January 2025 after EO 14110 was revoked on 20 January 2025. Directed a review of actions taken under EO 14110 and an AI Action Plan within 180 days.",
+   "summary": "Signed Jan 23, 2025 after EO 14110 was revoked on Jan 20, 2025. Directed a review of actions taken under EO 14110 and an AI Action Plan within 180 days.",
    "measures": "Rescinds or revises federal evaluation and reporting requirements adopted under EO 14110.",
    "applies": null,
    "stamp_relevance": [
@@ -2116,7 +2116,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "South Korea Framework Act on AI promulgated",
-   "summary": "Passed by the National Assembly on 26 December 2024 and promulgated 21 January 2025; took effect 22 January 2026 (see existing entry). Second comprehensive AI law after the EU's.",
+   "summary": "Passed by the National Assembly on Dec 26, 2024 and promulgated Jan 21, 2025; took effect Jan 22, 2026 (see existing entry). Second comprehensive AI law after the EU's.",
    "measures": "Risk management and explainability for high-impact AI; generative-AI notice and labelling; safety duties for models above a compute threshold.",
    "applies": "2026-01-22",
    "stamp_relevance": [
@@ -2143,7 +2143,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Links are to the official law database search and ministry site, not a deep link to the act. Korea's Ministry of Foreign Affairs hosts the Korean text as a PDF, which redirected without content to our fetcher; per secondary sources the current text is Act No. 21311 (amended 20 January 2026).",
+   "limits": "Links are to the official law database search and ministry site, not a deep link to the act. Korea's Ministry of Foreign Affairs hosts the Korean text as a PDF, which redirected without content to our fetcher; per secondary sources the current text is Act No. 21311 (amended Jan 20, 2026).",
    "label": "Likely",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -2161,7 +2161,7 @@
    "instrument": "bill",
    "stage": "passed",
    "title": "Brazil AI bill PL 2338/2023 passes the Senate",
-   "summary": "The Federal Senate approved a risk-based AI framework bill on 10 December 2024. As of October 2026 it is pending in the Chamber of Deputies.",
+   "summary": "The Federal Senate approved a risk-based AI framework bill on Dec 10, 2024. As of October 2026 it is pending in the Chamber of Deputies.",
    "measures": "Algorithmic impact assessments for high-risk systems; rights of affected people; a national AI regulation and governance system (proposed).",
    "applies": null,
    "stamp_relevance": [
@@ -2278,7 +2278,7 @@
    "instrument": "directive",
    "stage": "in force",
    "title": "Product Liability Directive (EU) 2024/2853 covers software and AI systems",
-   "summary": "Replaces the 1985 directive. Software, including AI systems, is a 'product'; manufacturers can be liable for defects including those arising after updates or machine learning. Member states must transpose by 9 December 2026.",
+   "summary": "Replaces the 1985 directive. Software, including AI systems, is a 'product'; manufacturers can be liable for defects including those arising after updates or machine learning. Member states must transpose by Dec 09, 2026.",
    "measures": "Disclosure of evidence by defendants; defectiveness judged with regard to safety requirements including cybersecurity.",
    "applies": "2026-12-09",
    "stamp_relevance": [
@@ -2465,7 +2465,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "California AI Transparency Act (SB 942) and training-data transparency (AB 2013)",
-   "summary": "SB 942 covers generative AI systems with over 1,000,000 monthly users: a free AI detection tool, latent disclosures in generated content, and $5,000 per violation. AB 853 (2025) delayed it to 2 August 2026 and added platform (2027) and capture-device (2028) duties. AB 2013 requires training-data documentation by 1 January 2026 for systems released on or after 1 January 2022.",
+   "summary": "SB 942 covers generative AI systems with over 1,000,000 monthly users: a free AI detection tool, latent disclosures in generated content, and $5,000 per violation. AB 853 (2025) delayed it to Aug 02, 2026 and added platform (2027) and capture-device (2028) duties. AB 2013 requires training-data documentation by Jan 01, 2026 for systems released on or after Jan 01, 2022.",
    "measures": "Provenance disclosures and public detection tools (SB 942); published training-data documentation (AB 2013).",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -2552,7 +2552,7 @@
    "instrument": "treaty",
    "stage": "signed",
    "title": "Council of Europe Framework Convention on AI (CETS No. 225) opens for signature",
-   "summary": "Adopted by the Committee of Ministers on 17 May 2024 and opened for signature in Vilnius on 5 September 2024; first signatories included the EU, UK and US. First legally binding international treaty on AI, human rights, democracy and the rule of law. Enters into force after five ratifications including three Council of Europe members.",
+   "summary": "Adopted by the Committee of Ministers on May 17, 2024 and opened for signature in Vilnius on Sep 05, 2024; first signatories included the EU, UK and US. First legally binding international treaty on AI, human rights, democracy and the rule of law. Enters into force after five ratifications including three Council of Europe members.",
    "measures": "Risk and impact assessment of AI systems, documentation, transparency and oversight measures; remedies for people affected.",
    "applies": null,
    "stamp_relevance": [
@@ -2587,7 +2587,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Not in force as of 2026-10-08 (no entry-into-force date on the Treaty Office page); ratification count changes.",
+   "limits": "Not in force as of Oct 08, 2026 (no entry-into-force date on the Treaty Office page); ratification count changes.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -2605,7 +2605,7 @@
    "instrument": "standard",
    "stage": "published",
    "title": "Australia Voluntary AI Safety Standard and proposals for mandatory guardrails",
-   "summary": "Published 5 September 2024 by the Department of Industry, Science and Resources: 10 voluntary guardrails, alongside a proposals paper on mandatory guardrails for high-risk AI. On 21 October 2025 the National AI Centre published Guidance for AI Adoption (6 essential practices). The mandatory proposal was set aside in the December 2025 National AI Plan.",
+   "summary": "Published Sep 05, 2024 by the Department of Industry, Science and Resources: 10 voluntary guardrails, alongside a proposals paper on mandatory guardrails for high-risk AI. On Oct 21, 2025 the National AI Centre published Guidance for AI Adoption (6 essential practices). The mandatory proposal was set aside in the December 2025 National AI Plan.",
    "measures": "Testing and monitoring of AI systems; record-keeping; conformity assessments (proposed for high-risk use).",
    "applies": null,
    "stamp_relevance": [
@@ -2678,7 +2678,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Illinois HB 3773: AI in employment under the Human Rights Act",
-   "summary": "Public Act 103-0804, approved 9 August 2024. Amends the Illinois Human Rights Act, effective 1 January 2026, to make it a civil-rights violation for employers to use AI that has a discriminatory effect, or zip codes as a proxy, and requires notice to employees when AI is used.",
+   "summary": "Public Act 103-0804, approved Aug 09, 2024. Amends the Illinois Human Rights Act, effective Jan 01, 2026, to make it a civil-rights violation for employers to use AI that has a discriminatory effect, or zip codes as a proxy, and requires notice to employees when AI is used.",
    "measures": "Notice when AI is used in employment decisions; discriminatory-effect standard.",
    "applies": "2026-01-01",
    "stamp_relevance": [
@@ -2721,7 +2721,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "EU AI Act (Regulation (EU) 2024/1689) enters into force",
-   "summary": "Published in the Official Journal on 12 July 2024 and in force from 1 August 2024. Staggered application: prohibitions and AI literacy from 2 February 2025; general-purpose AI model duties from 2 August 2025; most other provisions from 2 August 2026, with high-risk dates later moved by the 2026 Omnibus.",
+   "summary": "Published in the Official Journal on Jul 12, 2024 and in force from Aug 01, 2024. Staggered application: prohibitions and AI literacy from Feb 02, 2025; general-purpose AI model duties from Aug 02, 2025; most other provisions from Aug 02, 2026, with high-risk dates later moved by the 2026 Omnibus.",
    "measures": "Conformity assessment, risk management, data governance, testing, accuracy and robustness for high-risk AI; model evaluation and adversarial testing for GPAI models with systemic risk; serious-incident reporting; transparency for generated content.",
    "applies": "2025-02-02",
    "stamp_relevance": [
@@ -2921,7 +2921,7 @@
    "instrument": "vote",
    "stage": "decided",
    "title": "Council of the EU gives final approval to the AI Act",
-   "summary": "The final legislative step: the Council approved Parliament's first-reading position on 21 May 2024, adopting the AI Act. It was signed on 13 June 2024 and published in the Official Journal on 12 July 2024.",
+   "summary": "The final legislative step: the Council approved Parliament's first-reading position on May 21, 2024, adopting the AI Act. It was signed on Jun 13, 2024 and published in the Official Journal on Jul 12, 2024.",
    "measures": "As in the AI Act entry.",
    "applies": null,
    "stamp_relevance": [
@@ -2946,7 +2946,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The Council press release served a bot check on 2026-10-08; dates from the EUR-Lex procedure record.",
+   "limits": "The Council press release served a bot check on Oct 08, 2026; dates from the EUR-Lex procedure record.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -2964,7 +2964,7 @@
    "instrument": "law",
    "stage": "repealed",
    "title": "Colorado SB24-205: Colorado AI Act (consumer protections for high-risk AI)",
-   "summary": "First comprehensive US state law on high-risk AI systems used in consequential decisions. Its start date was delayed to 30 June 2026 by SB25B-004 (August 2025), then it was repealed and replaced by SB26-189 in May 2026.",
+   "summary": "First comprehensive US state law on high-risk AI systems used in consequential decisions. Its start date was delayed to Jun 30, 2026 by SB25B-004 (August 2025), then it was repealed and replaced by SB26-189 in May 2026.",
    "measures": "Impact assessments, risk-management programmes, notices and algorithmic-discrimination duties for developers and deployers (as enacted in 2024).",
    "applies": null,
    "stamp_relevance": [
@@ -3213,7 +3213,7 @@
    "instrument": "guidance",
    "stage": "published",
    "title": "India MeitY advisory on AI models and deepfakes (revised)",
-   "summary": "MeitY advisory of 1 March 2024, revised 15 March 2024, asking intermediaries to label AI-generated content and inform users of unreliability of under-tested models; the revision dropped a requirement for prior government permission.",
+   "summary": "MeitY advisory of Mar 01, 2024, revised Mar 15, 2024, asking intermediaries to label AI-generated content and inform users of unreliability of under-tested models; the revision dropped a requirement for prior government permission.",
    "measures": "Labelling of potentially unreliable outputs; metadata or identifiers for synthetic content.",
    "applies": null,
    "stamp_relevance": [
@@ -3248,7 +3248,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Utah Artificial Intelligence Policy Act (SB 149)",
-   "summary": "Signed March 2024, effective 1 May 2024. Requires disclosure when consumers interact with generative AI in certain circumstances and created the Office of Artificial Intelligence Policy and a regulatory learning laboratory.",
+   "summary": "Signed March 2024, effective May 01, 2024. Requires disclosure when consumers interact with generative AI in certain circumstances and created the Office of Artificial Intelligence Policy and a regulatory learning laboratory.",
    "measures": "Disclosure of generative AI interaction; regulatory mitigation agreements for testing in a learning lab.",
    "applies": "2024-05-01",
    "stamp_relevance": [
@@ -3266,7 +3266,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Signing date (13 March 2024) from the Legislature page; the 1 May 2024 effective date is Utah's default for the 2024 session and is not printed on that page. Later amendments (2025) not checked here.",
+   "limits": "Signing date (Mar 13, 2024) from the Legislature page; the May 01, 2024 effective date is Utah's default for the 2024 session and is not printed on that page. Later amendments (2025) not checked here.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -3284,7 +3284,7 @@
    "instrument": "vote",
    "stage": "decided",
    "title": "European Parliament adopts the AI Act (523-46-49)",
-   "summary": "Plenary approved the AI Act text agreed with the Council in December 2023, by 523 votes to 46 with 49 abstentions. Council adoption followed on 21 May 2024.",
+   "summary": "Plenary approved the AI Act text agreed with the Council in December 2023, by 523 votes to 46 with 49 abstentions. Council adoption followed on May 21, 2024.",
    "measures": "As in the AI Act entry.",
    "applies": null,
    "stamp_relevance": [
@@ -3426,7 +3426,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "UK government response to the AI white paper consultation",
-   "summary": "Confirmed the sector-regulator approach, asked key regulators to publish AI strategies by 30 April 2024, and set out initial thinking on future binding requirements for developers of highly capable general-purpose AI.",
+   "summary": "Confirmed the sector-regulator approach, asked key regulators to publish AI strategies by Apr 30, 2024, and set out initial thinking on future binding requirements for developers of highly capable general-purpose AI.",
    "measures": "Regulators' AI strategies; possible future binding duties on frontier developers (not enacted).",
    "applies": null,
    "stamp_relevance": [
@@ -3623,7 +3623,7 @@
    "instrument": "agreement",
    "stage": "signed",
    "title": "EU institutions reach political agreement on the AI Act",
-   "summary": "Parliament and Council negotiators agreed the AI Act on 8 December 2023, including rules for general-purpose AI models and a list of banned applications.",
+   "summary": "Parliament and Council negotiators agreed the AI Act on Dec 08, 2023, including rules for general-purpose AI models and a list of banned applications.",
    "measures": "Model evaluations, adversarial testing and serious-incident reporting for high-impact GPAI models (as agreed).",
    "applies": null,
    "stamp_relevance": [
@@ -3659,7 +3659,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "UK AI Safety Institute established",
-   "summary": "Announced at the Bletchley summit as the successor to the Frontier AI Taskforce, with a mission to evaluate advanced AI systems. Renamed the AI Security Institute on 14 February 2025.",
+   "summary": "Announced at the Bletchley summit as the successor to the Frontier AI Taskforce, with a mission to evaluate advanced AI systems. Renamed the AI Security Institute on Feb 14, 2025.",
    "measures": "Pre- and post-deployment evaluations of advanced AI models; development of evaluation tools (e.g. the open-source Inspect framework, May 2024).",
    "applies": null,
    "stamp_relevance": [
@@ -3784,7 +3784,7 @@
    "instrument": "executive order",
    "stage": "revoked",
    "title": "US Executive Order 14110 on safe, secure and trustworthy AI (revoked 2025)",
-   "summary": "Required developers of dual-use foundation models above a compute threshold (10^26 operations) to report red-team results to the government under the Defense Production Act, and directed NIST guidance on evaluations. Revoked on 20 January 2025 by EO 14148.",
+   "summary": "Required developers of dual-use foundation models above a compute threshold (10^26 operations) to report red-team results to the government under the Defense Production Act, and directed NIST guidance on evaluations. Revoked on Jan 20, 2025 by EO 14148.",
    "measures": "Reporting of red-team test results for large models; NIST red-teaming and evaluation guidance; watermarking guidance.",
    "applies": null,
    "stamp_relevance": [
@@ -3821,7 +3821,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "DSA Delegated Regulation (EU) 2024/436 on independent audits",
-   "summary": "Adopted by the Commission on 20 October 2023. Sets rules for how independent auditors audit very large online platforms under Art. 37 DSA, including methodology, audit risk and report templates.",
+   "summary": "Adopted by the Commission on Oct 20, 2023. Sets rules for how independent auditors audit very large online platforms under Art. 37 DSA, including methodology, audit risk and report templates.",
    "measures": "Audit methodology, auditor independence, report and implementation templates for audits that include algorithmic systems.",
    "applies": null,
    "stamp_relevance": [
@@ -3967,7 +3967,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "China: Measures for Ethical Review of Science and Technology Activities (trial)",
-   "summary": "Issued by the Ministry of Science and Technology and other agencies; effective 1 December 2023. Requires ethics review committees and lists activities needing expert re-review, including some algorithm and automated decision-making systems with public-opinion mobilisation capacity.",
+   "summary": "Issued by the Ministry of Science and Technology and other agencies; effective Dec 01, 2023. Requires ethics review committees and lists activities needing expert re-review, including some algorithm and automated decision-making systems with public-opinion mobilisation capacity.",
    "measures": "Ethics review, and expert re-review for listed high-risk activities.",
    "applies": "2023-12-01",
    "stamp_relevance": [
@@ -4040,7 +4040,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "China: Interim Measures for the Management of Generative AI Services",
-   "summary": "Issued by the CAC and six other agencies; effective 15 August 2023. Applies to generative AI services offered to the public in China.",
+   "summary": "Issued by the CAC and six other agencies; effective Aug 15, 2023. Applies to generative AI services offered to the public in China.",
    "measures": "Security assessments and algorithm filing for services with public-opinion attributes; training-data legality and quality; labelling of generated content.",
    "applies": "2023-08-15",
    "stamp_relevance": [
@@ -4076,7 +4076,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "Peru Law 31814 promoting the use of AI, and its regulation (DS 115-2025-PCM)",
-   "summary": "Law 31814 (July 2023) was among the first AI laws in Latin America. Its implementing regulation, Supreme Decree 115-2025-PCM, was published on 9 September 2025 with risk-based provisions for public entities and voluntary adoption by the private sector.",
+   "summary": "Law 31814 (July 2023) was among the first AI laws in Latin America. Its implementing regulation, Supreme Decree 115-2025-PCM, was published on Sep 09, 2025 with risk-based provisions for public entities and voluntary adoption by the private sector.",
    "measures": "Risk classification of AI uses; transparency and human oversight for higher-risk uses by public entities.",
    "applies": null,
    "stamp_relevance": [
@@ -4282,7 +4282,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "China: Provisions on Administration of Deep Synthesis Internet Information Services",
-   "summary": "Issued by the CAC, MIIT and MPS; effective 10 January 2023. Applies to deepfake and synthetic-media services.",
+   "summary": "Issued by the CAC, MIIT and MPS; effective Jan 10, 2023. Applies to deepfake and synthetic-media services.",
    "measures": "Labelling of deep-synthesis content; security assessments; algorithm filing; real-name verification.",
    "applies": "2023-01-10",
    "stamp_relevance": [
@@ -4318,7 +4318,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "Digital Services Act (Regulation (EU) 2022/2065): audits of very large platforms' algorithmic systems",
-   "summary": "Adopted 19 October 2022; applied to very large online platforms and search engines from August 2023 and to all services from 17 February 2024. Very large platforms must assess systemic risks, including from recommender and algorithmic systems, and undergo annual independent audits.",
+   "summary": "Adopted Oct 19, 2022; applied to very large online platforms and search engines from August 2023 and to all services from Feb 17, 2024. Very large platforms must assess systemic risks, including from recommender and algorithmic systems, and undergo annual independent audits.",
    "measures": "Annual systemic-risk assessments covering algorithmic systems; annual independent audits (Art. 37); researcher data access; recommender-system transparency.",
    "applies": "2024-02-17",
    "stamp_relevance": [
@@ -4443,7 +4443,7 @@
    "instrument": "bill",
    "stage": "died",
    "title": "Canada Bill C-27 / Artificial Intelligence and Data Act (died on the Order Paper)",
-   "summary": "Tabled 16 June 2022. AIDA would have regulated 'high-impact' AI systems. The bill died when Parliament was prorogued on 6 January 2025.",
+   "summary": "Tabled Jun 16, 2022. AIDA would have regulated 'high-impact' AI systems. The bill died when Parliament was prorogued on Jan 06, 2025.",
    "measures": "Would have required risk assessment, mitigation, monitoring and record-keeping for high-impact systems (not enacted).",
    "applies": null,
    "stamp_relevance": [
@@ -4522,7 +4522,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "China: Provisions on Algorithmic Recommendation Management for Internet Information Services",
-   "summary": "Issued by the CAC and three other agencies; effective 1 March 2022. Created the algorithm filing (registry) system.",
+   "summary": "Issued by the CAC and three other agencies; effective Mar 01, 2022. Created the algorithm filing (registry) system.",
    "measures": "Algorithm filing with the CAC; security self-assessments; user options to switch off personalised recommendation; algorithm transparency.",
    "applies": "2022-03-01",
    "stamp_relevance": [
@@ -4558,7 +4558,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "New York City Local Law 144: bias audits of automated employment decision tools",
-   "summary": "Enacted December 2021; enforcement began 5 July 2023 after DCWP rules. Employers and agencies using an automated employment decision tool must have an independent bias audit within the past year and publish a summary.",
+   "summary": "Enacted December 2021; enforcement began Jul 05, 2023 after DCWP rules. Employers and agencies using an automated employment decision tool must have an independent bias audit within the past year and publish a summary.",
    "measures": "Annual independent bias audit with impact ratios by sex and race/ethnicity; public summary; notice to candidates.",
    "applies": "2023-07-05",
    "stamp_relevance": [
@@ -4756,7 +4756,7 @@
    "instrument": "strategy",
    "stage": "published",
    "title": "UK National AI Strategy",
-   "summary": "Published 22 September 2021. Committed to developing an AI assurance ecosystem and to a white paper on AI governance and regulation.",
+   "summary": "Published Sep 22, 2021. Committed to developing an AI assurance ecosystem and to a white paper on AI governance and regulation.",
    "measures": "Commitment to an AI assurance roadmap and AI standards hub.",
    "applies": null,
    "stamp_relevance": [
@@ -4881,7 +4881,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The post now returns 404 at ftc.gov (checked 2026-10-08); cited from the Internet Archive capture of 1 January 2025.",
+   "limits": "The post now returns 404 at ftc.gov (checked Oct 08, 2026); cited from the Internet Archive capture of Jan 01, 2025.",
    "label": "Supported",
    "added": "2026-10-08",
    "checked": "2026-10-08",
@@ -4899,7 +4899,7 @@
    "instrument": "law",
    "stage": "in force",
    "title": "National Artificial Intelligence Initiative Act of 2020",
-   "summary": "Enacted as Division E of the FY2021 National Defense Authorization Act (veto overridden 1 January 2021). Created the National AI Initiative Office and directed NIST to develop a voluntary AI risk management framework.",
+   "summary": "Enacted as Division E of the FY2021 National Defense Authorization Act (veto overridden Jan 01, 2021). Created the National AI Initiative Office and directed NIST to develop a voluntary AI risk management framework.",
    "measures": "Directed NIST to develop the AI Risk Management Framework and AI measurement standards.",
    "applies": null,
    "stamp_relevance": [
@@ -5015,7 +5015,7 @@
    "instrument": "regulation",
    "stage": "in force",
    "title": "Canada: Directive on Automated Decision-Making compliance date",
-   "summary": "Treasury Board directive (issued 2019) with which federal departments had to comply from 1 April 2020. Requires an Algorithmic Impact Assessment before production use of an automated decision system; updated in 2023 and 2025.",
+   "summary": "Treasury Board directive (issued 2019) with which federal departments had to comply from Apr 01, 2020. Requires an Algorithmic Impact Assessment before production use of an automated decision system; updated in 2023 and 2025.",
    "measures": "Algorithmic Impact Assessment (published); peer review for higher-impact levels; testing for unintended bias; human intervention.",
    "applies": "2020-04-01",
    "stamp_relevance": [
@@ -5199,7 +5199,7 @@
    "date": "2026-09-22",
    "jurisdiction": "US-FED",
    "title": "President Trump at the UN General Assembly rejects a global AI control scheme and renames AI 'Super Intelligence'",
-   "summary": "In his address to the UN General Assembly, the President said the United States rejects any attempt to construct a globalist scheme of control for AI, and named the technology 'Super Intelligence'. Executive Order 14434 of 29 September 2026 applied the name across the executive branch.",
+   "summary": "In his address to the UN General Assembly, the President said the United States rejects any attempt to construct a globalist scheme of control for AI, and named the technology 'Super Intelligence'. Executive Order 14434 of Sep 29, 2026 applied the name across the executive branch.",
    "measures": "None stated. Bears on international AI governance and on the definitions later evaluation rules use.",
    "stamp_relevance": [
     "definitions"
@@ -5323,7 +5323,7 @@
    "instrument": "law",
    "stage": "signed",
    "title": "Russia Federal Law No. 123-FZ: experimental legal regime for AI in Moscow",
-   "summary": "Signed 24 April 2020. Set up, from 1 July 2020 and for five years, an experimental legal regime for developing and deploying AI technologies in Moscow, with a register of participants, and amended the federal Personal Data law to allow processing of depersonalised data within the regime. The law defines 'artificial intelligence' and 'AI technologies'.",
+   "summary": "Signed Apr 24, 2020. Set up, from Jul 01, 2020 and for five years, an experimental legal regime for developing and deploying AI technologies in Moscow, with a register of participants, and amended the federal Personal Data law to allow processing of depersonalised data within the regime. The law defines 'artificial intelligence' and 'AI technologies'.",
    "measures": "None stated; defines AI in federal law and sets conditions for participants in the regime.",
    "applies": null,
    "stamp_relevance": [
@@ -5366,7 +5366,7 @@
    "instrument": "executive order",
    "stage": "in force",
    "title": "Russia Presidential Decree No. 124 updates the National AI Strategy to 2030",
-   "summary": "Amends Decree No. 490 of 10 October 2019 and the National Strategy for the Development of AI to 2030. Adds definitions including large generative models, large foundation models and trusted AI technologies, directs federal bodies to follow the strategy in sectoral planning, and requires annual reporting to the President.",
+   "summary": "Amends Decree No. 490 of Oct 10, 2019 and the National Strategy for the Development of AI to 2030. Adds definitions including large generative models, large foundation models and trusted AI technologies, directs federal bodies to follow the strategy in sectoral planning, and requires annual reporting to the President.",
    "measures": "Defines 'trusted' AI technologies; reporting on strategy implementation.",
    "applies": null,
    "stamp_relevance": [
@@ -5410,7 +5410,7 @@
    "instrument": "guidance",
    "stage": "adopted",
    "title": "UAE Cabinet approves the Charter for the Development and Use of Artificial Intelligence",
-   "summary": "Approved at a Cabinet meeting chaired by the Prime Minister on 10 June 2024. The Charter comprises 12 principles on human values and fair, safe treatment, covering among others safety, algorithmic bias, data privacy, transparency, human oversight and compliance with treaties and applicable laws.",
+   "summary": "Approved at a Cabinet meeting chaired by the Prime Minister on Jun 10, 2024. The Charter comprises 12 principles on human values and fair, safe treatment, covering among others safety, algorithmic bias, data privacy, transparency, human oversight and compliance with treaties and applicable laws.",
    "measures": "Principles on safety, algorithmic bias, transparency and human oversight (non-binding).",
    "applies": null,
    "stamp_relevance": [
@@ -5525,7 +5525,7 @@
    "instrument": "strategy",
    "stage": "published",
    "title": "Kenya National Artificial Intelligence Strategy 2025-2030 launched",
-   "summary": "Launched at the Kenyatta International Convention Centre, Nairobi, on 27 March 2025 by the Ministry of Information, Communications and the Digital Economy. Three pillars: AI digital infrastructure, data, and AI research and innovation, with governance and ethics among its enablers. A draft AI and Emerging Technologies Policy followed in 2026.",
+   "summary": "Launched at the Kenyatta International Convention Centre, Nairobi, on Mar 27, 2025 by the Ministry of Information, Communications and the Digital Economy. Three pillars: AI digital infrastructure, data, and AI research and innovation, with governance and ethics among its enablers. A draft AI and Emerging Technologies Policy followed in 2026.",
    "measures": "Governance and ethics frameworks (planned); no evaluation duties.",
    "applies": null,
    "stamp_relevance": [
@@ -5594,7 +5594,7 @@
     }
    ],
    "quotes": [],
-   "limits": "The Cabinet date (20 April 2023) is from secondary reports of the Prime Minister's Office communique, not from the policy document.",
+   "limits": "The Cabinet date (Apr 20, 2023) is from secondary reports of the Prime Minister's Office communique, not from the policy document.",
    "label": "Supported",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -5693,7 +5693,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "Santiago Declaration to promote ethical AI in Latin America and the Caribbean",
-   "summary": "Adopted at the first Ministerial and High Authorities Summit of Latin America and the Caribbean in Santiago de Chile, 23 and 24 October 2023, organised by Chile's Ministry of Science with UNESCO and CAF. Agreed a working group toward an intergovernmental AI council for the region, building on the UNESCO Recommendation.",
+   "summary": "Adopted at the first Ministerial and High Authorities Summit of Latin America and the Caribbean in Santiago de Chile, Oct 23, 2023 and Oct 24, 2023, organised by Chile's Ministry of Science with UNESCO and CAF. Agreed a working group toward an intergovernmental AI council for the region, building on the UNESCO Recommendation.",
    "measures": "None directly; regional commitment to ethical-impact frameworks.",
    "applies": null,
    "stamp_relevance": [
@@ -5728,7 +5728,7 @@
    "instrument": "statement",
    "stage": "statement",
    "title": "Montevideo Declaration on a regional approach to AI governance (Latin America and the Caribbean)",
-   "summary": "Approved at the second Ministerial Summit on the Ethics of AI in Latin America and the Caribbean in Montevideo, 3 and 4 October 2024. Set a 2024-2025 regional roadmap for ethical AI, a standing working group led by Uruguay, and annual ministerial summits.",
+   "summary": "Approved at the second Ministerial Summit on the Ethics of AI in Latin America and the Caribbean in Montevideo, Oct 03, 2024 and Oct 04, 2024. Set a 2024-2025 regional roadmap for ethical AI, a standing working group led by Uruguay, and annual ministerial summits.",
    "measures": "None directly.",
    "applies": null,
    "stamp_relevance": [
@@ -5763,7 +5763,7 @@
    "instrument": "strategy",
    "stage": "adopted",
    "title": "Colombia approves its National Artificial Intelligence Policy (CONPES 4144)",
-   "summary": "Approved by the National Council for Economic and Social Policy on 14 February 2025, succeeding CONPES 3975 of 2019. Six strategic axes, from ethics and governance to data and infrastructure, risk mitigation and adoption, with more than 100 actions to 2030 led by MinTIC and MinCiencias.",
+   "summary": "Approved by the National Council for Economic and Social Policy on Feb 14, 2025, succeeding CONPES 3975 of 2019. Six strategic axes, from ethics and governance to data and infrastructure, risk mitigation and adoption, with more than 100 actions to 2030 led by MinTIC and MinCiencias.",
    "measures": "Ethics and governance axis; risk mitigation measures for AI use.",
    "applies": null,
    "stamp_relevance": [
@@ -5799,7 +5799,7 @@
    "instrument": "guidance",
    "stage": "in force",
    "title": "Argentina approves Recommendations for Trustworthy AI in the public sector (Disposición 2/2023)",
-   "summary": "The Undersecretariat of Information Technologies approved 'Recommendations for a Trustworthy Artificial Intelligence', published in the Official Bulletin on 2 June 2023, for public innovation projects using AI. Principles include proportionality, safety, fairness, transparency and explainability, and accountability with oversight and audit mechanisms.",
+   "summary": "The Undersecretariat of Information Technologies approved 'Recommendations for a Trustworthy Artificial Intelligence', published in the Official Bulletin on Jun 02, 2023, for public innovation projects using AI. Principles include proportionality, safety, fairness, transparency and explainability, and accountability with oversight and audit mechanisms.",
    "measures": "Risk assessment across the AI project lifecycle; audit and oversight mechanisms; informing people when AI is used.",
    "applies": null,
    "stamp_relevance": [
@@ -5853,7 +5853,7 @@
     }
    ],
    "quotes": [],
-   "limits": "Launch date (20 September 2024) is from secondary reports; the portal page does not print it.",
+   "limits": "Launch date (Sep 20, 2024) is from secondary reports; the portal page does not print it.",
    "label": "Supported",
    "added": "2026-10-09",
    "checked": "2026-10-09",
@@ -6021,7 +6021,7 @@
    "instrument": "resolution",
    "stage": "adopted",
    "title": "African Commission on Human and Peoples' Rights Resolution 473 on AI and human rights",
-   "summary": "Adopted at the Commission's 31st Extraordinary Session, held virtually 19 to 25 February 2021. Calls on States to keep AI consistent with the African Charter and to ensure meaningful human control over AI systems, and launches a study on AI, robotics and emerging technologies in Africa; a draft study was published in March 2025.",
+   "summary": "Adopted at the Commission's 31st Extraordinary Session, held virtually Feb 19, 2021 to Feb 25, 2021. Calls on States to keep AI consistent with the African Charter and to ensure meaningful human control over AI systems, and launches a study on AI, robotics and emerging technologies in Africa; a draft study was published in March 2025.",
    "measures": "Meaningful human control over consequential AI systems.",
    "applies": null,
    "stamp_relevance": [
@@ -6056,7 +6056,7 @@
    "instrument": "directive",
    "stage": "in force",
    "title": "US DoD Directive 3000.09 updated: Autonomy in Weapon Systems",
-   "summary": "The Department of Defense updated its policy for autonomous and semi-autonomous weapon systems. Systems must be designed to let commanders and operators exercise appropriate levels of human judgment over the use of force, and most need senior-level review before formal development and again before fielding. A national security memorandum of 5 June 2026 (NSPM-11) ordered the directive rewritten.",
+   "summary": "The Department of Defense updated its policy for autonomous and semi-autonomous weapon systems. Systems must be designed to let commanders and operators exercise appropriate levels of human judgment over the use of force, and most need senior-level review before formal development and again before fielding. A national security memorandum of Jun 05, 2026 (NSPM-11) ordered the directive rewritten.",
    "measures": "Verification and validation, and test and evaluation, of autonomous weapon systems before fielding; senior review before development and before fielding. The department has not published how many systems it has reviewed.",
    "applies": null,
    "stamp_relevance": [
@@ -6082,7 +6082,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "The directive text was not retrieved; the summary rests on the Congressional Research Service and other secondary accounts. Whether the rewrite ordered by NSPM-11 within 90 days has been issued was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The directive text was not retrieved; the summary rests on the Congressional Research Service and other secondary accounts. Whether the rewrite ordered by NSPM-11 within 90 days has been issued was not confirmed. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6124,7 +6124,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "No department text of the memo was retrieved. The applies date is 180 days after 9 January 2026, computed from the reported deadline. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "No department text of the memo was retrieved. The applies date is 180 days after Jan 09, 2026, computed from the reported deadline. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6142,7 +6142,7 @@
    "stage": "signed",
    "title": "NSPM-11: Artificial Intelligence in the National Security Enterprise",
    "summary": "A national security presidential memorandum directs the Department of War, the intelligence community and other national security agencies to speed AI adoption, under four pillars: adoption, adaptation, assurance and accountability. It rescinds and replaces the 2024 memorandum NSM-25, bars commercial vendors from disabling, degrading or modifying an AI system warfighters depend on without government approval, and orders DoD Directive 3000.09 on autonomy in weapon systems rewritten within 90 days.",
-   "measures": "Assurance of AI used for national security; an AI governance policy for national security systems and a rewritten Directive 3000.09 within 90 days; procurement processes updated before 3 October 2026 so models from several vendors can be onboarded.",
+   "measures": "Assurance of AI used for national security; an AI governance policy for national security systems and a rewritten Directive 3000.09 within 90 days; procurement processes updated before Oct 03, 2026 so models from several vendors can be onboarded.",
    "applies": "2026-09-03",
    "stamp_relevance": [
     "evaluation method",
@@ -6167,7 +6167,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "The memorandum was read only as reproduced by a third party. The applies date is the 90-day deadline as reported. Whether the rewritten Directive 3000.09 was issued was not confirmed. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The memorandum was read only as reproduced by a third party. The applies date is the 90-day deadline as reported. Whether the rewritten Directive 3000.09 was issued was not confirmed. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6210,7 +6210,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "The date is taken from the upload time encoded in the published PDF's address; the publication page was not retrieved. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "The date is taken from the upload time encoded in the published PDF's address; the publication page was not retrieved. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6253,7 +6253,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "Endorsement counts differ by source and date (45, 49, 53 and 54 were all reported in 2024); no 2026 count was found. The launch date is from contemporaneous accounts of the 2023 REAIM summit. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Endorsement counts differ by source and date (45, 49, 53 and 54 were all reported in 2024); no 2026 count was found. The launch date is from contemporaneous accounts of the 2023 REAIM summit. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6291,7 +6291,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-09",
    "approved": {
@@ -6308,7 +6308,7 @@
    "instrument": "statement",
    "stage": "adopted",
    "title": "REAIM 2026 in A Coruña adopts 'Pathways to Action' on military AI",
-   "summary": "The third summit on Responsible AI in the Military Domain, held by Spain's foreign and defence ministries over two days ending 5 February 2026, adopted a declaration on putting responsible development, deployment and use of military AI into practice, including human responsibility over AI-enabled weapons and command chains and sharing information on national oversight. The United States and China did not endorse it. The document stays open to further states.",
+   "summary": "The third summit on Responsible AI in the Military Domain, held by Spain's foreign and defence ministries over two days ending Feb 05, 2026, adopted a declaration on putting responsible development, deployment and use of military AI into practice, including human responsibility over AI-enabled weapons and command chains and sharing information on national oversight. The United States and China did not endorse it. The document stays open to further states.",
    "measures": "States share information on their national oversight of military AI; human responsibility and accountability over AI-enabled weapons.",
    "applies": null,
    "stamp_relevance": [
@@ -6334,7 +6334,7 @@
    ],
    "quotes": [],
    "label": "Likely",
-   "limits": "Endorsement counts differ: 34 or 35 of about 85 attending states at the summit, as reported; more than 40 per the organisers later, and about 45 on the ministry's list as read in a search result. Sources were found by web search on 9 October 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
+   "limits": "Endorsement counts differ: 34 or 35 of about 85 attending states at the summit, as reported; more than 40 per the organisers later, and about 45 on the ministry's list as read in a search result. Sources were found by web search on Oct 09, 2026 and could not be opened from our fetcher; the summary rests on the search results and their quoted text, not a full read.",
    "added": "2026-10-09",
    "checked": "2026-10-10",
    "approved": {
@@ -6350,7 +6350,7 @@
    "claim": "The UK updated the statutory footing of its AI Safety Institute under a '2026 Digital Security and AI Bill', mandating pre-deployment evaluations of frontier models.",
    "seen_in": "https://app.stationx.net/articles/ai-regulations-around-the-world",
    "checked": "2026-10-05",
-   "reason": "Contradicted: IAPP and law-firm reports of the 13 May 2026 King's Speech say no AI bill was announced. No bill of that name was found in any primary source."
+   "reason": "Contradicted: IAPP and law-firm reports of the May 13, 2026 King's Speech say no AI bill was announced. No bill of that name was found in any primary source."
   },
   {
    "claim": "October 2026 directives from the Cyberspace Administration of China mandate real-time cryptographic watermarking for all public-facing synthesis algorithms.",

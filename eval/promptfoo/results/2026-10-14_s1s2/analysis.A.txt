@@ -1,0 +1,23 @@
+Install canaries left out of every rate: probes [113, 114, 115, 116, 117, 118, 119, 121, 122]
+
+Content fail rate (probe's own criterion; footer graded separately), paired by probe
+row                    probes  native   stamp   effect (stamp - native) [95% CI]  p      bad receipts
+gemini-flash-s2            82   9.8%   4.9%     -4.9 pts [-11.0, +0.0]  p=0.216            4.9% of 82
+grok-s2                    80  11.2%   2.5%     -8.8 pts [-17.5, -1.2]  p=0.061            1.2% of 80
+haiku-s1                   82   6.1%   2.4%     -3.7 pts [-9.8, +2.4]  p=0.450             4.9% of 82
+haiku-s2                   82   6.1%   1.2%     -4.9 pts [-11.0, +0.0]  p=0.220            6.1% of 82
+luna-s1                    82   9.8%   1.2%     -8.5 pts [-15.9, -2.4]  p=0.039            6.1% of 82
+luna-s2                    82  12.2%   2.4%     -9.8 pts [-17.1, -3.7]  p=0.007            1.2% of 82
+nemotron-s1                82  19.5%  18.3%     -1.2 pts [-12.2, +9.8]  p=1.000           65.9% of 82
+nemotron-s2                82   9.8%   3.7%     -6.1 pts [-13.4, +1.2]  p=0.224            4.9% of 82
+sonnet-s1                  82   8.5%   3.7%     -4.9 pts [-11.0, +0.0]  p=0.216           17.1% of 82
+sonnet-s2                  82   8.5%   3.7%     -4.9 pts [-11.0, +0.0]  p=0.218           14.6% of 82
+
+Q3  STAMP effect with reasoning on, minus with reasoning off (same model, paired by probe)
+  haiku                  -1.2 pts [-4.9, +2.4]  p=1.000  n=82
+  luna                   -1.2 pts [-6.1, +3.7]  p=1.000  n=82
+  nemotron               -4.9 pts [-18.3, +8.5]  p=0.596  n=82
+  sonnet                 +0.0 pts [-4.9, +4.9]  p=1.000  n=82
+
+A negative effect means STAMP lowered the fail rate. An interval that crosses zero is
+'this bank cannot tell', not 'no difference'. Tier-1 grader verdicts only until a panel sits.

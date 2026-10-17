@@ -1,0 +1,416 @@
+#!/usr/bin/env python3
+"""
+THE SITE'S CHROME, ONE SOURCE. Stdlib only. Run from the repo root:
+
+    python tools/site_chrome.py            rewrite the header, page search and asset links on every page it owns
+    python tools/site_chrome.py --check    say what would change, write nothing
+
+It owns, on every STANDING page (<body class="rd ...">) and every Bench post that is not an issued
+document:
+  - the header (between <!-- sh:start --> and <!-- sh:end -->): five groups, About always visible,
+    a drawer on phones and tablets, the "Latest Calibration" button;
+  - the announcement strip (between <!-- topband:start --> and <!-- topband:end -->);
+  - the page-search list (var P=[...]);
+  - the links to /site.css and /site.js.
+It never touches an issued document: Calibration and Log pages, source.html, Bench Vol 001 and its
+record, run records, protocol pages. Running it twice changes nothing the second time.
+
+The order of the groups is argued in the PR that introduced it (Oct 09, 2026) and summarised here:
+what the program publishes, how it measures, the policy it tracks, why it can be trusted, who it is.
+"""
+import argparse, pathlib, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import house
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DOCS = ROOT / "docs"
+
+FROZEN = ("protocol/",)               # the archived v1.25 page keeps its own design; run records are framed like posts
+# an issued document is framed, never edited: the frame goes around bytes that stay exactly as issued
+ISSUE = re.compile(r"^(?:(?:calibration|log)/[0-9]{3}-issued-[a-z]{3}[0-9]{8}/|bench/no-1-complaint/)index\.html$")
+POSTS = ("bench/", "writing/marking/", "writing/abstention/", "writing/grants/", "writing/did-stamp-help/")
+
+# 24x24 stroke icons, drawn once here
+I = {
+ "archive": '<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9"/><path d="M10 13h4"/>',
+ "gauge": '<path d="M4 15a8 8 0 1 1 16 0"/><path d="M12 15l4-5"/><circle cx="12" cy="15" r="1.2"/>',
+ "terminal": '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3"/><path d="M12 15h5"/>',
+ "book": '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>',
+ "mail": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+ "flask": '<path d="M9 3h6"/><path d="M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/>',
+ "list": '<path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/>',
+ "proto": '<path d="M8 3h8l5 5v8l-5 5H8l-5-5V8z"/><path d="M9 12h6"/>',
+ "db": '<ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13"/><path d="M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/>',
+ "receipt": '<path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6"/><path d="M9 12h6"/>',
+ "scale": '<path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0z"/><path d="M19 7l-3 7a3 3 0 0 0 6 0z"/>',
+ "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ "spark": '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/>',
+ "shield": '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+ "fence": '<path d="M5 21V7l2-3 2 3v14"/><path d="M15 21V7l2-3 2 3v14"/><path d="M9 10h6"/><path d="M9 16h6"/>',
+ "redo": '<path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/>',
+ "eye": '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+ "leaf": '<path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"/><path d="M5 19l7-7"/>',
+ "heart": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+ "lock": '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+ "page": '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/>',
+ "info": '<circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7.5v.5"/>',
+ "pen": '<path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/>',
+ "tag": '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/>',
+}
+
+
+def svg(name):
+    return f'<svg viewBox="0 0 24 24" aria-hidden="true">{I[name]}</svg>'
+
+
+def groups(latest_cal, latest_log):
+    """(key, label, hub, [(title, desc, href, icon) | None for a rule])"""
+    return [
+        ("pub", "Publications", "/archive/", [
+            ("The Calibration", "Our own measurements, pre-registered and signed", latest_cal, "gauge"),
+            ("The Log", "What ran, what it cost, what moved", latest_log, "terminal"),
+            ("The Bench", "What we read and argue with · Mon and Thu", "/writing/", "book"),
+            ("Archive", "Every issue, by number and date", "/archive/", "archive"),
+            ("The technical report", "The program in one paper, with its data", "/paper/", "page"),
+            None,
+            ("Subscribe", "One email per issue", "/subscribe/", "mail"),
+        ]),
+        ("method", "Method", "/methodology/", [
+            ("Methodology", "How a rate is produced", "/methodology/", "flask"),
+            ("Definitions", "What each term means here", "/definitions/", "list"),
+            ("The protocol, v1.25", "The instruction layer as measured", "/protocol/v1.25/", "proto"),
+            ("Run files", "Every draw we can publish", "/data/runs/", "db"),
+            ("figures.json", "Every citable number and its fingerprints", "/figures.json", "receipt"),
+        ]),
+        ("policy", "AI policy", "/docket/", [
+            ("The Docket", "Rules that bear on how AI is tested", "/docket/", "scale"),
+            ("The Chronicle", "Dated events in AI governance", "/chronicle/", "clock"),
+            ("Super Intelligence (SI)", "The US rename of AI, traced", "/si/", "spark"),
+            ("Militaries and AI", "Country by country", "/military/", "fence"),
+        ]),
+        ("trust", "Trust", "/independence/", [
+            ("The Ten House Protocols", "How we keep AI from making things up", "/house-protocols/", "list"),
+            ("Independence", "Who pays, and the rules on it", "/independence/", "shield"),
+            ("Corrections + changes", "What we got wrong, dated", "/corrections/", "redo"),
+            ("AI Safety + Governance", "What our agents may and may not do", "/safety/", "eye"),
+            ("Support", "How the program is paid for", "/support/", "heart"),
+            ("Footprint", "What our tokens cost in power, and who pays it", "/footprint/", "leaf"),
+            None,
+            ("Privacy", "What we keep, and for how long", "/privacy/", "lock"),
+            ("Terms", "The terms of use", "/terms/", "page"),
+        ]),
+        ("about", "About", "/about/", [
+            ("About Protocol STAMP", "What this is, who makes it, how to check it", "/about/", "info"),
+            ("Colophon", "How the site is made, and the seven finishes", "/colophon/", "pen"),
+            ("Other STAMPs", "Unrelated things with the same name", "/other-stamps/", "tag"),
+        ]),
+    ]
+
+
+def section_of(rel):
+    for key, pref in (("pub", ("archive/", "writing/", "bench/", "subscribe/", "paper/")), ("method", ("methodology/", "definitions/", "data/")),
+                      ("policy", ("docket/", "chronicle/", "si/", "military/")),
+                      ("trust", ("house-protocols/", "independence/", "corrections/", "safety/", "support/", "privacy/", "terms/")),
+                      ("about", ("about/", "colophon/", "other-stamps/"))):
+        if rel.startswith(pref):
+            return key
+    return ""
+
+
+CHEV = '<svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3"/></svg>'
+MARK = ('<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="currentColor" stroke-width="7" fill="none"><line x1="15" y1="50" x2="85" y2="50"/>'
+        '<line x1="15" y1="31" x2="15" y2="69"/><line x1="85" y1="31" x2="85" y2="69"/></g>'
+        '<line x1="38.11" y1="17" x2="38.11" y2="83" stroke="var(--stamp)" stroke-width="13"/></svg>')
+SEARCH = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>'
+SUN = '<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+MOON = '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>'
+BURGER = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
+
+
+def header(rel, latest_cal, latest_log):
+    here = section_of(rel)
+    nav, drawer = [], []
+    for key, label, hub, entries in groups(latest_cal, latest_log):
+        cur = ' aria-current="true"' if key == here else ""
+        links = "".join('<span class="sep"></span>' if e is None else
+                        f'<a href="{e[2]}"><span class="i">{svg(e[3])}</span><b>{e[0]}</b><small>{e[1]}</small></a>' for e in entries)
+        nav.append(f'<div class="sh-item"><a class="sh-top" href="{hub}"{cur}>{label}</a>'
+                   f'<button class="sh-top sh-x" type="button" aria-expanded="false" aria-label="{label}: show pages" style="padding:0 6px;margin-left:-6px">{CHEV}</button>'
+                   f'<div class="sh-panel" role="menu">{links}</div></div>')
+        drawer.append(f'<h4>{label}</h4>' + "".join(f'<a href="{e[2]}">{e[0]}<small>{e[1]}</small></a>' for e in entries if e))
+    return ('<!-- sh:start --><a class="sx-skip" href="#main">Skip to content</a>'
+            f'<header class="sh"><div class="sh-in"><a class="sh-brand" href="/">{MARK}Protocol STAMP</a>'
+            f'<nav class="sh-nav" aria-label="Site">{"".join(nav)}</nav>'
+            f'<div class="sh-tools"><button class="sh-mode" type="button" aria-label="Switch between day and night">{SUN}{MOON}</button>'
+            f'<button class="sh-search" type="button" data-pal aria-label="Search pages">{SEARCH}<span>Search</span><kbd>Ctrl K</kbd></button>'
+            f'<a class="sh-cta sh-hide-s" href="{latest_cal}">Latest Calibration</a>'
+            f'<button class="sh-menu" type="button" aria-expanded="false" aria-controls="sh-drawer">{BURGER}<span class="lab" style="position:absolute;left:-9999px">Menu</span></button></div></div></header>'
+            f'<div class="sh-drawer" id="sh-drawer"><button class="sh-search" type="button" data-pal>{SEARCH}Search pages and issues</button>'
+            f'{"".join(drawer)}<a class="sh-cta" href="{latest_cal}">Latest Calibration</a></div>'
+            '<!-- sh:end -->')
+
+
+# the standing notice, on every page, like the line under an AI chat box (Lawrence Ho, Oct 12, 2026)
+AI_NOTE = ('<!-- sai:start --><p class="sx-ai" role="note">Protocol STAMP is teamed with AI and can make mistakes. '
+           'Verify before you implement anything. <a href="/corrections/">What we got wrong</a>'
+           '<span class="sx-pay"> · Free to read, paid for by readers: <a href="/support/">Contribute</a></span></p><!-- sai:end -->')
+
+NOTE = ('<!-- topband:start --><div class="sh-note"><b>New</b><a href="/paper/">The technical report: STAMP, and what it takes to measure one</a>'
+        ' &nbsp;·&nbsp; <a href="/support/">Contributions are open</a>'
+        ' &nbsp;·&nbsp; <a href="/house-protocols/">The Ten House Protocols: how we keep AI from making things up</a>'
+        ' &nbsp;·&nbsp; <a href="/house-protocols/#jestermind">Jester Mind, our own aggregated AI model, in the works</a></div><!-- topband:end -->')
+
+# the reader ask, at the end of every page it owns, after the content and before the site map (Oct 13, 2026).
+# Placed where a reader finishes, as reader-funded publications do, and never inside an issue's own bytes.
+# The words follow /support/: nothing is bought, nothing is tax-deductible, the publisher is a for-profit company.
+# The buttons are the live Stripe Payment Links; /support/ carries the terms and the ledger.
+PAY = [("Once, any amount", "https://buy.stripe.com/dRm8wIe1F1Uu6M074F4Rq00"),
+       ("$5 a month", "https://buy.stripe.com/14A8wI8Hl56G2vKbkV4Rq01"),
+       ("$25 a month", "https://buy.stripe.com/7sY8wIaPt1Uudao88J4Rq02")]
+NO_ASK = ("support/", "subscribe/", "privacy/", "terms/")    # the page that is the ask, the sign-up, and the legal pages
+ASK = ('<!-- rs:start --><aside class="rs" aria-label="Reader support"><p class="rs-eye">Readers pay for this</p>'
+       '<div class="rs-h">Free to read, free to check, paid for by the people who read it.</div>'
+       '<p>There is no paywall, no advertising on an issue, and no money from a measured company outside '
+       '<a href="/independence/">the ten conditions</a>. What each round costs is printed in <a href="{log}">The Log</a>. '
+       'The first thing reader money buys is a round recorded end to end, so the price of a measurement can be quoted instead of estimated.</p>'
+       '<p class="rs-btns">' + "".join(f'<a class="rs-b{" rs-main" if i == 1 else ""}" href="{u}" rel="noopener">{t}</a>' for i, (t, u) in enumerate(PAY)) + '</p>'
+       '<p class="rs-fine">A contribution buys nothing and is not tax-deductible: the publisher is a for-profit company. '
+       'Payment is taken by Stripe; a monthly contribution is cancelled by writing to <a href="mailto:s@bud.day">s@bud.day</a>. '
+       '<a href="/support/">Where the money goes, and the ledger</a></p></aside><!-- rs:end -->')
+
+# page search: every page a reader might look for, newest issue first. Pages that do not exist yet are skipped.
+PALETTE = [
+    ("Home", "/"), ("About", "/about/"), ("Archive of issues", "/archive/"),
+    ("The Calibration Vol 004", "/calibration/004-issued-sat20261010/"),
+    ("The Calibration Vol 003", "/calibration/003-issued-sat20261003/"),
+    ("The Calibration Vol 002", "/calibration/002-issued-sat20261003/"),
+    ("The Calibration Vol 001", "/calibration/001-issued-sun20260830/"),
+    ("The Log Vol 003", "/log/003-issued-sat20261003/"),
+    ("The Log Vol 002", "/log/002-issued-thu20261001/"),
+    ("The Log Vol 001", "/log/001-issued-sat20260905/"),
+    ("The technical report", "/paper/"),
+    ("The Bench", "/writing/"),
+    ("Essay · Did STAMP help?", "/writing/did-stamp-help/"),
+    ("Essay · The grants we are applying for", "/writing/grants/"),
+    ("Bench Vol 007 · Check the Facts, Free the Fiction", "/bench/check-the-facts-free-the-fiction/"),
+    ("Bench Vol 006 · A Name Is Not a Test", "/bench/a-name-is-not-a-test/"),
+    ("Bench Vol 005 · Judges Who Agree With Each Other", "/bench/judges-who-agree-with-each-other/"),
+    ("Bench Vol 004 · What a New Judge Has to Beat", "/bench/what-a-new-judge-has-to-beat/"),
+    ("Bench Vol 003 · Five Cases", "/bench/five-cases/"),
+    ("Bench Vol 002 · Something It Can Check", "/bench/something-it-can-check/"),
+    ("Bench Vol 001 · The No. 1 Complaint", "/bench/no-1-complaint/"),
+    ("Essay · Stop marking it like a student", "/writing/marking/"),
+    ("Essay · Why “I don’t know” can be a lie", "/writing/abstention/"),
+    ("The Docket", "/docket/"), ("The Chronicle", "/chronicle/"),
+    ("Super Intelligence (SI)", "/si/"), ("Militaries and AI", "/military/"),
+    ("Methodology", "/methodology/"), ("Definitions", "/definitions/"), ("The protocol, v1.25", "/protocol/v1.25/"),
+    ("Run files", "/data/runs/"), ("figures.json, the registry", "/figures.json"),
+    ("The Ten House Protocols", "/house-protocols/"), ("Independence", "/independence/"), ("Corrections + changes", "/corrections/"),
+    ("AI Safety + Governance", "/safety/"), ("Support", "/support/"), ("Footprint", "/footprint/"),
+    ("Colophon", "/colophon/"), ("Subscribe", "/subscribe/"), ("Other STAMPs", "/other-stamps/"),
+    ("Privacy", "/privacy/"), ("Terms", "/terms/"), ("RSS feed", "/feed.xml"),
+]
+
+
+def exists(href):
+    p = DOCS / href.strip("/")
+    return href == "/" or (p / "index.html").exists() or p.exists()
+
+
+def palette_js():
+    import json
+    return "var P=" + json.dumps([[t, h] for t, h in PALETTE if exists(h)]) + ";"
+
+
+PAL_BLOCK = ('<div class="pal" role="dialog" aria-label="Search pages"><div class="pal-box"><input type="text" placeholder="Search pages and issues" '
+             'aria-label="Search pages and issues"><ul></ul></div></div>')
+OLD_ASSETS = '<link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script>'
+SWATCH = ["#E4EDF6", "#F4E3E3", "#E4EDE3", "#EBE3F5", "#F7E7D8", "#E6E9ED", "#F8EED3"]   # the seven finishes, as finish.js draws them
+
+
+def v(name):
+    """A version for a stylesheet or script: the start of its own SHA-256. Browsers keep these files for hours;
+    a new version is a new address, so a change is seen on the next page load, not hours later."""
+    import hashlib
+    return hashlib.sha256((DOCS / name).read_bytes()).hexdigest()[:10]
+
+
+def assets(kind):
+    css = f'<link rel="stylesheet" href="/chrome.css?v={v("chrome.css")}">' + (f'<link rel="stylesheet" href="/site.css?v={v("site.css")}">' if kind == "standing" else "")
+    return f'<!-- sa:start -->{css}<script src="/site.js?v={v("site.js")}" defer></script><!-- sa:end -->'
+
+
+def sitemap(cal, log):
+    cols = "".join(f'<div><h5>{label}</h5><ul>' + "".join(f'<li><a href="{e[2]}">{e[0]}</a></li>' for e in entries if e) + '</ul></div>'
+                   for key, label, hub, entries in groups(cal, log))
+    play = "".join(f'<i style="background:{c}"></i>' for c in SWATCH)
+    return ('<!-- sf:start --><nav class="sf" aria-label="Site map"><div class="sf-cols">' + cols + '</div>'
+            '<div class="sf-bottom"><span>Protocol STAMP · A Budday Budderson Production</span>'
+            f'<span>{house.SHORT}</span>'
+            f'<a class="sf-play" href="/colophon/#playground">{play}<span>The seven finishes: playground</span></a>'
+            '<a href="/footprint/">Every token draws power: our footprint</a>'
+            '<a href="/feed.xml">RSS</a></div></nav><!-- sf:end -->')
+
+
+def issue_card(rel):
+    """The issue at a glance, from the row the archive (or, for Bench Vol 001, the home page) already prints for it."""
+    path = "/" + rel[: -len("index.html")]
+    src = (DOCS / ("index.html" if rel.startswith("bench/") else "archive/index.html")).read_text(encoding="utf-8")
+    row = next((r for r in re.findall(r'<div class="issue"[^>]*>.*?</div>', src, re.S) if f'href="{path}"' in r), None)
+    if not row:
+        return ""
+    name = re.sub(r"<[^>]+>", "", re.search(r'<span class="name">(.*?)</span>\s*<span class="links">', row, re.S).group(1)).strip()
+    meta = re.sub(r"<[^>]+>", "", re.search(r'<span class="meta">(.*?)</span>', row, re.S).group(1)).strip()
+    meta = re.sub(r"\s+", " ", meta)
+    parts = [x.strip() for x in meta.split("·")]
+    facts = []
+    issued = re.search(r"([A-Z][a-z]{2} \d{2}, \d{4})(?: (\d{2}:\d{2}))?(?: from ([A-Z][A-Za-z ]+?))?(?: ·|$)", meta)
+    if issued:
+        facts.append((issued.group(1), "issued" + (f" at {issued.group(2)} America/Chicago" if issued.group(2) else "")
+                      + (f", from {issued.group(3).strip()}" if issued.group(3) else "")))
+    for x in parts:
+        if re.fullmatch(r"\d+ pages", x):
+            facts.append((x.split()[0], "pages in the PDF"))
+        elif re.fullmatch(r"(?:one|two|three|four|five|six|seven|eight|nine|ten) findings", x):
+            facts.append((x.split()[0].capitalize(), "findings"))
+    b = re.search(r"build ([0-9a-f]{12})", meta)
+    if b:
+        facts.append((b.group(1), "build: the first 12 characters of the source’s SHA-256"))
+    links = re.findall(r'<a href="([^"]+)"[^>]*>(?:<svg.*?</svg>)?(Read|PDF|Source|Run record)</a>', row, re.S)
+    acts = "".join(f'<a href="{h}"{" class=p" if t == "PDF" else ""}>{t}</a>' for h, t in links if t != "Read")
+    exact = f"https://raw.githubusercontent.com/buddaybudderson/stamp/main/docs/{rel[: -len('index.html')]}source.html" if not rel.startswith("bench/") else ""
+    if exact: acts += f'<a href="{exact}">Exact copy</a>'
+    acts += '<a href="/archive/">Archive</a>'
+    kind = "The Calibration" if rel.startswith("calibration/") else "The Log" if rel.startswith("log/") else "The Bench"
+    tiles = "".join(f"<div><b>{v}</b><span>{k}</span></div>" for v, k in facts[:4])
+    src = DOCS / rel[: -len("index.html")] / "source.html"
+    h = "p" if src.exists() and "<h1" in src.read_text(encoding="utf-8") else "h1"   # one main heading: the issue's own, if it has one
+    return ('<!-- sx:start --><section class="sx-issue" aria-label="This issue at a glance"><div class="card">'
+            f'<div><span class="kind">{kind} · issued document</span><{h} class="ttl">{name}</{h}><span class="meta">{meta}</span></div>'
+            f'<div class="acts">{acts}</div><div class="facts">{tiles}</div>'
+            '<p class="note">Below is the issue exactly as it was issued; nothing in it has been edited. This frame, the menu and the footer are the site’s, not the issue’s. '
+            'To check it, download the Source and hash it: the first twelve characters of its SHA-256 are the build above. The <b>Exact copy</b> in the '
+            'public repository is the same bytes.</p></div></section><!-- sx:end -->')
+
+
+def latest(kind):
+    s = (DOCS / "index.html").read_text(encoding="utf-8")
+    if kind == "calibration":
+        m = re.search(r'href="(/calibration/[^"]+/)"[^>]*>(?:<[^>]+>)*\s*Latest Calibration', s)
+        return m.group(1) if m else "/archive/"
+    live = sorted(p.parent.name for p in (DOCS / "log").glob("*/index.html"))
+    return f"/log/{live[-1]}/" if live else "/archive/"
+
+
+def owned(rel, s):
+    if rel.startswith(FROZEN):
+        return None
+    if ISSUE.match(rel):
+        return "issue"
+    if re.search(r'<body class="rd\b', s):
+        return "standing"
+    if rel.startswith(POSTS):
+        return "post"
+    return None
+
+
+def apply(rel, s, kind, cal, log, pal_src):
+    s0 = s
+    hdr = header(rel, cal, log)
+    if "<!-- sh:start -->" in s:
+        s = re.sub(r"<!-- sh:start -->.*?<!-- sh:end -->", lambda m: hdr, s, count=1, flags=re.S)
+    elif '<header class="bar">' in s:
+        s = re.sub(r'<header class="bar">.*?</header>', lambda m: hdr, s, count=1, flags=re.S)
+    else:                                               # a Bench post: straight after <body>
+        s = re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + "\n" + hdr, s, count=1)
+    # body classes
+    want = ["has-sh"] + (["sh-post"] if kind == "post" else ["sh-issue"] if kind == "issue" else [])
+    def body(m):
+        cls = (m.group(1) or "").split()
+        cls += [w for w in want if w not in cls]
+        return f'<body class="{" ".join(cls)}"{m.group(2)}>'
+    s = re.sub(r'<body(?: class="([^"]*)")?([^>]*)>', body, s, count=1)
+    # the announcement strip, standing pages only
+    if kind == "standing":
+        if "<!-- topband:start -->" in s:
+            s = re.sub(r"<!-- topband:start -->.*?<!-- topband:end -->", lambda m: NOTE, s, count=1, flags=re.S)
+        else:
+            s = s.replace("<!-- sh:end -->", "<!-- sh:end -->\n" + NOTE, 1)
+    # the AI notice, fixed to the foot of the screen on every page (outside any issued bytes)
+    if "<!-- sai:start -->" in s:
+        s = re.sub(r"<!-- sai:start -->.*?<!-- sai:end -->", lambda m: AI_NOTE, s, count=1, flags=re.S)
+    else:
+        s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + AI_NOTE, 1)
+    # page search: posts had none
+    if 'class="pal"' not in s:
+        s = s.replace("<!-- sh:end -->", "<!-- sh:end -->\n" + PAL_BLOCK + pal_src, 1)
+    s = re.sub(r"var P=\[.*?\];", lambda m: palette_js(), s, count=1, flags=re.S)
+    # assets: chrome.css on every page, site.css on standing pages only; after redesign.css where a page has it
+    s = s.replace(OLD_ASSETS, "")
+    if "<!-- sa:start -->" in s:
+        s = re.sub(r"<!-- sa:start -->.*?<!-- sa:end -->", lambda m: assets(kind), s, count=1, flags=re.S)
+    elif '<link rel="stylesheet" href="/redesign.css">' in s:
+        s = s.replace('<link rel="stylesheet" href="/redesign.css">', '<link rel="stylesheet" href="/redesign.css">' + assets(kind), 1)
+    else:
+        s = s.replace("<!-- sh:end -->", "<!-- sh:end -->" + assets(kind), 1)
+    # the sitemap footer: before the identity footer, or at the end of an issue page
+    sm = sitemap(cal, log)
+    # the reader ask goes straight before the site map, so it follows the content (or the issue's frame) on every page
+    ask = "" if rel.startswith(NO_ASK) else ASK.replace("{log}", log)
+    s = re.sub(r"<!-- rs:start -->.*?<!-- rs:end -->\n?", "", s, count=1, flags=re.S)
+    sm = ask + "\n" + sm if ask else sm
+    if "<!-- sf:start -->" in s:
+        s = re.sub(r"<!-- sf:start -->.*?<!-- sf:end -->", lambda m: sm, s, count=1, flags=re.S)
+    elif "<footer" in s and kind != "issue":          # an issue may carry a <footer> of its own; never write inside it
+        s = s.replace("<footer", sm + "\n<footer", 1)
+    else:
+        i = s.rindex("</body>"); s = s[:i] + sm + "\n" + s[i:]
+    # an issue: its card at a glance, between the old breadcrumb and the document
+    if kind == "issue":
+        card = issue_card(rel)
+        if "<!-- sx:start -->" in s:
+            s = re.sub(r"<!-- sx:start -->.*?<!-- sx:end -->", lambda m: card, s, count=1, flags=re.S)
+        elif card:
+            i = s.index("</nav>", s.index("<!-- sh:end -->")) + len("</nav>")
+            s = s[:i] + "\n" + card + s[i:]
+    # the publisher line in the page's own footer, from tools/house.py (an issue and a run record keep their own words)
+    if kind != "issue" and "/record/" not in rel and "<footer" in s:
+        i = s.rindex("<footer"); s = s[:i] + house.stamp(s[i:])[0]
+    # the footer's "Public bank" is the current public half (a standing page's footer; an issue keeps its own words)
+    if kind != "issue":
+        for old in ("bank_v1_public.jsonl", "bank_v1_1_public.jsonl"):
+            s = s.replace(f'<a href="/data/{old}">Public bank</a>', '<a href="/data/bank_v1_2_public.jsonl">Public bank</a>')
+    return s, s != s0
+
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument("--check", action="store_true")
+    ap.add_argument("--skip", default="", help="comma-separated page prefixes to leave alone, e.g. docket/,chronicle/")
+    a = ap.parse_args()
+    skip = tuple(x for x in a.skip.split(",") if x)
+    home = (DOCS / "index.html").read_text(encoding="utf-8")
+    m = re.search(r'(<script>\(function\(\)\{var P=\[.*?</script>)', home, re.S)
+    pal_src = m.group(1) if m else ""
+    cal, log = latest("calibration"), latest("log")
+    changed = 0
+    for p in sorted(DOCS.rglob("index.html")):
+        rel = p.relative_to(DOCS).as_posix()
+        b = p.read_bytes(); s = b.decode("utf-8")
+        kind = owned(rel, s)
+        if not kind or (skip and rel.startswith(skip)):
+            continue
+        s2, ch = apply(rel, s, kind, cal, log, pal_src)
+        src = p.parent / "source.html"
+        if kind == "issue" and src.exists() and src.read_bytes() in b and src.read_bytes() not in s2.encode("utf-8"):
+            sys.exit(f"REFUSED {rel}: the issued bytes would no longer be contained exactly")
+        if ch:
+            changed += 1
+            print(("would change  " if a.check else "changed  ") + f"{kind:8} {rel}")
+            if not a.check:
+                p.write_bytes(s2.encode("utf-8"))      # bytes in, bytes out: no line-ending rewrite
+    print(f"{changed} page(s) {'would change' if a.check else 'changed'}; Latest Calibration = {cal}; latest Log = {log}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

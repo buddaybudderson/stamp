@@ -29,6 +29,8 @@ the presence of both files, and the hash round-trip.
 """
 import argparse, datetime as dt, hashlib, pathlib, re, sys
 from zoneinfo import ZoneInfo
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import house as publisher       # tools/house.py: who publishes, in one place
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 STAGE, DOCS = ROOT / "stage", ROOT / "docs"
@@ -188,6 +190,10 @@ def main():
         name = display(kind, no, date)
         print(f"{'would release' if a.check else 'releasing'}  {name}   {slug}  sha {sha(frag)[:12]}  {len(frag):,} bytes")
         print(f"        dateline: {dateline}")
+        lack = publisher.missing(frag.decode("utf-8", "replace"))
+        if lack:   # said loudly, never a reason to strand an issue on its release day: the bytes are frozen once staged
+            print(f"::warning::{slug} lacks the current publisher line from tools/house.py: {' / '.join(lack)}. "
+                  "It is released as staged; fix the build (harness scripts/build_calNNN.py or ledger.py) for the next issue.")
         print(f"        would stamp: {house(ran_at)} {ran_at:%H:%M} America/Chicago"
               if a.check else f"        stamped:     {house(ran_at)} {ran_at:%H:%M} America/Chicago")
         if a.check:
