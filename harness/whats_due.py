@@ -35,9 +35,9 @@ after. 2026 and 2032 are 53-week years. Count whole weeks from a fixed anchor da
 instead; that cannot drift, because it never consults the calendar's opinion about
 what week it is.
 
-RELEASE TIME is 15:37 America/Chicago. The blog keeps its own 07:37 slot - a morning
-read - while the two publications and the audio edition go out together in the
-afternoon, which is when a thing that is meant to be an event should land.
+RELEASE TIME is 15:37 America/Chicago, for everything: the two publications, the audio
+edition and, since Mon Oct 19, 2026, The Bench (Lawrence Ho, by chat: "we ship everything
+at 3:37p for Calibration, Log and Bench"). The Bench had its own 07:37 morning slot before.
 
 15:37 has the same property that made 07:37 safe: it exists exactly once on every
 calendar day, in every US timezone, forever. The DST hazard is confined to 01:00-03:00
@@ -67,12 +67,12 @@ MONDAY, THURSDAY = 0, 3   # The Bench: Sun and Wed from 2026-09-07, Mon and Thu 
 FLOOR_DAYS = 12          # minimum between Calibrations, per protocol/channels.json
 TZ = "America/Chicago"
 RELEASE = dt.time(15, 37)
-BENCH_RELEASE = dt.time(7, 37)   # the blog's own morning slot
+BENCH_RELEASE = dt.time(15, 37)  # since Oct 19, 2026; it was 07:37 before
 WINDOW_MIN = 50          # how late a firing may be and still publish
 
 # The Bench is not on the alternation. It is not derived from the harness and carries
 # no issue floor, so it has no parity and no minimum gap - only its weekday and its
-# own 07:37 slot. Kept in this file so one script answers "what ships today" for
+# own slot, which since Oct 19, 2026 is the same 15:37. Kept in this file so one script answers "what ships today" for
 # every channel rather than two scripts disagreeing.
 BENCH_DAYS = (MONDAY, THURSDAY)
 

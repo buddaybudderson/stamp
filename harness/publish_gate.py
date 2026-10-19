@@ -47,7 +47,7 @@ LEDGER = ROOT / "publish_log.jsonl"
 # The site's timezone is a published fact about the site; state it, do not inherit it.
 SITE_TZ = "America/Chicago"          # Central. Stated because it was ASKED for -
                                      # an earlier version of this file guessed Eastern.
-RELEASE_AT = (7, 37)                 # 07:37 local, CST or CDT, every posting day
+RELEASE_AT = (15, 37)                # 15:37 local since Oct 19, 2026 (was 07:37); NOTE: no job runs this gate now, see whats_due.py
 LATE_TOLERANCE_MIN = 50              # publish if the firing is 0-49 minutes LATE.
                                      # Asymmetric on purpose: a firing that is EARLY
                                      # is the other cron, not a late one.
