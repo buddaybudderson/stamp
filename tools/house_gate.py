@@ -4,6 +4,7 @@ THE HOUSE GATE. Does every page on the site keep the house rules that a parser c
 
     python tools/house_gate.py [docs dir]            report; exit 1 if any FAIL (required on every pull request: the Ten House Protocols, R5)
     python scripts/house_gate.py [docs dir] --json   the same, machine-readable
+    python tools/house_gate.py [docs dir] --as-of=YYYY-MM-DD   judge the dates as of another day (tests)
 
 Drafted Oct 12, 2026 at Lawrence Ho's request: "prevent AI hallucination and AI slop as much as
 possible, by ensuring 100% following our internal protocol". The protocol is HOUSE_GATE.md, beside
@@ -25,6 +26,8 @@ WARN  a pattern that is usually a defect; a person decides, and says so in AUDIT
   H9  notice      the standing AI notice is on every framed page, word for word
   H10 red         the measured-figure red is not used as a chart colour (Colophon rule)
   H14 writing     the mechanical items of the studio's human-writing checklist (WARN)
+  H15 certainty   a shown score carries its own band word (Protocol 4, R8); a labelled claim with no score
+                  is WARN until Monday Nov 09, 2026 and FAIL from that day (R3)
 
 Issued documents (source.html and the frozen bytes inside an issue page) and the archived protocol
 page are never checked against today's rules: they are kept as issued, and are corrected only by a
@@ -34,7 +37,12 @@ Stdlib only. No network.
 import datetime as dt, html, json, pathlib, re, sys
 
 DOCS = pathlib.Path(next((a for a in sys.argv[1:] if not a.startswith("--")), str(pathlib.Path(__file__).resolve().parent.parent / "docs")))
-TODAY = dt.date.today()
+TODAY = next((dt.date.fromisoformat(a[8:]) for a in sys.argv[1:] if a.startswith("--as-of=")), dt.date.today())
+# R3: legacy claims keep their labels until scored; from this day an unscored claim fails like any other
+SCORE_DUE = dt.date(2026, 11, 9)
+SCORE_BANDS = [(100, 100, "Certain"), (95, 99, "Almost certain"), (80, 94, "Very likely"), (55, 79, "Likely"),
+               (45, 54, "Roughly even"), (20, 44, "Unlikely to be confirmed"), (0, 19, "Not confirmed")]   # = tools/certainty.py BANDS
+SCORE_SHOWN = re.compile(r"(?<![\d.])(\d{1,3})% (" + "|".join(w for _, _, w in sorted(SCORE_BANDS, key=lambda b: -len(b[2]))) + r")\b")
 MON = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 NOTICE = "Protocol STAMP is teamed with AI and can make mistakes. Verify before you implement anything."
 MARK = "Begun by a person · Drafted by AI · Edited together · Signed by a person"
@@ -181,6 +189,22 @@ def main():
             d = dt.date(int(m.group(3)), MON.index(m.group(1)) + 1, int(m.group(2)))
             if (TODAY - d).days > 14:
                 add("WARN", "H8", rel, f"last checked {m.group(0)[13:]}: {(TODAY - d).days} days ago")
+        # H15 certainty (Protocol 4): a shown score carries the word for its own band
+        for m in SCORE_SHOWN.finditer(text):
+            n, word = int(m.group(1)), m.group(2)
+            right = next((w for lo, hi, w in SCORE_BANDS if lo <= n <= hi), None)
+            if word != right:
+                add("FAIL", "H15", rel, f'"{m.group(0)}": {n}% is {right or "not a score"}, not {word}')
+        # H15 a labelled Docket or Chronicle entry with no computed score (R3: WARN until Nov 09, 2026, FAIL from then)
+        entries = re.findall(r'<article class="dk-entry".*?</article>', body, flags=re.S)
+        labelled = [e for e in entries if re.search(r'class="dk-tag (Supported|Likely|Unknown)"', e)]
+        unscored = [re.search(r'id="([^"]+)"', e).group(1) for e in labelled if "data-certainty=" not in e]
+        if unscored:
+            late = TODAY >= SCORE_DUE
+            add("FAIL" if late else "WARN", "H15", rel,
+                f"{len(unscored)} of {len(labelled)} labelled claims carry no certainty score, first {unscored[0]}; "
+                + ("unscored claims fail from Monday Nov 09, 2026 (R3)" if late else
+                   f"legacy claims must be scored by Monday Nov 09, 2026 (R3), {(SCORE_DUE - TODAY).days} days from {TODAY.strftime('%b %d, %Y')}"))
         # H9 notice
         if "<!-- sh:start -->" in raw and NOTICE not in visible(raw):
             add("FAIL", "H9", rel, "the standing AI notice is missing or reworded")
