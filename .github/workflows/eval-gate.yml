@@ -47,6 +47,12 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: python tools/test_certainty.py
+
+      # R4: the Saturday audit sampler, each refusal shown firing on a planted fault
+      - name: Audit sampler self-test
+        env:
+          PYTHONUTF8: "1"
+        run: python tools/test_audit_sample.py
 
       - name: Harness self-tests (no bank, no key, no network)
         env:
