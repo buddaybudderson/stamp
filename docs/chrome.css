@@ -255,7 +255,7 @@ body:is(.sh-issue,.sh-post)>aside.rs,body:is(.sh-issue,.sh-post) #main aside.rs{
 /* a Log's title band is a panel: its edges sit on the column's edges, like every other panel's */
 body.sh-issue:has(#main>.top) #main>.top{margin-left:0!important;margin-right:0!important}
 
-/* The measuring grid (Oct 21, 2026, after aclide.com's): faint 64px graph paper behind every page,
+/* The measuring grid (Oct 21, 2026, after aclide.com's): faint 32px graph paper behind every page,
    strongest at the top and fading out, so it reads as the instrument's ground, not as content.
    Drawn in the finish's own rule color, so it follows all seven finishes, day and night.
    It sits above the page colour and below everything else; cards with a surface colour cover it. */
@@ -263,8 +263,8 @@ body{isolation:isolate}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   --grid:color-mix(in srgb,var(--rule) 38%,transparent);
   background-image:linear-gradient(to right,var(--grid) 1px,transparent 1px),linear-gradient(to bottom,var(--grid) 1px,transparent 1px);
-  background-size:64px 64px;background-position:center -1px;
+  background-size:32px 32px;background-position:center -1px;
   -webkit-mask-image:radial-gradient(ellipse 85% 70% at 50% 0%,#000 35%,transparent 100%);
   mask-image:radial-gradient(ellipse 85% 70% at 50% 0%,#000 35%,transparent 100%)}
-@media (max-width:640px){body::before{background-size:40px 40px}}
+@media (max-width:640px){body::before{background-size:24px 24px}}
 @media print{body::before{display:none}}
