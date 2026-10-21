@@ -53,6 +53,12 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: python tools/test_audit_sample.py
+
+      # R12: the breach register on Corrections + changes (house gate H16), each fault planted in a copy
+      - name: Breach register self-test
+        env:
+          PYTHONUTF8: "1"
+        run: python tools/test_breach_register.py
 
       - name: Harness self-tests (no bank, no key, no network)
         env:

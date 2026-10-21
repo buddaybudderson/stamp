@@ -28,6 +28,8 @@ WARN  a pattern that is usually a defect; a person decides, and says so in AUDIT
   H14 writing     the mechanical items of the studio's human-writing checklist (WARN)
   H15 certainty   a shown score carries its own band word (Protocol 4, R8); a labelled claim with no score
                   is WARN until Monday Nov 09, 2026 and FAIL from that day (R3)
+  H16 breaches    Corrections + changes keeps the breach register: date, model, what happened, what was done;
+                  every cell filled, the model named with its version, newest first (Protocol 10, R12)
 
 Issued documents (source.html and the frozen bytes inside an issue page) and the archived protocol
 page are never checked against today's rules: they are kept as issued, and are corrected only by a
@@ -205,6 +207,33 @@ def main():
                 f"{len(unscored)} of {len(labelled)} labelled claims carry no certainty score, first {unscored[0]}; "
                 + ("unscored claims fail from Monday Nov 09, 2026 (R3)" if late else
                    f"legacy claims must be scored by Monday Nov 09, 2026 (R3), {(SCORE_DUE - TODAY).days} days from {TODAY.strftime('%b %d, %Y')}"))
+        # H16 the breach register (Protocol 10, R12): on Corrections + changes, in its own section, its four columns
+        if rel == "corrections/index.html":
+            sec = re.search(r'<section id="breaches">(.*?)</section>', raw, flags=re.S)
+            tab = re.search(r"<table\b[^>]*>(.*?)</table>", sec.group(1), flags=re.S) if sec else None
+            if not tab:
+                add("FAIL", "H16", rel, 'the breach register (section id="breaches", with its table) is missing')
+            else:
+                trs = re.findall(r"<tr>(.*?)</tr>", tab.group(1), flags=re.S)
+                head = [visible(c).strip() for c in re.findall(r"<th\b[^>]*>(.*?)</th>", trs[0] if trs else "", flags=re.S)]
+                if head != ["Date", "Model", "What happened", "What was done"]:
+                    add("FAIL", "H16", rel, f"breach register columns are {head}, not Date, Model, What happened, What was done")
+                last = None
+                for tr in trs[1:]:
+                    cells = [visible(c).strip() for c in re.findall(r"<td\b[^>]*>(.*?)</td>", tr, flags=re.S)]
+                    if len(cells) != 4 or not all(cells):
+                        add("FAIL", "H16", rel, f"breach register row with an empty or missing cell: {cells}")
+                        continue
+                    m = re.fullmatch(r"(" + "|".join(MON) + r") (\d{2}), (\d{4})", cells[0])
+                    if not m:
+                        add("FAIL", "H16", rel, f"breach register date {cells[0]!r} is not a house date")
+                        continue
+                    d = dt.date(int(m.group(3)), MON.index(m.group(1)) + 1, int(m.group(2)))
+                    if last and d > last:
+                        add("FAIL", "H16", rel, f"breach register is not newest first: {cells[0]} comes after {last.strftime('%b %d, %Y')}")
+                    last = d
+                    if not re.search(r"\d", cells[1]):
+                        add("FAIL", "H16", rel, f"breach register names {cells[1]!r} without a version (R12: the model and version)")
         # H9 notice
         if "<!-- sh:start -->" in raw and NOTICE not in visible(raw):
             add("FAIL", "H9", rel, "the standing AI notice is missing or reworded")
