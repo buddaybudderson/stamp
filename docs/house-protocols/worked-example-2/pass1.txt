@@ -1,0 +1,58 @@
+# Worked example 2, pass 1: what is public ABOUT the thesis (the thesis itself not opened)
+
+Work: Isabelle Augenstein, *Towards Explainable Fact Checking*, thesis for the degree of Doctor Scientiarum (Dr. Scient.),
+University of Copenhagen, Faculty of Science, 2021. arXiv:2108.10274.
+Rule for this pass: no sentence may rest on the thesis text. Sources were fetched with scripts/fetch_source.py on
+Oct 21, 2026 (UTC); saved copies in site_audit/fetched/ (sha256 below).
+
+## Sources opened
+
+| Id | Source | Rung (R7) | Opened via | SHA-256 (first 16) |
+|---|---|---|---|---|
+| AX | arXiv abstract page, arxiv.org/abs/2108.10274 | B (the author's own words) | plain request | dd44d61cfb68e769 |
+| KU | University of Copenhagen, DIKU event page "Doctoral dissertation defence by Isabelle Augenstein" | C (record) | archive (Wayback copy of Jun 29, 2022; live page 404) | 6cea513bf2b9c52e |
+| KI | "Habilitation Abstract: Towards Explainable Fact Checking", KI - Künstliche Intelligenz 36 (2022) 255-258, record at dl.gi.de | B (the author's own summary) | plain request | b96837df70feca5c |
+| OA | OpenAlex work record for doi 10.48550/arXiv.2108.10274 | C (record) | plain request | 866689df16f30f2f |
+
+Tried and not used: Semantic Scholar API (HTTP 429, sent to needs_person.jsonl).
+Could be asked for (R13): the assessment committee's report and the co-author statements, which KU says the Faculty
+Secretariat supplies on request.
+
+## The summary pass 1 can support
+
+Labels: **Record** (a catalogue or event fact), **Author's description** (what the author says the thesis does, in the
+abstract or the summary article), **Not the thesis** (our own reading). No claim here is "in the thesis" in its words.
+
+1. **Record.** The thesis was presented to the University of Copenhagen Faculty of Science for the degree of Doctor
+   Scientiarum (Dr. Scient.). [AX comments; KU]
+2. **Record.** It was defended on Monday Dec 06, 2021, at 13:00, at Universitetsparken 1, Copenhagen, with a Zoom link.
+   The opponents were Professor Iryna Gurevych (Technical University of Darmstadt) and Professor Lucia Specia (Imperial
+   College London and University of Sheffield); the chair was Christian Igel. [KU]
+3. **Record.** arXiv version 1 was submitted on Aug 23, 2021, and version 2 on Dec 08, 2021. [AX]
+4. **Record.** A four-page summary by the author appeared in KI - Künstliche Intelligenz, vol. 36 (2022), pp. 255-258,
+   doi 10.1007/s13218-022-00774-6. It calls the thesis a "habilitation (doctor scientiarum) thesis" and says it was
+   defended in December 2021. [KI]
+5. **Record.** OpenAlex lists the work as a preprint from 2021, cited 5 times (record read Oct 21, 2026). [OA]
+6. **Author's description.** The thesis covers three fact-checking tasks: detecting check-worthy claims, stance detection,
+   and predicting a claim's veracity from evidence. [AX]
+7. **Author's description.** Its contributions go beyond fact checking, to machine learning methods for learning with
+   limited labelled data. [AX]
+8. **Author's description.** It presents "some first solutions" for explainable fact checking. [AX]
+9. **Author's description.** The summary article organises the contributions along three "verticles": the fact-checking
+   subtask, methods needing little labelled data, and explainable fact checking. [KI]
+10. **Author's description.** The motivation given: the models are deep neural networks whose inner workings cannot easily
+    be explained; explanation matters when models are used for decisions; the problem is made worse by model size, by EU
+    legislation requiring explanations, and by legislation requiring transparent reporting from online platforms. [AX]
+11. **Not the thesis.** Every claim about content above comes from the author describing her own work. Nothing in pass 1
+    shows how well the thesis delivers what the abstract promises.
+
+## What pass 1 cannot say (and a writer would be tempted to fill in)
+
+- How many chapters or papers it contains, and which papers. (A search snippet said "10 technical sections"; a snippet is
+  not a source, so it is not used.)
+- Which datasets, models and results; any number at all.
+- Which "explainable" methods it proposes, and how they were judged.
+- Which EU laws the abstract means. It names none; GDPR or the Digital Services Act would be a memory fill.
+- Anything the assessment committee or the opponents said.
+
+Pass 2 reads the thesis itself and checks each of these.
