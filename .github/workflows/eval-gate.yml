@@ -42,6 +42,12 @@ jobs:
       - name: House gate (Ten House Protocols)
         run: python tools/house_gate.py docs
 
+      # Protocol 4: the certainty score and house gate H15, each shown firing on a planted fault (copies the site to a temp folder)
+      - name: Certainty score self-test
+        env:
+          PYTHONUTF8: "1"
+        run: python tools/test_certainty.py
+
       - name: Harness self-tests (no bank, no key, no network)
         env:
           PYTHONUTF8: "1"
