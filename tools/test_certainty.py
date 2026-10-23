@@ -92,8 +92,10 @@ arch = [{"url": "https://gov/a", "status": 200, "sha256": H}, {"url": "https://g
 eq("legacy: the archive manifest's copy earns the hash row", C.score(C.from_docket(e, log, arch), DAY)["score"], 70)
 eq("legacy: a 403 page's hash is not a copy of the source", C.score(C.from_docket(e2, log, arch), DAY)["score"], 10)
 
-# 4. house_gate H15 on a copy of the live site.
+# 4. house_gate H15 on a copy of the live site. The copy is first made unscored, so the test does not depend on
+# whether the live pages show scores yet.
 docs = HERE.parent / "docs"
+SCORE_SPAN = r'<span class="dk-tag certainty[^"]*" data-certainty="\d+"[^>]*>[^<]*</span>'
 with tempfile.TemporaryDirectory() as tmp:
     t = pathlib.Path(tmp) / "docs"
     shutil.copytree(docs, t)
@@ -102,17 +104,18 @@ with tempfile.TemporaryDirectory() as tmp:
         r = subprocess.run([sys.executable, str(HERE / "house_gate.py"), str(t), f"--as-of={as_of}"], capture_output=True, text=True, encoding="utf-8")
         return r.returncode, [l for l in r.stdout.splitlines() if " H15 " in l]
 
+    def rewrite(f):
+        for page in ("docket", "chronicle"):
+            p = t / page / "index.html"
+            p.write_text(f(p.read_text(encoding="utf-8")), encoding="utf-8")
+
+    rewrite(lambda s: re.sub(SCORE_SPAN, "", s))
     rc, h15 = gate("2026-11-08")
-    eq("live site, Nov 08, 2026: unscored Docket claims WARN", (rc, sorted(l.split()[0] for l in h15)), (0, ["WARN", "WARN"]))
+    eq("unscored Docket and Chronicle, Nov 08, 2026: WARN", (rc, sorted(l.split()[0] for l in h15)), (0, ["WARN", "WARN"]))
     rc, h15 = gate("2026-11-09")
-    eq("live site, Nov 09, 2026: unscored Docket claims FAIL (R3)", (rc, sorted(l.split()[0] for l in h15)), (1, ["FAIL", "FAIL"]))
+    eq("unscored Docket and Chronicle, Nov 09, 2026: FAIL (R3)", (rc, sorted(l.split()[0] for l in h15)), (1, ["FAIL", "FAIL"]))
     # score every entry on the copy: the R3 failure must go away, so it is about the scores and nothing else
-    for page in ("docket", "chronicle"):
-        p = t / page / "index.html"
-        s = p.read_text(encoding="utf-8").replace('<span class="dk-tag Supported">', '<span class="dk-tag certainty" data-certainty="60">60% Likely</span><span class="dk-tag Supported">')
-        s = s.replace('<span class="dk-tag Likely">', '<span class="dk-tag certainty" data-certainty="60">60% Likely</span><span class="dk-tag Likely">')
-        s = s.replace('<span class="dk-tag Unknown">', '<span class="dk-tag certainty" data-certainty="10">10% Not confirmed</span><span class="dk-tag Unknown">')
-        p.write_text(s, encoding="utf-8")
+    rewrite(lambda s: s.replace('<div class="dk-meta">', '<div class="dk-meta"><span class="dk-tag certainty" data-certainty="60">60% Likely</span>'))
     rc, h15 = gate("2026-11-09")
     eq("every claim scored: no H15", (rc, h15), (0, []))
     # plant a wrong band word on the worked example: 85% is Very likely, not Likely
@@ -127,10 +130,10 @@ with tempfile.TemporaryDirectory() as tmp:
     rc, h15 = gate("2026-11-09")
     eq("data-certainty 85 shown as 60% is refused", (rc, any('data-certainty="85" but the page shows 60%' in l for l in h15)), (1, True))
     # the labels removed and no score added: every entry is still a claim, so this must fail, not pass for having nothing to check
-    shutil.copy(docs / "docket" / "index.html", p)
-    p.write_text(re.sub(r'<span class="dk-tag (Supported|Likely|Unknown)">[^<]*</span>', "", p.read_text(encoding="utf-8")), encoding="utf-8")
+    rewrite(lambda s: re.sub(r'<span class="dk-tag (Supported|Likely|Unknown)">[^<]*</span>', "", re.sub(SCORE_SPAN, "", s)))
     rc, h15 = gate("2026-11-09")
-    eq("labels dropped, nothing scored: still refused", (rc, any("/docket/" in l and "160 of 160 claims" in l for l in h15)), (1, True))
+    eq("labels dropped, nothing scored: still refused",
+       (rc, any("/docket/" in l and re.search(r"(\d+) of \1 claims carry no certainty score", l) for l in h15)), (1, True))
 
 print("\n".join("FAIL  " + f for f in fails) or "test_certainty: all pass")
 sys.exit(1 if fails else 0)
