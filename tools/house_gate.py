@@ -197,14 +197,19 @@ def main():
             right = next((w for lo, hi, w in SCORE_BANDS if lo <= n <= hi), None)
             if word != right:
                 add("FAIL", "H15", rel, f'"{m.group(0)}": {n}% is {right or "not a score"}, not {word}')
-        # H15 a labelled Docket or Chronicle entry with no computed score (R3: WARN until Nov 09, 2026, FAIL from then)
-        entries = re.findall(r'<article class="dk-entry".*?</article>', body, flags=re.S)
-        labelled = [e for e in entries if re.search(r'class="dk-tag (Supported|Likely|Unknown)"', e)]
+        # H15 a Docket or Chronicle entry with no computed score (R3: WARN until Nov 09, 2026, FAIL from then). Every entry
+        # is a claim, labelled or not: a page that drops its labels without adding scores must not pass for having none.
+        labelled = re.findall(r'<article class="dk-entry".*?</article>', body, flags=re.S)
         unscored = [re.search(r'id="([^"]+)"', e).group(1) for e in labelled if "data-certainty=" not in e]
+        for e in labelled:
+            eid = re.search(r'id="([^"]+)"', e).group(1)
+            for m in re.finditer(r'data-certainty="(\d+)"[^>]*>\s*(\d+)%', e):
+                if m.group(1) != m.group(2):
+                    add("FAIL", "H15", rel, f'{eid}: data-certainty="{m.group(1)}" but the page shows {m.group(2)}%')
         if unscored:
             late = TODAY >= SCORE_DUE
             add("FAIL" if late else "WARN", "H15", rel,
-                f"{len(unscored)} of {len(labelled)} labelled claims carry no certainty score, first {unscored[0]}; "
+                f"{len(unscored)} of {len(labelled)} claims carry no certainty score, first {unscored[0]}; "
                 + ("unscored claims fail from Monday Nov 09, 2026 (R3)" if late else
                    f"legacy claims must be scored by Monday Nov 09, 2026 (R3), {(SCORE_DUE - TODAY).days} days from {TODAY.strftime('%b %d, %Y')}"))
         # H16 the breach register (Protocol 10, R12): on Corrections + changes, in its own section, its four columns

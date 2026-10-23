@@ -5,7 +5,7 @@
 
 Stdlib only. No network. The live site is copied to a temporary folder before anything is planted in it.
 """
-import datetime as dt, pathlib, shutil, subprocess, sys, tempfile
+import datetime as dt, pathlib, re, shutil, subprocess, sys, tempfile
 
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -120,6 +120,17 @@ with tempfile.TemporaryDirectory() as tmp:
     w.write_text(w.read_text(encoding="utf-8").replace("85% Very likely", "85% Likely", 1), encoding="utf-8")
     rc, h15 = gate("2026-10-20")
     eq("85% Likely is refused", (rc, len(h15), "85% is Very likely, not Likely" in "".join(h15)), (1, 1, True))
+    w.write_text(w.read_text(encoding="utf-8").replace("85% Likely", "85% Very likely", 1), encoding="utf-8")
+    # a score whose stored number is not the one shown
+    p = t / "docket" / "index.html"
+    p.write_text(p.read_text(encoding="utf-8").replace('data-certainty="60">60%', 'data-certainty="85">60%', 1), encoding="utf-8")
+    rc, h15 = gate("2026-11-09")
+    eq("data-certainty 85 shown as 60% is refused", (rc, any('data-certainty="85" but the page shows 60%' in l for l in h15)), (1, True))
+    # the labels removed and no score added: every entry is still a claim, so this must fail, not pass for having nothing to check
+    shutil.copy(docs / "docket" / "index.html", p)
+    p.write_text(re.sub(r'<span class="dk-tag (Supported|Likely|Unknown)">[^<]*</span>', "", p.read_text(encoding="utf-8")), encoding="utf-8")
+    rc, h15 = gate("2026-11-09")
+    eq("labels dropped, nothing scored: still refused", (rc, any("/docket/" in l and "160 of 160 claims" in l for l in h15)), (1, True))
 
 print("\n".join("FAIL  " + f for f in fails) or "test_certainty: all pass")
 sys.exit(1 if fails else 0)
